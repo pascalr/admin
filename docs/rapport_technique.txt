@@ -1,0 +1,40 @@
+Données techniques
+
+Cette section présente les calculs réalisés afin de combler les spécifications énoncées précédemment.
+
+Grippe
+
+Calculer la force de grippe nécessaire pour soulever un pot de 1 gallon, et qu'il continue à le soulever même si le courant
+est coupé.
+
+Moteurs
+
+Moteur H
+
+La force requise du moteur dépend de la friction du mouvement.
+
+À l'aide de la force et de la vitesse/accélération requise, il est possible de déterminer la puissance du moteur minimale.
+
+Moteur V
+
+Moteur T
+
+Hypothèses:
+
+    La friction est négligeable
+    L'axe est perpendiculaire à la gravité
+
+
+La principale contrainte est donc l'accélération/décélération?
+Non, quelle est la force requise pour brasser un plat?
+
+Moteur A
+Moteur B
+
+2kg + 1kg (poids de la bouteille) à 3.25" (82.55 mm)
+3 kg * 9.81N/kg * 0.08255 m
+Je dois avoir 2.5 N*m de torque, ou 24.765 Kg*cm
+Mes nema 17 sont de 0.46 N*m (ce qu'ils disent)
+Le stepper avec gearbox est raté à 4.7N*m
+
+

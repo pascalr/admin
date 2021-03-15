@@ -1,0 +1,123 @@
+Spécifications
+
+Les caractéristiques minimales du robot sont:
+
+Tolérance x: 2mm
+Tolérance y: 2mm
+Tolérance z: 2mm
+Angle alpha minimale: -120 degrés (voir note 1)
+Angle alpha maximale: 120 degrés (voir note 1)
+Charge nominale: 3 kg (voir note 2)
+Diamètre de pot maximal: 6" (152.4 mm)
+Hauteur de pot maximale: 10" (254 mm) (varie selon l'armoire)
+
+(1) Pour que le bras puisse bien tourner, l'avant-bras doit plier à plus de 90 degrés. Il doit plier de 240 degrés au lieu de 180 degrés.
+Sinon, le bras en diagonale est plus long (sqrt(l1^2+l2^2)), si l1 == l2, diago == l1*sqrt(2)
+
+(2) Un contentant d'un gallon plus son poids vide de 1 kg.
+
+Pots
+
+La plupart des types de pots peuvent être utilisé. Les seules restrictions sont:
+
+    Diamètre maximal de 6" (152.4 mm)
+    Une paroie sans angle (cylindrique et non conique) pour assurer une bonne prise du pot
+    Hauteur maximale selon la hauteur des tablettes
+
+
+Armoire
+
+Le robot s'installe derrière une armoire, mais pas n'importe laquelle. L'armoire doit:
+
+    Ne pas avoir de fond ou pouvoir enlever le fond
+    Mesurer XXX" (XXX mm) d'espace libre pour la tablette de travail
+    Avoir des tablettes de la bonne hauteur selon les pots désirés. Les tablettes doivent:
+        Mesurer XXX" (XXX mm) de plus que la hauteur du pot désiré
+        Pouvoir installer une barrière à l'arrière?
+    Profondeur: entre XXX" (XXX mm) et XXX" (XXX mm) 
+    Hauteur: Selon la hauteur des tablettes. (Nous recommandons 79" pour faciliter le
+
+déménagement puisque qu'une porte mesure en général 80")
+
+Si vous ne possédez pas d'armoire, vous pouvez voir une liste d'armoire compatible sur
+not site internet (TODO: lien et liste).
+
+Barrière de sécurité
+
+Une petite barrière doit être installé sur les tablettes du fond pour éviter que les pots ne
+tombent à l'arrière par accident.f
+
+Sécurité
+
+Pour des raisons de sécurités, plusieurs mesures sont nécessaires.
+
+La machine ne doit changer chauffer sans supervision.
+
+Un enfant ne doit jamais entrer à l'intérieur de la machine et ne jamais déposé un enfant sur
+la tablette de travail.
+
+Le robot peut se mettre en marche n'importe quand selon un calendrier que vous programmez.
+Toutefois, pour des raisons de sécurités, l'utilisateur doit appuyer sur le bouton démarrer afin
+de faire chauffer quoique ce soit.
+
+Limites et garantie
+
+Garantie 1 an...
+
+Pubilcité
+
+S'il vous plaît, aidé Heda à se trouver un autre bras! hahahaha
+
+Name Tag Heda. Bonjour, je suis Heda. Quest-ce que vous avez envie de manger ce soir?
+
+Tablettes
+
+Une tablette de petit pots: 100mm + 120mm + 50mm = 270mm
+Une tablette de moyens pots: 170mm + 120mm + 50 mm = 340mm
+Une tablette de grand pots: 250mm + 120mm + 50mm = 420mm
+Donc la tablette de travail: 270mm + 340mm + 420mm = 1030mm
+
+Wait les moyens pots se sortent comme les petits pots ou comme les gros pots?
+Juste 2 tablettes? 420mm + 270mm : 690mm OK
+
+La tablette du bas a les pots les plus haut et les plus gros. Il n'y a rien derrière pour les bloquer.
+
+Mettre juste 2 tablette avec les moyens pots avec les petits pots.
+
+Je dois être capable de détecter les pots dans les tablettes du bas aussi. Parce que ça va être accrocher c'est sûr,
+et une personne peut venir prendre un pot n'importe quand.
+
+Habiletés
+
+    Soulever un pot
+    Détecter un pot ou une bouteille
+    Peser un pot
+    Maintenir un inventaire
+    Brasser des aliments
+    Verser des aliments solides ou liquides
+    Prendre des cuillerées
+    Utiliser un mélangeur à main
+
+
+    Détection de pots sur n'importe quelle tablette
+
+
+Coopération humain-robot
+
+Le robot peut aider à ranger et à sortir les aliments, mais ce n'est pas une obligation. Si vous êtes pressé, vous pouvez le faire vous-même.
+
+Features
+
+Des biscuits qui plaisent à toute la famille:
+La même base à biscuit pour tous, mais chaque membre décide de ce qu'il veut mettre à l'intérieur de ses biscuits.
+
+Le matin, le robot pourrait aller chercher tout les pots de déjeuder et les mettre à porté de main pour le monde!
+
+Un 2e bras pourrait être une sécurité pour soulever un pot lourd, il se positionnerait en dessous?
+
+Référencement par caméra. S'il manque d'électricité, le bras doit être rammené manuellement jusqu'à sa maison, afin qu'il puisse détecter des capteurs visuelles de référencement, sans entrer en collision avec quoi que ce soit.
+
+Idées
+
+Un cable drum avec un centre hexagonal pour pouvoir etre entrainer pour tourner tout en pouvant se deplacer, comme ca ca suivrait le cable en meme temps.
+
