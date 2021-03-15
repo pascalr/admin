@@ -1,8 +1,17 @@
 https://aqueous-fortress-30634.herokuapp.com/
 http://www.responsinator.com/?url=hedacuisine.com
 
-Plan de la semaine:
+Faire une ébauche du brevet. Ensuite faire une ébauche de la vidéo de cuisine.
+La vidéo de cuisine serait très bien pour valider l'utilité de la machine.
+Les deux ceux une très grande priorité. J'ai décidé de faire le brevet cette semaine.
+L'ébauche de la vidéo de cuisine devra attendre à la semaine prochaine.
+Mais je peux quand même commencer à penser aux recettes que j'aimerais cuisiner.
+
+Le brevet est un prérequis avant le sociofinancement.
+Faire une demande de brevet me libèrerait énormément la pression. Après je pourrais parler le plus possible de mon invention au lieu de me cacher.
+Contacter Mr Audet pour les brevets pour qu'ils m'aident et me rassurent que mon brevet est correct haha.
 Faire un plan sommaire d'un socio-financement.
+Combien de temps serait nécessaire pour le réaliser? À quel point le produit doit être prêt?
 Design d'une belle armoire de cuisine.
 Regarder où est-ce que je pourrais engager quelqu'un pour m'aider dans le socio-financement.
 Faire les trucs de database dans le site d'admin (Purchases, Parts, Suppliers, Tasks, ...)
