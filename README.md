@@ -2,14 +2,23 @@ https://aqueous-fortress-30634.herokuapp.com/
 http://www.responsinator.com/?url=hedacuisine.com
 
 Plan de la semaine:
-Rendre le site fonctionnel pour moi et Céline. Gros minimum de base. Plus aucune nouvelle fonctionnalité.
-Afficher les groupes de recettes correctement peut-être.
-Enlever group show et seulement garder recipe show. Pour la recipe tu as ses sibblings.
 Faire un plan sommaire d'un socio-financement.
 Design d'une belle armoire de cuisine.
 Regarder où est-ce que je pourrais engager quelqu'un pour m'aider dans le socio-financement.
-Un autre git pour le management Heda.
-Mettre tous les fichiers par rapport à Heda dedans. Faire une application rails pour le management dedans.
+Faire les trucs de database dans le site d'admin (Purchases, Parts, Suppliers, Tasks, ...)
+Afficher les groupes de recettes correctement peut-être. Enlever group show et seulement garder recipe show. Pour la recipe tu as ses sibblings.
+
+La direction générale a pour but de planifier de façon stratégique, de coordonner l’ensemble des activités de l’entreprise et d’analyser les résultats de l’entreprise. 
+
+L’administration a pour but de s’assurer que les sommes dues par les clients soient collectées (il faut donc au préalable les facturer) et que les sommes dues aux fournisseurs soient payées. Il faut également que les dirigeants soient informés sur la situation réelle des finances de l’entreprise. 
+
+Le marketing a pour but de faire les études de marché requises, de concevoir le plan de marketing et de le rendre opérationnel. 
+
+La vente a pour but de générer des revenus. 
+
+La production a pour but de fabriquer et de livrer les produits vendus ou de vendre, selon le cas. 
+
+La recherche et le développement ont pour but de concevoir de nouveaux produits ou de trouver des produits existants à commercialiser par l’entreprise. 
 
 Sociofinancement:
 Offrir des plans d'armoires.
