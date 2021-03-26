@@ -1,7 +1,12 @@
 https://aqueous-fortress-30634.herokuapp.com/
 http://www.responsinator.com/?url=hedacuisine.com
 
-TODO: Install remarkable to edit markdown files.
+For markdown files:
+- Remarkable: The prettiest but install is broken with old package and snap version live preview not working
+- Retext: sudo apt install retext
+- Apostrophe
+- Mark my words
+- Keenwrite
 
 Faire une ébauche du brevet. Ensuite faire une ébauche de la vidéo de cuisine.
 La vidéo de cuisine serait très bien pour valider l'utilité de la machine.
