@@ -1,6 +1,8 @@
 https://aqueous-fortress-30634.herokuapp.com/
 http://www.responsinator.com/?url=hedacuisine.com
 
+TODO: Install remarkable to edit markdown files.
+
 Faire une ébauche du brevet. Ensuite faire une ébauche de la vidéo de cuisine.
 La vidéo de cuisine serait très bien pour valider l'utilité de la machine.
 Les deux ceux une très grande priorité. J'ai décidé de faire le brevet cette semaine.
