@@ -813,3 +813,6 @@ Pourquoi est-ce que je ne vais pas voir des investisseurs là là?
 
 
 Faire le timeline dans le programme Dia.
+
+
+Modifier l'appareil pour rajouter une petite porte sur le côté pour pouvoir communiquer avec d'autres appareils au niveau industrielle.
