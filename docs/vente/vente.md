@@ -1,11 +1,84 @@
-Quoi, Pour faire quoi, pour qui, Pour quand et combien.
-
 # Heda
 
-C'est quoi Heda? Heda réfere a plusieurs produits:
-- Une [armoire de cuisine intelligente](#armoire) incluant un bras robotique
-- [hedacuisine.com](), un site de [recettes](#recettes), plus particulierement des recettes zéro déchets.
-- Une [entreprise](#entreprise) québécoise établit a Sherbrooke
+Il faut changer quelque chose pour préserver l'environnement tel qu'on le connait. Une solution simple et utilisée depuis des millions d'années par l'etre humain est de cuisiner des aliments des champs locaux.
+
+<table>
+  <tr>
+    <td>La production alimentaire représente</td>
+    <td>L'emballage</td>
+    <td>Le transport</td>
+    <td>La transformation</td>
+  </tr>
+  <tr>
+    <td>26% des gaz a effets de serre</td>
+    <td>171 millions CO<sub>2</sub>eq</td>
+    <td>206 millions CO<sub>2</sub>eq</td>
+    <td>137 millions CO<sub>2</sub>eq</td>
+  </tr>
+</table>
+
+Si nos ancetres le faisais, pourquoi est-ce qu'on ne le fait plus? Parce qu'on a pas le **temps**. De nos jours, on achete des produits transformes a l'autre bout du monde dans des emballages inutiles. On se fait livrer des repas pret-a-cuisiner ou chaque ingredients sont separes dans des petits contenants de plastique. On achete du fast food qu'on sait est mauvais pour la santé, mais c'est rapide et pas tres cher.
+
+J'ai grandit sur une ferme au Québec, une province du Canada. On cultivait parfois du soja de grade consommation humaine. Est-ce qu'on en consommait? Non, on vendait a l'autre bout du monde au Japon. A l'épicerie, on achete du tofu et ca provient de ou? De *Chine*...
+
+### C'est quoi le but de **Heda**?
+
+Notre mission est de rapprocher la terre de notre assiette. On souhaite réaliser de la transformation alimentaire directement chez le consomateur. Pour se faire, nous avons inventé et concu une armoire de cuisine intelligente qui incorpore un bras robotique pour transformer les aliments primaires chez vous.
+
+### Économiser de l'argent
+
+En plus d'etre écologique, cuisiner des aliments primaires représente un autre avantage énorme, c'est économique! Un Canadien moyen pourrait économiser **1600$** par année **(1)**. Le prix des aliments transformés est souvent grandement supérieur aux aliments de base.
+
+<table>
+  <tr>
+    <td>Ingrédients du pain</td>
+    <td>Pain</td>
+    <td>Ingrédients du tofu</td>
+    <td>Tofu</td>
+  </tr>
+  <tr>
+    <td>50c</td>
+    <td>3$</td>
+    <td>50c</td>
+    <td>3$</td>
+  </tr>
+</table>
+
+### Lutter contre le gaspillage alimentaire
+
+Le gaspillage alimentaire représente une polution énorme. 6.5% des gaz a effets de serre mondial sont causé inutilement pour la production d'aliments gaspillés.
+
+Heda diminue le gaspillage en cuisinant des petites portions tous les jours au lieu de grande portions qu'on peut gaspiller.
+
+Heda favorise l'utilisation d'aliments du garde-manger qui se conserve beaucoup plus longtemps que les autres aliments.
+
+Enfin, Heda suggere des recettes avec les aliments pres d'etre périmé qui doivent etre cuisiné.
+
+### Favoriser l'alimentation écologique
+
+Contrairement aux croyances populaires, ce qu'on mange a un plus grand impact écologique que sa provencance. En excluant les terres agricoles pour les animaux, il reste 23% des terres agricoles qui produisent 82% des calories.et 63% des protéines.
+
+Une idée est d'ajouter une note d'impact environnementale pour chaque recette. C'est une estimation. Notez toutefois qu'il est beaucoup que ce qu'on mange représente une beaucoup plus grosse portion que d'ou ce que la nourriture provient.
+
+Les etres humains font généralement ce qui est le plus facile. Il faut que cuisiner végétarien sois plus facile que de cuisiner de la viande. On ne peut pas changer facilement les habitudes alimentaires des gens. Mais avec Heda, ca se fait tout seul. La spécialité d'Heda est la cuisine de recettes écologique. Un soir de semaine que tu rentres tard du boulot, fatigué, tu as le choix entre cuisiner de la viande et un accompagnement ou manger un repas végétarien sans cuisiner qu'est-ce que tu choisis?
+
+### Qu'est que Heda peut faire?
+
+*Ce site contient les recettes que Heda pourrait faire, explorez par vous meme!* Vous pouvez découvrir des recettes en naviguant par themes dans le menu de gauche ou recharchant dans la barre de recherche en haut.
+
+Ce qu'Heda peut faire dépend des outils et des appareils intégrés selon vos préférences culinaires. Le modele de base inclut un évier, un four et un bras mélangeur pour couper et mélanger des aliments.
+
+Le bras robotique aide énormément dans la préparation. Prenons l'exemple du tofu pour expliquer comment l'appareil fonctionne.
+
+### Préparation du tofu maison
+
+On veut faire du tofu a partir de grains de soja, qui se conserve facilement en inventaire pour ne jamais en manquer.
+
+Cuisiner du tofu prend au minimum 25h puisque les grains doivent tremper au moins 24h dans de l'eau. C'est embettant normalement parce qu'il faut planifier cuisiner le lendemain. Si un imprevu survient et vous ne voulez plus cuisiner le lendemain, c'est trop tard les grains sont déja dans l'eau. Tandis qu'avec Heda, **vous ne planifiez pas quand vous allez cuisiner, vous planifiez quand vous allez manger**!
+
+La premiere etape est de faire du lait de soja. Le bras robotique va chercher le pot de grains de soja, l'ouvre et verse la quantité requise dans un autre contenant. Ensuite il le remplit d'eau et fait tremper les grains pendant 24h.
+
+Le lendemain, le bras robotique jette l'eau de trempage et verse de la nouvelle eau fraiche. 
 
 ## Une armoire de cuisine intelligente
 
@@ -119,6 +192,9 @@ TODO: Trouver des statistiques de combien un aliment se déplace présentement.
 
 ## <a name="entreprise"></a> L'entreprise
 
+TODO: Parler de la popularité des recettes dans un pot.
+Parler de la popularité des pots.
+
 - Les armoires de cuisines, un nouveau marché plein de potentiel
   - la part de marché des réfrigérateurs intelligents
   - la part de marché des armoires de cuisine
@@ -154,9 +230,30 @@ Rajouter de la valeur a vos propriétés en installant une armoire de cuisine He
 
 Heda est une bonne places pour faire découvrir vos recettes. Contactez-nous pour obtenir de la publicité gratuitement en insérant des liens vers vos recettes sur notre site.
 
+## Calculs
+
+Données **(1)**:
+- 13.2 milliard CO<sub>2</sub>eq globalement
+- 26% des gaz a effets de serre sont causés par la production alimentaire
+- 25% de la production alimentaire est gaspillée
+- 5% des gaz a effets de serre de la production alimentaire sont causes par l'emballage
+- 6% des gaz a effets de serre de la production alimentaire sont causes par le transport
+- 4% des gaz a effets de serre de la production alimentaire sont causes par la transformation
+
+Hypotheses:
+<strike>- En utilisant des aliments primaires au lieu des aliments transformés, il est possible de réduire de 50% l'émission de CO<sub>2</sub>eq pour le transport.</strike>
+
+Calculs:
+- 13.2 milliards * 26% * 25% = 858 millions CO<sub>2</sub>eq pour le gaspillage alimentaire
+- 13.2 milliards * 26% * 5% = 171 millions CO<sub>2</sub>eq pour l'emballage des aliments
+- 13.2 milliards * 26% * 6% = 206 millions CO<sub>2</sub>eq pour le transport des aliments
+- 13.2 milliards * 26% * 4% = 137 millions CO<sub>2</sub>eq pour la transformation
+
 ## Sources
 
 Statistique Canada. Tableau 11-10-0222-01  Dépenses des ménages, Canada, régions et provinces
+
+https://ourworldindata.org/environmental-impacts-of-food
 
 ## Autres points
 
@@ -296,3 +393,14 @@ Domotique intelligente
 No matter what you’re selling, your most formidable obstacle is prospects’ adherence to the status quo. Your primary adversary, in other words, is a voice inside people’s heads that goes, We’ve gotten along just fine without it, and we’ll always be fine without it.
 
 https://medium.com/the-mission/the-best-sales-pitch-ive-seen-all-year-7fa92afaa248
+
+Quoi, Pour faire quoi, pour qui, Pour quand et combien.
+
+C'est quoi Heda? Heda réfere a plusieurs produits:
+- Une [armoire de cuisine intelligente](#armoire) incluant un bras robotique
+- [hedacuisine.com](), un site de [recettes](#recettes), plus particulierement des recettes zéro déchets.
+- Une [entreprise](#entreprise) québécoise établit a Sherbrooke
+
+On ne veut pas reculer en arriere. On est au 21e siecle, on devrait etre capable de faire mieux! On devrait automatiser la cuisine!
+
+Cuisiner avec Heda coute tellement pas cher, meme Legault aurait les moyens de nourrir sa famille avec.
