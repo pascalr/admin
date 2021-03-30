@@ -1,3 +1,7 @@
+## Innovation
+
+Le site internet est bilingue! Selon certaines sources, 50% de la population est bilingue.
+
 # Heda
 
 Il faut changer quelque chose pour préserver l'environnement tel qu'on le connait. Une solution simple et utilisée depuis des millions d'années par l'etre humain est de cuisiner des aliments des champs locaux.
@@ -221,6 +225,10 @@ Une seule machine Heda peut produire de grande quantité d'aliments transformés
 #### Jumelé a des réfrigérateurs intelligents
 
 Possibilité de jumeler a des réfrigérateurs intelligents pour maintenir un inventaire encore plus complet.
+
+#### Jumelé a des paniers de fruits et légumes bios
+
+Possibilité de jumeler a des paniers de fruits et légumes bios pour des recettes.
 
 #### Pour les promotteurs immobiliers
 

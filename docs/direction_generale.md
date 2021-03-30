@@ -4,17 +4,18 @@ Plan
 1.  Demande de brevet (1 semaine)
 2.  Une page de vente (page d’accueil) sur mon site internet (1 semaine)
 3.  Modèle d'affaires (lorsque mon cours est terminé) (1 semaine)
-4.  Peaufiner mon site internet (MVP) et le rendre publique (1 semaine)
-5.  Trouver des clients et/ou des investisseurs (1 semaine)
-6.  Fabriquer une belle armoire de cuisine (2 semaines)
-7.  Trouver des clients et/ou des investisseurs (1 semaine)
-8.  Développer une dizaine de bonnes recettes en exemple (2 semaine)
-9.  Faire une vidéo publicitaire de cuisine (1 semaine)
-10. Trouver des clients et/ou des investisseurs (1 semaine)
-11. Démarrer l'entreprise officiellement.
-12. Contacter des médias et essayer de faire parler de l'entreprise
+4.  Une extension dans le navigateur pour enregistrer des recettes (1 semaine)
+5.  Peaufiner mon site internet (MVP) et le rendre publique (1 semaine)
+6.  Trouver des clients et/ou des investisseurs (1 semaine)
+7.  Fabriquer une belle armoire de cuisine (2 semaines)
+8.  Trouver des clients et/ou des investisseurs (1 semaine)
+9.  Développer une dizaine de bonnes recettes en exemple (2 semaine)
+10.  Faire une vidéo publicitaire de cuisine (1 semaine)
+11. Trouver des clients et/ou des investisseurs (1 semaine)
+12. Démarrer l'entreprise officiellement.
+13. Contacter des médias et essayer de faire parler de l'entreprise
     (1 semaine)
-13. Financement participatif. Vendre des réservations à 50$.
+14. Financement participatif. Vendre des réservations à 50$.
 
 Idées
 -----
