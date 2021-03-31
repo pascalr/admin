@@ -1,162 +1,242 @@
-## Innovation
-
-Le site internet est bilingue! Selon certaines sources, 50% de la population est bilingue.
-
 # Heda
 
 Il faut changer quelque chose pour préserver l'environnement tel qu'on le connait. Une solution simple et utilisée depuis des millions d'années par l'etre humain est de cuisiner des aliments des champs locaux.
 
-<table>
-  <tr>
-    <td>La production alimentaire représente</td>
-    <td>L'emballage</td>
-    <td>Le transport</td>
-    <td>La transformation</td>
-  </tr>
-  <tr>
-    <td>26% des gaz a effets de serre</td>
-    <td>171 millions CO<sub>2</sub>eq</td>
-    <td>206 millions CO<sub>2</sub>eq</td>
-    <td>137 millions CO<sub>2</sub>eq</td>
-  </tr>
-</table>
+<div style="display: inline-block; border: 1px solid black; padding: 50px 10px; margin: 20px;">
+  <b style="font-size: 1.4em;">26% des gaz a effets de serre</b><br>
+  causé par la production alimentaire
+</div>
+<div style="display: inline-block; border: 1px solid black; padding: 50px 10px; margin: 20px;">
+  <b style="font-size: 1.4em;">171 millions de tonnes CO<sub>2</sub>eq</b><br>
+  causé par l'emballage
+</div>
+<div style="display: inline-block; border: 1px solid black; padding: 50px 10px; margin: 20px;">
+  <b style="font-size: 1.4em;">206 millions de tonnes CO<sub>2</sub>eq</b><br>
+  causé par le transport d'aliments
+</div>
 
-Si nos ancetres le faisais, pourquoi est-ce qu'on ne le fait plus? Parce qu'on a pas le **temps**. De nos jours, on achete des produits transformes a l'autre bout du monde dans des emballages inutiles. On se fait livrer des repas pret-a-cuisiner ou chaque ingredients sont separes dans des petits contenants de plastique. On achete du fast food qu'on sait est mauvais pour la santé, mais c'est rapide et pas tres cher.
+*Source: [https://ourworldindata.org/environmental-impacts-of-foo]()*
 
-J'ai grandit sur une ferme au Québec, une province du Canada. On cultivait parfois du soja de grade consommation humaine. Est-ce qu'on en consommait? Non, on vendait a l'autre bout du monde au Japon. A l'épicerie, on achete du tofu et ca provient de ou? De *Chine*...
+Si nos ancetres cuisinait des produits agricoles locaux, pourquoi est-ce qu'on ne le fait plus? Parce qu'on a pas le **temps**. De nos jours, on achete des produits transformes a l'autre bout du monde dans des emballages inutiles. On se fait livrer des repas pret-a-cuisiner ou chaque ingredients sont separes dans des petits contenants de plastique. On achete du fast food qu'on sait est mauvais pour la santé, mais c'est rapide et pas tres cher.
 
-### C'est quoi le but de **Heda**?
+**TODO: Une image d'aliments naturels**
 
-Notre mission est de rapprocher la terre de notre assiette. On souhaite réaliser de la transformation alimentaire directement chez le consomateur. Pour se faire, nous avons inventé et concu une armoire de cuisine intelligente qui incorpore un bras robotique pour transformer les aliments primaires chez vous.
+Imaginez si auriez le temps de cuisiner a la maison. Au lieu d'acheter des produits emballez a l'épicerie, vous iriez au marché local acheter des aliments naturels comme de l'avoine, de la farine de blé, des fruits, des oeufs, du lait, etc. Vous prendriez le temps de cuisiner des bons petits repas maison réconfortants.
+
+### L'arrivée de Heda
+
+Notre mission est de rapprocher la terre de notre assiette. On souhaite que la transformation alimentaire se réalise directement chez le consomateur. Pour se faire, nous avons inventé et concu une armoire de cuisine intelligente avec un bras robotique qui transforme les aliments pour vous. Moins de temps dans la cuisine, plus de temps en famille 👪💖.
 
 ### Économiser de l'argent
 
-En plus d'etre écologique, cuisiner des aliments primaires représente un autre avantage énorme, c'est économique! Un Canadien moyen pourrait économiser **1600$** par année **(1)**. Le prix des aliments transformés est souvent grandement supérieur aux aliments de base.
+En plus d'etre écologique, cuisiner des aliments primaires représente un autre avantage énorme: c'est économique! Un Canadien moyen pourrait économiser **1600$** par année **(1)**, principalement, parce que le prix des aliments transformés est souvent grandement supérieur aux aliments de base.
+
+**Cout energetique?**
 
 <table>
+  <caption>Économies en cuisinant a partir d'ingrédients de base <b>(1)</b></caption>
+  <thead>
   <tr>
-    <td>Ingrédients du pain</td>
+    <th></th>
+    <th>Cout du produit</th>
+    <th>Cout des ingrédients</th>
+    <th>Économie</th>
+  </tr>
+  <thead>
+  <tbody>
+  <tr>
     <td>Pain</td>
-    <td>Ingrédients du tofu</td>
-    <td>Tofu</td>
+    <td>3$</td>
+    <td>50c</td>
+    <td><b>83.33%</b></td>
   </tr>
   <tr>
-    <td>50c</td>
+    <td>Hummus</td>
     <td>3$</td>
     <td>50c</td>
-    <td>3$</td>
+    <td><b>83.33%</b></td>
   </tr>
+  <tr>
+    <td>Muffins</td>
+    <td>3$</td>
+    <td>50c</td>
+    <td><b>83.33%</b></td>
+  </tr>
+  <tr>
+    <td>Tofu</td>
+    <td>3$</td>
+    <td>50c</td>
+    <td><b>83.33%</b></td>
+  </tr>
+  <tr>
+    <td>Yogourt</td>
+    <td>3$</td>
+    <td>50c</td>
+    <td><b>83.33%</b></td>
+  </tr>
+  </tbody>
 </table>
 
-### Lutter contre le gaspillage alimentaire
-
-Le gaspillage alimentaire représente une polution énorme. 6.5% des gaz a effets de serre mondial sont causé inutilement pour la production d'aliments gaspillés.
-
-Heda diminue le gaspillage en cuisinant des petites portions tous les jours au lieu de grande portions qu'on peut gaspiller.
-
-Heda favorise l'utilisation d'aliments du garde-manger qui se conserve beaucoup plus longtemps que les autres aliments.
-
-Enfin, Heda suggere des recettes avec les aliments pres d'etre périmé qui doivent etre cuisiné.
-
-### Favoriser l'alimentation écologique
-
-Contrairement aux croyances populaires, ce qu'on mange a un plus grand impact écologique que sa provencance. En excluant les terres agricoles pour les animaux, il reste 23% des terres agricoles qui produisent 82% des calories.et 63% des protéines.
-
-Une idée est d'ajouter une note d'impact environnementale pour chaque recette. C'est une estimation. Notez toutefois qu'il est beaucoup que ce qu'on mange représente une beaucoup plus grosse portion que d'ou ce que la nourriture provient.
-
-Les etres humains font généralement ce qui est le plus facile. Il faut que cuisiner végétarien sois plus facile que de cuisiner de la viande. On ne peut pas changer facilement les habitudes alimentaires des gens. Mais avec Heda, ca se fait tout seul. La spécialité d'Heda est la cuisine de recettes écologique. Un soir de semaine que tu rentres tard du boulot, fatigué, tu as le choix entre cuisiner de la viande et un accompagnement ou manger un repas végétarien sans cuisiner qu'est-ce que tu choisis?
-
-### Qu'est que Heda peut faire?
-
-*Ce site contient les recettes que Heda pourrait faire, explorez par vous meme!* Vous pouvez découvrir des recettes en naviguant par themes dans le menu de gauche ou recharchant dans la barre de recherche en haut.
-
-Ce qu'Heda peut faire dépend des outils et des appareils intégrés selon vos préférences culinaires. Le modele de base inclut un évier, un four et un bras mélangeur pour couper et mélanger des aliments.
-
-Le bras robotique aide énormément dans la préparation. Prenons l'exemple du tofu pour expliquer comment l'appareil fonctionne.
-
-### Préparation du tofu maison
-
-On veut faire du tofu a partir de grains de soja, qui se conserve facilement en inventaire pour ne jamais en manquer.
-
-Cuisiner du tofu prend au minimum 25h puisque les grains doivent tremper au moins 24h dans de l'eau. C'est embettant normalement parce qu'il faut planifier cuisiner le lendemain. Si un imprevu survient et vous ne voulez plus cuisiner le lendemain, c'est trop tard les grains sont déja dans l'eau. Tandis qu'avec Heda, **vous ne planifiez pas quand vous allez cuisiner, vous planifiez quand vous allez manger**!
-
-La premiere etape est de faire du lait de soja. Le bras robotique va chercher le pot de grains de soja, l'ouvre et verse la quantité requise dans un autre contenant. Ensuite il le remplit d'eau et fait tremper les grains pendant 24h.
-
-Le lendemain, le bras robotique jette l'eau de trempage et verse de la nouvelle eau fraiche. 
-
-## Une armoire de cuisine intelligente
-
-#1. Start with a big, undeniable change that creates stakes
-
-No matter what you’re selling, your most formidable obstacle is prospects’ adherence to the status quo. Your primary adversary, in other words, is a voice inside people’s heads that goes, We’ve gotten along just fine without it, and we’ll always be fine without it.
-
-https://medium.com/the-mission/the-best-sales-pitch-ive-seen-all-year-7fa92afaa248
-
-Le mouvement écologique est indéniable. TODO: Statistique nombre d'épicerie en vrac. TODO: Statistique réfrigérateurs intelligents qui ont comme objectif d'éliminer le gaspillage alimentaire ...
-
-la solution la plus simple est de cuisiner a la maison, mais on a pas le temps
-
-Statistiques 
-
-mais, il reste beaucoup encore a améliorer:
-
-Statistiques **gaspillage alimentaires**, **suremballage**, etc
-
-On veut cuisiner des ingrédients locaux directement du champs. On veut éviter les usines de transformations alimentaires. On veut que ca passe du champs a notre assiette le plus directement possible.
-
-La solution c'est d'automatiser la cuisine. Transformer les aliments de base directement a la maison.
-
-Notre solution est une armoire de cuisine intelligente incluant un bras robotique.
-
-## <a name="recettes"></a> Plus de 200 recettes zéro déchet!
-
-Découvrez des recettes zéro déchet en naviguant par themes dans les menus de gauches ou en recherchant dans la barre de navigation en haut.
-
-Inscrivez vous sur ce site pour bénificier de plusieurs avantages:
-- Gérez et accédez vos propres listes de recettes partout en tout temps
-- Partagez vos recettes avec votre famille ou vos amis.
-- Obtenez des suggestions de recettes selon vos préférences
-- Échangez avec d'autres membres en écrivant des commentaires
-
-### Des recettes écologiques
-
-Le mouvement zéro déchet tente d'éliminer les déchets pour des raisons environnementales. Toutes les recettes publiques sur ce site sont composés a partir d'aliments primaires qui peuvent s'acheter en vrac, sans emballages.
-
-## <a name="armoire"></a> Une armoire de cuisine intelligente
-
-Heda, c'est aussi une invention québécoise: une armoire de cuisine intelligente incluant un bras robotique.
+### <a name="armoire"></a> Une armoire de cuisine intelligente
 
 Heda offre les memes avantages qu'un réfrigérateur intelligent:
 - Avertit lorsqu'un aliment est pres d'etre périmé et suggere des recettes pour l'utiliser.
 - Genere une liste d'épicerie automatiquement selon les habitudes et l'inventaire.
 - Suggere de recettes avec des ingrédients que vous avez.
-- Integre un écran tactile intégré pour vous permettre de partager vos photos, afficher la météo, laisser des notes, diffuser de la musique, surveiller la chambre du bébé, commander vos courses en ligne et bien d'autres.
+- Integre un écran tactile pour vous permettre de partager vos photos, afficher la météo, laisser des notes, diffuser de la musique, surveiller la chambre du bébé, commander vos courses en ligne et bien d'autres.
 
-Toutefois, c'est encore mieux parce que:
-- L'inventaire est beaucoup plus précis, il est controlé par le poids et non visuellement.
-- Le bras robotique peut aussi aider dans la réalisations de plusieurs taches de cuisines.
+### Lutter contre le gaspillage alimentaire
 
-### Une main de plus dans la cuisine!
+Le gaspillage alimentaire représente une polution énorme. 6.5% des gaz a effets de serre mondial sont causé inutilement pour la production d'aliments gaspillés **(1)**.
 
-Heda possede un bras robotique qui est capable de sortir, peser et ranger les aliments. Il peut sortir tous les ingrédients nécessaires pour une recette et verser les bonnes quantités.
+Heda diminue le gaspillage alimentaire en:
+- cuisinant des petites portions tous les jours au lieu de grandes portions qu'on peut gaspiller
+- favorisant l'utilisation d'aliments du garde-manger qui se conserve beaucoup plus facilement
+- suggérant des recettes avec les aliments pres d'etre périmés qui doivent etre cuisinés
 
-Heda possede un bras melangeur et peut couper ou melanger des ingredients pour vous.
+### Favoriser l'alimentation écologique
 
-Heda possede meme un petit four pour cuisiner certaines recettes au complet sans interventions.
+Contrairement aux croyances populaires, ce qu'on mange a un plus grand impact écologique que sa provencance. Par exemple, une alimentation végétarienne est beaucoup plus écologique qu'une alimentation carnivore. En excluant les terres agricoles pour les animaux, il reste 23% des terres agricoles qui produisent 82% des calories et 63% des protéines.
 
-Un certain modele de Heda possede un évier, ce qui lui permet de faire tremper des aliments, d'accéder a l'eau comme ingrédient et de cuisiner beaucoup plus de recettes sans aide.
+Les etres humains ont tendance a faire ce qui est le plus facile. Il faut que cuisiner végétarien sois plus facile que de cuisiner de la viande. On ne peut pas changer facilement les habitudes alimentaires des gens. Mais avec Heda, ca se fait tout seul. La spécialité d'Heda est la cuisine de recettes écologique. Un soir de semaine que tu rentres tard du boulot, fatigué, tu as le choix entre cuisiner de la viande ou manger un repas végétarien sans cuisiner, qu'est-ce que tu choisis?
 
-### Ne manquez plus de rien!
+### Qu'est que Heda peut faire?
 
-Heda vous avertit si vous commencez a manquer d'un certain aliment et peut meme vous générer une liste d'épicerie.
+*Ce site contient les recettes que Heda pourrait faire, explorez par vous meme!* Vous pouvez découvrir des recettes en naviguant par themes dans le menu de gauche ou recharchant dans la barre de recherche en haut.
 
-Heda peut vous donner des suggestions d'alternatives s'il vous manque un aliment. Plus de beurre pour vos gateaux? Heda trouve l'équivalent en huile, lait, creme ou autre pour vous!
+Toutes les recettes publiques sur ce site sont composés a partir d'aliments primaires qui peuvent possiblement s'acheter en vrac, sans emballages.
 
-Ce n'est pas grave si vous vous rendez compte que vous n'avez plus de mayonnaise, Heda va vous en faire! De la bonne mayonnaise maison en plus, c'est bien meilleur!
+## FAQs
 
-Et meme si vous n'arretez pas de procastiner de faire l'épicerie et qu'il vous manque beaucoup d'aliments, Heda va probablement etre capable de trouver des recettes avec ce que vous avez en inventaire, auquel vous n'auriez probablement pas pensez.
+### Quel est le stade de développement de Heda?
 
-### Économiser de l'argent
+Heda est présentement au stade de recherche et développement. Un modele de base a été concu, mais il reste beaucoup de travail a faire pour avoir un produit stable.
+
+### Je trouve le projet génial, comment puis-je contribuer?
+
+Pour l'instant nous sommes principalement a la recherche de financement. Si vous etes investisseurs, contactez-nous! TODO: Link
+
+Sinon, vous pouvez quand meme nous laissez vos coordonées et nous vous contacterons si une opportunité se présente.
+
+### J'ai des questions ou des commaires, comment vous contactez?
+
+Vous pouvez nous envoyez un courriel a .... TODO: Link.
+
+## Calculs
+
+### Impact environnementale
+
+Données **(1)**:
+- 13.2 milliard CO<sub>2</sub>eq globalement
+- 26% des gaz a effets de serre sont causés par la production alimentaire
+- 25% de la production alimentaire est gaspillée
+- 5% des gaz a effets de serre de la production alimentaire sont causes par l'emballage
+- 6% des gaz a effets de serre de la production alimentaire sont causes par le transport
+- 4% des gaz a effets de serre de la production alimentaire sont causes par la transformation
+
+Hypotheses:
+<strike>- En utilisant des aliments primaires au lieu des aliments transformés, il est possible de réduire de 50% l'émission de CO<sub>2</sub>eq pour le transport.</strike>
+
+Calculs:
+- 13.2 milliards * 26% * 25% = 858 millions CO<sub>2</sub>eq pour le gaspillage alimentaire
+- 13.2 milliards * 26% * 5% = 171 millions CO<sub>2</sub>eq pour l'emballage des aliments
+- 13.2 milliards * 26% * 6% = 206 millions CO<sub>2</sub>eq pour le transport des aliments
+- 13.2 milliards * 26% * 4% = 137 millions CO<sub>2</sub>eq pour la transformation
+
+### Économie d'argent
+
+#### Données
+
+Pour pouvoir bien comparer la différence, tous les prix ont été pris sur le site de [maxi](), la meme journée, sans rabais. Les formats ont été choisi de la meme maniere qu'Heda cuisine: un grand format pour les aliments de base et un petit format pour les produits.
+
+31 mars
+
+<table>
+  <caption>Couts des ingrédients <b>(1)</b></caption>
+  <thead>
+  <tr>
+    <th>Ingrédient</th>
+    <th>Marque</th>
+    <th>Poids ou volume</th>
+    <th>Cout</th>
+  </tr>
+  <thead>
+  <tbody>
+  <tr>
+    <td>Farine</td>
+    <td>Robin Hood</td>
+    <td>10 kg</td>
+    <td>13.98$</td>
+  </tr>
+  <tr>
+    <td>Levure</td>
+    <td>Fleischmann's</td>
+    <td>450 g</td>
+    <td>7.47$</td>
+  </tr>
+    <tr>
+    <td>Sel de table</td>
+    <td>Windsor</td>
+    <td>1 kg</td>
+    <td>1.58$</td>
+  </tr>
+  <tr>
+    <td>Sucre</td>
+    <td>Lantic</td>
+    <td>2 kg</td>
+    <td>2.47$</td>
+  </tr>
+  <tr>
+    <td>Huile végétale</td>
+    <td>No Name</td>
+    <td>3 L</td>
+    <td>4.88$</td>
+  </tr>
+  </tbody>
+</table>
+
+<table>
+  <caption>Couts des produits <b>(1)</b></caption>
+  <thead>
+  <tr>
+    <th>Produit</th>
+    <th>Marque</th>
+    <th>Cout</th>
+  </tr>
+  <thead>
+  <tbody>
+  <tr>
+    <td>Pain blanc (675 g)</td>
+    <td>Gadoua</td>
+    <td>3.18$</td>
+  </tr>
+  <tr>
+    <td>Hummus traditionnel (260 g)</td>
+    <td>Fontaine santé</td>
+    <td>4.18$</td>
+  </tr>
+  <tr>
+    <td>Muffins aux morceaux de chocolat(600 g)</td>
+    <td>Farmer's market</td>
+    <td>4.5$</td>
+  </tr>
+  <tr>
+    <td>Tofu (420 g)</td>
+    <td>Rooster</td>
+    <td>1.88$</td>
+  </tr>
+  <tr>
+    <td>Yogourt (750 g)</td>
+    <td>Astro</td>
+    <td>2.44$</td>
+  </tr>
+  </tbody>
+</table>
+
+
+#### Pain
+
+#### Calcul général
 
 En 2017, les canadiens dépensent en moyenne 8 968$ par année pour des aliments dont 6 364$ pour des aliments achetés au magasin <sup>[(1)](#source_1)</sup>. Sauver une petite fraction permet de faire de grandes économies.
 
@@ -166,33 +246,13 @@ Supposons que 20% du temps on mange du fast food simplement parce qu'on a pas le
 
 Les deux combinés ensemble représente une économie de pres de 1600$ par année!
 
-Vous manger tous les midis au restaurant? Utiliser Heda pour vous préparer des lunchs pour sauver ...
+## Sources
 
-*Utiliser notre outil pour calculer combien vous sauveriez avec Heda!*
+Statistique Canada. Tableau 11-10-0222-01  Dépenses des ménages, Canada, régions et provinces
 
+https://ourworldindata.org/environmental-impacts-of-food
 
-### Un bon geste pour l'environnement
-
-Le gaspillage alimentaire est un gros problème au Canada. 35.5 millions de tonnes de nourriture sont jetée à la poubelle chaque année. (*citation requise*)
-
-La machine gère l’inventaire et évite que les aliments ne soient périmés en restant trop longtemps au garde-manger. Aussi, elle vous donne des suggestions de recettes pour manger les ingrédients qui commencent à être dû.
-
-Avec le vrac, tu peux acheter des petites quantités d’aliments, juste ce dont tu as besoin. En même temps tu manges plus frais.
-
-La machine favorise l’utilisation d’ingrédients secs qui se conservent plus facilement et qui peut s’utiliser en petite portions. Pas besoin d’ouvrir une grande conserve de pois chiche, la machine va faire tremper et cuire la petite portion que vous avez de besoin. Plus obligé de manger la salade lentille pendants des jours.
-
-Il existe d’autres alternatives pour éviter le gaspillage alimentaire comme les services de prêts-à-cuisiner,  mais au bout de la ligne, des recherches montrent qu’elles sont plus polluants que d’acheter en épicerie à cause du suremballage.
-
-Tandis que ma machine favorise grandement le zéro-déchet. Tu peux acheter des aliments en vrac à l’épicerie pour remplir tes pots et tes bouteilles. Vous aurez la conscience tranquille en générant moins de déchets de plastique.
-
-Avec mon invention, non seulement tu sauves du temps, tu sauves aussi la planète.
-
-Tranforme directement les aliments en aliments secondaires, éviter le transport inutile du champs a l'usine et de l'usine au champs. L'alimentation devrait se passer directement du champs a votre epicerie locale en vrac.
-
-Eviter le stockage d'aliments secondaires transformés.
-
-TODO: Trouver des statistiques de combien un aliment se déplace présentement.
-
+<br/><br/><br/><br/><br/><br/><br/><br/>
 
 ## <a name="entreprise"></a> L'entreprise
 
@@ -238,30 +298,6 @@ Rajouter de la valeur a vos propriétés en installant une armoire de cuisine He
 
 Heda est une bonne places pour faire découvrir vos recettes. Contactez-nous pour obtenir de la publicité gratuitement en insérant des liens vers vos recettes sur notre site.
 
-## Calculs
-
-Données **(1)**:
-- 13.2 milliard CO<sub>2</sub>eq globalement
-- 26% des gaz a effets de serre sont causés par la production alimentaire
-- 25% de la production alimentaire est gaspillée
-- 5% des gaz a effets de serre de la production alimentaire sont causes par l'emballage
-- 6% des gaz a effets de serre de la production alimentaire sont causes par le transport
-- 4% des gaz a effets de serre de la production alimentaire sont causes par la transformation
-
-Hypotheses:
-<strike>- En utilisant des aliments primaires au lieu des aliments transformés, il est possible de réduire de 50% l'émission de CO<sub>2</sub>eq pour le transport.</strike>
-
-Calculs:
-- 13.2 milliards * 26% * 25% = 858 millions CO<sub>2</sub>eq pour le gaspillage alimentaire
-- 13.2 milliards * 26% * 5% = 171 millions CO<sub>2</sub>eq pour l'emballage des aliments
-- 13.2 milliards * 26% * 6% = 206 millions CO<sub>2</sub>eq pour le transport des aliments
-- 13.2 milliards * 26% * 4% = 137 millions CO<sub>2</sub>eq pour la transformation
-
-## Sources
-
-Statistique Canada. Tableau 11-10-0222-01  Dépenses des ménages, Canada, régions et provinces
-
-https://ourworldindata.org/environmental-impacts-of-food
 
 ## Autres points
 
@@ -396,9 +432,25 @@ the ones who are most successful get the word out about it first."
 Domotique intelligente
 ======================
 
+
+1. It begins by stating a big change has taken place that affects the audience.
+2. It names an enemy.
+3. It teases the “promised land” – what the world will look like for the people who deal with the new change the right way.
+4. It highlights a few features as ingredients in a sort of magic potion that can bring people to the promised land.
+5. It brings the point home with some proof that the whole story is true.
+
+
 #1. Start with a big, undeniable change that creates stakes
 
 No matter what you’re selling, your most formidable obstacle is prospects’ adherence to the status quo. Your primary adversary, in other words, is a voice inside people’s heads that goes, We’ve gotten along just fine without it, and we’ll always be fine without it.
+
+#5. Present your best evidence
+
+Of course, even if you’ve laid out the story perfectly, audiences will be skeptical. As they should be, since your Promised Land is by definition difficult to reach!
+
+So you must present evidence of your ability to deliver happily-ever-after. The best evidence is stories about people—told in their own voices—who say you helped reach the Promised Land:
+
+Malheureusement, je n'ai pas de preuve pour l'instant...
 
 https://medium.com/the-mission/the-best-sales-pitch-ive-seen-all-year-7fa92afaa248
 
@@ -412,3 +464,114 @@ C'est quoi Heda? Heda réfere a plusieurs produits:
 On ne veut pas reculer en arriere. On est au 21e siecle, on devrait etre capable de faire mieux! On devrait automatiser la cuisine!
 
 Cuisiner avec Heda coute tellement pas cher, meme Legault aurait les moyens de nourrir sa famille avec.
+
+## <a name="recettes"></a> Plus de 200 recettes zéro déchet!
+
+Découvrez des recettes zéro déchet en naviguant par themes dans les menus de gauches ou en recherchant dans la barre de navigation en haut.
+
+Inscrivez vous sur ce site pour bénificier de plusieurs avantages:
+- Gérez et accédez vos propres listes de recettes partout en tout temps
+- Partagez vos recettes avec votre famille ou vos amis.
+- Obtenez des suggestions de recettes selon vos préférences
+- Échangez avec d'autres membres en écrivant des commentaires
+
+<strike>Une idée est d'ajouter une note d'impact environnementale pour chaque recette. C'est une estimation. Notez toutefois qu'il est beaucoup que ce qu'on mange représente une beaucoup plus grosse portion que d'ou ce que la nourriture provient.</stike>
+
+<strike>J'ai grandit sur une ferme au Québec, une province du Canada. On cultivait parfois du soja de grade consommation humaine. Est-ce qu'on en consommait? Non, on vendait a l'autre bout du monde au Japon. A l'épicerie, on achete du tofu et ca provient de ou? De *Chine*...</stike>
+
+Ce qu'Heda peut faire dépend des outils et des appareils intégrés selon vos préférences culinaires. Le modele de base inclut un évier, un four, des cueuilleres, des spatules et un bras mélangeur pour couper et mélanger des aliments.
+
+Le bras robotique aide énormément dans la préparation. Toutefois, il nécessite souvent des petites interventions. Par exemple, il faut lui donner des aliments du réfrigérateur.
+
+Prenons l'exemple du tofu pour expliquer comment l'appareil fonctionne.
+
+### Préparation du tofu maison
+
+On veut faire du tofu a partir de grains de soja, qui se conserve facilement en inventaire pour ne jamais en manquer.
+
+Cuisiner du tofu prend au minimum 25h puisque les grains doivent tremper au moins 24h dans de l'eau. C'est embettant normalement parce qu'il faut planifier cuisiner le lendemain. Si un imprevu survient et vous ne voulez plus cuisiner le lendemain, c'est trop tard les grains sont déja dans l'eau. Tandis qu'avec Heda, **vous ne planifiez pas quand vous allez cuisiner, vous planifiez quand vous allez manger**!
+
+La premiere etape est de faire du lait de soja. Le bras robotique va chercher le pot de grains de soja, l'ouvre et verse la quantité requise dans un autre contenant. Ensuite il le remplit d'eau et fait tremper les grains pendant 24h.
+
+Le lendemain, le bras robotique jette l'eau de trempage et verse de la nouvelle eau fraiche. Il coupe et et mélange la solution.
+
+Il passe ensuite la solution dans un filtre pour extraire le jus. La partie filtré, nommée Okara, n'est pas perdue. Elle est récupéré et mise de coté. Elle peut etre utilisé dans plusieurs recettes qu'Heda peut vous suggérer. TODO: Link Okara.
+
+Le liquide extrait est ensuite chauffé et remué pendant une 30e de minutes. Et on obtient du lait de soja!
+
+...
+
+### Une main de plus dans la cuisine!
+
+Heda possede un bras robotique qui est capable de sortir, peser et ranger les aliments. Il peut sortir tous les ingrédients nécessaires pour une recette et verser les bonnes quantités.
+
+Heda possede un bras melangeur et peut couper ou melanger des ingredients pour vous.
+
+Heda possede meme un petit four pour cuisiner certaines recettes au complet sans interventions.
+
+Un certain modele de Heda possede un évier, ce qui lui permet de faire tremper des aliments, d'accéder a l'eau comme ingrédient et de cuisiner beaucoup plus de recettes sans aide.
+
+### Ne manquez plus de rien!
+
+Heda vous avertit si vous commencez a manquer d'un certain aliment et peut meme vous générer une liste d'épicerie.
+
+Heda peut vous donner des suggestions d'alternatives s'il vous manque un aliment. Plus de beurre pour vos gateaux? Heda trouve l'équivalent en huile, lait, creme ou autre pour vous!
+
+Ce n'est pas grave si vous vous rendez compte que vous n'avez plus de mayonnaise, Heda va vous en faire! De la bonne mayonnaise maison en plus, c'est bien meilleur!
+
+Et meme si vous n'arretez pas de procastiner de faire l'épicerie et qu'il vous manque beaucoup d'aliments, Heda va probablement etre capable de trouver des recettes avec ce que vous avez en inventaire, auquel vous n'auriez probablement pas pensez.
+
+### Économiser de l'argent
+
+
+
+Vous manger tous les midis au restaurant? Utiliser Heda pour vous préparer des lunchs pour sauver ...
+
+*Utiliser notre outil pour calculer combien vous sauveriez avec Heda!*
+
+
+### Un bon geste pour l'environnement
+
+Le gaspillage alimentaire est un gros problème au Canada. 35.5 millions de tonnes de nourriture sont jetée à la poubelle chaque année. (*citation requise*)
+
+La machine gère l’inventaire et évite que les aliments ne soient périmés en restant trop longtemps au garde-manger. Aussi, elle vous donne des suggestions de recettes pour manger les ingrédients qui commencent à être dû.
+
+Avec le vrac, tu peux acheter des petites quantités d’aliments, juste ce dont tu as besoin. En même temps tu manges plus frais.
+
+La machine favorise l’utilisation d’ingrédients secs qui se conservent plus facilement et qui peut s’utiliser en petite portions. Pas besoin d’ouvrir une grande conserve de pois chiche, la machine va faire tremper et cuire la petite portion que vous avez de besoin. Plus obligé de manger la salade lentille pendants des jours.
+
+Il existe d’autres alternatives pour éviter le gaspillage alimentaire comme les services de prêts-à-cuisiner,  mais au bout de la ligne, des recherches montrent qu’elles sont plus polluants que d’acheter en épicerie à cause du suremballage.
+
+Tandis que ma machine favorise grandement le zéro-déchet. Tu peux acheter des aliments en vrac à l’épicerie pour remplir tes pots et tes bouteilles. Vous aurez la conscience tranquille en générant moins de déchets de plastique.
+
+Avec mon invention, non seulement tu sauves du temps, tu sauves aussi la planète.
+
+Tranforme directement les aliments en aliments secondaires, éviter le transport inutile du champs a l'usine et de l'usine au champs. L'alimentation devrait se passer directement du champs a votre epicerie locale en vrac.
+
+Eviter le stockage d'aliments secondaires transformés.
+
+TODO: Trouver des statistiques de combien un aliment se déplace présentement.
+
+Brian Walter calls this the WOW, HOW, NOW framework, and it goes like this:
+
+    WOW – Offer up some short, interesting statement that will make the other person think to themselves, “wow!”. This statement might even be slightly confusing, as long as it’s not just industry lingo.
+    HOW – If you’ve done the first part right, you got an eyebrow raise, a tilt of the head, or a “huh?” in response. Now’s your chance to clarify and expand just a little bit.
+    NOW – End by giving a specific example of how you do what you do.
+
+https://www.saleshacker.com/sales-pitch-examples/
+
+## Innovation
+
+Le site internet est bilingue! Selon certaines sources, 50% de la population est bilingue.
+
+Le mouvement écologique est indéniable. TODO: Statistique nombre d'épicerie en vrac. TODO: Statistique réfrigérateurs intelligents qui ont comme objectif d'éliminer le gaspillage alimentaire ...
+
+<div style="display: inline-block; border: 1px solid black; padding: 50px 10px; margin: 20px;">
+  <b style="font-size: 1.4em;">137 millions de tonnes CO<sub>2</sub>eq</b><br>
+  causé par la transformation alimentaire
+</div>
+
+<strike>Maintenant, imaginez que vous etes dans votre lit le soir et que vous ne savez pas quoi manger pour souper le lendemain. Ca fait deux semaines que vous procastiner de faire l'epicerie et il ne vous reste plus grand chose dans le frigo. Mais ce n'est pas grave, parce qu'on reussit quand meme a vous suggerer plus de 100 recettes possibles a faire avec ce que vous avez!</strike>
+
+
+

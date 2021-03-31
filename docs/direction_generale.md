@@ -4,7 +4,6 @@ Plan
 1.  Demande de brevet (1 semaine)
 2.  Une page de vente (page d’accueil) sur mon site internet (1 semaine)
 3.  Modèle d'affaires (lorsque mon cours est terminé) (1 semaine)
-4.  Une extension dans le navigateur pour enregistrer des recettes (1 semaine)
 5.  Peaufiner mon site internet (MVP) et le rendre publique (1 semaine)
 6.  Trouver des clients et/ou des investisseurs (1 semaine)
 7.  Fabriquer une belle armoire de cuisine (2 semaines)

@@ -1,6 +1,8 @@
 https://aqueous-fortress-30634.herokuapp.com/
 http://www.responsinator.com/?url=hedacuisine.com
 
+TODO: Make everything I have done public so it counts as prior art and prevents competitors from patenting themselves.
+
 For markdown files:
 - Remarkable: The prettiest but install is broken with old package and snap version live preview not working
 - Retext: sudo apt install retext
