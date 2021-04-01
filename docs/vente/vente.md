@@ -1,6 +1,8 @@
+<b>https://news.ycombinator.com/item?id=26644616</b>
+
 # Heda
 
-Il faut changer quelque chose pour préserver l'environnement tel qu'on le connait. Une solution simple et utilisée depuis des millions d'années par l'etre humain est de cuisiner des aliments des champs locaux.
+Le réchauffement climatique est l'un des plus gros défis actuels de l'etre humain. Il faut changer quelque chose pour préserver l'environnement tel qu'on le connait. Une des solutions, simple, et utilisée depuis des millions d'années est de cuisiner des aliments des champs locaux.
 
 <div style="display: inline-block; border: 1px solid black; padding: 50px 10px; margin: 20px;">
   <b style="font-size: 1.4em;">26% des gaz a effets de serre</b><br>
@@ -17,15 +19,15 @@ Il faut changer quelque chose pour préserver l'environnement tel qu'on le conna
 
 *Source: [https://ourworldindata.org/environmental-impacts-of-foo]()*
 
-Si nos ancetres cuisinait des produits agricoles locaux, pourquoi est-ce qu'on ne le fait plus? Parce qu'on a pas le **temps**. De nos jours, on achete des produits transformes a l'autre bout du monde dans des emballages inutiles. On se fait livrer des repas pret-a-cuisiner ou chaque ingredients sont separes dans des petits contenants de plastique. On achete du fast food qu'on sait que c'est mauvais pour la santé, mais c'est rapide et pas tres cher.
+Si nos ancetres cuisinait des produits agricoles locaux, pourquoi est-ce qu'on ne le fait plus? Parce qu'on a plus le **temps**. De nos jours, pour sauver un peu de temps, on achete des produits transformes a l'autre bout du monde dans des emballages inutiles. On se fait livrer des repas pret-a-cuisiner ou chaque ingredients sont separes dans des petits contenants de plastique. On achete du fast food qu'on sait que c'est mauvais pour la santé, mais c'est rapide et pas trop cher.
 
 **TODO: Une image d'aliments naturels**
 
-Imaginez si auriez le temps de cuisiner a la maison. Au lieu d'acheter des produits emballez a l'épicerie, vous iriez au marché local acheter des aliments naturels comme de l'avoine, de la farine de blé, des fruits, des oeufs, du lait, etc. Vous prendriez le temps de cuisiner des bons petits repas maison réconfortants.
+Imaginez si auriez le temps de cuisiner a la maison a la place. Au lieu d'acheter des produits emballez a l'épicerie, vous iriez au marché local acheter des aliments naturels comme de l'avoine, des fruits, des oeufs, du lait, etc. Vous prendriez le temps de cuisiner des bons petits repas maisons réconfortants.
 
 ### L'arrivée de Heda
 
-Notre mission est de rapprocher la terre de notre assiette. On souhaite que la transformation alimentaire se réalise directement chez le consomateur. Pour se faire, nous avons inventé et concu une armoire de cuisine intelligente avec un bras robotique qui transforme les aliments pour vous. Moins de temps dans la cuisine, plus de temps en famille 👪💖.
+Notre mission est de rapprocher la terre de notre assiette. On souhaite que la transformation alimentaire se réalise directement chez le consomateur. Pour se faire, nous avons inventé et concu Heda. C'est une armoire de cuisine intelligente avec un bras robotique qui transforme les aliments pour vous. Moins de temps dans la cuisine, plus de temps en famille 👪💖.
 
 ### Économiser de l'argent
 
@@ -46,33 +48,33 @@ En plus d'etre écologique, cuisiner des aliments primaires représente un autre
   <tbody>
   <tr>
     <td>Pain</td>
-    <td>3$</td>
-    <td>50c</td>
-    <td><b>83.33%</b></td>
+    <td>3.18$</td>
+    <td>0.86$</td>
+    <td><b>72.96%</b></td>
   </tr>
   <tr>
-    <td>Hummus</td>
-    <td>3$</td>
-    <td>50c</td>
-    <td><b>83.33%</b></td>
+    <td>Houmous</td>
+    <td>4.18$</td>
+    <td>1.03$</td>
+    <td><b>75.36%</b></td>
   </tr>
   <tr>
     <td>Muffins</td>
-    <td>3$</td>
-    <td>50c</td>
-    <td><b>83.33%</b></td>
+    <td>-</td>
+    <td>-</td>
+    <td><b>-</b></td>
   </tr>
   <tr>
     <td>Tofu</td>
-    <td>3$</td>
-    <td>50c</td>
-    <td><b>83.33%</b></td>
+    <td>-</td>
+    <td>-</td>
+    <td><b>-</b></td>
   </tr>
   <tr>
     <td>Yogourt</td>
-    <td>3$</td>
-    <td>50c</td>
-    <td><b>83.33%</b></td>
+    <td>-</td>
+    <td>-</td>
+    <td><b>-</b></td>
   </tr>
   </tbody>
 </table>
@@ -82,7 +84,7 @@ En plus d'etre écologique, cuisiner des aliments primaires représente un autre
 Heda offre les memes avantages qu'un réfrigérateur intelligent:
 - Avertit lorsqu'un aliment est pres d'etre périmé et suggere des recettes pour l'utiliser.
 - Genere une liste d'épicerie automatiquement selon les habitudes et l'inventaire.
-- Suggere de recettes avec des ingrédients que vous avez.
+- Suggere de recettes avec des ingrédients que vous avez sous la main.
 - Integre un écran tactile pour vous permettre de partager vos photos, afficher la météo, laisser des notes, diffuser de la musique, surveiller la chambre du bébé, commander vos courses en ligne et bien d'autres.
 
 ### Lutter contre le gaspillage alimentaire
@@ -96,7 +98,7 @@ Heda diminue le gaspillage alimentaire en:
 
 ### Favoriser l'alimentation écologique
 
-Contrairement aux croyances populaires, ce qu'on mange a un plus grand impact écologique que sa provencance. Par exemple, une alimentation végétarienne est beaucoup plus écologique qu'une alimentation carnivore. En excluant les terres agricoles pour les animaux, il reste 23% des terres agricoles qui produisent 82% des calories et 63% des protéines.
+Contrairement aux croyances populaires, ce qu'on mange a un plus grand impact écologique que sa provencance. Par exemple, une alimentation végétarienne est beaucoup plus écologique qu'une alimentation carnivore. 23% des terres agricoles qui ne sont pas pour les animaux produisent 82% des calories et 63% des protéines.
 
 Les etres humains ont tendance a faire ce qui est le plus facile. Il faut que cuisiner végétarien sois plus facile que de cuisiner de la viande. On ne peut pas changer facilement les habitudes alimentaires des gens. Mais avec Heda, ca se fait tout seul. La spécialité d'Heda est la cuisine de recettes écologique. Un soir de semaine que tu rentres tard du boulot, fatigué, tu as le choix entre cuisiner de la viande ou manger un repas végétarien sans cuisiner, qu'est-ce que tu choisis?
 
@@ -114,9 +116,13 @@ Heda est présentement au stade de recherche et développement. Un modele de bas
 
 ### Je trouve le projet génial, comment puis-je contribuer?
 
-Pour l'instant nous sommes principalement a la recherche de financement. Si vous etes investisseurs, contactez-nous! TODO: Link
+Nous sommes présentement en ronde de financement. Si vous etes investisseurs, vous pouvez nous contacter ici. TODO: Link
 
-Sinon, vous pouvez quand meme nous laissez vos coordonées et nous vous contacterons si une opportunité se présente.
+Il n'y a pas de poste disponible présentement, mais nous vous suggérons de nous laissez vos coordonées et nous vous contacterons si une opportunité se présente.
+
+### Combien ca va couter?
+
+Nous voulons qu'Heda soit un investissement et non une dépense. Heda doit se payer par elle-meme par les economies d'épicerie. Les premiers appareils seraient des modeles hauts de gammes a 15 000$. Un de nos objectifs est de baisser le prix dans le temps avec la production de masse pour offrir un modele d'entrée de gamme que tout le monde peut se procurer.
 
 ### J'ai des questions ou des commaires, comment vous contactez?
 
@@ -147,18 +153,26 @@ Calculs:
 
 #### Données
 
-Pour pouvoir bien comparer la différence, tous les prix ont été pris sur le site de [maxi](), la meme journée, sans rabais. Les formats ont été choisi de la meme maniere qu'Heda cuisine: un grand format pour les aliments de base et un petit format pour les produits.
+Pour pouvoir bien comparer la différence, tous les prix ont été pris sur le site d'une seule épicerie: [maxi](). Ils ont été pris la meme journée et sans rabais. Les formats ont été choisi de la meme maniere qu'Heda cuisine: un grand format pour les aliments de base et un petit format pour les produits.
+
+En réalité, nous recommandons d'acheter des aliments dans des épiceries en vrac. Les prix sont parfois un peu plus cher. D'un autre coté, le résultat final n'est pas tant comparable a un produit d'épicerie réguliere, il est plus comparable a un produit santé ou les prix sont généralement un peu plus élevé.
+
+Chaque bouteille de ReaLemon de 945 mL contient le jus de 21 citrons. En cuisine, trois cuillères à table de ReaLemon (45 mL) équivalent au jus d'un citron de taille moyenne.
+
 
 31 mars
 
+https://www.wolframalpha.com/
+
 <table>
-  <caption>Couts des ingrédients <b>(1)</b></caption>
+  <caption>Données des ingrédients <b>(1)</b></caption>
   <thead>
   <tr>
     <th>Ingrédient</th>
     <th>Marque</th>
     <th>Poids ou volume</th>
     <th>Cout</th>
+    <th>Densité(1)</th>
   </tr>
   <thead>
   <tbody>
@@ -167,30 +181,84 @@ Pour pouvoir bien comparer la différence, tous les prix ont été pris sur le s
     <td>Robin Hood</td>
     <td>10 kg</td>
     <td>13.98$</td>
+    <td>0.51</td>
   </tr>
   <tr>
     <td>Levure</td>
     <td>Fleischmann's</td>
     <td>450 g</td>
     <td>7.47$</td>
+    <td>0.81</td>
   </tr>
     <tr>
     <td>Sel de table</td>
     <td>Windsor</td>
     <td>1 kg</td>
     <td>1.58$</td>
+    <td>2.16</td>
   </tr>
   <tr>
     <td>Sucre</td>
     <td>Lantic</td>
     <td>2 kg</td>
     <td>2.47$</td>
+    <td>0.85</td>
   </tr>
   <tr>
     <td>Huile végétale</td>
     <td>No Name</td>
     <td>3 L</td>
     <td>4.88$</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Graines de sésame</td>
+    <td>Reddi Bulk</td>
+    <td>400 g</td>
+    <td>5$</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Huile d'olive extra-vierge</td>
+    <td>Gallo</td>
+    <td>1 L</td>
+    <td>6.98$</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Pois chiches</td>
+    <td>Choix du Président</td>
+    <td>900 g</td>
+    <td>2.28$</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Jus de citron concentré</td>
+    <td>ReaLemon</td>
+    <td>945 mL</td>
+    <td>3$</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Ail</td>
+    <td>Rooster</td>
+    <td>90 g</td>
+    <td>0.88$</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Tahini</td>
+    <td>Tamam</td>
+    <td>454 g</td>
+    <td>4.38$</td>
+    <td>1.1</td>
+  </tr>
+  <tr>
+    <td>Houmous</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>1</td>
   </tr>
   </tbody>
 </table>
@@ -211,7 +279,7 @@ Pour pouvoir bien comparer la différence, tous les prix ont été pris sur le s
     <td>3.18$</td>
   </tr>
   <tr>
-    <td>Hummus traditionnel (260 g)</td>
+    <td>Houmous traditionnel (260 g)</td>
     <td>Fontaine santé</td>
     <td>4.18$</td>
   </tr>
@@ -233,6 +301,104 @@ Pour pouvoir bien comparer la différence, tous les prix ont été pris sur le s
   </tbody>
 </table>
 
+<table>
+  <caption>Calculs des recettes</caption>
+  <tbody>
+  <tr>
+    <th colspan="3" style="text-align: center;">Pain</th>
+  </tr>
+  <tr>
+    <td>Farine</td>
+    <td>875 mL</td>
+    <td>0.62$</td>
+  </tr>
+  <tr>
+    <td>Sel</td>
+    <td>5 mL</td>
+    <td>0.02$</td>
+  </tr>
+  <tr>
+    <td>Sucre</td>
+    <td>30 mL</td>
+    <td>0.03$</td>
+  </tr>
+  <tr>
+    <td>Huile</td>
+    <td>30 mL</td>
+    <td>0.05$</td>
+  </tr>
+  <tr>
+    <td>Levure</td>
+    <td>10 mL</td>
+    <td>0.13$</td>
+  </tr>
+  <tr>
+    <td>Total</td>
+    <td></td>
+    <td>0.86$</td>
+  </tr>
+  <tr>
+    <th colspan="3" style="text-align: center;">Houmous (500 mL)</th>
+  </tr>
+  <tr>
+    <td>Pois chiches</td>
+    <td>125 g</td>
+    <td>0.32$</td>
+  </tr>
+  <tr>
+    <td>Ail</td>
+    <td>6 g</td>
+    <td>0.06$</td>
+  </tr>
+  <tr>
+    <td>Tahini</td>
+    <td>125 mL</td>
+    <td>1.33$</td>
+  </tr>
+  <tr>
+    <td>Jus de citron concentré</td>
+    <td>90 mL</td>
+    <td>0.29$</td>
+  </tr>
+  <tr>
+    <td>Total</td>
+    <td></td>
+    <td>1.99$</td>
+  </tr>
+  <tr>
+    <th colspan="3" style="text-align: center;">Muffins</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th colspan="3" style="text-align: center;">Tofu</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th colspan="3" style="text-align: center;">Yogourt</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th colspan="3" style="text-align: center;"></th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  </tbody>
+</table>
 
 #### Pain
 
