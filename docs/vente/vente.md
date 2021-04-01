@@ -17,7 +17,7 @@ Il faut changer quelque chose pour préserver l'environnement tel qu'on le conna
 
 *Source: [https://ourworldindata.org/environmental-impacts-of-foo]()*
 
-Si nos ancetres cuisinait des produits agricoles locaux, pourquoi est-ce qu'on ne le fait plus? Parce qu'on a pas le **temps**. De nos jours, on achete des produits transformes a l'autre bout du monde dans des emballages inutiles. On se fait livrer des repas pret-a-cuisiner ou chaque ingredients sont separes dans des petits contenants de plastique. On achete du fast food qu'on sait est mauvais pour la santé, mais c'est rapide et pas tres cher.
+Si nos ancetres cuisinait des produits agricoles locaux, pourquoi est-ce qu'on ne le fait plus? Parce qu'on a pas le **temps**. De nos jours, on achete des produits transformes a l'autre bout du monde dans des emballages inutiles. On se fait livrer des repas pret-a-cuisiner ou chaque ingredients sont separes dans des petits contenants de plastique. On achete du fast food qu'on sait que c'est mauvais pour la santé, mais c'est rapide et pas tres cher.
 
 **TODO: Une image d'aliments naturels**
 
