@@ -1,7 +1,9 @@
 https://aqueous-fortress-30634.herokuapp.com/
 http://www.responsinator.com/?url=hedacuisine.com
 
-TODO: Make everything I have done public so it counts as prior art and prevents competitors from patenting themselves.
+Je veux vendre des réservations pour les machines et non les machines, parce que c’est un gros montant et la machine n’est pas encore prête. Plus les gens investissent et plus ils auront droit à un rabais sur la machine et plus ils seront prioritaires? Par exemple, 50$ == 10% de rabais. 100$ == 20% de rabais... Je veux surtout des préventes plus que du financement.  
+
+TODO: Make everything I have done public so it counts as prior art and prevents competitors from patenting themselves. Does it?
 
 For markdown files:
 - Remarkable: The prettiest but install is broken with old package and snap version live preview not working
