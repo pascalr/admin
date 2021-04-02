@@ -1,7 +1,7 @@
 Plan
 -----
 
-1.  Demande de brevet (1 semaine)
+1. <strike>Demande de brevet (2 semaine)</strike>
 2.  Une page de vente (page d’accueil) sur mon site internet (1 semaine)
 3.  Modèle d'affaires (lorsque mon cours est terminé) (1 semaine)
 5.  Peaufiner mon site internet (MVP) et le rendre publique (1 semaine)

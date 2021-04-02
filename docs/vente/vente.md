@@ -1,5 +1,10 @@
 <b>https://news.ycombinator.com/item?id=26644616</b>
 
+TODO: Addresse courriel.
+TODO: Sources
+TODO: Calculs en annexes
+TODO: Faire des liens correctement
+
 # Heda
 
 Le réchauffement climatique est l'un des plus gros défis actuels de l'etre humain. Il faut changer quelque chose pour préserver l'environnement tel qu'on le connait. Une des solutions, simple, et utilisée depuis des millions d'années est de cuisiner des aliments des champs locaux.
@@ -31,7 +36,7 @@ Notre mission est de rapprocher la terre de notre assiette. On souhaite que la t
 
 ### Économiser de l'argent
 
-En plus d'etre écologique, cuisiner des aliments primaires représente un autre avantage énorme: c'est économique! Un Canadien moyen pourrait économiser **1600$** par année **(1)**, principalement, parce que le prix des aliments transformés est souvent grandement supérieur aux aliments de base.
+En plus d'etre écologique, cuisiner des aliments primaires représente un autre avantage énorme: c'est économique! Un Canadien moyen pourrait économiser **1434$** par année **(1)**, principalement, parce que le prix des aliments transformés est souvent grandement supérieur aux aliments de base.
 
 **Cout energetique?**
 
@@ -79,6 +84,16 @@ En plus d'etre écologique, cuisiner des aliments primaires représente un autre
   </tbody>
 </table>
 
+### Lutter contre le gaspillage alimentaire
+
+Le gaspillage alimentaire représente une polution énorme. 6.5% des gaz a effets de serre mondial sont causé inutilement pour la production d'aliments gaspillés **(1)**.
+
+Heda diminue le gaspillage alimentaire en:
+- cuisinant des petites portions tous les jours au lieu de grandes portions qu'on peut gaspiller
+- suggérant des recettes avec les aliments pres d'etre périmés qui doivent etre cuisinés
+- favorisant l'utilisation d'aliments du garde-manger qui se conserve beaucoup plus facilement
+
+
 ### <a name="armoire"></a> Une armoire de cuisine intelligente
 
 Heda offre les memes avantages qu'un réfrigérateur intelligent:
@@ -86,15 +101,6 @@ Heda offre les memes avantages qu'un réfrigérateur intelligent:
 - Genere une liste d'épicerie automatiquement selon les habitudes et l'inventaire.
 - Suggere de recettes avec des ingrédients que vous avez sous la main.
 - Integre un écran tactile pour vous permettre de partager vos photos, afficher la météo, laisser des notes, diffuser de la musique, surveiller la chambre du bébé, commander vos courses en ligne et bien d'autres.
-
-### Lutter contre le gaspillage alimentaire
-
-Le gaspillage alimentaire représente une polution énorme. 6.5% des gaz a effets de serre mondial sont causé inutilement pour la production d'aliments gaspillés **(1)**.
-
-Heda diminue le gaspillage alimentaire en:
-- cuisinant des petites portions tous les jours au lieu de grandes portions qu'on peut gaspiller
-- favorisant l'utilisation d'aliments du garde-manger qui se conserve beaucoup plus facilement
-- suggérant des recettes avec les aliments pres d'etre périmés qui doivent etre cuisinés
 
 ### Favoriser l'alimentation écologique
 
@@ -104,7 +110,7 @@ Les etres humains ont tendance a faire ce qui est le plus facile. Il faut que cu
 
 ### Qu'est que Heda peut faire?
 
-*Ce site contient les recettes que Heda pourrait faire, explorez par vous meme!* Vous pouvez découvrir des recettes en naviguant par themes dans le menu de gauche ou recharchant dans la barre de recherche en haut.
+Ce site contient les recettes que Heda pourrait faire, explorez par vous meme! Vous pouvez découvrir des recettes en naviguant par themes dans le menu de gauche ou recharchant dans la barre de recherche en haut.
 
 Toutes les recettes publiques sur ce site sont composés a partir d'aliments primaires qui peuvent possiblement s'acheter en vrac, sans emballages.
 
@@ -116,7 +122,7 @@ Heda est présentement au stade de recherche et développement. Un modele de bas
 
 ### Je trouve le projet génial, comment puis-je contribuer?
 
-Nous sommes présentement en ronde de financement. Si vous etes investisseurs, vous pouvez nous contacter ici. TODO: Link
+Nous sommes présentement en ronde de financement. Si vous etes investisseurs, vous pouvez nous contacter ici. **TODO: Link**
 
 Il n'y a pas de poste disponible présentement, mais nous vous suggérons de nous laissez vos coordonées et nous vous contacterons si une opportunité se présente.
 
@@ -126,11 +132,19 @@ Nous voulons qu'Heda soit un investissement et non une dépense. Heda doit se pa
 
 ### J'ai des questions ou des commaires, comment vous contactez?
 
-Vous pouvez nous envoyez un courriel a .... TODO: Link.
+Vous pouvez nous envoyez un courriel a .... **TODO: Link.**
 
-## Calculs
+## Sources
 
-### Impact environnementale
+Statistique Canada. Tableau 11-10-0222-01  Dépenses des ménages, Canada, régions et provinces
+
+https://ourworldindata.org/environmental-impacts-of-food
+
+https://www.maxi.ca/, 31 mars
+
+https://www.wolframalpha.com/
+
+## Annexe A : Calculs de l'impact environnemental du gaspillage, emballage et transport alimentaire
 
 Données **(1)**:
 - 13.2 milliard CO<sub>2</sub>eq globalement
@@ -138,31 +152,27 @@ Données **(1)**:
 - 25% de la production alimentaire est gaspillée
 - 5% des gaz a effets de serre de la production alimentaire sont causes par l'emballage
 - 6% des gaz a effets de serre de la production alimentaire sont causes par le transport
-- 4% des gaz a effets de serre de la production alimentaire sont causes par la transformation
-
-Hypotheses:
-<strike>- En utilisant des aliments primaires au lieu des aliments transformés, il est possible de réduire de 50% l'émission de CO<sub>2</sub>eq pour le transport.</strike>
 
 Calculs:
 - 13.2 milliards * 26% * 25% = 858 millions CO<sub>2</sub>eq pour le gaspillage alimentaire
 - 13.2 milliards * 26% * 5% = 171 millions CO<sub>2</sub>eq pour l'emballage des aliments
 - 13.2 milliards * 26% * 6% = 206 millions CO<sub>2</sub>eq pour le transport des aliments
-- 13.2 milliards * 26% * 4% = 137 millions CO<sub>2</sub>eq pour la transformation
 
-### Économie d'argent
+## Annexe B : Calculs des économies possible en cuisinant a la maison
 
-#### Données
+En 2019, les canadiens dépensent en moyenne 10 311$ par année pour des aliments dont 7 536$ pour des aliments achetés au magasin <sup>[(1)](#source_1)</sup>. Sauver une petite fraction permettrait de faire de grandes économies.
 
-Pour pouvoir bien comparer la différence, tous les prix ont été pris sur le site d'une seule épicerie: [maxi](). Ils ont été pris la meme journée et sans rabais. Les formats ont été choisi de la meme maniere qu'Heda cuisine: un grand format pour les aliments de base et un petit format pour les produits.
+Les produits de boulangerie (687$) et les boissons non-alcoolisées et autres produits alimentaires (1721$) totalisent plus de 2408$ de dépense par année. Supposons que 80% de ces produits peuvent etre cuisiner en coutant 60% moins cher, cela représente 1156$ par année!
 
-En réalité, nous recommandons d'acheter des aliments dans des épiceries en vrac. Les prix sont parfois un peu plus cher. D'un autre coté, le résultat final n'est pas tant comparable a un produit d'épicerie réguliere, il est plus comparable a un produit santé ou les prix sont généralement un peu plus élevé.
+La dépense moyenne pour les aliments achetés au restaurant est de 2775$. Supposons que 20% du temps on mange au restaurant simplement parce qu'on a pas le temps de cuisiner et que manger a la maison coute 50% moins cher, cela represente 278$ par année!
 
-Chaque bouteille de ReaLemon de 945 mL contient le jus de 21 citrons. En cuisine, trois cuillères à table de ReaLemon (45 mL) équivalent au jus d'un citron de taille moyenne.
+Les deux combinés ensemble représente une économie de pres de 1434$ par année!
 
+## Annexe C : Calculs d'économie d'argent en cuisinant
 
-31 mars
+Pour pouvoir bien comparer la différence de frais entre cuisiner et acheter des aliments transformés, tous les prix ont été pris sur le site d'une seule épicerie: [maxi](). Ils ont été pris la meme journée et sans rabais. Les formats ont été choisi de la meme maniere qu'Heda cuisine: un grand format pour les aliments de base et un petit format pour les produits.
 
-https://www.wolframalpha.com/
+En réalité, nous recommandons d'acheter des aliments dans des épiceries en vrac. Les prix sont parfois un peu plus cher. D'un autre coté, le résultat final n'est pas tant comparable a un produit d'épicerie réguliere, il est plus comparable a un produit santé ou les prix sont généralement plus élevé.
 
 <table>
   <caption>Données des ingrédients <b>(1)</b></caption>
@@ -399,24 +409,6 @@ https://www.wolframalpha.com/
   </tr>
   </tbody>
 </table>
-
-#### Pain
-
-#### Calcul général
-
-En 2017, les canadiens dépensent en moyenne 8 968$ par année pour des aliments dont 6 364$ pour des aliments achetés au magasin <sup>[(1)](#source_1)</sup>. Sauver une petite fraction permet de faire de grandes économies.
-
-Par exemple, supposons que 35% des aliments achetés en magasins sont des aliments transformés qui coute 60% moins cher a cuisiner a la maison, cela représente 1336$ par année!
-
-Supposons que 20% du temps on mange du fast food simplement parce qu'on a pas le temps de cuisiner et que cuisiner a la maison coute 50% moins cher, cela represente des economies de 260$ par années!
-
-Les deux combinés ensemble représente une économie de pres de 1600$ par année!
-
-## Sources
-
-Statistique Canada. Tableau 11-10-0222-01  Dépenses des ménages, Canada, régions et provinces
-
-https://ourworldindata.org/environmental-impacts-of-food
 
 <br/><br/><br/><br/><br/><br/><br/><br/>
 
