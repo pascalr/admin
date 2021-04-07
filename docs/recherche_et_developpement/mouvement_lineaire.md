@@ -1,8 +1,32 @@
-## Notes
+## Mouvement linéaire avec bearings avec groove sur tube d'acier
 
-Pas de portes pour l'instant. Simplement une tablette de rangement (au plancher) et une tablette de travail.
+Je vais essayer d'imprimer en 3d la groove autour d'un bearing normal. Je pourrais essayer d'acheter un filament mieux pour ca genre du NinjaFlex. Anyway, je vais essayer avec ce que j'ai sous la main pour l'instant.
 
-Pas de caméra pour l'instant. Mettre les pots a des endroits pré-déterminé. (L'objectif est de faire de la pate a muffin le plus rapidement possible)
+##### Quel matériau pour les tubes?
+
+Les tubes devrait etre en stainless parce que la machine est alimentaire. Mais pour me sauver des couts de développement, utiliser autre chose.
+
+Je peux acheter les tubes au canac, mais il va falloir que j'achete les tubes plus grand quelque part.
+
+Au canac:<br>
+-> Tube rond en aluminium 3/4 po X 36 po X 1/8 po: 9.01$<br>
+Tube rond en acier 3/4 po X 48 po X 1/8 po: 11.41$
+
+**Utiliser des bearings a groove ou essayer de rajouter des sleeves de plastique par dessus avec groove?**
+
+Utiliser des bearings en métal a groove parce que j'en ai. Ils sont tout petits, mais je crois que c'est suffisant.
+
+**Quelle grandeur de bearing?**
+
+Essayer avec ceux que j'ai présentement.
+
+**Quelle grandeur de tube?**
+
+3/4" serait amplement suffisament. Est-ce que moins fonctionnerait aussi?
+
+**Quel support pour supporter les tubes?**
+
+Plaque? Fer angle? Tube carré?
 
 ## Mouvement vertical
 
@@ -92,18 +116,3 @@ Alors, on veut un moteur de **1/10 HP**.
 
 Supposons une **poulie** d'un **diametre** de **2.625 po** (**circonférence 8.25 po**).
 Le moteur doit tourner **9.5 tour** pour effectuer la distance totale de **78.75 po**. Pour le faire en **4 secondes**, il doit tourner a pres de **2.5 tr/s** ou **140 RPM**.
-
-
-## TODO
-
-Étape de fabrication du robot: (Note: Pour chaque étape, faire dans la simulation en premier)
-
-1. L'armoire de la simulatino n'est plus la meme que celle que j'ai presentement.
-
-Comment fabriquer le robot?
-
-
-
-Faire des beaux graphes:
-
-https://gojs.net/latest/learn/index.html

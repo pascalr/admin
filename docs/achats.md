@@ -1,4 +1,20 @@
-# Achats
+# Liste d'achats
+
+## Canac
+
+2X Tube d'aluminium 3/4 po X 36 po X 1/8 po (emporter ma vis avec bearing pour m'assurer que ca glisse bien)
+
+# Outils
+
+## Drill bit 3/4 in reduced shank 3/8
+**Lowes**<br>
+30.40$ apres taxe et livraison<br>
+https://www.lowes.ca/product/dewalt-34-in-black-oxide-reduced-shank-drill-bit-126226
+
+**Amazon**<br>
+https://www.amazon.ca/DEWALT-DW1625-4-Inch-8-Inch-Reduced/dp/B00004RGYW
+
+# Fournisseurs
 
 ## Mécanique
 
