@@ -731,5 +731,7 @@ Le mouvement écologique est indéniable. TODO: Statistique nombre d'épicerie e
 
 <strike>Maintenant, imaginez que vous etes dans votre lit le soir et que vous ne savez pas quoi manger pour souper le lendemain. Ca fait deux semaines que vous procastiner de faire l'epicerie et il ne vous reste plus grand chose dans le frigo. Mais ce n'est pas grave, parce qu'on reussit quand meme a vous suggerer plus de 100 recettes possibles a faire avec ce que vous avez!</strike>
 
+Shipping
 
+Packages can be up to 108 inches in length.
 

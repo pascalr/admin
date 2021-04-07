@@ -1,5 +1,15 @@
 # Achats
 
+## Mécanique
+
+### Guide systems
+
+**Bishop Wisecarver**<br>
+Des guides linéaires<br>
+https://www.bwc.com/<br>
+https://www.bwc.com/products/components-accessories.html<br>
+https://www.bwc.com/products/rotary-guide-systems.html
+
 ## Moteurs et réducteurs
 
 ### Moteurs

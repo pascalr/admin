@@ -4,9 +4,7 @@ Pas de portes pour l'instant. Simplement une tablette de rangement (au plancher)
 
 Pas de caméra pour l'instant. Mettre les pots a des endroits pré-déterminé. (L'objectif est de faire de la pate a muffin le plus rapidement possible)
 
-## Bras robotique
-
-### Mouvement vertical
+## Mouvement vertical
 
 J'utilise un contrepoids au lieu d'un moteur avec réducteur irréversible.
 
@@ -24,6 +22,25 @@ Ca prendrait quand meme un moteur un peu plus gros pour aller plus vite. Ce n'es
 #### Désavantages
 
 - Plus encombrant.
+
+### Systeme de controle de position
+
+UPS: Packages can be up to 108 inches in length.
+
+Possibilités:
+- 2 fer angle avec les roulettes a l'intérieur
+    - +: simple
+    - -: Imprécis. J'ai le droit a 2 mm de jeu. Supposons que la distance entre les deux roulettes sur le coté soit la moitié de la portée maximale du bras robotique. Cela veut dire que j'ai le droit a seulement 0.5 mm de jeu de chaque coté de la roulette. Tres difficile. Surtout pour l'alignement.
+- un tube rond avec 6 bearings de chaque cotés 2 fois 3 bearings a 120 degrés
+- un tube rond avec 4 bearings groovés de chaque cotés, la plaque pourrait etre spring loader pour garder de la tension sur les bearings. Une plaque mince capable de plier et de garder une tension serait génial. Cold-rolled parce que hot-rolled fait du bruit. Probablement stainless parce que c'est dans un garde-manger.
+- un tube carré avec 6 roulettes de chaque cotés
+- linear guide wheel (des bearings avec des grooves en v qui repose sur une plaque en v): https://www.youtube.com/watch?v=Zgo1S_C29Lk
+  - 4 roues fonctionne pour tous les cotés, mais ce n'est pas dans le bon axe, est-ce que ca fonctionne vraiment?
+  - ca coute cher
+- rails et bushing linéaire
+  - +: Tres précis
+  - -: ca coute cher
+  - -: comment faire pour etre en 2 ou 3 sections pour le shipping?
 
 #### Avec vis sans fin (Deprecated, voir avantages et désavantages ci-dessus)
 
