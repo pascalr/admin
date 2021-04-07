@@ -24,9 +24,15 @@ Essayer avec ceux que j'ai présentement.
 
 3/4" serait amplement suffisament. Est-ce que moins fonctionnerait aussi?
 
+1/2" serait le best je crois, mais je dois en trouver...
+
 **Quel support pour supporter les tubes?**
 
 Plaque? Fer angle? Tube carré?
+
+## Contrepoids
+
+Le contrepoids sera probablement en fonte d'acier.
 
 ## Mouvement vertical
 

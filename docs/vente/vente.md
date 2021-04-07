@@ -5,6 +5,8 @@ TODO: Sources
 TODO: Calculs en annexes
 TODO: Faire des liens correctement
 
+**Vendre un ebook qui explique comment fabriquer la machine?**
+
 # Heda
 
 Le réchauffement climatique est l'un des plus gros défis actuels de l'etre humain. Il faut changer quelque chose pour préserver l'environnement tel qu'on le connait. Une des solutions, simple, et utilisée depuis des millions d'années est de cuisiner des aliments des champs locaux.
