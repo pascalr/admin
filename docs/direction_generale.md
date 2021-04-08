@@ -5,8 +5,14 @@ Plan
 
 Objectif: Profiter au maximum de mon appartement tant que je l'ai. Faire la recherche de financement plus tard. Je ne voulais pas fabriquer mon produit sans savoir que je peux le vendre, mais ce n'est plus le cas. Au pire, j'utilise la machine moi-meme pour faire et vendre des aliments transformés zéro-déchets.
 
+1. Mouvement horizontal
+1. Mouvement vertical
 1. Simulation aller chercher les ingrédients pour des muffins (1 semaine)
 1. Bras robotique aller chercher les ingrédients pour des muffins (2 semaines)
+1. Mouvement R
+1. Mouvement B
+1. Mouvement A
+1. Mouvement T
 1. Simulation verser les bonnes quantités (2 semaines)
 1. Bras robotique verser les bonnes quantités (1 mois)
 1. Simulation mélanger la pate a muffin (1 semaine)

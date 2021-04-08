@@ -26,6 +26,8 @@ Essayer avec ceux que j'ai présentement.
 
 1/2" serait le best je crois, mais je dois en trouver...
 
+Non, je 3/4", parce que de toute facon il doit y avoir une noix de chaque coté de la roue et noix + roue + noix == 3/4". Le probleme est que je dois percer 3/4" maintenant... Je peux utiliser du bois temporairement.
+
 **Quel support pour supporter les tubes?**
 
 Plaque? Fer angle? Tube carré?
