@@ -38,6 +38,8 @@ Le contrepoids sera probablement en fonte d'acier.
 
 ## Mouvement vertical
 
+Ah ca pourrait etre une chaine. Il faut juste que la chaine soit complete. Mais je n'aime pas ca sans contrepoids parce que ca veut dire que le moteur serait super fort pour redescendre... Il aurait sa force plus la force de la gravité == danger!
+
 J'utilise un contrepoids au lieu d'un moteur avec réducteur irréversible.
 
 Je laisse ca comme c'est présentement parce que je n'utilise pas de porte présentemment et c'est correct comme ca pour faire des muffins. <span style="background-color: yellow">Dans la prochaine version, mettre les contrepoids sur les cotés.</span>

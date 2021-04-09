@@ -34,6 +34,11 @@ Objectif: Profiter au maximum de mon appartement tant que je l'ai. Faire la rech
 1. Financement participatif. Vendre des réservations à 50$.
 1. Faire mon bras robotique
 
+## TODO list de petits trucs du quotidien
+
+1. Un minimum de 1 mm a l'intérieur de l'objet pour que ce soit consideré une collision
+1. Rajouter une bordure en sur les cotés pour s'assurer que les pots ne soit jamais inaccessible pour le robot.
+
 ## Focus
 
 TODO: Quand je rentre trop dans les détails, par exemple quand je fais trop de programmation et je veux tout améliorer en programmation, prendre du recul et faire autre chose. Revenir dessus la semaine d'apres au pire. Keep it simple, stupid.

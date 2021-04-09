@@ -1,4 +1,20 @@
+## Matériaux
+
+### Filament imprimante 3d
+
+#### TPE
+
+TPEs from KEP can be more recyclable, flexible, and softer than TPUs. However, they do offer lower resistance to abrasion, grease/oils, chemicals and high and low temperatures. While total cost depends on many factors, including how often parts are replaced, in general terms TPE compounds are more cost-effective per pound. KEP offers a wide range of TPE material compounds, including FDA, NSF and USP Class VI choices.
+
+#### TPU
+
+KEP offers the K-300 TPU compound. In addition to higher resistance to abrasion, grease/oils, chemical and high and low temperatures, TPU is a higher durometer elastomer that can be considered the bridge between flexible, rubbery thermoplastics and rigid plastics. This makes TPU a **great replacement for hard rubber**. For some applications, the **hardness and lower flexibility** qualities of TPU might not make this compound the best fit. TPUs rank **among the best for load-bearing capability**.
+
+---
+
 Est-ce que tube rond ca fonctionne? Je pourrais aussi simplement rouler sur des tubes carrés...
+
+Ca me prendrait un washer avec un diametre extérieur plus petit comme spacer dans mes roues a deux bearings.
 
 **Ok, qu'est-ce que j'ai besoin pour valider l'utilisation de bearings avec grooves?**
 - Deux plates percées
