@@ -37,6 +37,10 @@ Objectif: Profiter au maximum de mon appartement tant que je l'ai. Faire la rech
 
 ## TODO list de petits trucs du quotidien
 
+1. Quel moteur pour le mouvement T et A? Nema 23 ou Nema 17? Nema 17 avec gearbox probablement
+1. Faire le mouvement T avant de trop faire le mouvement horizontal
+1. Calculer quelle courroie qui est nécessaire pour mon moteur nema 23.
+1. Acheter timing belt et timing pulley axe horizontal
 1. Un minimum de 1 mm a l'intérieur de l'objet pour que ce soit consideré une collision
 1. Rajouter une bordure en sur les cotés pour s'assurer que les pots ne soit jamais inaccessible pour le robot.
 
@@ -115,3 +119,23 @@ Ce que j'aimerais c'est une hiérarchie le plus plat possible.
 Idéalement, que des responsables. Et le titre que tu as dépends de ton
 ancienneté. Un peu comme dans l'armée. Responsable =&gt; Chef d'équipe
 =&gt; ... =&gt; Directeur =&gt; ...
+
+## Hauteur de l'armoire du prototype.
+
+Axe vertical de 5' seulement?
+
+**Avantages**
+
+- Plus économique
+- J'ai déja les tiges pour le contrepoids
+- Plus facile d'acces
+- Pas tres difficile a changer (simplement remplacer le tube et les deux tiges)
+- Moins encombrant
+- Mon prototype risque d'encore changer
+- Je ne sais pas encore a quelle taille le couper présentemment
+- Je n'ai pas besoin de plus pour faire mes muffins
+
+**Désavantages**
+
+- Cela ne teste pas le jeu maximal (ca plirait 50% de plus, mais au pire on agrandit le tuyau)
+- Cela est moins bon et se montre moins bien.
