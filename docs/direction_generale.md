@@ -1,9 +1,6 @@
-Plan
------
+# Plan
 
-### Plan magasin
-
-Objectif: Profiter au maximum de mon appartement tant que je l'ai. Faire la recherche de financement plus tard. Je ne voulais pas fabriquer mon produit sans savoir que je peux le vendre, mais ce n'est plus le cas. Au pire, j'utilise la machine moi-meme pour faire et vendre des aliments transformés zéro-déchets.
+## Plan magasin
 
 1. Mouvement horizontal
 1. Mouvement vertical
@@ -18,7 +15,11 @@ Objectif: Profiter au maximum de mon appartement tant que je l'ai. Faire la rech
 1. Simulation mélanger la pate a muffin (1 semaine)
 1. Bras robotique mélanger la pate a muffin (2 semaines)
 
-### Plan machine
+### Explication
+
+Objectif: Profiter au maximum de mon appartement tant que je l'ai. Faire la recherche de financement plus tard. Je ne voulais pas fabriquer mon produit sans savoir que je peux le vendre, mais ce n'est plus le cas. Au pire, j'utilise la machine moi-meme pour faire et vendre des aliments transformés zéro-déchets.
+
+## Plan machine
 
 1. <strike>Demande de brevet (2 semaine)</strike>
 1.  Une page de vente (page d’accueil) sur mon site internet (1 semaine) [En attente de l'acception du dépot de brevet]
