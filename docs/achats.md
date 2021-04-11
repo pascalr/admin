@@ -1,5 +1,11 @@
 # Liste d'achats
 
+## Utopie
+
+- Scie a métal a ruban horizontale
+- Un tour a métal
+- Une plieuse de tole
+
 ## Usinage
 
 - http://www.usinagerm.ca/
