@@ -5,6 +5,7 @@
 - Scie a métal a ruban horizontale
 - Un tour a métal
 - Une plieuse de tole
+- Une imprimante 3D avec enclosure, hotbed en vitre et hotend tout en métal pour etre capable d'imprimer du nylon a haute température
 
 ## Usinage
 
@@ -39,6 +40,16 @@ https://www.canac.ca/fr/bande-en-aluminium-1-po-x-48-po-x-1-8-po-6040002
 # Items
 
 ## Bearings
+
+### Pillow block bearings
+
+metric
+
+https://www.aliexpress.com/item/4000176610214.html?spm=a2g0o.productlist.0.0.6b4aa743nfAJXs&algo_pvid=38624e37-bbad-4967-8c8c-844d650fddbc&algo_expid=38624e37-bbad-4967-8c8c-844d650fddbc-2&btsid=0b0a556b16182380301945028e5ded&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_
+
+### Autres
+
+Gears 5 mm: https://www.aliexpress.com/item/1005001889695306.html?spm=a2g0o.productlist.0.0.5e9b33c8wXuYrw&algo_pvid=36269b73-3a76-40fc-a5a7-b1e8f6c66833&algo_expid=36269b73-3a76-40fc-a5a7-b1e8f6c66833-10&btsid=0bb0623e16182384576217615ea8ed&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_
 
 **AliExpress**<br>
 100pcs 608 2RS: <b>27.85$</b><br>

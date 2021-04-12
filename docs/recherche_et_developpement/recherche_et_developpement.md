@@ -1,3 +1,9 @@
+## Décisions
+
+Je choisis d'utiliser des engrenages en plastique. Pour la simple raison que je ne trouve pas ce que j'ai besoin sur internet. Aussi, pour l'instant en PLA ce n'est pas l'idéal, mais c'est possible d'utiliser du nylon plus tard et c'est valide comme matériel (comme CNC chez logiflex).
+
+Ca serait bien que je réussisse a imprimer des gears Hemington je crois ca s'appelle? (une gear a angle des 2 cotés)
+
 ## Matériaux
 
 ### Filament imprimante 3d
@@ -50,3 +56,9 @@ Comment fabriquer le robot?
 Faire des beaux graphes:
 
 https://gojs.net/latest/learn/index.html
+
+
+## Site internet de référence
+
+- https://engineerdog.com/2017/01/07/a-practical-guide-to-fdm-3d-printing-gears/
+- https://www.simplify3d.com/support/materials-guide/nylon/
