@@ -1,5 +1,10 @@
 # Liste d'achats
 
+- Acheter des tiges filetées 8mm (Dist J.M. Bergeron? Ils ont des tiges filetées)
+- Acheter écrous 8mm
+- Acheter un peu de washers 8mm? (attendre de voir si nécessaire)
+- Acheter une tige 3/8 supplémenaire (demander s'ils ont du cold rolled steel?)
+
 ## Utopie
 
 - Scie a métal a ruban horizontale
@@ -26,6 +31,9 @@ Dimensions des conduits électriques EMT:<br>
 https://www.engineeringtoolbox.com/conduit-size-d_1738.html<br>
 https://www.homedepot.ca/produit/columbia-mbf-conduit-1-2-pi-emt/1000106377
 Allée 40, Section 007
+
+Tole d'acier 90 degré, moulure de charpente, 1 po par 2 po:<br>
+https://www.homedepot.ca/produit/bailey-metal-products-moulure-de-charpente-de-90-d700-en-acier-de-1-po-x-2-po-x-10-pieds/1000181114
 
 ## Acier Lennox
 

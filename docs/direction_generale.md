@@ -1,25 +1,16 @@
-# Plan
+## Grandes lignes
 
-## Plan magasin
+### Nouveau plan
 
 1. Mouvement horizontal
 1. Mouvement vertical
-1. Simulation aller chercher les ingrédients pour des muffins (1 semaine)
-1. Bras robotique aller chercher les ingrédients pour des muffins (2 semaines)
-1. Mouvement R
-1. Mouvement B
-1. Mouvement A
-1. Mouvement T
-1. Simulation verser les bonnes quantités (2 semaines)
-1. Bras robotique verser les bonnes quantités (1 mois)
-1. Simulation mélanger la pate a muffin (1 semaine)
-1. Bras robotique mélanger la pate a muffin (2 semaines)
+1. Mouvement R, B, A, T
+1. Simulation et bras robotique aller chercher les ingrédients pour des muffins (3 semaines)
+1. Simulation et bras robotique verser des aliments grossiers (riz, macaroni, légumineuses, ...) (3 semaines)
 
-### Explication
+**Objectif:** Profiter au maximum de mon appartement tant que je l'ai. Faire la recherche de financement plus tard. Je ne voulais pas fabriquer mon produit sans savoir que je peux le vendre, mais ce n'est plus le cas. Au pire, j'utilise la machine moi-meme pour faire et vendre des aliments transformés zéro-déchets.
 
-Objectif: Profiter au maximum de mon appartement tant que je l'ai. Faire la recherche de financement plus tard. Je ne voulais pas fabriquer mon produit sans savoir que je peux le vendre, mais ce n'est plus le cas. Au pire, j'utilise la machine moi-meme pour faire et vendre des aliments transformés zéro-déchets.
-
-## Plan machine
+### Ancien plan
 
 1. <strike>Demande de brevet (2 semaine)</strike>
 1.  Une page de vente (page d’accueil) sur mon site internet (1 semaine) [En attente de l'acception du dépot de brevet]
@@ -34,6 +25,46 @@ Objectif: Profiter au maximum de mon appartement tant que je l'ai. Faire la rech
     (1 semaine)
 1. Financement participatif. Vendre des réservations à 50$.
 1. Faire mon bras robotique
+
+## Détails et progres des grandes lignes
+
+### Mouvement horizontal
+
+- Acheter des tiges filetées 8mm
+- Acheter écrous 8mm
+- Acheter un peu de washers 8mm? (attendre de voir si nécessaire)
+- **Concevoir le lien entre le mouvement vertical et le mouvement horizontal**
+- Déterminer et acheter de la tole plus épaisse pour les cotés 
+- Imprimer les supports de la track a cable
+- Imprimer le support du moteur
+- Percer ou imprimer ou acheter 2 poulies pour nema 23
+
+En attente de la meche 18mm pour fabriquer les 2 plaques sur les cotés. J'ai l'acier.
+
+En attente des bearings et du TPU pour faire les roues.
+
+### Mouvement vertical
+
+- Diminuer le bruit du weight stack
+- Installer les contrepoids de chaque cotés
+- Acheter une tige 3/8 supplémenaire (demander s'ils ont du cold rolled steel?)
+- Checker pour imprimer en 3d du nylon (enclosure et hotend température élevé ou nylon qui s'imprime a plus faible température)
+- Tourner les drums du bras robotique de sens (vers l'intérieur)
+- Percer les trous pour les cables d'acier dans le bois et dans le plastique
+
+#### Une idée
+
+Rendre le garde du haut optionnel et non structurel, il y aurait 2 pillow block de chaque coté et un grand tube qui lui sert de structure entre les cotés. A la limite le garde serait optionnel et servirait seulement de faire beau et de cacher le moteur. Le moteur serait accrocher d'un des cotés (cotés opposé au cable track pour que ses fils puissent descendre en bas)
+
+### Mouvement R, B, A, T
+
+Améliorer le design actuel pour avoir plus de rigidité. Avec le nouveau design de l'armoire, j'ai moins de restriction en hauteur. Donc mettre le mouvement T au dessus des autres mouvements.
+
+- Commencer le nouveau design
+
+### Simulation et bras robotique aller chercher les ingrédients pour des muffins (3 semaines)
+
+### Simulation et bras robotique verser des aliments grossiers (riz, macaroni, légumineuses, ...) (3 semaines)
 
 ## TODO list de petits trucs du quotidien
 
@@ -139,3 +170,7 @@ Axe vertical de 5' seulement?
 
 - Cela ne teste pas le jeu maximal (ca plirait 50% de plus, mais au pire on agrandit le tuyau)
 - Cela est moins bon et se montre moins bien.
+
+## Un jour
+
+
