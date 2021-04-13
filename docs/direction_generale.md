@@ -45,6 +45,7 @@ En attente des bearings et du TPU pour faire les roues.
 
 ### Mouvement vertical
 
+- Essayer d'imprimer des mini bushings pressed fit dans mes poids déja coupé (changer plus tard, 4 bushings max, pas 2 bushings par plate...)
 - Diminuer le bruit du weight stack
 - Installer les contrepoids de chaque cotés
 - Acheter une tige 3/8 supplémenaire (demander s'ils ont du cold rolled steel?)
