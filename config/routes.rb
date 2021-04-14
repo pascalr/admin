@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   lazy_resources :suppliers
   lazy_resources :parts
   lazy_resources :purchases
+  lazy_resources :part_list_items
 
   get 'dashboard/index'
   root 'dashboard#index'
