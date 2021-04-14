@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_14_204648) do
+ActiveRecord::Schema.define(version: 2021_04_14_212553) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +37,9 @@ ActiveRecord::Schema.define(version: 2021_04_14_204648) do
     t.bigint "supplier_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.float "tps"
+    t.float "tvq"
+    t.float "shipping_cost"
     t.index ["part_id"], name: "index_purchases_on_part_id"
     t.index ["supplier_id"], name: "index_purchases_on_supplier_id"
   end

@@ -1,16 +1,53 @@
 <h1>Suivi des achats</h1>
+
+<%= form_with(model: Purchase.new) do |form| %>
+  <%= form.label :day %>
+  <%= form.date_select :day, value: Date.today %><br>
+  <%= form.label :part_id %>
+  <%= form.collection_select :part_id, Part.all.order(:name), :id, :name %><br>
+  <%= form.label :supplier_id %>
+  <%= form.collection_select :supplier_id, Supplier.all.order(:name), :id, :name %><br>
+  <%= form.label :quantity %>
+  <%= form.number_field :quantity %><br>
+  <b>Coût total</b><br>
+  <%= form.label :price, "Prix sans expédition" %>
+  <%= form.number_field :price, id: 'price', step: 0.01 %><br>
+  <%= form.label :shipping_cost, "Coût d'expédition" %>
+  <%= form.number_field :shipping_cost, step: 0.01 %><br>
+  <%= button_tag "Calculer les taxes", type: 'button', class: 'subBtn', onclick: "calculateTaxes()" %><br>
+  <%= form.label :tps %>
+  <%= form.number_field :tps, id: 'tps', step: 0.01 %><br>
+  <%= form.label :tvq %>
+  <%= form.number_field :tvq, id: 'tvq', step: 0.01 %><br>
+  <%= form.submit "Ajouter cet achat" %>
+<% end %>
+
 <% Supplier.all.each do |supplier| %>
   <h2><%= supplier.name %></h2>
   <table class="table table-striped table-sm">
     <tbody>
-      <% supplier.purchases.each do |purchase| %>
+      <% supplier.purchases.order(day: 'DESC').each do |purchase| %>
         <tr>
+          <td><%= link_to purchase.id, purchase %></td>
           <td><%= purchase.day %></td>
           <td><%= purchase.quantity %></td>
           <td><%= link_to purchase.part.name, purchase.part %></td>
-          <td><%= purchase.price %>$</td>
+          <td><%= number_to_currency purchase.price, format: '%n%u' %></td>
+          <td><%= number_to_currency purchase.total_cost, format: '%n%u' %></td>
         </tr>
       <% end %>
     </tbody>
   </table> 
 <% end %>
+
+<script>
+  function calculateTaxes() {
+    var tps = document.getElementById('tps')
+    var tvq = document.getElementById('tvq')
+    var price = document.getElementById('price')
+    tps.value = Math.round((price.value*0.05 + Number.EPSILON) * 100) / 100
+
+    tvq.value = Math.round((price.value*0.09975 + Number.EPSILON) * 100) / 100
+
+  }
+</script>
