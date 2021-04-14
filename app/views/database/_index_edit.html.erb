@@ -1,0 +1,41 @@
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <% @columns.each do |(k,v)| %>
+        <th><%= k %></th>
+      <% end %>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th></th>
+      <% @columns.each do |(k,v)| %>
+        <th><%= k == "id" ? nil : v %></th>
+      <% end %>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @model.all.each_with_index do |m,i| %>
+      <%= form_with(model: m, local: true) do |form| %>
+        <tr>
+          <td><%= link_to i, polymorphic_path(m, no_redirect: params[:no_redirect]) %></td>
+          <% @columns.each do |(k,v)| %>
+            <% if k == "id" %>
+              <td><%= m.id %></td>
+            <% else %>
+              <td><%= field_for_column(form, m, k, v, {readonly: k=="id"}) %></td>
+            <% end %>
+          <% end %>
+          <td><%= form.submit %></td>
+          <td><%= link_to "show", polymorphic_path(m) %></td>
+          <td><%= link_to "delete", polymorphic_path(m), method: 'delete', data: {confirm: 'Are you sure?'} %></td>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @model.columns_hash.each_with_index do |(k,v),i| %>
+      <% next if k == "id" %>
+      <% next if k == "created_at" %>
+      <% next if k == "updated_at" %>
+      <tr>
+        <td><%= k %></td>
+        <td><%= field_for_column(form, @record, k, v.type) %></td>
+        <td><%= v.type %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= form.submit %>

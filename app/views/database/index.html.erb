@@ -1,0 +1,25 @@
+<%= render partial: "menu" %>
+
+<% if params[:no_redirect] %><%= link_to "Back to db", database_path %> |<% end %>
+<%= link_to "New", polymorphic_path(@model, action: :new, no_redirect: params[:no_redirect]) %> |
+<%= form_with url: polymorphic_path(@model), method: :get,  local: true do |form| %>
+  <%= select_tag "template", options_for_select(["table", "editing", "list", "spreadsheet"], "table") %>
+  <%= hidden_field "no_redirect", true %>
+  <%= form.submit "Modify view" %>
+<% end %>
+<%# link_to "Edit all", polymorphic_url(@model, editing: true, no_redirect: params[:no_redirect]) %>
+<%# link_to "See user view", controller: "#{@model.name.pluralize.downcase}", action: :index if @view_exists %>
+
+<h1><%= @model.name %> database</h1>
+
+<%= render partial: 'index_spreadsheet' %>
+<%#
+  case params[:template]
+  when 'editing' then
+    render partial: 'index_edit'
+  when 'spreadsheet' then
+    render partial: 'index_spreadsheet'
+  else
+    render partial: 'index_table'
+  end
+ %>

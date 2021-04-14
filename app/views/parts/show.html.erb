@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h2><%= @part.name %></h2>
+
+<% if not @part.subparts.blank? %>
+
+  <h3>Parts</h3>
+  <%= render file: "part_list_items/_part_list", locals: {part_list_items: @part.part_list_items} %>
+
+<% end %>
+
+<% if not @part.parts_where_used.blank? %>
+  <h3>Where used</h3>
+  <% @part.parts_where_used.each do |part| %>
+    <div>
+      <%= link_to part.name, part %>
+    </div>
+  <% end %>
+<% end %>
+
+<h3>Liens</h3>
+<%= link_to 'Edit', edit_part_path(@part) %> |
+<%= link_to 'Back', parts_path %>

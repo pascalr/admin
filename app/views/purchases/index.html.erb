@@ -1,0 +1,18 @@
+<div style="width: 70%; margin: auto;">
+  <h1>Suivi des achats</h1>
+  <% Supplier.all.each do |supplier| %>
+    <h2><%= supplier.name %></h2>
+    <table class="table table-striped table-sm">
+      <tbody>
+        <% supplier.purchases.each do |purchase| %>
+          <tr>
+            <td><%= purchase.day %></td>
+            <td><%= purchase.quantity %></td>
+            <td><%= link_to purchase.part.name, purchase.part %></td>
+            <td><%= purchase.price %>$</td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table> 
+  <% end %>
+</div>

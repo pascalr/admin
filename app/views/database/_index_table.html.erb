@@ -1,0 +1,39 @@
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <% @columns.each do |(k,v)| %>
+        <th><%= k %></th>
+      <% end %>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th></th>
+      <% @columns.each do |(k,v)| %>
+        <th><%= v unless k == "id" %></th>
+      <% end %>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @model.all.each_with_index do |m,i| %>
+      <tr>
+        <td><%= i+1 %></td>
+        <% @columns.each do |(k,v)| %>
+          <% if k == "id" %> 
+            <td><%= link_to m.id, polymorphic_url(m, no_redirect: params[:no_redirect]) %></td>
+          <% else %>
+            <td><%= m.public_send(k) %></td>
+          <% end %>
+        <% end %>
+        <td><%= link_to "show", polymorphic_path(m) %></td>
+        <td><%= link_to "edit", polymorphic_path(m, action: :edit, no_redirect: params[:no_redirect]) %></td>
+        <td><%= link_to "delete", polymorphic_path(m), method: 'delete', data: {confirm: 'Are you sure?'} %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

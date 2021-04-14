@@ -1,0 +1,65 @@
+<%
+  Rails.application.eager_load!
+  @models = ApplicationRecord.descendants
+%>
+
+<%= stylesheet_link_tag 'database', media: 'all' %>
+<%= render partial: 'menu' %>
+
+<h1>Database</h1>
+
+<h2>Liste de modèles</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @models.each do |model| %>
+      <tr>
+        <td><%= link_to model.name, "/#{model.table_name}" %></td>
+        <td><%= link_to "schema", "#schema-#{model.name}" %></td>
+        <td><%= link_to "show", "/#{model.table_name}" %></td>
+        <td><%= link_to "edit", "/#{model.table_name}/edit"  %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= form_with url: db_create_table_path, local: true do |f| %>
+  Nouvelle table: <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
+
+<h2>Schema</h2>
+
+<% @models.each do |model| %>
+  <h3 id="schema-<%= model.name %>"><%= model.name %></h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% model.columns_hash.each_with_index do |(k,v),i| %>
+        <tr>
+          <td><%= k %></td>
+          <td><%= v.type %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <%= form_with url: db_create_column_path(model_name: model.name), local: true do |f| %>
+    <%= f.text_field :name %>
+    <%= select_tag "type", options_for_select(["string", "boolean", "text", "integer", "date", "time", "datetime", "float", "binary", "decimal", "bigint", "primary_key", "references", "timestamp"], "string") %>
+    <%= f.submit "Nouvelle colonne" %>
+  <% end %>
+<% end %>

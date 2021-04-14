@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% (parts || []).each do |part| %>
+      <tr>
+        <%= render partial: "parts/part", locals: {part: part} %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

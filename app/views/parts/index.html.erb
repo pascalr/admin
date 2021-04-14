@@ -1,0 +1,19 @@
+<%
+  @parts = Part.left_outer_joins(:part_list_items).where( part_list_items: { item_id: nil } ).all
+  @assemblies = Part.where('id NOT IN (SELECT DISTINCT(item_id) FROM part_list_items)').all
+  @parts = Part.where('id NOT IN (SELECT DISTINCT(part_id) FROM part_list_items)').order(:name).all
+%>
+
+<h2>Assemblages du plus haut niveau</h2>
+
+<%= render partial: "/parts/parts_table", locals: {parts: @assemblies} %>
+
+<%# render partial: "parts/parts_table", locals: {parts: @plastic_parts} %>
+
+<h2>Autres pièces</h2>
+
+<%= render partial: "/parts/parts_table", locals: {parts: @parts} %>
+
+<br>
+
+<%= link_to 'New Part', new_part_path %>

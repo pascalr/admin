@@ -1,0 +1,43 @@
+<h1><%= model.name %> database</h1>
+
+<table>
+  <thead>
+    <tr>
+      <% unless options[:hide_rowid] %><th>#</th><% end %>
+      <% columns.each do |(k,v)| %>
+        <% unless options[:hide_id] and k.to_sym == :id %><th><%= k %></th><% end %>
+      <% end %>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <% unless options[:hide_type] %>
+      <tr>
+        <% unless options[:hide_rowid] %><th></th><% end %>
+        <% columns.each do |(k,v)| %>
+          <% unless options[:hide_id] and k.to_sym == :id %><th><%= v unless k == "id" %></th><% end %>
+        <% end %>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    <% end %>
+  </thead>
+  <tbody>
+    <% model.order(options[:order]).all.each_with_index do |m,i| %>
+      <tr>
+        <% unless options[:hide_rowid] %><td><%= i+1 %></td><% end %>
+        <% columns.each do |(k,v)| %>
+          <% if k == "id" %> 
+            <% unless options[:hide_id] %><td><%= link_to m.id, database_record_path(model_name: model.name, id: m.id) %></td><% end %>
+          <% else %>
+            <td><%= m.public_send(k) %></td>
+          <% end %>
+        <% end %>
+        <td><%= link_to "show", database_record_path(model_name: model.name, id: m.id) %></td>
+        <td><%= link_to "edit", edit_database_record_path(model_name: model.name, id: m.id) %></td>
+        <td><%= link_to "delete", database_record_path(model_name: model.name, id: m.id), method: 'delete', data: {confirm: 'Are you sure?'} %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

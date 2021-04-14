@@ -1,0 +1,11 @@
+<%= render partial: "menu" %>
+
+<% if params[:no_redirect] %><%= link_to "Back to db", database_path %> |<% end %>
+<%= link_to "Back to table", polymorphic_path(@model, no_redirect: params[:no_redirect]) %> |
+<%= link_to "Show", polymorphic_path(@record, no_redirect: params[:no_redirect]) %>
+
+<h1><%= @record.model_name %> (#<%= @record.id %>)</h1>
+
+<%= form_with(model: @record, local: true) do |form| %>
+  <%= render partial: 'form', locals: {form: form} %>
+<% end %>

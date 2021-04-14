@@ -1,0 +1,7 @@
+<div class="dbnav">
+  <%= link_to "Index", database_path, class: (current_page?(database_path) ? "dbnavlink active" : "dbnavlink") %>
+  <%# link_to "Index", "/#{@model.table_name}", class: (current_page?("/#{@model.table_name}") ? "dbnavlink active" : "dbnavlink") %>
+  <% @models.each do |model| %>
+    <%= link_to model.name, "/#{model.table_name}?no_redirect=true", class: (@model && model.name == @model.name ? "dbnavlink active" : "dbnavlink") %>
+  <% end %>
+</div>

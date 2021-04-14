@@ -1,0 +1,27 @@
+<%= render partial: "menu" %>
+
+<% if params[:no_redirect] %><%= link_to "Back to db", database_path %> |<% end %>
+<%= link_to "Index", polymorphic_path(@model, no_redirect: params[:no_redirect]) %> |
+<%= link_to "Edit", polymorphic_path(@record, action: :edit, no_redirect: params[:no_redirect]) %> |
+<%= link_to "Delete", polymorphic_path(@record), method: 'delete', data: {confirm: 'Are you sure?'} %>
+
+<h1><%= @record.model_name %> (#<%= @record.id %>)</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @model.columns_hash.each_with_index do |(k,v),i| %>
+      <tr>
+        <td><%= k %></td>
+        <td><%= @record.public_send(k) %></td>
+        <td><%= v.type %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

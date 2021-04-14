@@ -1,0 +1,45 @@
+.dbnav {
+  display: flex;
+  background-color: #333;
+  border-top: 1px solid white;
+  overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.dbnav a {
+  color: #f2f2f2;
+  /*text-align: center;*/
+  padding: 4px 6px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#autocomplete-search-all {
+  margin-top: 6px;
+}
+
+.dbnavlink:visited {
+  color: white;
+}
+
+/* Style the links inside the navigation bar */
+.dbnavlink {
+  float: left;
+  /*color: #f2f2f2;*/
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.dbnavlink:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.dbnavlink.active {
+  background-color: rgb(252, 140, 3);
+  color: white;
+}

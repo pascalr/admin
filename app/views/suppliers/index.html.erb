@@ -1,0 +1,14 @@
+<div style="width: 70%; margin: auto;">
+  <h1>Fournisseurs</h1>
+
+  <ul>
+  <% Supplier.all.each do |supplier| %>
+    <li><%= supplier.name %></li>
+  <% end %>
+  </ul>
+
+  <%= form_with(model: Supplier.new) do |form| %>
+    <%= form.text_field :name %>
+    <%= form.submit "Ajouter un fournisseur" %>
+  <% end %>
+</div>

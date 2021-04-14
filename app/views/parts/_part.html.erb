@@ -1,0 +1,11 @@
+  <td><%= link_to part.id, part %></td>
+  <td><%= link_to part.name, part %></td>
+  <% if part.lattest_purchase %>
+    <td><%= link_to number_to_currency(part.price), part.lattest_purchase %></td>
+  <% elsif not part.subparts.blank? %>
+    <td><%= number_to_currency(part.price) %></td>
+  <% else %>
+    <td></td>
+  <% end %>
+  <td><%= link_to 'Edit', edit_part_path(part) %></td>
+  <td><%= link_to 'Destroy', part, method: :delete, data: { confirm: 'Are you sure?' } %></td>
