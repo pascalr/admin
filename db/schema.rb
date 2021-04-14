@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_14_212553) do
+ActiveRecord::Schema.define(version: 2021_04_14_214644) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,6 +42,15 @@ ActiveRecord::Schema.define(version: 2021_04_14_212553) do
     t.float "shipping_cost"
     t.index ["part_id"], name: "index_purchases_on_part_id"
     t.index ["supplier_id"], name: "index_purchases_on_supplier_id"
+  end
+
+  create_table "shopping_items", force: :cascade do |t|
+    t.integer "supplier_id"
+    t.string "title"
+    t.string "comment"
+    t.float "quantity"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "suppliers", force: :cascade do |t|

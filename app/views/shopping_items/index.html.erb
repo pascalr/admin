@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Liste d'achats</h1>
+
+<%= form_with(model: ShoppingItem.new, local: true) do |form| %>
+  <%= form.label :quantity %>
+  <%= form.text_field :quantity %><br>
+  <%= form.label :title %>
+  <%= form.text_field :title %><br>
+  <%= form.label :supplier_id %>
+  <%= form.collection_select :supplier_id, Supplier.all.order(:name), :id, :name, include_blank: true %><br>
+  <%= form.label :comment, "Commentaire" %><br>
+  <%= form.text_area :comment %><br>
+  <%= form.submit %>
+<% end %>
+
+<br><br>
+
+<table class="table table-striped table-sm">
+  <thead class="thead-dark">
+    <tr>
+      <th>Quantity</th>
+      <th>Title</th>
+      <th>Comment</th>
+      <th>Supplier</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @shopping_items.each do |shopping_item| %>
+      <tr>
+        <td><%= shopping_item.quantity %></td>
+        <td><%= shopping_item.title %></td>
+        <td><%= shopping_item.comment %></td>
+        <td><%= shopping_item.supplier_id %></td>
+        <td><%= link_to 'Show', shopping_item %></td>
+        <td><%= link_to 'Edit', edit_shopping_item_path(shopping_item) %></td>
+        <td><%= link_to 'Destroy', shopping_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Shopping Item', new_shopping_item_path %>

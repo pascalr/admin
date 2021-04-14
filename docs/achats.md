@@ -1,29 +1,8 @@
- Articles (2) :
-	
-CDN$ 64,40
-Frais de livraison :
-	
-CDN$ 0,00
-	
-Sous-total :
-	
-CDN$ 64,40
-TPS/TVH estimée :
-	
-CDN$ 3,22
-TVP/TVD/TVQ estimée :
-	
-CDN$ 6,42
-Montant total :
-	
-CDN$ 74,04 
-
 # Liste d'achats
 
 - Acheter des tiges filetées 8mm (Dist J.M. Bergeron? Ils ont des tiges filetées)
 - Acheter écrous 8mm
 - Acheter un peu de washers 8mm? (attendre de voir si nécessaire)
-- Acheter une tige 3/8 supplémenaire (demander s'ils ont du cold rolled steel?)
 - Acheter 4 écrou 18mm NF ?
 - Acheter 2 tuyaux EMT 1/2" pour le contrepoids si jamais ça fonctionne
 
