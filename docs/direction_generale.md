@@ -10,6 +10,12 @@
 
 **Objectif:** Profiter au maximum de mon appartement tant que je l'ai. Faire la recherche de financement plus tard. Je ne voulais pas fabriquer mon produit sans savoir que je peux le vendre, mais ce n'est plus le cas. Au pire, j'utilise la machine moi-meme pour faire et vendre des aliments transformés zéro-déchets.
 
+### Autre - Quoi faire quand je suis en attente
+
+1. Faire une liste d'achats à Faire sur le site de Admin. (Enlever achats.md, il est tout croche, ça prend un tableaux) (Une liste comme chez Logiflex dans Excel)
+1. Rentrer mes dépenses dans admin (Supplier, ...)
+1. Faire un dashboard dans admin (qui afficherait quoi??? pas prioritaire)
+
 ### Ancien plan
 
 1. <strike>Demande de brevet (2 semaine)</strike>
@@ -30,18 +36,19 @@
 
 ### Mouvement horizontal
 
-- Acheter des tiges filetées 8mm
-- Acheter écrous 8mm
+- Acheter des tiges filetées 8mm (En attente que les bearings soit commandé...)
+- Acheter écrous 8mm (En attente que les bearings soit commandé...)
 - Acheter un peu de washers 8mm? (attendre de voir si nécessaire)
 - **Concevoir le lien entre le mouvement vertical et le mouvement horizontal**
-- Déterminer et acheter de la tole plus épaisse pour les cotés 
+- Déterminer et acheter de la tole plus épaisse pour les cotés  (attendre que ce soit nécessaire, pour l'instant c'est correct avec ma petite tôle)
 - Imprimer les supports de la track a cable
 - Imprimer le support du moteur
-- Percer ou imprimer ou acheter 2 poulies pour nema 23
+- Percer ou imprimer ou acheter 2 poulies pour nema 23 (HTD3M?, je veux une **BF** et non AF) Au lieu d'engrenage, je pourrais utiliser des courroies synchrone partout? Pour laxe vertical aussi
+(https://www.steppermotorcanada.ca/steppermotorcanada_011.htm)
 
-En attente de la meche 18mm pour fabriquer les 2 plaques sur les cotés. J'ai l'acier.
+**En attente de la meche 18mm pour fabriquer les 2 plaques sur les cotés. J'ai l'acier.**
 
-En attente des bearings et du TPU pour faire les roues.
+**En attente des bearings et du TPU pour faire les roues.**
 
 ### Mouvement vertical
 
@@ -52,6 +59,11 @@ En attente des bearings et du TPU pour faire les roues.
 - Checker pour imprimer en 3d du nylon (enclosure et hotend température élevé ou nylon qui s'imprime a plus faible température)
 - Tourner les drums du bras robotique de sens (vers l'intérieur)
 - Percer les trous pour les cables d'acier dans le bois et dans le plastique
+- Au lieu d'engrenage, je pourrais utiliser des courroies synchrone partout? Pour laxe vertical aussi
+- Acheter 4 écrou 18mm NF ?
+
+80"/2.625"/3.1416 ~= 10. 1 tour de plus pour que ça tienne == 11.
+
 
 #### Une idée
 
