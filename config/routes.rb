@@ -4,6 +4,7 @@ end
 
 Rails.application.routes.draw do
 
+  get 'spendings/monthly'
   get '/database', to: 'database#dashboard', as: 'database'
   post '/db/create_table', to: 'apps#create_table', as: 'db_create_table'
   post '/db/:model_name/create_column', to: 'apps#create_column', as: 'db_create_column'

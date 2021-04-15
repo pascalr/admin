@@ -1,7 +1,13 @@
+## Aujourd'hui/Demain
+
+1. Backup de la base de donnée de Admin à tous les jours! (De toutes les bases de données en fait)
+1. Commencer closer mon cours
+
 ## Grandes lignes
 
 ### Nouveau plan
 
+1. Backup de la base de donnée de Admin à tous les jours!
 1. Mouvement horizontal
 1. Mouvement vertical
 1. Mouvement R, B, A, T

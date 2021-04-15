@@ -1,0 +1,44 @@
+<h1>Dépenses du dernier mois</h1>
+
+<% if @purchases.blank? %>
+  Il n'y a pas de dépenses ce mois-ci.
+<% else %>
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Jour</th>
+        <th>Qté</th>
+        <th>Pièce</th>
+        <th>Prix de base*</th>
+        <th>Prix total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @purchases.each do |purchase| %>
+        <tr>
+          <td><%= link_to purchase.id, purchase %></td>
+          <td><%= purchase.day %></td>
+          <td><%= purchase.quantity %></td>
+          <td><%= link_to purchase.part.name, purchase.part %></td>
+          <td><%= number_to_currency purchase.price, format: '%n%u' %></td>
+          <td><%= number_to_currency purchase.total_cost, format: '%n%u' %></td>
+        </tr>
+      <% end %>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Total</th>
+        <td colspan="4"></td>
+        <td><%= number_to_currency @purchases.map(&:total_cost).sum, format: '%n%u' %></td>
+      </tr>
+    </tfoot>
+  </table> 
+  <p>* Le prix de base exclut les taxes et le coût d'expédition.</p>
+<% end %>
+
+<p>TODO: Pouvoir naviguer d'un mois à l'autre.</p>
+
+<p>TODO: Ouvrir un autre compte juste pour l'entreprise.</p>
+
+<p>TODO: Comparer à chaque mois les dépenses sur le compte avec cette liste.</p>

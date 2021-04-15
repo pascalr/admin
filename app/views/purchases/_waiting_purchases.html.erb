@@ -1,0 +1,26 @@
+<% @waiting_purchases = Purchase.where(item_received: false) %>
+
+<% if @waiting_purchases.blank? %>
+  Il n'y a aucun article en attente de livraison.
+<% else %>
+  <table class="table table-striped table-sm">
+    <tbody>
+      <% @waiting_purchases.each do |purchase| %>
+        <tr>
+          <td><%= link_to purchase.id, purchase %></td>
+          <td><%= purchase.day %></td>
+          <td><%= purchase.quantity %></td>
+          <td><%= link_to purchase.part.name, purchase.part %></td>
+          <td><%= number_to_currency purchase.price, format: '%n%u' %></td>
+          <td><%= number_to_currency purchase.total_cost, format: '%n%u' %></td>
+          <td>
+            <%= form_with(model: purchase) do |form| %>
+              <%= form.hidden_field :item_received, value: true %>
+              <%= form.submit "Item reçu" %>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table> 
+<% end %>

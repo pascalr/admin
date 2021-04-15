@@ -4,6 +4,8 @@ Je choisis d'utiliser des engrenages en plastique. Pour la simple raison que je 
 
 Ca serait bien que je réussisse a imprimer des gears Hemington je crois ca s'appelle? (une gear a angle des 2 cotés)
 
+7 pources au lieu de 6 pouces au début pour ne pas me faire chier, je rapetisserai plus tard.
+
 ## Matériaux
 
 ### Filament imprimante 3d

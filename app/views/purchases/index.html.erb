@@ -7,6 +7,8 @@
   <%= form.collection_select :part_id, Part.all.order(:name), :id, :name %><br>
   <%= form.label :supplier_id %>
   <%= form.collection_select :supplier_id, Supplier.all.order(:name), :id, :name %><br>
+  <%= form.label :item_received %>
+  <%= form.check_box :item_received %><br>
   <%= form.label :quantity %>
   <%= form.number_field :quantity %><br>
   <b>Coût total</b><br>
@@ -21,6 +23,10 @@
   <%= form.number_field :tvq, id: 'tvq', step: 0.01 %><br>
   <%= form.submit "Ajouter cet achat" %>
 <% end %>
+
+<h2>Items en attente de livraison</h2>
+
+<%= render partial: "purchases/waiting_purchases" %>
 
 <% Supplier.all.each do |supplier| %>
   <h2><%= supplier.name %></h2>
