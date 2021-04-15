@@ -1,5 +1,6 @@
 ## Aujourd'hui/Demain
 
+1. Acheter un disque dur externe pour faire des backups de mes databases.
 1. Backup de la base de donnée de Admin à tous les jours! (De toutes les bases de données en fait)
 1. Commencer closer mon cours
 
