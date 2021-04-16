@@ -16,7 +16,7 @@
           <td>
             <%= form_with(model: purchase) do |form| %>
               <%= form.hidden_field :item_received, value: true %>
-              <%= form.submit "Item reçu" %>
+              <%= form.submit "Item reçu", class: "btn-sm" %>
             <% end %>
           </td>
         </tr>

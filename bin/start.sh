@@ -1,2 +1,2 @@
 #!/bin/bash
-rails s -p 3333
+rails s -p 4000

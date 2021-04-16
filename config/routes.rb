@@ -4,6 +4,9 @@ end
 
 Rails.application.routes.draw do
 
+  get 'finances/bank_reconciliation'
+  get 'finances/balance_sheet'
+  get 'finances/financial_statement'
   get 'spendings/monthly'
   get '/database', to: 'database#dashboard', as: 'database'
   post '/db/create_table', to: 'apps#create_table', as: 'db_create_table'

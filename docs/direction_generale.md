@@ -17,12 +17,6 @@
 
 **Objectif:** Profiter au maximum de mon appartement tant que je l'ai. Faire la recherche de financement plus tard. Je ne voulais pas fabriquer mon produit sans savoir que je peux le vendre, mais ce n'est plus le cas. Au pire, j'utilise la machine moi-meme pour faire et vendre des aliments transformés zéro-déchets.
 
-### Autre - Quoi faire quand je suis en attente
-
-1. Faire une liste d'achats à Faire sur le site de Admin. (Enlever achats.md, il est tout croche, ça prend un tableaux) (Une liste comme chez Logiflex dans Excel)
-1. Rentrer mes dépenses dans admin (Supplier, ...)
-1. Faire un dashboard dans admin (qui afficherait quoi??? pas prioritaire)
-
 ### Ancien plan
 
 1. <strike>Demande de brevet (2 semaine)</strike>
@@ -59,14 +53,15 @@
 
 ### Mouvement vertical
 
-- Essayer d'imprimer des mini bushings pressed fit dans mes poids déja coupé (changer plus tard, 4 bushings max, pas 2 bushings par plate...)
-- Diminuer le bruit du weight stack
-- Installer les contrepoids de chaque cotés
-- Acheter une tige 3/8 supplémenaire (demander s'ils ont du cold rolled steel?)
-- Checker pour imprimer en 3d du nylon (enclosure et hotend température élevé ou nylon qui s'imprime a plus faible température)
-- Tourner les drums du bras robotique de sens (vers l'intérieur)
-- Percer les trous pour les cables d'acier dans le bois et dans le plastique
-- Au lieu d'engrenage, je pourrais utiliser des courroies synchrone partout? Pour laxe vertical aussi
+- Imprimer le 2e guide pour le stack weight
+- Acheter des courroies synchrones soudées de la bonne grandeur
+- Concevoir ou acheter des poulies
+- Imprimer en 3d les nouveaux drums
+- Imprimer les pillows blocks
+- Couper le shaft secondaire
+- Imprimer le support à moteur
+- Essayer d'installer un fer angle pour joindre les deux supports verticals.
+- Au lieu d'engrenage, je pourrais utiliser des courroies synchrone partout? Pour l'axe vertical aussi
 - Acheter 4 écrou 18mm NF ?
 
 80"/2.625"/3.1416 ~= 10. 1 tour de plus pour que ça tienne == 11.
@@ -193,4 +188,13 @@ Axe vertical de 5' seulement?
 
 ## Un jour
 
+- Checker pour imprimer en 3d du nylon (enclosure et hotend température élevé ou nylon qui s'imprime a plus faible température)
+
+## Utopie
+
+Acheter:
+- Scie a métal a ruban horizontale
+- Un tour a métal
+- Une plieuse de tole
+- Une imprimante 3D avec enclosure, hotbed en vitre et hotend tout en métal pour etre capable d'imprimer du nylon a haute température
 
