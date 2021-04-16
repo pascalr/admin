@@ -2,7 +2,7 @@
 
 <ul>
 <% Supplier.all.each do |supplier| %>
-  <li><%= supplier.name %></li>
+  <li><%= link_to supplier.name, supplier %></li>
 <% end %>
 </ul>
 
