@@ -6,6 +6,11 @@
 
 ## Grandes lignes
 
+### Non classés
+
+1. Classement environnemental de chaque ingrédient et ainsi chaque recette
+1. Classement niveau santé de chaque ingrédient et ainsi chaque recette
+
 ### Nouveau plan
 
 1. Backup de la base de donnée de Admin à tous les jours!
