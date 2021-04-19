@@ -46,6 +46,14 @@ Une courroie de 10 mm est donc suffisant pour un petit moteur Nema 23. 6mm le se
 
 Pour l'axe vertical, si j'utilise un moteur nema 23 plus puissant, je devrai prendre une courroie plus large.
 
+## Calculs de longeur de courroie
+
+Utiliser un site en ligne pour faire le calcul comme celui ci:
+https://www.omnicalculator.com/physics/belt-length
+
+La formule est compliquée:
+Belt length = ((DL + DS) * π / 2) + (DL - DS) * arcsin((DL - DS) / 2L) + 2 * √(L2− 0.25 * (DL - DS)2)
+
 ## Questions à répondre:
 
 - Quelle largeur de courroie?

@@ -1,6 +1,6 @@
 ## Aujourd'hui/Demain
 
-1. Acheter un disque dur externe pour faire des backups de mes databases.
+1. CARTABLE/CLASSEUR POUR METTRE MES DOCUMENTS!
 1. Backup de la base de donnée de Admin à tous les jours! (De toutes les bases de données en fait)
 1. Commencer closer mon cours
 
@@ -45,7 +45,6 @@
 - Acheter des tiges filetées 8mm (En attente que les bearings soit commandé...)
 - Acheter écrous 8mm (En attente que les bearings soit commandé...)
 - Acheter un peu de washers 8mm? (attendre de voir si nécessaire)
-- **Concevoir le lien entre le mouvement vertical et le mouvement horizontal**
 - Déterminer et acheter de la tole plus épaisse pour les cotés  (attendre que ce soit nécessaire, pour l'instant c'est correct avec ma petite tôle)
 - Imprimer les supports de la track a cable
 - Imprimer le support du moteur
@@ -58,16 +57,16 @@
 
 ### Mouvement vertical
 
-- Imprimer le 2e guide pour le stack weight
-- Acheter des courroies synchrones soudées de la bonne grandeur
-- Concevoir ou acheter des poulies
 - Imprimer en 3d les nouveaux drums
-- Imprimer les pillows blocks
-- Couper le shaft secondaire
+- Acheter tige filetée 8mm
+- Acheter jam nut et nut régulier 8mm
+- Des washers/sleeve de la bonne grandeur pour les bearings (pas tant grave pour l'instant)
+- Commander des bearings sur amazon pour les avoir plus rapidement et être sur de les avoir... {trouver tige filetée et jam nut en premier est un must}
+- Acheter une courroie synchrone soudée de la bonne grandeur (ça va être moins bruyant que des gears!) [attendre de designer les autres mouvements qui en auront de besoin eux-aussi]
+- Concevoir ou acheter des poulies pour aller avec la courroie (acheter pour 6.35mm! sinon c'est l'enfer...)
 - Imprimer le support à moteur
 - Essayer d'installer un fer angle pour joindre les deux supports verticals.
 - Au lieu d'engrenage, je pourrais utiliser des courroies synchrone partout? Pour l'axe vertical aussi
-- Acheter 4 écrou 18mm NF ?
 
 80"/2.625"/3.1416 ~= 10. 1 tour de plus pour que ça tienne == 11.
 
