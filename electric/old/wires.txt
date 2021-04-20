@@ -1,0 +1,18 @@
+Pour trouver les câbles nécessaires, il faut l'ampérage des moteurs.
+
+Nema 17 motor: 1.5A
+
+AWG24
+
+Nema 23 motor: 3A
+
+AWG22
+
+Chart: https://www.powerstream.com/Wire_Size.htm
+
+I divide by two Maximum amps for chassis wiring
+
+What is the voltage drop though?
+
+
+

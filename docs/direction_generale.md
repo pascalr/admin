@@ -70,6 +70,17 @@
 
 80"/2.625"/3.1416 ~= 10. 1 tour de plus pour que ça tienne == 11.
 
+### Bras
+
+C'est quoi les problèmes que j'essaie de résoudre:
+1. Dans un vrai bon design il faudrait que je moule des composantes en aluminium (Fondrémy)
+1. Le chariot a changé. Quoi faire à l'intérieur du chariot pour l'axe T?
+1. Le bras n'est pas assez rigide (souder???)
+1. L'avant bras n'est pas dans le même axe que le bras (c'est un problème?)
+1. Où passer les fils?
+1. Ne pas tourner le moteur autour de l'engrenage, tourner l'engrenage
+1. Je veux pouvoir tourner plus avec l'axe A, aller en-dessous du bras avec l'avant-bras
+
 
 #### Une idée
 
