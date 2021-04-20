@@ -72,6 +72,54 @@
 
 ### Bras
 
+**TODO: Fabriquer le skelette et valider que la déflection est de moins de 2mm pour la charge maximale**
+**Acheter des bearing 1/2"**
+
+Est-ce que je dois rajouter de la tension dans les bearings pour qu'il y ait moins de jeu que Dan disait? (preloader les bearings?)
+
+Je pourrais peut-être centrer le shaft bêta et non l'axe alpha?
+
+Faire un frame pour que ce soit beau et tout cacher. Pour l'humérus surtout.
+
+Le design actuel est présentement un peu trop grand (14"). J'ai déjà enlevé 0.75" inutile au bout (pots plus petit maximal). Je peux enlever un peu plus sur l'humérus. Ça risque juste d'être plus difficile faire stage multiple pour une poulie...
+
+J'utilise un nema 17 pour T et A. Au pire j'achèterai des Nema 17 plus long, plus fort 0.6 N.m au lieu de 0.4 N.m. Pour B je ne sais pas.
+
+Bearing 1616 ou R8 pour 1/2"
+
+1616 semble être plus commun, je ne sais pas c'est quoi, mais je vais y aller avec ça...
+
+1616: 1/2 X 1 1/8 X 3/8
+R8: 1/2 X 1 1/8 X 5/16
+
+Mon problème est super simple. Comment joindre un axe à un frame.
+
+Comment est-ce qu'ils font d'habitude? Exosquelette en aluminium?
+
+Plié la tige 5/8" quand je vais aller chez mes parents (acheter tige 5/8" et nécessite équerre)
+
+Tige d'acier 17 ou 18mm?
+
+L'axe du mouvement T doit etre centré en Z pour pouvoir tourner le bras pour éviter qu'il accroche quoi que ce soit. Toutefois, il n'est pas obligé d'etre centré en X.
+
+C'est correct de ne pas être centré, mais le problème c'est que je dois avoir suffisament d'espace pour le diamètre de la grande poulie...
+
+Le ratio actuel est de 5.1. Avec une poulie menante de 24 dents, la menée doit posséder: 24*5.1 = 127 dents.
+
+Vue d'ensemble:
+1. Conception d'un squelette
+1. Conception de moteur et de réducteur
+1. Conception d'un boitier et d'un système pour les câbles
+
+Mon problème principal présentemment est le manque de rigidité. Je dois mettre un arbre plus grand pour l'arbre. (https://www.engineering.com/calculators/beams.htm)
+2 kg à 12" ~= 4.5 lbs à 12"
+mais il y a aussi le poids du bras. Disons 10 lbs à 12" pour être safe.
+0.5" au lieu de 0.375" est **3.16 fois** plus rigide
+Le tube de 0.706" est **5 fois** plus rigide que 0.375"
+0.625" est **7.72 fois** plus rigide que 0.375"
+
+0.625" it is! Je ne serai pas capable de le percer par contre...
+
 C'est quoi les problèmes que j'essaie de résoudre:
 1. Dans un vrai bon design il faudrait que je moule des composantes en aluminium (Fondrémy)
 1. Le chariot a changé. Quoi faire à l'intérieur du chariot pour l'axe T?
@@ -80,17 +128,14 @@ C'est quoi les problèmes que j'essaie de résoudre:
 1. Où passer les fils?
 1. Ne pas tourner le moteur autour de l'engrenage, tourner l'engrenage
 1. Je veux pouvoir tourner plus avec l'axe A, aller en-dessous du bras avec l'avant-bras
+1. Diminuer la hauteur du bras (humérus) (la courroie en haut au lieu d'en bas? Les fils électriques eux.
+
+Améliorer le design actuel pour avoir plus de rigidité. Avec le nouveau design de l'armoire, j'ai moins de restriction en hauteur. Donc mettre le mouvement T au dessus des autres mouvements.
 
 
 #### Une idée
 
 Rendre le garde du haut optionnel et non structurel, il y aurait 2 pillow block de chaque coté et un grand tube qui lui sert de structure entre les cotés. A la limite le garde serait optionnel et servirait seulement de faire beau et de cacher le moteur. Le moteur serait accrocher d'un des cotés (cotés opposé au cable track pour que ses fils puissent descendre en bas)
-
-### Mouvement R, B, A, T
-
-Améliorer le design actuel pour avoir plus de rigidité. Avec le nouveau design de l'armoire, j'ai moins de restriction en hauteur. Donc mettre le mouvement T au dessus des autres mouvements.
-
-- Commencer le nouveau design
 
 ### Simulation et bras robotique aller chercher les ingrédients pour des muffins (3 semaines)
 
