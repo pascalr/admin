@@ -1,8 +1,10 @@
 ## Aujourd'hui/Demain
 
 1. CARTABLE/CLASSEUR POUR METTRE MES DOCUMENTS!
+1. Rajouter dépenses autres, par exemple le brevet.
 1. Backup de la base de donnée de Admin à tous les jours! (De toutes les bases de données en fait)
 1. Commencer closer mon cours
+1. Designer les courroies parce que je vais devoir les commander... faire poulies et courroies pour axe T et A.
 
 ## Grandes lignes
 
@@ -72,33 +74,34 @@
 
 ### Bras
 
+Ratio 20:60, trois fois => Ratio: 27 (un peu plus de 5 fois plus élevé qu'avant)
+Je l'ai essayé pour voir visuellement et ça l'a ben de l'allure!
+Diamètre d'une poulie GT2 à 60 dents?
+Oupsi le problème est le bore minimum maintenant...
+C'est quoi la plus petite poulie que je peux utiliser sur un shaft 1/2? Une 30 dents
+Les 80 dents existents, mais sont quand mal pas mal plus dispendieux.
+Donc pour l'instant je crois faire:
+20 => 60, 30 => 60, 20 => 60 (3x2x3 == 18)
+ou bien
+20 => 80, 30 => 60, 20 => 60 (4x2x3 == 24)
+Ehhhh, mais il me faut un custom design de toute façon pour joindre petite et grande essemble...
+Quand ça va être bon ça va être un bushing étroit pour la poulie qui tourne sur le shaft.
+
 **TODO: Fabriquer le skelette et valider que la déflection est de moins de 2mm pour la charge maximale**
-**Acheter des bearing 1/2"**
+**Acheter des bearing R8**
 
 Est-ce que je dois rajouter de la tension dans les bearings pour qu'il y ait moins de jeu que Dan disait? (preloader les bearings?)
 
 Je pourrais peut-être centrer le shaft bêta et non l'axe alpha?
 
-Faire un frame pour que ce soit beau et tout cacher. Pour l'humérus surtout.
+**Waiting skeleton validation** Faire un frame pour que ce soit beau et tout cacher. Pour l'humérus surtout.
 
-Le design actuel est présentement un peu trop grand (14"). J'ai déjà enlevé 0.75" inutile au bout (pots plus petit maximal). Je peux enlever un peu plus sur l'humérus. Ça risque juste d'être plus difficile faire stage multiple pour une poulie...
+**Waiting skeleton validation**  Le design actuel est présentement un peu trop grand (14"). J'ai déjà enlevé 0.75" inutile au bout (pots plus petit maximal). Je peux enlever un peu plus sur l'humérus. Ça risque juste d'être plus difficile faire stage multiple pour une poulie...
 
-J'utilise un nema 17 pour T et A. Au pire j'achèterai des Nema 17 plus long, plus fort 0.6 N.m au lieu de 0.4 N.m. Pour B je ne sais pas.
-
-Bearing 1616 ou R8 pour 1/2"
-
-1616 semble être plus commun, je ne sais pas c'est quoi, mais je vais y aller avec ça...
-
-1616: 1/2 X 1 1/8 X 3/8
-R8: 1/2 X 1 1/8 X 5/16
+J'utilise un nema 17 pour T et A. Au pire j'achèterai des Nema 17 plus long, plus fort 0.6 N.m au lieu de 0.4 N.m. Pour B je ne sais pas. Il y a même des 0.71 N.m!
 
 Mon problème est super simple. Comment joindre un axe à un frame.
-
 Comment est-ce qu'ils font d'habitude? Exosquelette en aluminium?
-
-Plié la tige 5/8" quand je vais aller chez mes parents (acheter tige 5/8" et nécessite équerre)
-
-Tige d'acier 17 ou 18mm?
 
 L'axe du mouvement T doit etre centré en Z pour pouvoir tourner le bras pour éviter qu'il accroche quoi que ce soit. Toutefois, il n'est pas obligé d'etre centré en X.
 
