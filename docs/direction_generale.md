@@ -1,5 +1,6 @@
 ## Aujourd'hui/Demain
 
+1. Essayer de chauffer la surface du TPU pour le lisser.
 1. CARTABLE/CLASSEUR POUR METTRE MES DOCUMENTS!
 1. Rajouter dépenses autres, par exemple le brevet.
 1. Backup de la base de donnée de Admin à tous les jours! (De toutes les bases de données en fait)
@@ -59,6 +60,7 @@
 
 ### Mouvement vertical
 
+- Je peux donner un angle à mes roues pour aller chercher le jeu. Ce n'est pas grave.
 - Imprimer en 3d les nouveaux drums
 - Acheter tige filetée 8mm
 - Acheter jam nut et nut régulier 8mm
@@ -73,6 +75,16 @@
 80"/2.625"/3.1416 ~= 10. 1 tour de plus pour que ça tienne == 11.
 
 ### Bras
+
+#### Poignet
+
+Il y a plusieurs manières possibles de rattacher le skelette dans le poignet:
+- Un Y (souder un U à une tige droite)
+- Une plate soudée à la tige vissée au bearing hub
+- Comme présentemment
+- Plier la tige 1/2" et mettre les bearings dans l'humérus (mais idéalement non parce qu'on veut que l'humérus soit le plus mince possible pour passer en dessous.
+
+#### Autre
 
 Ratio 20:60, trois fois => Ratio: 27 (un peu plus de 5 fois plus élevé qu'avant)
 Je l'ai essayé pour voir visuellement et ça l'a ben de l'allure!
