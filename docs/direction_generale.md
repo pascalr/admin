@@ -76,6 +76,37 @@
 
 ### Bras
 
+Je peux utiliser les deux petites MXL de Guillaume et les poulies. Juste commander des HTD 3M. Le ratio ne sera pas tout à fait ce que je veux, mais ce n'est pas grave pour l'instant.
+
+C'est mieux sans le moteur avec gearbox parce que ça me prendrait une courroie de toute façon, et la courroie devrait être encore plus résistante parce que le torque serait plus élevé...
+
+BOooooooooooooon criss. 12 dents GT2 au lieu de 20 dents... Ratio de 6 * ratio de 3 je crois
+ratio de 6 avec GT2 et ratio de 3 avec HTD
+
+12*6 = 72 dents, ça se fait bien. (15.20$) (de tout façon je vais l'imprimer en 3d je crois)
+12 dents coûte peut-être (1-2$)
+
+HTD 3M: 16 dents * 3 = 48 dents
+
+GT2 72 dents == 45.33 mm
+HTD 48 dents == 45.08 mm
+
+YYESSSIIIR!!!!!
+
+Une 6mm GT2 et une 15 mm HTD_3M, ça fait que c'est 6.42 fois plus fort, ce qui est parfait.
+htd 3m pulley 48t: C'est parfait!!!
+https://www.aliexpress.com/item/33045886787.html?spm=a2g0o.productlist.0.0.65ab6e146jUH8H&algo_pvid=bb5671f6-42f3-49ef-a7cd-521b62574e76&algo_expid=bb5671f6-42f3-49ef-a7cd-521b62574e76-1&btsid=0b0a555f16195533225846334efdc5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_
+
+
+
+18:90, 18:90? 15:72 sur SDP/SI? Il y avait des 90 je crois sur Ali, mais elles étaient cher...
+
+Bon OK, je vais utiliser GT2 ou MXL pour la première réduction, et HTD3 pour la deuxième.
+
+NOOOON OK fuckk off, utiliser seulement GT2 parce que le diamètre de la poulie peut-être plus petit et ainsi atteindre un ratio plus élevé. J'ai 20 dents présentement, essayer GT2 100 dents. Pour la secondaire, simplement mettre une courroie plus large. Il y en a plein de disponible à 25mm de large.
+
+Mais est-ce que je sauve de l'argent avec les courroies? Si non, acheter un nema 17 avec gearbox.
+
 #### Poignet
 
 Il y a plusieurs manières possibles de rattacher le skelette dans le poignet:
@@ -100,7 +131,6 @@ Ehhhh, mais il me faut un custom design de toute façon pour joindre petite et g
 Quand ça va être bon ça va être un bushing étroit pour la poulie qui tourne sur le shaft.
 
 **TODO: Fabriquer le skelette et valider que la déflection est de moins de 2mm pour la charge maximale**
-**Acheter des bearing R8**
 
 Est-ce que je dois rajouter de la tension dans les bearings pour qu'il y ait moins de jeu que Dan disait? (preloader les bearings?)
 
