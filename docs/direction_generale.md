@@ -1,7 +1,9 @@
 ## Aujourd'hui/Demain
 
+1. Un moteur Nema 23 plus fort pour l'axe vertical. (un 2 fois plus fort, 2 N.m)
+1. Axe vertical: Poulie HTD 3M 16T et poulie HTD 3M 72 dents
 1. Courroies axe vertical, axe T et axe A.
-1. Rajouter dépenses autres, par exemple le brevet.
+1. Rajouter dépenses autres, par exemple le brevet, dépenses amazon prime.
 1. Backup de la base de donnée de Admin à tous les jours! (De toutes les bases de données en fait)
 1. Designer les courroies parce que je vais devoir les commander... faire poulies et courroies pour axe T et A.
 
@@ -52,6 +54,7 @@
 
 ### Mouvement vertical
 
+- Poulie HTD 3M 16T et poulie HTD 3M 72 dents
 - Imprimer en 3d les nouveaux drums
 - Des washers/sleeve de la bonne grandeur pour les bearings (pas tant grave pour l'instant)
 - Acheter une courroie synchrone soudée de la bonne grandeur (ça va être moins bruyant que des gears!) [attendre de designer les autres mouvements qui en auront de besoin eux-aussi]

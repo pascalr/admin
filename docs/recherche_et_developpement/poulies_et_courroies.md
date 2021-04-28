@@ -120,7 +120,18 @@ Pour un couple de 1 N.m, la force sur les dents est donc de:
 25 dents: 41.9 N (1/0.02387)
 ...
 
-Une courroie de 10 mm est donc suffisant pour un petit moteur Nema 23. 6mm le serait probablement aussi, mais je veux un bon facteur de sécurité pour être safe...
+Pour un couple de 2 N.m, la force sur les dents est donc de:
+
+16 dents: 130.8 N (2/0.01525)
+25 dents: 83.8 N (2/0.02387)
+...
+
+Une courroie de 10 mm est donc suffisant pour un petit moteur Nema 23 ou pour un Nema 17 geared 5.18:1 (très limite par contre 130N vs 160N).
+6mm le serait probablement aussi pour nema 23, mais je veux un bon facteur de sécurité pour être safe...
+
+Sur SDP/SI, j'ai working tension: 285N pour 1". C'est 112N pour 10mm, et non 160N...
+
+Bon... 15mm pour être safe...
 
 Pour l'axe vertical, si j'utilise un moteur nema 23 plus puissant, je devrai prendre une courroie plus large.
 
