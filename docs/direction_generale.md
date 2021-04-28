@@ -1,10 +1,8 @@
 ## Aujourd'hui/Demain
 
-1. Essayer de chauffer la surface du TPU pour le lisser.
-1. CARTABLE/CLASSEUR POUR METTRE MES DOCUMENTS!
+1. Courroies axe vertical, axe T et axe A.
 1. Rajouter dépenses autres, par exemple le brevet.
 1. Backup de la base de donnée de Admin à tous les jours! (De toutes les bases de données en fait)
-1. Commencer closer mon cours
 1. Designer les courroies parce que je vais devoir les commander... faire poulies et courroies pour axe T et A.
 
 ## Grandes lignes
@@ -16,7 +14,6 @@
 
 ### Nouveau plan
 
-1. Backup de la base de donnée de Admin à tous les jours!
 1. Mouvement horizontal
 1. Mouvement vertical
 1. Mouvement R, B, A, T
@@ -45,67 +42,34 @@
 
 ### Mouvement horizontal
 
-- Acheter des tiges filetées 8mm (En attente que les bearings soit commandé...)
-- Acheter écrous 8mm (En attente que les bearings soit commandé...)
-- Acheter un peu de washers 8mm? (attendre de voir si nécessaire)
+**En attente de la meche 18mm pour fabriquer les 2 plaques sur les cotés. J'ai l'acier.**
+
 - Déterminer et acheter de la tole plus épaisse pour les cotés  (attendre que ce soit nécessaire, pour l'instant c'est correct avec ma petite tôle)
 - Imprimer les supports de la track a cable
 - Imprimer le support du moteur
 - Percer ou imprimer ou acheter 2 poulies pour nema 23 (HTD3M?, je veux une **BF** et non AF) Au lieu d'engrenage, je pourrais utiliser des courroies synchrone partout? Pour laxe vertical aussi
 (https://www.steppermotorcanada.ca/steppermotorcanada_011.htm)
 
-**En attente de la meche 18mm pour fabriquer les 2 plaques sur les cotés. J'ai l'acier.**
-
-**En attente des bearings et du TPU pour faire les roues.**
-
 ### Mouvement vertical
 
-- Je peux donner un angle à mes roues pour aller chercher le jeu. Ce n'est pas grave.
 - Imprimer en 3d les nouveaux drums
-- Acheter tige filetée 8mm
-- Acheter jam nut et nut régulier 8mm
 - Des washers/sleeve de la bonne grandeur pour les bearings (pas tant grave pour l'instant)
-- Commander des bearings sur amazon pour les avoir plus rapidement et être sur de les avoir... {trouver tige filetée et jam nut en premier est un must}
 - Acheter une courroie synchrone soudée de la bonne grandeur (ça va être moins bruyant que des gears!) [attendre de designer les autres mouvements qui en auront de besoin eux-aussi]
 - Concevoir ou acheter des poulies pour aller avec la courroie (acheter pour 6.35mm! sinon c'est l'enfer...)
 - Imprimer le support à moteur
 - Essayer d'installer un fer angle pour joindre les deux supports verticals.
-- Au lieu d'engrenage, je pourrais utiliser des courroies synchrone partout? Pour l'axe vertical aussi
 
 80"/2.625"/3.1416 ~= 10. 1 tour de plus pour que ça tienne == 11.
 
 ### Bras
 
-Je peux utiliser les deux petites MXL de Guillaume et les poulies. Juste commander des HTD 3M. Le ratio ne sera pas tout à fait ce que je veux, mais ce n'est pas grave pour l'instant.
+On veut idéalement un ratio de 20, niveau vitesse, ça semble avoir ben de l'allure. Le gearbox vient avec un ratio de 5.18. Il manque ~= 3.8. 16 dents à 48 dents serait acceptable je crois.
 
-C'est mieux sans le moteur avec gearbox parce que ça me prendrait une courroie de toute façon, et la courroie devrait être encore plus résistante parce que le torque serait plus élevé...
+Pulley petite: HTD 3M: 16 dents
+Pulley grande: HTD 3M: 48 dents (45.08mm)? Essayer un peu plus si possible...
 
-BOooooooooooooon criss. 12 dents GT2 au lieu de 20 dents... Ratio de 6 * ratio de 3 je crois
-ratio de 6 avec GT2 et ratio de 3 avec HTD
-
-12*6 = 72 dents, ça se fait bien. (15.20$) (de tout façon je vais l'imprimer en 3d je crois)
-12 dents coûte peut-être (1-2$)
-
-HTD 3M: 16 dents * 3 = 48 dents
-
-GT2 72 dents == 45.33 mm
-HTD 48 dents == 45.08 mm
-
-YYESSSIIIR!!!!!
-
-Une 6mm GT2 et une 15 mm HTD_3M, ça fait que c'est 6.42 fois plus fort, ce qui est parfait.
-htd 3m pulley 48t: C'est parfait!!!
+htd 3m pulley 48t:
 https://www.aliexpress.com/item/33045886787.html?spm=a2g0o.productlist.0.0.65ab6e146jUH8H&algo_pvid=bb5671f6-42f3-49ef-a7cd-521b62574e76&algo_expid=bb5671f6-42f3-49ef-a7cd-521b62574e76-1&btsid=0b0a555f16195533225846334efdc5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_
-
-
-
-18:90, 18:90? 15:72 sur SDP/SI? Il y avait des 90 je crois sur Ali, mais elles étaient cher...
-
-Bon OK, je vais utiliser GT2 ou MXL pour la première réduction, et HTD3 pour la deuxième.
-
-NOOOON OK fuckk off, utiliser seulement GT2 parce que le diamètre de la poulie peut-être plus petit et ainsi atteindre un ratio plus élevé. J'ai 20 dents présentement, essayer GT2 100 dents. Pour la secondaire, simplement mettre une courroie plus large. Il y en a plein de disponible à 25mm de large.
-
-Mais est-ce que je sauve de l'argent avec les courroies? Si non, acheter un nema 17 avec gearbox.
 
 #### Poignet
 
@@ -117,39 +81,17 @@ Il y a plusieurs manières possibles de rattacher le skelette dans le poignet:
 
 #### Autre
 
-Ratio 20:60, trois fois => Ratio: 27 (un peu plus de 5 fois plus élevé qu'avant)
-Je l'ai essayé pour voir visuellement et ça l'a ben de l'allure!
-Diamètre d'une poulie GT2 à 60 dents?
-Oupsi le problème est le bore minimum maintenant...
-C'est quoi la plus petite poulie que je peux utiliser sur un shaft 1/2? Une 30 dents
-Les 80 dents existents, mais sont quand mal pas mal plus dispendieux.
-Donc pour l'instant je crois faire:
-20 => 60, 30 => 60, 20 => 60 (3x2x3 == 18)
-ou bien
-20 => 80, 30 => 60, 20 => 60 (4x2x3 == 24)
-Ehhhh, mais il me faut un custom design de toute façon pour joindre petite et grande essemble...
-Quand ça va être bon ça va être un bushing étroit pour la poulie qui tourne sur le shaft.
-
 **TODO: Fabriquer le skelette et valider que la déflection est de moins de 2mm pour la charge maximale**
 
 Est-ce que je dois rajouter de la tension dans les bearings pour qu'il y ait moins de jeu que Dan disait? (preloader les bearings?)
-
-Je pourrais peut-être centrer le shaft bêta et non l'axe alpha?
-
-**Waiting skeleton validation** Faire un frame pour que ce soit beau et tout cacher. Pour l'humérus surtout.
 
 **Waiting skeleton validation**  Le design actuel est présentement un peu trop grand (14"). J'ai déjà enlevé 0.75" inutile au bout (pots plus petit maximal). Je peux enlever un peu plus sur l'humérus. Ça risque juste d'être plus difficile faire stage multiple pour une poulie...
 
 J'utilise un nema 17 pour T et A. Au pire j'achèterai des Nema 17 plus long, plus fort 0.6 N.m au lieu de 0.4 N.m. Pour B je ne sais pas. Il y a même des 0.71 N.m!
 
-Mon problème est super simple. Comment joindre un axe à un frame.
-Comment est-ce qu'ils font d'habitude? Exosquelette en aluminium?
-
 L'axe du mouvement T doit etre centré en Z pour pouvoir tourner le bras pour éviter qu'il accroche quoi que ce soit. Toutefois, il n'est pas obligé d'etre centré en X.
 
 C'est correct de ne pas être centré, mais le problème c'est que je dois avoir suffisament d'espace pour le diamètre de la grande poulie...
-
-Le ratio actuel est de 5.1. Avec une poulie menante de 24 dents, la menée doit posséder: 24*5.1 = 127 dents.
 
 Vue d'ensemble:
 1. Conception d'un squelette
@@ -167,8 +109,7 @@ Le tube de 0.706" est **5 fois** plus rigide que 0.375"
 
 C'est quoi les problèmes que j'essaie de résoudre:
 1. Dans un vrai bon design il faudrait que je moule des composantes en aluminium (Fondrémy)
-1. Le chariot a changé. Quoi faire à l'intérieur du chariot pour l'axe T?
-1. Le bras n'est pas assez rigide (souder???)
+1. L'humérus n'est pas assez rigide (souder???)
 1. L'avant bras n'est pas dans le même axe que le bras (c'est un problème?)
 1. Où passer les fils?
 1. Ne pas tourner le moteur autour de l'engrenage, tourner l'engrenage
@@ -176,7 +117,6 @@ C'est quoi les problèmes que j'essaie de résoudre:
 1. Diminuer la hauteur du bras (humérus) (la courroie en haut au lieu d'en bas? Les fils électriques eux.
 
 Améliorer le design actuel pour avoir plus de rigidité. Avec le nouveau design de l'armoire, j'ai moins de restriction en hauteur. Donc mettre le mouvement T au dessus des autres mouvements.
-
 
 #### Une idée
 
@@ -294,6 +234,7 @@ Axe vertical de 5' seulement?
 ## Un jour
 
 - Checker pour imprimer en 3d du nylon (enclosure et hotend température élevé ou nylon qui s'imprime a plus faible température)
+- Essayer de chauffer la surface du TPU pour le lisser.
 
 ## Utopie
 
