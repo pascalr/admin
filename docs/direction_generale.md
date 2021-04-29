@@ -1,8 +1,8 @@
 ## Planification au jour le jour
 
+1. Une photo de moi avec un casque, un marteau et un autre outils, assis par terre comme un enfant avec un gros sourire d'enfant, mais moi avec des vrais outils pas avec des jouets.
 1. Imprimer drums et attacher câble d'acier. Monter et descendre fonctionnel.
 1. Poulie axe A.
-1. Rajouter dépenses autres, par exemple le brevet, dépenses amazon prime.
 1. Backup de la base de donnée de Admin à tous les jours! (De toutes les bases de données en fait)
 
 ## Grandes lignes
