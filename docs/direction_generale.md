@@ -52,6 +52,17 @@
 - Percer ou imprimer ou acheter 2 poulies pour nema 23 (HTD3M?, je veux une **BF** et non AF) Au lieu d'engrenage, je pourrais utiliser des courroies synchrone partout? Pour laxe vertical aussi
 (https://www.steppermotorcanada.ca/steppermotorcanada_011.htm)
 
+#### Installation:
+
+1. Installer la partie supérieure avec les deux plaques de métal et les deux essieus avec les roues.
+1. Installer le support à cable track
+1. Préinstaller le moteur
+1. Déposer le chariot sur la track horizontal
+1. Installer l'arbre 1/2" (1 bearing, **puis poulie et courroie**, puis 1 autre bearing)
+1. Ajuster la tension de la courroie avec la position du moteur.
+1. Insérer la partie inférieure sur le bearing
+1. Insérér les deux essieus à travers les roues. (Il faudrait des washers de l'autre côté de la roue et non des nuts sinon ça va être chiant...)
+
 ### Mouvement vertical
 
 - Poulie HTD 3M 16T et poulie HTD 3M 72 dents
@@ -65,6 +76,8 @@
 80"/2.625"/3.1416 ~= 10. 1 tour de plus pour que ça tienne == 11.
 
 ### Bras
+
+Le moteur que j'ai acheté doit prendre obligatoirement une autre poulie pour tendre la courroie parce que les trous dans le gearbox sont trop près du centre...
 
 On veut idéalement un ratio de 20, niveau vitesse, ça semble avoir ben de l'allure. Le gearbox vient avec un ratio de 5.18. Il manque ~= 3.8. 16 dents à 48 dents serait acceptable je crois.
 

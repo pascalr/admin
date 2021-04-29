@@ -1,3 +1,10 @@
+## Poulies et courroies à acheter
+
+T: **Poulie HTD 3M 72T (68mm) 1/2" bore**, **Poulie HTD 3M 16T (14.52mm) 8mm bore**, ~~Courroie entraxe 3" (76.2mm), longueur= 291.5mm (97 dents == 291mm), **Idler pulley**
+Y: Note: Poulie 72T 18mm bore. MÊME CHOSE QUE L'AXE T YEAH!!! Et même pas besoin de idler pulley!
+A: **Poulie HTD 3M 60T (56.54mm) 1/2" bore**, **Poulie HTD 3M 16T (14.52)**, ~~Courroie entraxe 6" (152.4mm), longueur= 420mm (140 dents), Pas de idler! Juste faire une mounting plate!
+
+
 ## Processus de sélection de courroie
 
 1. Déterminer la puissance de sortie désirée
