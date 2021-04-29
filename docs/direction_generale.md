@@ -1,16 +1,15 @@
-## Aujourd'hui/Demain
+## Planification au jour le jour
 
-1. Un moteur Nema 23 plus fort pour l'axe vertical. (un 2 fois plus fort, 2 N.m)
-1. Axe vertical: Poulie HTD 3M 16T et poulie HTD 3M 72 dents
-1. Courroies axe vertical, axe T et axe A.
+1. Imprimer drums et attacher câble d'acier. Monter et descendre fonctionnel.
+1. Poulie axe A.
 1. Rajouter dépenses autres, par exemple le brevet, dépenses amazon prime.
 1. Backup de la base de donnée de Admin à tous les jours! (De toutes les bases de données en fait)
-1. Designer les courroies parce que je vais devoir les commander... faire poulies et courroies pour axe T et A.
 
 ## Grandes lignes
 
 ### Non classés
 
+1. Brevet pour robot qui évite de combattre la gravité?
 1. Classement environnemental de chaque ingrédient et ainsi chaque recette
 1. Classement niveau santé de chaque ingrédient et ainsi chaque recette
 
@@ -44,13 +43,9 @@
 
 ### Mouvement horizontal
 
-**En attente de la meche 18mm pour fabriquer les 2 plaques sur les cotés. J'ai l'acier.**
-
 - Déterminer et acheter de la tole plus épaisse pour les cotés  (attendre que ce soit nécessaire, pour l'instant c'est correct avec ma petite tôle)
 - Imprimer les supports de la track a cable
 - Imprimer le support du moteur
-- Percer ou imprimer ou acheter 2 poulies pour nema 23 (HTD3M?, je veux une **BF** et non AF) Au lieu d'engrenage, je pourrais utiliser des courroies synchrone partout? Pour laxe vertical aussi
-(https://www.steppermotorcanada.ca/steppermotorcanada_011.htm)
 
 #### Installation:
 
@@ -65,7 +60,8 @@
 
 ### Mouvement vertical
 
-- Poulie HTD 3M 16T et poulie HTD 3M 72 dents
+**Attente Poulie HTD 3M 16T et poulie HTD 3M 72 dents**
+
 - Imprimer en 3d les nouveaux drums
 - Des washers/sleeve de la bonne grandeur pour les bearings (pas tant grave pour l'instant)
 - Acheter une courroie synchrone soudée de la bonne grandeur (ça va être moins bruyant que des gears!) [attendre de designer les autres mouvements qui en auront de besoin eux-aussi]
@@ -99,7 +95,7 @@ Il y a plusieurs manières possibles de rattacher le skelette dans le poignet:
 
 **TODO: Fabriquer le skelette et valider que la déflection est de moins de 2mm pour la charge maximale**
 
-Est-ce que je dois rajouter de la tension dans les bearings pour qu'il y ait moins de jeu que Dan disait? (preloader les bearings?)
+Est-ce que je dois rajouter de la tension dans les bearings pour qu'il y ait moins de jeu comme Dan Gelbart disait? (preloader les bearings?)
 
 **Waiting skeleton validation**  Le design actuel est présentement un peu trop grand (14"). J'ai déjà enlevé 0.75" inutile au bout (pots plus petit maximal). Je peux enlever un peu plus sur l'humérus. Ça risque juste d'être plus difficile faire stage multiple pour une poulie...
 
@@ -164,7 +160,7 @@ Ce site internet n'est pas seulement un site de référence pour trouver des rec
 ##### Fonctionnalités
 - Range la nourriture en rentrant de l'épicerie.
 - Fais l'inventaire des quantités d'ingrédients restants.
-- Avertit à propos des dates de péremptions des ingrédients.  
+- Avertit à propos des dates de péremptions des ingrédients.
 - Sors tous les ingrédients nécessaires à une recette.
 - Fais des mélanges en versant les quantités nécessaires.
 - Range les pots une fois la recette terminé.
