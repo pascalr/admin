@@ -64,8 +64,6 @@
 
 - Imprimer en 3d les nouveaux drums
 - Des washers/sleeve de la bonne grandeur pour les bearings (pas tant grave pour l'instant)
-- Acheter une courroie synchrone soudée de la bonne grandeur (ça va être moins bruyant que des gears!) [attendre de designer les autres mouvements qui en auront de besoin eux-aussi]
-- Concevoir ou acheter des poulies pour aller avec la courroie (acheter pour 6.35mm! sinon c'est l'enfer...)
 - Imprimer le support à moteur
 - Essayer d'installer un fer angle pour joindre les deux supports verticals.
 
@@ -84,6 +82,24 @@ htd 3m pulley 48t:
 https://www.aliexpress.com/item/33045886787.html?spm=a2g0o.productlist.0.0.65ab6e146jUH8H&algo_pvid=bb5671f6-42f3-49ef-a7cd-521b62574e76&algo_expid=bb5671f6-42f3-49ef-a7cd-521b62574e76-1&btsid=0b0a555f16195533225846334efdc5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_
 
 #### Poignet
+
+Qu'est-ce que je veux changer de mon poignet présentement?
+
+- La manière que c'est attaché à l'humérus.
+- La vitesse du moteur. (Utiliser un moteur Nema 23.)
+- Le recouvrir pour que ce soit beau
+- Possibilité d'utiliser seulement de l'aluminium au lieu du plastique pour pouvoir utiliser un four un jour.
+- Il y a du matériel inutile en bas il me semble
+- Il est quand même long...
+- Les pinces ne sont pas belles, trop épaisses... (aluminium, bushings...)
+- Le bruit de la worm gear (essayer avec de la lubrification?
+- La worm gear devrait être idéalement être dans un bain d'huile dans un truc hermétique
+- Les gears de la pinces en nylon
+- Je trouve que c'est trop connecté présentement... J'aimerais séparé la pince du reste
+
+Un moteur Nema 17 plus long pour l'axe B ou un moteur nema 23?
+
+Comment faire pour que le moteur soit bien situé?
 
 Il y a plusieurs manières possibles de rattacher le skelette dans le poignet:
 - Un Y (souder un U à une tige droite)
