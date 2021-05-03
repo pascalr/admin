@@ -1,5 +1,14 @@
+Les pois chiches sont principalement connus comme ingrédients dans les houmous, les couscous, les falafels ou les salades.
+
+TODO: Mettre des images des pois chiches, de la plante et des gousses.
+
+Les pois chiches peuvent s'acheter secs ou déjà cuit en boite de conserve. TODO: L'équivalent quantité et cuisson pois chiches.
+
+TODO: Temps de trempage, temps de conservation...
+
 ## Planification au jour le jour
 
+1. Acheter tape UHMW
 1. Tubes carrés pour mouvement horizontal.
 1. Un autre moteur Nema 23 pour axe B.
 1. Pouvoir rechercher les aliments dans la barre de recherche.
