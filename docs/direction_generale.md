@@ -1,5 +1,10 @@
 ## Planification au jour le jour
 
+1. Tubes carrés pour mouvement horizontal.
+1. Un autre moteur Nema 23 pour axe B.
+1. Pouvoir rechercher les aliments dans la barre de recherche.
+1. Rajouter du texte sur mon site pour les ingrédients (pois chiches, ail en poudre, ...)
+1. Worm gear
 1. Une photo de moi avec un casque, un marteau et un autre outils, assis par terre comme un enfant avec un gros sourire d'enfant, mais moi avec des vrais outils pas avec des jouets.
 1. Imprimer drums et attacher câble d'acier. Monter et descendre fonctionnel.
 1. Poulie axe A.
@@ -9,6 +14,7 @@
 
 ### Non classés
 
+1. Ça devrait être 5/8" pour T, mais ça implique que je dois souder très droit. Je reporte à plus tard...
 1. Brevet pour robot qui évite de combattre la gravité?
 1. Classement environnemental de chaque ingrédient et ainsi chaque recette
 1. Classement niveau santé de chaque ingrédient et ainsi chaque recette
@@ -43,6 +49,11 @@
 
 ### Mouvement horizontal
 
+**En attente des maudits bearings...**
+
+- OOÙÙÙÙ mettre la courroie?!?!?!
+- Je pourrais peut-être imprimer l'arc en PLA avec un peu de TPU par dessus?
+- Pour éviter le gauche droite, ça pourrait simplement être le chassis du chariot qui frotte sur le tube carré. Il pourrait y avoir un tape de UMVW? collé sur le chassis pour que ça glisse mieux.
 - Déterminer et acheter de la tole plus épaisse pour les cotés  (attendre que ce soit nécessaire, pour l'instant c'est correct avec ma petite tôle)
 - Imprimer les supports de la track a cable
 - Imprimer le support du moteur
@@ -60,10 +71,9 @@
 
 ### Mouvement vertical
 
-**Attente Poulie HTD 3M 16T et poulie HTD 3M 72 dents**
+**Attente Poulie HTD 3M 16T et poulie HTD 3M 72 dents et courroie**
 
-- Imprimer en 3d les nouveaux drums
-- Des washers/sleeve de la bonne grandeur pour les bearings (pas tant grave pour l'instant)
+- Des washers/sleeve de la bonne grandeur pour les bearings des roues (pas tant grave pour l'instant)
 - Imprimer le support à moteur
 - Essayer d'installer un fer angle pour joindre les deux supports verticals.
 
@@ -106,6 +116,15 @@ Il y a plusieurs manières possibles de rattacher le skelette dans le poignet:
 - Une plate soudée à la tige vissée au bearing hub
 - Comme présentemment
 - Plier la tige 1/2" et mettre les bearings dans l'humérus (mais idéalement non parce qu'on veut que l'humérus soit le plus mince possible pour passer en dessous.
+
+#### Axe B
+
+Quel devrait être le ratio? Présentemment c'est super lent. Idéalement 2 fois plus rapide.
+Présentemment c'est 1:60. Acheter 1:30. Ou bien 1:40? 1:40 pour être safe, je ferai plus plus tard au pire. Je veux être sûr que ça fonctionne...
+
+Acheter rod 12mm, je crois que je ne suis pas capable de percer les gears que je veux acheter... Mais ça va me prendre un ou deux bearings 12mm aussi... maudit...
+
+Pour ce qui est de la worm gear, je crois acheter 6mm et je vais sabler 0.35mm du shaft nema 23...
 
 #### Autre
 
