@@ -8,10 +8,10 @@ TODO: Temps de trempage, temps de conservation...
 
 ## Planification au jour le jour
 
-1. Acheter tape UHMW
-1. Tubes carrés pour mouvement horizontal.
-1. Un autre moteur Nema 23 pour axe B.
-1. Pouvoir rechercher les aliments dans la barre de recherche.
+1. Imprimer support track tôle
+1. Imprimer chariot bottom
+1. Un autre moteur Nema 23 pour axe B. **En attente de 6.35mm ou 8mm**
+1. Voir les articles HTML de /articles
 1. Rajouter du texte sur mon site pour les ingrédients (pois chiches, ail en poudre, ...)
 1. Worm gear
 1. Une photo de moi avec un casque, un marteau et un autre outils, assis par terre comme un enfant avec un gros sourire d'enfant, mais moi avec des vrais outils pas avec des jouets.
