@@ -1,29 +1,23 @@
-Les pois chiches sont principalement connus comme ingrédients dans les houmous, les couscous, les falafels ou les salades.
-
-TODO: Mettre des images des pois chiches, de la plante et des gousses.
-
-Les pois chiches peuvent s'acheter secs ou déjà cuit en boite de conserve. TODO: L'équivalent quantité et cuisson pois chiches.
-
-TODO: Temps de trempage, temps de conservation...
-
 ## Planification au jour le jour
 
-1. Imprimer support track tôle
-1. Imprimer chariot bottom
-1. Un autre moteur Nema 23 pour axe B. **En attente de 6.35mm ou 8mm**
 1. Voir les articles HTML de /articles
+1. Comment passer les fils électriques entre A et T?
+1. Me raser la barbe!!!
+1. Switch horizontal
+1. Imprimer chariot bottom
 1. Rajouter du texte sur mon site pour les ingrédients (pois chiches, ail en poudre, ...)
 1. Worm gear
 1. Une photo de moi avec un casque, un marteau et un autre outils, assis par terre comme un enfant avec un gros sourire d'enfant, mais moi avec des vrais outils pas avec des jouets.
 1. Imprimer drums et attacher câble d'acier. Monter et descendre fonctionnel.
 1. Poulie axe A.
 1. Backup de la base de donnée de Admin à tous les jours! (De toutes les bases de données en fait)
+1. Modèle d'affaires [En attente que mon cours termine]
 
 ## Grandes lignes
 
 ### Non classés
 
-1. Ça devrait être 5/8" pour T, mais ça implique que je dois souder très droit. Je reporte à plus tard...
+1. Ça devrait être 5/8" pour l'axe T, mais ça implique que je dois souder très droit. Je reporte à plus tard...
 1. Brevet pour robot qui évite de combattre la gravité?
 1. Classement environnemental de chaque ingrédient et ainsi chaque recette
 1. Classement niveau santé de chaque ingrédient et ainsi chaque recette
@@ -40,7 +34,6 @@ TODO: Temps de trempage, temps de conservation...
 
 ### Ancien plan
 
-1. <strike>Demande de brevet (2 semaine)</strike>
 1.  Une page de vente (page d’accueil) sur mon site internet (1 semaine) [En attente de l'acception du dépot de brevet]
 1.  Modèle d'affaires (1 semaine) [En attente que mon cours termine]
 1.  Peaufiner mon site internet (MVP) et le rendre publique (1 semaine) [En attente de l'acception du dépot de brevet]
@@ -54,16 +47,13 @@ TODO: Temps de trempage, temps de conservation...
 1. Financement participatif. Vendre des réservations à 50$.
 1. Faire mon bras robotique
 
-## Détails et progres des grandes lignes
+## Détails et progrès des grandes lignes
 
 ### Mouvement horizontal
 
 **En attente des maudits bearings...**
 
-- OOÙÙÙÙ mettre la courroie?!?!?!
-- Je pourrais peut-être imprimer l'arc en PLA avec un peu de TPU par dessus?
-- Pour éviter le gauche droite, ça pourrait simplement être le chassis du chariot qui frotte sur le tube carré. Il pourrait y avoir un tape de UMVW? collé sur le chassis pour que ça glisse mieux.
-- Déterminer et acheter de la tole plus épaisse pour les cotés  (attendre que ce soit nécessaire, pour l'instant c'est correct avec ma petite tôle)
+- Pour éviter que ça dépasse, enlever le washer entre les deux roues. Les deux bearings collé ne sont pas un problème je crois. Simplement enlever le seal de caoutchouc.
 - Imprimer les supports de la track a cable
 - Imprimer le support du moteur
 
