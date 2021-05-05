@@ -1,5 +1,7 @@
 ## Planification au jour le jour
 
+1. Sell kits, check shipping. Modèle d'affaires selling kits? Selling plans? 40-50$ par plans + 200$ par kit, 250$ par appareils vendus. Attention je dois prendre en compte les retours possibles. Être transparent sur les coûts. Prendre 30%. Je trouve que 30% c'est beaucoup, mais bon Apple le fait et les gens semblent trouver que c'est correct alors oui je prends 30% de marge de profit. À 250$ par kits,
+je dois vendre 400 appareils/année pour avoir 100 000$ de revenus/année.
 1. Voir les articles HTML de /articles
 1. Comment passer les fils électriques entre A et T?
 1. Me raser la barbe!!!
@@ -31,6 +33,11 @@
 1. Simulation et bras robotique verser des aliments grossiers (riz, macaroni, légumineuses, ...) (3 semaines)
 
 **Objectif:** Profiter au maximum de mon appartement tant que je l'ai. Faire la recherche de financement plus tard. Je ne voulais pas fabriquer mon produit sans savoir que je peux le vendre, mais ce n'est plus le cas. Au pire, j'utilise la machine moi-meme pour faire et vendre des aliments transformés zéro-déchets.
+
+### Version B
+
+1. 80"? au lieu de 5'
+1. 6" de large au lieu de 7"
 
 ### Ancien plan
 
