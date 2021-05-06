@@ -1,5 +1,7 @@
 <b>https://news.ycombinator.com/item?id=26644616</b>
 
+Publicité: https://www.reddit.com/r/VegRecipes/
+
 TODO: Addresse courriel.
 TODO: Sources
 TODO: Calculs en annexes
