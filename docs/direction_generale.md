@@ -1,8 +1,10 @@
 ## Planification au jour le jour
 
+1. Gripper
+1. Capteur de lumière correct sur le moteur DC
+1. NE PAS IMPRIMER LA MAIN TANT QUE JE N'AI PAS RECU LA WORM GEAR. OU BIEN DÉJÀ ESSAYER D'USINER UN SHAFT À 12mm?
 1. Acheter des câbles électriques.
 1. Poulie axe A.
-1. Comment passer les fils électriques entre A et T?
 1. Switch horizontal
 1. Rajouter du texte sur mon site pour les ingrédients (pois chiches, ail en poudre, ...)
 1. Monter et descendre fonctionnel.
@@ -140,6 +142,46 @@ Présentemment c'est 1:60. Acheter 1:30. Ou bien 1:40? 1:40 pour être safe, je 
 Acheter rod 12mm, je crois que je ne suis pas capable de percer les gears que je veux acheter... Mais ça va me prendre un ou deux bearings 12mm aussi... maudit...
 
 Pour ce qui est de la worm gear, je crois acheter 6mm et je vais sabler 0.35mm du shaft nema 23...
+
+### Gripper
+
+Essayer avec le moteur 12V que j'ai présentemment avant d'en acheter un autre. Sur amazon ça l'air d'être disponible. Mais bon, ça m'en prend un quand même plus fort que celui présentement je crois...
+
+Un moteur avec DC avec gearbox à worm gear pour être par en haut et pour être plus sécuritaire (irréversible)
+
+Le moteur actuel makeblock DC motor 37mm possède un ratio de 90. Cela correspond à un RPM de 50. Avec un torque de 4.5 Kg.cm à 40 RPM avec charge.
+
+Utiliser des ressorts pour maintenir une pression sur les pots même en perte de courant?
+
+Le moteur force pour ouvrir les pinces. Le moteur utilise un gearbox à worm gear pour être irréversible.
+
+Parce que je vais staller les moteurs, utiliser un moteur et gearbox surpuissant et le rouler à 50% de la capacité?
+
+Possiblement utiliser une clutch?
+
+Pas de spring, la force varie et il n'y a pas assez d'espace pour contenir le ressort non étiré...
+
+Un câble d'acier avec un bowden?
+
+Je pense ce que j'aimerais, c'est simplement que le matériel de la pince soit élastique. Ainsi, tu sers et entre le contact initial et la fin, la base de la pince avance encore de quelques millimètres et il se développe un tension. Le moteur cesse de tourner lorsqu'il cesse de tourner haha. Il pourrait détecter qu'il ralentit et ainsi éviter de staller. À voir.
+
+Peut-être acheter 2 moteurs? Comme ça si je brule le premier en le stallant ben faire plus attention avec le second!
+
+Ça me prends des gears plus solides aussi...
+
+DUAL SHAFT POUR POUVOIR LIRE LA VITESSE QUE ÇA TOURNE EN ARRIERE!!!
+
+Bon je prends un moteur plus fort et je le ferai rouler à plus petite capacité. Mais là prendre un RPM plus élevé que 40 RPM parce qu'il va tourner moins vite parce que je vais lui donner moins de courant?
+
+Gears en nylon?!
+
+Acheter le 80 RPM pour être plus safe?
+
+Shaft 15mm ou 33mm? Idéalement ça serait genre 20-22mm
+
+WOW!!! Il existe des encodeurs qui sont genre tenus en étant soudé au connecteur du moteur! Intelligent!
+
+https://www.amazon.ca/-/fr/engrenage-bo%C3%AEtier-r%C3%A9duction-encodeur-autobloquant/dp/B073S5GM6Q/ref=sr_1_9?__mk_fr_CA=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=dc+motor+worm+gear&qid=1620399857&sr=8-9
 
 #### Autre
 
