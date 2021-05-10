@@ -1,16 +1,15 @@
+Je pense que ce que j'aimerais c'est y aller tranquillement et vendre seulement sur mon site des kits. Pas d'investisseurs, pas crowdfunding. Ça attire les compétiteurs ces affaires là. J'aimerais bien ça trouvé un client à la fois peu à peu! Un seul client pour l'instant et je serais très content! Essayer de en trouver un à Sherbrooke. (Boulangerie, Prêt-à-cuisiner, petite boutique de nourriture, ...) Au lieu d'un gros montant à vendre, offrir une location, comme ça ça n'engage à rien et c'est un montant bien moins élevé pour le client. 200$ par mois. Au lieu d'un employé, c'est rien! Ou 400$-500$ par mois au début et ça inclut le support technique pour que l'appareil fonctionne 24h/24, 7jours/7. Fuck vouloir tout faire moi-même, avoir un seul client donnerait énormément de crédibilité à la compagnie. Et oui ne pas vendre la machine, seulement la louer, comme ça ça me fait un revenu tout le temps. Je dois supporter le coût initial de la machine par contre... Ne pas charger au client les moments où l'appareil est en panne au début.
+
 ## Planification au jour le jour
 
 1. Gripper
-1. Capteur de lumière correct sur le moteur DC
-1. NE PAS IMPRIMER LA MAIN TANT QUE JE N'AI PAS RECU LA WORM GEAR. OU BIEN DÉJÀ ESSAYER D'USINER UN SHAFT À 12mm?
+1. NE PAS IMPRIMER LA MAIN TANT QUE JE N'AI PAS RECU LA WORM GEAR. OU BIEN DÉJÀ ESSAYER D'USINER UN SHAFT À 12mm? Pas de bearing? Simplement en PLA? On s'en fout pas mal de toute façon pour l'instant...
 1. Acheter des câbles électriques.
 1. Poulie axe A.
 1. Switch horizontal
 1. Rajouter du texte sur mon site pour les ingrédients (pois chiches, ail en poudre, ...)
-1. Monter et descendre fonctionnel.
 1. Backup de la base de donnée de Admin à tous les jours! (De toutes les bases de données en fait)
 1. Modèle d'affaires (vendre des kits de robots) (c'est ça mon principal, mettre de côté le reste pour l'instant... lire sur le shipping!!!)
-1. Responsive images
 
 ## Grandes lignes
 
@@ -62,7 +61,6 @@ je dois vendre 400 appareils/année pour avoir 100 000$ de revenus/année.
 **En attente des maudits bearings...**
 
 - Pour éviter que ça dépasse, enlever le washer entre les deux roues. Les deux bearings collé ne sont pas un problème je crois. Simplement enlever le seal de caoutchouc.
-- Imprimer les supports de la track a cable
 - Imprimer le support du moteur
 
 #### Installation:
@@ -82,7 +80,6 @@ je dois vendre 400 appareils/année pour avoir 100 000$ de revenus/année.
 
 - Des washers/sleeve de la bonne grandeur pour les bearings des roues (pas tant grave pour l'instant)
 - Imprimer le support à moteur
-- Essayer d'installer un fer angle pour joindre les deux supports verticals.
 
 80"/2.625"/3.1416 ~= 10. 1 tour de plus pour que ça tienne == 11.
 
