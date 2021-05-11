@@ -1,7 +1,9 @@
-Je pense que ce que j'aimerais c'est y aller tranquillement et vendre seulement sur mon site des kits. Pas d'investisseurs, pas crowdfunding. Ça attire les compétiteurs ces affaires là. J'aimerais bien ça trouvé un client à la fois peu à peu! Un seul client pour l'instant et je serais très content! Essayer de en trouver un à Sherbrooke. (Boulangerie, Prêt-à-cuisiner, petite boutique de nourriture, ...) Au lieu d'un gros montant à vendre, offrir une location, comme ça ça n'engage à rien et c'est un montant bien moins élevé pour le client. 200$ par mois. Au lieu d'un employé, c'est rien! Ou 400$-500$ par mois au début et ça inclut le support technique pour que l'appareil fonctionne 24h/24, 7jours/7. Fuck vouloir tout faire moi-même, avoir un seul client donnerait énormément de crédibilité à la compagnie. Et oui ne pas vendre la machine, seulement la louer, comme ça ça me fait un revenu tout le temps. Je dois supporter le coût initial de la machine par contre... Ne pas charger au client les moments où l'appareil est en panne au début.
-
 ## Planification au jour le jour
 
+1. Gérer les traductions. Avoir un dictionnaire de traduction. Translation: from, to, original, translated, de cette manière je peux réutiliser les traductions. Il y a plusieurs manières possible de traduire, mais je crois que en cuisine, selon mon contexte, une seule manière est suffisant. De toute façon je vais traduire des phrases et non des mots.
+1. Une belle recette. Boulette de pois chiches.
+1. Autres ingrédients courrament utilisé avec cette recette, et là tu cliques sur l'ingrédient et ça te montres une recette avec cet ingrédient.
+1. Des instructions pour les recettes et pouvoir rajouter des commentaires par exemple qu'est-ce qui peut être bon comme ingrédient avec. Ensuite la personne peut forker la recette et la modifier à sa guise et essayer selon les recommandations. Les recommandations pourrait aussi être calculer par l'ordinateur selon des recettes similaires? Ça serait nice!
 1. Gripper
 1. NE PAS IMPRIMER LA MAIN TANT QUE JE N'AI PAS RECU LA WORM GEAR. OU BIEN DÉJÀ ESSAYER D'USINER UN SHAFT À 12mm? Pas de bearing? Simplement en PLA? On s'en fout pas mal de toute façon pour l'instant...
 1. Acheter des câbles électriques.
@@ -10,6 +12,19 @@ Je pense que ce que j'aimerais c'est y aller tranquillement et vendre seulement 
 1. Rajouter du texte sur mon site pour les ingrédients (pois chiches, ail en poudre, ...)
 1. Backup de la base de donnée de Admin à tous les jours! (De toutes les bases de données en fait)
 1. Modèle d'affaires (vendre des kits de robots) (c'est ça mon principal, mettre de côté le reste pour l'instant... lire sur le shipping!!!)
+
+## Business
+
+J'aimerais ça y aller petit à petit et vendre juste quelques petits trucs au lieu de trop gros au début et d'attirer la compétition... C'est moins ALL-IN aussi...
+
+1. Trouver un premier client qui me servira de publicité.
+1. Boulangerie, Prêt-à-cuisiner, petite boutique de nourriture, ...
+1. Magasin de nourriture
+1. Louer le robot à des prêts-à-cuisiner locaux.
+1. Crowdfunding 50$ pour réservation, ou membre, ou vendre kits à assembler.
+1. Vendre des kits à assembler sur mon site internet.
+1. Angel investors (en approcher au moins pour voir l'intérêt)
+1. VC investors (en approcher au moins pour voir l'intérêt)
 
 ## Grandes lignes
 
@@ -130,6 +145,26 @@ Il y a plusieurs manières possibles de rattacher le skelette dans le poignet:
 1. Attacher le support à bearings au top du poignet
 1. Attacher le tube carré et le shaft bêta au support à bearings
 1. Attacher le couvercle au support à bearings
+
+#### Axe A
+
+Calcul de l'angle minimal:
+
+Poignet: 1.875"
+Humérus: 6.25"
+Main jusqu'au milieu de la pince pour prendre: 6.25"
+Main jusqu'à la fin de la pince pour prendre: 7"
+Donc, présentement, 14.375" de reach pour prendre des pots
+
+À 90 degré, la distance la plus grand est de 6.25" en Z pour l'humérus plus 3" en Z pour la largeur de la pince. Aussi, 1.875" pour le poignet en X et 7" en X pour la main jusqu'à la fin de la pince.
+Z: 9.25", X: 8.875", pythagore: 12.82", 1.55" (14.375 - 12.82), ce n'est pas assez
+
+À 60 degré,
+Poignet doit mesurer 3.125". Calcul avec thêta à 120 degré pour que ce soit plus simple.
+Reach == 6.25" + 3.125" + 6.25" == 15.625"
+-3.125" en Z pour l'humérus (sin(30)*6.25") plus 3.125" pour le poignet et 7" pour la main jusqu'à la fin == 7" en Z.
+6.25" * cos(30) == 5.41" en X + 3" en X pour la largeur de la pince
+Z: 7", X: 8.41", pythagore: 10.94"; 15.625" - 10.94" == 4.69", c'est suffisant! Mes plus gros pots mesure 4.375"
 
 #### Axe B
 
@@ -344,4 +379,7 @@ Acheter:
 - Un tour a métal
 - Une plieuse de tole
 - Une imprimante 3D avec enclosure, hotbed en vitre et hotend tout en métal pour etre capable d'imprimer du nylon a haute température
+
+Au lieu d'un gros montant à vendre, offrir une location, comme ça ça n'engage à rien et c'est un montant bien moins élevé pour le client. 200$ par mois. Au lieu d'un employé, c'est rien! Ou 400$-500$ par mois au début et ça inclut le support technique pour que l'appareil fonctionne 24h/24, 7jours/7. Fuck vouloir tout faire moi-même, avoir un seul client donnerait énormément de crédibilité à la compagnie. Et oui ne pas vendre la machine, seulement la louer, comme ça ça me fait un revenu tout le temps. Je dois supporter le coût initial de la machine par contre... Ne pas charger au client les moments où l'appareil est en panne au début.
+
 
