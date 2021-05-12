@@ -1,16 +1,17 @@
 ## Planification au jour le jour
 
-1. Gérer les traductions. Avoir un dictionnaire de traduction. Translation: from, to, original, translated, de cette manière je peux réutiliser les traductions. Il y a plusieurs manières possible de traduire, mais je crois que en cuisine, selon mon contexte, une seule manière est suffisant. De toute façon je vais traduire des phrases et non des mots.
-1. Une belle recette. Boulette de pois chiches.
-1. Autres ingrédients courrament utilisé avec cette recette, et là tu cliques sur l'ingrédient et ça te montres une recette avec cet ingrédient.
-1. Des instructions pour les recettes et pouvoir rajouter des commentaires par exemple qu'est-ce qui peut être bon comme ingrédient avec. Ensuite la personne peut forker la recette et la modifier à sa guise et essayer selon les recommandations. Les recommandations pourrait aussi être calculer par l'ordinateur selon des recettes similaires? Ça serait nice!
-1. Gripper
-1. NE PAS IMPRIMER LA MAIN TANT QUE JE N'AI PAS RECU LA WORM GEAR. OU BIEN DÉJÀ ESSAYER D'USINER UN SHAFT À 12mm? Pas de bearing? Simplement en PLA? On s'en fout pas mal de toute façon pour l'instant...
 1. Acheter des câbles électriques.
 1. Poulie axe A.
 1. Switch horizontal
-1. Rajouter du texte sur mon site pour les ingrédients (pois chiches, ail en poudre, ...)
 1. Backup de la base de donnée de Admin à tous les jours! (De toutes les bases de données en fait)
+1. Modifier la navigation des recettes similaires
+1. Une belle recette. Boulette de pois chiches.
+1. Autres ingrédients courrament utilisé avec cette recette, et là tu cliques sur l'ingrédient et ça te montres une recette avec cet ingrédient.
+1. Lien vers l'article de pois chiches
+1. Des instructions pour les recettes et pouvoir rajouter des commentaires par exemple qu'est-ce qui peut être bon comme ingrédient avec. Ensuite la personne peut forker la recette et la modifier à sa guise et essayer selon les recommandations. Les recommandations pourrait aussi être calculer par l'ordinateur selon des recettes similaires? Ça serait nice!
+1. Gripper
+1. NE PAS IMPRIMER LA MAIN TANT QUE JE N'AI PAS RECU LA WORM GEAR. OU BIEN DÉJÀ ESSAYER D'USINER UN SHAFT À 12mm? Pas de bearing? Simplement en PLA? On s'en fout pas mal de toute façon pour l'instant...
+1. Rajouter du texte sur mon site pour les ingrédients (pois chiches, ail en poudre, ...)
 1. Modèle d'affaires (vendre des kits de robots) (c'est ça mon principal, mettre de côté le reste pour l'instant... lire sur le shipping!!!)
 
 ## Business
@@ -371,6 +372,7 @@ Axe vertical de 5' seulement?
 
 - Checker pour imprimer en 3d du nylon (enclosure et hotend température élevé ou nylon qui s'imprime a plus faible température)
 - Essayer de chauffer la surface du TPU pour le lisser.
+- Retaining ring pour le bearing de la main. Nécessite un tour pour faire deux encoches sur le shaft. Il ne devrait pas se déplacer, le bearing est rentré press-fit, mais bon, ça serait mieux.
 
 ## Utopie
 
