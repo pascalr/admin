@@ -1,8 +1,9 @@
 ## Planification au jour le jour
 
+1. Homing system
+1. Faire une belle armoire, ça va être fucking lourd...
 1. Acheter des câbles électriques.
 1. Poulie axe A.
-1. Switch horizontal
 1. Backup de la base de donnée de Admin à tous les jours! (De toutes les bases de données en fait)
 1. Modifier la navigation des recettes similaires
 1. Une belle recette. Boulette de pois chiches.
@@ -13,6 +14,8 @@
 1. NE PAS IMPRIMER LA MAIN TANT QUE JE N'AI PAS RECU LA WORM GEAR. OU BIEN DÉJÀ ESSAYER D'USINER UN SHAFT À 12mm? Pas de bearing? Simplement en PLA? On s'en fout pas mal de toute façon pour l'instant...
 1. Rajouter du texte sur mon site pour les ingrédients (pois chiches, ail en poudre, ...)
 1. Modèle d'affaires (vendre des kits de robots) (c'est ça mon principal, mettre de côté le reste pour l'instant... lire sur le shipping!!!)
+
+## Site internet
 
 ## Business
 
@@ -69,6 +72,45 @@ je dois vendre 400 appareils/année pour avoir 100 000$ de revenus/année.
     (1 semaine)
 1. Financement participatif. Vendre des réservations à 50$.
 1. Faire mon bras robotique
+
+## Homing
+
+J'aimerais que le homing se fasse sans limit switch. Simplement en le déplaçant manuellement à sa maison et avec la caméra pour axe B.
+
+## Câbles électriques
+
+Ce que j'ai besoin:
+- Câble moteur 2.8A pour axe B et axe X.
+- Câble moteur 1A pour axe R.
+- Câble moteur 1.7A pour axe A et axe T.
+- Câble moteur 4.0A pour axe Y.
+- Câble shielded pour encodeur du gripper mobile
+- Câble shielded pour encodeur du gripper fixe
+
+Ce que j'ai présentemment:
+
+- 8 brins AWG 22 stranded
+
+Ce que je voudrais:
+
+La charte que j'ai trouvé es très, très conservatrice. Elle suggère 5.9A pour AWG 14, et dans une maison c'est 15A... Pour mon AWG 22, elle suggère 0.92A. Donc 15/5.9 * 0.92 == 2.34A. C'est suffisant pour les axes A et T, mais ce n'est pas l'idéal pour les NEMA 23, surtout Y. Pour du AWG 18, c'est 2.3A. 15/5.9*2.3 == 5.85A. C'est amplement suffisant pour tout. Pour vendre la machine, j'utiliserais quand même un plus gros conducteur pour axe Y. Ça me prendrait du AWG 16 pour être safe à 3.7A. AWG 15 donne 4.7A.
+
+J'aimerais des 4 conducteurs pour les moteurs.
+
+Appeler Addisson électronique au cas où ils n'ont pas en stock et seulement à Montréal.
+SKU: 600846
+MOD: 73-134
+Deca cables, stranded wire - 4 conductors - 18 AWG - shielded - FT4, GREY - SOLD BY METER
+
+Pour l'axe R je pourrais utiliser un câble électrique plus petit à 2 conducteur, en fait idéalement à 6 conducteurs?
+
+**Ça me prend à peu près 3m par axe, donc pour X, Y, T, A, B acheter 15m, ben 20m de 4 conducteurs 18 AWG stranded**
+
+**Utiliser le conducteur shielded que j'ai déjà pour l'encodeur, 5m**
+
+**Acheter AWG 22 à AWG 18 2 conducteurs pour gripper mobile et fixe, 5m**
+
+Il y a l'air d'y avoir beaucoup de conducteur pour le capteur du moteur. Attendre de voir.
 
 ## Détails et progrès des grandes lignes
 
@@ -373,6 +415,9 @@ Axe vertical de 5' seulement?
 - Checker pour imprimer en 3d du nylon (enclosure et hotend température élevé ou nylon qui s'imprime a plus faible température)
 - Essayer de chauffer la surface du TPU pour le lisser.
 - Retaining ring pour le bearing de la main. Nécessite un tour pour faire deux encoches sur le shaft. Il ne devrait pas se déplacer, le bearing est rentré press-fit, mais bon, ça serait mieux.
+- Exosquelette au lieu de squelette
+1. Mettre les bearings dans l'humérus au lieu de les mettre dans le poignet, nécessite un exosquelette pour soutenir les bearings, ça serait simple de passer les fils électrique dans l'humérus, ah fuck off pour l'instant ça marche mon affaire de toute façon j'ai fini mon design et même presque tout imprimé... à faire avec la prochaine version en aluminium. Je ne sais même pas si c'est une bonne idée. Si tu regardes les robots SCARA normal, leur humérus est vraiment mince. Tu veux que l'humérus soit mince parce que l'avant bras passe un peu en dessous.
+- As you might guess, the rated ampacities are just a rule of thumb. In careful engineering the voltage drop, insulation temperature limit, thickness, thermal conductivity, and air convection and temperature should all be taken into account.
 
 ## Utopie
 
@@ -384,4 +429,7 @@ Acheter:
 
 Au lieu d'un gros montant à vendre, offrir une location, comme ça ça n'engage à rien et c'est un montant bien moins élevé pour le client. 200$ par mois. Au lieu d'un employé, c'est rien! Ou 400$-500$ par mois au début et ça inclut le support technique pour que l'appareil fonctionne 24h/24, 7jours/7. Fuck vouloir tout faire moi-même, avoir un seul client donnerait énormément de crédibilité à la compagnie. Et oui ne pas vendre la machine, seulement la louer, comme ça ça me fait un revenu tout le temps. Je dois supporter le coût initial de la machine par contre... Ne pas charger au client les moments où l'appareil est en panne au début.
 
+
+
+ La différence entre le 17HS4401 et le 17HS4401S est que la couleur du boîtier est différente, d'autres paramètres sont les mêmes. 
 
