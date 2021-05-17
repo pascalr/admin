@@ -1,77 +1,90 @@
-## Planification au jour le jour
+## Thank you
 
-1. Homing system
-1. Faire une belle armoire, ça va être fucking lourd...
+Thank you to all the recipes websites I took inspiration from!
+Thank you for everyone who ever contributed to linux!
+Thank you to everyone who made a programming library free and open source!
+Thank you for the design of a pretty pantry!
+https://www.youtube.com/watch?v=bZO3Vk5jI5k
+https://howtomechatronics.com/projects/scara-robot-how-to-build-your-own-arduino-based-robot/
+Thank you to so many others who helped me in one way or another!
+
+## Planification
+
+1. Avancer la fabrication du robot. [En attente de pièces...]
+1. Faire la simulation avant de faire l'armoire pour s'assurer du reach du robot. Quoique...
+1. Faire une BELLE armoire DÉMÉNAGEABLE. Faire une armoire SILENCIEUSE. Imprimer gasket? Faire comme une porte extérieur? Comme dans un hotel pour rendre les porte silencieuse? Non avec weather stripping.
 1. Acheter des câbles électriques.
 1. Poulie axe A.
-1. Backup de la base de donnée de Admin à tous les jours! (De toutes les bases de données en fait)
-1. Modifier la navigation des recettes similaires
-1. Une belle recette. Boulette de pois chiches.
-1. Autres ingrédients courrament utilisé avec cette recette, et là tu cliques sur l'ingrédient et ça te montres une recette avec cet ingrédient.
-1. Lien vers l'article de pois chiches
-1. Des instructions pour les recettes et pouvoir rajouter des commentaires par exemple qu'est-ce qui peut être bon comme ingrédient avec. Ensuite la personne peut forker la recette et la modifier à sa guise et essayer selon les recommandations. Les recommandations pourrait aussi être calculer par l'ordinateur selon des recettes similaires? Ça serait nice!
+1. Homing system
+1. Continuer la simulation du bras robotique pour pouvoir le programmer, aller chercher les ingrédients, puis verser des aliments grossiers, puis faire des muffins.
+1. Recettes similaires
 1. Gripper
-1. NE PAS IMPRIMER LA MAIN TANT QUE JE N'AI PAS RECU LA WORM GEAR. OU BIEN DÉJÀ ESSAYER D'USINER UN SHAFT À 12mm? Pas de bearing? Simplement en PLA? On s'en fout pas mal de toute façon pour l'instant...
-1. Rajouter du texte sur mon site pour les ingrédients (pois chiches, ail en poudre, ...)
-1. Modèle d'affaires (vendre des kits de robots) (c'est ça mon principal, mettre de côté le reste pour l'instant... lire sur le shipping!!!)
 
-## Site internet
-
-## Business
-
-J'aimerais ça y aller petit à petit et vendre juste quelques petits trucs au lieu de trop gros au début et d'attirer la compétition... C'est moins ALL-IN aussi...
-
-1. Trouver un premier client qui me servira de publicité.
-1. Boulangerie, Prêt-à-cuisiner, petite boutique de nourriture, ...
-1. Magasin de nourriture
-1. Louer le robot à des prêts-à-cuisiner locaux.
+1.  Une page de vente (page d’accueil) sur mon site internet (1 semaine) [En attente de l'acception du dépot de brevet]
+1. Trouver un premier client qui me servira de publicité. [Fabriquer un prototype avant] (Boulangerie, Prêt-à-cuisiner, petite boutique de nourriture, ...)
+1. Trouver shipping mondial kits de robot
+1. Faire une vidéo publicitaire de cuisine
 1. Crowdfunding 50$ pour réservation, ou membre, ou vendre kits à assembler.
-1. Vendre des kits à assembler sur mon site internet.
-1. Angel investors (en approcher au moins pour voir l'intérêt)
-1. VC investors (en approcher au moins pour voir l'intérêt)
-
-## Grandes lignes
-
-### Non classés
-
-1. Sell kits, check shipping. Modèle d'affaires selling kits? Selling plans? 40-50$ par plans + 200$ par kit, 250$ par appareils vendus. Attention je dois prendre en compte les retours possibles. Être transparent sur les coûts. Prendre 30%. Je trouve que 30% c'est beaucoup, mais bon Apple le fait et les gens semblent trouver que c'est correct alors oui je prends 30% de marge de profit. À 250$ par kits,
-je dois vendre 400 appareils/année pour avoir 100 000$ de revenus/année.
-1. Faire des articles pour les ingrédients peu à peu quand j'en ai de besoin.
+1. Modèle d'affaires
+1. Angel investors (en approcher au moins pour voir l'intérêt) [Fabriquer un prototype avant]
+1. VC investors (en approcher au moins pour voir l'intérêt) [Fabriquer un prototype avant]
 1. Ajouter toutes les valeurs nutritives des ingrédients.
-1. Ça devrait être 5/8" pour l'axe T, mais ça implique que je dois souder très droit. Je reporte à plus tard...
 1. Brevet pour robot qui évite de combattre la gravité?
 1. Classement environnemental de chaque ingrédient et ainsi chaque recette
 1. Classement niveau santé de chaque ingrédient et ainsi chaque recette
-
-### Nouveau plan
-
-1. Mouvement horizontal
-1. Mouvement vertical
-1. Mouvement R, B, A, T
-1. Simulation et bras robotique aller chercher les ingrédients pour des muffins (3 semaines)
-1. Simulation et bras robotique verser des aliments grossiers (riz, macaroni, légumineuses, ...) (3 semaines)
-
-**Objectif:** Profiter au maximum de mon appartement tant que je l'ai. Faire la recherche de financement plus tard. Je ne voulais pas fabriquer mon produit sans savoir que je peux le vendre, mais ce n'est plus le cas. Au pire, j'utilise la machine moi-meme pour faire et vendre des aliments transformés zéro-déchets.
-
-### Version B
-
-1. 80"? au lieu de 5'
-1. 6" de large au lieu de 7"
-
-### Ancien plan
-
-1.  Une page de vente (page d’accueil) sur mon site internet (1 semaine) [En attente de l'acception du dépot de brevet]
-1.  Modèle d'affaires (1 semaine) [En attente que mon cours termine]
-1.  Peaufiner mon site internet (MVP) et le rendre publique (1 semaine) [En attente de l'acception du dépot de brevet]
-1.  Trouver des clients et/ou des investisseurs (1 semaine)
-1.  Fabriquer une belle armoire de cuisine (2 semaines)
-1.  Développer une dizaine de bonnes recettes en exemple (2 semaine)
-1.  Faire une vidéo publicitaire de cuisine (1 semaine)
 1. Démarrer l'entreprise officiellement.
 1. Contacter des médias et essayer de faire parler de l'entreprise
-    (1 semaine)
-1. Financement participatif. Vendre des réservations à 50$.
-1. Faire mon bras robotique
+
+## Version à vendre
+
+1. 80"? de haut au lieu de 5'
+1. 6" de large au lieu de 7"
+1. Arbre T 5/8" au lieu de 1/2"
+1. Bearings pour l'axe vertical
+1. Bushings pour où qu'il ne peut pas y avoir de bearing comme 3 sur le gripper
+
+
+
+
+
+
+
+
+
+
+
+
+## Pantry
+
+1. Déterminer les vrais mesures que je veux. Prendre des mesures chez Céline!
+1. Trouver un caoutchouc que je peux mettre sur la porte pour le son.
+1. Faire des tests de son avec le moteur. J'ai peur que la transmission du son se fasse avec l'armoire. Il ne faudrait vraiment pas que ça devienne une caisse de résonnance... Mais s'il n'y a pas d'air qui passe, ça devrait être bon?
+1. **Acheter ce qu'il faut sur Amazon avant le 19 mai!!!**
+1. Acheter ce qu'il faut comme outils. Pocket screws. Pocket jig.
+
+**Fridge hinges types**
+https://www.coolblue.be/en/advice/hinge-systemb-builtin-fridge.html
+(Mais je pense que je préfère la manière que mon frigo ouvre.
+https://www.homestratosphere.com/home-improvement-credit-cards/
+
+**Avec un frame en 1X2"**
+https://www.youtube.com/watch?v=PLhjr5T_sro
+
+**Ikea pantry en mélamine blanc**
+https://www.youtube.com/watch?v=c5kdXEkk3vg
+
+**A tall storage cabinet (plywood butt joints)**
+https://www.youtube.com/watch?v=zbHryOn8QE0
+
+**Beau devant avec des X**
+https://www.youtube.com/watch?v=bZO3Vk5jI5k
+https://www.youtube.com/watch?v=HGNUepESxWk **Le petit entre les deux, fucking beau!**
+
+**One sheet plywood pantry**
+https://www.youtube.com/watch?v=pSmfLXYaNR8
+
+**Outdoor storage cabinet**
+https://www.youtube.com/watch?v=HjY9ctm8lV8
 
 ## Homing
 
@@ -432,4 +445,6 @@ Au lieu d'un gros montant à vendre, offrir une location, comme ça ça n'engage
 
 
  La différence entre le 17HS4401 et le 17HS4401S est que la couleur du boîtier est différente, d'autres paramètres sont les mêmes. 
+ 
+ J'aimerais ça y aller petit à petit et vendre juste quelques petits trucs au lieu de trop gros au début et d'attirer la compétition... C'est moins ALL-IN aussi...
 
