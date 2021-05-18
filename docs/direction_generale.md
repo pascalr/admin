@@ -1,3 +1,6 @@
+Heda is a **PANTRY ROBOT**.
+Heda est un **ROBOT GARDE-MANGER**.
+
 ## Thank you
 
 Thank you to all the recipes websites I took inspiration from!
@@ -56,7 +59,47 @@ Thank you to so many others who helped me in one way or another!
 
 ## Pantry
 
-1. Déterminer les vrais mesures que je veux. Prendre des mesures chez Céline!
+**EST-CE QUE MA PINCE EST CAPABLE DE PRENDRE LES POTS DANS LES COINS?!?!?!**
+Au pire faire un accotoire pour empêcher les pots d'aller sur le côté?
+
+Essayer de faire une armoire étanche pour le bruit. Ça serait cool pour le blender aussi. Pour ce qui est de l'humidité de l'évier de ma mère, ben intégrer un déshumidificateur plus tard avec l'évier.
+
+Wheater stripping:
+https://www.homedepot.ca/product/m-d-building-products-3-8-inch-x-3-8-inch-x-17-ft-premium-all-climate-rubber-gap-seal-white/1001110479
+Génial! De 3/16" à 3/8", moi j'ai besoin de 1/4"!
+
+Comment sceller entre les deux portes? Une seule porte?
+
+ALL HARD-WOOD PLYWOOD!!!
+Dimensions:
+largeur intérieur: 40"
+largeur extérieur: 41.5"
+hauteur extérieur: 78" pour passer dans mon cadre de porte et être safe
+profondeur: 24" (ah c'est bien, deux coupes à 23"!, pas couper en plein millieu...)
+
+1. Largeur des tablettes de la portes
+1. Hauteur des tablettes
+1. Comment boucher les joints pour que ce soit parfait et super beau?!
+1. Acheter du weather stripping pour faire des tests. J'ai besoin de 70 * 3 + 40 * 2 == 290", 25'
+Ça serait bien du weather stripping pour des espaces de 1/4" parce que c'est ça sur le devant de la porte. Quoique ça serait bien un peu plus pour aller cherche le jeu de la porte.
+1. Vérifier si 78" de hauteur ça fit avec le décor chez Céline
+1. Vérifier si 41.5" de largeur ça fait chez Céline
+1. Vérifier si 24" de profondeur ça fait chez Céline
+1. Acheter une scie à main à dents fines?
+1. Il faut tout coller pour empêcher le bruit?
+1. Acheter du veneer pour coller le plywood du dessus de l'armoire.
+1. Tester mon système d'étanchéité avant de tout acheter.
+
+Door magnet.
+Door sensor.
+
+Material list:
+Côtés:
+1 feuilles de plywood 3/4", 48"X96"
+coupé à 23"X
+
+Le top sur le plan que j'utilise dépasse de 1/2" de chaque côté, et de 1 1/4" en avant. Mais le problème c'est que j'aimerais que ça dépasse de chaque côté, mais j'aimerais aussi que ce soit collé sur l'autre armoire de cuisine à céline, il ne peut pas y avoir un gap de 1/2"...
+
 1. Trouver un caoutchouc que je peux mettre sur la porte pour le son.
 1. Faire des tests de son avec le moteur. J'ai peur que la transmission du son se fasse avec l'armoire. Il ne faudrait vraiment pas que ça devienne une caisse de résonnance... Mais s'il n'y a pas d'air qui passe, ça devrait être bon?
 1. **Acheter ce qu'il faut sur Amazon avant le 19 mai!!!**
