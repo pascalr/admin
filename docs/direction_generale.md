@@ -57,25 +57,72 @@ Thank you to so many others who helped me in one way or another!
 
 
 
+
 ## Pantry
 
-**EST-CE QUE MA PINCE EST CAPABLE DE PRENDRE LES POTS DANS LES COINS?!?!?!**
-Au pire faire un accotoire pour empêcher les pots d'aller sur le côté?
+1. Acheter une scie à main à bois fine.
+1. Je n'ai pas envie de rapetisser l'armoire. Concevoir l'armoire avec un beau frame en haut et s'arranger qu'il soit capable d'être enlevable pour le déménagement.
+1. Est-ce qu'il y quelque chose au bas du mur chez Céline?
+1. Mesure la bordure chez Céline...
 
-Essayer de faire une armoire étanche pour le bruit. Ça serait cool pour le blender aussi. Pour ce qui est de l'humidité de l'évier de ma mère, ben intégrer un déshumidificateur plus tard avec l'évier.
+### Fabrication
 
-Wheater stripping:
-https://www.homedepot.ca/product/m-d-building-products-3-8-inch-x-3-8-inch-x-17-ft-premium-all-climate-rubber-gap-seal-white/1001110479
-Génial! De 3/16" à 3/8", moi j'ai besoin de 1/4"!
+#### Matériel
 
-Comment sceller entre les deux portes? Une seule porte?
+1. 2X Hardwood plywood 3/4", ou bien 1 feuille et une autre plus petite si possible?
+1. 1X Hardwood plywood 1/2"
+1. 2X wheater stripping 17'
+1. 2X standard hardboard 5.5mm
+1. 1X 1X4X8 pour le back support board et pour le bas du frame (pin noueux si très beau, sinon pin jointé)
+1. 3X 1X3X6 pour les côtés et le dessus du front frame
+1. 2 poignées
+1. 6 ou 8 pentures
 
-ALL HARD-WOOD PLYWOOD!!!
-Dimensions:
-largeur intérieur: 40"
-largeur extérieur: 41.5"
-hauteur extérieur: 78" pour passer dans mon cadre de porte et être safe
-profondeur: 24" (ah c'est bien, deux coupes à 23"!, pas couper en plein millieu...)
+Total:
+2X$86 (maple plywood 3/4")
+$72 (maple plywood 1/2")
+2X18.76$ (weather stripping)
+19.20$ 1/8 hardboard white ou 22.20$ 5.5mm standard hardboard
+3X4.31$ 1X3X6
+6.74$ 1X4X8
+4X7.98$ pour 2 pentures
+poignées
+172$
+37.52$
+12.93$
+31.92$
+38.40$
+
+371.51$
+
+
+
+#### Côtés et la tablette principale
+Couper une feuille de hardwood plywood 3/4" 77.25", puis couper deux fois à 22.75".
+Il reste une retaille de 2.25" X 77.25" et une retaille de 18.75" X 48".
+Faire la tablette principale de 12" X 40" avec.
+Faire des pockets hole en dessous de la tablette principale.
+#### Portes
+Couper une feuille de hardwood plywood 3/4" 70.875", puis couper deux fois à 18".
+Il reste une retaille de 11.75" X 70.875" et une retaille de 25.125" X 48". Rien à faire avec pour l'instant.
+#### Front frame et le back support board
+Couper le 1X4X8 à 41.5" pour le bas et le couper à 40" pour le back support board. Il reste 14.5" inutilisé.
+Couper 1X, 1X3X6 à 41.5". pour le haut.
+Couper 2X, 1X3X6 à 71.25" pour les côtés.
+#### Rear front frame
+En haut: 40X3.375, En bas: 40X4.375, Sur les côtés: 69.5X2.75, Je peux le fabriquer avec les retailles de la porte le 1/2".
+#### Fond
+Couper la feuille du fond à 41.5"X77.25". Il reste 6.375X96" et 18.625X48"
+Visser le fond pour l'instant comme ça je vais pouvoir la défaire pour la déménager.
+Acheter un autre backboard malheureusement parce qu'il n'en restera pas assez pour le devant des portes...
+#### Bas et Top
+Couper la tablette du bas dans l'autre feuille 40" X 22.375". Il reste surtout 73.5"X48"
+Couper le haut dans ce qu'il reste à peu près (à revérifier (24"X42.5")). Il reste donc 49.375"X48"
+
+1. Doors
+
+
+1. Ça serait bien de fabriquer les tablettes de l'armoire comme ça les vis serait cachées derrière le bender board.
 
 1. Largeur des tablettes de la portes
 1. Hauteur des tablettes
@@ -92,13 +139,6 @@ profondeur: 24" (ah c'est bien, deux coupes à 23"!, pas couper en plein millieu
 
 Door magnet.
 Door sensor.
-
-Material list:
-Côtés:
-1 feuilles de plywood 3/4", 48"X96"
-coupé à 23"X
-
-Le top sur le plan que j'utilise dépasse de 1/2" de chaque côté, et de 1 1/4" en avant. Mais le problème c'est que j'aimerais que ça dépasse de chaque côté, mais j'aimerais aussi que ce soit collé sur l'autre armoire de cuisine à céline, il ne peut pas y avoir un gap de 1/2"...
 
 1. Trouver un caoutchouc que je peux mettre sur la porte pour le son.
 1. Faire des tests de son avec le moteur. J'ai peur que la transmission du son se fasse avec l'armoire. Il ne faudrait vraiment pas que ça devienne une caisse de résonnance... Mais s'il n'y a pas d'air qui passe, ça devrait être bon?
@@ -490,4 +530,9 @@ Au lieu d'un gros montant à vendre, offrir une location, comme ça ça n'engage
  La différence entre le 17HS4401 et le 17HS4401S est que la couleur du boîtier est différente, d'autres paramètres sont les mêmes. 
  
  J'aimerais ça y aller petit à petit et vendre juste quelques petits trucs au lieu de trop gros au début et d'attirer la compétition... C'est moins ALL-IN aussi...
+ 
+ **EST-CE QUE MA PINCE EST CAPABLE DE PRENDRE LES POTS DANS LES COINS?!?!?!**
+Au pire faire un accotoire pour empêcher les pots d'aller sur le côté?
+
+Essayer de faire une armoire étanche pour le bruit. Ça serait cool pour le blender aussi. Pour ce qui est de l'humidité de l'évier de ma mère, ben intégrer un déshumidificateur plus tard avec l'évier.
 
