@@ -60,31 +60,45 @@ Thank you to so many others who helped me in one way or another!
 
 ## Pantry
 
-1. Acheter une scie à main à bois fine.
-1. Je n'ai pas envie de rapetisser l'armoire. Concevoir l'armoire avec un beau frame en haut et s'arranger qu'il soit capable d'être enlevable pour le déménagement.
-1. Est-ce qu'il y quelque chose au bas du mur chez Céline?
-1. Mesure la bordure chez Céline...
-
 ### Fabrication
 
 #### Matériel
 
+1. Acheter une scie à main à bois fine. Attendre voir. J'ai jamais coupé du hardwood plywood avant.
+
+Home dépot
 1. 2X Hardwood plywood 3/4", ou bien 1 feuille et une autre plus petite si possible?
+  Feuille 1: Coupe à 77.25", puis 2 coupes à 22.75"
+  Est-ce que je fais couper la 2e feuille?
+  Feuille 2: Coupe à 22.25"X48", puis coupe à 24.25"X48"
+  **NOTE LA RETAILLE DE LA FEUILLE 2 NE RENTRERAS PAS DANS L'AUTO, METTRE SUR LE TOP!!!**
+  **BENDERRRRRRRRRRRRRRRRRRRR**
 1. 1X Hardwood plywood 1/2"
-1. 2X wheater stripping 17'
+  Coupe à 70.875", puis 2 coupes à 18"
+1. 2X wheater stripping 17', J'ai besoin de 70 * 3 + 40 * 2 == 290", 25'
 1. 2X standard hardboard 5.5mm
-1. 1X 1X4X8 pour le back support board et pour le bas du frame (pin noueux si très beau, sinon pin jointé)
+  Feuille 1: Coupe à 77.25" et 41 5/16"
+  **Deuxième feuille pas coupé du tout!!!!! BENDERRRRRRRRRRRRRRRRRRRRR**
+  (ou bien la couper à 24" pour que ça rentre dans l'auto
+1. 1X 1X4X8 pour le back support board et pour le bas du frame
 1. 3X 1X3X6 pour les côtés et le dessus du front frame
-1. 2 poignées
-1. 6 ou 8 pentures
+Canac
+1. 6 ou 8 pentures (https://www.canac.ca/fr/pentures-de-porte-4-po-paquet-de-2-6031080)
+1. 1X 1X4X8 pour le back support board et pour le bas du frame
+1. 3X 1X3X6 pour les côtés et le dessus du front frame
+1. Colle à bois? Oui pour la porte
+1. Wood filler
+1. Pocket screws
+
+1. 2 poignées!!!!! Checker avec Céline
 
 Total:
 2X$86 (maple plywood 3/4")
 $72 (maple plywood 1/2")
 2X18.76$ (weather stripping)
 19.20$ 1/8 hardboard white ou 22.20$ 5.5mm standard hardboard
-3X4.31$ 1X3X6
-6.74$ 1X4X8
+3X4.31$ 1X3X6, 7.37$ pour du select pine au home dépot
+6.74$ 1X4X8, 18.56$ pour du select, 9.84$ pour du noueux
 4X7.98$ pour 2 pentures
 poignées
 172$
@@ -95,7 +109,19 @@ poignées
 
 371.51$
 
+### Assemblage
 
+1. 2 côtés avec tablette principale
+1. backboard
+1. front frame
+1. attacher le front frame
+1. reat front frame
+1. bottom
+1. portes
+1. 2nd shelf
+1. rear
+1. top
+1. magnet
 
 #### Côtés et la tablette principale
 Couper une feuille de hardwood plywood 3/4" 77.25", puis couper deux fois à 22.75".
@@ -103,7 +129,7 @@ Il reste une retaille de 2.25" X 77.25" et une retaille de 18.75" X 48".
 Faire la tablette principale de 12" X 40" avec.
 Faire des pockets hole en dessous de la tablette principale.
 #### Portes
-Couper une feuille de hardwood plywood 3/4" 70.875", puis couper deux fois à 18".
+Couper une feuille de hardwood plywood 1/2" 70.875", puis couper deux fois à 18".
 Il reste une retaille de 11.75" X 70.875" et une retaille de 25.125" X 48". Rien à faire avec pour l'instant.
 #### Front frame et le back support board
 Couper le 1X4X8 à 41.5" pour le bas et le couper à 40" pour le back support board. Il reste 14.5" inutilisé.
@@ -112,38 +138,20 @@ Couper 2X, 1X3X6 à 71.25" pour les côtés.
 #### Rear front frame
 En haut: 40X3.375, En bas: 40X4.375, Sur les côtés: 69.5X2.75, Je peux le fabriquer avec les retailles de la porte le 1/2".
 #### Fond
-Couper la feuille du fond à 41.5"X77.25". Il reste 6.375X96" et 18.625X48"
+Couper la feuille du fond à 41 5/16"X77.25". Il reste 6.375X96" et 18.625X48"
 Visser le fond pour l'instant comme ça je vais pouvoir la défaire pour la déménager.
 Acheter un autre backboard malheureusement parce qu'il n'en restera pas assez pour le devant des portes...
 #### Bas et Top
-Couper la tablette du bas dans l'autre feuille 40" X 22.375". Il reste surtout 73.5"X48"
-Couper le haut dans ce qu'il reste à peu près (à revérifier (24"X42.5")). Il reste donc 49.375"X48"
+Couper la tablette du bas dans l'autre feuille 40" X 22.25". Il reste surtout 73.5"X48"
+Couper le haut dans ce qu'il reste à peu près (à revérifier (24.25"X42.5")). Il reste donc 49.375"X48"
 
-1. Doors
+Pas de tablettes sur la porte pour l'instant.
 
-
-1. Ça serait bien de fabriquer les tablettes de l'armoire comme ça les vis serait cachées derrière le bender board.
-
-1. Largeur des tablettes de la portes
-1. Hauteur des tablettes
 1. Comment boucher les joints pour que ce soit parfait et super beau?!
-1. Acheter du weather stripping pour faire des tests. J'ai besoin de 70 * 3 + 40 * 2 == 290", 25'
-Ça serait bien du weather stripping pour des espaces de 1/4" parce que c'est ça sur le devant de la porte. Quoique ça serait bien un peu plus pour aller cherche le jeu de la porte.
-1. Vérifier si 78" de hauteur ça fit avec le décor chez Céline
-1. Vérifier si 41.5" de largeur ça fait chez Céline
-1. Vérifier si 24" de profondeur ça fait chez Céline
-1. Acheter une scie à main à dents fines?
-1. Il faut tout coller pour empêcher le bruit?
-1. Acheter du veneer pour coller le plywood du dessus de l'armoire.
-1. Tester mon système d'étanchéité avant de tout acheter.
+Elle en parle un peu ici: https://www.youtube.com/watch?v=eK7t7bMj3M4
 
-Door magnet.
-Door sensor.
-
-1. Trouver un caoutchouc que je peux mettre sur la porte pour le son.
-1. Faire des tests de son avec le moteur. J'ai peur que la transmission du son se fasse avec l'armoire. Il ne faudrait vraiment pas que ça devienne une caisse de résonnance... Mais s'il n'y a pas d'air qui passe, ça devrait être bon?
-1. **Acheter ce qu'il faut sur Amazon avant le 19 mai!!!**
-1. Acheter ce qu'il faut comme outils. Pocket screws. Pocket jig.
+**Installing crown moulding the easy way on cabinets**
+https://www.youtube.com/watch?v=eK7t7bMj3M4
 
 **Fridge hinges types**
 https://www.coolblue.be/en/advice/hinge-systemb-builtin-fridge.html
