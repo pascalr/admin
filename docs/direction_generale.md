@@ -1,31 +1,28 @@
 Heda is a **PANTRY ROBOT**.
 Heda est un **ROBOT GARDE-MANGER**.
 
-## Thank you
-
-Thank you to all the recipes websites I took inspiration from!
-Thank you for everyone who ever contributed to linux!
-Thank you to everyone who made a programming library free and open source!
-Thank you for the design of a pretty pantry!
-https://www.youtube.com/watch?v=bZO3Vk5jI5k
-https://howtomechatronics.com/projects/scara-robot-how-to-build-your-own-arduino-based-robot/
-Thank you to so many others who helped me in one way or another!
+TODO: Renommer le brevet: Armoire intelligente incluant un bras robotique en
+robot garde-manger.
 
 ## Planification
 
+1. Mettre mes recettes semi-privé. Ça prend le nom de l'utilisateur pour les voirs. Taper par exemple Loville dans la barre de recherche pour tomber sur nos recettes à nous. Ou bien pascalr5 pour tomber sur mes recettes à moi.
+1. Où mettre la balance.
+1. Une plaque plus épaisse pour tenir les roues de l'axe verticales pour que ça plie moins.
+1. Un moyen de fixer la machine à l'armoire en haut
 1. Avancer la fabrication du robot. [En attente de pièces...]
 1. Faire la simulation avant de faire l'armoire pour s'assurer du reach du robot. Quoique...
-1. Faire une BELLE armoire DÉMÉNAGEABLE. Faire une armoire SILENCIEUSE. Imprimer gasket? Faire comme une porte extérieur? Comme dans un hotel pour rendre les porte silencieuse? Non avec weather stripping.
+1. Faire une BELLE armoire DÉMÉNAGEABLE.
 1. Acheter des câbles électriques.
 1. Poulie axe A.
 1. Homing system
 1. Continuer la simulation du bras robotique pour pouvoir le programmer, aller chercher les ingrédients, puis verser des aliments grossiers, puis faire des muffins.
-1. Recettes similaires
 1. Gripper
 
 1.  Une page de vente (page d’accueil) sur mon site internet (1 semaine) [En attente de l'acception du dépot de brevet]
 1. Trouver un premier client qui me servira de publicité. [Fabriquer un prototype avant] (Boulangerie, Prêt-à-cuisiner, petite boutique de nourriture, ...)
 1. Trouver shipping mondial kits de robot
+1. Faire une soumission chez une firme de génie conseil pour un produit final qui peut se vendre sur kickstarter
 1. Faire une vidéo publicitaire de cuisine
 1. Crowdfunding 50$ pour réservation, ou membre, ou vendre kits à assembler.
 1. Modèle d'affaires
@@ -49,20 +46,18 @@ Thank you to so many others who helped me in one way or another!
 
 
 
-
-
-
-
-
-
-
-
-
 ## Pantry
 
 ### Fabrication
 
 #### Matériel
+
+J'ai coupé le plywood 1/2" à 18" 2 fois. Il reste 48-18-18-1/4=11 7/8" X 96"
+2.75", 3.375", 4.375"
+Si je coupe 2X 2.75", il reste 5.5".
+Coupé à 40in 2 fois, je suis correct. Ouf.
+
+Déviations:
 
 1. Acheter une scie à main à bois fine. Attendre voir. J'ai jamais coupé du hardwood plywood avant.
 
@@ -131,6 +126,8 @@ Faire des pockets hole en dessous de la tablette principale.
 #### Portes
 Couper une feuille de hardwood plywood 1/2" 70.875", puis couper deux fois à 18".
 Il reste une retaille de 11.75" X 70.875" et une retaille de 25.125" X 48". Rien à faire avec pour l'instant.
+#### Pretty front
+Partout la bordure est de 2.5", sauf sur une des portes où le côté est de 2", et sauf les X qui mesurent 1.125".
 #### Front frame et le back support board
 Couper le 1X4X8 à 41.5" pour le bas et le couper à 40" pour le back support board. Il reste 14.5" inutilisé.
 Couper 1X, 1X3X6 à 41.5". pour le haut.
@@ -543,4 +540,14 @@ Au lieu d'un gros montant à vendre, offrir une location, comme ça ça n'engage
 Au pire faire un accotoire pour empêcher les pots d'aller sur le côté?
 
 Essayer de faire une armoire étanche pour le bruit. Ça serait cool pour le blender aussi. Pour ce qui est de l'humidité de l'évier de ma mère, ben intégrer un déshumidificateur plus tard avec l'évier.
+
+## Thank you
+
+Thank you to all the recipes websites I took inspiration from!
+Thank you for everyone who ever contributed to linux!
+Thank you to everyone who made a programming library free and open source!
+Thank you for the design of a pretty pantry!
+https://www.youtube.com/watch?v=bZO3Vk5jI5k
+https://howtomechatronics.com/projects/scara-robot-how-to-build-your-own-arduino-based-robot/
+Thank you to so many others who helped me in one way or another!
 
