@@ -4,6 +4,8 @@ Heda est un **ROBOT GARDE-MANGER**.
 TODO: Renommer le brevet: Armoire intelligente incluant un bras robotique en
 robot garde-manger.
 
+Offrir aux employés comme compensation de les financers pour que eux aussi puisse partir leur propre compagnie plus tard si jamais la compagnie réussit. Ah je sais pas. S'ils ont des mauvaises idées?
+
 ## Planification
 
 1. Mettre mes recettes semi-privé. Ça prend le nom de l'utilisateur pour les voirs. Taper par exemple Loville dans la barre de recherche pour tomber sur nos recettes à nous. Ou bien pascalr5 pour tomber sur mes recettes à moi.
@@ -49,6 +51,8 @@ robot garde-manger.
 ## Pantry
 
 ### Fabrication
+
+Pocket holes: 2" from the side, 6" apart
 
 #### Matériel
 
@@ -106,9 +110,16 @@ poignées
 
 ### Assemblage
 
-1. 2 côtés avec tablette principale
+1. front frame, couper les 4 morceaux, pocket hole dans les deux plus long, tout assembler
+1. rear top board, 36"/6" = 9 à partir de 2" du bord, 6" apart, et pocket hole dans les bouts
+1. tablette principale, pocket hole à partir de 1.5", 4 1/8" apart pour 15 3/8" tablette.
+1. 2 côtés, pockets hole un des côtés long, 2" du bord, 6" apart, ce n'est pas grave si ça n'arrive pas à la fin, pockets holes en haut. 22.75" - 4" = 18.75". 2" du bord, 6.25" apart **ATTENTION JE CROIS QUE LES DEUX MORCEAUX NE DOIVENT PAS ÊTRE PAREIL**
+1. Assembler 2 côtés avec tablette principale. Déposer un côté sur le sol. Fixer la tablette sur le côté à 35.5" entre le bas et le haut de la tablette.
+1. ...
+1. La tablette du bas. Pocker holes sur les côtés et sur le devant. 22.25" - 4.25" = 18". 2.125" du bord, 6" apart. Façade avant: 2" du bord, 6" apart
+1. ...
+1. Couper les moulures de la portes. Toutes les bordures mesurent 2.5" SAUF UNE DE GAUCHE. 3 fois 2.5X70.875". Ensuite 10 fois 2.5X13". Ensuite des languettes de 1.125". **Comment faire les pentures?!?!**
 1. backboard
-1. front frame
 1. attacher le front frame
 1. reat front frame
 1. bottom
@@ -194,18 +205,41 @@ Ce que j'ai présentemment:
 
 Ce que je voudrais:
 
-La charte que j'ai trouvé es très, très conservatrice. Elle suggère 5.9A pour AWG 14, et dans une maison c'est 15A... Pour mon AWG 22, elle suggère 0.92A. Donc 15/5.9 * 0.92 == 2.34A. C'est suffisant pour les axes A et T, mais ce n'est pas l'idéal pour les NEMA 23, surtout Y. Pour du AWG 18, c'est 2.3A. 15/5.9*2.3 == 5.85A. C'est amplement suffisant pour tout. Pour vendre la machine, j'utiliserais quand même un plus gros conducteur pour axe Y. Ça me prendrait du AWG 16 pour être safe à 3.7A. AWG 15 donne 4.7A.
+La charte que j'ai trouvé est très, très conservatrice. Elle suggère 5.9A pour AWG 14, et dans une maison c'est 15A... Pour mon AWG 22, elle suggère 0.92A. Donc 15/5.9 * 0.92 == 2.34A. C'est suffisant pour les axes A et T, mais ce n'est pas l'idéal pour les NEMA 23, surtout Y. Pour du AWG 18, c'est 2.3A. 15/5.9*2.3 == 5.85A. C'est amplement suffisant pour tout. Pour vendre la machine, j'utiliserais quand même un plus gros conducteur pour axe Y. Ça me prendrait du AWG 16 pour être safe à 3.7A. AWG 15 donne 4.7A.
 
 J'aimerais des 4 conducteurs pour les moteurs.
 
+https://electrical-engineering-portal.com/motor-wiring-guidelines
+
+Avec shield ou sans shield?
+Les gens semblent dire avec shield. 
+Toutefois, un shield doit être branché au deux extrémités sinon c'est inutile.
+Je le branche sur quoi sur le moteur?
+https://en.wikipedia.org/wiki/Talk%3AShielded_cable#Grounding_at_both_ends
+
+Stranded Wire 4C/18 AWG - CSA - FT4 - 600V - Grey - Sold by meter
 Appeler Addisson électronique au cas où ils n'ont pas en stock et seulement à Montréal.
+
+
+Multi-Stranded Wire Cable - 4C/18AWG - Shielded - FT4 - Gray - Sold by Meter
+SKU: 162409  | # MOD: 92248-21
+vs
+SKU: 162773  | # MOD: 74-319 
+
+Fuck off, pas shielded. Shielded de quoi? Ça servirait à quoi?
+Je ne veux même pas de limit switch de toute façon.
+
 SKU: 600846
 MOD: 73-134
 Deca cables, stranded wire - 4 conductors - 18 AWG - shielded - FT4, GREY - SOLD BY METER
 
 Pour l'axe R je pourrais utiliser un câble électrique plus petit à 2 conducteur, en fait idéalement à 6 conducteurs?
 
-**Ça me prend à peu près 3m par axe, donc pour X, Y, T, A, B acheter 15m, ben 20m de 4 conducteurs 18 AWG stranded**
+Longeurs:
+AWG 22 4 conducteurs multi-brins: (R, J(fixe))
+AWG 18 4 conducteurs multi-brins: (B, X, Y, A, T)
+
+**Ça me prend à peu près 3.5m par axe pour être safe, donc pour X, Y, T, A, B acheter 17.5m, ben 20m de 4 conducteurs 18 AWG stranded**
 
 **Utiliser le conducteur shielded que j'ai déjà pour l'encodeur, 5m**
 
