@@ -1,6 +1,9 @@
 Heda is a **PANTRY ROBOT**.
 Heda est un **ROBOT GARDE-MANGER**.
 
+FAIRE UNE VIDÉO YOUTUBE QUI EXPLIQUE COMMENT BRANCHER LES FILS ÉLECTRIQUES D'UN STEPPER.
+Faire des vidéos youtubes avec ce que j'ai eu de la difficulté à trouver comme trucs.
+
 TODO: Renommer le brevet: Armoire intelligente incluant un bras robotique en
 robot garde-manger.
 
@@ -118,7 +121,8 @@ poignées
 1. ...
 1. La tablette du bas. Pocker holes sur les côtés et sur le devant. 22.25" - 4.25" = 18". 2.125" du bord, 6" apart. Façade avant: 2" du bord, 6" apart
 1. ...
-1. Couper les moulures de la portes. Toutes les bordures mesurent 2.5" SAUF UNE DE GAUCHE. 3 fois 2.5X70.875". Ensuite 10 fois 2.5X13". Ensuite des languettes de 1.125". **Comment faire les pentures?!?!**
+1. Couper les moulures de la portes. Toutes les bordures mesurent 2.5" SAUF UNE DE GAUCHE. 3 fois 2.5X70.875". Ensuite 10 fois 2.5X13". Ensuite des languettes de 1.125". Trous pour les pentures à 1.5" du bord et une en plein centre. Penture de porte pin vers le haut.**Comment faire les pentures?!?!**
+1. Coller les millieux de décoration de porte: 17.094" centre à centre.
 1. backboard
 1. attacher le front frame
 1. reat front frame
