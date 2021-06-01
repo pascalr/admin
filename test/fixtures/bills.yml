@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  day: 2021-06-01
+  supplier: one
+  shipping_cost: 1.5
+  items_received: false
+
+two:
+  day: 2021-06-01
+  supplier: two
+  shipping_cost: 1.5
+  items_received: false

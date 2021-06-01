@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bill: one
+  part_id: 1
+  description: MyString
+  quantity: 1.5
+  price: 1.5
+  tps: 1.5
+  tvq: 1.5
+
+two:
+  bill: two
+  part_id: 1
+  description: MyString
+  quantity: 1.5
+  price: 1.5
+  tps: 1.5
+  tvq: 1.5

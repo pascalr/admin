@@ -1,0 +1,33 @@
+<%= link_to "Supprimer cette facture", @bill, method: :delete, data: {confirm: 'Are you sure?'} %>
+
+<%= render @bill %>
+
+<%= form_with(model: BillItem.new) do |form| %>
+  <%= form.hidden_field :bill_id, value: @bill.id %>
+  <%= form.label :quantity %>
+  <%= form.number_field :quantity %><br>
+  <%= form.label :part_id %>
+  <%= form.collection_select :part_id, Part.all.order(:name), :id, :name, include_blank: true %><br>
+  <%= form.label :description%>
+  <%= form.text_field :description %><br>
+  <%= form.label :price, "Prix sans expédition" %>
+  <%= form.number_field :price, id: 'price', step: 0.01 %><br>
+  <%= button_tag "Calculer les taxes", type: 'button', class: 'subBtn', onclick: "calculateTaxes()" %><br>
+  <%= form.label :tps %>
+  <%= form.number_field :tps, id: 'tps', step: 0.01 %><br>
+  <%= form.label :tvq %>
+  <%= form.number_field :tvq, id: 'tvq', step: 0.01 %><br>
+  <%= form.submit "Ajouter un item" %>
+<% end %>
+
+<script>
+  function calculateTaxes() {
+    var tps = document.getElementById('tps')
+    var tvq = document.getElementById('tvq')
+    var price = document.getElementById('price')
+    tps.value = Math.round((price.value*0.05 + Number.EPSILON) * 100) / 100
+
+    tvq.value = Math.round((price.value*0.09975 + Number.EPSILON) * 100) / 100
+
+  }
+</script>

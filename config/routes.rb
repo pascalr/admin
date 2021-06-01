@@ -4,6 +4,8 @@ end
 
 Rails.application.routes.draw do
 
+  lazy_resources :bills
+  lazy_resources :bill_items
   get 'finances/bank_reconciliation'
   get 'finances/balance_sheet'
   get 'finances/financial_statement'
