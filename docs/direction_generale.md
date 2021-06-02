@@ -4,11 +4,6 @@ Heda est un **ROBOT GARDE-MANGER**.
 https://github.com/vitaly/debitcredit
 https://github.com/ledermann/keepr
 
-rails g model Bill day:date supplier:references shipping_cost:float
-rails g model BillItem bill:references part_id:integer description quantity:float price:float tps:float tvq:float item_received:boolean
-
-TODO: Rentrer les factures au lieu des items un par un. Comme ça même fournisseur et je peux m'assurer que le total est le bon en bas, pour les taxes aussi.
-
 FAIRE UNE VIDÉO YOUTUBE QUI EXPLIQUE COMMENT BRANCHER LES FILS ÉLECTRIQUES D'UN STEPPER.
 Faire des vidéos youtubes avec ce que j'ai eu de la difficulté à trouver comme trucs.
 
