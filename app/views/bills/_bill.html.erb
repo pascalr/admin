@@ -1,12 +1,9 @@
-<table class="table table-sm">
+<table class="table table-sm" style="margin-bottom: 0px;">
   <tbody>
     <tr>
       <td><%= link_to bill.id, bill %></td>
-      <td><%= bill.supplier.name %></td>
-      <td>Coût d'expédition:</td>
-      <td><%= number_to_currency bill.shipping_cost || 0, format: '%n%u' %></td>
-      <td>Reçu:</td>
-      <td><%= bill.items_received %></td>
+      <td><b><%= bill.supplier.name %></b></td>
+      <td>Reçu: <%= bill.items_received ? "✅" : "❌" %></td>
       <td><%= bill.day %></td>
     </tr>
   </tbody>
@@ -17,7 +14,7 @@
       <th>#</th>
       <th>Qty</th>
       <th>Part</th>
-      <th>Desc</th>
+      <th>Description</th>
       <th>Price</th>
       <th>Tps</th>
       <th>Tvq</th>
@@ -36,11 +33,16 @@
       </tr>
     <% end %>
     <tr>
+      <td colspan="4">Coût d'expédition</td>
+      <td><%= bill.shipping_cost.blank? ? "-" : number_to_currency(bill.shipping_cost, format: '%n%u') %></td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
       <th>Total</th>
       <th></th>
       <th></th>
       <th></th>
-      <th><%= number_to_currency bill.items.map(&:price).sum, format: '%n%u' %></th>
+      <th><%= number_to_currency bill.items.map(&:price).sum + (bill.shipping_cost || 0), format: '%n%u' %></th>
       <th><%= number_to_currency bill.items.map(&:tps).sum, format: '%n%u' %></th>
       <th><%= number_to_currency bill.items.map(&:tvq).sum, format: '%n%u' %></th>
       <th></th>
