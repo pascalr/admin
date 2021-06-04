@@ -7,14 +7,9 @@ https://github.com/ledermann/keepr
 FAIRE UNE VIDÉO YOUTUBE QUI EXPLIQUE COMMENT BRANCHER LES FILS ÉLECTRIQUES D'UN STEPPER.
 Faire des vidéos youtubes avec ce que j'ai eu de la difficulté à trouver comme trucs.
 
-TODO: Renommer le brevet: Armoire intelligente incluant un bras robotique en
-robot garde-manger.
-
-Offrir aux employés comme compensation de les financers pour que eux aussi puisse partir leur propre compagnie plus tard si jamais la compagnie réussit. Ah je sais pas. S'ils ont des mauvaises idées?
-
 ## Planification
 
-1. Mettre mes recettes semi-privé. Ça prend le nom de l'utilisateur pour les voirs. Taper par exemple Loville dans la barre de recherche pour tomber sur nos recettes à nous. Ou bien pascalr5 pour tomber sur mes recettes à moi.
+1. Essayer de fabriquer le vise pour qu'il soit indépendant. Pas de trous dans le plywood (sauf peut-être les fils électriques. Ça serait pas mal plus clean. C'est pas grave si ça prends beaucoup de place. De toute façon le robot a besoin d'un espace pour déposer les couvercles. Donc simplement mettre le moteur vers le mur. Et le robot déposera sur le couvercle qui cache le moteur.
 1. Où mettre la balance.
 1. Une plaque plus épaisse pour tenir les roues de l'axe verticales pour que ça plie moins.
 1. Un moyen de fixer la machine à l'armoire en haut
