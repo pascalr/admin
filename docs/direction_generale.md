@@ -9,6 +9,11 @@ Faire des vidéos youtubes avec ce que j'ai eu de la difficulté à trouver comm
 
 ## Planification
 
+1. Faire une belle page web de fabrication de l'armoire de cuisine.
+1. Rajouter l'armoire dans les assemblages pour savoir le coût total.
+1. Rajouter les trous borgnes à l'armoire et faire des screenshots.
+1. Faire des screenshots de l'assemblage. Couleur différente pour chaque différent?
+1. Mettre dans les screenshots les mesures.
 1. Essayer de fabriquer le vise pour qu'il soit indépendant. Pas de trous dans le plywood (sauf peut-être les fils électriques. Ça serait pas mal plus clean. C'est pas grave si ça prends beaucoup de place. De toute façon le robot a besoin d'un espace pour déposer les couvercles. Donc simplement mettre le moteur vers le mur. Et le robot déposera sur le couvercle qui cache le moteur.
 1. Où mettre la balance.
 1. Une plaque plus épaisse pour tenir les roues de l'axe verticales pour que ça plie moins.
@@ -46,147 +51,6 @@ Faire des vidéos youtubes avec ce que j'ai eu de la difficulté à trouver comm
 1. Bearings pour l'axe vertical
 1. Bushings pour où qu'il ne peut pas y avoir de bearing comme 3 sur le gripper
 
-
-
-
-## Pantry
-
-### Fabrication
-
-Pocket holes: 2" from the side, 6" apart
-
-#### Matériel
-
-J'ai coupé le plywood 1/2" à 18" 2 fois. Il reste 48-18-18-1/4=11 7/8" X 96"
-2.75", 3.375", 4.375"
-Si je coupe 2X 2.75", il reste 5.5".
-Coupé à 40in 2 fois, je suis correct. Ouf.
-
-Déviations:
-
-1. Acheter une scie à main à bois fine. Attendre voir. J'ai jamais coupé du hardwood plywood avant.
-
-Home dépot
-1. 2X Hardwood plywood 3/4", ou bien 1 feuille et une autre plus petite si possible?
-  Feuille 1: Coupe à 77.25", puis 2 coupes à 22.75"
-  Est-ce que je fais couper la 2e feuille?
-  Feuille 2: Coupe à 22.25"X48", puis coupe à 24.25"X48"
-  **NOTE LA RETAILLE DE LA FEUILLE 2 NE RENTRERAS PAS DANS L'AUTO, METTRE SUR LE TOP!!!**
-  **BENDERRRRRRRRRRRRRRRRRRRR**
-1. 1X Hardwood plywood 1/2"
-  Coupe à 70.875", puis 2 coupes à 18"
-1. 2X wheater stripping 17', J'ai besoin de 70 * 3 + 40 * 2 == 290", 25'
-1. 2X standard hardboard 5.5mm
-  Feuille 1: Coupe à 77.25" et 41 5/16"
-  **Deuxième feuille pas coupé du tout!!!!! BENDERRRRRRRRRRRRRRRRRRRRR**
-  (ou bien la couper à 24" pour que ça rentre dans l'auto
-1. 1X 1X4X8 pour le back support board et pour le bas du frame
-1. 3X 1X3X6 pour les côtés et le dessus du front frame
-Canac
-1. 6 ou 8 pentures (https://www.canac.ca/fr/pentures-de-porte-4-po-paquet-de-2-6031080)
-1. 1X 1X4X8 pour le back support board et pour le bas du frame
-1. 3X 1X3X6 pour les côtés et le dessus du front frame
-1. Colle à bois? Oui pour la porte
-1. Wood filler
-1. Pocket screws
-
-1. 2 poignées!!!!! Checker avec Céline
-
-Total:
-2X$86 (maple plywood 3/4")
-$72 (maple plywood 1/2")
-2X18.76$ (weather stripping)
-19.20$ 1/8 hardboard white ou 22.20$ 5.5mm standard hardboard
-3X4.31$ 1X3X6, 7.37$ pour du select pine au home dépot
-6.74$ 1X4X8, 18.56$ pour du select, 9.84$ pour du noueux
-4X7.98$ pour 2 pentures
-poignées
-172$
-37.52$
-12.93$
-31.92$
-38.40$
-
-371.51$
-
-### Assemblage
-
-1. front frame, couper les 4 morceaux, pocket hole dans les deux plus long, tout assembler
-1. rear top board, 36"/6" = 9 à partir de 2" du bord, 6" apart, et pocket hole dans les bouts
-1. tablette principale, pocket hole à partir de 1.5", 4 1/8" apart pour 15 3/8" tablette.
-1. 2 côtés, pockets hole un des côtés long, 2" du bord, 6" apart, ce n'est pas grave si ça n'arrive pas à la fin, pockets holes en haut. 22.75" - 4" = 18.75". 2" du bord, 6.25" apart **ATTENTION JE CROIS QUE LES DEUX MORCEAUX NE DOIVENT PAS ÊTRE PAREIL**
-1. Assembler 2 côtés avec tablette principale. Déposer un côté sur le sol. Fixer la tablette sur le côté à 35.5" entre le bas et le haut de la tablette.
-1. ...
-1. La tablette du bas. Pocker holes sur les côtés et sur le devant. 22.25" - 4.25" = 18". 2.125" du bord, 6" apart. Façade avant: 2" du bord, 6" apart
-1. ...
-1. Couper les moulures de la portes. Toutes les bordures mesurent 2.5" SAUF UNE DE GAUCHE. 3 fois 2.5X70.875". Ensuite 10 fois 2.5X13". Ensuite des languettes de 1.125". Trous pour les pentures à 1.5" du bord et une en plein centre. Penture de porte pin vers le haut.**Comment faire les pentures?!?!**
-1. Coller les millieux de décoration de porte: 17.094" centre à centre.
-1. backboard
-1. attacher le front frame
-1. reat front frame
-1. bottom
-1. portes
-1. 2nd shelf
-1. rear
-1. top
-1. magnet
-1. Acier entre les 2 portes. 70.75". 6*11 == 66", 2.375" du bord
-
-#### Côtés et la tablette principale
-Couper une feuille de hardwood plywood 3/4" 77.25", puis couper deux fois à 22.75".
-Il reste une retaille de 2.25" X 77.25" et une retaille de 18.75" X 48".
-Faire la tablette principale de 12" X 40" avec.
-Faire des pockets hole en dessous de la tablette principale.
-#### Portes
-Couper une feuille de hardwood plywood 1/2" 70.875", puis couper deux fois à 18".
-Il reste une retaille de 11.75" X 70.875" et une retaille de 25.125" X 48". Rien à faire avec pour l'instant.
-#### Pretty front
-Partout la bordure est de 2.5", sauf sur une des portes où le côté est de 2", et sauf les X qui mesurent 1.125".
-#### Front frame et le back support board
-Couper le 1X4X8 à 41.5" pour le bas et le couper à 40" pour le back support board. Il reste 14.5" inutilisé.
-Couper 1X, 1X3X6 à 41.5". pour le haut.
-Couper 2X, 1X3X6 à 71.25" pour les côtés.
-#### Rear front frame
-En haut: 40X3.375, En bas: 40X4.375, Sur les côtés: 69.5X2.75, Je peux le fabriquer avec les retailles de la porte le 1/2".
-#### Fond
-Couper la feuille du fond à 41 5/16"X77.25". Il reste 6.375X96" et 18.625X48"
-Visser le fond pour l'instant comme ça je vais pouvoir la défaire pour la déménager.
-Acheter un autre backboard malheureusement parce qu'il n'en restera pas assez pour le devant des portes...
-#### Bas et Top
-Couper la tablette du bas dans l'autre feuille 40" X 22.25". Il reste surtout 73.5"X48"
-Couper le haut dans ce qu'il reste à peu près (à revérifier (24.25"X42.5")). Il reste donc 49.375"X48"
-
-Pas de tablettes sur la porte pour l'instant.
-
-1. Comment boucher les joints pour que ce soit parfait et super beau?!
-Elle en parle un peu ici: https://www.youtube.com/watch?v=eK7t7bMj3M4
-
-**Installing crown moulding the easy way on cabinets**
-https://www.youtube.com/watch?v=eK7t7bMj3M4
-
-**Fridge hinges types**
-https://www.coolblue.be/en/advice/hinge-systemb-builtin-fridge.html
-(Mais je pense que je préfère la manière que mon frigo ouvre.
-https://www.homestratosphere.com/home-improvement-credit-cards/
-
-**Avec un frame en 1X2"**
-https://www.youtube.com/watch?v=PLhjr5T_sro
-
-**Ikea pantry en mélamine blanc**
-https://www.youtube.com/watch?v=c5kdXEkk3vg
-
-**A tall storage cabinet (plywood butt joints)**
-https://www.youtube.com/watch?v=zbHryOn8QE0
-
-**Beau devant avec des X**
-https://www.youtube.com/watch?v=bZO3Vk5jI5k
-https://www.youtube.com/watch?v=HGNUepESxWk **Le petit entre les deux, fucking beau!**
-
-**One sheet plywood pantry**
-https://www.youtube.com/watch?v=pSmfLXYaNR8
-
-**Outdoor storage cabinet**
-https://www.youtube.com/watch?v=HjY9ctm8lV8
 
 ## Homing
 
