@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=2]
+
+[sub_resource type="CubeMesh" id=1]
+size = Vector3( 1016, 101.6, 565.15 )
+
+[sub_resource type="BoxShape" id=2]
+
+[sub_resource type="CubeMesh" id=3]
+size = Vector3( 19.05, 1962.15, 577.85 )
+
+[sub_resource type="BoxShape" id=4]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Armoire" type="Node" parent="."]
+
+[node name="bas" type="StaticBody" parent="Armoire"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, -50.8, 282.575 )
+
+[node name="bas_mesh" type="MeshInstance" parent="Armoire/bas"]
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Armoire/bas"]
+shape = SubResource( 2 )
+
+[node name="cote_gauche" type="StaticBody" parent="Armoire"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.525, 981.075, 288.925 )
+
+[node name="gauche_mesh" type="MeshInstance" parent="Armoire/cote_gauche"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Armoire/cote_gauche"]
+shape = SubResource( 4 )
+
+[node name="cote_droit2" type="StaticBody" parent="Armoire"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1006.47, 981.075, 288.925 )
+
+[node name="droit_mesh" type="MeshInstance" parent="Armoire/cote_droit2"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Armoire/cote_droit2"]
+shape = SubResource( 4 )
+
+[node name="arriere" type="StaticBody" parent="Armoire"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, 981.075, 288.925 )
+
+[node name="arriere_mesh" type="MeshInstance" parent="Armoire/arriere"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -356.542, 134.894, 710.939 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Armoire/arriere"]
+shape = SubResource( 4 )

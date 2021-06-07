@@ -9,6 +9,17 @@ Faire des vidéos youtubes avec ce que j'ai eu de la difficulté à trouver comm
 
 ## Planification
 
+1. Tourner la machine de sens
+1. Fabriquer une tôle sur le support transversale
+1. Imprimer des maillons de chaînes supplémentaires
+1. Tôle plus grand ou inversée pour le cable tray vertical
+1. Tester le bruit du moteur
+1. Bonne hauteur:
+  - Acheter 100$ d'acier
+  - Refaire les câbles d'acier
+  
+
+
 1. Faire une belle page web de fabrication de l'armoire de cuisine.
 1. Rajouter l'armoire dans les assemblages pour savoir le coût total.
 1. Rajouter les trous borgnes à l'armoire et faire des screenshots.
