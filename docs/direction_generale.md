@@ -7,18 +7,43 @@ https://github.com/ledermann/keepr
 FAIRE UNE VIDÉO YOUTUBE QUI EXPLIQUE COMMENT BRANCHER LES FILS ÉLECTRIQUES D'UN STEPPER.
 Faire des vidéos youtubes avec ce que j'ai eu de la difficulté à trouver comme trucs.
 
+Mouvement vertical 6.5".
+1. **Acheter du PLA blanc sur amazon pour les nouvelles bases verticales.**
+1. **Valider est-ce que je met un guarde sur le mouvement vertical ou non?**
+1. **Ça me prends de la tôle anyway pour supporter les câble du moteur vertical et le câble tray**
+1. **Idéalement une tôle de 2" par 2" pour supporter le cable tray, mais ça va peut-être accrocher le mouvement horizontal. Devrait pas. Mais je sais pas, faire gaffe. J'avais à peu près 32.5" de jeu, et mon garde là mesurerait 32.125", c'est suffisant de jeu. Attention aux vis?**
+https://www.canac.ca/fr/solin-reversible-pour-toiture-2-po-blanc-225153
+https://www.canac.ca/fr/solin-reversible-pour-toiture-2-po-ivoire-225163
+1. Valider le guarde du mouvement horizontale.
+1. Scier 0.25" de chauqe côtés de mes contrepoids chez mes parents.
+1. Scier de nouveaux contrepoids de plus.
+1. Réimprimer des nouveaux support.
+
+Plus tard rapettisser le mouvement vertical de 7" de largeur à 6.5" de largeur. Mais pour l'instant, simplement concevoir le reste dans le moins de place possible.
+
+Je veux 0.25" de jeu entre le guarde et l'intérieur et l'extérieur. Le mouvement horizontal mesure 5.5". Mais le guarde doit être espacé de 0.125" des tubes carés de chaque côtés.
+
+Présentement, la tôle calibre 30 mesure 0.012", mais je vais probablement utiliser une tôle plus épaisse un jour qui résiste aux impacts. Donc calculons 0.32" pour la tôle.
+
+La tête des vis va dépasser, ça va être des flat heads, donc ça ne dépassera pratiquement pas, mais disons 0.1" pour être sûr.
+
+5.5" + 0.25" + 0.25" = 6"
+6" + 0.125" + 0.125" = 6.25"
+6.25" + 0.032" + 0.032" = 6.314"
+6.314" + ~0.1" + ~0.1" = 6.5"
+
+Donc fabriquer le trucs pour qu'il reste 0.5" de jeu de l'autre côté du cable tray.
+
+Les roues verticales à 2" du bord donc.
+
+Hey pour le 0.125", simplement collé un petit spacer. Ça peut même être en carton on s'en fout. Coller avec de la petite colle sur le guarde.
+
 ## Planification
 
-1. Tourner la machine de sens
 1. Fabriquer une tôle sur le support transversale
 1. Imprimer des maillons de chaînes supplémentaires
 1. Tôle plus grand ou inversée pour le cable tray vertical
 1. Tester le bruit du moteur
-1. Bonne hauteur:
-  - Acheter 100$ d'acier
-  - Refaire les câbles d'acier
-  
-
 
 1. Faire une belle page web de fabrication de l'armoire de cuisine.
 1. Rajouter l'armoire dans les assemblages pour savoir le coût total.
@@ -26,6 +51,13 @@ Faire des vidéos youtubes avec ce que j'ai eu de la difficulté à trouver comm
 1. Faire des screenshots de l'assemblage. Couleur différente pour chaque différent?
 1. Mettre dans les screenshots les mesures.
 1. Essayer de fabriquer le vise pour qu'il soit indépendant. Pas de trous dans le plywood (sauf peut-être les fils électriques. Ça serait pas mal plus clean. C'est pas grave si ça prends beaucoup de place. De toute façon le robot a besoin d'un espace pour déposer les couvercles. Donc simplement mettre le moteur vers le mur. Et le robot déposera sur le couvercle qui cache le moteur.
+
+1. Une ou plusieurs vidéos de vente.
+1. Une page d'acceuil de vente pour receuillir des addresses courriels avant de faire un kickstarter.
+1. Sur kickstarter, vendre des e-books de comment fabriquer sa propre machine.
+1. Vendre des kits?
+1. Distributeurs? Genre amazon ou bien genre canadian tire?
+
 1. Où mettre la balance.
 1. Une plaque plus épaisse pour tenir les roues de l'axe verticales pour que ça plie moins.
 1. Un moyen de fixer la machine à l'armoire en haut
