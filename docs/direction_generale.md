@@ -7,6 +7,15 @@ https://github.com/ledermann/keepr
 FAIRE UNE VIDÉO YOUTUBE QUI EXPLIQUE COMMENT BRANCHER LES FILS ÉLECTRIQUES D'UN STEPPER.
 Faire des vidéos youtubes avec ce que j'ai eu de la difficulté à trouver comme trucs.
 
+OK PLAN DEMAIN:
+
+Mouvement vertical parfait.
+Slotter pour les roues verticales pour aller chercher le jeu.
+Brancher le moteur.
+Passer le câble.
+
+Mouvement horizontal avec moteur, poulies et courroies.
+
 Mouvement vertical 6.5".
 1. **Acheter du PLA blanc sur amazon pour les nouvelles bases verticales.**
 1. **Valider est-ce que je met un guarde sur le mouvement vertical ou non?**
@@ -14,6 +23,7 @@ Mouvement vertical 6.5".
 1. **Idéalement une tôle de 2" par 2" pour supporter le cable tray, mais ça va peut-être accrocher le mouvement horizontal. Devrait pas. Mais je sais pas, faire gaffe. J'avais à peu près 32.5" de jeu, et mon garde là mesurerait 32.125", c'est suffisant de jeu. Attention aux vis?**
 https://www.canac.ca/fr/solin-reversible-pour-toiture-2-po-blanc-225153
 https://www.canac.ca/fr/solin-reversible-pour-toiture-2-po-ivoire-225163
+https://www.homedepot.ca/produit/peak-products-solin-angulaire-2-x-2-galvanise-blanc/1000111165
 1. Valider le guarde du mouvement horizontale.
 1. Scier 0.25" de chauqe côtés de mes contrepoids chez mes parents.
 1. Scier de nouveaux contrepoids de plus.

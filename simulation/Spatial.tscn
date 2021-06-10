@@ -1,4 +1,6 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scripts/FreelookCamera.gd" type="Script" id=1]
 
 [sub_resource type="CubeMesh" id=1]
 size = Vector3( 1016, 101.6, 565.15 )
@@ -54,3 +56,9 @@ material/0 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="Armoire/arriere"]
 shape = SubResource( 4 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( -0.999931, 0, 0.0117806, 0.0018366, 0.987773, 0.155889, -0.0116366, 0.1559, -0.987704, 237.769, 1089.21, -1713.49 )
+far = 100000.0
+script = ExtResource( 1 )
+sensitivity = 1.0
