@@ -1,18 +1,13 @@
 Heda is a **PANTRY ROBOT**.
 Heda est un **ROBOT GARDE-MANGER**.
 
-https://github.com/vitaly/debitcredit
-https://github.com/ledermann/keepr
-
 FAIRE UNE VIDÉO YOUTUBE QUI EXPLIQUE COMMENT BRANCHER LES FILS ÉLECTRIQUES D'UN STEPPER.
 Faire des vidéos youtubes avec ce que j'ai eu de la difficulté à trouver comme trucs.
 
 OK PLAN DEMAIN:
 
-Mouvement vertical parfait.
 Slotter pour les roues verticales pour aller chercher le jeu.
-Brancher le moteur.
-Passer le câble.
+Refaire les câbles d'acier. Celui magané et celui pas passser dans le bon sens.
 
 Mouvement horizontal avec moteur, poulies et courroies.
 
