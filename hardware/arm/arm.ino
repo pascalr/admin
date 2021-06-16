@@ -4,6 +4,7 @@
 #include "stepper.h"
 #include "dcmotor.h"
 #include "balance.h"
+#include "brake_dcmotor.h"
 
 char buf[BUF_SIZE];
 
@@ -19,7 +20,11 @@ StepperConfig* steppers[] = {&stepper_h, &stepper_v, &stepper_t, &stepper_a, &st
 MotorConfig gripper_1;
 MotorConfig gripper_2;
 
+BrakeDCMotor gripper_3;
+
 MotorConfig* grippers[] = {&gripper_1, &gripper_2, NULL};
+
+BrakeDCMotor* brake_grippers[] = {&gripper_3, NULL};
 
 double alpha_radius;
 double gripper_radius;
@@ -52,6 +57,16 @@ void setup() {
   gripper_2.pin_pwm = GRIP2_PIN_PWM;
   gripper_2.reverse_motor_direction = GRIP2_REVERSE_DIR;
   gripper_1.setUnitsPerStep((0.186*25.4*14)/90.0, 8);
+
+  gripper_3.id = '3';
+  gripper_3.pin_in1 = 59;
+  gripper_3.pin_in2 = 64;
+  gripper_3.pin_pwm = 44;
+  gripper_3.reverse_motor_direction = true;
+  pinMode(gripper_3.pin_pwm, OUTPUT);
+  pinMode(gripper_3.pin_in1, OUTPUT);
+  pinMode(gripper_3.pin_in2, OUTPUT);
+  brake_stop(gripper_3);
 
   stepper_j.id = 'j';
   stepper_j.pin_dir = 8;
@@ -378,9 +393,19 @@ void loop() {
       }
       grab(*motor, nb);
 
+    } else if (cmd == 'p') { // Grab with brake dc motor
+      BrakeDCMotor* motor = parseBrakeDCMotor(&input, brake_grippers);
+      if (motor == NULL) { Serial.println("error: Invalid gripper id."); return; }
+      if (parseNumber(&input, nb) < 0) {
+        Serial.println("error: Invalid number given.");
+        return;
+      }
+      brake_grab(*motor, nb);
+
     } else if (cmd == 's' || cmd == 'S') {
       analogWrite(GRIP_PIN_PWM, 0.0);
       analogWrite(GRIP2_PIN_PWM, 0.0);
+      brake_stop(gripper_3);
     
     } else {
       Serial.print("error: Unkown command: ");

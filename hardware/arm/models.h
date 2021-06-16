@@ -6,6 +6,27 @@ class Motor {
     long position_steps = 0; // Absolute position in steps
     double destination = 0; // Absolute destination in units
     char id;
+    bool reverse_motor_direction = false;
+};
+
+class BrakeDCMotor : public Motor {
+  public:
+  
+    int pin_in1;
+    int pin_in2;
+    int pin_pwm;
+    //int pin_encoder;
+    //bool reverse_motor_direction;    
+    //void setUnitsPerStep(double unitsPerTurn, int wheelNbHoles) {
+    //  units_per_step = unitsPerTurn / wheelNbHoles;
+    //}
+    //double getUnitsPerStep() {
+    //  return units_per_step;
+    //}
+    
+  //private:
+  
+    //double units_per_step;
 };
 
 class MotorConfig : public Motor {
@@ -14,9 +35,7 @@ class MotorConfig : public Motor {
     int pin_dir;
     int pin_pwm;
     int pin_encoder;
-
-    bool reverse_motor_direction;
-    
+        
     void setUnitsPerStep(double unitsPerTurn, int wheelNbHoles) {
       units_per_step = unitsPerTurn / wheelNbHoles;
     }
@@ -35,8 +54,6 @@ class StepperConfig : public Motor {
     int pin_dir;
     int pin_step;
     int pin_enable;
-
-    bool reverse_motor_direction;
 
     double steps_per_unit;
 
