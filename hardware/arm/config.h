@@ -13,9 +13,9 @@
 
 #define ENCODER_PIN 32
 
-#define H_STEP_PIN         54
-#define H_DIR_PIN          55
-#define H_ENABLE_PIN       38
+#define H_STEP_PIN         16
+#define H_DIR_PIN          23
+#define H_ENABLE_PIN       17
 
 #define V_STEP_PIN         31
 #define V_DIR_PIN          35

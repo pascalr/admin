@@ -6,18 +6,53 @@
 
 class Hx711Scale {
   public:
-	  const uint8_t pin_dout;
-	  const uint8_t pin_slk;
+	  uint8_t pin_dout;
+	  uint8_t pin_slk;
 	  long offset;
 	  float ratio;
 };
+
+long getValue(Hx711Scale &scale) {
+
+  byte data[3];
+
+  while (digitalRead(scale.pin_dout))
+    ;
+
+  for (byte j = 3; j--;)
+  {
+    for (char i = 8; i--;)
+    {
+      digitalWrite(scale.pin_slk, HIGH);
+      bitWrite(data[j], i, digitalRead(scale.pin_dout));
+      digitalWrite(scale.pin_slk, LOW);
+    }
+  }
+
+  digitalWrite(scale.pin_slk, HIGH);
+  digitalWrite(scale.pin_slk, LOW);
+
+  data[2] ^= 0x80;
+
+  return ((uint32_t) data[2] << 16) | ((uint32_t) data[1] << 8)
+      | (uint32_t) data[0];
+}
+
+long averageValue(Hx711Scale &scale, byte times=32) {
+
+  long sum = 0;
+  for (byte i = 0; i < times; i++){
+    sum += getValue(scale);
+  }
+  return sum / times;
+}
 
 void calibrateEmpty(Hx711Scale &scale) {
   scale.offset = averageValue(scale);
 }
 
-void calibrateWithWeight(Hx711Scale &scale, double weight, double offset) {
-  scale.ratio = (averageValue(scale) - offset) / weight;
+void calibrateWithWeight(Hx711Scale &scale, double weight) {
+  scale.ratio = (averageValue(scale) - scale.offset) / weight;
   Serial.print("ratio: ");
   Serial.println(scale.ratio);
 }
@@ -29,41 +64,6 @@ void setupScale(Hx711Scale &scale) {
 	digitalWrite(scale.pin_slk, HIGH);
 	delayMicroseconds(100);
 	digitalWrite(scale.pin_slk, LOW);
-}
-
-long getValue(Hx711Scale &scale) {
-
-	byte data[3];
-
-	while (digitalRead(scale.pin_dout))
-		;
-
-	for (byte j = 3; j--;)
-	{
-		for (char i = 8; i--;)
-		{
-			digitalWrite(scale.pin_slk, HIGH);
-			bitWrite(data[j], i, digitalRead(scale.pin_dout));
-			digitalWrite(scale.pin_slk, LOW);
-		}
-	}
-
-	digitalWrite(scale.pin_slk, HIGH);
-	digitalWrite(scale.pin_slk, LOW);
-
-	data[2] ^= 0x80;
-
-	return ((uint32_t) data[2] << 16) | ((uint32_t) data[1] << 8)
-			| (uint32_t) data[0];
-}
-
-long averageValue(Hx711Scale &scale, byte times=32) {
-
-	long sum = 0;
-	for (byte i = 0; i < times; i++){
-		sum += getValue();
-	}
-	return sum / times;
 }
 
 float getGram(Hx711Scale &scale, byte times=32) {

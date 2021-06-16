@@ -34,6 +34,8 @@ const uint8_t scale_pin_slk = A9; // TODO: Generate this from Rails
 long scale_offset; // TODO: Generate this from Rails
 float scale_factor; // TODO: Generate this from Rails
 
+Hx711Scale scale;
+
 void setup() {
 
   Serial.begin(115200);
@@ -69,10 +71,10 @@ void setup() {
   stepper_h.pin_enable = H_ENABLE_PIN;
   stepper_h.reverse_motor_direction = true;
   stepper_h.steps_per_unit = 200 * 2 * 8 / (12.2244*3.1416);
-  stepper_h.min_delay = 200;
-  stepper_h.max_delay = 4000;
-  stepper_h.nominal_delay = 500;
-  stepper_h.reference_delay = 500;
+  stepper_h.min_delay = 40;
+  stepper_h.max_delay = 1000;
+  stepper_h.nominal_delay = 200;
+  stepper_h.reference_delay = 200;
   stepper_h.percent_p = 0.3;
 
   stepper_v.id = 'v';
@@ -94,10 +96,10 @@ void setup() {
   stepper_t.pin_enable = T_ENABLE_PIN;
   stepper_t.reverse_motor_direction = false;
   stepper_t.steps_per_unit = 200 * 2 * 8 / (360*12/61);
-  stepper_t.min_delay = 200;
-  stepper_t.max_delay = 4000;
+  stepper_t.min_delay = 1000;
+  stepper_t.max_delay = 1000;
   stepper_t.nominal_delay = 1000;
-  stepper_t.reference_delay = 2000;
+  stepper_t.reference_delay = 1000;
   stepper_t.percent_p = 0.4;
 
   stepper_a.id = 'a';
@@ -120,7 +122,7 @@ void setup() {
   stepper_b.steps_per_unit = 200 * 2 * 8 / (360/60);
   stepper_b.min_delay = 500;
   stepper_b.max_delay = 10000;
-  stepper_b.nominal_delay = 1000;
+  stepper_b.nominal_delay = 200;
   stepper_b.reference_delay = 1000;
   stepper_b.percent_p = 0.3;
 
@@ -151,10 +153,6 @@ void setup() {
 
 void loop() {
 
-  //Serial.println(digitalRead(H_MIN_PIN));
-  //delay(1000);
-  //return;
-
   if (Serial.available()) {
 
     getInputLine(buf, BUF_SIZE);
@@ -174,7 +172,7 @@ void loop() {
 
     } else if (cmd == 'w') { // Get weight
       Serial.print("weight: ");
-      Serial.println(scale.getGram(), 1); // Print the gram value with one decimal precision
+      Serial.println(getGram(scale), 1); // Print the gram value with one decimal precision
       
     } else if (cmd == 'c') { // Calibrate with a weight 
       if (parseNumber(&input, nb) < 0) {
@@ -182,7 +180,7 @@ void loop() {
         Serial.println("Invalid number given.");
         return;
       }
-      calibrateWithWeight(scale, nb, offset);
+      calibrateWithWeight(scale, nb);
 
     } else if (cmd == 'h') { // Print the help
       Serial.println("#: version");
@@ -202,7 +200,7 @@ void loop() {
       Serial.println("s: stop everything! and send back when it was stopped at");
 
     } else if (cmd == 'y') { // Calibrate empty
-      offset = calibrateEmpty(scale);
+      calibrateEmpty(scale);
 
     } else if (cmd == 'r') { // Reference
       
@@ -314,8 +312,8 @@ void loop() {
           gripper_side_offset = nb;
           break;
         case 5:
-          Serial.print("Setting variable scale.setScale to ");
-          scale.setScale(nb);
+          Serial.print("Setting variable scale.ratio to ");
+          scale.ratio = nb;
           break;
         case 6:
           Serial.print("Setting variable unscrew_start_angle to ");
