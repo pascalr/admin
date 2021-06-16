@@ -77,7 +77,7 @@ class DatabaseController < ApplicationController
 
     respond_to do |format|
       if record.update(model_params)
-        format.html { redirect_to record, notice: 'Record was successfully updated.' }
+        format.html { redirect_back fallback_location: record, notice: 'Record was successfully updated.' }
         format.json { render json: record }
       else
         format.html { render :edit }
@@ -98,7 +98,7 @@ class DatabaseController < ApplicationController
 
     respond_to do |format|
       if record.save
-        format.html { redirect_to record, notice: 'Record was successfully created.' }
+        format.html { redirect_back fallback_location: record, notice: 'Record was successfully created.' }
         format.json { render json: record }
       else
         format.html { render :new }
@@ -118,7 +118,7 @@ class DatabaseController < ApplicationController
 
     # TODO: Handle destroy error
     respond_to do |format|
-      format.html { redirect_to polymorphic_path(@model), notice: 'Record was successfully destroyed.' }
+      format.html { redirect_back fallback_location: polymorphic_path(@model), notice: 'Record was successfully destroyed.' }
       format.json { render plain: "OK" }
     end
     #redirect_to polymorphic_path(@model, no_redirect: params[:no_redirect]), method: :get

@@ -1,0 +1,11 @@
+<%= form_with(model: Bill.new) do |form| %>
+  <%= form.label :day %>
+  <%= form.date_select :day, value: Date.today %><br>
+  <%= form.label :supplier_id %>
+  <%= form.collection_select :supplier_id, Supplier.all.order(:name), :id, :name %><br>
+  <%= form.label :shipping_cost, "Coût d'expédition" %>
+  <%= form.number_field :shipping_cost, step: 0.01 %><br>
+  <%= form.label :items_received %>
+  <%= form.check_box :items_received %><br>
+  <%= form.submit "Ajouter cette facture" %>
+<% end %>

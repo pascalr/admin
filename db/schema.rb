@@ -10,10 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_16_194256) do
+ActiveRecord::Schema.define(version: 2021_06_01_190121) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "bill_items", force: :cascade do |t|
+    t.bigint "bill_id", null: false
+    t.integer "part_id"
+    t.string "description"
+    t.float "quantity"
+    t.float "price"
+    t.float "tps"
+    t.float "tvq"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["bill_id"], name: "index_bill_items_on_bill_id"
+  end
+
+  create_table "bills", force: :cascade do |t|
+    t.date "day"
+    t.bigint "supplier_id", null: false
+    t.float "shipping_cost"
+    t.boolean "items_received"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["supplier_id"], name: "index_bills_on_supplier_id"
+  end
 
   create_table "part_list_items", force: :cascade do |t|
     t.integer "part_id"
@@ -54,6 +77,14 @@ ActiveRecord::Schema.define(version: 2021_04_16_194256) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "spendings", force: :cascade do |t|
+    t.string "description"
+    t.float "cost"
+    t.date "day"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "suppliers", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
@@ -64,6 +95,8 @@ ActiveRecord::Schema.define(version: 2021_04_16_194256) do
     t.string "website"
   end
 
+  add_foreign_key "bill_items", "bills"
+  add_foreign_key "bills", "suppliers"
   add_foreign_key "purchases", "parts"
   add_foreign_key "purchases", "suppliers"
 end

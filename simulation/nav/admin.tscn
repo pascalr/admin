@@ -1,0 +1,25 @@
+[gd_scene format=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1049.0
+margin_bottom = 633.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="ColorRect"]
+margin_left = 57.3439
+margin_top = 45.6923
+margin_right = 164.344
+margin_bottom = 100.692
+text = "Simulation"
+__meta__ = {
+"_edit_use_anchors_": false
+}

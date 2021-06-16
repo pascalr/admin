@@ -4,6 +4,8 @@ end
 
 Rails.application.routes.draw do
 
+  lazy_resources :bills
+  lazy_resources :bill_items
   get 'finances/bank_reconciliation'
   get 'finances/balance_sheet'
   get 'finances/financial_statement'
@@ -16,6 +18,7 @@ Rails.application.routes.draw do
   lazy_resources :purchases
   lazy_resources :part_list_items
   lazy_resources :shopping_items
+  lazy_resources :spendings
 
   get 'dashboard/index'
   root 'dashboard#index'

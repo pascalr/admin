@@ -1,0 +1,97 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://fonts/OleoScriptSwashCaps-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://fonts/Bungee-Regular.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 150
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+font_data = ExtResource( 2 )
+
+[node name="App" type="Node2D"]
+
+[node name="Background" type="ColorRect" parent="."]
+margin_right = 576.0
+margin_bottom = 1024.0
+rect_min_size = Vector2( 576, 1024 )
+color = Color( 0.333333, 0.6, 0.796078, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Background"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -288.0
+margin_top = 198.0
+margin_right = 288.0
+margin_bottom = 715.0
+rect_min_size = Vector2( 576, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MainTitle" type="Label" parent="Background/VBoxContainer"]
+margin_right = 576.0
+margin_bottom = 208.0
+rect_min_size = Vector2( 0, 200 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.85098, 0.85098, 0.85098, 1 )
+text = "Heda"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Buttons" type="VBoxContainer" parent="Background/VBoxContainer"]
+margin_top = 212.0
+margin_right = 576.0
+margin_bottom = 508.0
+
+[node name="Mes recettes" type="Button" parent="Background/VBoxContainer/Buttons"]
+margin_right = 576.0
+margin_bottom = 56.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.168627, 0.168627, 0.168627, 1 )
+text = "Mes recettes"
+flat = true
+
+[node name="Calendrier" type="Button" parent="Background/VBoxContainer/Buttons"]
+margin_top = 60.0
+margin_right = 576.0
+margin_bottom = 116.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.168627, 0.168627, 0.168627, 1 )
+text = "Calendrier"
+flat = true
+
+[node name="Inventaire" type="Button" parent="Background/VBoxContainer/Buttons"]
+margin_top = 120.0
+margin_right = 576.0
+margin_bottom = 176.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.168627, 0.168627, 0.168627, 1 )
+text = "Inventaire"
+flat = true
+
+[node name="Plus de recettes" type="Button" parent="Background/VBoxContainer/Buttons"]
+margin_top = 180.0
+margin_right = 576.0
+margin_bottom = 236.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.168627, 0.168627, 0.168627, 1 )
+text = "Plus de recettes"
+flat = true
+
+[node name="Options" type="Button" parent="Background/VBoxContainer/Buttons"]
+margin_top = 240.0
+margin_right = 576.0
+margin_bottom = 296.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.168627, 0.168627, 0.168627, 1 )
+text = "Options"
+flat = true

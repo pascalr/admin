@@ -1,4 +1,4 @@
-L'axe du mouvement T doit etre centré en Z pour pouvoir tourner le bras pour éviter qu'il accroche quoi que ce soit. Toutefois, il n'est pas obligé d'etre centré en X.
+
 
 Le mouvement horizontal pourrait etre en hauteur ou en largeur. Mais je choisis en largeur, parce que c'est ca que j'utilise présentement et ca marche, et le défaut dans hauteur est que la force serait vers le bas et surtout vers en avant et en arriere. Tandis qu'en largeur, les forces sont majoritairement seulement vers le bas et le haut. Les roues sont plus concus et risque de mieux fonctionner ainsi.
 

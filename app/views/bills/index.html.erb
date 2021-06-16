@@ -1,0 +1,15 @@
+<%= link_to "Nouvelle facture", new_bill_path %>
+
+<h1>Factures</h1>
+
+<%# @suppliers = Supplier.all %>
+<%# @suppliers.each do |supplier| %>
+  <!--  <h2><%# supplier.name %></h2>-->
+<% if @bills.blank? %>
+  Il n'y a pas encore de factures enregistrées pour ce fournisseur.
+<% else %>
+  <% @bills.order(day: :desc).each do |bill| %>
+    <%= render bill%>
+  <% end %>
+<% end %>
+<%# end %>

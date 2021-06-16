@@ -1,0 +1,21 @@
+[gd_scene format=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1.25989
+margin_top = 1.25992
+margin_right = -1.25989
+margin_bottom = 1.25989
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_right = 150.0
+margin_bottom = 40.0
+text = "Recette actuelle:"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}

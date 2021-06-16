@@ -1,96 +1,355 @@
-## Aujourd'hui/Demain
+Heda is a **PANTRY ROBOT**.
+Heda est un **ROBOT GARDE-MANGER**.
 
-1. CARTABLE/CLASSEUR POUR METTRE MES DOCUMENTS!
-1. Backup de la base de donnée de Admin à tous les jours! (De toutes les bases de données en fait)
-1. Commencer closer mon cours
+FAIRE UNE VIDÉO YOUTUBE QUI EXPLIQUE COMMENT BRANCHER LES FILS ÉLECTRIQUES D'UN STEPPER.
+Faire des vidéos youtubes avec ce que j'ai eu de la difficulté à trouver comme trucs.
 
-## Grandes lignes
+OK PLAN DEMAIN:
 
-### Non classés
+Slotter pour les roues verticales pour aller chercher le jeu.
+Refaire les câbles d'acier. Celui magané et celui pas passser dans le bon sens.
 
+Mouvement horizontal avec moteur, poulies et courroies.
+
+Mouvement vertical 6.5".
+1. **Acheter du PLA blanc sur amazon pour les nouvelles bases verticales.**
+1. **Valider est-ce que je met un guarde sur le mouvement vertical ou non?**
+1. **Ça me prends de la tôle anyway pour supporter les câble du moteur vertical et le câble tray**
+1. **Idéalement une tôle de 2" par 2" pour supporter le cable tray, mais ça va peut-être accrocher le mouvement horizontal. Devrait pas. Mais je sais pas, faire gaffe. J'avais à peu près 32.5" de jeu, et mon garde là mesurerait 32.125", c'est suffisant de jeu. Attention aux vis?**
+https://www.canac.ca/fr/solin-reversible-pour-toiture-2-po-blanc-225153
+https://www.canac.ca/fr/solin-reversible-pour-toiture-2-po-ivoire-225163
+https://www.homedepot.ca/produit/peak-products-solin-angulaire-2-x-2-galvanise-blanc/1000111165
+1. Valider le guarde du mouvement horizontale.
+1. Scier 0.25" de chauqe côtés de mes contrepoids chez mes parents.
+1. Scier de nouveaux contrepoids de plus.
+1. Réimprimer des nouveaux support.
+
+Plus tard rapettisser le mouvement vertical de 7" de largeur à 6.5" de largeur. Mais pour l'instant, simplement concevoir le reste dans le moins de place possible.
+
+Je veux 0.25" de jeu entre le guarde et l'intérieur et l'extérieur. Le mouvement horizontal mesure 5.5". Mais le guarde doit être espacé de 0.125" des tubes carés de chaque côtés.
+
+Présentement, la tôle calibre 30 mesure 0.012", mais je vais probablement utiliser une tôle plus épaisse un jour qui résiste aux impacts. Donc calculons 0.32" pour la tôle.
+
+La tête des vis va dépasser, ça va être des flat heads, donc ça ne dépassera pratiquement pas, mais disons 0.1" pour être sûr.
+
+5.5" + 0.25" + 0.25" = 6"
+6" + 0.125" + 0.125" = 6.25"
+6.25" + 0.032" + 0.032" = 6.314"
+6.314" + ~0.1" + ~0.1" = 6.5"
+
+Donc fabriquer le trucs pour qu'il reste 0.5" de jeu de l'autre côté du cable tray.
+
+Les roues verticales à 2" du bord donc.
+
+Hey pour le 0.125", simplement collé un petit spacer. Ça peut même être en carton on s'en fout. Coller avec de la petite colle sur le guarde.
+
+## Planification
+
+1. Fabriquer une tôle sur le support transversale
+1. Imprimer des maillons de chaînes supplémentaires
+1. Tôle plus grand ou inversée pour le cable tray vertical
+1. Tester le bruit du moteur
+
+1. Faire une belle page web de fabrication de l'armoire de cuisine.
+1. Rajouter l'armoire dans les assemblages pour savoir le coût total.
+1. Rajouter les trous borgnes à l'armoire et faire des screenshots.
+1. Faire des screenshots de l'assemblage. Couleur différente pour chaque différent?
+1. Mettre dans les screenshots les mesures.
+1. Essayer de fabriquer le vise pour qu'il soit indépendant. Pas de trous dans le plywood (sauf peut-être les fils électriques. Ça serait pas mal plus clean. C'est pas grave si ça prends beaucoup de place. De toute façon le robot a besoin d'un espace pour déposer les couvercles. Donc simplement mettre le moteur vers le mur. Et le robot déposera sur le couvercle qui cache le moteur.
+
+1. Une ou plusieurs vidéos de vente.
+1. Une page d'acceuil de vente pour receuillir des addresses courriels avant de faire un kickstarter.
+1. Sur kickstarter, vendre des e-books de comment fabriquer sa propre machine.
+1. Vendre des kits?
+1. Distributeurs? Genre amazon ou bien genre canadian tire?
+
+1. Où mettre la balance.
+1. Une plaque plus épaisse pour tenir les roues de l'axe verticales pour que ça plie moins.
+1. Un moyen de fixer la machine à l'armoire en haut
+1. Avancer la fabrication du robot. [En attente de pièces...]
+1. Faire la simulation avant de faire l'armoire pour s'assurer du reach du robot. Quoique...
+1. Faire une BELLE armoire DÉMÉNAGEABLE.
+1. Acheter des câbles électriques.
+1. Poulie axe A.
+1. Homing system
+1. Continuer la simulation du bras robotique pour pouvoir le programmer, aller chercher les ingrédients, puis verser des aliments grossiers, puis faire des muffins.
+1. Gripper
+
+1.  Une page de vente (page d’accueil) sur mon site internet (1 semaine) [En attente de l'acception du dépot de brevet]
+1. Trouver un premier client qui me servira de publicité. [Fabriquer un prototype avant] (Boulangerie, Prêt-à-cuisiner, petite boutique de nourriture, ...)
+1. Trouver shipping mondial kits de robot
+1. Faire une soumission chez une firme de génie conseil pour un produit final qui peut se vendre sur kickstarter
+1. Faire une vidéo publicitaire de cuisine
+1. Crowdfunding 50$ pour réservation, ou membre, ou vendre kits à assembler.
+1. Modèle d'affaires
+1. Angel investors (en approcher au moins pour voir l'intérêt) [Fabriquer un prototype avant]
+1. VC investors (en approcher au moins pour voir l'intérêt) [Fabriquer un prototype avant]
+1. Ajouter toutes les valeurs nutritives des ingrédients.
+1. Brevet pour robot qui évite de combattre la gravité?
 1. Classement environnemental de chaque ingrédient et ainsi chaque recette
 1. Classement niveau santé de chaque ingrédient et ainsi chaque recette
-
-### Nouveau plan
-
-1. Backup de la base de donnée de Admin à tous les jours!
-1. Mouvement horizontal
-1. Mouvement vertical
-1. Mouvement R, B, A, T
-1. Simulation et bras robotique aller chercher les ingrédients pour des muffins (3 semaines)
-1. Simulation et bras robotique verser des aliments grossiers (riz, macaroni, légumineuses, ...) (3 semaines)
-
-**Objectif:** Profiter au maximum de mon appartement tant que je l'ai. Faire la recherche de financement plus tard. Je ne voulais pas fabriquer mon produit sans savoir que je peux le vendre, mais ce n'est plus le cas. Au pire, j'utilise la machine moi-meme pour faire et vendre des aliments transformés zéro-déchets.
-
-### Ancien plan
-
-1. <strike>Demande de brevet (2 semaine)</strike>
-1.  Une page de vente (page d’accueil) sur mon site internet (1 semaine) [En attente de l'acception du dépot de brevet]
-1.  Modèle d'affaires (1 semaine) [En attente que mon cours termine]
-1.  Peaufiner mon site internet (MVP) et le rendre publique (1 semaine) [En attente de l'acception du dépot de brevet]
-1.  Trouver des clients et/ou des investisseurs (1 semaine)
-1.  Fabriquer une belle armoire de cuisine (2 semaines)
-1.  Développer une dizaine de bonnes recettes en exemple (2 semaine)
-1.  Faire une vidéo publicitaire de cuisine (1 semaine)
 1. Démarrer l'entreprise officiellement.
 1. Contacter des médias et essayer de faire parler de l'entreprise
-    (1 semaine)
-1. Financement participatif. Vendre des réservations à 50$.
-1. Faire mon bras robotique
 
-## Détails et progres des grandes lignes
+## Version à vendre
+
+1. 80"? de haut au lieu de 5'
+1. 6" de large au lieu de 7"
+1. Arbre T 5/8" au lieu de 1/2"
+1. Bearings pour l'axe vertical
+1. Bushings pour où qu'il ne peut pas y avoir de bearing comme 3 sur le gripper
+
+
+## Homing
+
+J'aimerais que le homing se fasse sans limit switch. Simplement en le déplaçant manuellement à sa maison et avec la caméra pour axe B.
+
+## Câbles électriques
+
+Ce que j'ai besoin:
+- Câble moteur 2.8A pour axe B et axe X.
+- Câble moteur 1A pour axe R.
+- Câble moteur 1.7A pour axe A et axe T.
+- Câble moteur 4.0A pour axe Y.
+- Câble shielded pour encodeur du gripper mobile
+- Câble shielded pour encodeur du gripper fixe
+
+Ce que j'ai présentemment:
+
+- 8 brins AWG 22 stranded
+
+Ce que je voudrais:
+
+La charte que j'ai trouvé est très, très conservatrice. Elle suggère 5.9A pour AWG 14, et dans une maison c'est 15A... Pour mon AWG 22, elle suggère 0.92A. Donc 15/5.9 * 0.92 == 2.34A. C'est suffisant pour les axes A et T, mais ce n'est pas l'idéal pour les NEMA 23, surtout Y. Pour du AWG 18, c'est 2.3A. 15/5.9*2.3 == 5.85A. C'est amplement suffisant pour tout. Pour vendre la machine, j'utiliserais quand même un plus gros conducteur pour axe Y. Ça me prendrait du AWG 16 pour être safe à 3.7A. AWG 15 donne 4.7A.
+
+J'aimerais des 4 conducteurs pour les moteurs.
+
+https://electrical-engineering-portal.com/motor-wiring-guidelines
+
+Avec shield ou sans shield?
+Les gens semblent dire avec shield. 
+Toutefois, un shield doit être branché au deux extrémités sinon c'est inutile.
+Je le branche sur quoi sur le moteur?
+https://en.wikipedia.org/wiki/Talk%3AShielded_cable#Grounding_at_both_ends
+
+Stranded Wire 4C/18 AWG - CSA - FT4 - 600V - Grey - Sold by meter
+Appeler Addisson électronique au cas où ils n'ont pas en stock et seulement à Montréal.
+
+
+Multi-Stranded Wire Cable - 4C/18AWG - Shielded - FT4 - Gray - Sold by Meter
+SKU: 162409  | # MOD: 92248-21
+vs
+SKU: 162773  | # MOD: 74-319 
+
+Fuck off, pas shielded. Shielded de quoi? Ça servirait à quoi?
+Je ne veux même pas de limit switch de toute façon.
+
+SKU: 600846
+MOD: 73-134
+Deca cables, stranded wire - 4 conductors - 18 AWG - shielded - FT4, GREY - SOLD BY METER
+
+Pour l'axe R je pourrais utiliser un câble électrique plus petit à 2 conducteur, en fait idéalement à 6 conducteurs?
+
+Longeurs:
+AWG 22 4 conducteurs multi-brins: (R, J(fixe))
+AWG 18 4 conducteurs multi-brins: (B, X, Y, A, T)
+
+**Ça me prend à peu près 3.5m par axe pour être safe, donc pour X, Y, T, A, B acheter 17.5m, ben 20m de 4 conducteurs 18 AWG stranded**
+
+**Utiliser le conducteur shielded que j'ai déjà pour l'encodeur, 5m**
+
+**Acheter AWG 22 à AWG 18 2 conducteurs pour gripper mobile et fixe, 5m**
+
+Il y a l'air d'y avoir beaucoup de conducteur pour le capteur du moteur. Attendre de voir.
+
+## Détails et progrès des grandes lignes
 
 ### Mouvement horizontal
 
-- Acheter des tiges filetées 8mm (En attente que les bearings soit commandé...)
-- Acheter écrous 8mm (En attente que les bearings soit commandé...)
-- Acheter un peu de washers 8mm? (attendre de voir si nécessaire)
-- Déterminer et acheter de la tole plus épaisse pour les cotés  (attendre que ce soit nécessaire, pour l'instant c'est correct avec ma petite tôle)
-- Imprimer les supports de la track a cable
+**En attente des maudits bearings...**
+
+- Pour éviter que ça dépasse, enlever le washer entre les deux roues. Les deux bearings collé ne sont pas un problème je crois. Simplement enlever le seal de caoutchouc.
 - Imprimer le support du moteur
-- Percer ou imprimer ou acheter 2 poulies pour nema 23 (HTD3M?, je veux une **BF** et non AF) Au lieu d'engrenage, je pourrais utiliser des courroies synchrone partout? Pour laxe vertical aussi
-(https://www.steppermotorcanada.ca/steppermotorcanada_011.htm)
 
-**En attente de la meche 18mm pour fabriquer les 2 plaques sur les cotés. J'ai l'acier.**
+#### Installation:
 
-**En attente des bearings et du TPU pour faire les roues.**
+1. Installer la partie supérieure avec les deux plaques de métal et les deux essieus avec les roues.
+1. Installer le support à cable track
+1. Préinstaller le moteur
+1. Déposer le chariot sur la track horizontal
+1. Installer l'arbre 1/2" (1 bearing, **puis poulie et courroie**, puis 1 autre bearing)
+1. Ajuster la tension de la courroie avec la position du moteur.
+1. Insérer la partie inférieure sur le bearing
+1. Insérér les deux essieus à travers les roues. (Il faudrait des washers de l'autre côté de la roue et non des nuts sinon ça va être chiant...)
 
 ### Mouvement vertical
 
-- Imprimer en 3d les nouveaux drums
-- Acheter tige filetée 8mm
-- Acheter jam nut et nut régulier 8mm
-- Des washers/sleeve de la bonne grandeur pour les bearings (pas tant grave pour l'instant)
-- Commander des bearings sur amazon pour les avoir plus rapidement et être sur de les avoir... {trouver tige filetée et jam nut en premier est un must}
-- Acheter une courroie synchrone soudée de la bonne grandeur (ça va être moins bruyant que des gears!) [attendre de designer les autres mouvements qui en auront de besoin eux-aussi]
-- Concevoir ou acheter des poulies pour aller avec la courroie (acheter pour 6.35mm! sinon c'est l'enfer...)
+**Attente Poulie HTD 3M 16T et poulie HTD 3M 72 dents et courroie**
+
+- Des washers/sleeve de la bonne grandeur pour les bearings des roues (pas tant grave pour l'instant)
 - Imprimer le support à moteur
-- Essayer d'installer un fer angle pour joindre les deux supports verticals.
-- Au lieu d'engrenage, je pourrais utiliser des courroies synchrone partout? Pour l'axe vertical aussi
 
 80"/2.625"/3.1416 ~= 10. 1 tour de plus pour que ça tienne == 11.
 
 ### Bras
 
+Le moteur que j'ai acheté doit prendre obligatoirement une autre poulie pour tendre la courroie parce que les trous dans le gearbox sont trop près du centre...
+
+On veut idéalement un ratio de 20, niveau vitesse, ça semble avoir ben de l'allure. Le gearbox vient avec un ratio de 5.18. Il manque ~= 3.8. 16 dents à 48 dents serait acceptable je crois.
+
+Pulley petite: HTD 3M: 16 dents
+Pulley grande: HTD 3M: 48 dents (45.08mm)? Essayer un peu plus si possible...
+
+htd 3m pulley 48t:
+https://www.aliexpress.com/item/33045886787.html?spm=a2g0o.productlist.0.0.65ab6e146jUH8H&algo_pvid=bb5671f6-42f3-49ef-a7cd-521b62574e76&algo_expid=bb5671f6-42f3-49ef-a7cd-521b62574e76-1&btsid=0b0a555f16195533225846334efdc5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_
+
+#### Poignet
+
+Qu'est-ce que je veux changer de mon poignet présentement?
+
+- La manière que c'est attaché à l'humérus.
+- La vitesse du moteur. (Utiliser un moteur Nema 23.)
+- Le recouvrir pour que ce soit beau
+- Possibilité d'utiliser seulement de l'aluminium au lieu du plastique pour pouvoir utiliser un four un jour.
+- Il y a du matériel inutile en bas il me semble
+- Il est quand même long...
+- Les pinces ne sont pas belles, trop épaisses... (aluminium, bushings...)
+- Le bruit de la worm gear (essayer avec de la lubrification?
+- La worm gear devrait être idéalement être dans un bain d'huile dans un truc hermétique
+- Les gears de la pinces en nylon
+- Je trouve que c'est trop connecté présentement... J'aimerais séparé la pince du reste
+
+Un moteur Nema 17 plus long pour l'axe B ou un moteur nema 23?
+
+Comment faire pour que le moteur soit bien situé?
+
+Il y a plusieurs manières possibles de rattacher le skelette dans le poignet:
+- Un Y (souder un U à une tige droite)
+- Une plate soudée à la tige vissée au bearing hub
+- Comme présentemment
+- Plier la tige 1/2" et mettre les bearings dans l'humérus (mais idéalement non parce qu'on veut que l'humérus soit le plus mince possible pour passer en dessous.
+
+#### Installation
+
+1. Attacher la poulie au top du poignet
+1. Insérer la poulie et le top du poignet au dessus de shaft avant les bearings
+1. Insérer les bearings sur le shaft
+1. Glisser le support à bearings sur les bearings.
+1. Attacher le support à bearings au top du poignet
+1. Attacher le tube carré et le shaft bêta au support à bearings
+1. Attacher le couvercle au support à bearings
+
+#### Axe A
+
+Calcul de l'angle minimal:
+
+Poignet: 1.875"
+Humérus: 6.25"
+Main jusqu'au milieu de la pince pour prendre: 6.25"
+Main jusqu'à la fin de la pince pour prendre: 7"
+Donc, présentement, 14.375" de reach pour prendre des pots
+
+À 90 degré, la distance la plus grand est de 6.25" en Z pour l'humérus plus 3" en Z pour la largeur de la pince. Aussi, 1.875" pour le poignet en X et 7" en X pour la main jusqu'à la fin de la pince.
+Z: 9.25", X: 8.875", pythagore: 12.82", 1.55" (14.375 - 12.82), ce n'est pas assez
+
+À 60 degré,
+Poignet doit mesurer 3.125". Calcul avec thêta à 120 degré pour que ce soit plus simple.
+Reach == 6.25" + 3.125" + 6.25" == 15.625"
+-3.125" en Z pour l'humérus (sin(30)*6.25") plus 3.125" pour le poignet et 7" pour la main jusqu'à la fin == 7" en Z.
+6.25" * cos(30) == 5.41" en X + 3" en X pour la largeur de la pince
+Z: 7", X: 8.41", pythagore: 10.94"; 15.625" - 10.94" == 4.69", c'est suffisant! Mes plus gros pots mesure 4.375"
+
+#### Axe B
+
+Quel devrait être le ratio? Présentemment c'est super lent. Idéalement 2 fois plus rapide.
+Présentemment c'est 1:60. Acheter 1:30. Ou bien 1:40? 1:40 pour être safe, je ferai plus plus tard au pire. Je veux être sûr que ça fonctionne...
+
+Acheter rod 12mm, je crois que je ne suis pas capable de percer les gears que je veux acheter... Mais ça va me prendre un ou deux bearings 12mm aussi... maudit...
+
+Pour ce qui est de la worm gear, je crois acheter 6mm et je vais sabler 0.35mm du shaft nema 23...
+
+### Gripper
+
+Essayer avec le moteur 12V que j'ai présentemment avant d'en acheter un autre. Sur amazon ça l'air d'être disponible. Mais bon, ça m'en prend un quand même plus fort que celui présentement je crois...
+
+Un moteur avec DC avec gearbox à worm gear pour être par en haut et pour être plus sécuritaire (irréversible)
+
+Le moteur actuel makeblock DC motor 37mm possède un ratio de 90. Cela correspond à un RPM de 50. Avec un torque de 4.5 Kg.cm à 40 RPM avec charge.
+
+Utiliser des ressorts pour maintenir une pression sur les pots même en perte de courant?
+
+Le moteur force pour ouvrir les pinces. Le moteur utilise un gearbox à worm gear pour être irréversible.
+
+Parce que je vais staller les moteurs, utiliser un moteur et gearbox surpuissant et le rouler à 50% de la capacité?
+
+Possiblement utiliser une clutch?
+
+Pas de spring, la force varie et il n'y a pas assez d'espace pour contenir le ressort non étiré...
+
+Un câble d'acier avec un bowden?
+
+Je pense ce que j'aimerais, c'est simplement que le matériel de la pince soit élastique. Ainsi, tu sers et entre le contact initial et la fin, la base de la pince avance encore de quelques millimètres et il se développe un tension. Le moteur cesse de tourner lorsqu'il cesse de tourner haha. Il pourrait détecter qu'il ralentit et ainsi éviter de staller. À voir.
+
+Peut-être acheter 2 moteurs? Comme ça si je brule le premier en le stallant ben faire plus attention avec le second!
+
+Ça me prends des gears plus solides aussi...
+
+DUAL SHAFT POUR POUVOIR LIRE LA VITESSE QUE ÇA TOURNE EN ARRIERE!!!
+
+Bon je prends un moteur plus fort et je le ferai rouler à plus petite capacité. Mais là prendre un RPM plus élevé que 40 RPM parce qu'il va tourner moins vite parce que je vais lui donner moins de courant?
+
+Gears en nylon?!
+
+Acheter le 80 RPM pour être plus safe?
+
+Shaft 15mm ou 33mm? Idéalement ça serait genre 20-22mm
+
+WOW!!! Il existe des encodeurs qui sont genre tenus en étant soudé au connecteur du moteur! Intelligent!
+
+https://www.amazon.ca/-/fr/engrenage-bo%C3%AEtier-r%C3%A9duction-encodeur-autobloquant/dp/B073S5GM6Q/ref=sr_1_9?__mk_fr_CA=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=dc+motor+worm+gear&qid=1620399857&sr=8-9
+
+#### Autre
+
+**TODO: Fabriquer le skelette et valider que la déflection est de moins de 2mm pour la charge maximale**
+
+Est-ce que je dois rajouter de la tension dans les bearings pour qu'il y ait moins de jeu comme Dan Gelbart disait? (preloader les bearings?)
+
+**Waiting skeleton validation**  Le design actuel est présentement un peu trop grand (14"). J'ai déjà enlevé 0.75" inutile au bout (pots plus petit maximal). Je peux enlever un peu plus sur l'humérus. Ça risque juste d'être plus difficile faire stage multiple pour une poulie...
+
+J'utilise un nema 17 pour T et A. Au pire j'achèterai des Nema 17 plus long, plus fort 0.6 N.m au lieu de 0.4 N.m. Pour B je ne sais pas. Il y a même des 0.71 N.m!
+
+L'axe du mouvement T doit etre centré en Z pour pouvoir tourner le bras pour éviter qu'il accroche quoi que ce soit. Toutefois, il n'est pas obligé d'etre centré en X.
+
+C'est correct de ne pas être centré, mais le problème c'est que je dois avoir suffisament d'espace pour le diamètre de la grande poulie...
+
+Vue d'ensemble:
+1. Conception d'un squelette
+1. Conception de moteur et de réducteur
+1. Conception d'un boitier et d'un système pour les câbles
+
+Mon problème principal présentemment est le manque de rigidité. Je dois mettre un arbre plus grand pour l'arbre. (https://www.engineering.com/calculators/beams.htm)
+2 kg à 12" ~= 4.5 lbs à 12"
+mais il y a aussi le poids du bras. Disons 10 lbs à 12" pour être safe.
+0.5" au lieu de 0.375" est **3.16 fois** plus rigide
+Le tube de 0.706" est **5 fois** plus rigide que 0.375"
+0.625" est **7.72 fois** plus rigide que 0.375"
+
+0.625" it is! Je ne serai pas capable de le percer par contre...
+
 C'est quoi les problèmes que j'essaie de résoudre:
 1. Dans un vrai bon design il faudrait que je moule des composantes en aluminium (Fondrémy)
-1. Le chariot a changé. Quoi faire à l'intérieur du chariot pour l'axe T?
-1. Le bras n'est pas assez rigide (souder???)
+1. L'humérus n'est pas assez rigide (souder???)
 1. L'avant bras n'est pas dans le même axe que le bras (c'est un problème?)
 1. Où passer les fils?
 1. Ne pas tourner le moteur autour de l'engrenage, tourner l'engrenage
 1. Je veux pouvoir tourner plus avec l'axe A, aller en-dessous du bras avec l'avant-bras
+1. Diminuer la hauteur du bras (humérus) (la courroie en haut au lieu d'en bas? Les fils électriques eux.
 
+Améliorer le design actuel pour avoir plus de rigidité. Avec le nouveau design de l'armoire, j'ai moins de restriction en hauteur. Donc mettre le mouvement T au dessus des autres mouvements.
 
 #### Une idée
 
 Rendre le garde du haut optionnel et non structurel, il y aurait 2 pillow block de chaque coté et un grand tube qui lui sert de structure entre les cotés. A la limite le garde serait optionnel et servirait seulement de faire beau et de cacher le moteur. Le moteur serait accrocher d'un des cotés (cotés opposé au cable track pour que ses fils puissent descendre en bas)
-
-### Mouvement R, B, A, T
-
-Améliorer le design actuel pour avoir plus de rigidité. Avec le nouveau design de l'armoire, j'ai moins de restriction en hauteur. Donc mettre le mouvement T au dessus des autres mouvements.
-
-- Commencer le nouveau design
 
 ### Simulation et bras robotique aller chercher les ingrédients pour des muffins (3 semaines)
 
@@ -118,7 +377,7 @@ Ce site internet n'est pas seulement un site de référence pour trouver des rec
 ##### Fonctionnalités
 - Range la nourriture en rentrant de l'épicerie.
 - Fais l'inventaire des quantités d'ingrédients restants.
-- Avertit à propos des dates de péremptions des ingrédients.  
+- Avertit à propos des dates de péremptions des ingrédients.
 - Sors tous les ingrédients nécessaires à une recette.
 - Fais des mélanges en versant les quantités nécessaires.
 - Range les pots une fois la recette terminé.
@@ -204,6 +463,11 @@ Axe vertical de 5' seulement?
 ## Un jour
 
 - Checker pour imprimer en 3d du nylon (enclosure et hotend température élevé ou nylon qui s'imprime a plus faible température)
+- Essayer de chauffer la surface du TPU pour le lisser.
+- Retaining ring pour le bearing de la main. Nécessite un tour pour faire deux encoches sur le shaft. Il ne devrait pas se déplacer, le bearing est rentré press-fit, mais bon, ça serait mieux.
+- Exosquelette au lieu de squelette
+1. Mettre les bearings dans l'humérus au lieu de les mettre dans le poignet, nécessite un exosquelette pour soutenir les bearings, ça serait simple de passer les fils électrique dans l'humérus, ah fuck off pour l'instant ça marche mon affaire de toute façon j'ai fini mon design et même presque tout imprimé... à faire avec la prochaine version en aluminium. Je ne sais même pas si c'est une bonne idée. Si tu regardes les robots SCARA normal, leur humérus est vraiment mince. Tu veux que l'humérus soit mince parce que l'avant bras passe un peu en dessous.
+- As you might guess, the rated ampacities are just a rule of thumb. In careful engineering the voltage drop, insulation temperature limit, thickness, thermal conductivity, and air convection and temperature should all be taken into account.
 
 ## Utopie
 
@@ -212,4 +476,27 @@ Acheter:
 - Un tour a métal
 - Une plieuse de tole
 - Une imprimante 3D avec enclosure, hotbed en vitre et hotend tout en métal pour etre capable d'imprimer du nylon a haute température
+
+Au lieu d'un gros montant à vendre, offrir une location, comme ça ça n'engage à rien et c'est un montant bien moins élevé pour le client. 200$ par mois. Au lieu d'un employé, c'est rien! Ou 400$-500$ par mois au début et ça inclut le support technique pour que l'appareil fonctionne 24h/24, 7jours/7. Fuck vouloir tout faire moi-même, avoir un seul client donnerait énormément de crédibilité à la compagnie. Et oui ne pas vendre la machine, seulement la louer, comme ça ça me fait un revenu tout le temps. Je dois supporter le coût initial de la machine par contre... Ne pas charger au client les moments où l'appareil est en panne au début.
+
+
+
+ La différence entre le 17HS4401 et le 17HS4401S est que la couleur du boîtier est différente, d'autres paramètres sont les mêmes. 
+ 
+ J'aimerais ça y aller petit à petit et vendre juste quelques petits trucs au lieu de trop gros au début et d'attirer la compétition... C'est moins ALL-IN aussi...
+ 
+ **EST-CE QUE MA PINCE EST CAPABLE DE PRENDRE LES POTS DANS LES COINS?!?!?!**
+Au pire faire un accotoire pour empêcher les pots d'aller sur le côté?
+
+Essayer de faire une armoire étanche pour le bruit. Ça serait cool pour le blender aussi. Pour ce qui est de l'humidité de l'évier de ma mère, ben intégrer un déshumidificateur plus tard avec l'évier.
+
+## Thank you
+
+Thank you to all the recipes websites I took inspiration from!
+Thank you for everyone who ever contributed to linux!
+Thank you to everyone who made a programming library free and open source!
+Thank you for the design of a pretty pantry!
+https://www.youtube.com/watch?v=bZO3Vk5jI5k
+https://howtomechatronics.com/projects/scara-robot-how-to-build-your-own-arduino-based-robot/
+Thank you to so many others who helped me in one way or another!
 
