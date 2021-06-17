@@ -8,7 +8,7 @@
     </tr>
   </tbody>
 </table>
-<table class="table table-striped table-sm">
+<table class="table table-striped table-sm table-bordered">
   <tbody>
     <tr>
       <th>#</th>
@@ -18,6 +18,7 @@
       <th>Price</th>
       <th>Tps</th>
       <th>Tvq</th>
+      <th>Total</th>
       <th></th>
     </tr>
     <% bill.bill_items.each do |item| %>
@@ -29,22 +30,24 @@
         <td><%= number_to_currency item.price, format: '%n%u' %></td>
         <td><%= number_to_currency item.tps, format: '%n%u' %></td>
         <td><%= number_to_currency item.tvq, format: '%n%u' %></td>
+        <td><%= number_to_currency item.price + (item.tps || 0.0) + (item.tvq || 0.0), format: '%n%u' %></td>
         <td><%= link_to "X", item, method: :delete, data: {confirm: 'Are you sure?'} %></td>
       </tr>
     <% end %>
     <tr>
-      <td colspan="4">Coût d'expédition</td>
-      <td><%= bill.shipping_cost.blank? ? "-" : number_to_currency(bill.shipping_cost, format: '%n%u') %></td>
-      <td colspan="3"></td>
+      <th style="text-align: right;" colspan="7">Sous total:</th>
+      <%= @subtotal = bill.items.map(&:price_with_taxes).sum %>
+      <td><%= number_to_currency @subtotal, format: '%n%u' %></td>
+      <td colspan="1"></td>
     </tr>
     <tr>
-      <th>Total</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th><%= number_to_currency bill.items.map(&:price).sum + (bill.shipping_cost || 0), format: '%n%u' %></th>
-      <th><%= number_to_currency bill.items.map(&:tps).sum, format: '%n%u' %></th>
-      <th><%= number_to_currency bill.items.map(&:tvq).sum, format: '%n%u' %></th>
+      <th style="text-align: right;" colspan="7">Coût d'expédition:</th>
+      <td><%= bill.shipping_cost.blank? ? "-" : number_to_currency(bill.shipping_cost, format: '%n%u') %></td>
+      <td colspan="1"></td>
+    </tr>
+    <tr>
+      <th style="text-align: right;" colspan="7">Total:</th>
+      <td><%= number_to_currency @subtotal + (bill.shipping_cost || 0), format: '%n%u' %></td>
       <th></th>
     </tr>
   </tbody>
