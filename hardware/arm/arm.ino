@@ -62,7 +62,7 @@ void setup() {
   gripper_3.pin_in1 = 59;
   gripper_3.pin_in2 = 64;
   gripper_3.pin_pwm = 44;
-  gripper_3.reverse_motor_direction = true;
+  gripper_3.reverse_motor_direction = false;
   pinMode(gripper_3.pin_pwm, OUTPUT);
   pinMode(gripper_3.pin_in1, OUTPUT);
   pinMode(gripper_3.pin_in2, OUTPUT);
@@ -401,6 +401,23 @@ void loop() {
         return;
       }
       brake_grab(*motor, nb);
+
+    } else if (cmd == '+') {
+      BrakeDCMotor* motor = parseBrakeDCMotor(&input, brake_grippers);
+      if (motor == NULL) { Serial.println("error: Invalid gripper id."); return; }
+      if (parseNumber(&input, nb) < 0) { Serial.println("error: Invalid number given."); return; }
+      motor->turn(CW, nb);
+
+    } else if (cmd == '-') {
+      BrakeDCMotor* motor = parseBrakeDCMotor(&input, brake_grippers);
+      if (motor == NULL) { Serial.println("error: Invalid gripper id."); return; }
+      if (parseNumber(&input, nb) < 0) { Serial.println("error: Invalid number given."); return; }
+      motor->turn(CCW, nb);
+
+    } else if (cmd == 'q') { // Release with brake dc motor
+      BrakeDCMotor* motor = parseBrakeDCMotor(&input, brake_grippers);
+      if (motor == NULL) { Serial.println("error: Invalid gripper id."); return; }
+      brake_release(*motor);
 
     } else if (cmd == 's' || cmd == 'S') {
       analogWrite(GRIP_PIN_PWM, 0.0);

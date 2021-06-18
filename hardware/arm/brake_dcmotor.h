@@ -13,6 +13,14 @@ BrakeDCMotor* parseBrakeDCMotor(char** input, BrakeDCMotor** motors) {
   return NULL;
 }
 
+void BrakeDCMotor::turn(bool dir, double strength) {
+  analogWrite(pin_pwm, strength);
+  bool in1 = reverse_motor_direction ? LOW : HIGH;
+  if (dir == CCW) { in1 = !in1; }
+  digitalWrite(pin_in1, in1);
+  digitalWrite(pin_in2, !in1);
+}
+
 void brake_stop(BrakeDCMotor &gripper) {
   analogWrite(gripper.pin_pwm, 0.0);
   digitalWrite(gripper.pin_in1, LOW);
@@ -25,6 +33,18 @@ void brake_grab(BrakeDCMotor &gripper, double strength) {
   analogWrite(gripper.pin_pwm, strength);
   digitalWrite(gripper.pin_in1, gripper.reverse_motor_direction ? LOW : HIGH);
   digitalWrite(gripper.pin_in2, gripper.reverse_motor_direction ? HIGH : LOW);
+  
+  //digitalWrite(gripper.pin_dir, gripper.reverse_motor_direction ? HIGH : LOW);
+  //analogWrite(gripper.pin_pwm, strength);
+  //bool isStalled;
+  //while (!(isMotorStalled(gripper, isStalled, false) < 0 || isStalled)) {}
+}
+
+void brake_release(BrakeDCMotor &gripper) {
+
+  analogWrite(gripper.pin_pwm, BRAKE_GRIPPER_RELEASE_STRENGTH);
+  digitalWrite(gripper.pin_in1, gripper.reverse_motor_direction ? HIGH : LOW);
+  digitalWrite(gripper.pin_in2, gripper.reverse_motor_direction ? LOW : HIGH);
   
   //digitalWrite(gripper.pin_dir, gripper.reverse_motor_direction ? HIGH : LOW);
   //analogWrite(gripper.pin_pwm, strength);

@@ -1,6 +1,11 @@
 #ifndef _CONFIG_H
 #define _CONFIG_H
 
+#define CW true // Clockwise
+#define CCW false // Counter-clockwise
+
+#define BRAKE_GRIPPER_RELEASE_STRENGTH 100.0
+
 #define GRIP_PIN_DIR 4
 #define GRIP_PIN_PWM 5
 #define GRIP_PIN_ENCODER 32

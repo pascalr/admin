@@ -9,12 +9,19 @@ class Motor {
     bool reverse_motor_direction = false;
 };
 
-class BrakeDCMotor : public Motor {
+class DCMotor : public Motor {
+  void turn(bool dir, double strength);
+};
+
+class BrakeDCMotor : public DCMotor {
   public:
   
     int pin_in1;
     int pin_in2;
     int pin_pwm;
+
+    void turn(bool dir, double strength);
+    
     //int pin_encoder;
     //bool reverse_motor_direction;    
     //void setUnitsPerStep(double unitsPerTurn, int wheelNbHoles) {
