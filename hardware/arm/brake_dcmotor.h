@@ -14,9 +14,9 @@ BrakeDCMotor* parseBrakeDCMotor(char** input, BrakeDCMotor** motors) {
 }
     
 void BrakeDCMotor::stop() {
-  analogWrite(gripper.pin_pwm, 0.0);
-  digitalWrite(gripper.pin_in1, LOW);
-  digitalWrite(gripper.pin_in2, LOW);
+  analogWrite(pin_pwm, 0.0);
+  digitalWrite(pin_in1, LOW);
+  digitalWrite(pin_in2, LOW);
 }
 
 // Strength between 0 and 255, where 255 is full speed.
@@ -32,7 +32,7 @@ void BrakeDCMotor::turn(bool dir, double strength) {
 // Strength between 0 and 255, where 255 is full speed.
 void brake_grab(BrakeDCMotor &gripper, double strength) {
 
-  turn(CW, strength);
+  gripper.turn(CW, strength);
   //bool isStalled;
   //while (!(isMotorStalled(gripper, isStalled, false) < 0 || isStalled)) {}
 }

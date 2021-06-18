@@ -63,7 +63,6 @@ void setup() {
   pinMode(gripper_3.pin_pwm, OUTPUT);
   pinMode(gripper_3.pin_in1, OUTPUT);
   pinMode(gripper_3.pin_in2, OUTPUT);
-  brake_stop(gripper_3);
 
   stepper_j.id = 'j';
   stepper_j.pin_dir = 8;
@@ -147,8 +146,12 @@ void setup() {
     digitalWrite(steppers[i]->pin_enable, LOW);  
   }
 
-  //pinMode(H_MIN_PIN, INPUT_PULLUP);
-  //pinMode(V_MIN_PIN, INPUT_PULLUP);
+  for (int i = 0; dc_motors[i] != NULL; i++) {
+    dc_motors[i]->stop();
+  }
+
+  pinMode(H_MIN_PIN, INPUT_PULLUP);
+  pinMode(V_MIN_PIN, INPUT_PULLUP);
   
   //pinMode(LED_BUILTIN, OUTPUT);
 
@@ -410,7 +413,7 @@ void loop() {
       if (motor == NULL) { Serial.println("error: Invalid gripper id."); return; }
       brake_release(*motor);
 
-    } else if (cmd == 's' || cmd == 'S') {:
+    } else if (cmd == 's' || cmd == 'S') {
       for (int i = 0; dc_motors[i] != NULL; i++) {
         dc_motors[i]->stop();
       }

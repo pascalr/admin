@@ -3,7 +3,7 @@
 
 class Motor {
   public:
-    void stop();
+    virtual void stop() {}
 
     long position_steps = 0; // Absolute position in steps
     double destination = 0; // Absolute destination in units
@@ -22,6 +22,7 @@ class BrakeDCMotor : public DCMotor {
     int pin_in2;
     int pin_pwm;
 
+    void stop();
     void turn(bool dir, double strength);
     
     //int pin_encoder;
@@ -38,7 +39,7 @@ class BrakeDCMotor : public DCMotor {
     //double units_per_step;
 };
 
-class MotorConfig : public Motor {
+class MotorConfig : public DCMotor {
   public:
   
     int pin_dir;
