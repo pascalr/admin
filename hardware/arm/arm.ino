@@ -18,11 +18,12 @@ StepperConfig stepper_b;
 StepperConfig* steppers[] = {&stepper_h, &stepper_v, &stepper_t, &stepper_a, &stepper_b, NULL};
 
 MotorConfig gripper_1;
-MotorConfig gripper_2;
 
 BrakeDCMotor gripper_3;
 
-MotorConfig* grippers[] = {&gripper_1, &gripper_2, NULL};
+MotorConfig* grippers[] = {&gripper_1, NULL};
+
+DCMotor* dc_motors[] = {&gripper_1, &gripper_3, NULL};
 
 BrakeDCMotor* brake_grippers[] = {&gripper_3, NULL};
 
@@ -46,18 +47,14 @@ void setup() {
   Serial.begin(115200);
 
   gripper_1.id = '1';
-  gripper_1.pin_dir = GRIP_PIN_DIR;
-  gripper_1.pin_pwm = GRIP_PIN_PWM;
-  gripper_1.pin_encoder = GRIP_PIN_ENCODER;
-  gripper_1.reverse_motor_direction = GRIP_REVERSE_DIR;
+  gripper_1.pin_dir = 4;
+  gripper_1.pin_pwm = 5;
+  gripper_1.pin_encoder = 32;
+  gripper_1.reverse_motor_direction = true;
   gripper_1.setUnitsPerStep((0.186*25.4*14)/90.0, 8);
-
-  gripper_2.id = '2';
-  gripper_2.pin_dir = GRIP2_PIN_DIR;
-  gripper_2.pin_pwm = GRIP2_PIN_PWM;
-  gripper_2.reverse_motor_direction = GRIP2_REVERSE_DIR;
-  gripper_1.setUnitsPerStep((0.186*25.4*14)/90.0, 8);
-
+  pinMode(gripper_1.pin_dir, OUTPUT);
+  pinMode(gripper_1.pin_pwm, OUTPUT);
+  
   gripper_3.id = '3';
   gripper_3.pin_in1 = 59;
   gripper_3.pin_in2 = 64;
@@ -81,9 +78,9 @@ void setup() {
   stepper_j.percent_p = 0.3;
 
   stepper_h.id = 'h';
-  stepper_h.pin_dir = H_DIR_PIN;
-  stepper_h.pin_step = H_STEP_PIN;
-  stepper_h.pin_enable = H_ENABLE_PIN;
+  stepper_h.pin_dir = 23;
+  stepper_h.pin_step = 16;
+  stepper_h.pin_enable = 17;
   stepper_h.reverse_motor_direction = true;
   stepper_h.steps_per_unit = 200 * 2 * 8 / (12.2244*3.1416);
   stepper_h.min_delay = 40;
@@ -93,9 +90,9 @@ void setup() {
   stepper_h.percent_p = 0.3;
 
   stepper_v.id = 'v';
-  stepper_v.pin_dir = V_DIR_PIN;
-  stepper_v.pin_step = V_STEP_PIN;
-  stepper_v.pin_enable = V_ENABLE_PIN;
+  stepper_v.pin_dir = 35;
+  stepper_v.pin_step = 31;
+  stepper_v.pin_enable = 33;
   stepper_v.reverse_motor_direction = true;
   double unitPerTurnV = (2.625*25.4*3.1416 * 13/51);
   stepper_v.steps_per_unit = 200 * 2 * 32 / (unitPerTurnV);
@@ -106,9 +103,9 @@ void setup() {
   stepper_v.percent_p = 0.3;
 
   stepper_t.id = 't';
-  stepper_t.pin_dir = T_DIR_PIN;
-  stepper_t.pin_step = T_STEP_PIN;
-  stepper_t.pin_enable = T_ENABLE_PIN;
+  stepper_t.pin_dir = 28;
+  stepper_t.pin_step = 26;
+  stepper_t.pin_enable = 24;
   stepper_t.reverse_motor_direction = false;
   stepper_t.steps_per_unit = 200 * 2 * 8 / (360*12/61);
   stepper_t.min_delay = 1000;
@@ -118,9 +115,9 @@ void setup() {
   stepper_t.percent_p = 0.4;
 
   stepper_a.id = 'a';
-  stepper_a.pin_dir = A_DIR_PIN;
-  stepper_a.pin_step = A_STEP_PIN;
-  stepper_a.pin_enable = A_ENABLE_PIN;
+  stepper_a.pin_dir = 48;
+  stepper_a.pin_step = 46;
+  stepper_a.pin_enable = 62;
   stepper_a.reverse_motor_direction = true;
   stepper_a.steps_per_unit = 200 * 2 * 8 / (360*12/61);
   stepper_a.min_delay = 500;
@@ -130,9 +127,9 @@ void setup() {
   stepper_a.percent_p = 0.3;
 
   stepper_b.id = 'b';
-  stepper_b.pin_dir = B_DIR_PIN;
-  stepper_b.pin_step = B_STEP_PIN;
-  stepper_b.pin_enable = B_ENABLE_PIN;
+  stepper_b.pin_dir = 61;
+  stepper_b.pin_step = 60;
+  stepper_b.pin_enable = 56;
   stepper_b.reverse_motor_direction = true;
   stepper_b.steps_per_unit = 200 * 2 * 8 / (360/60);
   stepper_b.min_delay = 500;
@@ -150,14 +147,8 @@ void setup() {
     digitalWrite(steppers[i]->pin_enable, LOW);  
   }
 
-  pinMode(GRIP_PIN_DIR, OUTPUT);
-  pinMode(GRIP_PIN_PWM, OUTPUT);
-  
-  pinMode(GRIP2_PIN_DIR, OUTPUT);
-  pinMode(GRIP2_PIN_PWM, OUTPUT);
-
-  pinMode(H_MIN_PIN, INPUT_PULLUP);
-  pinMode(V_MIN_PIN, INPUT_PULLUP);
+  //pinMode(H_MIN_PIN, INPUT_PULLUP);
+  //pinMode(V_MIN_PIN, INPUT_PULLUP);
   
   //pinMode(LED_BUILTIN, OUTPUT);
 
@@ -419,10 +410,10 @@ void loop() {
       if (motor == NULL) { Serial.println("error: Invalid gripper id."); return; }
       brake_release(*motor);
 
-    } else if (cmd == 's' || cmd == 'S') {
-      analogWrite(GRIP_PIN_PWM, 0.0);
-      analogWrite(GRIP2_PIN_PWM, 0.0);
-      brake_stop(gripper_3);
+    } else if (cmd == 's' || cmd == 'S') {:
+      for (int i = 0; dc_motors[i] != NULL; i++) {
+        dc_motors[i]->stop();
+      }
     
     } else {
       Serial.print("error: Unkown command: ");

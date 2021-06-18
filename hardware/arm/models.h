@@ -3,6 +3,8 @@
 
 class Motor {
   public:
+    void stop();
+
     long position_steps = 0; // Absolute position in steps
     double destination = 0; // Absolute destination in units
     char id;
@@ -42,6 +44,10 @@ class MotorConfig : public Motor {
     int pin_dir;
     int pin_pwm;
     int pin_encoder;
+      
+    void stop() {
+      analogWrite(pin_pwm, 0.0);
+    }
         
     void setUnitsPerStep(double unitsPerTurn, int wheelNbHoles) {
       units_per_step = unitsPerTurn / wheelNbHoles;
