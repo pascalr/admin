@@ -1,54 +1,9 @@
-Heda is a **PANTRY ROBOT**.
-Heda est un **ROBOT GARDE-MANGER**.
-
-FAIRE UNE VIDÉO YOUTUBE QUI EXPLIQUE COMMENT BRANCHER LES FILS ÉLECTRIQUES D'UN STEPPER.
-Faire des vidéos youtubes avec ce que j'ai eu de la difficulté à trouver comme trucs.
-
-OK PLAN DEMAIN:
-
-Slotter pour les roues verticales pour aller chercher le jeu.
-Refaire les câbles d'acier. Celui magané et celui pas passser dans le bon sens.
-
-Mouvement horizontal avec moteur, poulies et courroies.
-
-Mouvement vertical 6.5".
-1. **Acheter du PLA blanc sur amazon pour les nouvelles bases verticales.**
-1. **Valider est-ce que je met un guarde sur le mouvement vertical ou non?**
-1. **Ça me prends de la tôle anyway pour supporter les câble du moteur vertical et le câble tray**
-1. **Idéalement une tôle de 2" par 2" pour supporter le cable tray, mais ça va peut-être accrocher le mouvement horizontal. Devrait pas. Mais je sais pas, faire gaffe. J'avais à peu près 32.5" de jeu, et mon garde là mesurerait 32.125", c'est suffisant de jeu. Attention aux vis?**
-https://www.canac.ca/fr/solin-reversible-pour-toiture-2-po-blanc-225153
-https://www.canac.ca/fr/solin-reversible-pour-toiture-2-po-ivoire-225163
-https://www.homedepot.ca/produit/peak-products-solin-angulaire-2-x-2-galvanise-blanc/1000111165
-1. Valider le guarde du mouvement horizontale.
-1. Scier 0.25" de chauqe côtés de mes contrepoids chez mes parents.
-1. Scier de nouveaux contrepoids de plus.
-1. Réimprimer des nouveaux support.
-
-Plus tard rapettisser le mouvement vertical de 7" de largeur à 6.5" de largeur. Mais pour l'instant, simplement concevoir le reste dans le moins de place possible.
-
-Je veux 0.25" de jeu entre le guarde et l'intérieur et l'extérieur. Le mouvement horizontal mesure 5.5". Mais le guarde doit être espacé de 0.125" des tubes carés de chaque côtés.
-
-Présentement, la tôle calibre 30 mesure 0.012", mais je vais probablement utiliser une tôle plus épaisse un jour qui résiste aux impacts. Donc calculons 0.32" pour la tôle.
-
-La tête des vis va dépasser, ça va être des flat heads, donc ça ne dépassera pratiquement pas, mais disons 0.1" pour être sûr.
-
-5.5" + 0.25" + 0.25" = 6"
-6" + 0.125" + 0.125" = 6.25"
-6.25" + 0.032" + 0.032" = 6.314"
-6.314" + ~0.1" + ~0.1" = 6.5"
-
-Donc fabriquer le trucs pour qu'il reste 0.5" de jeu de l'autre côté du cable tray.
-
-Les roues verticales à 2" du bord donc.
-
-Hey pour le 0.125", simplement collé un petit spacer. Ça peut même être en carton on s'en fout. Coller avec de la petite colle sur le guarde.
-
 ## Planification
 
-1. Fabriquer une tôle sur le support transversale
 1. Imprimer des maillons de chaînes supplémentaires
-1. Tôle plus grand ou inversée pour le cable tray vertical
-1. Tester le bruit du moteur
+1. Design beau du bras robotique. Simulation en 3d complète et pouvoir changer les couleurs dans Godot?
+1. Diminuer la largeur de bras robotique. Pourrait facilement être 6.5". Pourrait être 6"?
+1. Scier de nouveaux contrepoids de plus. Idéalement attendre de voir la nouvelle largeur du bras robotique. 6.5"? 6"?
 
 1. Faire une belle page web de fabrication de l'armoire de cuisine.
 1. Rajouter l'armoire dans les assemblages pour savoir le coût total.
@@ -63,13 +18,9 @@ Hey pour le 0.125", simplement collé un petit spacer. Ça peut même être en c
 1. Vendre des kits?
 1. Distributeurs? Genre amazon ou bien genre canadian tire?
 
-1. Où mettre la balance.
-1. Une plaque plus épaisse pour tenir les roues de l'axe verticales pour que ça plie moins.
 1. Un moyen de fixer la machine à l'armoire en haut
 1. Avancer la fabrication du robot. [En attente de pièces...]
 1. Faire la simulation avant de faire l'armoire pour s'assurer du reach du robot. Quoique...
-1. Faire une BELLE armoire DÉMÉNAGEABLE.
-1. Acheter des câbles électriques.
 1. Poulie axe A.
 1. Homing system
 1. Continuer la simulation du bras robotique pour pouvoir le programmer, aller chercher les ingrédients, puis verser des aliments grossiers, puis faire des muffins.
@@ -93,12 +44,10 @@ Hey pour le 0.125", simplement collé un petit spacer. Ça peut même être en c
 
 ## Version à vendre
 
-1. 80"? de haut au lieu de 5'
 1. 6" de large au lieu de 7"
 1. Arbre T 5/8" au lieu de 1/2"
 1. Bearings pour l'axe vertical
 1. Bushings pour où qu'il ne peut pas y avoir de bearing comme 3 sur le gripper
-
 
 ## Homing
 
