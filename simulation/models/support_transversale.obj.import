@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/support_transversale.obj-a6cd3d6e415f18fc916276f2cc1b3628.mesh"
+
+[deps]
+
+files=[ "res://.import/support_transversale.obj-a6cd3d6e415f18fc916276f2cc1b3628.mesh" ]
+
+source_file="res://models/support_transversale.obj"
+dest_files=[ "res://.import/support_transversale.obj-a6cd3d6e415f18fc916276f2cc1b3628.mesh", "res://.import/support_transversale.obj-a6cd3d6e415f18fc916276f2cc1b3628.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
