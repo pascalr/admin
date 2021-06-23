@@ -20,3 +20,10 @@ func _on_CommandLine_text_entered(new_text):
 		text += "\n"
 	text += "> " + new_text
 	output.set_text(text)
+
+
+func _on_CameraZone_focus_entered():
+	get_tree().root.get_node("Simulation/Camera").has_focus = true
+
+func _on_CameraZone_focus_exited():
+	get_tree().root.get_node("Simulation/Camera").has_focus = false

@@ -2,6 +2,8 @@ class_name FreelookCamera extends Camera
 
 export(float, 0.0, 1.0) var sensitivity = 0.25
 
+export var has_focus = false
+
 # Mouse state
 var _mouse_position = Vector2(0.0, 0.0)
 var _total_pitch = 0.0
@@ -22,6 +24,8 @@ var _q = false
 var _e = false
 
 func _input(event):
+	if !has_focus:
+		return
 	# Receives mouse motion
 	if event is InputEventMouseMotion:
 		_mouse_position = event.relative
