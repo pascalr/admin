@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="simulation"
-run/main_scene="res://Spatial.tscn"
+run/main_scene="res://scenes/Simulation.tscn"
 config/icon="res://icon.png"
 
 [autoload]
@@ -30,6 +30,7 @@ Body="*res://lib/body.gd"
 Brain="*res://lib/brain.gd"
 Lib="*res://lib/lib.gd"
 Utils="*res://lib/utils.gd"
+Controller="*res://lib/controller.gd"
 
 [physics]
 
