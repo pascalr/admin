@@ -3,6 +3,6 @@ class BillItem < ApplicationRecord
   belongs_to :part, optional: true
 
   def price_with_taxes
-    self.price + (self.tps || 0.0) + (self.tvq || 0.0)
+    (self.price || 0.0) + (self.tps || 0.0) + (self.tvq || 0.0)
   end
 end

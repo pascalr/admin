@@ -4,7 +4,7 @@ var output
 var text
 
 func _ready():
-	pass # Replace with function body.
+	get_node("CommandLine").grab_focus()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

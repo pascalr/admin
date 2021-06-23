@@ -30,7 +30,7 @@
         <td><%= number_to_currency item.price, format: '%n%u' %></td>
         <td><%= number_to_currency item.tps, format: '%n%u' %></td>
         <td><%= number_to_currency item.tvq, format: '%n%u' %></td>
-        <td><%= number_to_currency item.price + (item.tps || 0.0) + (item.tvq || 0.0), format: '%n%u' %></td>
+        <td><%= number_to_currency item.price_with_taxes, format: '%n%u' %></td>
         <td><%= link_to "X", item, method: :delete, data: {confirm: 'Are you sure?'} %></td>
       </tr>
     <% end %>

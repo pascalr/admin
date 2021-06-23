@@ -29,6 +29,7 @@ config/icon="res://icon.png"
 Body="*res://lib/body.gd"
 Brain="*res://lib/brain.gd"
 Lib="*res://lib/lib.gd"
+Utils="*res://lib/utils.gd"
 
 [physics]
 
