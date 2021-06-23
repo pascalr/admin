@@ -24,6 +24,12 @@ config/name="simulation"
 run/main_scene="res://Spatial.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Body="*res://lib/body.gd"
+Brain="*res://lib/brain.gd"
+Lib="*res://lib/lib.gd"
+
 [physics]
 
 common/enable_pause_aware_picking=true
