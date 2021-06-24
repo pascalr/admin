@@ -14,8 +14,8 @@ func _ready():
 func _execute_command(cmd: String):
 	print("Controller received: "+cmd)
 	if cmd.begins_with("m"):
-		var dest = PolarCoord.new().init_from_string(cmd.substr(1))
-		pass
+		var robot = get_tree().root.get_node("Simulation/Robot")
+		robot.destination = PolarCoord.new().init_from_string(cmd.substr(1))
 	#elsif cmd.start_with? "m" or cmd.start_with? "g"
 	#  dest = parse_destination(cmd)
 	#  handle_move(brain, dest)

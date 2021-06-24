@@ -2,19 +2,23 @@ extends Spatial
 
 #export var(PolarCoord) destination
 
+var position = PolarCoord.new(0.0, 1000.0, 0.0, 0.0, 0.0, 0.0)
 var destination = PolarCoord.new()
-var position = PolarCoord.new()
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+export var speed := 200.0
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	_update_mesh()
 
+func _update_mesh():
+	get_node("SupportTransversale").translation.y = self.position.y
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	for i in len(position.values()):
+		var pos = position.values()[i]
+		var dest = destination.values()[i]
+		if dest > pos:
+			position.set_value(i, min(pos+delta*speed, dest))
+		elif dest < pos:
+			position.set_value(i, max(pos-delta*speed, dest))
+	_update_mesh()
