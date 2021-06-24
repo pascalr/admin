@@ -12,6 +12,7 @@ func _ready():
 
 func _update_mesh():
 	get_node("SupportTransversale").translation.y = self.position.y
+	get_node("SupportTransversale/TrolleyOffset/Trolley").translation.x = self.position.h
 
 func _process(delta):
 	for i in len(position.values()):
