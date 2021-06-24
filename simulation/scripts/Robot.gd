@@ -18,7 +18,9 @@ func _process(delta):
 	for i in len(position.values()):
 		var pos = position.values()[i]
 		var dest = destination.values()[i]
-		if dest > pos:
+		if dest == null:
+			pass
+		elif dest > pos:
 			position.set_value(i, min(pos+delta*speed, dest))
 		elif dest < pos:
 			position.set_value(i, max(pos-delta*speed, dest))

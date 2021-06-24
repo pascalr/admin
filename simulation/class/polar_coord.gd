@@ -7,7 +7,7 @@ export(float) var a
 export(float) var b
 export(float) var r
 
-func _init(h=0.0, y=0.0, t=0.0, a=0.0, b=0.0, r=0.0):
+func _init(h=null, y=null, t=null, a=null, b=null, r=null):
 	self.h = h; self.y = y; self.t = t; self.a = a; self.b = b; self.r = r
 
 func _to_string():
