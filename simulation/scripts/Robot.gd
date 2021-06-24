@@ -3,7 +3,7 @@ extends Spatial
 #export var(PolarCoord) destination
 
 var position = PolarCoord.new(0.0, 1000.0, 0.0, 0.0, 0.0, 0.0)
-var destination = PolarCoord.new()
+var destination = PolarCoord.new().copy(position)
 
 export var speed := 200.0
 

@@ -15,6 +15,11 @@ func _to_string():
 
 func values():
 	return [h,y,t,a,b,r]
+	
+func copy(coord):
+	self.h = coord.h; self.y = coord.y; self.t = coord.t;
+	self.a = coord.a; self.b = coord.b; self.r = coord.r
+	return self
 
 func set_value(i: int, val):
 	match i:
