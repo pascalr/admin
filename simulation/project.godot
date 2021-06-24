@@ -13,9 +13,15 @@ _global_script_classes=[ {
 "class": "FreelookCamera",
 "language": "GDScript",
 "path": "res://scripts/FreelookCamera.gd"
+}, {
+"base": "Reference",
+"class": "PolarCoord",
+"language": "GDScript",
+"path": "res://class/polar_coord.gd"
 } ]
 _global_script_class_icons={
-"FreelookCamera": ""
+"FreelookCamera": "",
+"PolarCoord": ""
 }
 
 [application]
