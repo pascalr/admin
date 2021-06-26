@@ -4,15 +4,20 @@ extends Spatial
 
 var position = PolarCoord.new(0.0, 1000.0, 0.0, 0.0, 0.0, 0.0)
 var destination = PolarCoord.new().copy(position)
+var start_offset : PolarCoord
+var h0
+var y0
 
 export var speed := 200.0
 
 func _ready():
+	y0 = get_node("SupportTransversale").translation.y
+	h0 = get_node("SupportTransversale/Trolley").translation.x
 	_update_mesh()
 
 func _update_mesh():
-	get_node("SupportTransversale").translation.y = self.position.y
-	get_node("SupportTransversale/TrolleyOffset/Trolley").translation.x = self.position.h
+	get_node("SupportTransversale").translation.y = self.position.y + y0
+	get_node("SupportTransversale/Trolley").translation.x = self.position.h + h0
 
 func _process(delta):
 	for i in len(position.values()):
