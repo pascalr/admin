@@ -3,7 +3,9 @@ extends Spatial
 var motors := []
 
 func _ready():
-	motors = [get_node("SupportTransversale"), get_node("SupportTransversale/Trolley")]
+	motors = [get_node("SupportTransversale"),
+			  get_node("SupportTransversale/Trolley"),
+			  get_node("SupportTransversale/Trolley/Humerus")]
 
 # y10.0x20a90.0
 func set_destination(s):
