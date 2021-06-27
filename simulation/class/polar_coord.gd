@@ -40,12 +40,3 @@ func set_value(i: int, val):
 
 func equals(coord):
 	self.values == coord.values
-	
-# y10.0x20a90.0
-func init_from_string(s):
-	var regex = RegEx.new()
-	regex.compile("[a-zA-Z]\\d+")
-	for result in regex.search_all(s):
-		var r = result.get_string()
-		set(r[0], float(r.substr(1)))
-	return self

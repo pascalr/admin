@@ -8,7 +8,7 @@ func _ready():
 # y10.0x20a90.0
 func set_destination(s):
 	var regex = RegEx.new()
-	regex.compile("[a-zA-Z]\\d+")
+	regex.compile("[a-zA-Z]\\-?\\d+")
 	for result in regex.search_all(s):
 		var r = result.get_string()
 		var id = r[0]

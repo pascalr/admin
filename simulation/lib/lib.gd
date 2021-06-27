@@ -6,11 +6,10 @@ func extract_arg(args: Array, i: int, type: String):
 		print(trace + "missing arg "+str(i))
 	elif type == "string":
 		return args[i]
-	elif type == "float":
-		if str(float(args[i])) != args[i] and str(int(args[i])) != args[i]:
-			print(trace + "expected float for arg "+str(i)+", but was "+args[i])
-		else:
-			return float(args[i])
+	elif type == "int" && args[i].is_valid_integer():
+		return int(args[i])
+	elif type == "float" && args[i].is_valid_float():
+		return float(args[i])
 	else:
 		print(trace + "invalid type "+type)
 	return null

@@ -43,6 +43,7 @@ Brain="*res://lib/brain.gd"
 Lib="*res://lib/lib.gd"
 Utils="*res://lib/utils.gd"
 Controller="*res://lib/controller.gd"
+Debug="*res://debug.gd"
 
 [physics]
 
