@@ -2,7 +2,6 @@ extends Motor
 
 func _ready():
 	setup(self.translation.x)
-	_update_mesh()
 
 func _update_mesh():
 	self.translation.x = start_offset - position

@@ -2,7 +2,6 @@ extends Motor
 
 func _ready():
 	setup(rad2deg(self.rotation.y))
-	_update_mesh()
 
 func _update_mesh():
 	self.rotation.y = deg2rad(start_offset + position)
