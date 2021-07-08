@@ -1,22 +1,50 @@
-## Planification
-
-1. Imprimer des maillons de chaînes supplémentaires
-1. Design beau du bras robotique. Simulation en 3d complète et pouvoir changer les couleurs dans Godot?
-1. Diminuer la largeur de bras robotique. Pourrait facilement être 6.5". Pourrait être 6"?
-1. Scier de nouveaux contrepoids de plus. Idéalement attendre de voir la nouvelle largeur du bras robotique. 6.5"? 6"?
-
-1. Faire une belle page web de fabrication de l'armoire de cuisine.
+# Planification
+1. Lisse d'acier.
+1. Plus de poids sur le contrepoids: Présentement 1.25"X3/8"X4.5". **Acheter 3/8"X1.25"X10'** **Chez les parents, couper l'acier, percer 0.25" au centre.**
+1. Fabriquer le nouveau chariot. **PLA noir**, **acheter quincaillerie**
+1. Beau boitier électrique, bien câblé.
+1. Bouton power et lumière power.
+1. Prendre de belles photos de ma machine (en fds avec le gros soleil en plein jour)
+1. Faire une belle page web de fabrication de l'armoire de cuisine avec le modèle 3D, un peu comme celui de Shanty 2 Chic.
 1. Rajouter l'armoire dans les assemblages pour savoir le coût total.
-1. Rajouter les trous borgnes à l'armoire et faire des screenshots.
-1. Faire des screenshots de l'assemblage. Couleur différente pour chaque différent?
-1. Mettre dans les screenshots les mesures.
-1. Essayer de fabriquer le vise pour qu'il soit indépendant. Pas de trous dans le plywood (sauf peut-être les fils électriques. Ça serait pas mal plus clean. C'est pas grave si ça prends beaucoup de place. De toute façon le robot a besoin d'un espace pour déposer les couvercles. Donc simplement mettre le moteur vers le mur. Et le robot déposera sur le couvercle qui cache le moteur.
 
+## Boitier électrique
+1. Est-ce que ça serait une bonne idée d'utiliser un boitier d'ordinateur pour mon boitier électrique
+1. Bouton power et lumière power.
+
+## Vente
+1. Prendre de belles photos de ma machine
 1. Une ou plusieurs vidéos de vente.
 1. Une page d'acceuil de vente pour receuillir des addresses courriels avant de faire un kickstarter.
 1. Sur kickstarter, vendre des e-books de comment fabriquer sa propre machine.
 1. Vendre des kits?
 1. Distributeurs? Genre amazon ou bien genre canadian tire?
+
+## Armoire
+1. Faire une belle page web de fabrication de l'armoire de cuisine avec le modèle 3D, un peu comme celui de Shanty 2 Chic.
+1. Prendre de belles photos de ma machine
+1. Rajouter l'armoire dans les assemblages pour savoir le coût total.
+1. Rajouter les trous borgnes à l'armoire et faire des screenshots.
+1. Faire des screenshots de l'assemblage. Couleur différente pour chaque différent?
+1. Mettre dans les screenshots les mesures.
+
+## Étau
+1. Essayer de fabriquer le vise pour qu'il soit indépendant. Pas de trous dans le plywood (sauf peut-être les fils électriques. Ça serait pas mal plus clean. C'est pas grave si ça prends beaucoup de place. De toute façon le robot a besoin d'un espace pour déposer les couvercles. Donc simplement mettre le moteur vers le mur. Et le robot déposera sur le couvercle qui cache le moteur.
+
+## Mouvement vertical
+1. Plus de poids sur le contrepoids (voir planification)
+1. Lisse d'acier et couper la base et le haut.
+- Un jour remplacer les bushings ou mettre des bearings à la place.
+- Un jour minimiser l'espace utiliser par la machine.
+
+## Chariot
+1. Fabriquer le nouveau chariot
+
+## Axe alpha
+1. Percer poulie
+1. Finir conception et imprimer nouveau poignet
+
+## Planification
 
 1. Un moyen de fixer la machine à l'armoire en haut
 1. Avancer la fabrication du robot. [En attente de pièces...]
