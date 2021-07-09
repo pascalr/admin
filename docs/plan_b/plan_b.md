@@ -2,6 +2,7 @@ Idéalement je désire travailler au moins les 10 prochaines années sur mon pro
 
 ## Idées
 
+1. Un site de recherche québécois. Très spécialisé québécois. Recette québécoise (pas de grammes!), répertoire des entreprises québécoises. Une bonne manière de favoriser le local.
 1. Stockage de carbone (des maisons avec des murs en bois massif (ou en herbe? foin?)
 1. Faire un robot qui fait de l'agriculture
 1. Faire un jeu video
@@ -14,3 +15,4 @@ La frustration et la colère se présente lorsque les choses ne se passent pas c
 ### Politique
 
 1. Des taxes de carbone sur les viandes et autres produits alimentaires moins écologique. (Charger ce que ça coûte pour séquestrer le carbone générer par la production de ces produits) Retours d'argent aux producteurs qui sont en dessous de la moyenne de génération de carbone.
+

@@ -1,4 +1,5 @@
 # Planification
+1. Même business model que Farm Bot. Open source. Vendre des kits et des composantes.
 1. Lisse d'acier.
 1. Plus de poids sur le contrepoids: Présentement 1.25"X3/8"X4.5". **Acheter 3/8"X1.25"X10'** **Chez les parents, couper l'acier, percer 0.25" au centre.**
 1. Fabriquer le nouveau chariot. **PLA noir**, **acheter quincaillerie**
@@ -7,10 +8,20 @@
 1. Prendre de belles photos de ma machine (en fds avec le gros soleil en plein jour)
 1. Faire une belle page web de fabrication de l'armoire de cuisine avec le modèle 3D, un peu comme celui de Shanty 2 Chic.
 1. Rajouter l'armoire dans les assemblages pour savoir le coût total.
+1. Acheter des vrais cable chain sur aliexpress (https://www.aliexpress.com/item/10000192080203.html?spm=a2g0o.productlist.0.0.78ff51d6i3BQ3q&aem_p4p_detail=2021070811392718991760024603850002296405)
+1. Acheter un backdrop pour les photos
+
+## Design
+1. Au lieu de voir la vise comme une grande main qui tient un pot, voir ça comme deux petit bras qui serre le pot.
+
+## Site internet
+1. Acheter un backdrop pour les photos
 
 ## Boitier électrique
 1. Est-ce que ça serait une bonne idée d'utiliser un boitier d'ordinateur pour mon boitier électrique
 1. Bouton power et lumière power.
+1. Faire une boucle de fil avec le surplus dans la lisse d'acier verticale. Allez plus bas et remonter.
+1. Protocase
 
 ## Vente
 1. Prendre de belles photos de ma machine
@@ -34,6 +45,7 @@
 ## Mouvement vertical
 1. Plus de poids sur le contrepoids (voir planification)
 1. Lisse d'acier et couper la base et le haut.
+1. Acheter des vrais cable chain sur aliexpress (https://www.aliexpress.com/item/10000192080203.html?spm=a2g0o.productlist.0.0.78ff51d6i3BQ3q&aem_p4p_detail=2021070811392718991760024603850002296405)
 - Un jour remplacer les bushings ou mettre des bearings à la place.
 - Un jour minimiser l'espace utiliser par la machine.
 
@@ -41,8 +53,10 @@
 1. Fabriquer le nouveau chariot
 
 ## Axe alpha
-1. Percer poulie
-1. Finir conception et imprimer nouveau poignet
+1. Imprimer en 3d la poulie
+
+## Axe beta
+1. Addosser le gear box du moteur correctement dans la boite. (Creuser un petit peu vis à vis les trous qui dépassent)
 
 ## Planification
 
