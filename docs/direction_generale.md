@@ -1,3 +1,10 @@
+# Grandes priorités
+1. Pots dans les portes de l'armoire ou pas. (implique de déterminer la faisabilité, pas facile, pourrait être une version future?)
+  - Simulation?
+  - Serpent avec un axe supplémentaire si nécessaire
+1. Page d'acceuil de vente
+1. Vendre à 1 client. Vendre des locations, parce que le produit risque de changer.
+
 # Planification
 1. Même business model que Farm Bot. Open source. Vendre des kits et des composantes.
 1. Lisse d'acier.
@@ -15,7 +22,11 @@
 1. Au lieu de voir la vise comme une grande main qui tient un pot, voir ça comme deux petit bras qui serre le pot.
 
 ## Site internet
+1. Pagination des recettes
+1. Ajuster le site internet pour les téléphones mobiles. Mettre la barre de recherche en dessous du menu.
 1. Acheter un backdrop pour les photos
+1. Au lieu de juste une liste d'ingrédients, faire ingrédients et alternatives, et là suggérer des alternatives pour chaque ingrédients. **Rajouter dans la base de donnée les conversions** Offrir la possibilité d'enlever des ingrédients aussi peut-être.
+1. Sur la page d'acceuil, pour chaque section, rajouter un Pour en savoir plus >, une page qui montre les calculs derrière ce qui est dit ou en parle d'avantages.
 
 ## Boitier électrique
 1. Est-ce que ça serait une bonne idée d'utiliser un boitier d'ordinateur pour mon boitier électrique
