@@ -1,7 +1,8 @@
 # Grandes priorités
+**Pas tout de suite le pin noueux parce que je ne sais pas à quel hauteur mettre la première tablette...**
 1. Canac se soir. 4 1x4x6 pin noueux, 1 1x4x8, 2 à 4 ampoules LED 100W
 1. Page d'acceuil de vente
-1. Changer le design pour être capable de prendre des pots dans la porte.
+1. Changer le design pour être capable de prendre des pots dans la porte. Le robot prend les pots dans la porte la tête à l'envers ce qui permet de tourner beaucoup. **Mais comment est-ce qu'il redresse** **TODO: Reculer le moteur pour que le bras puisse tourner plus**, **Peut-être amincir l'humérus. Des idler pourrait restreindre l'espace que l'humérus prend en largeur.**
 1. Caméra
 1. Vendre à 1 client. Vendre des locations, parce que le produit risque de changer.
 
@@ -10,6 +11,7 @@
 1. Faire un backup des photos sur clé USB
 
 # Planification
+1. Sweep dans la simulation.
 1. Lisse d'acier.
 1. Plus de poids sur le contrepoids: Présentement 1.25"X3/8"X4.5". **Acheter 3/8"X1.25"X10'** **Chez les parents, couper l'acier, percer 0.25" au centre.**
 1. Fabriquer le nouveau chariot. **PLA noir**, **acheter quincaillerie**
