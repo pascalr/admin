@@ -1,12 +1,15 @@
 # Grandes priorités
-1. Pots dans les portes de l'armoire ou pas. (implique de déterminer la faisabilité, pas facile, pourrait être une version future?)
-  - Simulation?
-  - Serpent avec un axe supplémentaire si nécessaire
+1. Canac se soir. 4 1x4x6 pin noueux, 1 1x4x8, 2 à 4 ampoules LED 100W
 1. Page d'acceuil de vente
+1. Changer le design pour être capable de prendre des pots dans la porte.
+1. Caméra
 1. Vendre à 1 client. Vendre des locations, parce que le produit risque de changer.
 
+# À perte de temps
+1. Mettre ma facture canac
+1. Faire un backup des photos sur clé USB
+
 # Planification
-1. Même business model que Farm Bot. Open source. Vendre des kits et des composantes.
 1. Lisse d'acier.
 1. Plus de poids sur le contrepoids: Présentement 1.25"X3/8"X4.5". **Acheter 3/8"X1.25"X10'** **Chez les parents, couper l'acier, percer 0.25" au centre.**
 1. Fabriquer le nouveau chariot. **PLA noir**, **acheter quincaillerie**
@@ -17,6 +20,11 @@
 1. Rajouter l'armoire dans les assemblages pour savoir le coût total.
 1. Acheter des vrais cable chain sur aliexpress (https://www.aliexpress.com/item/10000192080203.html?spm=a2g0o.productlist.0.0.78ff51d6i3BQ3q&aem_p4p_detail=2021070811392718991760024603850002296405)
 1. Acheter un backdrop pour les photos
+
+# Business model
+
+1. Même business model que Farm Bot. Open source. Vendre des kits et des composantes.
+1. Faire de l'argent sur les commandes automatiques d'épiceries. (L'épicerie nous paie 1% pour qu'on fasse affaire avec eux) (approcher les épiceries du Québec)
 
 ## Design
 1. Au lieu de voir la vise comme une grande main qui tient un pot, voir ça comme deux petit bras qui serre le pot.
@@ -41,14 +49,33 @@
 1. Sur kickstarter, vendre des e-books de comment fabriquer sa propre machine.
 1. Vendre des kits?
 1. Distributeurs? Genre amazon ou bien genre canadian tire?
+1. Vendre à 1 client. Vendre des locations, parce que le produit risque de changer. (Le problème avec des locations est que le produit risque de changer)
 
 ## Armoire
+1. Idéalement une seule rangée dans la porte de profond. Mais les pots n'ont pas tous la même profondeur... Quoi mettre derrière comme spacer/blocker?
 1. Faire une belle page web de fabrication de l'armoire de cuisine avec le modèle 3D, un peu comme celui de Shanty 2 Chic.
 1. Prendre de belles photos de ma machine
 1. Rajouter l'armoire dans les assemblages pour savoir le coût total.
 1. Rajouter les trous borgnes à l'armoire et faire des screenshots.
 1. Faire des screenshots de l'assemblage. Couleur différente pour chaque différent?
 1. Mettre dans les screenshots les mesures.
+
+J'ai 22.375" de pronfond de disponible. La porte en prend 3.5+0.25=3.75. Il reste 18.75". On enlève 12", il reste 6.75"
+
+Pin sélect 1"X4"X (6' ou 8' ou 10' ou 12') (72", 96", 120", 144")
+4 X 54"
+10 X 14"
+
+**4X 6'**: 54,14
+**1X 8'**: 14,14,14,14,14,14
+
+54,14 = 68
+54,14,14 = 68,14 = 82
+54,14,14,14 = 82,14 = 96
+
+54,54,14,14 = 108,14,14 = 122,14 = 136
+
+14,28,42,56,70,84,98,112,126
 
 ## Étau
 1. Essayer de fabriquer le vise pour qu'il soit indépendant. Pas de trous dans le plywood (sauf peut-être les fils électriques. Ça serait pas mal plus clean. C'est pas grave si ça prends beaucoup de place. De toute façon le robot a besoin d'un espace pour déposer les couvercles. Donc simplement mettre le moteur vers le mur. Et le robot déposera sur le couvercle qui cache le moteur.
