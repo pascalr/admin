@@ -12,22 +12,22 @@ _global_script_classes=[ {
 "base": "Camera",
 "class": "FreelookCamera",
 "language": "GDScript",
-"path": "res://scripts/FreelookCamera.gd"
+"path": "res://scripts/node/FreelookCamera.gd"
 }, {
 "base": "Spatial",
 "class": "Jar",
 "language": "GDScript",
-"path": "res://class/jar.gd"
+"path": "res://scripts/node/Jar.gd"
 }, {
 "base": "MeshInstance",
 "class": "Motor",
 "language": "GDScript",
-"path": "res://class/motor/motor.gd"
+"path": "res://scripts/node/motor/motor.gd"
 }, {
 "base": "Reference",
 "class": "PolarCoord",
 "language": "GDScript",
-"path": "res://class/polar_coord.gd"
+"path": "res://scripts/polar_coord.gd"
 } ]
 _global_script_class_icons={
 "FreelookCamera": "",
@@ -44,11 +44,11 @@ config/icon="res://icon.png"
 
 [autoload]
 
-Body="*res://lib/body.gd"
-Brain="*res://lib/brain.gd"
-Lib="*res://lib/lib.gd"
-Utils="*res://lib/utils.gd"
-Controller="*res://lib/controller.gd"
+Body="*res://scripts/autoload/body.gd"
+Brain="*res://scripts/autoload/brain.gd"
+Lib="*res://scripts/autoload/lib.gd"
+Utils="*res://scripts/autoload/utils.gd"
+Controller="*res://scripts/autoload/controller.gd"
 Debug="*res://debug.gd"
 
 [physics]
