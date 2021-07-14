@@ -12,8 +12,8 @@ var position := 0.0
 var destination := 0.0
 var start_offset := 0.0
 
-func setup(start_offset):
-	self.start_offset = start_offset - offset
+func setup(_start_offset):
+	self.start_offset = _start_offset - offset
 	self.position = offset
 	self.destination = offset
 

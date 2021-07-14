@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/jar_big.obj-1776765195423a0916844459c02a1198.mesh"
+
+[deps]
+
+files=[ "res://.import/jar_big.obj-1776765195423a0916844459c02a1198.mesh" ]
+
+source_file="res://models/jar_big.obj"
+dest_files=[ "res://.import/jar_big.obj-1776765195423a0916844459c02a1198.mesh", "res://.import/jar_big.obj-1776765195423a0916844459c02a1198.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

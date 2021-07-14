@@ -25,6 +25,7 @@ visible = false
 
 [node name="door_l" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 35, 4, 592 )
+visible = false
 mesh = ExtResource( 6 )
 material/0 = ExtResource( 8 )
 
@@ -38,6 +39,7 @@ material/0 = ExtResource( 10 )
 
 [node name="door_r" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 975, 4, 592 )
+visible = false
 mesh = ExtResource( 5 )
 material/0 = ExtResource( 8 )
 

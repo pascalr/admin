@@ -30,7 +30,7 @@ func _execute_command(cmd: String):
 	#end
   #end
 
-func _process(delta):
+func _process(_delta):
 	if !_stream.empty():
 		var cmd = _stream.pop_front()
 		_execute_command(cmd)
