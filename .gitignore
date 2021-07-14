@@ -5,7 +5,7 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 /simulation/.import/
-/simulation/models/
+#/simulation/models/
 
 # Ignore bundler config.
 /.bundle
