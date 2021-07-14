@@ -41,12 +41,6 @@ func _input(event):
 	# Receives key input
 	if event is InputEventKey:
 		match event.scancode:
-			KEY_I:
-				print("Closing doors")
-				get_tree().root.get_node("Simulation/Cupboard").close_doors()
-			KEY_O:
-				print("Opening doors")
-				get_tree().root.get_node("Simulation/Cupboard").open_doors()
 			KEY_W:
 				_w = event.pressed
 			KEY_S:

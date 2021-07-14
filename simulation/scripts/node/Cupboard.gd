@@ -30,3 +30,12 @@ func open_doors():
 	
 func close_doors():
 	self.opening = false
+
+func _on_LowerSmallShelf_input_event(_camera, _event, click_position, click_normal, _shape_idx):
+	print(click_normal)
+	print(click_position)
+
+
+func _on_LowerSmallShelf_mouse_entered():
+	print("Mouse entered!")
+	pass # Replace with function body.
