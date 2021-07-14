@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://models/support_vertical.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://models/support_transversale.obj" type="ArrayMesh" id=2]
@@ -13,6 +13,9 @@
 [ext_resource path="res://resources/RobotMaterial.tres" type="Material" id=11]
 [ext_resource path="res://models/hand.obj" type="ArrayMesh" id=12]
 [ext_resource path="res://class/motor/motor_b.gd" type="Script" id=13]
+[ext_resource path="res://models/grip_l.obj" type="ArrayMesh" id=14]
+[ext_resource path="res://models/grip_r.obj" type="ArrayMesh" id=15]
+[ext_resource path="res://class/motor/motor_r.gd" type="Script" id=16]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_color = Color( 0.0666667, 0.0941176, 0.117647, 1 )
@@ -25,6 +28,9 @@ albedo_color = Color( 0.698039, 0.705882, 0.709804, 1 )
 
 [node name="Robot" type="Spatial"]
 script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="SupportTransversale" type="MeshInstance" parent="."]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 963.5, 1048.84, 0 )
@@ -65,7 +71,7 @@ offset = 90.0
 [node name="Wrist" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus"]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 156.902, -52.0864, 7.62939e-06 )
 mesh = ExtResource( 10 )
-material/0 = null
+material/0 = ExtResource( 11 )
 script = ExtResource( 9 )
 __meta__ = {
 "_edit_lock_": true
@@ -75,7 +81,7 @@ min_position = -90.0
 max_position = 90.0
 
 [node name="Hand" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/Wrist"]
-transform = Transform( 4.37114e-08, -1.88755e-07, 1, 1, -4.37114e-08, -4.37114e-08, 4.37114e-08, 1, 1.88755e-07, -493.098, 8.38306, 97.1201 )
+transform = Transform( -2.62268e-07, -1.17225e-07, -1, 8.74228e-08, 1, -1.17225e-07, 1, -8.74228e-08, -2.62268e-07, -7.62939e-06, -67.2261, 161.348 )
 mesh = ExtResource( 12 )
 material/0 = ExtResource( 11 )
 script = ExtResource( 13 )
@@ -83,7 +89,29 @@ __meta__ = {
 "_edit_lock_": true
 }
 id = "b"
-max_position = 360.0
+min_position = -90.0
+max_position = 90.0
+
+[node name="GripL" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand"]
+transform = Transform( 1, 8.74228e-08, 4.3711e-08, -8.74228e-08, 1, 1.17225e-07, -4.3711e-08, -1.17225e-07, 1, 51.5, -57, -18 )
+mesh = ExtResource( 14 )
+material/0 = ExtResource( 11 )
+script = ExtResource( 16 )
+__meta__ = {
+"_edit_lock_": true
+}
+id = "r"
+
+[node name="GripR" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand"]
+transform = Transform( -1, 8.74228e-08, -1.31134e-07, 8.74228e-08, 1, -1.17225e-07, 1.31134e-07, -1.17225e-07, -1, 51.5, -57, 22 )
+mesh = ExtResource( 15 )
+material/0 = ExtResource( 11 )
+script = ExtResource( 16 )
+__meta__ = {
+"_edit_lock_": true
+}
+id = "r"
+is_left = false
 
 [node name="SupportVertical" type="MeshInstance" parent="."]
 mesh = ExtResource( 1 )

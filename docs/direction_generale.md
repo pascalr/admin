@@ -23,6 +23,15 @@
 1. Acheter des vrais cable chain sur aliexpress (https://www.aliexpress.com/item/10000192080203.html?spm=a2g0o.productlist.0.0.78ff51d6i3BQ3q&aem_p4p_detail=2021070811392718991760024603850002296405)
 1. Acheter un backdrop pour les photos
 
+# Référence
+1. https://farm.bot/pages/series-a
+
+# Financement
+1. Shuttleworth fondation: https://shuttleworthfoundation.org/apply/form/
+1. Soutien au projet d'innovation - Investissement Québec - https://www.economie.gouv.qc.ca/bibliotheques/programmes/aide-financiere/programme-innovation/soutien-aux-projets-dinnovation/
+1. **Programme d'aide à la recherche industrielle (PARI)** CONTRIBUTIONS NON REMBOURSABLES - https://nrc.canada.ca/fr/soutien-linnovation-technologique/soutien-financier-linnovation-technologique-pari-cnrc
+1. Si vous collaborez avec plusieurs partenaires pour la réalisation de projets tels que la robotique de pointe, l'apprentissage automatique, l'impression 3D et l'Internet des objets, vous pourriez bénéficier d'un remboursement pouvant aller jusqu'à 44,4 % des coûts admissibles de projets dont la valeur se situe entre un million $ et 20 millions $. https://www.ngen.ca/fr/
+
 # Business model
 
 1. Même business model que Farm Bot. Open source. Vendre des kits et des composantes.

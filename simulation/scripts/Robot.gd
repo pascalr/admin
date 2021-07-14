@@ -6,7 +6,10 @@ func _ready():
 	motors = [get_node("SupportTransversale"),
 			  get_node("SupportTransversale/Trolley"),
 			  get_node("SupportTransversale/Trolley/Humerus"),
-			  get_node("SupportTransversale/Trolley/Humerus/Wrist")]
+			  get_node("SupportTransversale/Trolley/Humerus/Wrist"),
+			  get_node("SupportTransversale/Trolley/Humerus/Wrist/Hand"),
+			  get_node("SupportTransversale/Trolley/Humerus/Wrist/Hand/GripL"),
+			  get_node("SupportTransversale/Trolley/Humerus/Wrist/Hand/GripR")]
 
 # y10.0x20a90.0
 func set_destination(s):

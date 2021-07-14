@@ -3,7 +3,7 @@ extends Spatial
 export var max_angle = 150.0
 export var opening_speed = 50.0
 
-var opening = false
+var opening = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
