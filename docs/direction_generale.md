@@ -1,8 +1,8 @@
 # Grandes priorités
 **Pas tout de suite le pin noueux parce que je ne sais pas à quel hauteur mettre la première tablette...**
 1. Canac se soir. 4 1x4x6 pin noueux, 1 1x4x8, 2 à 4 ampoules LED 100W
+1. Trouver un format de bouteille liquide.
 1. Page d'acceuil de vente
-1. Changer le design pour être capable de prendre des pots dans la porte. Le robot prend les pots dans la porte la tête à l'envers ce qui permet de tourner beaucoup. **Mais comment est-ce qu'il redresse** **TODO: Reculer le moteur pour que le bras puisse tourner plus**, **Peut-être amincir l'humérus. Des idler pourrait restreindre l'espace que l'humérus prend en largeur.**
 1. Caméra
 1. Vendre à 1 client. Vendre des locations, parce que le produit risque de changer.
 
@@ -61,6 +61,7 @@
 1. Rajouter les trous borgnes à l'armoire et faire des screenshots.
 1. Faire des screenshots de l'assemblage. Couleur différente pour chaque différent?
 1. Mettre dans les screenshots les mesures.
+1. Mettre une tablette dans la porte vis-à vis les tablettes du haut et la tablette principale? Un peu plus haut que la tablette du bas. Et est-ce que je suis capable de mettre un autre tablette encore plus bas pour des petits pots à épices?
 
 J'ai 22.375" de pronfond de disponible. La porte en prend 3.5+0.25=3.75. Il reste 18.75". On enlève 12", il reste 6.75"
 
