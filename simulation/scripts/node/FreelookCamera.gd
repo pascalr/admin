@@ -2,7 +2,7 @@ class_name FreelookCamera extends Camera
 
 export(float, 0.0, 1.0) var sensitivity = 0.25
 
-export var has_focus = false
+export var has_focus = true
 
 # Mouse state
 var _mouse_position = Vector2(0.0, 0.0)
@@ -33,7 +33,7 @@ func _input(event):
 	# Receives mouse button input
 	if event is InputEventMouseButton:
 		match event.button_index:
-			BUTTON_LEFT: # Only allows rotation if right click down
+			BUTTON_MIDDLE:
 				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED if event.pressed else Input.MOUSE_MODE_VISIBLE)
 			#BUTTON_WHEEL_UP: # Increases max velocity
 			#BUTTON_WHEEL_DOWN: # Decereases max velocity

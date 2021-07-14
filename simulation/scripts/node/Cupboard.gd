@@ -31,11 +31,19 @@ func open_doors():
 func close_doors():
 	self.opening = false
 
-func _on_LowerSmallShelf_input_event(_camera, _event, click_position, click_normal, _shape_idx):
-	print(click_normal)
-	print(click_position)
+func check_add_jar(event, click_position):
+	if event is InputEventMouseButton:
+		match event.button_index:
+			BUTTON_LEFT:
+				var jar = Jar.new()
+				jar.translation = click_position
+				get_node("Inventory").add_child(jar)
 
+func _on_LowerSmallShelf_input_event(_camera, event, click_position, _click_normal, _shape_idx):
+	check_add_jar(event, click_position)
 
-func _on_LowerSmallShelf_mouse_entered():
-	print("Mouse entered!")
-	pass # Replace with function body.
+func _on_BottomShelf_input_event(_camera, event, click_position, _click_normal, _shape_idx):
+	check_add_jar(event, click_position)
+
+func _on_WorkingShelf_input_event(_camera, event, click_position, _click_normal, _shape_idx):
+	check_add_jar(event, click_position)

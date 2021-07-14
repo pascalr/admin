@@ -22,6 +22,7 @@ __meta__ = {
 }
 
 [node name="UI" parent="." instance=ExtResource( 4 )]
+visible = false
 
 [node name="Cupboard" parent="." instance=ExtResource( 2 )]
 
