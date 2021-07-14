@@ -9,7 +9,9 @@ func _ready():
 			  get_node("SupportTransversale/Trolley/Humerus/Wrist"),
 			  get_node("SupportTransversale/Trolley/Humerus/Wrist/Hand"),
 			  get_node("SupportTransversale/Trolley/Humerus/Wrist/Hand/GripL"),
-			  get_node("SupportTransversale/Trolley/Humerus/Wrist/Hand/GripR")]
+			  get_node("SupportTransversale/Trolley/Humerus/Wrist/Hand/GripR"),
+			  get_node("SupportVertical/WeightStack1"),
+			  get_node("SupportVertical/WeightStack2")]
 
 # y10.0x20a90.0
 func set_destination(s):
