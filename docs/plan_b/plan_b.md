@@ -16,3 +16,6 @@ La frustration et la colère se présente lorsque les choses ne se passent pas c
 
 1. Des taxes de carbone sur les viandes et autres produits alimentaires moins écologique. (Charger ce que ça coûte pour séquestrer le carbone générer par la production de ces produits) Retours d'argent aux producteurs qui sont en dessous de la moyenne de génération de carbone.
 
+## Humour
+
+1. Des vidéos de recettes. Faire des recettes longues et super belle, belle présentation, et à la toute fin rajouter ben du ketchup, que tu ne vois presque plus le plat principal, ou beaucoup trop de fines herbes, ou de mayo, et faire comme si de rien était que c'était ça la recette finale.

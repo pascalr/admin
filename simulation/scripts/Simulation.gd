@@ -9,8 +9,10 @@ func _input(event):
 	if event is InputEventKey:
 		match event.scancode:
 			KEY_I:
-				$Cupboard.close_doors()
+				if !$UI/CommandLine.has_focus():
+					$Cupboard.close_doors()
 			KEY_O:
-				$Cupboard.open_doors()
+				if !$UI/CommandLine.has_focus():
+					$Cupboard.open_doors()
 			KEY_ENTER:
 				$UI/CommandLine.grab_focus()

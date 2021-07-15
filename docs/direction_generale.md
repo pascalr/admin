@@ -1,5 +1,6 @@
 # Grandes priorités
 1. Canac se soir. 4 1x4x6 pin noueux, 1 1x4x8, 2 à 4 ampoules LED 100W
+1. Rapettisser la taille à 22.375-3.75-4.75 = **13.875** et ajuster l'humérus en conséquence.
 1. Page d'acceuil de vente
 1. Caméra
 1. Vendre à 1 client. Vendre des locations, parce que le produit risque de changer.
