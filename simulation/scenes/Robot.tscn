@@ -42,7 +42,7 @@ __meta__ = {
 }
 id = "y"
 max_position = 2000.0
-offset = 1000.0
+start_position = 1000.0
 
 [node name="Trolley" type="MeshInstance" parent="SupportTransversale"]
 transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 790, 7.183, 20 )
@@ -119,7 +119,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="WeightStack1" type="MeshInstance" parent="SupportVertical"]
+[node name="WeightStack1" type="MeshInstance" parent="."]
 mesh = ExtResource( 19 )
 material/0 = ExtResource( 18 )
 script = ExtResource( 8 )
@@ -127,9 +127,10 @@ __meta__ = {
 "_edit_lock_": true
 }
 id = "y"
+start_position = 1000.0
 reverse = true
 
-[node name="WeightStack2" type="MeshInstance" parent="SupportVertical"]
+[node name="WeightStack2" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -972, 0, 0 )
 mesh = ExtResource( 19 )
 material/0 = ExtResource( 18 )
@@ -138,4 +139,5 @@ __meta__ = {
 "_edit_lock_": true
 }
 id = "y"
+start_position = 1000.0
 reverse = true

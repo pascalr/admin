@@ -7,9 +7,9 @@ func _ready():
 
 func _update_mesh():
 	if reverse:
-		self.translation.y = start_offset - position
+		self.translation.y = start_offset - position + start_position
 	else:
-		self.translation.y = start_offset + position
+		self.translation.y = start_offset + position - start_position
 
 func _process(delta):
 	update_position(delta)

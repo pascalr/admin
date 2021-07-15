@@ -10,8 +10,8 @@ func _ready():
 			  $SupportTransversale/Trolley/Humerus/Wrist/Hand,
 			  $SupportTransversale/Trolley/Humerus/Wrist/Hand/GripL,
 			  $SupportTransversale/Trolley/Humerus/Wrist/Hand/GripR,
-			  $SupportVertical/WeightStack1,
-			  $SupportVertical/WeightStack2]
+			  $WeightStack1,
+			  $WeightStack2]
 
 # y10.0x20a90.0
 func set_destination(s):
