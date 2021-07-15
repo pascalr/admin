@@ -3,15 +3,15 @@ extends Spatial
 var motors := []
 
 func _ready():
-	motors = [get_node("SupportTransversale"),
-			  get_node("SupportTransversale/Trolley"),
-			  get_node("SupportTransversale/Trolley/Humerus"),
-			  get_node("SupportTransversale/Trolley/Humerus/Wrist"),
-			  get_node("SupportTransversale/Trolley/Humerus/Wrist/Hand"),
-			  get_node("SupportTransversale/Trolley/Humerus/Wrist/Hand/GripL"),
-			  get_node("SupportTransversale/Trolley/Humerus/Wrist/Hand/GripR"),
-			  get_node("SupportVertical/WeightStack1"),
-			  get_node("SupportVertical/WeightStack2")]
+	motors = [$SupportTransversale,
+			  $SupportTransversale/Trolley,
+			  $SupportTransversale/Trolley/Humerus,
+			  $SupportTransversale/Trolley/Humerus/Wrist,
+			  $SupportTransversale/Trolley/Humerus/Wrist/Hand,
+			  $SupportTransversale/Trolley/Humerus/Wrist/Hand/GripL,
+			  $SupportTransversale/Trolley/Humerus/Wrist/Hand/GripR,
+			  $SupportVertical/WeightStack1,
+			  $SupportVertical/WeightStack2]
 
 # y10.0x20a90.0
 func set_destination(s):

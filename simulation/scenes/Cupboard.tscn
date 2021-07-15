@@ -1,6 +1,6 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
-[ext_resource path="res://models/cupboard.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://models/frame_without_rear.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://models/door_handle_l.obj" type="ArrayMesh" id=2]
 [ext_resource path="res://models/door_handle_r.obj" type="ArrayMesh" id=3]
 [ext_resource path="res://scripts/node/Cupboard.gd" type="Script" id=4]
@@ -11,11 +11,13 @@
 [ext_resource path="res://models/hinges_l.obj" type="ArrayMesh" id=9]
 [ext_resource path="res://resources/HingesMaterial.tres" type="Material" id=10]
 [ext_resource path="res://models/hinges_r.obj" type="ArrayMesh" id=11]
-
-[sub_resource type="BoxShape" id=2]
-extents = Vector3( 508, 20, 304.8 )
+[ext_resource path="res://models/frame_rear.obj" type="ArrayMesh" id=12]
+[ext_resource path="res://models/working_shelf.obj" type="ArrayMesh" id=13]
 
 [sub_resource type="BoxShape" id=1]
+extents = Vector3( 508, 20, 304.8 )
+
+[sub_resource type="BoxShape" id=2]
 extents = Vector3( 508, 9.525, 60.325 )
 
 [sub_resource type="BoxShape" id=3]
@@ -27,8 +29,18 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="frame" type="MeshInstance" parent="."]
+[node name="frame" type="Node" parent="."]
+
+[node name="frame_without_rear" type="MeshInstance" parent="frame"]
 mesh = ExtResource( 1 )
+material/0 = ExtResource( 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="frame_rear" type="MeshInstance" parent="frame"]
+visible = false
+mesh = ExtResource( 12 )
 material/0 = ExtResource( 8 )
 __meta__ = {
 "_edit_lock_": true
@@ -40,7 +52,6 @@ visible = false
 
 [node name="door_l" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 35, 4, 592 )
-visible = false
 mesh = ExtResource( 6 )
 material/0 = ExtResource( 8 )
 
@@ -54,7 +65,6 @@ material/0 = ExtResource( 10 )
 
 [node name="door_r" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 975, 4, 592 )
-visible = false
 mesh = ExtResource( 5 )
 material/0 = ExtResource( 8 )
 
@@ -83,19 +93,28 @@ __meta__ = {
 }
 
 [node name="Shelves" type="Spatial" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="BottomShelf" type="Area" parent="Shelves"]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="shape" type="CollisionShape" parent="Shelves/BottomShelf"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, -10, 304.8 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
 [node name="LowerSmallShelf" type="Area" parent="Shelves"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 500, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 304.8, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="shape" type="CollisionShape" parent="Shelves/LowerSmallShelf"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, 0, 60.325 )
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [node name="mesh" type="MeshInstance" parent="Shelves/LowerSmallShelf"]
 mesh = ExtResource( 7 )
@@ -104,7 +123,31 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="LowerSmallShelf2" type="Area" parent="Shelves"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 609.6, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="shape" type="CollisionShape" parent="Shelves/LowerSmallShelf2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, 0, 60.325 )
+shape = SubResource( 2 )
+
+[node name="mesh" type="MeshInstance" parent="Shelves/LowerSmallShelf2"]
+mesh = ExtResource( 7 )
+material/0 = ExtResource( 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
 [node name="WorkingShelf" type="Area" parent="Shelves"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="working_shelf" type="MeshInstance" parent="Shelves/WorkingShelf"]
+mesh = ExtResource( 13 )
+material/0 = ExtResource( 8 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Shelves/WorkingShelf"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, 873.125, 152.4 )
@@ -114,4 +157,5 @@ shape = SubResource( 3 )
 
 [connection signal="input_event" from="Shelves/BottomShelf" to="." method="_on_BottomShelf_input_event"]
 [connection signal="input_event" from="Shelves/LowerSmallShelf" to="." method="_on_LowerSmallShelf_input_event"]
+[connection signal="input_event" from="Shelves/LowerSmallShelf2" to="." method="_on_LowerSmallShelf_input_event"]
 [connection signal="input_event" from="Shelves/WorkingShelf" to="." method="_on_WorkingShelf_input_event"]

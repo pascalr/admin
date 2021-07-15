@@ -14,12 +14,9 @@ __meta__ = {
 }
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 0.999474, -0.00686278, 0.0317098, -0.00249915, 0.958183, 0.286145, -0.0323476, -0.286074, 0.957661, 740.243, 1521.62, 2143.06 )
+transform = Transform( -0.999474, 0.0068628, -0.0317099, -0.00249915, 0.958183, 0.286145, 0.0323477, 0.286074, -0.957661, 740.243, 1521.62, -1468.33 )
 far = 100000.0
 script = ExtResource( 3 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="UI" parent="." instance=ExtResource( 4 )]
 visible = false

@@ -1,7 +1,5 @@
 # Grandes priorités
-**Pas tout de suite le pin noueux parce que je ne sais pas à quel hauteur mettre la première tablette...**
 1. Canac se soir. 4 1x4x6 pin noueux, 1 1x4x8, 2 à 4 ampoules LED 100W
-1. Trouver un format de bouteille liquide.
 1. Page d'acceuil de vente
 1. Caméra
 1. Vendre à 1 client. Vendre des locations, parce que le produit risque de changer.
@@ -11,6 +9,7 @@
 1. Faire un backup des photos sur clé USB
 
 # Planification
+1. Designer les petites tablettes à pots.
 1. Sweep dans la simulation.
 1. Lisse d'acier.
 1. Plus de poids sur le contrepoids: Présentement 1.25"X3/8"X4.5". **Acheter 3/8"X1.25"X10'** **Chez les parents, couper l'acier, percer 0.25" au centre.**
@@ -22,6 +21,7 @@
 1. Rajouter l'armoire dans les assemblages pour savoir le coût total.
 1. Acheter des vrais cable chain sur aliexpress (https://www.aliexpress.com/item/10000192080203.html?spm=a2g0o.productlist.0.0.78ff51d6i3BQ3q&aem_p4p_detail=2021070811392718991760024603850002296405)
 1. Acheter un backdrop pour les photos
+1. Trouver un format de bouteille liquide.
 
 # Référence
 1. https://farm.bot/pages/series-a
@@ -78,14 +78,8 @@ Pin sélect 1"X4"X (6' ou 8' ou 10' ou 12') (72", 96", 120", 144")
 4 X 54"
 10 X 14"
 
-**4X 6'**: 54,14
-**1X 8'**: 14,14,14,14,14,14
-
-54,14 = 68
-54,14,14 = 68,14 = 82
-54,14,14,14 = 82,14 = 96
-
-54,54,14,14 = 108,14,14 = 122,14 = 136
+**4X 6'**: 56,14 = 70 vs 72" => PARFAIT!
+**1X 8'**: 14,14,14,14,14,14 = 84 vs 96" => PAS SI PIRE!
 
 14,28,42,56,70,84,98,112,126
 
