@@ -82,8 +82,6 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Inventory" type="Spatial" parent="."]
-
 [node name="Shelves" type="Spatial" parent="."]
 
 [node name="BottomShelf" type="Area" parent="Shelves"]
@@ -111,6 +109,8 @@ __meta__ = {
 [node name="CollisionShape" type="CollisionShape" parent="Shelves/WorkingShelf"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, 873.125, 152.4 )
 shape = SubResource( 3 )
+
+[node name="Inventory" type="Node" parent="."]
 
 [connection signal="input_event" from="Shelves/BottomShelf" to="." method="_on_BottomShelf_input_event"]
 [connection signal="input_event" from="Shelves/LowerSmallShelf" to="." method="_on_LowerSmallShelf_input_event"]

@@ -37,7 +37,16 @@ func check_add_jar(event, click_position):
 			BUTTON_LEFT:
 				var jar = Jar.new()
 				jar.translation = click_position
-				get_node("Inventory").add_child(jar)
+				var inventory = get_node("Inventory")
+				inventory.add_child(jar)
+				#if !jar.area.get_overlapping_bodies().empty():
+				#	inventory.remove_child(jar)
+					
+				for j in inventory.get_children():
+					if jar.area.overlaps_area(j):
+						print("COLLISION!")
+				#	pass
+				
 
 func _on_LowerSmallShelf_input_event(_camera, event, click_position, _click_normal, _shape_idx):
 	check_add_jar(event, click_position)

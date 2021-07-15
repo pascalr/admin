@@ -4,10 +4,12 @@ class_name Jar
 
 var body : MeshInstance
 var lid : MeshInstance
+var shape : CollisionShape
+var area : Area
 var lid_bottom_height = 155
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
+func _init():
 	body = MeshInstance.new()
 	var body_mesh : Mesh = load('res://models/jar_big.obj')
 	body.set_mesh(body_mesh)
@@ -23,9 +25,9 @@ func _ready():
 	lid.material_override = load('res://resources/lid_steel.material')
 	add_child(lid)
 	
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	shape = CollisionShape.new()
+	shape.shape = load('res://resources/jar_big.shape')
+	
+	area = Area.new()
+	area.add_child(shape)
+	self.add_child(area)
