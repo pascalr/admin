@@ -4,7 +4,8 @@ var output
 var text
 
 func _ready():
-	get_node("CommandLine").grab_focus()
+	pass
+	#get_node("CommandLine").grab_focus()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
@@ -21,9 +22,8 @@ func _on_CommandLine_text_entered(new_text):
 	text += "> " + new_text
 	output.set_text(text)
 
-
-func _on_CameraZone_focus_entered():
-	get_tree().root.get_node("Simulation/Camera").has_focus = true
-
-func _on_CameraZone_focus_exited():
+func _on_CommandLine_focus_entered():
 	get_tree().root.get_node("Simulation/Camera").has_focus = false
+
+func _on_CommandLine_focus_exited():
+	get_tree().root.get_node("Simulation/Camera").has_focus = true

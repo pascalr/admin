@@ -33,7 +33,7 @@ __meta__ = {
 }
 
 [node name="SupportTransversale" type="MeshInstance" parent="."]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 963.5, 1048.84, 0 )
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 963.5, 1100, 0 )
 mesh = ExtResource( 2 )
 material/0 = ExtResource( 11 )
 script = ExtResource( 8 )
@@ -56,7 +56,7 @@ id = "h"
 max_position = 1000.0
 
 [node name="Humerus" type="MeshInstance" parent="SupportTransversale/Trolley"]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -101.586, -42.2418, -1.90735e-06 )
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -101.586, -42.2418, -1.90735e-06 )
 mesh = ExtResource( 7 )
 material/0 = ExtResource( 11 )
 script = ExtResource( 5 )
@@ -69,7 +69,7 @@ max_position = 90.0
 offset = 90.0
 
 [node name="Wrist" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 156.902, -52.0864, 7.62939e-06 )
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 156.902, -52.0864, -3.05176e-05 )
 mesh = ExtResource( 10 )
 material/0 = ExtResource( 11 )
 script = ExtResource( 9 )

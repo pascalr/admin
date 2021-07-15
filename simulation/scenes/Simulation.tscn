@@ -19,7 +19,6 @@ far = 100000.0
 script = ExtResource( 3 )
 
 [node name="UI" parent="." instance=ExtResource( 4 )]
-visible = false
 
 [node name="Cupboard" parent="." instance=ExtResource( 2 )]
 

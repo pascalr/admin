@@ -2,7 +2,7 @@ class_name FreelookCamera extends Camera
 
 export(float, 0.0, 1.0) var sensitivity = 0.25
 
-export var has_focus = true
+var has_focus = true
 
 # Mouse state
 var _mouse_position = Vector2(0.0, 0.0)
