@@ -66,7 +66,6 @@ __meta__ = {
 id = "t"
 min_position = -90.0
 max_position = 90.0
-offset = 90.0
 
 [node name="Wrist" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus"]
 transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 156.902, -52.0864, -3.05176e-05 )
