@@ -3,6 +3,8 @@ extends Spatial
 export var max_angle = 150.0
 export var opening_speed = 50.0
 
+var min_dist_between_jars = 114.3
+
 var opening = true
 
 # Called when the node enters the scene tree for the first time.
@@ -32,22 +34,22 @@ func close_doors():
 	self.opening = false
 
 func check_add_jar(event, click_position):
-	if event is InputEventMouseButton:
-		match event.button_index:
-			BUTTON_LEFT:
-				var jar = Jar.new()
-				jar.translation = click_position
-				var inventory = get_node("Inventory")
-				inventory.add_child(jar)
-				#if !jar.area.get_overlapping_bodies().empty():
-				#	inventory.remove_child(jar)
-					
-				for j in inventory.get_children():
-					if jar.area.overlaps_area(j):
-						print("COLLISION!")
-				#	pass
+	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT:
+		var jar = Jar.new()
+		jar.translation = click_position
+		var inventory = get_node("Inventory")
+		
+		for j in inventory.get_children():
+			if (click_position.y - j.translation.y) < 0.2:
+				if ((click_position - j.translation).length() < min_dist_between_jars):
+					print("Collision!")
+					return false
 				
-
+		inventory.add_child(jar)
+		return true
+		
+	return false
+	
 func _on_LowerSmallShelf_input_event(_camera, event, click_position, _click_normal, _shape_idx):
 	check_add_jar(event, click_position)
 
