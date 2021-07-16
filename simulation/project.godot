@@ -28,12 +28,18 @@ _global_script_classes=[ {
 "class": "PolarCoord",
 "language": "GDScript",
 "path": "res://scripts/polar_coord.gd"
+}, {
+"base": "Reference",
+"class": "UserCoord",
+"language": "GDScript",
+"path": "res://scripts/user_coord.gd"
 } ]
 _global_script_class_icons={
 "FreelookCamera": "",
 "Jar": "",
 "Motor": "",
-"PolarCoord": ""
+"PolarCoord": "",
+"UserCoord": ""
 }
 
 [application]

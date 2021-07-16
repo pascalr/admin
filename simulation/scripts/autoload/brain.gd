@@ -17,3 +17,5 @@ func execute_command(raw_command: String):
 		get_tree().quit()
 	elif cmd == "move":
 		Body.move(args)
+	elif cmd == "goto":
+		Body.goto(args)
