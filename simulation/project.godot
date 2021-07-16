@@ -47,7 +47,6 @@ config/icon="res://icon.png"
 Body="*res://scripts/autoload/body.gd"
 Brain="*res://scripts/autoload/brain.gd"
 Lib="*res://scripts/autoload/lib.gd"
-Utils="*res://scripts/autoload/utils.gd"
 Controller="*res://scripts/autoload/controller.gd"
 
 [input]

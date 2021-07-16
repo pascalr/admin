@@ -1,17 +1,14 @@
 extends Node
 
-# Application specific functions.
+func filter_blank(in_array: Array) -> Array:
+	var out_array := []
+	for e in in_array:
+		if !e.empty():
+			out_array.push_back(e.strip_edges())
+	return out_array
 
-func extract_arg(args: Array, i: int, type: String):
-	var trace = "In function "+get_stack()[1].function+", "
-	if i >= args.size():
-		print(trace + "missing arg "+str(i))
-	elif type == "string":
-		return args[i]
-	elif type == "int" && args[i].is_valid_integer():
-		return int(args[i])
-	elif type == "float" && args[i].is_valid_float():
-		return float(args[i])
-	else:
-		print(trace + "invalid type "+type)
-	return null
+func strip_edges(in_array: Array) -> Array:
+	var out_array := []
+	for e in in_array:
+		out_array.push_back(e.strip_edges())
+	return out_array
