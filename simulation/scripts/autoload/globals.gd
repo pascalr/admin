@@ -10,4 +10,7 @@ var gripper_width := 6.0*25.4
 
 var trolley_z := working_shelf_depth + machine_depth/2.0
 
+var start_position_y := 889.0
+var start_position_h := 275.0
+
 var max_r := 54.0
