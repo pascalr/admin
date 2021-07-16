@@ -13,8 +13,18 @@ func _ready():
 			  $WeightStack1,
 			  $WeightStack2]
 
+func move(axis, destination):
+	Controller.send("m"+axis+str(destination))
+
 func goto(user_coord):
-	print("Goto ("+str(user_coord)+")")
+	print("Goto "+str(user_coord))
+	var polar = PolarCoord.new().set_from_user_coord(user_coord)
+	print("Going to "+str(polar))
+	move("b", polar.b)
+	move("h", polar.h)
+	move("y", polar.y)
+	move("t", polar.t)
+	move("a", polar.a)
 
 func grab(jar : Jar):
 	print("Grabing")

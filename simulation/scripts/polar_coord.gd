@@ -1,5 +1,49 @@
 class_name PolarCoord
 
+var h : float
+var y : float
+var t : float
+var a : float
+var b : float
+
+func set_from_user_coord_and_t(coord : UserCoord, _t : float):
+	self.y = coord.y
+	self.t = _t
+	self.a = coord.angle - _t
+	self.b = coord.b
+
+	var elbow_x = coord.x + sin(coord.angle / 180.0 * PI) * Globals.humerus_length
+	self.h = elbow_x + (sin(t / 180.0 * PI) * Globals.humerus_length)
+
+	return self
+
+func invalid_destination():
+	return false;
+	
+
+func set_from_user_coord(coord : UserCoord):
+	
+	# Given the ending position and angle of the forearm, we can
+	# calculate the position of the elbow.
+	var dz = cos(coord.angle / 180.0 * PI) * Globals.forearm_grip_length
+	var elbow_z = coord.z - dz # WHYYY minus??? Seems to work...
+	
+	# There are then 2 positions possible for the trolley.
+	# Also, maybe it is impossible for the arm to be get
+	# at this position with this angle.
+	var _t = acos((Globals.trolley_z - elbow_z)/Globals.humerus_length)*180.0/PI
+	assert(!is_nan(_t))
+
+	# return the first valid solution
+	self.set_from_user_coord_and_t(coord, -_t)
+	if self.invalid_destination():
+		self.set_from_user_coord_and_t(coord, _t)
+
+	return self
+
+func _to_string():
+	return "("+str(h)+","+str(y)+","+str(t)+","+str(a)+","+str(b)+")"
+
 #export(float) var h
 #export(float) var y
 #export(float) var t

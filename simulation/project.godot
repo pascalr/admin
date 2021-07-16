@@ -54,6 +54,8 @@ Body="*res://scripts/autoload/body.gd"
 Brain="*res://scripts/autoload/brain.gd"
 Lib="*res://scripts/autoload/lib.gd"
 Controller="*res://scripts/autoload/controller.gd"
+Movement="*res://scripts/autoload/movement.gd"
+Globals="*res://scripts/autoload/globals.gd"
 
 [input]
 

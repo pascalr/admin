@@ -22,7 +22,7 @@ func move(args):
 	var axis = _extract_arg(args, 0, "string")
 	var destination = _extract_arg(args, 1, "float")
 	print("Moving " + axis + " to " + str(destination))
-	Controller.send("m"+axis+str(destination))
+	get_tree().root.get_node("Simulation/Robot").move(axis, destination)
 	
 func goto(args):
 	var x = _extract_arg(args, 0, "float")
