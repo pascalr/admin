@@ -28,16 +28,5 @@ func goto(user_coord):
 
 func grab(jar : Jar):
 	print("Grabing")
-	goto(UserCoord.new().set_from_vector(jar.translation, 180.0))
-
-# y10.0x20a90.0
-func set_destination(s):
-	var regex = RegEx.new()
-	regex.compile("[a-zA-Z]\\-?\\d+")
-	for result in regex.search_all(s):
-		var r = result.get_string()
-		var id = r[0]
-		for motor in motors:
-			if motor.id == id:
-				motor.destination = float(r.substr(1))
-	return self
+	var dest = jar.translation+Vector3(0.0,jar.lid_bottom_height,0.0)
+	goto(UserCoord.new().set_from_vector(dest, 180.0))
