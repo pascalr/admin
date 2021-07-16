@@ -25,6 +25,7 @@ func goto(user_coord):
 	move("y", polar.y)
 	move("t", polar.t)
 	move("a", polar.a)
+	move("r", Globals.max_r)
 
 func grab(jar : Jar):
 	print("Grabing")

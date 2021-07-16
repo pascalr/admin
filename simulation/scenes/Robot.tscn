@@ -42,10 +42,10 @@ __meta__ = {
 }
 id = "y"
 max_position = 2000.0
-start_position = 1000.0
+start_position = 889.0
 
 [node name="Trolley" type="MeshInstance" parent="SupportTransversale"]
-transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 790, 7.183, 20 )
+transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 790, 7.18298, 20 )
 mesh = ExtResource( 4 )
 material/0 = SubResource( 1 )
 script = ExtResource( 6 )
@@ -112,6 +112,12 @@ __meta__ = {
 id = "r"
 is_left = false
 
+[node name="Tip" type="Spatial" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand"]
+transform = Transform( 1, 0, 0, 0, 1, -5.37315e-16, 0, -5.37312e-16, 1, 51, -56, 0.000305176 )
+__meta__ = {
+"_edit_lock_": true
+}
+
 [node name="SupportVertical" type="MeshInstance" parent="."]
 mesh = ExtResource( 1 )
 material/0 = ExtResource( 17 )
@@ -127,7 +133,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 id = "y"
-start_position = 1000.0
+start_position = 889.0
 reverse = true
 
 [node name="WeightStack2" type="MeshInstance" parent="."]
@@ -139,5 +145,5 @@ __meta__ = {
 "_edit_lock_": true
 }
 id = "y"
-start_position = 1000.0
+start_position = 889.0
 reverse = true

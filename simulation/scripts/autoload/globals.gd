@@ -9,3 +9,5 @@ var forearm_clear_length := (3.0 + 0.125 + 3.125 + 0.75 + 3.25)*25.4
 var gripper_width := 6.0*25.4
 
 var trolley_z := working_shelf_depth + machine_depth/2.0
+
+var max_r := 54.0
