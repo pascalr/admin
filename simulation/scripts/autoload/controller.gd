@@ -1,5 +1,9 @@
 extends Node
 
+# The controller simulates what the arduino receives and does.
+# It receives input of the form:
+# mh200y1000
+
 var _stream := []
 var only_simulating := true
 

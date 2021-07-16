@@ -1,5 +1,7 @@
 extends Node
 
+# Basic function helpers.
+
 func filter_blank(in_array: Array) -> Array:
 	var out_array := []
 	for e in in_array:

@@ -6,7 +6,8 @@ var body : MeshInstance
 var lid : MeshInstance
 var shape : CollisionShape
 var area : Area
-var lid_bottom_height = 155
+var lid_bottom_height = 155.8
+var selected = false
 
 # Called when the node enters the scene tree for the first time.
 func _init():
@@ -30,4 +31,10 @@ func _init():
 	
 	area = Area.new()
 	area.add_child(shape)
+	var _discarded = area.connect("input_event", self, "_toggle_selection")
 	self.add_child(area)
+
+func _toggle_selection(_camera, event, _click_position, _click_normal, _shape_idx):
+	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed:
+		self.selected = !self.selected
+		print(self.selected)

@@ -1,4 +1,5 @@
 # Grandes priorités
+1. **Monter la première tablette pour être capable de prendre des pots en dessous.**
 1. Canac se soir. 4 1x4x6 pin noueux, 1 1x4x8, 2 à 4 ampoules LED 100W
 1. Rapettisser la taille à 22.375-3.75-4.75 = **13.875** et ajuster l'humérus en conséquence.
 1. Page d'acceuil de vente
@@ -29,7 +30,9 @@
 
 # Financement
 1. Shuttleworth fondation: https://shuttleworthfoundation.org/apply/form/
+150 000$-350 000$
 1. Soutien au projet d'innovation - Investissement Québec - https://www.economie.gouv.qc.ca/bibliotheques/programmes/aide-financiere/programme-innovation/soutien-aux-projets-dinnovation/
+30% à 50%
 1. **Programme d'aide à la recherche industrielle (PARI)** CONTRIBUTIONS NON REMBOURSABLES - https://nrc.canada.ca/fr/soutien-linnovation-technologique/soutien-financier-linnovation-technologique-pari-cnrc
 1. Si vous collaborez avec plusieurs partenaires pour la réalisation de projets tels que la robotique de pointe, l'apprentissage automatique, l'impression 3D et l'Internet des objets, vous pourriez bénéficier d'un remboursement pouvant aller jusqu'à 44,4 % des coûts admissibles de projets dont la valeur se situe entre un million $ et 20 millions $. https://www.ngen.ca/fr/
 

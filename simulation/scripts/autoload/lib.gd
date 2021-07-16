@@ -1,5 +1,7 @@
 extends Node
 
+# Application specific functions.
+
 func extract_arg(args: Array, i: int, type: String):
 	var trace = "In function "+get_stack()[1].function+", "
 	if i >= args.size():

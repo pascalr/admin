@@ -16,3 +16,7 @@ func _input(event):
 					$Cupboard.open_doors()
 			KEY_ENTER:
 				$UI/CommandLine.grab_focus()
+			KEY_DELETE:
+				for obj in $Cupboard/Inventory.get_children():
+					if obj is Jar and obj.selected:
+						$Cupboard/Inventory.remove_child(obj)

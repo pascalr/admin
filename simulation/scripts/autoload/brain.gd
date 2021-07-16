@@ -1,5 +1,7 @@
 extends Node
 
+# The brain interacts between the user and Heda.
+
 func parse_command(raw: String):
 	var i = raw.find(" ")
 	var cmd = raw.substr(0, i)

@@ -58,3 +58,6 @@ func _on_BottomShelf_input_event(_camera, event, click_position, _click_normal, 
 
 func _on_WorkingShelf_input_event(_camera, event, click_position, _click_normal, _shape_idx):
 	check_add_jar(event, click_position)
+
+func _on_UpperShelf1_input_event(_camera, event, click_position, _click_normal, _shape_idx):
+	check_add_jar(event, click_position)
