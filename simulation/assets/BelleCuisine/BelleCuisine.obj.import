@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/BelleCuisine.obj-6ca4caf480d79fedae87f3417b8a0f34.mesh"
+
+[deps]
+
+files=[ "res://.import/BelleCuisine.obj-6ca4caf480d79fedae87f3417b8a0f34.mesh" ]
+
+source_file="res://assets/BelleCuisine/BelleCuisine.obj"
+dest_files=[ "res://.import/BelleCuisine.obj-6ca4caf480d79fedae87f3417b8a0f34.mesh", "res://.import/BelleCuisine.obj-6ca4caf480d79fedae87f3417b8a0f34.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
