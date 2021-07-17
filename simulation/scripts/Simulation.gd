@@ -20,6 +20,10 @@ func _input(event):
 						$Robot.grab(obj)
 			KEY_ENTER:
 				$UI/CommandLine.grab_focus()
+			KEY_ESCAPE:
+				for obj in $Cupboard/Inventory.get_children():
+					if obj is Jar:
+						obj.selected = false
 			KEY_DELETE:
 				for obj in $Cupboard/Inventory.get_children():
 					if obj is Jar and obj.selected:
