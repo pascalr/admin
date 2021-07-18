@@ -20,7 +20,7 @@
 [ext_resource path="res://resources/HingesMaterial.tres" type="Material" id=18]
 [ext_resource path="res://models/weight_stack.obj" type="ArrayMesh" id=19]
 
-[sub_resource type="BoxShape" id=1]
+[sub_resource type="BoxShape" id=12]
 extents = Vector3( 23, 43, 9 )
 
 [sub_resource type="BoxShape" id=2]
@@ -94,7 +94,7 @@ is_left = false
 
 [node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/GripR"]
 transform = Transform( -1, 8.74228e-08, -1.31134e-07, 8.74228e-08, 1, -1.17225e-07, 1.31134e-07, -1.17225e-07, -1, 51.5, -14.3317, 22.715 )
-shape = SubResource( 1 )
+shape = SubResource( 12 )
 
 [node name="mesh" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/GripR"]
 transform = Transform( -1, 8.74228e-08, -1.31134e-07, 8.74228e-08, 1, -1.17225e-07, 1.31134e-07, -1.17225e-07, -1, 51.5, -56.9999, 22 )

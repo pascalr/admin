@@ -3,10 +3,10 @@ extends Motor
 class_name MotorB
 
 func _ready():
-	setup(rad2deg(self.rotation.x))
+	setup(rad2deg(self.rotation.z))
 
 func _update_mesh():
-	self.rotation.x = deg2rad(start_offset + position)
+	self.rotation.z = deg2rad(start_offset + position)
 
 func _process(delta):
 	update_position(delta)
