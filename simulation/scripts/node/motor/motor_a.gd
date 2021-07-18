@@ -1,5 +1,7 @@
 extends Motor
 
+class_name MotorA
+
 func _ready():
 	setup(rad2deg(self.rotation.y))
 

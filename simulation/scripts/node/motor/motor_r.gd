@@ -1,15 +1,17 @@
 extends Motor
 
+class_name MotorR
+
 export var is_left := true
 
 func _ready():
-	setup(self.translation.z)
+	setup(self.translation.x)
 
 func _update_mesh():
 	if is_left:
-		self.translation.z = start_offset - position
+		self.translation.x = start_offset + position
 	else:
-		self.translation.z = start_offset + position
+		self.translation.x = start_offset - position
 
 func _process(delta):
 	update_position(delta)

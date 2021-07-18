@@ -1,4 +1,4 @@
-extends MeshInstance
+extends KinematicBody
 
 class_name Motor
 

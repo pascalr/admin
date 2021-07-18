@@ -1,5 +1,7 @@
 extends Motor
 
+class_name MotorH
+
 func _ready():
 	setup(self.translation.x)
 	self.position = Globals.start_position_h

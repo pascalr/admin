@@ -1,5 +1,7 @@
 extends Motor
 
+class_name MotorY
+
 export var reverse = false
 
 func _ready():
