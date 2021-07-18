@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://models/support_vertical.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://models/support_transversale.obj" type="ArrayMesh" id=2]
@@ -25,6 +25,30 @@ albedo_color = Color( 0.0666667, 0.0941176, 0.117647, 1 )
 metallic = 1.0
 metallic_specular = 1.0
 roughness = 0.5
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 23, 43, 9 )
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 23, 43, 9 )
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 70.243, 39.131, 77.8896 )
+
+[sub_resource type="BoxShape" id=5]
+extents = Vector3( 37.8203, 31.3785, 64.4754 )
+
+[sub_resource type="BoxShape" id=6]
+extents = Vector3( 42.3929, 71.3597, 81.7686 )
+
+[sub_resource type="BoxShape" id=7]
+extents = Vector3( 123.908, 11.2404, 44.5832 )
+
+[sub_resource type="BoxShape" id=8]
+extents = Vector3( 73.5955, 38.4351, 72.5477 )
+
+[sub_resource type="BoxShape" id=9]
+extents = Vector3( 414.766, 84.2438, 70.904 )
 
 [node name="Robot" type="Spatial"]
 script = ExtResource( 3 )
@@ -100,6 +124,12 @@ __meta__ = {
 }
 id = "r"
 
+[node name="Area" type="Area" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/GripL"]
+
+[node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/GripL/Area"]
+transform = Transform( 1, 0, 0, 0, 1, 1.75101e-22, 0, -8.35505e-22, 1, 0, 43, 0 )
+shape = SubResource( 2 )
+
 [node name="GripR" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand"]
 transform = Transform( -1, 8.74228e-08, -1.31134e-07, 8.74228e-08, 1, -1.17225e-07, 1.31134e-07, -1.17225e-07, -1, 51.5, -57, 22 )
 mesh = ExtResource( 15 )
@@ -111,11 +141,51 @@ __meta__ = {
 id = "r"
 is_left = false
 
+[node name="Area" type="Area" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/GripR"]
+
+[node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/GripR/Area"]
+transform = Transform( 1, 0, 0, 0, 1, -2.84368e-23, 0, -3.01574e-22, 1, 7.62939e-06, 42.6682, -0.714996 )
+shape = SubResource( 3 )
+
 [node name="Tip" type="Spatial" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand"]
 transform = Transform( 1, 0, 0, 0, 1, -5.37315e-16, 0, -5.37312e-16, 1, 51, -56, 0.000335693 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="Area" type="Area" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand"]
+
+[node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/Area"]
+transform = Transform( 1, 0, 0, 0, 1, -5.37315e-16, 0, -5.37312e-16, 1, -39.8055, 0, -0.324524 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/Area"]
+transform = Transform( 1, 0, 0, 0, 1, -5.37315e-16, 0, -5.37312e-16, 1, -69.4191, 67.2805, 6.10352e-05 )
+shape = SubResource( 5 )
+
+[node name="Area" type="Area" parent="SupportTransversale/Trolley/Humerus/Wrist"]
+
+[node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/Wrist/Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -36.548, -23.546 )
+shape = SubResource( 6 )
+
+[node name="Area" type="Area" parent="SupportTransversale/Trolley/Humerus"]
+
+[node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 79.3069, -6.77881, 3.05176e-05 )
+shape = SubResource( 7 )
+
+[node name="Area" type="Area" parent="SupportTransversale/Trolley"]
+
+[node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Trolley/Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -70.0219, 0, -5.72205e-06 )
+shape = SubResource( 8 )
+
+[node name="Area" type="Area" parent="SupportTransversale"]
+
+[node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 455.896, 82.2985, 19.7795 )
+shape = SubResource( 9 )
 
 [node name="SupportVertical" type="MeshInstance" parent="."]
 mesh = ExtResource( 1 )

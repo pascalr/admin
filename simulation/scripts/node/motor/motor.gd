@@ -11,6 +11,8 @@ var position := 0.0
 var destination := 0.0
 var start_offset := 0.0 # The object translation of rotation equal to start_position
 
+#func _physics_process(delta):
+
 func setup(_start_offset):
 	self.start_offset = _start_offset
 	self.position = 0.0
