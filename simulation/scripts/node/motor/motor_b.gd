@@ -7,16 +7,3 @@ func get_start_position():
 
 func _position_changed():
 	self.rotation.z = deg2rad(position)
-
-func _process(delta):
-	process_motor2(delta)
-
-#func _ready():
-#	setup(rad2deg(self.rotation.z))
-#
-#func _update_mesh():
-#	self.rotation.z = deg2rad(start_offset + position)
-#
-#func _process(delta):
-#	update_position(delta)
-#	_update_mesh()

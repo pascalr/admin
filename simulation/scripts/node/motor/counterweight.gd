@@ -7,8 +7,3 @@ func get_start_position():
 
 func _position_changed():
 	self.translation.y = -position
-
-func _process(delta):
-	process_motor2(delta)
-	#update_position(delta)
-	#_update_mesh()
