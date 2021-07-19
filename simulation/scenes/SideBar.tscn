@@ -9,9 +9,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="."]
-margin_right = 40.0
+[node name="VBox" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ConnectionStatusLabel" type="Label" parent="VBox"]
+margin_right = 206.0
 margin_bottom = 14.0
+text = "Connection status: Connecting..."
+
+[node name="ObjIdLabel" type="Label" parent="VBox"]
+margin_top = 18.0
+margin_right = 206.0
+margin_bottom = 32.0
 text = "Obj id:"
 __meta__ = {
 "_edit_use_anchors_": false

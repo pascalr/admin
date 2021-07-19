@@ -7,7 +7,7 @@ signal destination_reached
 export var id : String
 export var min_position := 0.0
 export var max_position := 0.0
-export var speed := 50.0
+export var speed := 200.0
 export var reverse_direction = false
 
 var position := 0.0

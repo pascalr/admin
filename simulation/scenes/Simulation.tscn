@@ -66,4 +66,11 @@ autostart = true
 
 [node name="DoneRequest" type="HTTPRequest" parent="."]
 
+[node name="StatusRequest" type="HTTPRequest" parent="."]
+
+[node name="StatusTimer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
 [connection signal="timeout" from="PollTimer" to="." method="_on_PollTimer_timeout"]
+[connection signal="timeout" from="StatusTimer" to="." method="_on_StatusTimer_timeout"]
