@@ -2,20 +2,15 @@ extends Motor
 
 class_name MotorY
 
-export var reverse = false
+# This returns the value used to adjust the zero of the axis.
+func get_start_position():
+	return Globals.start_position_y
 
-func _ready():
-	#self.translation.y = Globals.start_position_y
-	setup(self.translation.y)
-	self.position = Globals.start_position_y
-	self.destination = Globals.start_position_y
+func get_position():
+	return self.translation.y
 
-func _update_mesh():
-	if reverse:
-		self.translation.y = position
-	else:
-		self.translation.y = position
+func set_position(pos : float):
+	self.translation.y = pos
 
 func _process(delta):
-	update_position(delta)
-	_update_mesh()
+	process_motor(delta)

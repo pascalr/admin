@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://models/support_vertical.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://models/support_transversale.obj" type="ArrayMesh" id=2]
@@ -19,6 +19,7 @@
 [ext_resource path="res://resources/SteelMaterial.tres" type="Material" id=17]
 [ext_resource path="res://resources/HingesMaterial.tres" type="Material" id=18]
 [ext_resource path="res://models/weight_stack.obj" type="ArrayMesh" id=19]
+[ext_resource path="res://scripts/node/motor/counterweight.gd" type="Script" id=20]
 
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 23, 43, 9 )
@@ -68,12 +69,12 @@ script = ExtResource( 8 )
 id = "y"
 
 [node name="Trolley" type="KinematicBody" parent="SupportTransversale"]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 963.5, 211, 0 )
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 277, 0, 0 )
 script = ExtResource( 6 )
 id = "h"
 
 [node name="Humerus" type="KinematicBody" parent="SupportTransversale/Trolley"]
-transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 790, 7.18298, 20 )
+transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 103.5, 218.183, 19.9999 )
 script = ExtResource( 5 )
 id = "t"
 
@@ -169,11 +170,11 @@ transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -101.586,
 shape = SubResource( 6 )
 
 [node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Trolley"]
-transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 719.978, 7.18298, 20 )
+transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 33.478, 218.183, 19.9999 )
 shape = SubResource( 7 )
 
 [node name="mesh" type="MeshInstance" parent="SupportTransversale/Trolley"]
-transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 790, 7.18298, 20 )
+transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 103.5, 218.183, 19.9999 )
 mesh = ExtResource( 4 )
 material/0 = SubResource( 8 )
 __meta__ = {
@@ -200,28 +201,29 @@ __meta__ = {
 }
 
 [node name="WeightStack1" type="KinematicBody" parent="."]
-script = ExtResource( 8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -889, 0 )
+script = ExtResource( 20 )
 id = "y"
-reverse = true
+
+[node name="CollisionShape" type="CollisionShape" parent="WeightStack1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25.5788, 1313.65, -27.3376 )
+shape = SubResource( 10 )
 
 [node name="mesh" type="MeshInstance" parent="WeightStack1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 889, 0 )
 mesh = ExtResource( 19 )
 material/0 = ExtResource( 18 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape" type="CollisionShape" parent="WeightStack1"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25.5788, 424.649, -27.3376 )
-shape = SubResource( 10 )
-
 [node name="WeightStack2" type="KinematicBody" parent="."]
-script = ExtResource( 8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -889, 0 )
+script = ExtResource( 20 )
 id = "y"
-reverse = true
 
 [node name="mesh" type="MeshInstance" parent="WeightStack2"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -972, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -972, 889, 0 )
 mesh = ExtResource( 19 )
 material/0 = ExtResource( 18 )
 __meta__ = {
@@ -229,5 +231,5 @@ __meta__ = {
 }
 
 [node name="CollisionShape" type="CollisionShape" parent="WeightStack2"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 992.055, 426.845, -28.7991 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 992.055, 1315.84, -28.7991 )
 shape = SubResource( 11 )
