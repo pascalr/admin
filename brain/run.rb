@@ -55,7 +55,8 @@ def grab(obj)
 end
 
 def execute_command(raw_cmd)
-  cmd, args = raw_cmd.split(' ',2).map(&:strip)
+  cmd, raw_args = raw_cmd.split(' ',2).map(&:strip)
+  args = raw_args.nil? ? nil : raw_args.split(',').map(&:strip)
   puts "cmd: #{cmd}"
   puts "args: #{args}"
   if cmd == "grab"

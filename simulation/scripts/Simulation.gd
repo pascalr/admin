@@ -33,9 +33,9 @@ func _input(event):
 					if obj is Jar:
 						obj.selected = false
 			KEY_DELETE:
-				for obj in $Cupboard/Inventory.get_children():
-					if obj is Jar and obj.selected:
-						$Cupboard/Inventory.remove_child(obj)
+				if current_selection != null:
+					$Cupboard/Inventory.remove_child(current_selection)
+					_obj_deselected(current_selection)
 
 func _obj_deselected(_obj):
 	if current_selection != null:
