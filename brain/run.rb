@@ -39,6 +39,7 @@ def send_command(cmd)
   while not $command.empty?
     sleep 0.02
   end
+  puts "Waiting for the simulation"
   wait_simulation_done
   puts "done"
 end
@@ -90,13 +91,12 @@ end
 
 get '/done' do
   $waiting_for_simulation = false
+  nil
 end
 
 get '/add_jar' do
   STATE.jars << Jar.new(params[:jar_id].to_i,params[:x].to_f,params[:y].to_f,params[:z].to_f)
-end
-
-get '/grab/:jar_id' do
+  nil
 end
 
 get '/execute' do
@@ -105,3 +105,12 @@ get '/execute' do
   execute_command(cmd)
   nil
 end
+
+get '/exit' do
+  Process.kill('TERM', Process.pid)
+end
+
+get '/fail' do
+  Process.kill('KILL', Process.pid)
+end
+

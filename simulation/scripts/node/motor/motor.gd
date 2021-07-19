@@ -14,7 +14,7 @@ var position := 0.0
 var destination := 0.0 setget set_destination
 var start_offset := 0.0 # The object translation of rotation equal to start_position
 
-var _moving
+var _moving := false
 
 func set_destination(dest):
 	destination = dest
@@ -26,6 +26,9 @@ func _init():
 	position = get_start_position()
 	destination = get_start_position()
 
+func _ready():
+	var _a = self.connect("destination_reached", get_tree().root.get_node("Simulation"), "_send_done")
+
 # This returns the value used to adjust the zero of the axis.
 func get_start_position():
 	assert(false)
@@ -36,20 +39,16 @@ func is_moving():
 func _position_changed():
 	pass
 
-# Returns whether the motor has reached the destination
+# Returns whether the motor still needs to move.
 func _move(delta : float):
 	if position < destination:
 		position = min(position+delta*speed, destination)
-		if position >= destination:
-			return false
 	elif position > destination:
 		position = max(position-delta*speed, destination)
-		if position <= destination:
-			return false
-	return true	
+	return position != destination
 
 func _process(delta : float):
-	if _moving and !_move(delta):
+	if _moving && !_move(delta):
 		_moving = false
 		emit_signal("destination_reached")
 	else:

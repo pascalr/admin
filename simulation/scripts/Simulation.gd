@@ -58,3 +58,7 @@ func _on_PollTimer_timeout():
 	if poll_received:
 		poll_received = false
 		$PollRequest.request("http://localhost:4567/poll")
+
+func _send_done():
+	print("Destination reached!")
+	$DoneRequest.request("http://localhost:4567/done")

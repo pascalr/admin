@@ -64,4 +64,6 @@ material/0 = SubResource( 3 )
 wait_time = 0.1
 autostart = true
 
+[node name="DoneRequest" type="HTTPRequest" parent="."]
+
 [connection signal="timeout" from="PollTimer" to="." method="_on_PollTimer_timeout"]
