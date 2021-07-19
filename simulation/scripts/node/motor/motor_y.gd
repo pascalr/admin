@@ -6,11 +6,14 @@ class_name MotorY
 func get_start_position():
 	return Globals.start_position_y
 
-func get_position():
-	return self.translation.y
+func _position_changed():
+	self.translation.y = position
 
-func set_position(pos : float):
-	self.translation.y = pos
+#func get_position():
+#	return self.translation.y
+#
+#func set_position(pos : float):
+#	self.translation.y = pos
 
 func _process(delta):
-	process_motor(delta)
+	process_motor2(delta)

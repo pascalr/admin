@@ -2,19 +2,13 @@ extends Motor
 
 class_name Counterweight
 
-func get_position():
-	return -self.translation.y
+func get_start_position():
+	return Globals.start_position_y
 
-func set_position(pos : float):
-	self.translation.y = -pos
-
-func _ready():
-	#self.translation.y = Globals.start_position_y
-	setup(self.translation.y)
-	self.position = -Globals.start_position_y
-	self.destination = -Globals.start_position_y
+func _position_changed():
+	self.translation.y = -position
 
 func _process(delta):
-	process_motor(delta)
+	process_motor2(delta)
 	#update_position(delta)
 	#_update_mesh()

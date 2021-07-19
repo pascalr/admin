@@ -5,14 +5,11 @@ class_name MotorT
 func get_start_position():
 	return 0.0
 
-func get_position():
-	return rad2deg(self.rotation.y)
-
-func set_position(pos : float):
-	self.rotation.y = deg2rad(pos)
+func _position_changed():
+	self.rotation.y = deg2rad(position)
 
 func _process(delta):
-	process_motor(delta)
+	process_motor2(delta)
 
 #func _process(delta):
 #	process_motor(delta)

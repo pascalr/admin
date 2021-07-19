@@ -5,14 +5,11 @@ class_name MotorH
 func get_start_position():
 	return Globals.start_position_h
 
-func get_position():
-	return self.translation.x
-
-func set_position(pos : float):
-	self.translation.x = pos
+func _position_changed():
+	self.translation.x = position
 
 func _process(delta):
-	process_motor(delta)
+	process_motor2(delta)
 
 #func get_position():
 #	return self.translation.x
