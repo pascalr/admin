@@ -50,7 +50,6 @@ mesh = SubResource( 1 )
 material/0 = ExtResource( 6 )
 
 [node name="SideBar" parent="." instance=ExtResource( 7 )]
-visible = false
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 500, 1000, 200 )

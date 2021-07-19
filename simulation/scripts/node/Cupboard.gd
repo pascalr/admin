@@ -40,7 +40,8 @@ func _jar_added(_result, _response_code, _headers, _body):
 	pass
 
 func _add_jar(jar):
-	var params = "x="+str(jar.translation.x)+",y="+str(jar.translation.y)+",z="+str(jar.translation.z)
+	var params = "x="+str(jar.translation.x)+",y="+str(jar.translation.y)
+	params += ",z="+str(jar.translation.z)+",id="+str(jar.get_instance_id())
 	var _err = jar_added_request.request("http://localhost:4567/add_jar?"+params)
 	$Inventory.add_child(jar)
 	jar.visible = true # TODO: Set to visible only when the request is confirmed

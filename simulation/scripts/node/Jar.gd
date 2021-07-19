@@ -2,12 +2,14 @@ extends Spatial
 
 class_name Jar
 
+signal selected(obj)
+signal deselected(obj)
+
 var body : MeshInstance
 var lid : MeshInstance
 var shape : CollisionShape
 var area : Area
 var selection_box : MeshInstance
-var selected = false
 
 var lid_bottom_height := 155.8
 var total_height := 169.0
@@ -51,11 +53,17 @@ func _init():
 	
 	area = Area.new()
 	area.add_child(shape)
-	var _discarded = area.connect("input_event", self, "_toggle_selection")
+	var _foo = area.connect("input_event", self, "_toggle_selection")
 	add_child(area)
+
+func _ready():
+	var _foo = self.connect("selected", get_tree().root.get_node("Simulation"), "_obj_selected")
+	var _bar = self.connect("deselected", get_tree().root.get_node("Simulation"), "_obj_deselected")
 
 func _toggle_selection(_camera, event, _click_position, _click_normal, _shape_idx):
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed:
 		selection_box.visible = !selection_box.visible
-		self.selected = !self.selected
-		print(self.selected)
+		if selection_box.visible:
+			emit_signal("selected", self)
+		else:
+			emit_signal("deselected", self)
