@@ -18,7 +18,7 @@ func _on_CommandLine_text_entered(new_text):
 	print("Command: " + new_text)
 	var url = "http://localhost:4567/execute?cmd="+new_text.replace(" ","+")
 	var _err = command_request.request(url)
-	Brain.execute_command(new_text)
+	#Brain.execute_command(new_text)
 	output = get_node("Panel/Output")
 	get_node("CommandLine").clear() # FIXME: Should be self?
 	text = output.text

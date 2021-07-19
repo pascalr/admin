@@ -1,15 +1,13 @@
 extends Spatial
 
-var command_request : HTTPRequest
-
 var current_selection
+var poll_received = true
 
 func _ready():
 	OS.set_low_processor_usage_mode(true)
 	OS.set_low_processor_usage_mode_sleep_usec(50000)
 	
-	command_request = HTTPRequest.new()
-	add_child(command_request)
+	var _v = $PollRequest.connect("request_completed", self, "_poll")
 	#var _v = command_request.connect("request_completed", self, "_jar_added")
 
 func _input(event):
@@ -23,11 +21,9 @@ func _input(event):
 				if !$UI/CommandLine.has_focus():
 					$Cupboard.open_doors()
 			KEY_G:
-				for obj in $Cupboard/Inventory.get_children():
-					if obj is Jar and obj.selected:
-						#$Robot.grab(obj)
-						var url = "http://localhost:4567/grab/"+str(obj.get_instance_id())
-						var _err = command_request.request(url)
+				if current_selection != null:
+					var url = "http://localhost:4567/execute?cmd=grab+"+str(current_selection.get_obj_id())
+					var _err = $CommandRequest.request(url)
 			KEY_ENTER:
 				$UI/CommandLine.grab_focus()
 			KEY_ESCAPE:
@@ -48,5 +44,17 @@ func _obj_deselected(_obj):
 func _obj_selected(obj):
 	if current_selection != null:
 		current_selection.selection_box.visible = false
-	$SideBar/Label.text = "Obj id: "+str(obj.get_instance_id())
+	$SideBar/Label.text = "Obj id: "+str(obj.get_obj_id())
 	current_selection = obj
+
+func _poll(_result, _response_code, _headers, _body):
+	poll_received = true
+	var s = _body.get_string_from_utf8()
+	if !s.empty():
+		print("Poll received: " + s)
+		Controller.send(s)
+
+func _on_PollTimer_timeout():
+	if poll_received:
+		poll_received = false
+		$PollRequest.request("http://localhost:4567/poll")

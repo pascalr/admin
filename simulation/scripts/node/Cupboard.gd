@@ -9,6 +9,8 @@ var opening = true
 
 var jar_added_request : HTTPRequest
 
+var jar_id_counter = 1
+
 func _ready():
 	jar_added_request = HTTPRequest.new()
 	add_child(jar_added_request)
@@ -40,11 +42,15 @@ func _jar_added(_result, _response_code, _headers, _body):
 	pass
 
 func _add_jar(jar):
-	var params = "x="+str(jar.translation.x)+",y="+str(jar.translation.y)
-	params += ",z="+str(jar.translation.z)+",id="+str(jar.get_instance_id())
-	var _err = jar_added_request.request("http://localhost:4567/add_jar?"+params)
+	jar.jar_id = jar_id_counter
+	jar_id_counter += 1
+	
 	$Inventory.add_child(jar)
 	jar.visible = true # TODO: Set to visible only when the request is confirmed
+	
+	var params = "x="+str(jar.translation.x)+"&y="+str(jar.translation.y)
+	params += "&z="+str(jar.translation.z)+"&jar_id="+str(jar.jar_id)
+	var _err = jar_added_request.request("http://localhost:4567/add_jar?"+params)
 
 func _check_add_jar(event, click_position):
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT:

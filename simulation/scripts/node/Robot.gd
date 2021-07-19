@@ -13,6 +13,11 @@ func _ready():
 			  $WeightStack1,
 			  $WeightStack2]
 
+func get_motor(id : String):
+	for motor in motors:
+		if motor.id == id:
+			return motor
+
 func _wait_done_moving():
 	pass
 

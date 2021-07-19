@@ -55,3 +55,13 @@ material/0 = ExtResource( 6 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 500, 1000, 200 )
 mesh = SubResource( 2 )
 material/0 = SubResource( 3 )
+
+[node name="CommandRequest" type="HTTPRequest" parent="."]
+
+[node name="PollRequest" type="HTTPRequest" parent="."]
+
+[node name="PollTimer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[connection signal="timeout" from="PollTimer" to="." method="_on_PollTimer_timeout"]

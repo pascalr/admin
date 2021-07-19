@@ -7,6 +7,11 @@ extends Node
 var _stream := []
 var only_simulating := true
 
+func execute(cmd : String):
+	print("Controller received: "+cmd)
+	if cmd.begins_with("m"):
+		_set_destination(cmd.substr(1))
+
 func send(cmd: String):
 	_stream.push_back(cmd)
 
