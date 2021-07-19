@@ -13,6 +13,10 @@ var lid_bottom_height := 155.8
 var total_height := 169.0
 var diameter := 112.0
 
+# The height of the jar when empty, or the height with the lid when present
+func get_height():
+	return total_height
+
 # Called when the node enters the scene tree for the first time.
 func _init():
 	body = MeshInstance.new()

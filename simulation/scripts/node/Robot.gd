@@ -13,6 +13,9 @@ func _ready():
 			  $WeightStack1,
 			  $WeightStack2]
 
+func _wait_done_moving():
+	pass
+
 func move(axis, destination):
 	Controller.send("m"+axis+str(destination))
 
@@ -27,7 +30,8 @@ func goto(user_coord):
 	move("a", polar.a)
 	move("r", Globals.max_r)
 
-func grab(jar : Jar):
+func grab(obj):
 	print("Grabing")
-	var dest = jar.translation+Vector3(0.0,jar.lid_bottom_height,0.0)
+	var dest = obj.translation+Vector3(0.0,obj.get_height()-20.0,0.0)
 	goto(UserCoord.new().set_from_vector(dest, 180.0))
+	move("r", obj.diameter)

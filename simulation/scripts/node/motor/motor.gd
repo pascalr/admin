@@ -5,7 +5,7 @@ class_name Motor
 export var id : String
 export var min_position := 0.0
 export var max_position := 0.0
-export var speed := 200.0
+export var speed := 20.0
 export var reverse_direction = false
 
 var position := 0.0
@@ -21,6 +21,9 @@ func _init():
 # This returns the value used to adjust the zero of the axis.
 func get_start_position():
 	assert(false)
+
+func is_moving():
+	return position == destination
 
 func _position_changed():
 	pass
