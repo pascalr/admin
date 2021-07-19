@@ -10,6 +10,7 @@ func _ready():
 	var _a = $PollRequest.connect("request_completed", self, "_poll")
 	var _b = $StatusRequest.connect("request_completed", self, "_status")
 	$StatusRequest.timeout = 2
+	_on_StatusTimer_timeout()
 	#var _v = command_request.connect("request_completed", self, "_jar_added")
 
 func _input(event):
