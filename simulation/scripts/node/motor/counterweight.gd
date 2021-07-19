@@ -3,10 +3,10 @@ extends Motor
 class_name Counterweight
 
 func get_position():
-	return self.translation.y
+	return -self.translation.y
 
 func set_position(pos : float):
-	self.translation.y = -abs(pos)
+	self.translation.y = -pos
 
 func _ready():
 	#self.translation.y = Globals.start_position_y

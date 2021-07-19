@@ -15,7 +15,6 @@ var start_offset := 0.0 # The object translation of rotation equal to start_posi
 
 func _init():
 	destination = get_position()
-	print("INIT!")
 
 func setup(_start_offset):
 	self.start_offset = _start_offset
@@ -30,7 +29,7 @@ func get_position():
 	return 0.0
 	assert(false)
 
-func set_position(pos):
+func set_position(_pos):
 	return null
 	assert(false)
 
