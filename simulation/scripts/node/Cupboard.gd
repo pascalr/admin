@@ -5,7 +5,7 @@ export var opening_speed = 50.0
 
 var min_dist_between_jars = 114.3
 
-var opening = true
+var opening = false
 
 var jar_added_request : HTTPRequest
 

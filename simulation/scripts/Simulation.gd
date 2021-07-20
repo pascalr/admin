@@ -57,6 +57,11 @@ func _on_load():
 	var store = File.new()
 	if not store.file_exists("user://state.save"):
 		return
+	
+	# Clear previous objects
+	var objs = $Cupboard/Inventory.get_children()
+	for node in objs:
+		node.queue_free()
 
 	store.open("user://state.save", File.READ)
 	while store.get_position() < store.get_len():

@@ -3,9 +3,8 @@
 [ext_resource path="res://scripts/visual/SideBar.gd" type="Script" id=1]
 
 [node name="SideBar" type="Control"]
-anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = -900.0
+margin_right = 124.0
 margin_bottom = -122.0
 script = ExtResource( 1 )
 __meta__ = {
@@ -13,16 +12,16 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="."]
-anchor_right = 1.0
 anchor_bottom = 1.0
-color = Color( 0.341176, 0.341176, 0.341176, 1 )
+margin_right = 124.0
+color = Color( 0.145098, 0.145098, 0.164706, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="VBox" type="VBoxContainer" parent="."]
-anchor_right = 1.0
 anchor_bottom = 1.0
+margin_right = 124.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

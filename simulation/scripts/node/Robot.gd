@@ -27,18 +27,23 @@ func get_angle():
 func move(axis, destination):
 	yield($Controller.exec("m"+axis+str(destination)), "completed")
 
-func goto(user_coord):
-	print("Goto "+str(user_coord))
-	var polar = PolarCoord.new().set_from_user_coord(user_coord)
-	print("Going to "+str(polar))
+func get_to(polar):
+	print("Getting to "+str(polar))
 	yield(move("y", polar.y), "completed")
 	yield(move("b", polar.b), "completed")
 	yield(move("h", polar.h), "completed")
 	yield(move("t", polar.t), "completed")
 	yield(move("a", polar.a), "completed")
 
+func goto(user_coord):
+	print("Goto "+str(user_coord))
+	var polar = PolarCoord.new().set_from_user_coord(user_coord)
+	yield(get_to(polar), "completed")
+
 func _move_straigth(vect):
-	yield(goto(UserCoord.new().set_from_vector(vect, get_angle())), "completed")
+	var user_coord = UserCoord.new().set_from_vector(vect, get_angle())
+	var polar = PolarCoord.new().set_from_user_coord(user_coord)
+	yield($Controller.exec("t"+str(polar.t)), "completed")
 
 func _grab_above(obj):
 	var above = obj.translation+Vector3(0.0,obj.get_height()+10.0,0.0)
