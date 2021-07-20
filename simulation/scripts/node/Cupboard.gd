@@ -52,10 +52,12 @@ func _add_jar(jar):
 	params += "&y="+str(jar.translation.y)+"&z="+str(jar.translation.z)
 	var _err = jar_added_request.request("http://localhost:4567/add_jar?"+params)
 
-func _check_add_jar(event, click_position):
+func _check_add_jar(event, click_position, shelf):
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT:
 		var jar = Jar.new()
 		jar.translation = click_position
+		jar.shelf = shelf
+		jar.grab_above = shelf.grab_above
 		
 		for j in $Inventory.get_children():
 			if (click_position.y - j.translation.y) < 0.2:
@@ -69,13 +71,16 @@ func _check_add_jar(event, click_position):
 	return false
 	
 func _on_LowerSmallShelf_input_event(_camera, event, click_position, _click_normal, _shape_idx):
-	_check_add_jar(event, click_position)
+	_check_add_jar(event, click_position, $Shelves/LowerSmallShelf)
+
+func _on_LowerSmallShelf2_input_event(_camera, event, click_position, _click_normal, _shape_idx):
+	_check_add_jar(event, click_position, $Shelves/LowerSmallShelf2)
 
 func _on_BottomShelf_input_event(_camera, event, click_position, _click_normal, _shape_idx):
-	_check_add_jar(event, click_position)
+	_check_add_jar(event, click_position, $Shelves/BottomShelf)
 
 func _on_WorkingShelf_input_event(_camera, event, click_position, _click_normal, _shape_idx):
-	_check_add_jar(event, click_position)
+	_check_add_jar(event, click_position, $Shelves/WorkingShelf)
 
 func _on_UpperShelf1_input_event(_camera, event, click_position, _click_normal, _shape_idx):
-	_check_add_jar(event, click_position)
+	_check_add_jar(event, click_position, $Shelves/UpperShelf1)

@@ -17,6 +17,10 @@ var diameter := 112.0
 
 var jar_id : int
 
+var shelf : Shelf
+
+var grab_above : bool
+
 func get_obj_id():
 	return jar_id
 

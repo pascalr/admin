@@ -15,3 +15,4 @@ var start_position_y := 889.0
 var start_position_h := 275.0
 
 var max_r := 138.0
+var max_z := 304.8
