@@ -9,7 +9,6 @@ def send_command(cmd)
   end
   puts "Waiting for the simulation"
   wait_simulation_done
-  puts "done"
 end
 
 def wait_simulation_done

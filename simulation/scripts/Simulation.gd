@@ -6,11 +6,7 @@ var poll_received = true
 func _ready():
 	OS.set_low_processor_usage_mode(true)
 	OS.set_low_processor_usage_mode_sleep_usec(50000)
-	
-	var _a = $PollRequest.connect("request_completed", self, "_poll")
-	var _b = $StatusRequest.connect("request_completed", self, "_status")
-	$StatusRequest.timeout = 2
-	_on_StatusTimer_timeout()
+
 	#var _v = command_request.connect("request_completed", self, "_jar_added")
 
 func _input(event):
@@ -50,28 +46,8 @@ func _obj_selected(obj):
 	$SideBar/VBox/ObjIdLabel.text = "Obj id: "+str(obj.get_obj_id())
 	current_selection = obj
 
-func _poll(_result, _response_code, _headers, _body):
-	poll_received = true
-	var s = _body.get_string_from_utf8()
-	if !s.empty():
-		print("Poll received: " + s)
-		Controller.send(s)
-
-func _on_PollTimer_timeout():
-	if poll_received:
-		poll_received = false
-		$PollRequest.request("http://localhost:4567/poll")
-
 func _send_done():
 	print("Destination reached!")
 	$DoneRequest.request("http://localhost:4567/done")
 
-func _status(result, _response_code, _headers, _body):
-	if result == HTTPRequest.RESULT_SUCCESS:
-		$SideBar/VBox/ConnectionStatusLabel.text = "Connection status: OK"
-	else:
-		$SideBar/VBox/ConnectionStatusLabel.text = "Connection status: Disconected"
-	
 
-func _on_StatusTimer_timeout():
-	$StatusRequest.request("http://localhost:4567/status")

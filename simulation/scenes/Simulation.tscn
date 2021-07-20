@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scenes/Robot.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Cupboard.tscn" type="PackedScene" id=2]
@@ -7,6 +7,8 @@
 [ext_resource path="res://scripts/Simulation.gd" type="Script" id=5]
 [ext_resource path="res://resources/kitchen_tiles.material" type="Material" id=6]
 [ext_resource path="res://scenes/SideBar.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/test.gd" type="Script" id=8]
+[ext_resource path="res://scripts/node/Brain.gd" type="Script" id=9]
 
 [sub_resource type="CubeMesh" id=1]
 size = Vector3( 5000, 100, 3000 )
@@ -47,19 +49,21 @@ material/0 = ExtResource( 6 )
 
 [node name="CommandRequest" type="HTTPRequest" parent="."]
 
-[node name="PollRequest" type="HTTPRequest" parent="."]
-
-[node name="PollTimer" type="Timer" parent="."]
-wait_time = 0.1
-autostart = true
-
 [node name="DoneRequest" type="HTTPRequest" parent="."]
 
-[node name="StatusRequest" type="HTTPRequest" parent="."]
+[node name="Spatial" type="Spatial" parent="."]
+script = ExtResource( 8 )
 
-[node name="StatusTimer" type="Timer" parent="."]
+[node name="Brain" type="Node" parent="."]
+script = ExtResource( 9 )
+
+[node name="StatusRequest" type="HTTPRequest" parent="Brain"]
+timeout = 2
+
+[node name="StatusTimer" type="Timer" parent="Brain"]
 wait_time = 3.0
 autostart = true
 
-[connection signal="timeout" from="PollTimer" to="." method="_on_PollTimer_timeout"]
-[connection signal="timeout" from="StatusTimer" to="." method="_on_StatusTimer_timeout"]
+[node name="PollRequest" type="HTTPRequest" parent="Brain"]
+
+[connection signal="timeout" from="Brain/StatusTimer" to="Brain" method="_on_StatusTimer_timeout"]
