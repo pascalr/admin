@@ -14,11 +14,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scripts/node/Controller.gd"
 }, {
-"base": "Motor",
-"class": "Counterweight",
-"language": "GDScript",
-"path": "res://scripts/node/motor/counterweight.gd"
-}, {
 "base": "Camera",
 "class": "FreelookCamera",
 "language": "GDScript",
@@ -76,7 +71,6 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "Controller": "",
-"Counterweight": "",
 "FreelookCamera": "",
 "Jar": "",
 "Motor": "",

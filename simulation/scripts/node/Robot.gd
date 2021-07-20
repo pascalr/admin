@@ -9,9 +9,7 @@ func _ready():
 			  $SupportTransversale/Trolley/Humerus/Wrist,
 			  $SupportTransversale/Trolley/Humerus/Wrist/Hand,
 			  $SupportTransversale/Trolley/Humerus/Wrist/Hand/GripL,
-			  $SupportTransversale/Trolley/Humerus/Wrist/Hand/GripR,
-			  $WeightStack1,
-			  $WeightStack2]
+			  $SupportTransversale/Trolley/Humerus/Wrist/Hand/GripR]
 
 func get_motor(id : String):
 	for motor in motors:

@@ -8,3 +8,5 @@ func get_start_position():
 
 func _position_changed():
 	self.translation.y = position
+	$WeightStack1.translation.y = -2*position
+	$WeightStack2.translation.y = -2*position

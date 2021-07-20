@@ -23,13 +23,13 @@ func nested():
 		yield(get_tree(), "idle_frame")
 
 func blah():
-	var x = 10
 	yield(get_tree(), "idle_frame")
+	return 10
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	print("before")
-	yield(blah(), "completed")
+	print(blah())
 	#yield(self, "did_something")
 	print("after")
 	
