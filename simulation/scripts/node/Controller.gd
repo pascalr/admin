@@ -19,8 +19,10 @@ func exec(cmd : String):
 
 func _move_straight(dest_t):
 	
-	var t = get_parent().get_t()
+	var t0 = get_parent().get_t()
+	var t = t0
 	var tf
+	var h0 = get_parent().get_h()
 	
 	while t != dest_t:
 
@@ -29,10 +31,10 @@ func _move_straight(dest_t):
 		elif t > dest_t:
 			tf = max(t-move_straight_inc_deg, dest_t)
 		var dt = tf-t
-		#var dh = sin(dt*PI/180.0)*Globals.humerus_length
+		var dh = sin((tf-t0)*PI/180.0)*Globals.humerus_length
 		get_parent().humerus.destination += dt
 		get_parent().wrist.destination -= dt
-		#get_parent().trolley.destination += dh
+		get_parent().trolley.destination = h0#-dh/2.0
 		
 		yield(get_parent().humerus, "destination_reached")
 		yield(get_parent().wrist, "destination_reached")

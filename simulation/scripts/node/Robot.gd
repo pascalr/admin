@@ -28,6 +28,9 @@ func get_angle():
 func get_t():
 	return humerus.position
 
+func get_h():
+	return trolley.position
+
 func move(axis, destination):
 	yield($Controller.exec("m"+axis+str(destination)), "completed")
 
