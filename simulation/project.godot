@@ -24,7 +24,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scripts/node/Jar.gd"
 }, {
-"base": "KinematicBody",
+"base": "Spatial",
 "class": "Motor",
 "language": "GDScript",
 "path": "res://scripts/node/motor/motor.gd"
