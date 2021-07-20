@@ -2,6 +2,8 @@ extends Node
 
 class_name Controller
 
+export var move_straight_inc_deg = 0.5
+
 # The controller simulates what the arduino receives and does.
 # It receives input of the form:
 # mh200y1000
@@ -10,8 +12,30 @@ func exec(cmd : String):
 	print("Controller received: "+cmd)
 	if cmd.begins_with("m"):
 		yield(_move(cmd.substr(1)), "completed")
+	if cmd.begins_with("t"):
+		yield(_move_straight(float(cmd.substr(1))), "completed")
 	else:
 		yield(get_tree(), "idle_frame")
+
+func _move_straight(dest_t):
+	
+	var t0
+	var t
+	
+	while true:
+		t0 = get_parent().get_t()
+		if t0 == dest_t:
+			yield(get_tree(), "idle_frame")
+			return
+		if t0 < dest_t:
+			t = min(t0+move_straight_inc_deg, dest_t)
+		elif t0 > dest_t:
+			t = max(t0-move_straight_inc_deg, dest_t)
+		var dt = t-t0
+		get_parent().humerus.destination += dt
+		get_parent().wrist.destination -= dt
+		# TODO h
+		yield(get_parent().humerus, "destination_reached")
 
 # y10.0x20a90.0
 func _move(s):

@@ -24,6 +24,9 @@ func _wait_done_moving():
 func get_angle():
 	return humerus.position + wrist.position
 
+func get_t():
+	return humerus.position
+
 func move(axis, destination):
 	yield($Controller.exec("m"+axis+str(destination)), "completed")
 
