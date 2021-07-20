@@ -22,11 +22,15 @@ func nested():
 		print("frame")
 		yield(get_tree(), "idle_frame")
 
+func blah():
+	var x = 10
+	yield(get_tree(), "idle_frame")
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	print("before")
-	do_something()
-	yield(self, "did_something")
+	yield(blah(), "completed")
+	#yield(self, "did_something")
 	print("after")
 	
 	#var peer = NetworkedMultiplayerENet.new()

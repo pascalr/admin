@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Node",
+"class": "Controller",
+"language": "GDScript",
+"path": "res://scripts/node/Controller.gd"
+}, {
 "base": "Motor",
 "class": "Counterweight",
 "language": "GDScript",
@@ -70,6 +75,7 @@ _global_script_classes=[ {
 "path": "res://scripts/user_coord.gd"
 } ]
 _global_script_class_icons={
+"Controller": "",
 "Counterweight": "",
 "FreelookCamera": "",
 "Jar": "",
@@ -93,7 +99,6 @@ config/icon="res://icon.png"
 [autoload]
 
 Lib="*res://scripts/autoload/lib.gd"
-Controller="*res://scripts/autoload/controller.gd"
 Globals="*res://scripts/autoload/globals.gd"
 
 [input]
