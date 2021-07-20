@@ -63,6 +63,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="Controller" type="Node" parent="."]
+script = ExtResource( 21 )
+
 [node name="SupportTransversale" type="Spatial" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 889, 0 )
 script = ExtResource( 8 )
@@ -235,6 +238,3 @@ material/0 = ExtResource( 17 )
 __meta__ = {
 "_edit_lock_": true
 }
-
-[node name="Controller" type="Node" parent="."]
-script = ExtResource( 21 )

@@ -2,11 +2,14 @@ extends Spatial
 
 var motors := []
 
+onready var humerus = $SupportTransversale/Trolley/Humerus
+onready var wrist = $SupportTransversale/Trolley/Humerus/Wrist
+
 func _ready():
 	motors = [$SupportTransversale,
 			  $SupportTransversale/Trolley,
-			  $SupportTransversale/Trolley/Humerus,
-			  $SupportTransversale/Trolley/Humerus/Wrist,
+			  humerus,
+			  wrist,
 			  $SupportTransversale/Trolley/Humerus/Wrist/Hand,
 			  $SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip]
 
@@ -17,6 +20,9 @@ func get_motor(id : String):
 
 func _wait_done_moving():
 	pass
+
+func get_angle():
+	return humerus.position + wrist.position
 
 func move(axis, destination):
 	yield($Controller.exec("m"+axis+str(destination)), "completed")
@@ -30,6 +36,9 @@ func goto(user_coord):
 	yield(move("h", polar.h), "completed")
 	yield(move("t", polar.t), "completed")
 	yield(move("a", polar.a), "completed")
+
+func _move_straigth(vect):
+	yield(goto(UserCoord.new().set_from_vector(vect, get_angle())), "completed")
 
 func _grab_above(obj):
 	var above = obj.translation+Vector3(0.0,obj.get_height()+10.0,0.0)
@@ -48,7 +57,7 @@ func _grab_in_front(obj):
 	yield(goto(UserCoord.new().set_from_vector(in_front, angle)), "completed")
 	var dest = obj.translation+Vector3(0.0,obj.get_height()-50.0,0.0)
 	yield(move("r", Globals.max_r), "completed")
-	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
+	yield(_move_straigth(dest), "completed")
 	yield(move("r", obj.diameter), "completed")
 
 func grab(obj):
