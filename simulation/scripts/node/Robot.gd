@@ -30,10 +30,10 @@ func goto(user_coord):
 	yield(move("y", polar.y), "completed")
 	yield(move("t", polar.t), "completed")
 	yield(move("a", polar.a), "completed")
-	yield(move("r", Globals.max_r), "completed")
 
 func grab(obj):
 	print("Grabing")
 	var dest = obj.translation+Vector3(0.0,obj.get_height()-20.0,0.0)
-	goto(UserCoord.new().set_from_vector(dest, 180.0))
-	move("r", obj.diameter)
+	yield(move("r", Globals.max_r), "completed")
+	yield(goto(UserCoord.new().set_from_vector(dest, 180.0)), "completed")
+	yield(move("r", obj.diameter), "completed")

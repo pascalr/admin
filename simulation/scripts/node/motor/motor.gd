@@ -26,9 +26,6 @@ func _init():
 	position = get_start_position()
 	destination = get_start_position()
 
-func _ready():
-	var _a = self.connect("destination_reached", get_tree().root.get_node("Simulation"), "_send_done")
-
 # This returns the value used to adjust the zero of the axis.
 func get_start_position():
 	assert(false)

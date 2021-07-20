@@ -1,13 +1,10 @@
 extends Spatial
 
 var current_selection
-var poll_received = true
 
 func _ready():
 	OS.set_low_processor_usage_mode(true)
 	OS.set_low_processor_usage_mode_sleep_usec(50000)
-
-	#var _v = command_request.connect("request_completed", self, "_jar_added")
 
 func _input(event):
 
@@ -21,8 +18,7 @@ func _input(event):
 					$Cupboard.open_doors()
 			KEY_G:
 				if current_selection != null:
-					var url = "http://localhost:4567/execute?cmd=grab+"+str(current_selection.get_obj_id())
-					var _err = $CommandRequest.request(url)
+					$Robot.grab(current_selection)
 			KEY_ENTER:
 				$UI/CommandLine.grab_focus()
 			KEY_ESCAPE:
@@ -46,8 +42,6 @@ func _obj_selected(obj):
 	$SideBar/VBox/ObjIdLabel.text = "Obj id: "+str(obj.get_obj_id())
 	current_selection = obj
 
-func _send_done():
-	print("Destination reached!")
-	$DoneRequest.request("http://localhost:4567/done")
+
 
 
