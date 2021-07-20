@@ -13,7 +13,8 @@ func exec(cmd : String):
 	print("Controller received: "+cmd)
 	if cmd.begins_with("m"):
 		yield(_move(cmd.substr(1)), "completed")
-	yield(get_tree(), "idle_frame")
+	else:
+		yield(get_tree(), "idle_frame")
 
 # y10.0x20a90.0
 func _move(s):
