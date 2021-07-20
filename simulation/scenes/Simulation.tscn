@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scenes/Robot.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Cupboard.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://scripts/Simulation.gd" type="Script" id=5]
 [ext_resource path="res://resources/kitchen_tiles.material" type="Material" id=6]
 [ext_resource path="res://scenes/SideBar.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scripts/node/JarFormat.gd" type="Script" id=8]
 
 [sub_resource type="CubeMesh" id=1]
 size = Vector3( 5000, 100, 3000 )
@@ -44,3 +45,14 @@ mesh = SubResource( 1 )
 material/0 = ExtResource( 6 )
 
 [node name="SideBar" parent="." instance=ExtResource( 7 )]
+
+[node name="Config" type="Node" parent="."]
+
+[node name="BigJar" type="Node" parent="Config"]
+script = ExtResource( 8 )
+diameter = 112.0
+lid_bottom_height = 155.8
+total_height = 169.0
+
+[connection signal="load_store" from="SideBar" to="." method="_on_load"]
+[connection signal="save" from="SideBar" to="." method="_on_save"]

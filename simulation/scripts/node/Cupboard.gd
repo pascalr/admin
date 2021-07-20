@@ -58,6 +58,7 @@ func _check_add_jar(event, click_position, shelf):
 		jar.translation = click_position
 		jar.shelf = shelf
 		jar.grab_above = shelf.grab_above
+		jar.format = get_node("/root/Simulation/Config/BigJar")
 		
 		for j in $Inventory.get_children():
 			if (click_position.y - j.translation.y) < 0.2:

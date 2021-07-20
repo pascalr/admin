@@ -46,19 +46,19 @@ func _grab_above(obj):
 	var dest = obj.translation+Vector3(0.0,obj.get_height()-20.0,0.0)
 	yield(move("r", Globals.max_r), "completed")
 	yield(goto(UserCoord.new().set_from_vector(dest, 180.0)), "completed")
-	yield(move("r", obj.diameter), "completed")
+	yield(move("r", obj.get_diameter()), "completed")
 
 func _grab_in_front(obj):
 	var angle = 180.0 if obj.translation.z < Globals.max_z else 0.0
 	var in_front = obj.translation
 	# FIXME: TODO in_front.x 
 	in_front.y += obj.get_height()-50.0
-	in_front.z += obj.diameter * -cos(angle*PI/180.0)
+	in_front.z += obj.get_diameter() * -cos(angle*PI/180.0)
 	yield(goto(UserCoord.new().set_from_vector(in_front, angle)), "completed")
 	var dest = obj.translation+Vector3(0.0,obj.get_height()-50.0,0.0)
 	yield(move("r", Globals.max_r), "completed")
 	yield(_move_straigth(dest), "completed")
-	yield(move("r", obj.diameter), "completed")
+	yield(move("r", obj.get_diameter()), "completed")
 
 func grab(obj):
 	print("Grabing")

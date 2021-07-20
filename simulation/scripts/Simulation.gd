@@ -27,7 +27,7 @@ func _input(event):
 						obj.selected = false
 			KEY_DELETE:
 				if current_selection != null:
-					$Cupboard/Inventory.remove_child(current_selection)
+					current_selection.queue_free()
 					_obj_deselected(current_selection)
 
 func _obj_deselected(_obj):
@@ -42,6 +42,30 @@ func _obj_selected(obj):
 	$SideBar/VBox/ObjIdLabel.text = "Obj id: "+str(obj.get_obj_id())
 	current_selection = obj
 
+func _on_save():
+	
+	var store = File.new()
+	store.open("user://state.save", File.WRITE)
+	var objs = $Cupboard/Inventory.get_children()
+	for node in objs:
+		var node_data = node.call("save")
+		store.store_line(to_json(node_data))
+	store.close()
 
+func _on_load():
+	
+	var store = File.new()
+	if not store.file_exists("user://state.save"):
+		return
 
+	store.open("user://state.save", File.READ)
+	while store.get_position() < store.get_len():
 
+		var node_data = parse_json(store.get_line())
+		
+		if node_data["class"] == "Jar":
+			$Cupboard/Inventory.add_child(Jar.new().load_data(get_tree().root, node_data))
+		else:
+			print("Unkown class " + node_data["class"] + " in store.")
+
+	store.close()

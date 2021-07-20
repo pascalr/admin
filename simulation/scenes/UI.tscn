@@ -15,9 +15,10 @@ __meta__ = {
 
 [node name="CommandLine" type="LineEdit" parent="."]
 anchor_top = 1.0
+anchor_right = 1.001
 anchor_bottom = 1.0
 margin_top = -123.0
-margin_right = 1025.0
+margin_right = -0.0240479
 margin_bottom = -99.0
 rect_min_size = Vector2( 0, 23 )
 placeholder_text = "Type command here..."
@@ -29,9 +30,10 @@ __meta__ = {
 
 [node name="Panel" type="Panel" parent="."]
 anchor_top = 1.0
+anchor_right = 1.001
 anchor_bottom = 1.0
 margin_top = -99.9999
-margin_right = 1025.0
+margin_right = -0.0240479
 margin_bottom = 6.10352e-05
 rect_min_size = Vector2( 0, 100 )
 __meta__ = {
@@ -40,7 +42,7 @@ __meta__ = {
 }
 
 [node name="Output" type="Label" parent="Panel"]
-margin_right = 1025.0
+anchor_right = 1.0
 margin_bottom = 100.0
 rect_min_size = Vector2( 0, 100 )
 __meta__ = {

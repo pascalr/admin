@@ -24,6 +24,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scripts/node/Jar.gd"
 }, {
+"base": "Node",
+"class": "JarFormat",
+"language": "GDScript",
+"path": "res://scripts/node/JarFormat.gd"
+}, {
 "base": "Spatial",
 "class": "Motor",
 "language": "GDScript",
@@ -78,6 +83,7 @@ _global_script_class_icons={
 "Controller": "",
 "FreelookCamera": "",
 "Jar": "",
+"JarFormat": "",
 "Motor": "",
 "MotorA": "",
 "MotorB": "",
