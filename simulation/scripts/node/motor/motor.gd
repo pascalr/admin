@@ -45,8 +45,8 @@ func _move(delta : float):
 	return position != destination
 
 func _process(delta : float):
-	if _moving && !_move(delta):
-		_moving = false
-		emit_signal("destination_reached")
-	else:
+	if _moving:
+		if !_move(delta):
+			_moving = false
+			emit_signal("destination_reached")
 		_position_changed()

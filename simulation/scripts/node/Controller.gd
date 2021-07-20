@@ -2,7 +2,7 @@ extends Node
 
 class_name Controller
 
-export var move_straight_inc_deg = 0.5
+export var move_straight_inc_deg = 1.0
 
 # The controller simulates what the arduino receives and does.
 # It receives input of the form:
@@ -19,23 +19,27 @@ func exec(cmd : String):
 
 func _move_straight(dest_t):
 	
-	var t0
-	var t
+	var t = get_parent().get_t()
+	var tf
 	
-	while true:
-		t0 = get_parent().get_t()
-		if t0 == dest_t:
-			yield(get_tree(), "idle_frame")
-			return
-		if t0 < dest_t:
-			t = min(t0+move_straight_inc_deg, dest_t)
-		elif t0 > dest_t:
-			t = max(t0-move_straight_inc_deg, dest_t)
-		var dt = t-t0
+	while t != dest_t:
+
+		if t < dest_t:
+			tf = min(t+move_straight_inc_deg, dest_t)
+		elif t > dest_t:
+			tf = max(t-move_straight_inc_deg, dest_t)
+		var dt = tf-t
+		#var dh = sin(dt*PI/180.0)*Globals.humerus_length
 		get_parent().humerus.destination += dt
 		get_parent().wrist.destination -= dt
-		# TODO h
+		#get_parent().trolley.destination += dh
+		
 		yield(get_parent().humerus, "destination_reached")
+		yield(get_parent().wrist, "destination_reached")
+		#yield(get_parent().trolley, "destination_reached")
+		t = tf
+		
+	yield(get_tree(), "idle_frame")
 
 # y10.0x20a90.0
 func _move(s):

@@ -4,10 +4,11 @@ var motors := []
 
 onready var humerus = $SupportTransversale/Trolley/Humerus
 onready var wrist = $SupportTransversale/Trolley/Humerus/Wrist
+onready var trolley = $SupportTransversale/Trolley
 
 func _ready():
 	motors = [$SupportTransversale,
-			  $SupportTransversale/Trolley,
+			  trolley,
 			  humerus,
 			  wrist,
 			  $SupportTransversale/Trolley/Humerus/Wrist/Hand,
