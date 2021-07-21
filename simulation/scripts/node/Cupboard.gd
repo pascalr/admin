@@ -3,8 +3,6 @@ extends Spatial
 export var max_angle = 150.0
 export var opening_speed = 50.0
 
-var min_dist_between_jars = 114.3
-
 var opening = false
 
 var jar_added_request : HTTPRequest
@@ -61,7 +59,8 @@ func _on_shelf_click(shelf, click_position):
 	
 	for j in $Inventory.get_children():
 		if (click_position.y - j.translation.y) < 0.2:
-			if ((click_position - j.translation).length() < min_dist_between_jars):
+			var min_dist = j.format.diameter/2.0 + jar.format.diameter/2.0 + Globals.min_dist_between_jars
+			if ((click_position - j.translation).length() < min_dist):
 				print("Collision!")
 				return
 	

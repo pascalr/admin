@@ -55,7 +55,12 @@ func _ready():
 	add_child(selection_box)
 	
 	shape = CollisionShape.new()
-	shape.shape = load('res://resources/jar_big.shape')
+	var cylinder = CylinderShape.new()
+	cylinder.radius = format.diameter/2.0
+	cylinder.height = format.height_with_lid
+	shape.translation.y = format.height_with_lid/2.0
+	shape.shape = cylinder
+	#shape.shape = load('res://resources/jar_big.shape')
 	
 	area = Area.new()
 	area.add_child(shape)

@@ -16,3 +16,5 @@ var start_position_h := 275.0
 
 var max_r := 138.0
 var max_z := 304.8
+
+var min_dist_between_jars = 6.25
