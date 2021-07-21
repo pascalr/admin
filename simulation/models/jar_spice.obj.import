@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/jar_spice.obj-08e40cc8daa6ef8701523971e47775a1.mesh"
+
+[deps]
+
+files=[ "res://.import/jar_spice.obj-08e40cc8daa6ef8701523971e47775a1.mesh" ]
+
+source_file="res://models/jar_spice.obj"
+dest_files=[ "res://.import/jar_spice.obj-08e40cc8daa6ef8701523971e47775a1.mesh", "res://.import/jar_spice.obj-08e40cc8daa6ef8701523971e47775a1.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

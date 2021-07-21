@@ -57,7 +57,7 @@ func _on_shelf_click(shelf, click_position):
 	jar.translation = click_position
 	jar.shelf = shelf
 	jar.grab_above = shelf.grab_above
-	jar.format = get_node("/root/Simulation/Config/BigJar")
+	jar.format = Settings.jar_format
 	
 	for j in $Inventory.get_children():
 		if (click_position.y - j.translation.y) < 0.2:

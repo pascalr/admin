@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/lid_spice.obj-9a98448bde4ffb0fe4789d2df09a3624.mesh"
+
+[deps]
+
+files=[ "res://.import/lid_spice.obj-9a98448bde4ffb0fe4789d2df09a3624.mesh" ]
+
+source_file="res://models/lid_spice.obj"
+dest_files=[ "res://.import/lid_spice.obj-9a98448bde4ffb0fe4789d2df09a3624.mesh", "res://.import/lid_spice.obj-9a98448bde4ffb0fe4789d2df09a3624.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

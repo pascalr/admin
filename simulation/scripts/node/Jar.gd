@@ -32,17 +32,13 @@ func _ready():
 	var _b = self.connect("deselected", get_tree().root.get_node("Simulation"), "_obj_deselected")
 	
 	body = MeshInstance.new()
-	var body_mesh : Mesh = load('res://models/jar_big.obj')
-	body.set_mesh(body_mesh)
-	# FIXME NOT WORKING...
+	body.set_mesh(format.jar_obj)
 	body.material_override = load('res://resources/glass.material')
 	add_child(body)
 	
 	lid = MeshInstance.new()
-	var lid_mesh : Mesh = load('res://models/lid_big.obj')
-	lid.set_mesh(lid_mesh)
+	lid.set_mesh(format.lid_obj)
 	lid.translation.y = format.height_with_lid - format.lid_height
-	# FIXME NOT WORKING...
 	lid.material_override = load('res://resources/lid_steel.material')
 	add_child(lid)
 	
