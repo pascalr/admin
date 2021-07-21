@@ -22,6 +22,13 @@ When you are behind the cupboard, positive A,T and Angle is clockwise. T0 is fac
 
 ## Anything else
 
+Calcul des taxes ne fonctionne pas:
+http://localhost:3000/bills/414
+Je calcul: 14.31. Sur la facture: 14.30.
+Probablement simplement cocher taxable ou pas pour chaque élément. Ensuite le calcul peut
+se faire avec toutes les chiffres après le point. Le problème là c'est que je garde juste 2
+chiffre après le point présentement pour les taxes des éléments.
+
 https://aqueous-fortress-30634.herokuapp.com/
 http://www.responsinator.com/?url=hedacuisine.com
 

@@ -22,8 +22,11 @@ func _move_straight(dest_t):
 	var t = get_parent().get_t()
 	
 	# FIXME: This only works for straight Z...
-	# Keep X the same
-	var x = Lib.calc_x(t,get_parent().get_a())
+	# When going straight in Z, wrist X == gripper X
+	# Only the humerus matters.
+	# Keep X the same as this value
+	var x0 = -sin(t*PI/180.0)*Globals.humerus_length
+	var h0 = get_parent().trolley.position
 	
 	while t != dest_t:
 
@@ -31,8 +34,9 @@ func _move_straight(dest_t):
 		var dt = tf-t
 		get_parent().humerus.destination += dt
 		get_parent().wrist.destination -= dt
-		var xf = Lib.calc_x(get_parent().humerus.destination, get_parent().wrist.destination)
-		get_parent().trolley.destination -= xf-x
+		#var xf = Lib.calc_x(get_parent().humerus.destination, get_parent().wrist.destination)
+		var x = -sin(tf*PI/180.0)*Globals.humerus_length
+		get_parent().trolley.destination = h0 + x - x0
 		
 		yield(get_parent().humerus, "destination_reached")
 		yield(get_parent().wrist, "destination_reached")
