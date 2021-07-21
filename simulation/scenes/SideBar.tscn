@@ -37,10 +37,33 @@ margin_right = 124.0
 margin_bottom = 44.0
 text = "Load"
 
-[node name="ObjIdLabel" type="Label" parent="VBox"]
+[node name="HSeparator" type="HSeparator" parent="VBox"]
 margin_top = 48.0
 margin_right = 124.0
-margin_bottom = 62.0
+margin_bottom = 52.0
+
+[node name="Label" type="Label" parent="VBox"]
+margin_top = 56.0
+margin_right = 124.0
+margin_bottom = 70.0
+text = "Jar format"
+
+[node name="JarFormatList" type="ItemList" parent="VBox"]
+margin_top = 74.0
+margin_right = 124.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 0, 58 )
+items = [ "BigJar", null, false, "MediumJar", null, false, "SmallJar", null, false, "Bottle", null, false ]
+
+[node name="HSeparator2" type="HSeparator" parent="VBox"]
+margin_top = 136.0
+margin_right = 124.0
+margin_bottom = 140.0
+
+[node name="ObjIdLabel" type="Label" parent="VBox"]
+margin_top = 144.0
+margin_right = 124.0
+margin_bottom = 158.0
 text = "Obj id:"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -48,3 +71,4 @@ __meta__ = {
 
 [connection signal="button_up" from="VBox/Button" to="." method="_on_Button_button_up"]
 [connection signal="button_up" from="VBox/Button2" to="." method="_on_Button2_button_up"]
+[connection signal="item_selected" from="VBox/JarFormatList" to="." method="_on_ItemList_item_selected"]

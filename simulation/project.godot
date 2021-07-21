@@ -112,6 +112,7 @@ config/icon="res://icon.png"
 
 Lib="*res://scripts/autoload/lib.gd"
 Globals="*res://scripts/autoload/globals.gd"
+Settings="*res://scripts/autoload/settings.gd"
 
 [input]
 

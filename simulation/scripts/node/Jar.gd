@@ -21,7 +21,7 @@ func get_obj_id():
 
 # The height of the jar when empty, or the height with the lid when present
 func get_height():
-	return format.total_height
+	return format.height_with_lid
 
 func get_diameter():
 	return format.diameter
@@ -41,20 +41,20 @@ func _ready():
 	lid = MeshInstance.new()
 	var lid_mesh : Mesh = load('res://models/lid_big.obj')
 	lid.set_mesh(lid_mesh)
-	lid.translation.y = format.lid_bottom_height
+	lid.translation.y = format.height_with_lid - format.lid_height
 	# FIXME NOT WORKING...
 	lid.material_override = load('res://resources/lid_steel.material')
 	add_child(lid)
 	
 	selection_box = MeshInstance.new()
 	var selection_box_mesh = CubeMesh.new()
-	selection_box_mesh.size = Vector3(format.diameter, format.total_height, format.diameter)
+	selection_box_mesh.size = Vector3(format.diameter, format.height_with_lid, format.diameter)
 	var selection_mat = SpatialMaterial.new()
 	selection_mat.albedo_color = Color8(0,0,255,80)
 	selection_mat.flags_transparent = true
 	selection_box_mesh.material = selection_mat
 	selection_box.set_mesh(selection_box_mesh)
-	selection_box.translation.y = format.total_height/2.0
+	selection_box.translation.y = format.height_with_lid/2.0
 	selection_box.visible = false
 	add_child(selection_box)
 	
