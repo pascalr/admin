@@ -16,10 +16,8 @@ func _ready():
 
 func _on_CommandLine_text_entered(new_text):
 	print("Command: " + new_text)
-	#var url = "http://localhost:4567/execute?cmd="+new_text.replace(" ","+")
-	#var _err = command_request.request(url)
-	#Brain.execute_command(new_text)
-	get_tree().root.get_node("Simulation/Robot").goto(UserCoord.new().set_from_units(300.0,1000.0,150.0,180.0))
+	
+	$Interpreter.run(new_text)
 	output = get_node("Panel/Output")
 	get_node("CommandLine").clear() # FIXME: Should be self?
 	text = output.text

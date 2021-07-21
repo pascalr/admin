@@ -18,4 +18,7 @@ func inc(current, increment, maximum):
 		return min(current+increment, maximum)
 	elif current > maximum:
 		return max(current-increment, maximum)
+
+#func calc_x(t,a):
+	#var x = 
 	
