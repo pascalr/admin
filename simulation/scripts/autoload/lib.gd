@@ -12,4 +12,10 @@ func strip_edges(in_array: Array) -> Array:
 	for e in in_array:
 		out_array.push_back(e.strip_edges())
 	return out_array
+
+func inc(current, increment, maximum):
+	if current < maximum:
+		return min(current+increment, maximum)
+	elif current > maximum:
+		return max(current-increment, maximum)
 	

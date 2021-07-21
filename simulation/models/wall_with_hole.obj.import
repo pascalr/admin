@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wall_with_hole.obj-397d9110e7c7bbf30e38e18001f9a331.mesh"
+
+[deps]
+
+files=[ "res://.import/wall_with_hole.obj-397d9110e7c7bbf30e38e18001f9a331.mesh" ]
+
+source_file="res://models/wall_with_hole.obj"
+dest_files=[ "res://.import/wall_with_hole.obj-397d9110e7c7bbf30e38e18001f9a331.mesh", "res://.import/wall_with_hole.obj-397d9110e7c7bbf30e38e18001f9a331.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

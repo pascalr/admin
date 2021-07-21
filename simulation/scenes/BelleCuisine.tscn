@@ -386,3 +386,6 @@ material/375 = null
 material/376 = null
 material/377 = null
 material/378 = null
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1678.42, 945.506, 1812.38 )

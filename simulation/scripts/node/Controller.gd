@@ -21,15 +21,11 @@ func _move_straight(dest_t):
 	
 	var t0 = get_parent().get_t()
 	var t = t0
-	var tf
 	var h0 = get_parent().get_h()
 	
 	while t != dest_t:
 
-		if t < dest_t:
-			tf = min(t+move_straight_inc_deg, dest_t)
-		elif t > dest_t:
-			tf = max(t-move_straight_inc_deg, dest_t)
+		var tf = Lib.inc(t,move_straight_inc_deg, dest_t)
 		var dt = tf-t
 		var dh = sin((tf-t0)*PI/180.0)*Globals.humerus_length
 		get_parent().humerus.destination += dt
