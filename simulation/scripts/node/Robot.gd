@@ -25,9 +25,10 @@ func _wait_done_moving():
 func get_angle():
 	return humerus.position + wrist.position
 
+func get_a():
+	return wrist.position
 func get_t():
 	return humerus.position
-
 func get_h():
 	return trolley.position
 

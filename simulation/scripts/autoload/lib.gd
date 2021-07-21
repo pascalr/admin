@@ -19,6 +19,7 @@ func inc(current, increment, maximum):
 	elif current > maximum:
 		return max(current-increment, maximum)
 
-#func calc_x(t,a):
-	#var x = 
-	
+func calc_x(t,a):
+	var t_x = -sin(t*PI/180.0)*Globals.humerus_length
+	var a_x = sin(a*PI/180.0)*Globals.forearm_grip_length
+	return t_x + a_x

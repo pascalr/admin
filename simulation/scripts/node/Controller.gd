@@ -19,18 +19,20 @@ func exec(cmd : String):
 
 func _move_straight(dest_t):
 	
-	var t0 = get_parent().get_t()
-	var t = t0
-	var h0 = get_parent().get_h()
+	var t = get_parent().get_t()
+	
+	# FIXME: This only works for straight Z...
+	# Keep X the same
+	var x = Lib.calc_x(t,get_parent().get_a())
 	
 	while t != dest_t:
 
 		var tf = Lib.inc(t,move_straight_inc_deg, dest_t)
 		var dt = tf-t
-		var dh = sin((tf-t0)*PI/180.0)*Globals.humerus_length
 		get_parent().humerus.destination += dt
 		get_parent().wrist.destination -= dt
-		get_parent().trolley.destination = h0#-dh/2.0
+		var xf = Lib.calc_x(get_parent().humerus.destination, get_parent().wrist.destination)
+		get_parent().trolley.destination -= xf-x
 		
 		yield(get_parent().humerus, "destination_reached")
 		yield(get_parent().wrist, "destination_reached")
