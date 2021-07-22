@@ -16,8 +16,8 @@ func _on_Button2_button_up():
 func _on_ItemList_item_selected(index):
 	var name = $VBox/JarFormatList.get_item_text(index)
 	if get_node_or_null("/root/Simulation/Config/"+name) != null:
-		Settings.jar_format = get_node("/root/Simulation/Config/"+name)
-		print(Settings.jar_format)
+		Heda.jar_format = Heda.config.get_node(name)
+		print(Heda.jar_format)
 
 
 func _on_Button3_button_up():
