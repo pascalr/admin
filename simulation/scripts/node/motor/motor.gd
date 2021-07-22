@@ -36,6 +36,15 @@ func is_moving():
 func _position_changed():
 	pass
 
+func test_position(pos):
+	if pos == null:
+		return null
+	elif pos < min_position:
+		return "Invalid position " + id + ". Got " + str(pos) + ". Expected above " + str(min_position)
+	elif pos > max_position:
+		return "Invalid position " + id + ". Got " + str(pos) + ". Expected below " + str(max_position)
+	return null
+
 # Returns whether the motor still needs to move.
 func _move(delta : float):
 	if position < destination:

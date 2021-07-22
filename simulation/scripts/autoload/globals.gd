@@ -1,5 +1,10 @@
 extends Node
 
+# Globals are shared constants
+# Settings are shared variables
+
+enum {ACTION_SELECT, ACTION_ADD_JAR, ACTION_PUT_DOWN}
+
 var machine_depth := 7.0*25.4
 var working_shelf_depth := 12.0*25.4
 
@@ -14,6 +19,10 @@ var start_position_r := 30.0
 var start_position_y := 889.0
 var start_position_h := 275.0
 
+onready var robot : Robot = get_node("/root/Simulation/Robot")
+
+#var max_h := 850
+#var max_y := 1380
 var max_r := 138.0
 var max_z := 304.8
 

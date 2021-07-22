@@ -19,6 +19,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scripts/node/FreelookCamera.gd"
 }, {
+"base": "Spatial",
+"class": "Heda",
+"language": "GDScript",
+"path": "res://scripts/Simulation.gd"
+}, {
 "base": "Node",
 "class": "Interpreter",
 "language": "GDScript",
@@ -75,6 +80,11 @@ _global_script_classes=[ {
 "path": "res://scripts/polar_coord.gd"
 }, {
 "base": "Spatial",
+"class": "Robot",
+"language": "GDScript",
+"path": "res://scripts/node/Robot.gd"
+}, {
+"base": "Spatial",
 "class": "Shelf",
 "language": "GDScript",
 "path": "res://scripts/node/Shelf.gd"
@@ -87,6 +97,7 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "Controller": "",
 "FreelookCamera": "",
+"Heda": "",
 "Interpreter": "",
 "Jar": "",
 "JarFormat": "",
@@ -98,6 +109,7 @@ _global_script_class_icons={
 "MotorT": "",
 "MotorY": "",
 "PolarCoord": "",
+"Robot": "",
 "Shelf": "",
 "UserCoord": ""
 }

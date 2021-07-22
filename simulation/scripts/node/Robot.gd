@@ -1,18 +1,18 @@
 extends Spatial
 
-var motors := []
+class_name Robot
 
+signal grabbed_changed
+
+onready var support = $SupportTransversale
 onready var humerus = $SupportTransversale/Trolley/Humerus
 onready var wrist = $SupportTransversale/Trolley/Humerus/Wrist
 onready var trolley = $SupportTransversale/Trolley
+onready var hand = $SupportTransversale/Trolley/Humerus/Wrist/Hand
+onready var grip = $SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip
+onready var motors = [support, trolley, humerus, wrist, hand, grip]
 
-func _ready():
-	motors = [$SupportTransversale,
-			  trolley,
-			  humerus,
-			  wrist,
-			  $SupportTransversale/Trolley/Humerus/Wrist/Hand,
-			  $SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip]
+var grabbed : Spatial
 
 func get_motor(id : String):
 	for motor in motors:
@@ -65,17 +65,33 @@ func _grab_in_front(obj):
 	var angle = 180.0 if obj.translation.z < Globals.max_z else 0.0
 	var in_front = obj.translation
 	# FIXME: TODO in_front.x 
-	in_front.y += obj.get_height()-50.0
-	in_front.z += obj.get_diameter() * -cos(angle*PI/180.0)
+	in_front.y += 60.0
+	in_front.z += obj.get_diameter()/2.0 * -cos(angle*PI/180.0)
 	yield(goto(UserCoord.new().set_from_vector(in_front, angle)), "completed")
-	var dest = obj.translation+Vector3(0.0,obj.get_height()-50.0,0.0)
+	var dest = obj.translation+Vector3(0.0,60.0,0.0)
 	yield(move("r", Globals.max_r), "completed")
 	yield(_move_straigth(dest), "completed")
 	yield(move("r", obj.get_diameter()), "completed")
 
 func grab(obj):
+	if grabbed:
+		Lib.error("Robot can't grab. It is already grabbing.")
+		return
 	print("Grabing")
 	if obj.grab_above:
-		_grab_above(obj)
+		yield(_grab_above(obj),"completed")
 	else:
-		_grab_in_front(obj)
+		yield(_grab_in_front(obj),"completed")
+	grabbed = obj
+	emit_signal("grabbed_changed")
+	Lib.parent_adopt_child(hand, obj)
+	get_node("/root/Simulation/SideBar/VBox/Grabbed").text = "Grabbed: "+str(obj.get_obj_id())
+
+func test_limits():
+	for motor in motors:
+		motor.position = motor.min_position
+		motor.destination = motor.min_position
+		yield(get_tree().create_timer(4.0), "timeout")
+		motor.position = motor.max_position
+		motor.destination = motor.max_position
+		yield(get_tree().create_timer(4.0), "timeout")
