@@ -19,8 +19,6 @@ var start_position_r := 30.0
 var start_position_y := 889.0
 var start_position_h := 275.0
 
-onready var robot : Robot = get_node("/root/Simulation/Robot")
-
 #var max_h := 850
 #var max_y := 1380
 var max_r := 138.0

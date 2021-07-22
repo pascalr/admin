@@ -25,19 +25,19 @@
 [sub_resource type="CubeMesh" id=1]
 size = Vector3( 5000, 100, 3000 )
 
-[sub_resource type="SpatialMaterial" id=4]
+[sub_resource type="SpatialMaterial" id=2]
 albedo_texture = ExtResource( 19 )
 roughness_texture = ExtResource( 18 )
 normal_enabled = true
 normal_scale = 1.0
 normal_texture = ExtResource( 20 )
 
-[sub_resource type="CylinderMesh" id=2]
+[sub_resource type="CylinderMesh" id=3]
 top_radius = 55.0
 bottom_radius = 55.0
 height = 150.0
 
-[sub_resource type="SpatialMaterial" id=3]
+[sub_resource type="SpatialMaterial" id=4]
 albedo_texture = ExtResource( 9 )
 uv1_scale = Vector3( 2, 2, 2 )
 
@@ -70,7 +70,7 @@ material/0 = ExtResource( 6 )
 [node name="wall_with_hole" type="MeshInstance" parent="Room"]
 transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 492.504, 0, 0 )
 mesh = ExtResource( 10 )
-material/0 = SubResource( 4 )
+material/0 = SubResource( 2 )
 
 [node name="DirectionalLight2" type="DirectionalLight" parent="Room"]
 transform = Transform( -0.680703, 0.632608, -0.369391, 0.0306805, 0.528424, 0.848426, 0.731916, 0.566194, -0.379108, 478.537, 1650.5, -1975.95 )
@@ -119,8 +119,8 @@ lid_obj = ExtResource( 16 )
 [node name="Corn" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 681.865, 956.166, 133.991 )
 visible = false
-mesh = SubResource( 2 )
-material/0 = SubResource( 3 )
+mesh = SubResource( 3 )
+material/0 = SubResource( 4 )
 
 [node name="ErrorWindow" parent="." instance=ExtResource( 21 )]
 

@@ -1,7 +1,5 @@
 extends Spatial
 
-class_name Heda
-
 var current_selection
 
 func _ready():

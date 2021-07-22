@@ -19,11 +19,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scripts/node/FreelookCamera.gd"
 }, {
-"base": "Spatial",
-"class": "Heda",
-"language": "GDScript",
-"path": "res://scripts/Simulation.gd"
-}, {
 "base": "Node",
 "class": "Interpreter",
 "language": "GDScript",
@@ -97,7 +92,6 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "Controller": "",
 "FreelookCamera": "",
-"Heda": "",
 "Interpreter": "",
 "Jar": "",
 "JarFormat": "",
@@ -125,6 +119,7 @@ config/icon="res://icon.png"
 Lib="*res://scripts/autoload/lib.gd"
 Globals="*res://scripts/autoload/globals.gd"
 Settings="*res://scripts/autoload/settings.gd"
+Heda="*res://scripts/autoload/heda.gd"
 
 [input]
 
