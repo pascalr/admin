@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://scenes/Robot.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Cupboard.tscn" type="PackedScene" id=2]
@@ -20,7 +20,6 @@
 [ext_resource path="res://assets/ambientcg_plaster001/Plaster001_1K_Roughness.jpg" type="Texture" id=18]
 [ext_resource path="res://assets/ambientcg_plaster001/Plaster001_1K_Color.jpg" type="Texture" id=19]
 [ext_resource path="res://assets/ambientcg_plaster001/Plaster001_1K_Normal.jpg" type="Texture" id=20]
-[ext_resource path="res://scenes/ErrorWindow.tscn" type="PackedScene" id=21]
 
 [sub_resource type="CubeMesh" id=1]
 size = Vector3( 5000, 100, 3000 )
@@ -125,8 +124,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 681.865, 956.166, 133.991 )
 visible = false
 mesh = SubResource( 3 )
 material/0 = SubResource( 4 )
-
-[node name="ErrorWindow" parent="." instance=ExtResource( 21 )]
 
 [connection signal="load_store" from="SideBar" to="." method="_on_load"]
 [connection signal="save" from="SideBar" to="." method="_on_save"]
