@@ -1,7 +1,7 @@
 extends Control
 
 onready var command_line = $BottomPanel/CommandLine
-onready var output = $BottomPanel/Panel/Output
+onready var output = $BottomPanel/Output
 
 var command_request : HTTPRequest
 
