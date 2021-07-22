@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Spatial",
+"class": "Body",
+"language": "GDScript",
+"path": "res://scripts/node/Body.gd"
+}, {
 "base": "Node",
 "class": "Controller",
 "language": "GDScript",
@@ -24,7 +29,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scripts/node/Interpreter.gd"
 }, {
-"base": "Spatial",
+"base": "Body",
 "class": "Jar",
 "language": "GDScript",
 "path": "res://scripts/node/Jar.gd"
@@ -33,6 +38,11 @@ _global_script_classes=[ {
 "class": "JarFormat",
 "language": "GDScript",
 "path": "res://scripts/node/JarFormat.gd"
+}, {
+"base": "Spatial",
+"class": "Lid",
+"language": "GDScript",
+"path": "res://scripts/node/Lid.gd"
 }, {
 "base": "Spatial",
 "class": "Motor",
@@ -90,11 +100,13 @@ _global_script_classes=[ {
 "path": "res://scripts/user_coord.gd"
 } ]
 _global_script_class_icons={
+"Body": "",
 "Controller": "",
 "FreelookCamera": "",
 "Interpreter": "",
 "Jar": "",
 "JarFormat": "",
+"Lid": "",
 "Motor": "",
 "MotorA": "",
 "MotorB": "",

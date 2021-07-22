@@ -1,16 +1,12 @@
-extends Spatial
+extends Body
 
 class_name Jar
-
-signal selected(obj)
-signal deselected(obj)
 
 var jar_id : int
 var grab_above : bool
 var shelf : Shelf
 var format : JarFormat
 
-var body : MeshInstance
 var lid : MeshInstance
 var shape : CollisionShape
 var area : Area
@@ -31,10 +27,10 @@ func _ready():
 	var _a = self.connect("selected", get_tree().root.get_node("Simulation"), "_obj_selected")
 	var _b = self.connect("deselected", get_tree().root.get_node("Simulation"), "_obj_deselected")
 	
-	body = MeshInstance.new()
-	body.set_mesh(format.jar_obj)
-	body.material_override = load('res://resources/glass.material')
-	add_child(body)
+	mesh = MeshInstance.new()
+	mesh.set_mesh(format.jar_obj)
+	mesh.material_override = load('res://resources/glass.material')
+	add_child(mesh)
 	
 	lid = MeshInstance.new()
 	lid.set_mesh(format.lid_obj)

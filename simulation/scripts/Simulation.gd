@@ -11,16 +11,16 @@ func _input(event):
 	if event is InputEventKey and event.is_pressed():
 		match event.scancode:
 			KEY_I:
-				if !$UI/CommandLine.has_focus():
+				if !$UI.command_line.has_focus():
 					$Cupboard.close_doors()
 			KEY_O:
-				if !$UI/CommandLine.has_focus():
+				if !$UI.command_line.has_focus():
 					$Cupboard.open_doors()
 			KEY_G:
 				if current_selection != null:
 					$Robot.grab(current_selection)
 			KEY_ENTER:
-				$UI/CommandLine.grab_focus()
+				$UI.command_line.grab_focus()
 			KEY_ESCAPE:
 				for obj in $Cupboard/Inventory.get_children():
 					if obj is Jar:

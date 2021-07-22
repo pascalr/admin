@@ -118,6 +118,8 @@ lid_height = 13.75
 jar_obj = ExtResource( 17 )
 lid_obj = ExtResource( 16 )
 
+[node name="Ingredients" type="Node" parent="Config"]
+
 [node name="Corn" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 681.865, 956.166, 133.991 )
 visible = false

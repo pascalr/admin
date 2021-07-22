@@ -39,8 +39,11 @@ func _on_ActionList_item_selected(index):
 
 func _on_Button4_button_up():
 	
-	var x = rng.randf_range(Globals.min_x, Globals.max_x)
-	var z = rng.randf_range(Globals.min_z, Globals.max_z)
-	var pos = Vector3(x,Heda.cupboard.working_shelf.get_height(),z)
-	Heda.cupboard._check_add_jar(Heda.cupboard.working_shelf, pos)
+	# Try 10 times
+	for i in range(0,10):
+		var x = rng.randf_range(Globals.min_x, Globals.max_x)
+		var z = rng.randf_range(Globals.min_z, Globals.max_z)
+		var pos = Vector3(x,Heda.cupboard.working_shelf.get_height(),z)
+		if Heda.cupboard._check_add_jar(Heda.cupboard.working_shelf, pos):
+			break
 	pass

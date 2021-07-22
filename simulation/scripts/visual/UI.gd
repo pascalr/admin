@@ -1,7 +1,7 @@
 extends Control
 
-var output
-var text
+onready var command_line = $BottomPanel/CommandLine
+onready var output = $BottomPanel/Panel/Output
 
 var command_request : HTTPRequest
 
@@ -18,9 +18,8 @@ func _on_CommandLine_text_entered(new_text):
 	print("Command: " + new_text)
 	
 	$Interpreter.run(new_text)
-	output = get_node("Panel/Output")
-	get_node("CommandLine").clear() # FIXME: Should be self?
-	text = output.text
+	command_line.clear() # FIXME: Should be self?
+	var text = output.text
 	if !text.empty():
 		text += "\n"
 	text += "> " + new_text
