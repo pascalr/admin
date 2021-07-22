@@ -4,6 +4,7 @@ export var max_angle = 150.0
 export var opening_speed = 50.0
 
 onready var inventory = $Inventory
+onready var working_shelf = $Shelves/WorkingShelf
 
 var opening = false
 

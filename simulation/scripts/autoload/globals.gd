@@ -22,6 +22,10 @@ var start_position_h := 275.0
 #var max_h := 850
 #var max_y := 1380
 var max_r := 138.0
+var min_x := 0.0
+var max_x := 40*25.4
+var min_y := 0.0
+var min_z := 0.0
 var max_z := 304.8
 
 var min_dist_between_jars = 6.25

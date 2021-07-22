@@ -1,19 +1,20 @@
 # Grandes priorités
 1. **Monter la première tablette pour être capable de prendre des pots en dessous.**
-1. Canac se soir. 4 1x4x6 pin noueux, 1 1x4x8, 2 à 4 ampoules LED 100W
 1. Rapettisser la taille à 22.375-3.75-4.75 = **13.875** et ajuster l'humérus en conséquence.
 1. Page d'acceuil de vente
 1. Caméra
 1. Vendre à 1 client. Vendre des locations, parce que le produit risque de changer.
 
 # À perte de temps
-1. Mettre ma facture canac
 1. Faire un backup des photos sur clé USB
 
+# Simulation
+1. Je n'ai pas tant envie de refaire ce que j'avais avant (sweep, unscrew, screw, ...) alors en attendant focuser sur le rangement des pots.
+1. Commencer avec être capable de voir les pots de la tablette de travail et de les ranges partout.
+1. Ensuite être capable d'aller chercher les pots partout et de les rammener à la tablette de travail.
+
 # Planification
-1. Designer les petites tablettes à pots.
 1. Sweep dans la simulation.
-1. Lisse d'acier.
 1. Plus de poids sur le contrepoids: Présentement 1.25"X3/8"X4.5". **Acheter 3/8"X1.25"X10'** **Chez les parents, couper l'acier, percer 0.25" au centre.**
 1. Fabriquer le nouveau chariot. **PLA noir**, **acheter quincaillerie**
 1. Beau boitier électrique, bien câblé.

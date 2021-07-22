@@ -238,7 +238,7 @@ __meta__ = {
 mesh = ExtResource( 13 )
 material/0 = ExtResource( 8 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Shelves/WorkingShelf/area"]
+[node name="collision_shape" type="CollisionShape" parent="Shelves/WorkingShelf/area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, 873.125, 152.4 )
 shape = SubResource( 5 )
 

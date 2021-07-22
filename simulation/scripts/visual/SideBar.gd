@@ -3,9 +3,12 @@ extends Control
 signal save
 signal load_store
 
+var rng = RandomNumberGenerator.new()
+
 func _ready():
 	$VBox/ActionList.select(0)
 	$VBox/JarFormatList.select(0)
+	rng.randomize()
 
 func _on_Button_button_up():
 	emit_signal("save")
@@ -15,8 +18,8 @@ func _on_Button2_button_up():
 
 func _on_ItemList_item_selected(index):
 	var name = $VBox/JarFormatList.get_item_text(index)
-	if get_node_or_null("/root/Simulation/Config/"+name) != null:
-		Heda.jar_format = Heda.config.get_node(name)
+	if Heda.config.get_node_or_null("JarFormats/"+name) != null:
+		Heda.jar_format = Heda.config.get_node("JarFormats/"+name)
 		print(Heda.jar_format)
 
 
@@ -32,3 +35,12 @@ func _on_ActionList_item_selected(index):
 			print("Adding jar")
 		Globals.ACTION_PUT_DOWN:
 			print("Putting down")
+
+
+func _on_Button4_button_up():
+	
+	var x = rng.randf_range(Globals.min_x, Globals.max_x)
+	var z = rng.randf_range(Globals.min_z, Globals.max_z)
+	var pos = Vector3(x,Heda.cupboard.working_shelf.get_height(),z)
+	Heda.cupboard._check_add_jar(Heda.cupboard.working_shelf, pos)
+	pass

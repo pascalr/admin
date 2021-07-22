@@ -6,6 +6,9 @@ class_name Shelf
 
 export var grab_above := true
 
+func get_height():
+	return $area/collision_shape.translation.y + $area/collision_shape.shape.extents.y
+
 func _ready():
 	for child in get_children():
 		if child is CollisionObject:
