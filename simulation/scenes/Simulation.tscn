@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://scenes/Robot.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Cupboard.tscn" type="PackedScene" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://scenes/UI.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scripts/Simulation.gd" type="Script" id=5]
 [ext_resource path="res://resources/kitchen_tiles.material" type="Material" id=6]
-[ext_resource path="res://scenes/SideBar.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scripts/node/JarFormat.gd" type="Script" id=8]
 [ext_resource path="res://assets/ingredients/corn.jpg" type="Texture" id=9]
 [ext_resource path="res://models/wall_with_hole.obj" type="ArrayMesh" id=10]
@@ -79,8 +78,6 @@ light_energy = 0.35
 transform = Transform( 0.943223, 9.83858e-08, 0.332161, -0.173702, 0.852367, 0.493253, -0.283123, -0.522945, 0.803972, 1031.23, 1953.64, 1846.72 )
 light_energy = 0.35
 
-[node name="SideBar" parent="." instance=ExtResource( 7 )]
-
 [node name="Config" type="Node" parent="."]
 
 [node name="JarFormats" type="Node" parent="Config"]
@@ -124,6 +121,3 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 681.865, 956.166, 133.991 )
 visible = false
 mesh = SubResource( 3 )
 material/0 = SubResource( 4 )
-
-[connection signal="load_store" from="SideBar" to="." method="_on_load"]
-[connection signal="save" from="SideBar" to="." method="_on_save"]

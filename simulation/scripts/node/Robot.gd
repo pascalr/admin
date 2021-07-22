@@ -103,7 +103,7 @@ func _put_down_above(position):
 	yield(goto(UserCoord.new().set_from_vector(dest, 180.0)), "completed")
 	yield(move("r", Globals.max_r), "completed")
 
-func _put_down_in_front(shelf, position):
+func _put_down_in_front(_shelf, _position):
 	if grabbed_above:
 		Heda.error("Robot can't put down in front. The object was grabbed above.")
 		return

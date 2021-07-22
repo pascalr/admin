@@ -34,12 +34,12 @@ func _obj_deselected(_obj):
 	if current_selection != null:
 		current_selection.selection_box.visible = false
 	current_selection = null
-	$SideBar/VBox/ObjIdLabel.text = "Selected: "
+	$UI/SideBar/VBox/ObjIdLabel.text = "Selected: "
 
 func _obj_selected(obj):
 	if current_selection != null:
 		current_selection.selection_box.visible = false
-	$SideBar/VBox/ObjIdLabel.text = "Selected: "+str(obj.get_obj_id())
+	$UI/SideBar/VBox/ObjIdLabel.text = "Selected: "+str(obj.get_obj_id())
 	current_selection = obj
 
 func _on_save():
