@@ -22,6 +22,8 @@ When you are behind the cupboard, positive A,T and Angle is clockwise. T0 is fac
 
 ## Anything else
 
+FUCK: https://godotengine.org/qa/41481/yield-get_tree-idle_frame-doubles-the-execution
+
 Calcul des taxes ne fonctionne pas:
 http://localhost:3000/bills/414
 Je calcul: 14.31. Sur la facture: 14.30.

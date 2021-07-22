@@ -13,6 +13,8 @@ onready var grip = $SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip
 onready var motors = [support, trolley, humerus, wrist, hand, grip]
 
 var grabbed : Spatial
+var grabbed_above : bool
+var grabbed_height : float
 
 func get_motor(id : String):
 	for motor in motors:
@@ -54,28 +56,32 @@ func _move_straigth(vect):
 	yield($Controller.exec("t"+str(polar.t)), "completed")
 
 func _grab_above(obj):
+	grabbed_height = obj.get_height()-20.0
 	var above = obj.translation+Vector3(0.0,obj.get_height()+10.0,0.0)
 	yield(goto(UserCoord.new().set_from_vector(above, 180.0)), "completed")
-	var dest = obj.translation+Vector3(0.0,obj.get_height()-20.0,0.0)
+	var dest = obj.translation+Vector3(0.0,grabbed_height,0.0)
 	yield(move("r", Globals.max_r), "completed")
 	yield(goto(UserCoord.new().set_from_vector(dest, 180.0)), "completed")
 	yield(move("r", obj.get_diameter()), "completed")
+	grabbed_above = true
 
 func _grab_in_front(obj):
+	grabbed_height = 60.0
 	var angle = 180.0 if obj.translation.z < Globals.max_z else 0.0
 	var in_front = obj.translation
 	# FIXME: TODO in_front.x 
-	in_front.y += 60.0
+	in_front.y += grabbed_height
 	in_front.z += obj.get_diameter()/2.0 * -cos(angle*PI/180.0)
 	yield(goto(UserCoord.new().set_from_vector(in_front, angle)), "completed")
 	var dest = obj.translation+Vector3(0.0,60.0,0.0)
 	yield(move("r", Globals.max_r), "completed")
 	yield(_move_straigth(dest), "completed")
 	yield(move("r", obj.get_diameter()), "completed")
+	grabbed_above = false
 
 func grab(obj):
 	if grabbed:
-		Lib.error("Robot can't grab. It is already grabbing.")
+		Heda.error("Robot can't grab. It is already grabbing.")
 		return
 	print("Grabing")
 	if obj.grab_above:
@@ -86,6 +92,37 @@ func grab(obj):
 	emit_signal("grabbed_changed")
 	Lib.parent_adopt_child(hand, obj)
 	get_node("/root/Simulation/SideBar/VBox/Grabbed").text = "Grabbed: "+str(obj.get_obj_id())
+
+func _put_down_above(position):
+#	if !grabbed_above:
+#		Heda.error("Robot can't put down above. The object was grabbed in front.")
+#		return
+	#var above = position+Vector3(0.0,grabbed.get_height()+10.0,0.0)
+	#yield(goto(UserCoord.new().set_from_vector(above, 180.0)), "completed")
+	var dest = position+Vector3(0.0,grabbed_height,0.0)
+	yield(goto(UserCoord.new().set_from_vector(dest, 180.0)), "completed")
+	yield(move("r", Globals.max_r), "completed")
+
+func _put_down_in_front(shelf, position):
+	if grabbed_above:
+		Heda.error("Robot can't put down in front. The object was grabbed above.")
+		return
+	pass
+
+func put_down(shelf, position):
+	if !grabbed:
+		Heda.error("Robot can't put down. It is not holding any object.")
+		return
+	print("Put down " + str(position))
+	if shelf.grab_above:
+		yield(_put_down_above(position),"completed")
+	else:
+		yield(_put_down_in_front(shelf, position),"completed")
+		
+	Lib.parent_adopt_child(Heda.cupboard.inventory, grabbed)
+	grabbed = null
+	emit_signal("grabbed_changed")
+	
 
 func test_limits():
 	for motor in motors:

@@ -18,22 +18,22 @@
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 177.8, 9.525, 44.45 )
 
-[sub_resource type="BoxShape" id=7]
+[sub_resource type="BoxShape" id=2]
 extents = Vector3( 177.8, 9.525, 44.45 )
 
-[sub_resource type="BoxShape" id=2]
+[sub_resource type="BoxShape" id=3]
 extents = Vector3( 508, 20, 304.8 )
 
-[sub_resource type="BoxShape" id=3]
+[sub_resource type="BoxShape" id=4]
 extents = Vector3( 508, 9.525, 60.325 )
 
-[sub_resource type="BoxShape" id=4]
+[sub_resource type="BoxShape" id=5]
 extents = Vector3( 508, 9.525, 152.4 )
 
-[sub_resource type="BoxShape" id=5]
+[sub_resource type="BoxShape" id=6]
 extents = Vector3( 508, 1, 1 )
 
-[sub_resource type="BoxShape" id=6]
+[sub_resource type="BoxShape" id=7]
 extents = Vector3( 508, 9.525, 60.325 )
 
 [node name="Cupboard" type="Spatial"]
@@ -138,7 +138,7 @@ script = ExtResource( 14 )
 
 [node name="CollisionShape" type="CollisionShape" parent="door_r/Shelves/DootShelf1/Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 381.295, 0 )
-shape = SubResource( 7 )
+shape = SubResource( 2 )
 
 [node name="DootShelf2" type="Spatial" parent="door_r/Shelves"]
 script = ExtResource( 14 )
@@ -147,7 +147,7 @@ script = ExtResource( 14 )
 
 [node name="CollisionShape" type="CollisionShape" parent="door_r/Shelves/DootShelf2/Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 768.767, 0 )
-shape = SubResource( 7 )
+shape = SubResource( 2 )
 
 [node name="DootShelf3" type="Spatial" parent="door_r/Shelves"]
 script = ExtResource( 14 )
@@ -156,7 +156,7 @@ script = ExtResource( 14 )
 
 [node name="CollisionShape" type="CollisionShape" parent="door_r/Shelves/DootShelf3/Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1093.23, 0 )
-shape = SubResource( 7 )
+shape = SubResource( 2 )
 
 [node name="DootShelf4" type="Spatial" parent="door_r/Shelves"]
 script = ExtResource( 14 )
@@ -165,7 +165,7 @@ script = ExtResource( 14 )
 
 [node name="CollisionShape" type="CollisionShape" parent="door_r/Shelves/DootShelf4/Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1416.44, 0 )
-shape = SubResource( 7 )
+shape = SubResource( 2 )
 
 [node name="Shelves" type="Spatial" parent="."]
 __meta__ = {
@@ -182,7 +182,7 @@ __meta__ = {
 
 [node name="shape" type="CollisionShape" parent="Shelves/BottomShelf/area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, -10, 304.8 )
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 
 [node name="LowerSmallShelf" type="Spatial" parent="Shelves"]
 script = ExtResource( 14 )
@@ -196,7 +196,7 @@ __meta__ = {
 
 [node name="shape" type="CollisionShape" parent="Shelves/LowerSmallShelf/area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, -9.525, 60.325 )
-shape = SubResource( 3 )
+shape = SubResource( 4 )
 
 [node name="mesh" type="MeshInstance" parent="Shelves/LowerSmallShelf/area"]
 mesh = ExtResource( 7 )
@@ -217,7 +217,7 @@ __meta__ = {
 
 [node name="shape" type="CollisionShape" parent="Shelves/LowerSmallShelf2/area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, -9.525, 60.325 )
-shape = SubResource( 3 )
+shape = SubResource( 4 )
 
 [node name="mesh" type="MeshInstance" parent="Shelves/LowerSmallShelf2/area"]
 mesh = ExtResource( 7 )
@@ -240,7 +240,7 @@ material/0 = ExtResource( 8 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Shelves/WorkingShelf/area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, 873.125, 152.4 )
-shape = SubResource( 4 )
+shape = SubResource( 5 )
 
 [node name="UpperShelf2" type="Spatial" parent="Shelves"]
 script = ExtResource( 14 )
@@ -252,7 +252,7 @@ visible = false
 
 [node name="CollisionShape" type="CollisionShape" parent="Shelves/UpperShelf2/area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, 0, 0 )
-shape = SubResource( 5 )
+shape = SubResource( 6 )
 
 [node name="small_shelf2" type="MeshInstance" parent="Shelves/UpperShelf2/area"]
 mesh = ExtResource( 7 )
@@ -270,7 +270,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1193.8, 0 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Shelves/UpperShelf1/area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, -9.525, 60.325 )
-shape = SubResource( 6 )
+shape = SubResource( 7 )
 
 [node name="small_shelf" type="MeshInstance" parent="Shelves/UpperShelf1/area"]
 mesh = ExtResource( 7 )

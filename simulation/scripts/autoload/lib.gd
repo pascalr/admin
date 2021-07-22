@@ -26,15 +26,9 @@ func calc_x(t,a):
 
 # reparent with transform
 func parent_adopt_child(parent, child : Spatial):
+	if child == null:
+		return
 	var t = child.global_transform
 	child.get_parent().remove_child(child)
 	parent.add_child(child)
 	child.global_transform = t
-
-#onready var core = get_node("/root/Simulation/")
-#onready var robot : Robot = get_node("/root/Simulation/Robot")
-#onready var error_window = get_node("/root/Simulation/ErrorWindow")
-
-func error(msg):
-	print("Error: "+str(msg))
-	#error_window.popup()

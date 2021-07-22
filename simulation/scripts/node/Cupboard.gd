@@ -3,6 +3,8 @@ extends Spatial
 export var max_angle = 150.0
 export var opening_speed = 50.0
 
+onready var inventory = $Inventory
+
 var opening = false
 
 var jar_added_request : HTTPRequest
@@ -50,7 +52,7 @@ func _add_jar(jar):
 	params += "&y="+str(jar.translation.y)+"&z="+str(jar.translation.z)
 	var _err = jar_added_request.request("http://localhost:4567/add_jar?"+params)
 
-func _on_shelf_click(shelf, click_position):
+func _check_add_jar(shelf, click_position):
 	var jar = Jar.new()
 	jar.translation = click_position
 	jar.shelf = shelf
@@ -65,3 +67,12 @@ func _on_shelf_click(shelf, click_position):
 				return
 	
 	_add_jar(jar)
+
+func _on_shelf_click(shelf, click_position):
+	match Heda.current_action:
+		Globals.ACTION_ADD_JAR:
+			_check_add_jar(shelf,click_position)
+		Globals.ACTION_PUT_DOWN:
+			Heda.robot.put_down(shelf, click_position)
+	
+	

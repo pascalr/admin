@@ -24,6 +24,7 @@ func _on_Button3_button_up():
 	get_parent().get_node("Robot").test_limits()
 
 func _on_ActionList_item_selected(index):
+	Heda.current_action = index
 	match index:
 		Globals.ACTION_SELECT:
 			print("Selecting")

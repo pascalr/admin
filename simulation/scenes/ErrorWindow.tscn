@@ -33,12 +33,12 @@ __meta__ = {
 
 [node name="Message" type="TextEdit" parent="VBox"]
 margin_right = 600.0
-margin_bottom = 200.0
-rect_min_size = Vector2( 0.005, 200 )
+margin_bottom = 175.0
+rect_min_size = Vector2( 0.005, 175 )
 readonly = true
 
 [node name="Button" type="Button" parent="VBox"]
-margin_top = 204.0
+margin_top = 179.0
 margin_right = 600.0
-margin_bottom = 224.0
+margin_bottom = 199.0
 text = "OK"
