@@ -16,11 +16,3 @@ func error(msg):
 	window.dialog_text = msg
 	window.popup()
 	yield(get_tree(), "idle_frame")
-
-func show_invalid_polar(polar, coord, t):
-	while(true):
-		robot.set_polar(polar.set_from_user_coord_and_t(coord, -t))
-		yield(get_tree().create_timer(5.0),"timeout")
-		robot.set_polar(polar.set_from_user_coord_and_t(coord, t))
-		yield(get_tree().create_timer(5.0),"timeout")
-		pass

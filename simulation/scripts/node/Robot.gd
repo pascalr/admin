@@ -60,6 +60,12 @@ func get_to(polar):
 
 func goto(user_coord):
 	print("Goto "+str(user_coord))
+	var currently_above = support.position > Heda.cupboard.working_shelf.get_height()
+	var going_above = user_coord.y > Heda.cupboard.working_shelf.get_height()
+	if currently_above != going_above:
+		var safe = PolarCoord.new().set_from_units(trolley.min_position,support.position,90.0,0.0)
+		yield(get_to(safe), "completed")
+		yield(move("y", user_coord.y), "completed")
 	var polar = PolarCoord.new().set_from_user_coord(user_coord)
 	yield(get_to(polar), "completed")
 

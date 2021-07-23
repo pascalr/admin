@@ -14,6 +14,10 @@ func set_a(_a):
 	elif _a < Heda.robot.wrist.min_position:
 		self.a = _a + 360.0
 
+func set_from_units(_h,_y,_t,_a,_b=0.0):
+	h=_h; y=_y; t=_t; a=_a; b=_b
+	return self
+
 func set_from_user_coord_and_t(coord : UserCoord, _t : float):
 	self.y = coord.y
 	self.t = _t
@@ -46,21 +50,25 @@ func set_from_user_coord(coord : UserCoord):
 	var _t = acos((Globals.trolley_z - elbow_z)/Globals.humerus_length)*180.0/PI
 	assert(!is_nan(_t))
 
-	# return the first valid solution
 	self.set_from_user_coord_and_t(coord, -_t)
-	var _first_try
-	if self.invalid_destination():
-		_first_try = self.error
-		self.error = ""
-		self.set_from_user_coord_and_t(coord, _t)
+	var neg_t_h = self.h
+	var neg_t_valid = invalid_destination()
 	
-	#if self.invalid_destination():
-	#	Heda.show_invalid_polar(self,coord,-t)
-		
-	#assert(!self.invalid_destination())
+	self.set_from_user_coord_and_t(coord, _t)
 	
-	if self.invalid_destination():
+	if neg_t_valid and invalid_destination():
+		return self.set_from_user_coord_and_t(coord, -_t)
+	elif !neg_t_valid and !invalid_destination():
+		return self
+	elif !neg_t_valid:
 		push_error("Invalid polar coord destination.")
+
+	# return the solution with h closest to the middle	
+	var middle_h = (Heda.robot.trolley.min_position + Heda.robot.trolley.max_position)/2.0
+	if abs(self.h - middle_h) < abs(neg_t_h - middle_h):
+		return self
+	else:
+		self.set_from_user_coord_and_t(coord, -_t)
 
 	return self
 
