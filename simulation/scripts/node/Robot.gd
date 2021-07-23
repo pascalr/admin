@@ -124,7 +124,7 @@ func _put_down_in_front(_shelf, position):
 func put_down(shelf, position):
 	if position == null:
 		return Heda.error("Robot can't put down. Invalid position null.")
-	if !grabbed:
+	if grabbed == null:
 		return Heda.error("Robot can't put down. It is not holding any object.")
 	print("Put down " + str(position))
 	if shelf.grab_above:
@@ -141,6 +141,8 @@ func weigh(obj):
 	print("Weight: "+str(obj.weight)+"g")
 
 func store(obj):
+	if obj == null:
+		return Heda.error("Robot can't store. Invalid obj null.")
 	for shelf in Heda.cupboard.shelves:
 		if shelf.preferred_jar_format == obj.format.name:
 			var pos = shelf.get_free_positition(obj)

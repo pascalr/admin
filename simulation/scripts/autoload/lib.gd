@@ -34,10 +34,10 @@ func parent_adopt_child(parent, child : Spatial):
 	child.global_transform = t
 
 func best_angle_for_vect(vect):
-	if vect.z < Globals.trolley_z-Globals.forearm_grip_length:
-		return 180.0
-	elif vect.z > Globals.trolley_z-Globals.humerus_length+Globals.forearm_grip_length:
-		return 0.0
+	#if vect.z < Globals.trolley_z-Globals.forearm_grip_length:
+	#	return 180.0
+	#elif vect.z > Globals.trolley_z-Globals.humerus_length+Globals.forearm_grip_length:
+	#	return 0.0
 	var l = Globals.humerus_length+Globals.forearm_grip_length
 	var angle = asin((Globals.trolley_z-vect.z)/l)*180.0/PI
 	return -90.0 - angle if vect.x > Globals.max_x/2.0 else 90 + angle
