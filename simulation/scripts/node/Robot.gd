@@ -131,7 +131,8 @@ func put_down(shelf, position):
 		yield(_put_down_above(position),"completed")
 	else:
 		yield(_put_down_in_front(shelf, position),"completed")
-		
+	
+	grabbed.shelf = shelf
 	Lib.parent_adopt_child(shelf, grabbed)
 	grabbed = null
 	emit_signal("grabbed_changed")

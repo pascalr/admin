@@ -7,6 +7,8 @@ signal destination_reached
 export var id : String
 export var min_position := 0.0
 export var max_position := 0.0
+# The value used to adjust the zero of the axis.
+export var start_position := 0.0
 export var speed := 200.0
 export var reverse_direction = false
 
@@ -22,13 +24,9 @@ func set_destination(dest):
 
 #func _physics_process(delta):
 
-func _init():
-	position = get_start_position()
-	destination = get_start_position()
-
-# This returns the value used to adjust the zero of the axis.
-func get_start_position():
-	assert(false)
+func _ready():
+	position = start_position
+	destination = start_position
 
 func is_moving():
 	return position == destination
