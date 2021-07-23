@@ -15,6 +15,10 @@ var gripper_width := 6.0*25.4
 
 var trolley_z := working_shelf_depth + machine_depth/2.0
 
+# The safe height to move above
+# (The tallest jars mesure 168.275)
+var safe_height := 170.0
+
 #var max_h := 850
 #var max_y := 1380
 var max_r := 138.0

@@ -288,3 +288,5 @@ material/0 = ExtResource( 8 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="Bodies" type="Node" parent="."]

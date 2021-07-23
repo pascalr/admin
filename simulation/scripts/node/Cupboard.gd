@@ -7,6 +7,9 @@ onready var working_shelf = $Shelves/WorkingShelf
 
 onready var shelves = $Shelves.get_children() + $door_l/Shelves.get_children() + $door_r/Shelves.get_children()
 
+# Bodies that are not attached to the hand
+onready var bodies = $Bodies
+
 var opening = false
 
 var jar_added_request : HTTPRequest
@@ -47,7 +50,7 @@ func _add_jar(jar):
 	jar.jar_id = jar_id_counter
 	jar_id_counter += 1
 	
-	jar.shelf.add_child(jar)
+	bodies.add_child(jar)
 	jar.visible = true # TODO: Set to visible only when the request is confirmed
 	
 #	var params = "jar_id="+str(jar.jar_id)+"&x="+str(jar.translation.x)

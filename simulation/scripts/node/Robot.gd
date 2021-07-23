@@ -83,6 +83,7 @@ func _grab_above(obj):
 	yield(move("r", Globals.max_r), "completed")
 	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
 	yield(move("r", obj.get_diameter()), "completed")
+	yield(move("y", obj.translation.y+Globals.safe_height), "completed")
 	grabbed_above = true
 
 func _grab_in_front(obj):

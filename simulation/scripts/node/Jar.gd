@@ -12,6 +12,7 @@ var lid : MeshInstance
 var shape : CollisionShape
 var area : Area
 var selection_box : MeshInstance
+var content : MeshInstance
 
 func get_obj_id():
 	return jar_id
@@ -51,6 +52,18 @@ func _ready():
 	selection_box.visible = false
 	add_child(selection_box)
 	
+	content = MeshInstance.new()
+	var content_mesh = CylinderMesh.new()
+	content_mesh.top_radius = format.diameter/2.0-5.0
+	content_mesh.bottom_radius = format.diameter/2.0-5.0
+	content_mesh.height = format.height_with_lid/2.0
+	var content_mat = SpatialMaterial.new()
+	content_mat.albedo_color = Color8(255,255,255,255)
+	content_mesh.material = content_mat
+	content.set_mesh(content_mesh)
+	content.translation.y = content_mesh.height/2.0+5.0
+	add_child(content)
+	
 	shape = CollisionShape.new()
 	var cylinder = CylinderShape.new()
 	cylinder.radius = format.diameter/2.0
@@ -79,7 +92,6 @@ func _toggle_selection(_camera, event, _click_position, _click_normal, _shape_id
 func save():
 	var save_dict = {
 		"class" : "Jar",
-		"parent" : get_parent().get_path(),
 		"pos_x" : translation.x,
 		"pos_y" : translation.y,
 		"pos_z" : translation.z,
@@ -102,7 +114,7 @@ func load_data(data):
 	self.format = Heda.config.get_node("JarFormats/"+data["jar_format"])
 	
 	for i in data.keys():
-		if i == "pos_x" or i == "pos_y" or i == "pos_z" or i == "jar_format" or i == "parent":
+		if i == "pos_x" or i == "pos_y" or i == "pos_z" or i == "jar_format":
 			continue
 		self.set(i, data[i])
 	
