@@ -188,22 +188,21 @@ margin_right = 187.0
 margin_bottom = 122.0
 
 [node name="Selection" type="PanelContainer" parent="ToolPanel/VBox"]
-visible = false
 margin_top = 140.0
 margin_right = 201.0
-margin_bottom = 246.0
+margin_bottom = 264.0
 script = ExtResource( 6 )
 
 [node name="VBox" type="VBoxContainer" parent="ToolPanel/VBox/Selection"]
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 194.0
-margin_bottom = 99.0
+margin_bottom = 117.0
 
 [node name="ObjectName" type="Label" parent="ToolPanel/VBox/Selection/VBox"]
 margin_right = 187.0
 margin_bottom = 14.0
-text = "Objet123"
+text = "Objet 123"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -299,11 +298,37 @@ __meta__ = {
 [node name="JarDetails" type="VBoxContainer" parent="ToolPanel/VBox/Selection/VBox"]
 margin_top = 72.0
 margin_right = 187.0
-margin_bottom = 92.0
+margin_bottom = 110.0
+
+[node name="Weight" type="HSplitContainer" parent="ToolPanel/VBox/Selection/VBox/JarDetails"]
+margin_right = 187.0
+margin_bottom = 14.0
+split_offset = 33
+
+[node name="Name" type="Label" parent="ToolPanel/VBox/Selection/VBox/JarDetails/Weight"]
+margin_right = 78.0
+margin_bottom = 14.0
+text = "Weight"
+
+[node name="Value" type="Label" parent="ToolPanel/VBox/Selection/VBox/JarDetails/Weight"]
+margin_left = 90.0
+margin_right = 187.0
+margin_bottom = 14.0
+text = "10.0"
+
+[node name="ColorRect" type="ColorRect" parent="ToolPanel/VBox/Selection/VBox/JarDetails/Weight/Value"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.145098, 0.145098, 0.164706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Store" type="Button" parent="ToolPanel/VBox/Selection/VBox/JarDetails"]
+margin_top = 18.0
 margin_right = 187.0
-margin_bottom = 20.0
+margin_bottom = 38.0
 text = "Store"
 
 [node name="SideBar" type="Control" parent="."]

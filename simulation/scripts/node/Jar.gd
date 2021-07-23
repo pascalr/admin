@@ -4,7 +4,6 @@ class_name Jar
 
 var jar_id : int
 var grab_above : bool
-var weight : float
 var shelf : Shelf
 var format : JarFormat
 
@@ -13,6 +12,8 @@ var shape : CollisionShape
 var area : Area
 var selection_box : MeshInstance
 var content : MeshInstance
+
+var ingredients := []
 
 func get_class():
 	return "Jar"
@@ -27,8 +28,21 @@ func get_height():
 func get_diameter():
 	return format.diameter
 
-func percentage_filled():
-	pass
+func content_volume():
+	var volume := 0.0
+	for ing in ingredients:
+		volume += ing.volume()
+	return volume
+
+# 0 is empty, 1 is full
+func ratio_filled():
+	return content_volume()/format.volume
+
+func get_weight():
+	var weight := 0.0
+	for ing in ingredients:
+		weight += ing.weight
+	return weight
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -62,7 +76,7 @@ func _ready():
 	var content_mesh = CylinderMesh.new()
 	content_mesh.top_radius = format.diameter/2.0-5.0
 	content_mesh.bottom_radius = format.diameter/2.0-5.0
-	content_mesh.height = format.height_with_lid/2.0
+	content_mesh.height = format.max_content_height*ratio_filled()
 	var content_mat = SpatialMaterial.new()
 	content_mat.albedo_color = Color8(255,255,255,255)
 	content_mesh.material = content_mat
@@ -103,7 +117,7 @@ func save():
 		"pos_z" : translation.z,
 		"jar_format" : format.name,
 		"jar_id" : jar_id,
-		"weight" : weight,
+		#"weight" : ,
 		"grab_above" : grab_above
 	}
 	return save_dict

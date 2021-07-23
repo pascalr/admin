@@ -7,6 +7,8 @@ onready var cupboard = core.get_node("Cupboard")
 onready var UI = core.get_node("UI")
 
 onready var jar_format = config.get_node("JarFormats/Big")
+onready var food = config.get_node("Foods/farine")
+
 var current_action : int
 var current_selection
 

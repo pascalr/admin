@@ -64,6 +64,12 @@ func _check_add_jar(shelf, click_position):
 	jar.grab_above = shelf.grab_above
 	jar.format = Heda.jar_format
 	
+	var ing = Ingredient.new()
+	var full_weight = Heda.jar_format.volume * Heda.food.density
+	ing.food = Heda.food
+	ing.weight = full_weight/2.0 + full_weight/2.0*randf()
+	jar.ingredients = [ing]
+	
 	var is_valid = Lib.is_valid_jar_position(jar, click_position)
 	if is_valid:
 		_add_jar(jar)

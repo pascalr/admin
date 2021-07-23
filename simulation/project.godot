@@ -19,10 +19,20 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scripts/node/Controller.gd"
 }, {
+"base": "Node",
+"class": "Food",
+"language": "GDScript",
+"path": "res://scripts/node/Food.gd"
+}, {
 "base": "Camera",
 "class": "FreelookCamera",
 "language": "GDScript",
 "path": "res://scripts/node/FreelookCamera.gd"
+}, {
+"base": "Node",
+"class": "Ingredient",
+"language": "GDScript",
+"path": "res://scripts/node/Ingredient.gd"
 }, {
 "base": "Node",
 "class": "Interpreter",
@@ -102,7 +112,9 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "Body": "",
 "Controller": "",
+"Food": "",
 "FreelookCamera": "",
+"Ingredient": "",
 "Interpreter": "",
 "Jar": "",
 "JarFormat": "",

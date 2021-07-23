@@ -7,7 +7,11 @@ func show_details(obj):
 	$VBox/Y/Value.text = "%.2f" % obj.translation.y
 	$VBox/Z/Value.text = "%.2f" % obj.translation.z
 	
-	#if obj.get_class() == "Jar":
+	if obj.get_class() == "Jar":
+		$VBox/JarDetails.visible = true
+		$VBox/JarDetails/Weight/Value.text = "%.2f" % obj.get_weight()
+	else:
+		$VBox/JarDetails.visible = false
 
 func hide_details():
 	self.visible = false
