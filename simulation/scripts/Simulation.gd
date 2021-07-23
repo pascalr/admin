@@ -1,7 +1,5 @@
 extends Spatial
 
-var current_selection
-
 func _ready():
 	OS.set_low_processor_usage_mode(true)
 	OS.set_low_processor_usage_mode_sleep_usec(50000)
@@ -17,8 +15,8 @@ func _input(event):
 				if !$UI.command_line.has_focus():
 					$Cupboard.open_doors()
 			KEY_G:
-				if current_selection != null:
-					$Robot.grab(current_selection)
+				if Heda.current_selection != null:
+					$Robot.grab(Heda.current_selection)
 			KEY_ENTER:
 				$UI.command_line.grab_focus()
 			KEY_ESCAPE:
@@ -26,28 +24,28 @@ func _input(event):
 					if obj is Jar:
 						obj.selected = false
 			KEY_DELETE:
-				if current_selection != null:
-					current_selection.queue_free()
-					_obj_deselected(current_selection)
+				if Heda.current_selection != null:
+					Heda.current_selection.queue_free()
+					_obj_deselected(Heda.current_selection)
 
 func _obj_deselected(_obj):
-	if current_selection != null:
-		current_selection.selection_box.visible = false
-	current_selection = null
+	if Heda.current_selection != null:
+		Heda.current_selection.selection_box.visible = false
+	Heda.current_selection = null
 	$UI/SideBar/VBox/ObjIdLabel.text = "Selected: "
 
 func _obj_selected(obj):
-	if current_selection != null:
-		current_selection.selection_box.visible = false
+	if Heda.current_selection != null:
+		Heda.current_selection.selection_box.visible = false
 	$UI/SideBar/VBox/ObjIdLabel.text = "Selected: "+str(obj.get_obj_id())
-	current_selection = obj
+	Heda.current_selection = obj
 
 func _on_save():
 	
 	var store = File.new()
 	store.open("user://state.save", File.WRITE)
-	var objs = $Cupboard/Inventory.get_children()
-	for node in objs:
+	
+	for node in get_tree().get_nodes_in_group("save"):
 		var node_data = node.call("save")
 		store.store_line(to_json(node_data))
 	store.close()
@@ -59,8 +57,7 @@ func _on_load():
 		return
 	
 	# Clear previous objects
-	var objs = $Cupboard/Inventory.get_children()
-	for node in objs:
+	for node in get_tree().get_nodes_in_group("save"):
 		node.queue_free()
 
 	store.open("user://state.save", File.READ)
@@ -69,7 +66,7 @@ func _on_load():
 		var node_data = parse_json(store.get_line())
 		
 		if node_data["class"] == "Jar":
-			$Cupboard/Inventory.add_child(Jar.new().load_data(get_tree().root, node_data))
+			$Cupboard/Inventory.add_child(Jar.new().load_data(node_data))
 		else:
 			print("Unkown class " + node_data["class"] + " in store.")
 

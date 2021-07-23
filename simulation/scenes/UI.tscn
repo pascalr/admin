@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/visual/UI.gd" type="Script" id=1]
 [ext_resource path="res://scripts/visual/CommandLine.gd" type="Script" id=2]
 [ext_resource path="res://scripts/node/Interpreter.gd" type="Script" id=3]
 [ext_resource path="res://scripts/visual/SideBar.gd" type="Script" id=4]
+[ext_resource path="res://scenes/InventoryItem.tscn" type="PackedScene" id=5]
 
 [node name="UI" type="Control"]
 anchor_right = 1.0
@@ -66,7 +67,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Control" type="Panel" parent="."]
+[node name="ToolPanel" type="Panel" parent="."]
 anchor_left = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -75,6 +76,115 @@ margin_bottom = -123.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="VBox" type="VBoxContainer" parent="ToolPanel"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 208.0
+margin_bottom = 470.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Inventory" type="PanelContainer" parent="ToolPanel/VBox"]
+margin_right = 201.0
+margin_bottom = 136.0
+
+[node name="VBox" type="VBoxContainer" parent="ToolPanel/VBox/Inventory"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 194.0
+margin_bottom = 129.0
+
+[node name="Label" type="Label" parent="ToolPanel/VBox/Inventory/VBox"]
+margin_right = 187.0
+margin_bottom = 14.0
+text = "Inventory"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="ToolPanel/VBox/Inventory/VBox/Label"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.415686, 0.415686, 0.415686, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ToolPanel/VBox/Inventory/VBox"]
+margin_top = 18.0
+margin_right = 187.0
+margin_bottom = 32.0
+
+[node name="Label" type="Label" parent="ToolPanel/VBox/Inventory/VBox/HBoxContainer"]
+margin_right = 35.0
+margin_bottom = 14.0
+text = "Sucre"
+
+[node name="ProgressBar" type="ProgressBar" parent="ToolPanel/VBox/Inventory/VBox/HBoxContainer"]
+margin_left = 39.0
+margin_right = 179.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 140, 0 )
+value = 70.0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ToolPanel/VBox/Inventory/VBox"]
+margin_top = 36.0
+margin_right = 187.0
+margin_bottom = 50.0
+
+[node name="Label" type="Label" parent="ToolPanel/VBox/Inventory/VBox/HBoxContainer2"]
+margin_right = 39.0
+margin_bottom = 14.0
+text = "Farine"
+
+[node name="ProgressBar" type="ProgressBar" parent="ToolPanel/VBox/Inventory/VBox/HBoxContainer2"]
+margin_left = 43.0
+margin_right = 183.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 140, 0 )
+value = 45.0
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="ToolPanel/VBox/Inventory/VBox"]
+margin_top = 54.0
+margin_right = 187.0
+margin_bottom = 68.0
+
+[node name="Label" type="Label" parent="ToolPanel/VBox/Inventory/VBox/HBoxContainer3"]
+margin_right = 19.0
+margin_bottom = 14.0
+text = "Sel"
+
+[node name="ProgressBar" type="ProgressBar" parent="ToolPanel/VBox/Inventory/VBox/HBoxContainer3"]
+margin_left = 23.0
+margin_right = 163.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 140, 0 )
+value = 90.0
+
+[node name="InventoryItem" parent="ToolPanel/VBox/Inventory/VBox" instance=ExtResource( 5 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 72.0
+margin_right = 187.0
+margin_bottom = 86.0
+
+[node name="InventoryItem2" parent="ToolPanel/VBox/Inventory/VBox" instance=ExtResource( 5 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 90.0
+margin_right = 187.0
+margin_bottom = 104.0
+
+[node name="InventoryItem3" parent="ToolPanel/VBox/Inventory/VBox" instance=ExtResource( 5 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 108.0
+margin_right = 187.0
+margin_bottom = 122.0
 
 [node name="SideBar" type="Control" parent="."]
 anchor_bottom = 1.0
@@ -123,60 +233,72 @@ margin_right = 124.0
 margin_bottom = 92.0
 text = "Add random"
 
-[node name="HSeparator3" type="HSeparator" parent="SideBar/VBox"]
+[node name="Store" type="Button" parent="SideBar/VBox"]
 margin_top = 96.0
 margin_right = 124.0
-margin_bottom = 100.0
+margin_bottom = 116.0
+text = "Store"
+
+[node name="Weigh" type="Button" parent="SideBar/VBox"]
+margin_top = 120.0
+margin_right = 124.0
+margin_bottom = 140.0
+text = "Weigh"
+
+[node name="HSeparator3" type="HSeparator" parent="SideBar/VBox"]
+margin_top = 144.0
+margin_right = 124.0
+margin_bottom = 148.0
 
 [node name="Label2" type="Label" parent="SideBar/VBox"]
-margin_top = 104.0
+margin_top = 152.0
 margin_right = 124.0
-margin_bottom = 118.0
+margin_bottom = 166.0
 text = "Action"
 
 [node name="ActionList" type="ItemList" parent="SideBar/VBox"]
-margin_top = 122.0
+margin_top = 170.0
 margin_right = 124.0
-margin_bottom = 180.0
+margin_bottom = 228.0
 rect_min_size = Vector2( 0, 58 )
 items = [ "Select", null, false, "Add jar", null, false, "Put down", null, false ]
 
 [node name="HSeparator" type="HSeparator" parent="SideBar/VBox"]
-margin_top = 184.0
+margin_top = 232.0
 margin_right = 124.0
-margin_bottom = 188.0
+margin_bottom = 236.0
 
 [node name="Label" type="Label" parent="SideBar/VBox"]
-margin_top = 192.0
+margin_top = 240.0
 margin_right = 124.0
-margin_bottom = 206.0
+margin_bottom = 254.0
 text = "Jar format"
 
 [node name="JarFormatList" type="ItemList" parent="SideBar/VBox"]
-margin_top = 210.0
+margin_top = 258.0
 margin_right = 124.0
-margin_bottom = 268.0
+margin_bottom = 316.0
 rect_min_size = Vector2( 0, 58 )
 items = [ "BigJar", null, false, "MediumJar", null, false, "SmallJar", null, false, "SpiceJar", null, false, "Bottle", null, false ]
 
 [node name="HSeparator2" type="HSeparator" parent="SideBar/VBox"]
-margin_top = 272.0
+margin_top = 320.0
 margin_right = 124.0
-margin_bottom = 276.0
+margin_bottom = 324.0
 
 [node name="ObjIdLabel" type="Label" parent="SideBar/VBox"]
-margin_top = 280.0
+margin_top = 328.0
 margin_right = 124.0
-margin_bottom = 294.0
+margin_bottom = 342.0
 text = "Selected:"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Grabbed" type="Label" parent="SideBar/VBox"]
-margin_top = 298.0
+margin_top = 346.0
 margin_right = 124.0
-margin_bottom = 312.0
+margin_bottom = 360.0
 text = "Grabbed:"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -189,5 +311,7 @@ __meta__ = {
 [connection signal="button_up" from="SideBar/VBox/Button2" to="SideBar" method="_on_Button2_button_up"]
 [connection signal="button_up" from="SideBar/VBox/Button3" to="SideBar" method="_on_Button3_button_up"]
 [connection signal="button_up" from="SideBar/VBox/Button4" to="SideBar" method="_on_Button4_button_up"]
+[connection signal="pressed" from="SideBar/VBox/Store" to="." method="_on_Store_pressed"]
+[connection signal="pressed" from="SideBar/VBox/Weigh" to="." method="_on_Weigh_pressed"]
 [connection signal="item_selected" from="SideBar/VBox/ActionList" to="SideBar" method="_on_ActionList_item_selected"]
 [connection signal="item_selected" from="SideBar/VBox/JarFormatList" to="SideBar" method="_on_ItemList_item_selected"]

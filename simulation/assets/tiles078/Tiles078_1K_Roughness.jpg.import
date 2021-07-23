@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Plaster001_1K_Displacement.jpg-feb27e03ddc896a4863c96c648569f17.s3tc.stex"
-path.etc2="res://.import/Plaster001_1K_Displacement.jpg-feb27e03ddc896a4863c96c648569f17.etc2.stex"
+path.s3tc="res://.import/Tiles078_1K_Roughness.jpg-5f0a29e0ed99c1e86fa8b8daa06614b5.s3tc.stex"
+path.etc2="res://.import/Tiles078_1K_Roughness.jpg-5f0a29e0ed99c1e86fa8b8daa06614b5.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/ambientcg_plaster001/Plaster001_1K_Displacement.jpg"
-dest_files=[ "res://.import/Plaster001_1K_Displacement.jpg-feb27e03ddc896a4863c96c648569f17.s3tc.stex", "res://.import/Plaster001_1K_Displacement.jpg-feb27e03ddc896a4863c96c648569f17.etc2.stex" ]
+source_file="res://assets/tiles078/Tiles078_1K_Roughness.jpg"
+dest_files=[ "res://.import/Tiles078_1K_Roughness.jpg-5f0a29e0ed99c1e86fa8b8daa06614b5.s3tc.stex", "res://.import/Tiles078_1K_Roughness.jpg-5f0a29e0ed99c1e86fa8b8daa06614b5.etc2.stex" ]
 
 [params]
 

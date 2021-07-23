@@ -1,0 +1,27 @@
+[gd_scene format=2]
+
+[node name="InventoryItem" type="Control"]
+anchor_right = 0.183
+anchor_bottom = 0.023
+margin_right = -0.392014
+margin_bottom = 0.199999
+rect_min_size = Vector2( 187, 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_right = 35.0
+margin_bottom = 14.0
+text = "Sucre"
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -140.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 140, 0 )
+value = 70.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

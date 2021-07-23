@@ -6,6 +6,8 @@ export var opening_speed = 50.0
 onready var inventory = $Inventory
 onready var working_shelf = $Shelves/WorkingShelf
 
+onready var shelves = $Shelves.get_children() + $door_l/Shelves.get_children() + $door_r/Shelves.get_children()
+
 var opening = false
 
 var jar_added_request : HTTPRequest

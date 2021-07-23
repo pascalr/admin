@@ -7,7 +7,8 @@ onready var cupboard = core.get_node("Cupboard")
 onready var UI = core.get_node("UI")
 
 onready var jar_format = config.get_node("JarFormats/BigJar")
-onready var current_action : int
+var current_action : int
+var current_selection
 
 func error(msg):
 	print("Error: "+str(msg))

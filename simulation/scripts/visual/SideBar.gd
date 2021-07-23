@@ -9,11 +9,15 @@ func _ready():
 	$VBox/ActionList.select(0)
 	$VBox/JarFormatList.select(0)
 	rng.randomize()
+	var _a = self.connect("save",Heda.core,"_on_save")
+	var _b = self.connect("load_store",Heda.core,"_on_load")
 
 func _on_Button_button_up():
+	print("Saving")
 	emit_signal("save")
 
 func _on_Button2_button_up():
+	print("Loading store")
 	emit_signal("load_store")
 
 func _on_ItemList_item_selected(index):

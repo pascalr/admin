@@ -12,6 +12,8 @@
 1. Je n'ai pas tant envie de refaire ce que j'avais avant (sweep, unscrew, screw, ...) alors en attendant focuser sur le rangement des pots.
 1. Commencer avec être capable de voir les pots de la tablette de travail et de les ranges partout.
 1. Ensuite être capable d'aller chercher les pots partout et de les rammener à la tablette de travail.
+1. Save & Load, tout est sauvegardé dans un fichier (position du robot, inventaire, etc)
+1. Envoyer le statut de l'inventaire à HedaCuisine chaque fois qu'un item est pesé.
 
 # Planification
 1. Sweep dans la simulation.

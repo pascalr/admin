@@ -30,3 +30,9 @@ func _on_CommandLine_focus_entered():
 
 func _on_CommandLine_focus_exited():
 	get_tree().root.get_node("Simulation/Camera").has_focus = true
+
+func _on_Store_pressed():
+	Heda.robot.store(Heda.current_selection)
+
+func _on_Weigh_pressed():
+	Heda.robot.weigh(Heda.current_selection)

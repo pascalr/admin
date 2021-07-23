@@ -3,6 +3,7 @@ extends Spatial
 class_name Robot
 
 signal grabbed_changed
+signal jar_stored
 
 onready var support = $SupportTransversale
 onready var humerus = $SupportTransversale/Trolley/Humerus
@@ -57,11 +58,12 @@ func _move_straigth(vect):
 
 func _grab_above(obj):
 	grabbed_height = obj.get_height()-20.0
+	var angle = Lib.best_angle_for_vect(obj.translation)
 	var above = obj.translation+Vector3(0.0,obj.get_height()+10.0,0.0)
-	yield(goto(UserCoord.new().set_from_vector(above, 180.0)), "completed")
+	yield(goto(UserCoord.new().set_from_vector(above, angle)), "completed")
 	var dest = obj.translation+Vector3(0.0,grabbed_height,0.0)
 	yield(move("r", Globals.max_r), "completed")
-	yield(goto(UserCoord.new().set_from_vector(dest, 180.0)), "completed")
+	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
 	yield(move("r", obj.get_diameter()), "completed")
 	grabbed_above = true
 
@@ -91,16 +93,11 @@ func grab(obj):
 	grabbed = obj
 	emit_signal("grabbed_changed")
 	Lib.parent_adopt_child(hand, obj)
-	get_node("/root/Simulation/SideBar/VBox/Grabbed").text = "Grabbed: "+str(obj.get_obj_id())
 
 func _put_down_above(position):
-#	if !grabbed_above:
-#		Heda.error("Robot can't put down above. The object was grabbed in front.")
-#		return
-	#var above = position+Vector3(0.0,grabbed.get_height()+10.0,0.0)
-	#yield(goto(UserCoord.new().set_from_vector(above, 180.0)), "completed")
+	var angle = Lib.best_angle_for_vect(position)
 	var dest = position+Vector3(0.0,grabbed_height,0.0)
-	yield(goto(UserCoord.new().set_from_vector(dest, 180.0)), "completed")
+	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
 	yield(move("r", Globals.max_r), "completed")
 
 func _put_down_in_front(_shelf, _position):
@@ -122,7 +119,13 @@ func put_down(shelf, position):
 	Lib.parent_adopt_child(Heda.cupboard.inventory, grabbed)
 	grabbed = null
 	emit_signal("grabbed_changed")
-	
+
+func weigh(obj):
+	obj.weight = randf()*1000.0
+	print("Weight: "+str(obj.weight)+"g")
+
+func store(obj):
+	print("Store")
 
 func test_limits():
 	for motor in motors:

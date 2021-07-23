@@ -4,6 +4,7 @@ class_name Jar
 
 var jar_id : int
 var grab_above : bool
+var weight : float
 var shelf : Shelf
 var format : JarFormat
 
@@ -62,6 +63,9 @@ func _ready():
 	area.add_child(shape)
 	var _c = area.connect("input_event", self, "_toggle_selection")
 	add_child(area)
+	
+	self.add_to_group("save")
+	self.add_to_group("jars")
 
 func _toggle_selection(_camera, event, _click_position, _click_normal, _shape_idx):
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed:
@@ -74,21 +78,30 @@ func _toggle_selection(_camera, event, _click_position, _click_normal, _shape_id
 func save():
 	var save_dict = {
 		"class" : "Jar",
+		"parent" : get_parent().get_path(),
 		"pos_x" : translation.x,
 		"pos_y" : translation.y,
 		"pos_z" : translation.z,
 		"jar_format" : format.name,
 		"jar_id" : jar_id,
+		"weight" : weight,
 		"grab_above" : grab_above
 	}
 	return save_dict
 
-func load_data(root, data):
+func load_key(key, value):
+	match key:
+		"jar_format":
+			self.format = Heda.config.get_node("JarFormats/"+value)
+		_:
+			self.set(key, value)
+
+func load_data(data):
 	self.translation = Vector3(data["pos_x"],data["pos_y"],data["pos_z"])
-	self.format = root.get_node("Simulation/Config/"+data["jar_format"])
+	self.format = Heda.config.get_node("JarFormats/"+data["jar_format"])
 	
 	for i in data.keys():
-		if i == "pos_x" or i == "pos_y" or i == "pos_z" or i == "jar_format":
+		if i == "pos_x" or i == "pos_y" or i == "pos_z" or i == "jar_format" or i == "parent":
 			continue
 		self.set(i, data[i])
 	
