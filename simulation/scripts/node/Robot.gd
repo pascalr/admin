@@ -83,8 +83,11 @@ func _grab_above(obj):
 	yield(move("r", Globals.max_r), "completed")
 	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
 	yield(move("r", obj.get_diameter()), "completed")
-	yield(move("y", obj.translation.y+Globals.safe_height), "completed")
 	grabbed_above = true
+	var safe_y = obj.translation.y+Globals.safe_height+grabbed_height
+	_grabbing(obj)
+	# When grabbing above, move up enough to clear the other jars
+	yield(move("y", safe_y), "completed")
 
 func _grab_in_front(obj):
 	grabbed_height = 60.0
@@ -99,7 +102,13 @@ func _grab_in_front(obj):
 	yield(_move_straigth(dest), "completed")
 	yield(move("r", obj.get_diameter()), "completed")
 	grabbed_above = false
+	_grabbing(obj)
 
+func _grabbing(obj):
+	grabbed = obj
+	Lib.parent_adopt_child(hand, obj)
+	emit_signal("grabbed_changed")
+	
 func grab(obj):
 	if grabbed and obj == grabbed:
 		return yield(get_tree(), "idle_frame")
@@ -110,9 +119,6 @@ func grab(obj):
 		yield(_grab_above(obj),"completed")
 	else:
 		yield(_grab_in_front(obj),"completed")
-	grabbed = obj
-	emit_signal("grabbed_changed")
-	Lib.parent_adopt_child(hand, obj)
 
 func _put_down_above(position):
 	var angle = Lib.best_angle_for_vect(position)
