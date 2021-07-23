@@ -27,6 +27,9 @@ func get_height():
 func get_diameter():
 	return format.diameter
 
+func percentage_filled():
+	pass
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	var _a = self.connect("selected", get_tree().root.get_node("Simulation"), "_obj_selected")

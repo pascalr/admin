@@ -87,6 +87,8 @@ script = ExtResource( 8 )
 diameter = 114.0
 height_with_lid = 168.275
 lid_height = 24.74
+body_weight = 621.0
+lid_weight = 48.0
 jar_obj = ExtResource( 12 )
 lid_obj = ExtResource( 11 )
 
@@ -95,6 +97,8 @@ script = ExtResource( 8 )
 diameter = 114.0
 height_with_lid = 120.0
 lid_height = 24.74
+body_weight = 483.0
+lid_weight = 48.0
 jar_obj = ExtResource( 13 )
 lid_obj = ExtResource( 11 )
 
@@ -103,6 +107,8 @@ script = ExtResource( 8 )
 diameter = 81.3
 height_with_lid = 101.0
 lid_height = 19.2
+body_weight = 260.0
+lid_weight = 29.0
 jar_obj = ExtResource( 14 )
 lid_obj = ExtResource( 15 )
 
@@ -111,6 +117,8 @@ script = ExtResource( 8 )
 diameter = 43.2
 height_with_lid = 95.2
 lid_height = 13.75
+body_weight = 88.0
+lid_weight = 2.0
 jar_obj = ExtResource( 17 )
 lid_obj = ExtResource( 16 )
 
