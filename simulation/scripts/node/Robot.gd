@@ -102,7 +102,10 @@ func _grab_in_front(obj):
 	yield(_move_straigth(dest), "completed")
 	yield(move("r", obj.get_diameter()), "completed")
 	grabbed_above = false
+	var safe_y = obj.translation.y+Globals.fence_safe_height+grabbed_height
 	_grabbing(obj)
+	yield(move("y", safe_y), "completed")
+	yield(_move_straigth(in_front), "completed")
 
 func _grabbing(obj):
 	grabbed = obj
@@ -145,10 +148,11 @@ func put_down(shelf, position):
 	else:
 		yield(_put_down_in_front(shelf, position),"completed")
 	
-	grabbed.shelf = shelf
-	Lib.parent_adopt_child(shelf, grabbed)
-	grabbed = null
-	emit_signal("grabbed_changed")
+	if grabbed: # FIXME: Yield executed twice
+		grabbed.shelf = shelf
+		Lib.parent_adopt_child(shelf, grabbed)
+		grabbed = null
+		emit_signal("grabbed_changed")
 
 func weigh(obj):
 	obj.weight = randf()*1000.0

@@ -18,6 +18,8 @@ var trolley_z := working_shelf_depth + machine_depth/2.0
 # The safe height to move above
 # (The tallest jars mesure 168.275)
 var safe_height := 178.0
+var fence_height := 2*25.4
+var fence_safe_height := fence_height + 0.25*25.4
 
 #var max_h := 850
 #var max_y := 1380
