@@ -35,6 +35,18 @@ func get_t():
 func get_h():
 	return trolley.position
 
+func set_polar(polar):
+	support.position = polar.y
+	support.position = polar.y
+	trolley.position = polar.h
+	trolley.position = polar.h
+	humerus.position = polar.t
+	humerus.position = polar.t
+	wrist.position = polar.a
+	wrist.position = polar.a
+	hand.position = polar.b
+	hand.position = polar.b
+
 func move(axis, destination):
 	yield($Controller.exec("m"+axis+str(destination)), "completed")
 
@@ -82,9 +94,10 @@ func _grab_in_front(obj):
 	grabbed_above = false
 
 func grab(obj):
-	if grabbed:
-		Heda.error("Robot can't grab. It is already grabbing.")
-		return
+	if grabbed and obj == grabbed:
+		return yield(get_tree(), "idle_frame")
+	elif grabbed:
+		return Heda.error("Robot can't grab. It is already grabbing.")
 	print("Grabing")
 	if obj.grab_above:
 		yield(_grab_above(obj),"completed")
@@ -100,23 +113,26 @@ func _put_down_above(position):
 	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
 	yield(move("r", Globals.max_r), "completed")
 
-func _put_down_in_front(_shelf, _position):
+func _put_down_in_front(_shelf, position):
 	if grabbed_above:
-		Heda.error("Robot can't put down in front. The object was grabbed above.")
-		return
-	pass
+		return Heda.error("Robot can't put down in front. The object was grabbed above.")
+	var angle = 180.0 if position.z < Globals.max_z else 0.0
+	var dest = position+Vector3(0.0,grabbed_height,0.0)
+	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
+	yield(move("r", Globals.max_r), "completed")
 
 func put_down(shelf, position):
+	if position == null:
+		return Heda.error("Robot can't put down. Invalid position null.")
 	if !grabbed:
-		Heda.error("Robot can't put down. It is not holding any object.")
-		return
+		return Heda.error("Robot can't put down. It is not holding any object.")
 	print("Put down " + str(position))
 	if shelf.grab_above:
 		yield(_put_down_above(position),"completed")
 	else:
 		yield(_put_down_in_front(shelf, position),"completed")
 		
-	Lib.parent_adopt_child(Heda.cupboard.inventory, grabbed)
+	Lib.parent_adopt_child(shelf, grabbed)
 	grabbed = null
 	emit_signal("grabbed_changed")
 
@@ -125,8 +141,15 @@ func weigh(obj):
 	print("Weight: "+str(obj.weight)+"g")
 
 func store(obj):
-	emit_signal("jar_stored")
-	print("Store")
+	for shelf in Heda.cupboard.shelves:
+		if shelf.preferred_jar_format == obj.format.name:
+			var pos = shelf.get_free_positition(obj)
+			yield(grab(obj),"completed")
+			yield(put_down(shelf, pos),"completed")
+			emit_signal("jar_stored")
+			print("Store")
+			return
+	yield(get_tree(),"idle_frame")
 
 func test_limits():
 	for motor in motors:

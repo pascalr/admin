@@ -6,7 +6,8 @@ signal load_store
 var rng = RandomNumberGenerator.new()
 
 func _ready():
-	$VBox/ActionList.select(0)
+	Heda.current_action = 1
+	$VBox/ActionList.select(Heda.current_action)
 	$VBox/JarFormatList.select(0)
 	rng.randomize()
 	var _a = self.connect("save",Heda.core,"_on_save")

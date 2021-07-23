@@ -61,28 +61,10 @@ func _check_add_jar(shelf, click_position):
 	jar.grab_above = shelf.grab_above
 	jar.format = Heda.jar_format
 	
-	if click_position.x + jar.format.diameter/2.0 > Globals.max_x:
-		print("Add jar out of bounds max x!")
-		return false
-	elif click_position.x - jar.format.diameter/2.0 < Globals.min_x:
-		print("Add jar out of bounds min x!")
-		return false
-	elif click_position.z + jar.format.diameter/2.0 > Globals.max_z:
-		print("Add jar out of bounds max z!")
-		return false
-	elif click_position.z - jar.format.diameter/2.0 < Globals.min_z:
-		print("Add jar out of bounds min z!")
-		return false
-	
-	for j in get_tree().get_nodes_in_group("jars"):
-		if (click_position.y - j.translation.y) < 0.2:
-			var min_dist = j.format.diameter/2.0 + jar.format.diameter/2.0 + Globals.min_dist_between_jars
-			if ((click_position - j.translation).length() < min_dist):
-				print("Collision!")
-				return false
-	
-	_add_jar(jar)
-	return true
+	var is_valid = Lib.is_valid_jar_position(jar, click_position)
+	if is_valid:
+		_add_jar(jar)
+	return is_valid
 
 func _on_shelf_click(shelf, click_position):
 	match Heda.current_action:

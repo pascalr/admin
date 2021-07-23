@@ -41,3 +41,27 @@ func best_angle_for_vect(vect):
 	var l = Globals.humerus_length+Globals.forearm_grip_length
 	var angle = asin((Globals.trolley_z-vect.z)/l)*180.0/PI
 	return -90.0 - angle if vect.x > Globals.max_x/2.0 else 90 + angle
+
+func is_valid_jar_position(jar, position):
+
+	if position.x + jar.format.diameter/2.0 > Globals.max_x:
+		#print("Add jar out of bounds max x!")
+		return false
+	elif position.x - jar.format.diameter/2.0 < Globals.min_x:
+		#print("Add jar out of bounds min x!")
+		return false
+	elif position.z + jar.format.diameter/2.0 > Globals.max_z:
+		#print("Add jar out of bounds max z!")
+		return false
+	elif position.z - jar.format.diameter/2.0 < Globals.min_z:
+		#print("Add jar out of bounds min z!")
+		return false
+	
+	for j in get_tree().get_nodes_in_group("jars"):
+		if (position.y - j.translation.y) < 0.2:
+			var min_dist = j.format.diameter/2.0 + jar.format.diameter/2.0 + Globals.min_dist_between_jars
+			if ((position - j.translation).length() < min_dist):
+				print("Collision!")
+				return false
+	
+	return true

@@ -5,9 +5,51 @@ signal shelf_click
 class_name Shelf
 
 export var grab_above := true
+export var single_row := true
+
+export(String, "Big", "Medium", "Small", "Spice", "Bottle") var preferred_jar_format = "Big"
+
+func get_middle_x():
+	return $Area/CollisionShape.global_transform.origin.x
+func get_min_x():
+	return get_middle_x()-$Area/CollisionShape.shape.extents.x
+func get_max_x():
+	return get_middle_x()+$Area/CollisionShape.shape.extents.x
+
+func get_middle_z():
+	return $Area/CollisionShape.global_transform.origin.z
+func get_min_z():
+	return get_middle_z()-$Area/CollisionShape.shape.extents.z
+func get_max_z():
+	return get_middle_z()+$Area/CollisionShape.shape.extents.z
 
 func get_height():
-	return $area/collision_shape.translation.y + $area/collision_shape.shape.extents.y	
+	return $Area/CollisionShape.global_transform.origin.y + $Area/CollisionShape.shape.extents.y	
+
+func get_jars():
+	var jars = []
+	for j in get_tree().get_nodes_in_group("jars"):
+		if j.shelf == self:
+			jars.push_back(j)
+	#for c in get_children():
+	#	if c is Jar:
+	#		jars << c
+	return jars
+
+func get_free_positition(jar):
+	if single_row:
+		for x in range(get_min_x(), get_max_x(), 5):
+			var pos = Vector3(x, get_height(), get_middle_z())
+			if Lib.is_valid_jar_position(jar,pos):
+				print("free: "+str(pos))
+				return pos
+	else:
+		for x in range(get_min_x(), get_max_x(), 5):
+			for z in range(get_min_z(), get_max_z(), 5):
+				var pos = Vector3(x, get_height(), z)
+				if Lib.is_valid_jar_position(jar,pos):
+					print("free: "+str(pos))
+					return pos
 
 func _ready():
 	for child in get_children():

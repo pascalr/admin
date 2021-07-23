@@ -67,6 +67,7 @@ func _ready():
 	self.add_to_group("save")
 	self.add_to_group("jars")
 
+
 func _toggle_selection(_camera, event, _click_position, _click_normal, _shape_idx):
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed:
 		selection_box.visible = !selection_box.visible

@@ -233,72 +233,78 @@ margin_right = 124.0
 margin_bottom = 92.0
 text = "Add random"
 
-[node name="Store" type="Button" parent="SideBar/VBox"]
+[node name="Weigh" type="Button" parent="SideBar/VBox"]
 margin_top = 96.0
 margin_right = 124.0
 margin_bottom = 116.0
-text = "Store"
+text = "Weigh"
 
-[node name="Weigh" type="Button" parent="SideBar/VBox"]
+[node name="Store" type="Button" parent="SideBar/VBox"]
 margin_top = 120.0
 margin_right = 124.0
 margin_bottom = 140.0
-text = "Weigh"
+text = "Store"
 
-[node name="HSeparator3" type="HSeparator" parent="SideBar/VBox"]
+[node name="StoreAll" type="Button" parent="SideBar/VBox"]
 margin_top = 144.0
 margin_right = 124.0
-margin_bottom = 148.0
+margin_bottom = 164.0
+text = "Store all"
+
+[node name="HSeparator3" type="HSeparator" parent="SideBar/VBox"]
+margin_top = 168.0
+margin_right = 124.0
+margin_bottom = 172.0
 
 [node name="Label2" type="Label" parent="SideBar/VBox"]
-margin_top = 152.0
+margin_top = 176.0
 margin_right = 124.0
-margin_bottom = 166.0
+margin_bottom = 190.0
 text = "Action"
 
 [node name="ActionList" type="ItemList" parent="SideBar/VBox"]
-margin_top = 170.0
+margin_top = 194.0
 margin_right = 124.0
-margin_bottom = 228.0
+margin_bottom = 252.0
 rect_min_size = Vector2( 0, 58 )
 items = [ "Select", null, false, "Add jar", null, false, "Put down", null, false ]
 
 [node name="HSeparator" type="HSeparator" parent="SideBar/VBox"]
-margin_top = 232.0
+margin_top = 256.0
 margin_right = 124.0
-margin_bottom = 236.0
+margin_bottom = 260.0
 
 [node name="Label" type="Label" parent="SideBar/VBox"]
-margin_top = 240.0
+margin_top = 264.0
 margin_right = 124.0
-margin_bottom = 254.0
+margin_bottom = 278.0
 text = "Jar format"
 
 [node name="JarFormatList" type="ItemList" parent="SideBar/VBox"]
-margin_top = 258.0
+margin_top = 282.0
 margin_right = 124.0
-margin_bottom = 316.0
+margin_bottom = 340.0
 rect_min_size = Vector2( 0, 58 )
-items = [ "BigJar", null, false, "MediumJar", null, false, "SmallJar", null, false, "SpiceJar", null, false, "Bottle", null, false ]
+items = [ "Big", null, false, "Medium", null, false, "Small", null, false, "Spice", null, false, "Bottle", null, false ]
 
 [node name="HSeparator2" type="HSeparator" parent="SideBar/VBox"]
-margin_top = 320.0
+margin_top = 344.0
 margin_right = 124.0
-margin_bottom = 324.0
+margin_bottom = 348.0
 
 [node name="ObjIdLabel" type="Label" parent="SideBar/VBox"]
-margin_top = 328.0
+margin_top = 352.0
 margin_right = 124.0
-margin_bottom = 342.0
+margin_bottom = 366.0
 text = "Selected:"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Grabbed" type="Label" parent="SideBar/VBox"]
-margin_top = 346.0
+margin_top = 370.0
 margin_right = 124.0
-margin_bottom = 360.0
+margin_bottom = 384.0
 text = "Grabbed:"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -311,7 +317,8 @@ __meta__ = {
 [connection signal="button_up" from="SideBar/VBox/Button2" to="SideBar" method="_on_Button2_button_up"]
 [connection signal="button_up" from="SideBar/VBox/Button3" to="SideBar" method="_on_Button3_button_up"]
 [connection signal="button_up" from="SideBar/VBox/Button4" to="SideBar" method="_on_Button4_button_up"]
-[connection signal="pressed" from="SideBar/VBox/Store" to="." method="_on_Store_pressed"]
 [connection signal="pressed" from="SideBar/VBox/Weigh" to="." method="_on_Weigh_pressed"]
+[connection signal="pressed" from="SideBar/VBox/Store" to="." method="_on_Store_pressed"]
+[connection signal="pressed" from="SideBar/VBox/StoreAll" to="." method="_on_StoreAll_pressed"]
 [connection signal="item_selected" from="SideBar/VBox/ActionList" to="SideBar" method="_on_ActionList_item_selected"]
 [connection signal="item_selected" from="SideBar/VBox/JarFormatList" to="SideBar" method="_on_ItemList_item_selected"]

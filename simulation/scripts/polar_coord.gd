@@ -54,7 +54,13 @@ func set_from_user_coord(coord : UserCoord):
 		self.error = ""
 		self.set_from_user_coord_and_t(coord, _t)
 	
-	assert(!self.invalid_destination())
+	#if self.invalid_destination():
+	#	Heda.show_invalid_polar(self,coord,-t)
+		
+	#assert(!self.invalid_destination())
+	
+	if self.invalid_destination():
+		push_error("Invalid polar coord destination.")
 
 	return self
 

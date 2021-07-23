@@ -82,7 +82,7 @@ light_energy = 0.35
 
 [node name="JarFormats" type="Node" parent="Config"]
 
-[node name="BigJar" type="Node" parent="Config/JarFormats"]
+[node name="Big" type="Node" parent="Config/JarFormats"]
 script = ExtResource( 8 )
 diameter = 114.0
 height_with_lid = 168.275
@@ -90,7 +90,7 @@ lid_height = 24.74
 jar_obj = ExtResource( 12 )
 lid_obj = ExtResource( 11 )
 
-[node name="MediumJar" type="Node" parent="Config/JarFormats"]
+[node name="Medium" type="Node" parent="Config/JarFormats"]
 script = ExtResource( 8 )
 diameter = 114.0
 height_with_lid = 120.0
@@ -98,7 +98,7 @@ lid_height = 24.74
 jar_obj = ExtResource( 13 )
 lid_obj = ExtResource( 11 )
 
-[node name="SmallJar" type="Node" parent="Config/JarFormats"]
+[node name="Small" type="Node" parent="Config/JarFormats"]
 script = ExtResource( 8 )
 diameter = 81.3
 height_with_lid = 101.0
@@ -106,7 +106,7 @@ lid_height = 19.2
 jar_obj = ExtResource( 14 )
 lid_obj = ExtResource( 15 )
 
-[node name="SpiceJar" type="Node" parent="Config/JarFormats"]
+[node name="Spice" type="Node" parent="Config/JarFormats"]
 script = ExtResource( 8 )
 diameter = 43.2
 height_with_lid = 95.2
