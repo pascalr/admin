@@ -2,6 +2,7 @@ extends Control
 
 onready var command_line = $BottomPanel/CommandLine
 onready var output = $BottomPanel/Output
+onready var selection_panel = $ToolPanel/VBox/Selection
 
 var command_request : HTTPRequest
 

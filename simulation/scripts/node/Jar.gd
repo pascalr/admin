@@ -14,6 +14,9 @@ var area : Area
 var selection_box : MeshInstance
 var content : MeshInstance
 
+func get_class():
+	return "Jar"
+
 func get_obj_id():
 	return jar_id
 
@@ -91,7 +94,7 @@ func _toggle_selection(_camera, event, _click_position, _click_normal, _shape_id
 
 func save():
 	var save_dict = {
-		"class" : "Jar",
+		"class" : get_class(),
 		"pos_x" : translation.x,
 		"pos_y" : translation.y,
 		"pos_z" : translation.z,

@@ -32,13 +32,13 @@ func _obj_deselected(_obj):
 	if Heda.current_selection != null:
 		Heda.current_selection.selection_box.visible = false
 	Heda.current_selection = null
-	$UI/SideBar/VBox/ObjIdLabel.text = "Selected: "
+	$UI.selection_panel.hide_details()
 
 func _obj_selected(obj):
 	if Heda.current_selection != null:
 		Heda.current_selection.selection_box.visible = false
-	$UI/SideBar/VBox/ObjIdLabel.text = "Selected: "+str(obj.get_obj_id())
 	Heda.current_selection = obj
+	$UI.selection_panel.show_details(obj)
 
 func _on_save():
 	
