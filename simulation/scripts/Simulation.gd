@@ -20,7 +20,7 @@ func _input(event):
 			KEY_ENTER:
 				$UI.command_line.grab_focus()
 			KEY_ESCAPE:
-				for obj in $Cupboard/Inventory.get_children():
+				for obj in get_tree().get_nodes_in_group("jars"):
 					if obj is Jar:
 						obj.selected = false
 			KEY_DELETE:
@@ -66,7 +66,7 @@ func _on_load():
 		var node_data = parse_json(store.get_line())
 		
 		if node_data["class"] == "Jar":
-			$Cupboard/Inventory.add_child(Jar.new().load_data(node_data))
+			get_node(node_data["parent"]).add_child(Jar.new().load_data(node_data))
 		else:
 			print("Unkown class " + node_data["class"] + " in store.")
 

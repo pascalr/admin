@@ -125,6 +125,7 @@ func weigh(obj):
 	print("Weight: "+str(obj.weight)+"g")
 
 func store(obj):
+	emit_signal("jar_stored")
 	print("Store")
 
 func test_limits():

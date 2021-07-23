@@ -3,7 +3,6 @@ extends Spatial
 export var max_angle = 150.0
 export var opening_speed = 50.0
 
-onready var inventory = $Inventory
 onready var working_shelf = $Shelves/WorkingShelf
 
 onready var shelves = $Shelves.get_children() + $door_l/Shelves.get_children() + $door_r/Shelves.get_children()
@@ -48,7 +47,7 @@ func _add_jar(jar):
 	jar.jar_id = jar_id_counter
 	jar_id_counter += 1
 	
-	$Inventory.add_child(jar)
+	jar.shelf.add_child(jar)
 	jar.visible = true # TODO: Set to visible only when the request is confirmed
 	
 #	var params = "jar_id="+str(jar.jar_id)+"&x="+str(jar.translation.x)
@@ -75,7 +74,7 @@ func _check_add_jar(shelf, click_position):
 		print("Add jar out of bounds min z!")
 		return false
 	
-	for j in $Inventory.get_children():
+	for j in get_tree().get_nodes_in_group("jars"):
 		if (click_position.y - j.translation.y) < 0.2:
 			var min_dist = j.format.diameter/2.0 + jar.format.diameter/2.0 + Globals.min_dist_between_jars
 			if ((click_position - j.translation).length() < min_dist):
