@@ -155,8 +155,13 @@ func put_down(shelf, position):
 		emit_signal("grabbed_changed")
 
 func weigh(obj):
-	obj.weight = randf()*1000.0
-	print("Weight: "+str(obj.weight)+"g")
+	var full_weight = Heda.jar_format.volume * Heda.food.density
+	var simulated = full_weight/2.0 + full_weight/2.0*randf()
+	#var weight = simulated + Heda.jar_format.body_weight + Heda.jar_format.lid_weight
+	obj.clear()
+	obj.add_ingredient(Ingredient.new(simulated, Heda.food))
+	print("Weight: "+str(simulated)+"g")
+	Heda.UI.selection_panel.show_details(obj)
 
 func store(obj):
 	if obj == null:

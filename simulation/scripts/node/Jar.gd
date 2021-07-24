@@ -44,6 +44,14 @@ func get_weight():
 		weight += ing.weight
 	return weight
 
+func add_ingredient(ing):
+	ingredients.push_back(ing)
+	content.mesh.height = format.max_content_height*ratio_filled()
+	content.translation.y = content.mesh.height/2.0+5.0
+
+func clear():
+	ingredients.clear()
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	var _a = self.connect("selected", get_tree().root.get_node("Simulation"), "_obj_selected")
@@ -77,11 +85,11 @@ func _ready():
 	content_mesh.top_radius = format.diameter/2.0-5.0
 	content_mesh.bottom_radius = format.diameter/2.0-5.0
 	content_mesh.height = format.max_content_height*ratio_filled()
+	content.translation.y = content_mesh.height/2.0+5.0
 	var content_mat = SpatialMaterial.new()
 	content_mat.albedo_color = Color8(255,255,255,255)
 	content_mesh.material = content_mat
 	content.set_mesh(content_mesh)
-	content.translation.y = content_mesh.height/2.0+5.0
 	add_child(content)
 	
 	shape = CollisionShape.new()

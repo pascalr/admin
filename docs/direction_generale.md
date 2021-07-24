@@ -11,7 +11,6 @@
 # Simulation
 1. Positionement précis
 1. Ne pas passer à travers les tablettes
-1. Contenu dans les pots
 1. Prendre compte des barrières de sécurité
 1. Je n'ai pas tant envie de refaire ce que j'avais avant (sweep, unscrew, screw, ...) alors en attendant focuser sur le rangement des pots.
 1. Commencer avec être capable de voir les pots de la tablette de travail et de les ranges partout.
