@@ -188,6 +188,7 @@ margin_right = 187.0
 margin_bottom = 122.0
 
 [node name="Selection" type="PanelContainer" parent="ToolPanel/VBox"]
+visible = false
 margin_top = 140.0
 margin_right = 201.0
 margin_bottom = 264.0

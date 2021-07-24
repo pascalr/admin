@@ -12,6 +12,8 @@
 
 **.blend1
 
+/simulation/assets/*.zip
+
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
