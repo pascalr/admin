@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://scenes/Robot.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Cupboard.tscn" type="PackedScene" id=2]
@@ -20,6 +20,9 @@
 
 [sub_resource type="CubeMesh" id=1]
 size = Vector3( 6500, 1, 10000 )
+
+[sub_resource type="CubeMesh" id=4]
+size = Vector3( 12000, 2438.4, 150 )
 
 [sub_resource type="CylinderMesh" id=2]
 top_radius = 55.0
@@ -59,14 +62,38 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 454.683, 10, 1036.01 )
 mesh = SubResource( 1 )
 material/0 = ExtResource( 6 )
 
-[node name="DirectionalLight2" type="DirectionalLight" parent="Room"]
-transform = Transform( -0.680703, 0.632608, -0.369391, 0.0306805, 0.528424, 0.848426, 0.731916, 0.566194, -0.379108, 478.537, 1650.5, -1975.95 )
+[node name="InsideRoom" type="Spatial" parent="Room"]
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Room/InsideRoom"]
+transform = Transform( 0.943223, 1.12441e-07, 0.332161, -0.173702, 0.852367, 0.493253, -0.283123, -0.522945, 0.803972, 1031.23, 1953.64, 1846.72 )
+light_energy = 0.75
+
+[node name="OutsideRoom" type="Spatial" parent="Room"]
+
+[node name="MeshInstance2" type="MeshInstance" parent="Room"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2929.06, 1261.66, 436.208 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="MeshInstance3" type="MeshInstance" parent="Room"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3680.92, 1261.66, 436.208 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="MeshInstance4" type="MeshInstance" parent="Room"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.3511, 1261.66, 6254.17 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="MeshInstance5" type="MeshInstance" parent="Room"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.3511, 1261.66, -3831.67 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="DirectionalLight2" type="DirectionalLight" parent="."]
+transform = Transform( -0.680703, 0.632608, -0.369391, 0.0306805, 0.528424, 0.848426, 0.731916, 0.566193, -0.379109, 478.537, 1536.2, -1975.95 )
 visible = false
 light_energy = 0.35
-
-[node name="DirectionalLight" type="DirectionalLight" parent="Room"]
-transform = Transform( 0.943223, 9.83858e-08, 0.332161, -0.173702, 0.852367, 0.493253, -0.283123, -0.522945, 0.803972, 1031.23, 1953.64, 1846.72 )
-light_energy = 0.75
 
 [node name="Config" type="Node" parent="."]
 

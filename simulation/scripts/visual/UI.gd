@@ -41,3 +41,6 @@ func _on_Weigh_pressed():
 func _on_StoreAll_pressed():
 	for jar in Heda.cupboard.working_shelf.get_jars():
 		yield(Heda.robot.store(jar),"completed")
+
+func _on_Grab_pressed():
+	Heda.robot.grab(Heda.current_selection)

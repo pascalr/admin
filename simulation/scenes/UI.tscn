@@ -190,14 +190,14 @@ margin_bottom = 122.0
 [node name="Selection" type="PanelContainer" parent="ToolPanel/VBox"]
 margin_top = 140.0
 margin_right = 201.0
-margin_bottom = 288.0
+margin_bottom = 312.0
 script = ExtResource( 6 )
 
 [node name="VBox" type="VBoxContainer" parent="ToolPanel/VBox/Selection"]
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 194.0
-margin_bottom = 141.0
+margin_bottom = 165.0
 
 [node name="ObjectName" type="Label" parent="ToolPanel/VBox/Selection/VBox"]
 margin_right = 187.0
@@ -298,7 +298,7 @@ __meta__ = {
 [node name="JarDetails" type="VBoxContainer" parent="ToolPanel/VBox/Selection/VBox"]
 margin_top = 72.0
 margin_right = 187.0
-margin_bottom = 134.0
+margin_bottom = 158.0
 
 [node name="Weight" type="HSplitContainer" parent="ToolPanel/VBox/Selection/VBox/JarDetails"]
 margin_right = 187.0
@@ -325,16 +325,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Weigh" type="Button" parent="ToolPanel/VBox/Selection/VBox/JarDetails"]
+[node name="Grab" type="Button" parent="ToolPanel/VBox/Selection/VBox/JarDetails"]
 margin_top = 18.0
 margin_right = 187.0
 margin_bottom = 38.0
-text = "Weigh"
+text = "Grab"
 
-[node name="Store" type="Button" parent="ToolPanel/VBox/Selection/VBox/JarDetails"]
+[node name="Weigh" type="Button" parent="ToolPanel/VBox/Selection/VBox/JarDetails"]
 margin_top = 42.0
 margin_right = 187.0
 margin_bottom = 62.0
+text = "Weigh"
+
+[node name="Store" type="Button" parent="ToolPanel/VBox/Selection/VBox/JarDetails"]
+margin_top = 66.0
+margin_right = 187.0
+margin_bottom = 86.0
 text = "Store"
 
 [node name="SideBar" type="Control" parent="."]
@@ -429,6 +435,7 @@ items = [ "Big", null, false, "Medium", null, false, "Small", null, false, "Spic
 [connection signal="focus_entered" from="BottomPanel/CommandLine" to="." method="_on_CommandLine_focus_entered"]
 [connection signal="focus_exited" from="BottomPanel/CommandLine" to="." method="_on_CommandLine_focus_exited"]
 [connection signal="text_entered" from="BottomPanel/CommandLine" to="." method="_on_CommandLine_text_entered"]
+[connection signal="pressed" from="ToolPanel/VBox/Selection/VBox/JarDetails/Grab" to="." method="_on_Grab_pressed"]
 [connection signal="pressed" from="ToolPanel/VBox/Selection/VBox/JarDetails/Weigh" to="." method="_on_Weigh_pressed"]
 [connection signal="pressed" from="ToolPanel/VBox/Selection/VBox/JarDetails/Store" to="." method="_on_Store_pressed"]
 [connection signal="button_up" from="SideBar/VBox/Button" to="SideBar" method="_on_Button_button_up"]
