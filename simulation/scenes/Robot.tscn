@@ -80,7 +80,7 @@ transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 507.604
 shape = SubResource( 1 )
 
 [node name="mesh" type="MeshInstance" parent="SupportTransversale/body"]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 963.5, 211, 0 )
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1016, 211, 0 )
 mesh = ExtResource( 2 )
 material/0 = ExtResource( 11 )
 __meta__ = {
@@ -88,21 +88,21 @@ __meta__ = {
 }
 
 [node name="Trolley" type="Spatial" parent="SupportTransversale"]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 277, 0, 0 )
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 500, 0, 0 )
 script = ExtResource( 6 )
 id = "h"
-min_position = 270.0
+min_position = 265.0
 max_position = 850.0
-start_position = 275.0
+start_position = 500.0
 
 [node name="body" type="KinematicBody" parent="SupportTransversale/Trolley"]
 
 [node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Trolley/body"]
-transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 33.478, 218.183, 19.9999 )
+transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 32.5986, 218.183, 19.9999 )
 shape = SubResource( 2 )
 
 [node name="mesh" type="MeshInstance" parent="SupportTransversale/Trolley/body"]
-transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 103.5, 218.183, 19.9999 )
+transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 0, 218.183, 0 )
 mesh = ExtResource( 4 )
 material/0 = SubResource( 3 )
 __meta__ = {
@@ -110,7 +110,7 @@ __meta__ = {
 }
 
 [node name="Humerus" type="Spatial" parent="SupportTransversale/Trolley"]
-transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 0, 0, 20 )
+transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 0, 0, 0 )
 script = ExtResource( 5 )
 id = "t"
 min_position = -90.0
@@ -123,7 +123,7 @@ transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.914, 16
 shape = SubResource( 4 )
 
 [node name="mesh" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/body"]
-transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.914, 175.941, -6.10352e-05 )
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0, 168.827, 0 )
 mesh = ExtResource( 7 )
 material/0 = ExtResource( 11 )
 __meta__ = {
@@ -131,7 +131,7 @@ __meta__ = {
 }
 
 [node name="Wrist" type="Spatial" parent="SupportTransversale/Trolley/Humerus"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.05176e-05, 0, 158.75 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000213623, -11.3238, 158.75 )
 script = ExtResource( 9 )
 id = "a"
 min_position = -20.0
@@ -144,7 +144,7 @@ transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 1.91406
 shape = SubResource( 5 )
 
 [node name="mesh" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/Wrist/body"]
-transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 1.91406, 123.855, -1.84807 )
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 0, 123.855, 0 )
 mesh = ExtResource( 10 )
 material/0 = ExtResource( 11 )
 __meta__ = {
@@ -152,7 +152,7 @@ __meta__ = {
 }
 
 [node name="Hand" type="Spatial" parent="SupportTransversale/Trolley/Humerus/Wrist"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.483, 55, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 55, -204 )
 script = ExtResource( 13 )
 id = "b"
 min_position = -200.0
@@ -169,7 +169,7 @@ transform = Transform( 1.42109e-14, 1.17225e-07, 1, 8.74228e-08, 1, -1.17225e-07
 shape = SubResource( 7 )
 
 [node name="mesh" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/body"]
-transform = Transform( 1.42109e-14, 1.17225e-07, 1, 8.74228e-08, 1, -1.17225e-07, -1, 8.74228e-08, 1.42109e-14, -0.568939, 1.62866, -163.196 )
+transform = Transform( 1.42109e-14, 1.17225e-07, 1, 8.74228e-08, 1, -1.17225e-07, -1, 8.74228e-08, 1.42109e-14, 0, 0, 0 )
 mesh = ExtResource( 12 )
 material/0 = ExtResource( 11 )
 __meta__ = {
@@ -192,7 +192,7 @@ start_position = 30.0
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 0 )
 
 [node name="mesh" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip/GripL"]
-transform = Transform( 1.31134e-07, 2.13163e-14, -1, -8.26676e-15, 1, -1.42109e-14, 1, -2.5279e-14, 1.31134e-07, 10.4314, -55.3712, -214.696 )
+transform = Transform( 1.31134e-07, 2.13163e-14, -1, -8.26676e-15, 1, -1.42109e-14, 1, -2.5279e-14, 1.31134e-07, 10.431, -55.371, 0 )
 mesh = ExtResource( 15 )
 material/0 = ExtResource( 11 )
 __meta__ = {
@@ -211,7 +211,7 @@ transform = Transform( -4.3711e-08, 2.13163e-14, 1, -1.9814e-15, 1, 7.10543e-15,
 shape = SubResource( 9 )
 
 [node name="mesh2" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip/GripR"]
-transform = Transform( -4.3711e-08, 2.13163e-14, 1, -1.9814e-15, 1, 7.10543e-15, -1, -2.5279e-14, -4.3711e-08, -5.17917, -55.3713, -214.696 )
+transform = Transform( -4.3711e-08, 2.13163e-14, 1, -1.9814e-15, 1, 7.10543e-15, -1, -2.5279e-14, -4.3711e-08, -5.179, -55.371, 0 )
 mesh = ExtResource( 14 )
 material/0 = ExtResource( 11 )
 
