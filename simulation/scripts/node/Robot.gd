@@ -55,8 +55,8 @@ func get_to(polar):
 	yield(move("y", polar.y), "completed")
 	yield(move("b", polar.b), "completed")
 	yield(move("h", polar.h), "completed")
-	yield(move("t", polar.t), "completed")
 	yield(move("a", polar.a), "completed")
+	yield(move("t", polar.t), "completed")
 
 func goto(user_coord):
 	print("Goto "+str(user_coord))
@@ -87,7 +87,7 @@ func _grab_above(obj):
 	var safe_y = obj.translation.y+Globals.safe_height+grabbed_height
 	_grabbing(obj)
 	# When grabbing above, move up enough to clear the other jars
-	#yield(move("y", safe_y), "completed")
+	yield(move("y", safe_y), "completed")
 
 func _grab_in_front(obj):
 	grabbed_height = 60.0
@@ -124,6 +124,8 @@ func grab(obj):
 		yield(_grab_in_front(obj),"completed")
 
 func _put_down_above(position):
+	if !grabbed_above:
+		return Heda.error("Robot can't put down in front. The object was grabbed above.")
 	var angle = Lib.best_angle_for_vect(position)
 	var dest = position+Vector3(0.0,grabbed_height,0.0)
 	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")

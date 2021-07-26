@@ -1,0 +1,203 @@
+[gd_scene format=2]
+
+[node name="Shelves" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBox" type="HBoxContainer" parent="Panel"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -250.0
+margin_right = 404.0
+margin_bottom = 250.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="Panel/HBox"]
+margin_right = 100.0
+margin_bottom = 500.0
+rect_min_size = Vector2( 100, 100 )
+
+[node name="ColorRect" type="ColorRect" parent="Panel/HBox"]
+margin_left = 104.0
+margin_right = 304.0
+margin_bottom = 500.0
+rect_min_size = Vector2( 200, 500 )
+color = Color( 0.305882, 0.305882, 0.305882, 1 )
+
+[node name="VBoxContainer" type="Control" parent="Panel/HBox/ColorRect"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Panel/HBox/ColorRect/VBoxContainer"]
+margin_left = 26.4285
+margin_top = 37.7549
+margin_right = 176.428
+margin_bottom = 87.7549
+rect_min_size = Vector2( 150, 50 )
+color = Color( 0.705882, 0.705882, 0.705882, 1 )
+
+[node name="ColorRect2" type="ColorRect" parent="Panel/HBox/ColorRect/VBoxContainer"]
+margin_left = 30.204
+margin_top = 137.061
+margin_right = 180.204
+margin_bottom = 187.061
+rect_min_size = Vector2( 150, 50 )
+color = Color( 0.705882, 0.705882, 0.705882, 1 )
+
+[node name="ColorRect3" type="ColorRect" parent="Panel/HBox/ColorRect/VBoxContainer"]
+margin_left = 30.204
+margin_top = 236.367
+margin_right = 180.204
+margin_bottom = 286.367
+rect_min_size = Vector2( 150, 50 )
+color = Color( 0.705882, 0.705882, 0.705882, 1 )
+
+[node name="ColorRect4" type="ColorRect" parent="Panel/HBox/ColorRect/VBoxContainer"]
+margin_left = 30.204
+margin_top = 331.897
+margin_right = 180.204
+margin_bottom = 381.897
+rect_min_size = Vector2( 150, 50 )
+color = Color( 0.705882, 0.705882, 0.705882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect5" type="ColorRect" parent="Panel/HBox/ColorRect/VBoxContainer"]
+margin_left = 28.3162
+margin_top = 423.652
+margin_right = 178.316
+margin_bottom = 473.652
+rect_min_size = Vector2( 150, 50 )
+color = Color( 0.705882, 0.705882, 0.705882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="Panel/HBox"]
+margin_left = 308.0
+margin_right = 708.0
+margin_bottom = 500.0
+rect_min_size = Vector2( 400, 500 )
+color = Color( 0.305882, 0.305882, 0.305882, 1 )
+
+[node name="ColorRect" type="ColorRect" parent="Panel/HBox/ColorRect2"]
+margin_left = 26.0
+margin_top = 38.0
+margin_right = 353.0
+margin_bottom = 88.0
+rect_min_size = Vector2( 150, 50 )
+color = Color( 0.705882, 0.705882, 0.705882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="Panel/HBox/ColorRect2"]
+margin_left = 34.0
+margin_top = 346.0
+margin_right = 361.0
+margin_bottom = 475.0
+rect_min_size = Vector2( 150, 50 )
+color = Color( 0.705882, 0.705882, 0.705882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect4" type="ColorRect" parent="Panel/HBox/ColorRect2"]
+margin_left = 35.4387
+margin_top = 262.642
+margin_right = 362.439
+margin_bottom = 312.642
+rect_min_size = Vector2( 150, 50 )
+color = Color( 0.705882, 0.705882, 0.705882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect5" type="ColorRect" parent="Panel/HBox/ColorRect2"]
+margin_left = 34.0
+margin_top = 114.0
+margin_right = 361.0
+margin_bottom = 240.0
+rect_min_size = Vector2( 150, 50 )
+color = Color( 0.705882, 0.705882, 0.705882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect3" type="ColorRect" parent="Panel/HBox"]
+margin_left = 712.0
+margin_right = 912.0
+margin_bottom = 500.0
+rect_min_size = Vector2( 200, 500 )
+color = Color( 0.305882, 0.305882, 0.305882, 1 )
+
+[node name="ColorRect" type="ColorRect" parent="Panel/HBox/ColorRect3"]
+margin_left = 26.4285
+margin_top = 37.7549
+margin_right = 176.428
+margin_bottom = 87.7549
+rect_min_size = Vector2( 150, 50 )
+color = Color( 0.705882, 0.705882, 0.705882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="Panel/HBox/ColorRect3"]
+margin_left = 30.204
+margin_top = 147.244
+margin_right = 180.204
+margin_bottom = 197.244
+rect_min_size = Vector2( 150, 50 )
+color = Color( 0.705882, 0.705882, 0.705882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect3" type="ColorRect" parent="Panel/HBox/ColorRect3"]
+margin_left = 33.9795
+margin_top = 234.081
+margin_right = 183.979
+margin_bottom = 284.081
+rect_min_size = Vector2( 150, 50 )
+color = Color( 0.705882, 0.705882, 0.705882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect4" type="ColorRect" parent="Panel/HBox/ColorRect3"]
+margin_left = 33.9795
+margin_top = 341.682
+margin_right = 183.979
+margin_bottom = 391.682
+rect_min_size = Vector2( 150, 50 )
+color = Color( 0.705882, 0.705882, 0.705882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect5" type="ColorRect" parent="Panel/HBox/ColorRect3"]
+margin_left = 28.3163
+margin_top = 420.968
+margin_right = 178.316
+margin_bottom = 470.968
+rect_min_size = Vector2( 150, 50 )
+color = Color( 0.705882, 0.705882, 0.705882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

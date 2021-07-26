@@ -44,3 +44,7 @@ func _on_StoreAll_pressed():
 
 func _on_Grab_pressed():
 	Heda.robot.grab(Heda.current_selection)
+
+func _on_CheckInventory_pressed():
+	pass # TODO: Heda goes around and detects where every jar is
+	# If a new jar is found, it asks what is inside, and weigh it.

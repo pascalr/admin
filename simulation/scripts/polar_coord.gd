@@ -24,7 +24,7 @@ func set_from_user_coord_and_t(coord : UserCoord, _t : float):
 	set_a(coord.angle - _t)
 	self.b = coord.b
 
-	var elbow_x = coord.x + sin(coord.angle / 180.0 * PI) * Globals.humerus_length
+	var elbow_x = coord.x + sin(coord.angle / 180.0 * PI) * Globals.forearm_grip_length
 	self.h = elbow_x - (sin(t / 180.0 * PI) * Globals.humerus_length)
 
 	return self
