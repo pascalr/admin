@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://scenes/Robot.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Cupboard.tscn" type="PackedScene" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://models/lid_small.obj" type="ArrayMesh" id=15]
 [ext_resource path="res://models/lid_spice.obj" type="ArrayMesh" id=16]
 [ext_resource path="res://models/jar_spice.obj" type="ArrayMesh" id=17]
+[ext_resource path="res://blender/sticker.glb" type="PackedScene" id=18]
 
 [sub_resource type="CubeMesh" id=1]
 size = Vector3( 6500, 1, 10000 )
@@ -24,12 +25,15 @@ size = Vector3( 6500, 1, 10000 )
 [sub_resource type="CubeMesh" id=2]
 size = Vector3( 12000, 2438.4, 150 )
 
-[sub_resource type="CylinderMesh" id=3]
+[sub_resource type="CubeMesh" id=3]
+size = Vector3( 6800, 150, 10000 )
+
+[sub_resource type="CylinderMesh" id=4]
 top_radius = 55.0
 bottom_radius = 55.0
 height = 150.0
 
-[sub_resource type="SpatialMaterial" id=4]
+[sub_resource type="SpatialMaterial" id=5]
 albedo_texture = ExtResource( 9 )
 uv1_scale = Vector3( 2, 2, 2 )
 
@@ -62,6 +66,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 454.683, 10, 1036.01 )
 mesh = SubResource( 1 )
 material/0 = ExtResource( 6 )
 
+[node name="sticker" parent="Room/MeshInstance" instance=ExtResource( 18 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 85.923, 590.178, -3271.3 )
+
 [node name="InsideRoom" type="Spatial" parent="Room"]
 
 [node name="DirectionalLight" type="DirectionalLight" parent="Room/InsideRoom"]
@@ -88,6 +95,12 @@ material/0 = null
 [node name="MeshInstance5" type="MeshInstance" parent="Room"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.3511, 1261.66, -3831.67 )
 mesh = SubResource( 2 )
+material/0 = null
+
+[node name="MeshInstance6" type="MeshInstance" parent="Room"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 450.602, 2610.38, 1166.56 )
+visible = false
+mesh = SubResource( 3 )
 material/0 = null
 
 [node name="DirectionalLight2" type="DirectionalLight" parent="."]
@@ -152,8 +165,11 @@ lid_obj = ExtResource( 16 )
 [node name="farine" type="Node" parent="Config/Foods"]
 script = ExtResource( 7 )
 
+[node name="sticker" parent="Config" instance=ExtResource( 18 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 644.941, 966.731, -2005.35 )
+
 [node name="Corn" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 681.865, 956.166, 133.991 )
 visible = false
-mesh = SubResource( 3 )
-material/0 = SubResource( 4 )
+mesh = SubResource( 4 )
+material/0 = SubResource( 5 )

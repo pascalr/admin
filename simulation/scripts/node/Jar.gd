@@ -68,6 +68,12 @@ func _ready():
 	lid.material_override = load('res://resources/lid_steel.material')
 	add_child(lid)
 	
+	var sticker = preload('res://blender/sticker.glb').instance()
+	sticker.translation.y = format.height_with_lid + 1.0
+	sticker.scale.x = 20.0
+	sticker.scale.z = 20.0
+	add_child(sticker)
+	
 	selection_box = MeshInstance.new()
 	var selection_box_mesh = CubeMesh.new()
 	selection_box_mesh.size = Vector3(format.diameter, format.height_with_lid, format.diameter)

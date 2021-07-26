@@ -87,7 +87,7 @@ func _grab_above(obj):
 	var safe_y = obj.translation.y+Globals.safe_height+grabbed_height
 	_grabbing(obj)
 	# When grabbing above, move up enough to clear the other jars
-	yield(move("y", safe_y), "completed")
+	#yield(move("y", safe_y), "completed")
 
 func _grab_in_front(obj):
 	grabbed_height = 60.0

@@ -186,32 +186,29 @@ __meta__ = {
 script = ExtResource( 16 )
 id = "r"
 max_position = 138.0
-start_position = 30.0
+start_position = 36.0
 
 [node name="GripL" type="KinematicBody" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 0 )
 
 [node name="mesh" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip/GripL"]
-transform = Transform( 1.31134e-07, 2.13163e-14, -1, -8.26676e-15, 1, -1.42109e-14, 1, -2.5279e-14, 1.31134e-07, 10.431, -55.371, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -55.371, 0 )
 mesh = ExtResource( 15 )
 material/0 = ExtResource( 11 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip/GripL"]
 transform = Transform( 1.31134e-07, 2.13163e-14, -1, -8.26676e-15, 1, -1.42109e-14, 1, -2.5279e-14, 1.31134e-07, 11.0158, -12.7031, -214.696 )
 shape = SubResource( 8 )
 
 [node name="GripR" type="KinematicBody" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, 0 )
 
 [node name="CollisionShape2" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip/GripR"]
 transform = Transform( -4.3711e-08, 2.13163e-14, 1, -1.9814e-15, 1, 7.10543e-15, -1, -2.5279e-14, -4.3711e-08, -4.55173, -12.3713, -214.696 )
 shape = SubResource( 9 )
 
 [node name="mesh2" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip/GripR"]
-transform = Transform( -4.3711e-08, 2.13163e-14, 1, -1.9814e-15, 1, 7.10543e-15, -1, -2.5279e-14, -4.3711e-08, -5.179, -55.371, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -55.371, 0 )
 mesh = ExtResource( 14 )
 material/0 = ExtResource( 11 )
 

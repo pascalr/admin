@@ -21,6 +21,20 @@ func _ready():
 	assert(abs(robot.wrist.translation.z - Globals.humerus_length) < 0.01)
 	assert(abs(robot.hand.translation.z + Globals.forearm_grip_length) < 0.01)
 	#assert(abs(robot.humerus.))
+	var test = MeshInstance.new()
+	var test_mesh = CylinderMesh.new()
+	test_mesh.top_radius = 15.0
+	test_mesh.bottom_radius = 15.0
+	test_mesh.height = 50.0
+	#content.translation.y = content_mesh.height/2.0+5.0
+	var test_mat = SpatialMaterial.new()
+	test_mat.albedo_color = Color8(255,0,0,255)
+	test_mesh.material = test_mat
+	test.set_mesh(test_mesh)
+	test.translation.x = robot.trolley.translation.x
+	test.translation.z = Globals.trolley_z - Globals.humerus_length + Globals.forearm_grip_length
+	test.translation.y = robot.support.position + test_mesh.height/2.0
+	core.add_child(test)
 
 func error(msg):
 	print("Error: "+str(msg))
