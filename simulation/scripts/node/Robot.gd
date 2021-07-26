@@ -51,7 +51,7 @@ func move(axis, destination):
 	yield($Controller.exec("m"+axis+str(destination)), "completed")
 
 func get_to(polar):
-	print("Getting to "+str(polar))
+	print("Getting to "+str(polar)+" coord == "+(str(UserCoord.new().set_from_polar(polar))))
 	yield(move("y", polar.y), "completed")
 	yield(move("b", polar.b), "completed")
 	yield(move("h", polar.h), "completed")

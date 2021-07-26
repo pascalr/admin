@@ -73,4 +73,5 @@ func set_from_user_coord(coord : UserCoord):
 	return self
 
 func _to_string():
-	return "("+str(h)+","+str(y)+","+str(t)+","+str(a)+","+str(b)+")"
+	return "(%.2f,%.2f,%.2f,%.2f,%.2f)" % [h,y,t,a,b]
+	#return "("+str(h)+","+str(y)+","+str(t)+","+str(a)+","+str(b)+")"

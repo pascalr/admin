@@ -134,8 +134,8 @@ __meta__ = {
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000213623, -11.3238, 158.75 )
 script = ExtResource( 9 )
 id = "a"
-min_position = -20.0
-max_position = 380.0
+min_position = -200.0
+max_position = 200.0
 
 [node name="body" type="KinematicBody" parent="SupportTransversale/Trolley/Humerus/Wrist"]
 
