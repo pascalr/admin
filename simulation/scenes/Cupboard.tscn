@@ -83,7 +83,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 241, 0, -67 )
 script = ExtResource( 14 )
 preferred_jar_format = "Small"
 
-[node name="Area" type="Area" parent="door_l/Shelves/DoorShelf1"]
+[node name="Area" type="StaticBody" parent="door_l/Shelves/DoorShelf1"]
 
 [node name="CollisionShape" type="CollisionShape" parent="door_l/Shelves/DoorShelf1/Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 381.877, 0 )
@@ -93,7 +93,7 @@ shape = SubResource( 1 )
 script = ExtResource( 14 )
 preferred_jar_format = "Small"
 
-[node name="Area" type="Area" parent="door_l/Shelves/DoorShelf2"]
+[node name="Area" type="StaticBody" parent="door_l/Shelves/DoorShelf2"]
 
 [node name="CollisionShape" type="CollisionShape" parent="door_l/Shelves/DoorShelf2/Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 769.211, 0 )
@@ -103,7 +103,7 @@ shape = SubResource( 1 )
 script = ExtResource( 14 )
 preferred_jar_format = "Spice"
 
-[node name="Area" type="Area" parent="door_l/Shelves/DoorShelf3"]
+[node name="Area" type="StaticBody" parent="door_l/Shelves/DoorShelf3"]
 
 [node name="CollisionShape" type="CollisionShape" parent="door_l/Shelves/DoorShelf3/Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1094.36, 0 )
@@ -113,7 +113,7 @@ shape = SubResource( 1 )
 script = ExtResource( 14 )
 preferred_jar_format = "Spice"
 
-[node name="Area" type="Area" parent="door_l/Shelves/DoorShelf4"]
+[node name="Area" type="StaticBody" parent="door_l/Shelves/DoorShelf4"]
 
 [node name="CollisionShape" type="CollisionShape" parent="door_l/Shelves/DoorShelf4/Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1418.85, 0 )
@@ -139,7 +139,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -241, 0, -67 )
 script = ExtResource( 14 )
 preferred_jar_format = "Small"
 
-[node name="Area" type="Area" parent="door_r/Shelves/DootShelf1"]
+[node name="Area" type="StaticBody" parent="door_r/Shelves/DootShelf1"]
 
 [node name="CollisionShape" type="CollisionShape" parent="door_r/Shelves/DootShelf1/Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 381.295, 0 )
@@ -149,7 +149,7 @@ shape = SubResource( 2 )
 script = ExtResource( 14 )
 preferred_jar_format = "Small"
 
-[node name="Area" type="Area" parent="door_r/Shelves/DootShelf2"]
+[node name="Area" type="StaticBody" parent="door_r/Shelves/DootShelf2"]
 
 [node name="CollisionShape" type="CollisionShape" parent="door_r/Shelves/DootShelf2/Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 768.767, 0 )
@@ -159,7 +159,7 @@ shape = SubResource( 2 )
 script = ExtResource( 14 )
 preferred_jar_format = "Spice"
 
-[node name="Area" type="Area" parent="door_r/Shelves/DootShelf3"]
+[node name="Area" type="StaticBody" parent="door_r/Shelves/DootShelf3"]
 
 [node name="CollisionShape" type="CollisionShape" parent="door_r/Shelves/DootShelf3/Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1093.23, 0 )
@@ -169,7 +169,7 @@ shape = SubResource( 2 )
 script = ExtResource( 14 )
 preferred_jar_format = "Spice"
 
-[node name="Area" type="Area" parent="door_r/Shelves/DootShelf4"]
+[node name="Area" type="StaticBody" parent="door_r/Shelves/DootShelf4"]
 
 [node name="CollisionShape" type="CollisionShape" parent="door_r/Shelves/DootShelf4/Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1416.44, 0 )
@@ -184,7 +184,7 @@ __meta__ = {
 script = ExtResource( 14 )
 single_row = false
 
-[node name="Area" type="Area" parent="Shelves/BottomShelf"]
+[node name="Area" type="StaticBody" parent="Shelves/BottomShelf"]
 __meta__ = {
 "_edit_lock_": true
 }
@@ -197,7 +197,7 @@ shape = SubResource( 3 )
 script = ExtResource( 14 )
 grab_above = false
 
-[node name="Area" type="Area" parent="Shelves/LowerSmallShelf"]
+[node name="Area" type="StaticBody" parent="Shelves/LowerSmallShelf"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 317.5, 0 )
 __meta__ = {
 "_edit_lock_": true
@@ -218,7 +218,7 @@ __meta__ = {
 script = ExtResource( 14 )
 grab_above = false
 
-[node name="Area" type="Area" parent="Shelves/LowerSmallShelf2"]
+[node name="Area" type="StaticBody" parent="Shelves/LowerSmallShelf2"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 609.6, 0 )
 __meta__ = {
 "_edit_lock_": true
@@ -256,7 +256,7 @@ shape = SubResource( 5 )
 script = ExtResource( 14 )
 grab_above = false
 
-[node name="Area" type="Area" parent="Shelves/UpperShelf2"]
+[node name="Area" type="StaticBody" parent="Shelves/UpperShelf2"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1422.4, 0 )
 visible = false
 
@@ -275,7 +275,7 @@ __meta__ = {
 script = ExtResource( 14 )
 grab_above = false
 
-[node name="Area" type="Area" parent="Shelves/UpperShelf1"]
+[node name="Area" type="StaticBody" parent="Shelves/UpperShelf1"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1193.8, 0 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Shelves/UpperShelf1/Area"]

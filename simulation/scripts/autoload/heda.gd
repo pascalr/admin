@@ -4,9 +4,12 @@ var CORE := "/root/Main/HBox/HSplit/HSplit/VSplit/TabContainer/Simulation/Viewpo
 var SCENE := CORE
 var CONFIG := SCENE+"/Config"
 var CUPBOARD := SCENE+"/Cupboard"
+var WORKING_SPACE := SCENE+"/WorkingSpace"
 var UI := SCENE+"/UI"
 var ROBOT := SCENE+"/Robot"
 var SYNCHRONIZER := SCENE+"/Synchronizer"
+var SELECTION_PANEL := "/root/Main/HBox/HSplit/HSplit/DetailsPanel/VBox/Selection"
+var ERROR_DIALOG := "/root/Main/ErrorDialog"
 
 var jar_format
 var food
@@ -26,7 +29,7 @@ func get_node(path):
 
 func error(msg):
 	print("Error: "+str(msg))
-	var window = get_node(UI+"/ErrorDialog")
+	var window = get_node(ERROR_DIALOG)
 	window.dialog_text = msg
 	window.popup()
 	yield(get_tree(), "idle_frame")

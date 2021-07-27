@@ -194,3 +194,6 @@ script = ExtResource( 23 )
 [node name="PullStateRequest" type="HTTPRequest" parent="Synchronizer"]
 
 [node name="PushStateRequest" type="HTTPRequest" parent="Synchronizer"]
+
+[node name="WorkingSpace" type="Position3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.7053, 883.908, 173.526 )

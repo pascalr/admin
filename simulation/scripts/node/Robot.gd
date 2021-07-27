@@ -106,7 +106,7 @@ func _grab_under_shelf(obj):
 	yield(move("y", safe_y), "completed")
 
 func _grab_above(obj):
-	grabbed_height = obj.get_height()-20.0
+	grabbed_height = Globals.grab_height_above(obj)
 	var angle = Lib.best_angle_for_vect(obj.translation)
 	var above = obj.translation+Vector3(0.0,obj.get_height()+10.0,0.0)
 	yield(goto(UserCoord.new().set_from_vector(above, angle)), "completed")
@@ -121,7 +121,7 @@ func _grab_above(obj):
 	yield(move("y", safe_y), "completed")
 
 func _grab_in_front(obj):
-	grabbed_height = 60.0
+	grabbed_height = Globals.grab_height_in_front(obj)
 	var angle = 180.0 if obj.translation.z < Globals.max_z else 0.0
 	var in_front = obj.translation
 	# FIXME: TODO in_front.x 
@@ -142,6 +142,27 @@ func _grabbing(obj):
 	grabbed = obj
 	Lib.parent_adopt_child(hand, obj)
 	emit_signal("grabbed_changed")
+
+func _releasing():
+	if grabbed: # FIXME: Yield executed twice
+		Lib.parent_adopt_child(get_node(Heda.CUPBOARD).bodies, grabbed)
+		grabbed = null
+		emit_signal("grabbed_changed")
+
+func change_grab_height(new_height):
+	if not grabbed:
+		return Heda.error("Robot can't change grab height, it is not grabbing.")
+	var working_space = get_node(Heda.WORKING_SPACE)
+	var dest = working_space.translation+Vector3(0.0,grabbed_height,0.0)
+	var angle = Lib.best_angle_for_vect(working_space.translation)
+	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
+	yield(move("r", Globals.max_r), "completed")
+	var obj = grabbed
+	_releasing()
+	yield(move("y", working_space.translation.y+new_height), "completed")
+	yield(move("r", obj.get_diameter()), "completed")
+	_grabbing(obj)
+	grabbed_height = new_height
 	
 func grab(obj):
 	if grabbed and obj == grabbed:
@@ -158,7 +179,8 @@ func grab(obj):
 
 func _put_down_above(position):
 	if !grabbed_above:
-		return Heda.error("Robot can't put down in front. The object was grabbed above.")
+		yield(change_grab_height(Globals.grab_height_above(grabbed)), "completed")
+		#return Heda.error("Robot can't put down above. The object was grabbed in front.")
 	var angle = Lib.best_angle_for_vect(position)
 	var dest = position+Vector3(0.0,grabbed_height,0.0)
 	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
@@ -166,7 +188,8 @@ func _put_down_above(position):
 
 func _put_down_in_front(_shelf, position):
 	if grabbed_above:
-		return Heda.error("Robot can't put down in front. The object was grabbed above.")
+		yield(change_grab_height(Globals.grab_height_in_front(grabbed)), "completed")
+		#return Heda.error("Robot can't put down in front. The object was grabbed above.")
 	var angle = 180.0 if position.z < Globals.max_z else 0.0
 	var dest = position+Vector3(0.0,grabbed_height,0.0)
 	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
@@ -182,12 +205,7 @@ func put_down(shelf, position):
 		yield(_put_down_above(position),"completed")
 	else:
 		yield(_put_down_in_front(shelf, position),"completed")
-	
-	if grabbed: # FIXME: Yield executed twice
-		grabbed.shelf = shelf
-		Lib.parent_adopt_child(shelf, grabbed)
-		grabbed = null
-		emit_signal("grabbed_changed")
+	_releasing()
 
 func weigh(obj):
 	var full_weight = Heda.jar_format.volume * Heda.food.density

@@ -47,7 +47,7 @@ func _move_straight(dest_t):
 
 # y10.0x20a90.0
 func _move(s):
-	var robot = get_tree().root.get_node("Simulation/Robot")
+	var robot = get_node(Heda.ROBOT)
 	var regex = RegEx.new()
 	regex.compile("[a-zA-Z]\\-?\\d+")
 	for result in regex.search_all(s):

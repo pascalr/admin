@@ -30,3 +30,9 @@ var min_z := 0.0
 var max_z := 22.375*25.4
 
 var min_dist_between_jars = 6.25
+
+func grab_height_above(obj):
+	return obj.get_height()-20.0
+
+func grab_height_in_front(_obj):
+	return 60.0

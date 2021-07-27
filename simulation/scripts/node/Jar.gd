@@ -9,7 +9,7 @@ var format : JarFormat
 
 var lid : MeshInstance
 var shape : CollisionShape
-var area : Area
+var body : StaticBody
 var selection_box : MeshInstance
 var content : MeshInstance
 
@@ -106,10 +106,10 @@ func _ready():
 	shape.shape = cylinder
 	#shape.shape = load('res://resources/jar_big.shape')
 	
-	area = Area.new()
-	area.add_child(shape)
-	var _c = area.connect("input_event", self, "_toggle_selection")
-	add_child(area)
+	body = StaticBody.new()
+	body.add_child(shape)
+	var _c = body.connect("input_event", self, "_toggle_selection")
+	add_child(body)
 	
 	self.add_to_group("save")
 	self.add_to_group("jars")
