@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://scenes/Robot.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Cupboard.tscn" type="PackedScene" id=2]
@@ -18,6 +18,10 @@
 [ext_resource path="res://models/lid_spice.obj" type="ArrayMesh" id=16]
 [ext_resource path="res://models/jar_spice.obj" type="ArrayMesh" id=17]
 [ext_resource path="res://blender/sticker.glb" type="PackedScene" id=18]
+[ext_resource path="res://assets/ash_basket/scene.gltf" type="PackedScene" id=19]
+[ext_resource path="res://assets/plants_are_nice/scene.gltf" type="PackedScene" id=20]
+[ext_resource path="res://assets/plant_with_pot/scene.gltf" type="PackedScene" id=21]
+[ext_resource path="res://assets/week-8-plant/scene.gltf" type="PackedScene" id=22]
 
 [sub_resource type="CubeMesh" id=1]
 size = Vector3( 6500, 1, 10000 )
@@ -57,6 +61,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 417.525 )
 
 [node name="Room" type="Spatial" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -114.3, 0 )
+
+[node name="basket" parent="Room" instance=ExtResource( 19 )]
+transform = Transform( -0.869847, 0, -79.9953, 0, 80, 0, 79.9953, 0, -0.869847, 756.554, 2194.43, 448.57 )
 
 [node name="wall_with_hole" parent="Room" instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 491.65, 0, 0 )
@@ -173,3 +180,12 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 681.865, 956.166, 133.991 )
 visible = false
 mesh = SubResource( 4 )
 material/0 = SubResource( 5 )
+
+[node name="plants_are_nice" parent="." instance=ExtResource( 20 )]
+transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, -459.661, -93.1109, 491.367 )
+
+[node name="plant_with_pot" parent="." instance=ExtResource( 21 )]
+transform = Transform( 200, 0, 0, 0, 200, 0, 0, 0, 200, 1502.37, -114.211, 533.982 )
+
+[node name="week-8-plant" parent="." instance=ExtResource( 22 )]
+transform = Transform( 80, 0, 0, 0, 80, 0, 0, 0, 80, 212.978, 1862.14, 465.913 )

@@ -1,0 +1,11 @@
+Model Information:
+* title:	3D Sketchbook Week 8- Plant
+* source:	https://sketchfab.com/3d-models/3d-sketchbook-week-8-plant-228fbbf04b94478ca711109e5cb796d4
+* author:	e.shifflett (https://sketchfab.com/e.shifflett)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "3D Sketchbook Week 8- Plant" (https://sketchfab.com/3d-models/3d-sketchbook-week-8-plant-228fbbf04b94478ca711109e5cb796d4) by e.shifflett (https://sketchfab.com/e.shifflett) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

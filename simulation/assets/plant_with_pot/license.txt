@@ -1,0 +1,11 @@
+Model Information:
+* title:	Plant With Pot
+* source:	https://sketchfab.com/3d-models/plant-with-pot-3345ca8861c64885bd01210895d48e5a
+* author:	Sudipt Kumar (https://sketchfab.com/sudiptkmr)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Plant With Pot" (https://sketchfab.com/3d-models/plant-with-pot-3345ca8861c64885bd01210895d48e5a) by Sudipt Kumar (https://sketchfab.com/sudiptkmr) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
