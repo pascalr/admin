@@ -61,10 +61,78 @@ margin_bottom = 576.0
 rect_min_size = Vector2( 200, 0 )
 split_offset = 300
 
-[node name="Panel" type="Panel" parent="HBox/HSplit/HSplit/VSplit"]
+[node name="Panel" type="ColorRect" parent="HBox/HSplit/HSplit/VSplit"]
+visible = false
+margin_right = 600.0
+margin_bottom = 300.0
+color = Color( 0.615686, 0.615686, 0.615686, 1 )
+
+[node name="Tabs" type="Tabs" parent="HBox/HSplit/HSplit/VSplit/Panel"]
+margin_right = 458.0
+margin_bottom = 66.0
+tab_align = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="HBox/HSplit/HSplit/VSplit/Panel/Tabs"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control2" type="Control" parent="HBox/HSplit/HSplit/VSplit/Panel/Tabs"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control3" type="Control" parent="HBox/HSplit/HSplit/VSplit/Panel/Tabs"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TabContainer" type="TabContainer" parent="HBox/HSplit/HSplit/VSplit"]
 margin_right = 600.0
 margin_bottom = 500.0
 rect_min_size = Vector2( 200, 200 )
+tab_align = 0
+
+[node name="Simulation" type="Control" parent="HBox/HSplit/HSplit/VSplit/TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 24.0
+margin_right = -4.0
+margin_bottom = -4.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Recipes" type="Panel" parent="HBox/HSplit/HSplit/VSplit/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 24.0
+margin_right = -4.0
+margin_bottom = -4.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Inventory" type="Panel" parent="HBox/HSplit/HSplit/VSplit/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 24.0
+margin_right = -4.0
+margin_bottom = -4.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
 [node name="Console" type="Panel" parent="HBox/HSplit/HSplit/VSplit"]
 margin_top = 512.0

@@ -54,6 +54,9 @@ func set_polar(polar):
 	hand.position = polar.b
 	hand.position = polar.b
 
+func rotate(t, a):
+	yield($Controller.exec("mt%.2fa%.2f"%[t,a]), "completed")
+
 func move(axis, destination):
 	yield($Controller.exec("m"+axis+str(destination)), "completed")
 
@@ -62,6 +65,7 @@ func get_to(polar):
 	yield(move("y", polar.y), "completed")
 	yield(move("b", polar.b), "completed")
 	yield(move("h", polar.h), "completed")
+	#yield(rotate(polar.t, polar.a), "completed")
 	yield(move("a", polar.a), "completed")
 	yield(move("t", polar.t), "completed")
 
@@ -81,6 +85,25 @@ func _move_straigth(vect):
 	var user_coord = UserCoord.new().set_from_vector(vect, get_angle())
 	var polar = PolarCoord.new().set_from_user_coord(user_coord)
 	yield($Controller.exec("t"+str(polar.t)), "completed")
+
+func _grab_under_shelf(obj):
+	print("Grab under shelf")
+	grabbed_height = obj.get_height()-20.0
+	var angle = Lib.best_angle_for_vect(obj.translation)
+	var above = obj.translation+Vector3(0.0,obj.get_height()+10.0,0.0)
+	yield(goto(UserCoord.new().set_from_vector(above, angle)), "completed")
+	var dest = obj.translation+Vector3(0.0,grabbed_height,0.0)
+	yield(move("r", Globals.max_r), "completed")
+	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
+	yield(move("r", obj.get_diameter()), "completed")
+	var safe_y = obj.translation.y+Globals.safe_height+grabbed_height
+	var in_front = obj.translation
+	_grabbing(obj)
+	grabbed_above = true
+	in_front.y += grabbed_height
+	in_front.z += obj.get_diameter()/2.0
+	yield(goto(UserCoord.new().set_from_vector(in_front, angle)), "completed")
+	yield(move("y", safe_y), "completed")
 
 func _grab_above(obj):
 	grabbed_height = obj.get_height()-20.0
@@ -126,7 +149,9 @@ func grab(obj):
 	elif grabbed:
 		return Heda.error("Robot can't grab. It is already grabbing.")
 	print("Grabing")
-	if obj.grab_above:
+	if obj.grab_above and obj.translation.z < Globals.under_shelf:
+		yield(_grab_under_shelf(obj),"completed")
+	elif obj.grab_above:
 		yield(_grab_above(obj),"completed")
 	else:
 		yield(_grab_in_front(obj),"completed")

@@ -50,7 +50,8 @@ func set_from_user_coord(coord : UserCoord):
 	assert(!is_nan(_t))
 
 	self.set_from_user_coord_and_t(coord, -_t)
-	var neg_t_h = self.h
+	#var neg_t_h = self.h
+	var neg_t_a = self.a
 	var neg_t_valid = invalid_destination()
 	
 	self.set_from_user_coord_and_t(coord, _t)
@@ -63,8 +64,11 @@ func set_from_user_coord(coord : UserCoord):
 		push_error("Invalid polar coord destination.")
 
 	# return the solution with h closest to the middle	
-	var middle_h = (Heda.get_node(Heda.ROBOT).trolley.min_position + Heda.get_node(Heda.ROBOT).trolley.max_position)/2.0
-	if abs(self.h - middle_h) < abs(neg_t_h - middle_h):
+	#var middle_h = (Heda.get_node(Heda.ROBOT).trolley.min_position + Heda.get_node(Heda.ROBOT).trolley.max_position)/2.0
+	#if abs(self.h - middle_h) < abs(neg_t_h - middle_h):
+	# return the solution with a closest to the current position
+	var current_a = Heda.get_node(Heda.ROBOT).wrist.position
+	if abs(self.a - current_a) < abs(neg_t_a - current_a):
 		return self
 	else:
 		self.set_from_user_coord_and_t(coord, -_t)

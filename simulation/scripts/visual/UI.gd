@@ -48,3 +48,7 @@ func _on_Grab_pressed():
 func _on_CheckInventory_pressed():
 	pass # TODO: Heda goes around and detects where every jar is
 	# If a new jar is found, it asks what is inside, and weigh it.
+
+func _on_PullState_pressed():
+	get_node(Heda.SYNCHRONIZER).pull_state()
+	pass # Replace with function body.

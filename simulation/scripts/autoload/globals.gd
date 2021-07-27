@@ -12,6 +12,8 @@ var humerus_length := 6.25*25.4 # 158.75
 var forearm_grip_length := 204.0
 var gripper_width := 6.0*25.4
 
+var under_shelf := 6.0*25.4
+
 # The safe height to move above
 # (The tallest jars mesure 168.275)
 var safe_height := 178.0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://scenes/Robot.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Cupboard.tscn" type="PackedScene" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://assets/plants_are_nice/scene.gltf" type="PackedScene" id=20]
 [ext_resource path="res://assets/plant_with_pot/scene.gltf" type="PackedScene" id=21]
 [ext_resource path="res://assets/week-8-plant/scene.gltf" type="PackedScene" id=22]
+[ext_resource path="res://scripts/Synchronizer.gd" type="Script" id=23]
 
 [sub_resource type="CubeMesh" id=1]
 size = Vector3( 6500, 1, 10000 )
@@ -110,6 +111,15 @@ visible = false
 mesh = SubResource( 3 )
 material/0 = null
 
+[node name="plants_are_nice" parent="Room" instance=ExtResource( 20 )]
+transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, -459.661, 21.1891, 491.367 )
+
+[node name="plant_with_pot" parent="Room" instance=ExtResource( 21 )]
+transform = Transform( 200, 0, 0, 0, 200, 0, 0, 0, 200, 1502.37, 0.0890045, 533.982 )
+
+[node name="week-8-plant" parent="Room" instance=ExtResource( 22 )]
+transform = Transform( 80, 0, 0, 0, 80, 0, 0, 0, 80, 212.978, 1976.44, 465.913 )
+
 [node name="DirectionalLight2" type="DirectionalLight" parent="."]
 transform = Transform( -0.680703, 0.632608, -0.369391, 0.0306805, 0.528424, 0.848426, 0.731916, 0.566193, -0.379109, 478.537, 1536.2, -1975.95 )
 visible = false
@@ -181,11 +191,9 @@ visible = false
 mesh = SubResource( 4 )
 material/0 = SubResource( 5 )
 
-[node name="plants_are_nice" parent="." instance=ExtResource( 20 )]
-transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, -459.661, -93.1109, 491.367 )
+[node name="Synchronizer" type="Node" parent="."]
+script = ExtResource( 23 )
 
-[node name="plant_with_pot" parent="." instance=ExtResource( 21 )]
-transform = Transform( 200, 0, 0, 0, 200, 0, 0, 0, 200, 1502.37, -114.211, 533.982 )
+[node name="PullStateRequest" type="HTTPRequest" parent="Synchronizer"]
 
-[node name="week-8-plant" parent="." instance=ExtResource( 22 )]
-transform = Transform( 80, 0, 0, 0, 80, 0, 0, 0, 80, 212.978, 1862.14, 465.913 )
+[node name="PushStateRequest" type="HTTPRequest" parent="Synchronizer"]

@@ -1,16 +1,11 @@
 extends Node
 
 var CORE := "/root/Simulation"
-var ROBOT := "/root/Simulation/Robot"
 var CONFIG := "/root/Simulation/Config"
 var CUPBOARD := "/root/Simulation/Cupboard"
 var UI := "/root/Simulation/UI"
-
-#var core
-#var robot
-#var config
-#var cupboard
-#var UI
+var ROBOT := "/root/Simulation/Robot"
+var SYNCHRONIZER := "/root/Simulation/Synchronizer"
 
 var jar_format
 var food
