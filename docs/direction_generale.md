@@ -1,21 +1,9 @@
-# Grandes priorités
+# Planification
 1. **Monter la première tablette pour être capable de prendre des pots en dessous.**
 1. Rapettisser la taille à 22.375-3.75-4.75 = **13.875** et ajuster l'humérus en conséquence.
 1. Page d'acceuil de vente
 1. Caméra
 1. Vendre à 1 client. Vendre des locations, parce que le produit risque de changer.
-
-# À perte de temps
-1. Faire un backup des photos sur clé USB
-
-# Simulation
-1. Je n'ai pas tant envie de refaire ce que j'avais avant (sweep, unscrew, screw, ...) alors en attendant focuser sur le rangement des pots.
-1. Commencer avec être capable de voir les pots de la tablette de travail et de les ranges partout.
-1. Ensuite être capable d'aller chercher les pots partout et de les rammener à la tablette de travail.
-1. Save & Load, tout est sauvegardé dans un fichier (position du robot, inventaire, etc)
-1. Envoyer le statut de l'inventaire à HedaCuisine chaque fois qu'un item est pesé.
-
-# Planification
 1. Sweep dans la simulation.
 1. Plus de poids sur le contrepoids: Présentement 1.25"X3/8"X4.5". **Acheter 3/8"X1.25"X10'** **Chez les parents, couper l'acier, percer 0.25" au centre.**
 1. Fabriquer le nouveau chariot. **PLA noir**, **acheter quincaillerie**
@@ -27,6 +15,16 @@
 1. Acheter des vrais cable chain sur aliexpress (https://www.aliexpress.com/item/10000192080203.html?spm=a2g0o.productlist.0.0.78ff51d6i3BQ3q&aem_p4p_detail=2021070811392718991760024603850002296405)
 1. Acheter un backdrop pour les photos
 1. Trouver un format de bouteille liquide.
+
+# À perte de temps
+1. Faire un backup des photos sur clé USB
+
+# Simulation
+1. Je n'ai pas tant envie de refaire ce que j'avais avant (sweep, unscrew, screw, ...) alors en attendant focuser sur le rangement des pots.
+1. Commencer avec être capable de voir les pots de la tablette de travail et de les ranges partout.
+1. Ensuite être capable d'aller chercher les pots partout et de les rammener à la tablette de travail.
+1. Save & Load, tout est sauvegardé dans un fichier (position du robot, inventaire, etc)
+1. Envoyer le statut de l'inventaire à HedaCuisine chaque fois qu'un item est pesé.
 
 # Référence
 1. https://farm.bot/pages/series-a

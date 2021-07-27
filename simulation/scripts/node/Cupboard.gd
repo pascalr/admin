@@ -80,6 +80,6 @@ func _on_shelf_click(shelf, click_position):
 		Globals.ACTION_ADD_JAR:
 			_check_add_jar(shelf,click_position)
 		Globals.ACTION_PUT_DOWN:
-			Heda.robot.put_down(shelf, click_position)
+			get_node(Heda.ROBOT).put_down(shelf, click_position)
 	
 	

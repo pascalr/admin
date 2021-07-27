@@ -33,17 +33,17 @@ func _on_CommandLine_focus_exited():
 	get_tree().root.get_node("Simulation/Camera").has_focus = true
 
 func _on_Store_pressed():
-	Heda.robot.store(Heda.current_selection)
+	get_node(Heda.ROBOT).store(Heda.current_selection)
 
 func _on_Weigh_pressed():
-	Heda.robot.weigh(Heda.current_selection)
+	get_node(Heda.ROBOT).weigh(Heda.current_selection)
 
 func _on_StoreAll_pressed():
-	for jar in Heda.cupboard.working_shelf.get_jars():
-		yield(Heda.robot.store(jar),"completed")
+	for jar in get_node(Heda.CUPBOARD).working_shelf.get_jars():
+		yield(get_node(Heda.ROBOT).store(jar),"completed")
 
 func _on_Grab_pressed():
-	Heda.robot.grab(Heda.current_selection)
+	get_node(Heda.ROBOT).grab(Heda.current_selection)
 
 func _on_CheckInventory_pressed():
 	pass # TODO: Heda goes around and detects where every jar is

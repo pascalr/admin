@@ -1,10 +1,16 @@
 extends Node
 
-var core
-var robot
-var config
-var cupboard
-var UI
+var CORE := "/root/Simulation/"
+var ROBOT := "/root/Simulation/Robot/"
+var CONFIG := "/root/Simulation/Config/"
+var CUPBOARD := "/root/Simulation/Cupboard/"
+var UI := "/root/Simulation/UI/"
+
+#var core
+#var robot
+#var config
+#var cupboard
+#var UI
 
 var jar_format
 var food
@@ -21,20 +27,16 @@ func _ready():
 #	config = core.get_node("Config")
 #	cupboard = core.get_node("Cupboard")
 #	UI = core.get_node("UI")
-#
-#	jar_format = config.get_node("JarFormats/Big")
-#	food = config.get_node("Foods/farine")
-	
-#	assert(abs(robot.translation.z - Globals.trolley_z) < 0.01)
-#	assert(abs(robot.support.translation.y - robot.support.position) < 0.01)
-#	assert(abs(robot.trolley.translation.x - robot.trolley.position) < 0.01)
-#	assert(abs(robot.wrist.translation.z - Globals.humerus_length) < 0.01)
-#	assert(abs(robot.hand.translation.z + Globals.forearm_grip_length) < 0.01)
-	#assert(abs(robot.humerus.))
+
+	jar_format = get_node(CONFIG).get_node("JarFormats/Big")
+	food = get_node(CONFIG).get_node("Foods/farine")
+
+func get_node(path):
+	return get_tree().root.get_node(path)
 
 func error(msg):
 	print("Error: "+str(msg))
-	var window = UI.get_node("ErrorDialog")
+	var window = get_node(UI).get_node("ErrorDialog")
 	window.dialog_text = msg
 	window.popup()
 	yield(get_tree(), "idle_frame")

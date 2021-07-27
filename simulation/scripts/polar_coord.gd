@@ -9,9 +9,9 @@ var error := ""
 
 func set_a(_a):
 	self.a = _a
-	if _a > Heda.robot.wrist.max_position:
+	if _a > Heda.get_node(Heda.ROBOT).wrist.max_position:
 		self.a = _a - 360.0
-	elif _a < Heda.robot.wrist.min_position:
+	elif _a < Heda.get_node(Heda.ROBOT).wrist.min_position:
 		self.a = _a + 360.0
 
 func set_from_units(_h,_y,_t,_a,_b=0.0):
@@ -30,12 +30,11 @@ func set_from_user_coord_and_t(coord : UserCoord, _t : float):
 	return self
 
 func invalid_destination():
-	for motor in Heda.robot.motors:
+	for motor in Heda.get_node(Heda.ROBOT).motors:
 		var err = motor.test_position(self.get(motor.id))
 		if err:
 			error += err
 	return !error.empty()
-	
 
 func set_from_user_coord(coord : UserCoord):
 	
@@ -64,7 +63,7 @@ func set_from_user_coord(coord : UserCoord):
 		push_error("Invalid polar coord destination.")
 
 	# return the solution with h closest to the middle	
-	var middle_h = (Heda.robot.trolley.min_position + Heda.robot.trolley.max_position)/2.0
+	var middle_h = (Heda.get_node(Heda.ROBOT).trolley.min_position + Heda.get_node(Heda.ROBOT).trolley.max_position)/2.0
 	if abs(self.h - middle_h) < abs(neg_t_h - middle_h):
 		return self
 	else:

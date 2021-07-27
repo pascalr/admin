@@ -66,7 +66,7 @@ func _on_load():
 		var node_data = parse_json(store.get_line())
 		
 		if node_data["class"] == "Jar":
-			Heda.cupboard.bodies.add_child(Jar.new().load_data(node_data))
+			get_node(Heda.CUPBOARD).bodies.add_child(Jar.new().load_data(node_data))
 		else:
 			print("Unkown class " + node_data["class"] + " in store.")
 

@@ -17,6 +17,13 @@ var grabbed : Spatial
 var grabbed_above : bool
 var grabbed_height : float
 
+func _ready():
+	assert(abs(self.translation.z - Globals.trolley_z) < 0.01)
+	assert(abs(support.translation.y - support.position) < 0.01)
+	assert(abs(trolley.translation.x - trolley.position) < 0.01)
+	assert(abs(wrist.translation.z - Globals.humerus_length) < 0.01)
+	assert(abs(hand.translation.z + Globals.forearm_grip_length) < 0.01)
+
 func get_motor(id : String):
 	for motor in motors:
 		if motor.id == id:
@@ -60,8 +67,9 @@ func get_to(polar):
 
 func goto(user_coord):
 	print("Goto "+str(user_coord))
-	var currently_above = support.position > Heda.cupboard.working_shelf.get_height()
-	var going_above = user_coord.y > Heda.cupboard.working_shelf.get_height()
+	var working_shelf = get_node(Heda.CUPBOARD).working_shelf
+	var currently_above = support.position > working_shelf.get_height()
+	var going_above = user_coord.y > working_shelf.get_height()
 	if currently_above != going_above:
 		var safe = PolarCoord.new().set_from_units(trolley.min_position,support.position,90.0,0.0)
 		yield(get_to(safe), "completed")
@@ -163,12 +171,12 @@ func weigh(obj):
 	obj.clear()
 	obj.add_ingredient(Ingredient.new(simulated, Heda.food))
 	print("Weight: "+str(simulated)+"g")
-	Heda.UI.selection_panel.show_details(obj)
+	get_node(Heda.UI).selection_panel.show_details(obj)
 
 func store(obj):
 	if obj == null:
 		return Heda.error("Robot can't store. Invalid obj null.")
-	for shelf in Heda.cupboard.shelves:
+	for shelf in get_node(Heda.CUPBOARD).shelves:
 		if shelf.preferred_jar_format == obj.format.name:
 			var pos = shelf.get_free_positition(obj)
 			yield(grab(obj),"completed")

@@ -54,8 +54,8 @@ func clear():
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var _a = self.connect("selected", get_tree().root.get_node("Simulation"), "_obj_selected")
-	var _b = self.connect("deselected", get_tree().root.get_node("Simulation"), "_obj_deselected")
+	var _a = self.connect("selected", get_node(Heda.CORE), "_obj_selected")
+	var _b = self.connect("deselected", get_node(Heda.CORE), "_obj_deselected")
 	
 	mesh = MeshInstance.new()
 	mesh.set_mesh(format.jar_obj)
@@ -139,13 +139,13 @@ func save():
 func load_key(key, value):
 	match key:
 		"jar_format":
-			self.format = Heda.config.get_node("JarFormats/"+value)
+			self.format = get_node(Heda.CONFIG).get_node("JarFormats/"+value)
 		_:
 			self.set(key, value)
 
 func load_data(data):
 	self.translation = Vector3(data["pos_x"],data["pos_y"],data["pos_z"])
-	self.format = Heda.config.get_node("JarFormats/"+data["jar_format"])
+	self.format = get_node(Heda.CONFIG).get_node("JarFormats/"+data["jar_format"])
 	
 	for i in data.keys():
 		if i == "pos_x" or i == "pos_y" or i == "pos_z" or i == "jar_format":
