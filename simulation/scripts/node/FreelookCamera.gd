@@ -98,3 +98,14 @@ func _update_mouselook():
 	
 		rotate_y(deg2rad(-yaw))
 		rotate_object_local(Vector3(1,0,0), deg2rad(-pitch))
+
+func get_object_under_mouse():
+	var mouse_pos = get_viewport().get_mouse_position()
+	var ray_from = self.project_ray_origin(mouse_pos)
+	var RAY_LENGTH=20000
+	var ray_to = ray_from + self.project_ray_normal(mouse_pos) * RAY_LENGTH
+	var space_state = get_world().direct_space_state
+	var selection = space_state.intersect_ray(ray_from, ray_to)
+	if(selection.size()!=0):
+		print(selection)
+	return selection

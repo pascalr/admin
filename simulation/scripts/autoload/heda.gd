@@ -1,16 +1,17 @@
 extends Node
 
-var CORE := "/root/Simulation"
-var CONFIG := "/root/Simulation/Config"
-var CUPBOARD := "/root/Simulation/Cupboard"
-var UI := "/root/Simulation/UI"
-var ROBOT := "/root/Simulation/Robot"
-var SYNCHRONIZER := "/root/Simulation/Synchronizer"
+var CORE := "/root/Main/HBox/HSplit/HSplit/VSplit/TabContainer/Simulation/Viewport/Simulation"
+var SCENE := CORE
+var CONFIG := SCENE+"/Config"
+var CUPBOARD := SCENE+"/Cupboard"
+var UI := SCENE+"/UI"
+var ROBOT := SCENE+"/Robot"
+var SYNCHRONIZER := SCENE+"/Synchronizer"
 
 var jar_format
 var food
 
-var current_action : int
+var current_action := 1
 var current_selection
 
 func _ready():

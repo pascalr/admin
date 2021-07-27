@@ -141,7 +141,7 @@ _global_script_class_icons={
 [application]
 
 config/name="simulation"
-run/main_scene="res://scenes/Simulation.tscn"
+run/main_scene="res://scenes/Interface.tscn"
 config/icon="res://icon.png"
 
 [autoload]

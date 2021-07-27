@@ -10,8 +10,8 @@ func _ready():
 	$VBox/ActionList.select(Heda.current_action)
 	$VBox/JarFormatList.select(0)
 	rng.randomize()
-	var _a = self.connect("save",get_node("/root/Simulation"),"_on_save")
-	var _b = self.connect("load_store",get_node("/root/Simulation"),"_on_load")
+	var _a = self.connect("save",get_node(Heda.SCENE),"_on_save")
+	var _b = self.connect("load_store",get_node(Heda.SCENE),"_on_load")
 
 func _on_Button_button_up():
 	print("Saving")

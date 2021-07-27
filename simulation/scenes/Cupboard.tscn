@@ -239,7 +239,7 @@ __meta__ = {
 script = ExtResource( 14 )
 single_row = false
 
-[node name="Area" type="Area" parent="Shelves/WorkingShelf"]
+[node name="Area" type="StaticBody" parent="Shelves/WorkingShelf"]
 __meta__ = {
 "_edit_lock_": true
 }

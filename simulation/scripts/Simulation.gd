@@ -1,12 +1,24 @@
 extends Spatial
 
+var mouse_clicked = false
+var click_event
+
 func _ready():
 	OS.set_low_processor_usage_mode(true)
 	OS.set_low_processor_usage_mode_sleep_usec(50000)
 
-func _input(event):
+func _physics_process(delta):
+	if mouse_clicked:
+		var result = $Camera.get_object_under_mouse()
+		result["collider"].emit_signal("input_event", $Camera, click_event, result["position"], null, null)
+		mouse_clicked = false
 
-	if event is InputEventKey and event.is_pressed():
+func _input(event):
+	
+	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed:
+		mouse_clicked = true
+		click_event = event
+	elif event is InputEventKey and event.is_pressed():
 		match event.scancode:
 			KEY_I:
 				if !$UI.command_line.has_focus():
@@ -40,34 +52,4 @@ func _obj_selected(obj):
 	Heda.current_selection = obj
 	$UI.selection_panel.show_details(obj)
 
-func _on_save():
-	
-	var store = File.new()
-	store.open("user://state.save", File.WRITE)
-	
-	for node in get_tree().get_nodes_in_group("save"):
-		var node_data = node.call("save")
-		store.store_line(to_json(node_data))
-	store.close()
 
-func _on_load():
-	
-	var store = File.new()
-	if not store.file_exists("user://state.save"):
-		return
-	
-	# Clear previous objects
-	for node in get_tree().get_nodes_in_group("save"):
-		node.queue_free()
-
-	store.open("user://state.save", File.READ)
-	while store.get_position() < store.get_len():
-
-		var node_data = parse_json(store.get_line())
-		
-		if node_data["class"] == "Jar":
-			get_node(Heda.CUPBOARD).bodies.add_child(Jar.new().load_data(node_data))
-		else:
-			print("Unkown class " + node_data["class"] + " in store.")
-
-	store.close()
