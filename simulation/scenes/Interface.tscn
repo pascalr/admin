@@ -91,6 +91,7 @@ script = ExtResource( 6 )
 [node name="Viewport" type="Viewport" parent="HBox/HSplit/HSplit/VSplit/TabContainer/Simulation"]
 size = Vector2( 592, 464 )
 handle_input_locally = false
+msaa = 3
 render_target_update_mode = 3
 
 [node name="Simulation" parent="HBox/HSplit/HSplit/VSplit/TabContainer/Simulation/Viewport" instance=ExtResource( 4 )]
