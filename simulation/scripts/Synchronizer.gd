@@ -6,6 +6,7 @@ class_name Synchronizer
 
 func _ready():
 	var _a = $PullStateRequest.connect("request_completed",self,"_on_get_state")
+	pull_state()
 
 func _on_get_state(_result, _response_code, _headers, body):
 	var json = JSON.parse(body.get_string_from_utf8())

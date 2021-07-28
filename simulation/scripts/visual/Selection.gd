@@ -1,5 +1,8 @@
 extends PanelContainer
 
+func _ready():
+	self.visible = false
+
 func show_details(obj):
 	self.visible = true
 	$VBox/ObjectName.text = obj.get_class() + " " + str(obj.get_obj_id())

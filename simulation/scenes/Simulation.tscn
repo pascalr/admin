@@ -116,10 +116,9 @@ transform = Transform( 200, 0, 0, 0, 200, 0, 0, 0, 200, 1502.37, 0.0890045, 533.
 [node name="week-8-plant" parent="Room" instance=ExtResource( 22 )]
 transform = Transform( 80, 0, 0, 0, 80, 0, 0, 0, 80, 212.978, 1976.44, 465.913 )
 
-[node name="DirectionalLight2" type="DirectionalLight" parent="."]
-transform = Transform( -0.680703, 0.632608, -0.369391, 0.0306805, 0.528424, 0.848426, 0.731916, 0.566193, -0.379109, 478.537, 1536.2, -1975.95 )
-visible = false
-light_energy = 0.35
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 0.943697, 0.00695687, -0.330738, 0, -0.999779, -0.0210297, -0.330811, 0.0198457, -0.943488, 471.964, 1500.77, -900.405 )
+light_energy = 0.63
 
 [node name="Config" type="Node" parent="."]
 
