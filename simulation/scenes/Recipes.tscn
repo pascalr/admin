@@ -1,52 +1,39 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/scripts/Recipes.gd" type="Script" id=1]
 
 [node name="Recipes" type="Panel"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="VBox" type="VBoxContainer" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="VBox"]
-margin_right = 137.0
-margin_bottom = 14.0
-text = "Tofu poulet au beurre"
+[node name="LineEdit" type="LineEdit" parent="VBox"]
+margin_right = 1024.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+placeholder_text = "Rechercher..."
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label2" type="Label" parent="VBox"]
-margin_top = 18.0
-margin_right = 137.0
-margin_bottom = 32.0
-text = "Tofu poulet au beurre"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label3" type="Label" parent="VBox"]
-margin_top = 36.0
-margin_right = 137.0
-margin_bottom = 50.0
-text = "Tofu poulet au beurre"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label4" type="Label" parent="VBox"]
-margin_top = 54.0
-margin_right = 137.0
-margin_bottom = 68.0
-text = "Tofu poulet au beurre"
+[node name="List" type="ItemList" parent="VBox"]
+margin_top = 28.0
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 __meta__ = {
 "_edit_use_anchors_": false
 }

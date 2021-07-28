@@ -10,8 +10,7 @@ func _ready():
 
 func _on_get_state(_result, _response_code, _headers, body):
 	var json = JSON.parse(body.get_string_from_utf8())
-	for recipe in json.result["recipes"]:
-		print("Recipe: " + recipe["name"])
+	get_node(Heda.RECIPES).load_recipes(json.result["recipes"])
 
 func pull_state():
 	$PullStateRequest.request(host+"sim/get_state")

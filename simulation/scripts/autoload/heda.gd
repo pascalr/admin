@@ -12,6 +12,7 @@ var SELECTION_PANEL := "/root/Main/HBox/HSplit/HSplit/DetailsPanel/VBox/Selectio
 var ERROR_DIALOG := "/root/Main/ErrorDialog"
 var COMMAND_LINE := "/root/Main/HBox/HSplit/HSplit/VSplit/Console/VBox/CommandLine"
 var INTERPRETER := "/root/Main/Interpreter"
+var RECIPES := "/root/Main/HBox/HSplit/HSplit/VSplit/TabContainer/Recipes"
 
 var jar_format
 var food
