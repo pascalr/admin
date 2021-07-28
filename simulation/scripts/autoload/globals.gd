@@ -27,7 +27,7 @@ var min_x := 0.0
 var max_x := 40*25.4
 var min_y := 0.0
 var min_z := 0.0
-var max_z := 22.375*25.4
+var max_z := 24*25.4#22.375*25.4
 
 var min_dist_between_jars = 6.25
 
@@ -36,3 +36,9 @@ func grab_height_above(obj):
 
 func grab_height_in_front(_obj):
 	return 60.0
+
+func min_jar_to_border_dist():
+	return Heda.jar_format.diameter/2.0 + min_dist_between_jars/2.0
+
+func reach():
+	return humerus_length+forearm_grip_length

@@ -7,7 +7,7 @@ var CUPBOARD := SCENE+"/Cupboard"
 var WORKING_SPACE := SCENE+"/WorkingSpace"
 var UI := SCENE+"/UI"
 var ROBOT := SCENE+"/Robot"
-var SYNCHRONIZER := SCENE+"/Synchronizer"
+var SYNCHRONIZER := "/root/Main/Synchronizer"
 var SELECTION_PANEL := "/root/Main/HBox/HSplit/HSplit/DetailsPanel/VBox/Selection"
 var ERROR_DIALOG := "/root/Main/ErrorDialog"
 

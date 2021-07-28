@@ -1,9 +1,11 @@
 extends Panel
 
-onready var simulation_menu = $SimulationMenu
+onready var simulation_menu = $HBox/SimulationMenu
+onready var debug_menu = $HBox/DebugMenu
 
 func _ready():
 	simulation_menu.get_popup().connect("id_pressed", self, "_simulation_id_pressed")
+	debug_menu.get_popup().connect("id_pressed", self, "_debug_id_pressed")
 
 func _simulation_id_pressed(id):
 	match id:
@@ -13,6 +15,35 @@ func _simulation_id_pressed(id):
 			_load()
 		2:
 			get_tree().quit()
+
+func _debug_id_pressed(id):
+	match id:
+		0:
+			_test_reach()
+
+func _test_reach():
+	var cupboard = get_node(Heda.CUPBOARD)
+	var jars := []
+	var shelves = cupboard.shelves
+	shelves.erase(cupboard.working_shelf)
+	for shelf in shelves:
+		if not shelf.visible:
+			continue
+		Heda.jar_format = shelf.get_preferred_jar_format()
+		var pos = Vector3(shelf.get_min_x(), shelf.get_height(), shelf.get_min_z())
+		var jar = cupboard._check_add_jar(shelf, pos)
+		if jar:
+			jars.push_back(jar)
+		pos = Vector3(shelf.get_max_x(), shelf.get_height(), shelf.get_min_z())
+		jar = cupboard._check_add_jar(shelf, pos)
+		if jar:
+			jars.push_back(jar)
+		else:
+			push_error("A corner of the shelf is not valid.")
+#	for jar in jars:
+#		yield(get_node(Heda.ROBOT).grab(jar), "completed")
+#		yield(get_node(Heda.ROBOT).store(jar), "completed")
+#		print("Tested reach for shelf + "+shelf.name)
 
 func _save():
 	

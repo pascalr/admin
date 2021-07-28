@@ -31,7 +31,7 @@ extents = Vector3( 508, 9.525, 60.325 )
 extents = Vector3( 508, 9.525, 152.4 )
 
 [sub_resource type="BoxShape" id=6]
-extents = Vector3( 508, 1, 1 )
+extents = Vector3( 508, 9.525, 60.325 )
 
 [sub_resource type="BoxShape" id=7]
 extents = Vector3( 508, 9.525, 60.325 )
@@ -196,6 +196,7 @@ shape = SubResource( 3 )
 [node name="LowerSmallShelf" type="Spatial" parent="Shelves"]
 script = ExtResource( 14 )
 grab_above = false
+preferred_jar_format = "Medium"
 
 [node name="Area" type="StaticBody" parent="Shelves/LowerSmallShelf"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 317.5, 0 )
@@ -258,10 +259,9 @@ grab_above = false
 
 [node name="Area" type="StaticBody" parent="Shelves/UpperShelf2"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1422.4, 0 )
-visible = false
 
 [node name="CollisionShape" type="CollisionShape" parent="Shelves/UpperShelf2/Area"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, -9.525, 60.325 )
 shape = SubResource( 6 )
 
 [node name="small_shelf2" type="MeshInstance" parent="Shelves/UpperShelf2/Area"]
@@ -274,6 +274,7 @@ __meta__ = {
 [node name="UpperShelf1" type="Spatial" parent="Shelves"]
 script = ExtResource( 14 )
 grab_above = false
+preferred_jar_format = "Medium"
 
 [node name="Area" type="StaticBody" parent="Shelves/UpperShelf1"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1193.8, 0 )

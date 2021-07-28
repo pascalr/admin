@@ -18,6 +18,9 @@
 1. Faire un backup des photos sur clé USB
 
 # Simulation
+1. Être capable de reach partout:
+- 2/4 coins de chaque tablette
+-
 1. Je n'ai pas tant envie de refaire ce que j'avais avant (sweep, unscrew, screw, ...) alors en attendant focuser sur le rangement des pots.
 1. Communication entre l'application et HedaCuisine
 1. Envoyer le statut de l'inventaire à HedaCuisine chaque fois qu'un item est pesé.

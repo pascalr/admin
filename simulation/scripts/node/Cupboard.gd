@@ -5,7 +5,8 @@ export var opening_speed = 50.0
 
 onready var working_shelf = $Shelves/WorkingShelf
 
-onready var shelves = $Shelves.get_children() + $door_l/Shelves.get_children() + $door_r/Shelves.get_children()
+onready var door_shelves = $door_l/Shelves.get_children() + $door_r/Shelves.get_children()
+onready var shelves = $Shelves.get_children() + door_shelves
 
 # Bodies that are not attached to the hand
 onready var bodies = $Bodies
@@ -73,7 +74,8 @@ func _check_add_jar(shelf, click_position):
 	var is_valid = Lib.is_valid_jar_position(jar, click_position)
 	if is_valid:
 		_add_jar(jar)
-	return is_valid
+		return jar
+	return null
 
 func _on_shelf_click(shelf, click_position):
 	match Heda.current_action:

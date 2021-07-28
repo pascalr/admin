@@ -91,7 +91,7 @@ __meta__ = {
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 500, 0, 0 )
 script = ExtResource( 6 )
 id = "h"
-min_position = 265.0
+min_position = 240.0
 max_position = 850.0
 start_position = 500.0
 
@@ -248,3 +248,6 @@ material/0 = ExtResource( 17 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 0.767836, 0.428252, 0.476474, 0.640646, -0.513275, -0.571071, 0, 0.74374, -0.668469, 313.591, 1934.82, 0 )

@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scripts/visual/CommandLine.gd" type="Script" id=1]
 [ext_resource path="res://scripts/visual/Selection.gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://scenes/Simulation.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scripts/visual/Menu.gd" type="Script" id=5]
 [ext_resource path="res://scripts/visual/ViewportContainer.gd" type="Script" id=6]
+[ext_resource path="res://scripts/Synchronizer.gd" type="Script" id=7]
 
 [node name="Main" type="Control"]
 anchor_right = 1.0
@@ -30,11 +31,29 @@ rect_min_size = Vector2( 0, 20 )
 size_flags_horizontal = 3
 script = ExtResource( 5 )
 
-[node name="SimulationMenu" type="MenuButton" parent="HBox/Menus"]
-margin_right = 12.0
+[node name="HBox" type="HBoxContainer" parent="HBox/Menus"]
+margin_right = 164.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SimulationMenu" type="MenuButton" parent="HBox/Menus/HBox"]
+margin_right = 80.0
 margin_bottom = 20.0
 text = "Simulation"
 items = [ "Save", null, 0, false, false, 0, 0, null, "", false, "Load", null, 0, false, false, 1, 0, null, "", false, "Quit", null, 0, false, false, 2, 0, null, "", false ]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DebugMenu" type="MenuButton" parent="HBox/Menus/HBox"]
+margin_left = 84.0
+margin_right = 137.0
+margin_bottom = 20.0
+focus_mode = 2
+text = "Debug"
+items = [ "Test Reach", null, 0, false, false, 0, 0, null, "", false ]
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -108,6 +127,17 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Inventory" type="Panel" parent="HBox/HSplit/HSplit/VSplit/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HedaCuisine" type="Panel" parent="HBox/HSplit/HSplit/VSplit/TabContainer"]
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -438,6 +468,13 @@ margin_top = -29.0
 margin_right = 41.5
 margin_bottom = 29.0
 window_title = "Error!"
+
+[node name="Synchronizer" type="Node" parent="."]
+script = ExtResource( 7 )
+
+[node name="PullStateRequest" type="HTTPRequest" parent="Synchronizer"]
+
+[node name="PushStateRequest" type="HTTPRequest" parent="Synchronizer"]
 
 [connection signal="pressed" from="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails/Grab" to="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection" method="_on_Grab_pressed"]
 [connection signal="pressed" from="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails/Weigh" to="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection" method="_on_Weigh_pressed"]

@@ -45,16 +45,16 @@ func best_angle_for_vect(vect):
 func is_valid_jar_position(jar, position):
 
 	if position.x + jar.format.diameter/2.0 > Globals.max_x:
-		#print("Add jar out of bounds max x!")
+		print("Add jar out of bounds max x!")
 		return false
 	elif position.x - jar.format.diameter/2.0 < Globals.min_x:
-		#print("Add jar out of bounds min x!")
+		print("Add jar out of bounds min x!")
 		return false
 	elif position.z + jar.format.diameter/2.0 > Globals.max_z:
-		#print("Add jar out of bounds max z!")
+		print("Add jar out of bounds max z!")
 		return false
 	elif position.z - jar.format.diameter/2.0 < Globals.min_z:
-		#print("Add jar out of bounds min z!")
+		print("Add jar out of bounds min z!")
 		return false
 	
 	for j in get_tree().get_nodes_in_group("jars"):

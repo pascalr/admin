@@ -9,19 +9,22 @@ export var single_row := true
 
 export(String, "Big", "Medium", "Small", "Spice", "Bottle") var preferred_jar_format = "Big"
 
+func get_preferred_jar_format():
+	return get_node(Heda.CONFIG+"/JarFormats/"+preferred_jar_format)
+
 func get_middle_x():
 	return $Area/CollisionShape.global_transform.origin.x
 func get_min_x():
-	return get_middle_x()-$Area/CollisionShape.shape.extents.x
+	return get_middle_x()-$Area/CollisionShape.shape.extents.x+Globals.min_jar_to_border_dist()
 func get_max_x():
-	return get_middle_x()+$Area/CollisionShape.shape.extents.x
+	return get_middle_x()+$Area/CollisionShape.shape.extents.x-Globals.min_jar_to_border_dist()
 
 func get_middle_z():
 	return $Area/CollisionShape.global_transform.origin.z
 func get_min_z():
-	return get_middle_z()-$Area/CollisionShape.shape.extents.z
+	return get_middle_z()-$Area/CollisionShape.shape.extents.z+Globals.min_jar_to_border_dist()
 func get_max_z():
-	return get_middle_z()+$Area/CollisionShape.shape.extents.z
+	return get_middle_z()+$Area/CollisionShape.shape.extents.z-Globals.min_jar_to_border_dist()
 
 func get_height():
 	return $Area/CollisionShape.global_transform.origin.y + $Area/CollisionShape.shape.extents.y	

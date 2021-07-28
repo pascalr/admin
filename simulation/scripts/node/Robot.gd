@@ -23,6 +23,17 @@ func _ready():
 	assert(abs(trolley.translation.x - trolley.position) < 0.01)
 	assert(abs(wrist.translation.z - Globals.humerus_length) < 0.01)
 	assert(abs(hand.translation.z + Globals.forearm_grip_length) < 0.01)
+	# Test reach is enough for far corners
+	var dr = 114/2.0 # The jar radius
+	var farthest = Globals.trolley_z - dr
+	var trolley = get_node(Heda.ROBOT).trolley
+	var x1 = trolley.min_position-dr
+	var min_reach_1 = sqrt(pow(x1,2)+pow(farthest,2))
+	var x2 = Globals.max_x-trolley.max_position-dr
+	var min_reach_2 = sqrt(pow(x2,2)+pow(farthest,2))
+	var min_reach = max(min_reach_1, min_reach_2)
+	var reach = Globals.reach()
+	assert(reach > min_reach)
 
 func get_motor(id : String):
 	for motor in motors:
@@ -165,7 +176,9 @@ func change_grab_height(new_height):
 	grabbed_height = new_height
 	
 func grab(obj):
-	if grabbed and obj == grabbed:
+	if obj == null:
+		return Heda.error("Robot can't grab. Obj is null.")
+	elif grabbed and obj == grabbed:
 		return yield(get_tree(), "idle_frame")
 	elif grabbed:
 		return Heda.error("Robot can't grab. It is already grabbing.")
