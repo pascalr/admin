@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scripts/visual/CommandLine.gd" type="Script" id=1]
 [ext_resource path="res://scripts/visual/Selection.gd" type="Script" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://scripts/Synchronizer.gd" type="Script" id=7]
 [ext_resource path="res://scripts/node/Interpreter.gd" type="Script" id=8]
 [ext_resource path="res://scenes/Recipes.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/scripts/RecipeDetails.gd" type="Script" id=10]
 
 [node name="Main" type="Control"]
 anchor_right = 1.0
@@ -200,17 +201,17 @@ __meta__ = {
 
 [node name="Inventory" type="PanelContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox"]
 visible = false
-margin_right = 201.0
+margin_right = 215.0
 margin_bottom = 136.0
 
 [node name="VBox" type="VBoxContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory"]
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 194.0
+margin_right = 208.0
 margin_bottom = 129.0
 
 [node name="Label" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox"]
-margin_right = 187.0
+margin_right = 201.0
 margin_bottom = 14.0
 text = "Inventory"
 align = 1
@@ -229,7 +230,7 @@ __meta__ = {
 
 [node name="HBoxContainer" type="HBoxContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox"]
 margin_top = 18.0
-margin_right = 187.0
+margin_right = 201.0
 margin_bottom = 32.0
 
 [node name="Label" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox/HBoxContainer"]
@@ -246,7 +247,7 @@ value = 70.0
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox"]
 margin_top = 36.0
-margin_right = 187.0
+margin_right = 201.0
 margin_bottom = 50.0
 
 [node name="Label" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox/HBoxContainer2"]
@@ -263,7 +264,7 @@ value = 45.0
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox"]
 margin_top = 54.0
-margin_right = 187.0
+margin_right = 201.0
 margin_bottom = 68.0
 
 [node name="Label" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox/HBoxContainer3"]
@@ -282,25 +283,25 @@ value = 90.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 72.0
-margin_right = 187.0
+margin_right = 201.0
 margin_bottom = 86.0
 
 [node name="InventoryItem2" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox" instance=ExtResource( 3 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 90.0
-margin_right = 187.0
+margin_right = 201.0
 margin_bottom = 104.0
 
 [node name="InventoryItem3" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox" instance=ExtResource( 3 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 108.0
-margin_right = 187.0
+margin_right = 201.0
 margin_bottom = 122.0
 
 [node name="Selection" type="PanelContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox"]
-margin_right = 190.0
+margin_right = 201.0
 margin_bottom = 172.0
 size_flags_horizontal = 3
 script = ExtResource( 2 )
@@ -308,12 +309,12 @@ script = ExtResource( 2 )
 [node name="VBox" type="VBoxContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection"]
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 183.0
+margin_right = 194.0
 margin_bottom = 165.0
 size_flags_horizontal = 3
 
 [node name="ObjectName" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox"]
-margin_right = 176.0
+margin_right = 187.0
 margin_bottom = 14.0
 text = "Objet 123"
 align = 1
@@ -332,7 +333,7 @@ __meta__ = {
 
 [node name="X" type="HSplitContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox"]
 margin_top = 18.0
-margin_right = 176.0
+margin_right = 187.0
 margin_bottom = 32.0
 split_offset = 70
 
@@ -343,7 +344,7 @@ text = "X"
 
 [node name="Value" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/X"]
 margin_left = 90.0
-margin_right = 176.0
+margin_right = 187.0
 margin_bottom = 14.0
 text = "10.0"
 
@@ -358,7 +359,7 @@ __meta__ = {
 
 [node name="Y" type="HSplitContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox"]
 margin_top = 36.0
-margin_right = 176.0
+margin_right = 187.0
 margin_bottom = 50.0
 split_offset = 70
 
@@ -369,7 +370,7 @@ text = "Y"
 
 [node name="Value" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/Y"]
 margin_left = 89.0
-margin_right = 176.0
+margin_right = 187.0
 margin_bottom = 14.0
 text = "10.0"
 
@@ -384,7 +385,7 @@ __meta__ = {
 
 [node name="Z" type="HSplitContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox"]
 margin_top = 54.0
-margin_right = 176.0
+margin_right = 187.0
 margin_bottom = 68.0
 split_offset = 70
 
@@ -395,7 +396,7 @@ text = "Z"
 
 [node name="Value" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/Z"]
 margin_left = 90.0
-margin_right = 176.0
+margin_right = 187.0
 margin_bottom = 14.0
 text = "10.0"
 
@@ -410,11 +411,11 @@ __meta__ = {
 
 [node name="JarDetails" type="VBoxContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox"]
 margin_top = 72.0
-margin_right = 176.0
+margin_right = 187.0
 margin_bottom = 158.0
 
 [node name="Weight" type="HSplitContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails"]
-margin_right = 176.0
+margin_right = 187.0
 margin_bottom = 14.0
 split_offset = 33
 
@@ -425,7 +426,7 @@ text = "Weight"
 
 [node name="Value" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails/Weight"]
 margin_left = 90.0
-margin_right = 176.0
+margin_right = 187.0
 margin_bottom = 14.0
 text = "10.0"
 
@@ -440,21 +441,107 @@ __meta__ = {
 
 [node name="Grab" type="Button" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails"]
 margin_top = 18.0
-margin_right = 176.0
+margin_right = 187.0
 margin_bottom = 38.0
 text = "Grab"
 
 [node name="Weigh" type="Button" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails"]
 margin_top = 42.0
-margin_right = 176.0
+margin_right = 187.0
 margin_bottom = 62.0
 text = "Weigh"
 
 [node name="Store" type="Button" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails"]
 margin_top = 66.0
-margin_right = 176.0
+margin_right = 187.0
 margin_bottom = 86.0
 text = "Store"
+
+[node name="RecipeDetails" type="PanelContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox"]
+margin_top = 176.0
+margin_right = 201.0
+margin_bottom = 360.0
+script = ExtResource( 10 )
+
+[node name="VBox" type="VBoxContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/RecipeDetails"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 194.0
+margin_bottom = 177.0
+
+[node name="Title" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/RecipeDetails/VBox"]
+margin_right = 187.0
+margin_bottom = 14.0
+text = "Recipe"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/RecipeDetails/VBox/Title"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.415686, 0.415686, 0.415686, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/RecipeDetails/VBox"]
+margin_top = 18.0
+margin_right = 187.0
+margin_bottom = 32.0
+text = "Ingredients"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InventoryItem" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/RecipeDetails/VBox" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 36.0
+margin_right = 187.0
+margin_bottom = 50.0
+
+[node name="InventoryItem2" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/RecipeDetails/VBox" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 54.0
+margin_right = 187.0
+margin_bottom = 68.0
+
+[node name="InventoryItem3" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/RecipeDetails/VBox" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 72.0
+margin_right = 187.0
+margin_bottom = 86.0
+
+[node name="InventoryItem4" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/RecipeDetails/VBox" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 90.0
+margin_right = 187.0
+margin_bottom = 104.0
+
+[node name="InventoryItem5" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/RecipeDetails/VBox" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 108.0
+margin_right = 187.0
+margin_bottom = 122.0
+
+[node name="Button" type="Button" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/RecipeDetails/VBox"]
+margin_top = 126.0
+margin_right = 187.0
+margin_bottom = 146.0
+text = "Bring ingredients"
+
+[node name="Button2" type="Button" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/RecipeDetails/VBox"]
+margin_top = 150.0
+margin_right = 187.0
+margin_bottom = 170.0
+text = "Cook"
 
 [node name="ErrorDialog" type="AcceptDialog" parent="."]
 anchor_left = 0.5
