@@ -20,6 +20,8 @@ func _debug_id_pressed(id):
 	match id:
 		0:
 			_test_reach()
+		1:
+			_fill_shelves()
 
 func _test_reach():
 	var cupboard = get_node(Heda.CUPBOARD)
@@ -44,6 +46,23 @@ func _test_reach():
 #		yield(get_node(Heda.ROBOT).grab(jar), "completed")
 #		yield(get_node(Heda.ROBOT).store(jar), "completed")
 #		print("Tested reach for shelf + "+shelf.name)
+
+func _fill_shelves():
+	var cupboard = get_node(Heda.CUPBOARD)
+	var shelves = cupboard.shelves
+	shelves.erase(cupboard.working_shelf)
+	for shelf in shelves:
+		if not shelf.visible:
+			continue
+		Heda.jar_format = shelf.get_preferred_jar_format()
+		while true:
+			var pos = shelf.get_free_position(Heda.jar_format)
+			if pos == null:
+				break
+			var jar = cupboard._check_add_jar(shelf, pos)
+			if jar == null:
+				break
+			yield(get_tree(), "idle_frame")
 
 func _save():
 	

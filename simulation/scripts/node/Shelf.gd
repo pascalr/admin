@@ -39,20 +39,21 @@ func get_jars():
 	#		jars << c
 	return jars
 
-func get_free_positition(jar):
+func get_free_position(jar_format):
 	if single_row:
 		for x in range(get_min_x(), get_max_x(), 5):
 			var pos = Vector3(x, get_height(), get_middle_z())
-			if Lib.is_valid_jar_position(jar,pos):
+			if Lib.is_valid_jar_position(jar_format,pos):
 				print("free: "+str(pos))
 				return pos
 	else:
 		for x in range(get_min_x(), get_max_x(), 5):
 			for z in range(get_min_z(), get_max_z(), 5):
 				var pos = Vector3(x, get_height(), z)
-				if Lib.is_valid_jar_position(jar,pos):
+				if Lib.is_valid_jar_position(jar_format,pos):
 					print("free: "+str(pos))
 					return pos
+	return null
 
 func _ready():
 	for child in get_children():

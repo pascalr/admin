@@ -91,8 +91,8 @@ __meta__ = {
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 500, 0, 0 )
 script = ExtResource( 6 )
 id = "h"
-min_position = 240.0
-max_position = 850.0
+min_position = 170.0
+max_position = 780.0
 start_position = 500.0
 
 [node name="body" type="KinematicBody" parent="SupportTransversale/Trolley"]
@@ -102,12 +102,9 @@ transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 32.5986, 
 shape = SubResource( 2 )
 
 [node name="mesh" type="MeshInstance" parent="SupportTransversale/Trolley/body"]
-transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 0, 218.183, 0 )
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 218.183, 20.0135 )
 mesh = ExtResource( 4 )
 material/0 = SubResource( 3 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Humerus" type="Spatial" parent="SupportTransversale/Trolley"]
 transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 0, 0, 0 )
@@ -131,7 +128,7 @@ __meta__ = {
 }
 
 [node name="Wrist" type="Spatial" parent="SupportTransversale/Trolley/Humerus"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000213623, -11.3238, 158.75 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11.324, 230 )
 script = ExtResource( 9 )
 id = "a"
 min_position = -200.0
@@ -152,7 +149,7 @@ __meta__ = {
 }
 
 [node name="Hand" type="Spatial" parent="SupportTransversale/Trolley/Humerus/Wrist"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 55, -204 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 55, -215 )
 script = ExtResource( 13 )
 id = "b"
 min_position = -200.0

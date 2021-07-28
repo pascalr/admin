@@ -71,7 +71,7 @@ func _check_add_jar(shelf, click_position):
 	ing.weight = full_weight/2.0 + full_weight/2.0*randf()
 	jar.ingredients = [ing]
 	
-	var is_valid = Lib.is_valid_jar_position(jar, click_position)
+	var is_valid = Lib.is_valid_jar_position(jar.format, click_position)
 	if is_valid:
 		_add_jar(jar)
 		return jar

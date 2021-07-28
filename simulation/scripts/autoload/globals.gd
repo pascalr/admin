@@ -8,8 +8,8 @@ enum {ACTION_SELECT, ACTION_ADD_JAR, ACTION_PUT_DOWN}
 var working_shelf_depth := 12.0*25.4
 var trolley_z := working_shelf_depth + 4.438*25.4
 
-var humerus_length := 6.25*25.4 # 158.75
-var forearm_grip_length := 204.0
+var humerus_length := 230.0 #194.0 #6.25*25.4 # 158.75
+var forearm_grip_length := 215.0 #214.0
 var gripper_width := 6.0*25.4
 
 var under_shelf := 6.0*25.4

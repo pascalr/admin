@@ -19,14 +19,18 @@ var grabbed_height : float
 
 func _ready():
 	assert(abs(self.translation.z - Globals.trolley_z) < 0.01)
-	assert(abs(support.translation.y - support.position) < 0.01)
-	assert(abs(trolley.translation.x - trolley.position) < 0.01)
 	assert(abs(wrist.translation.z - Globals.humerus_length) < 0.01)
 	assert(abs(hand.translation.z + Globals.forearm_grip_length) < 0.01)
+	
+	assert(abs(support.translation.y - support.position) < 0.01)
+	assert(abs(trolley.translation.x - trolley.position) < 0.01)
+	assert(abs(humerus.rotation.y - humerus.position) < 0.01)
+	assert(abs(wrist.rotation.y - wrist.position) < 0.01)
+	assert(abs(hand.rotation.z - hand.position) < 0.01)
+	
 	# Test reach is enough for far corners
 	var dr = 114/2.0 # The jar radius
 	var farthest = Globals.trolley_z - dr
-	var trolley = get_node(Heda.ROBOT).trolley
 	var x1 = trolley.min_position-dr
 	var min_reach_1 = sqrt(pow(x1,2)+pow(farthest,2))
 	var x2 = Globals.max_x-trolley.max_position-dr
@@ -234,7 +238,7 @@ func store(obj):
 		return Heda.error("Robot can't store. Invalid obj null.")
 	for shelf in get_node(Heda.CUPBOARD).shelves:
 		if shelf.preferred_jar_format == obj.format.name:
-			var pos = shelf.get_free_positition(obj)
+			var pos = shelf.get_free_position(obj.format)
 			yield(grab(obj),"completed")
 			yield(put_down(shelf, pos),"completed")
 			emit_signal("jar_stored")

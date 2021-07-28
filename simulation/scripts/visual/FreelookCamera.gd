@@ -24,7 +24,7 @@ var _q = false
 var _e = false
 
 func _input(event):
-	if !has_focus:
+	if get_node(Heda.COMMAND_LINE).has_focus():
 		return
 	# Receives mouse motion
 	if event is InputEventMouseMotion:

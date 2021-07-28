@@ -22,16 +22,16 @@ func _input(event):
 	elif event is InputEventKey and event.is_pressed():
 		match event.scancode:
 			KEY_I:
-				#if !$UI.command_line.has_focus():
-				$Cupboard.close_doors()
+				if !get_node(Heda.COMMAND_LINE).has_focus():
+					$Cupboard.close_doors()
 			KEY_O:
-				#if !$UI.command_line.has_focus():
-				$Cupboard.open_doors()
+				if !get_node(Heda.COMMAND_LINE).has_focus():
+					$Cupboard.open_doors()
 			KEY_G:
 				if Heda.current_selection != null:
 					$Robot.grab(Heda.current_selection)
 			KEY_ENTER:
-				$UI.command_line.grab_focus()
+				get_node(Heda.COMMAND_LINE).grab_focus()
 			KEY_ESCAPE:
 				for obj in get_tree().get_nodes_in_group("jars"):
 					if obj is Jar:

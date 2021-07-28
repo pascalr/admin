@@ -24,10 +24,10 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scripts/node/Food.gd"
 }, {
-"base": "Camera",
+"base": "Reference",
 "class": "FreelookCamera",
 "language": "GDScript",
-"path": "res://scripts/node/FreelookCamera.gd"
+"path": "res://scripts/visual/FreelookCamera.gd"
 }, {
 "base": "Node",
 "class": "Ingredient",

@@ -10,7 +10,7 @@ func run(raw):
 		args = Lib.strip_edges(split[1].split(','))
 	print("cmd: "+cmd)
 	print("args: "+str(args))
-	var robot = get_node("/root/Simulation/Robot")
+	var robot = get_node(Heda.ROBOT)
 	match cmd:
 		"move":
 			robot.move(args[0], float(args[1]))
