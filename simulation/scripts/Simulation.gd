@@ -36,6 +36,12 @@ func _input(event):
 				for obj in get_tree().get_nodes_in_group("jars"):
 					if obj is Jar:
 						obj.selected = false
+			KEY_SPACE:
+				var scene_camera = get_node(Heda.SCENE_CAMERA)
+				if scene_camera.current:
+					get_node(Heda.ROBOT_CAMERA).make_current()
+				else:
+					scene_camera.make_current()
 			KEY_DELETE:
 				if Heda.current_selection != null:
 					Heda.current_selection.queue_free()

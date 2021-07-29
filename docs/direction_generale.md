@@ -1,7 +1,8 @@
+J'ai fait trop de chose en même temps:
+- Tablettes de l'armorie: Acheter les suppports à tablette (pqt 100) et 2 1X4X8
+
 # Planification
-1. Aller couper des languettes au garage. 15.5" X (1",1.5" et 2")
-1. Rapettisser la taille à 22.375-3.75-4.75 = **13.875** et ajuster l'humérus en conséquence.
-1. Fabriquer le nouveau chariot. **PLA noir**
+1. Rapettisser la taille et ajuster l'humérus en conséquence.
 1. Beau boitier électrique, bien câblé.
 1. Bouton power et lumière power.
 1. Prendre de belles photos de ma machine (en fds avec le gros soleil en plein jour)
@@ -21,6 +22,7 @@
 1. Être capable de reach partout:
 - 2/4 coins de chaque tablette
 -
+1. Rajouter une 2e camera
 1. Je n'ai pas tant envie de refaire ce que j'avais avant (sweep, unscrew, screw, ...) alors en attendant focuser sur le rangement des pots.
 1. Communication entre l'application et HedaCuisine
 1. Envoyer le statut de l'inventaire à HedaCuisine chaque fois qu'un item est pesé.

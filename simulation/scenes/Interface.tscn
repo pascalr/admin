@@ -118,6 +118,17 @@ render_target_update_mode = 3
 
 [node name="Simulation" parent="HBox/HSplit/HSplit/VSplit/TabContainer/Simulation/Viewport" instance=ExtResource( 4 )]
 
+[node name="Camera" type="Panel" parent="HBox/HSplit/HSplit/VSplit/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
 [node name="Recipes" parent="HBox/HSplit/HSplit/VSplit/TabContainer" instance=ExtResource( 9 )]
 visible = false
 margin_left = 4.0
@@ -135,6 +146,59 @@ margin_right = -4.0
 margin_bottom = -4.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+
+[node name="VBox" type="VBoxContainer" parent="HBox/HSplit/HSplit/VSplit/TabContainer/Inventory"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="InventoryItem" parent="HBox/HSplit/HSplit/VSplit/TabContainer/Inventory/VBox" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 72.0
+margin_right = 201.0
+margin_bottom = 86.0
+
+[node name="InventoryItem2" parent="HBox/HSplit/HSplit/VSplit/TabContainer/Inventory/VBox" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 72.0
+margin_right = 201.0
+margin_bottom = 86.0
+
+[node name="InventoryItem3" parent="HBox/HSplit/HSplit/VSplit/TabContainer/Inventory/VBox" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 72.0
+margin_right = 201.0
+margin_bottom = 86.0
+
+[node name="InventoryItem4" parent="HBox/HSplit/HSplit/VSplit/TabContainer/Inventory/VBox" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 72.0
+margin_right = 201.0
+margin_bottom = 86.0
+
+[node name="InventoryItem5" parent="HBox/HSplit/HSplit/VSplit/TabContainer/Inventory/VBox" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 72.0
+margin_right = 201.0
+margin_bottom = 86.0
+
+[node name="InventoryItem6" parent="HBox/HSplit/HSplit/VSplit/TabContainer/Inventory/VBox" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 72.0
+margin_right = 201.0
+margin_bottom = 86.0
+
+[node name="InventoryItem7" parent="HBox/HSplit/HSplit/VSplit/TabContainer/Inventory/VBox" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 72.0
+margin_right = 201.0
+margin_bottom = 86.0
 
 [node name="HedaCuisine" type="Panel" parent="HBox/HSplit/HSplit/VSplit/TabContainer"]
 visible = false
@@ -198,107 +262,6 @@ size_flags_horizontal = 3
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Inventory" type="PanelContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox"]
-visible = false
-margin_right = 215.0
-margin_bottom = 136.0
-
-[node name="VBox" type="VBoxContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory"]
-margin_left = 7.0
-margin_top = 7.0
-margin_right = 208.0
-margin_bottom = 129.0
-
-[node name="Label" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox"]
-margin_right = 201.0
-margin_bottom = 14.0
-text = "Inventory"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ColorRect" type="ColorRect" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox/Label"]
-show_behind_parent = true
-anchor_right = 1.0
-anchor_bottom = 1.0
-color = Color( 0.415686, 0.415686, 0.415686, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="HBoxContainer" type="HBoxContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox"]
-margin_top = 18.0
-margin_right = 201.0
-margin_bottom = 32.0
-
-[node name="Label" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox/HBoxContainer"]
-margin_right = 35.0
-margin_bottom = 14.0
-text = "Sucre"
-
-[node name="ProgressBar" type="ProgressBar" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox/HBoxContainer"]
-margin_left = 39.0
-margin_right = 179.0
-margin_bottom = 14.0
-rect_min_size = Vector2( 140, 0 )
-value = 70.0
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox"]
-margin_top = 36.0
-margin_right = 201.0
-margin_bottom = 50.0
-
-[node name="Label" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox/HBoxContainer2"]
-margin_right = 39.0
-margin_bottom = 14.0
-text = "Farine"
-
-[node name="ProgressBar" type="ProgressBar" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox/HBoxContainer2"]
-margin_left = 43.0
-margin_right = 183.0
-margin_bottom = 14.0
-rect_min_size = Vector2( 140, 0 )
-value = 45.0
-
-[node name="HBoxContainer3" type="HBoxContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox"]
-margin_top = 54.0
-margin_right = 201.0
-margin_bottom = 68.0
-
-[node name="Label" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox/HBoxContainer3"]
-margin_right = 19.0
-margin_bottom = 14.0
-text = "Sel"
-
-[node name="ProgressBar" type="ProgressBar" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox/HBoxContainer3"]
-margin_left = 23.0
-margin_right = 163.0
-margin_bottom = 14.0
-rect_min_size = Vector2( 140, 0 )
-value = 90.0
-
-[node name="InventoryItem" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox" instance=ExtResource( 3 )]
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 72.0
-margin_right = 201.0
-margin_bottom = 86.0
-
-[node name="InventoryItem2" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox" instance=ExtResource( 3 )]
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 90.0
-margin_right = 201.0
-margin_bottom = 104.0
-
-[node name="InventoryItem3" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Inventory/VBox" instance=ExtResource( 3 )]
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 108.0
-margin_right = 201.0
-margin_bottom = 122.0
 
 [node name="Selection" type="PanelContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox"]
 margin_right = 201.0
@@ -461,6 +424,7 @@ text = "Store"
 margin_top = 176.0
 margin_right = 201.0
 margin_bottom = 360.0
+grow_horizontal = 0
 script = ExtResource( 10 )
 
 [node name="VBox" type="VBoxContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/RecipeDetails"]
@@ -468,10 +432,12 @@ margin_left = 7.0
 margin_top = 7.0
 margin_right = 194.0
 margin_bottom = 177.0
+grow_horizontal = 0
 
 [node name="Title" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/RecipeDetails/VBox"]
 margin_right = 187.0
 margin_bottom = 14.0
+grow_horizontal = 0
 text = "Recipe"
 align = 1
 __meta__ = {

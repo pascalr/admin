@@ -128,7 +128,7 @@ __meta__ = {
 }
 
 [node name="Wrist" type="Spatial" parent="SupportTransversale/Trolley/Humerus"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11.324, 230 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11.324, 220 )
 script = ExtResource( 9 )
 id = "a"
 min_position = -200.0
@@ -141,15 +141,12 @@ transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 1.91406
 shape = SubResource( 5 )
 
 [node name="mesh" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/Wrist/body"]
-transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 0, 123.855, 0 )
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 0, 144.276, 0 )
 mesh = ExtResource( 10 )
 material/0 = ExtResource( 11 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Hand" type="Spatial" parent="SupportTransversale/Trolley/Humerus/Wrist"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 55, -215 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 55, -205 )
 script = ExtResource( 13 )
 id = "b"
 min_position = -200.0
@@ -208,6 +205,10 @@ shape = SubResource( 9 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -55.371, 0 )
 mesh = ExtResource( 14 )
 material/0 = ExtResource( 11 )
+
+[node name="RobotCamera" type="Camera" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand"]
+transform = Transform( 0.981677, -0.143067, 0.125865, -6.56373e-08, 0.660526, 0.750803, -0.190552, -0.737046, 0.648423, 26.8651, 80.9247, 72.0824 )
+far = 20000.0
 
 [node name="WeightStack1" type="KinematicBody" parent="SupportTransversale"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1778, 0 )
