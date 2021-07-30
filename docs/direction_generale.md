@@ -1,7 +1,12 @@
 J'ai fait trop de chose en même temps:
-- Tablettes de l'armorie: Acheter les suppports à tablette (pqt 100) et 2 1X4X8
+- Tablettes de l'armorie: Acheter les suppports à tablette (pqt 100) et 2 1X4X8, couper, percer les trous puis ensuite peinturer
+- Peaufiner le trolley horizontale: Acheter bon cable track
+- Faire le poignet
+- App login into website
+- Humérus: Acheter tube caré. Où acheter? Quelle longeur? 220mm
 
 # Planification
+1. Des câbles électriques plus flexible
 1. Rapettisser la taille et ajuster l'humérus en conséquence.
 1. Beau boitier électrique, bien câblé.
 1. Bouton power et lumière power.
@@ -21,8 +26,6 @@ J'ai fait trop de chose en même temps:
 # Simulation
 1. Être capable de reach partout:
 - 2/4 coins de chaque tablette
--
-1. Rajouter une 2e camera
 1. Je n'ai pas tant envie de refaire ce que j'avais avant (sweep, unscrew, screw, ...) alors en attendant focuser sur le rangement des pots.
 1. Communication entre l'application et HedaCuisine
 1. Envoyer le statut de l'inventaire à HedaCuisine chaque fois qu'un item est pesé.

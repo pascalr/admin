@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scripts/visual/CommandLine.gd" type="Script" id=1]
 [ext_resource path="res://scripts/visual/Selection.gd" type="Script" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://scripts/node/Interpreter.gd" type="Script" id=8]
 [ext_resource path="res://scenes/Recipes.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/scripts/RecipeDetails.gd" type="Script" id=10]
+[ext_resource path="res://scenes/Inventory.tscn" type="PackedScene" id=11]
 
 [node name="Main" type="Control"]
 anchor_right = 1.0
@@ -136,69 +137,8 @@ margin_top = 32.0
 margin_right = -4.0
 margin_bottom = -4.0
 
-[node name="Inventory" type="Panel" parent="HBox/HSplit/HSplit/VSplit/TabContainer"]
+[node name="Inventory" parent="HBox/HSplit/HSplit/VSplit/TabContainer" instance=ExtResource( 11 )]
 visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 4.0
-margin_top = 32.0
-margin_right = -4.0
-margin_bottom = -4.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="VBox" type="VBoxContainer" parent="HBox/HSplit/HSplit/VSplit/TabContainer/Inventory"]
-margin_right = 40.0
-margin_bottom = 40.0
-
-[node name="InventoryItem" parent="HBox/HSplit/HSplit/VSplit/TabContainer/Inventory/VBox" instance=ExtResource( 3 )]
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 72.0
-margin_right = 201.0
-margin_bottom = 86.0
-
-[node name="InventoryItem2" parent="HBox/HSplit/HSplit/VSplit/TabContainer/Inventory/VBox" instance=ExtResource( 3 )]
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 72.0
-margin_right = 201.0
-margin_bottom = 86.0
-
-[node name="InventoryItem3" parent="HBox/HSplit/HSplit/VSplit/TabContainer/Inventory/VBox" instance=ExtResource( 3 )]
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 72.0
-margin_right = 201.0
-margin_bottom = 86.0
-
-[node name="InventoryItem4" parent="HBox/HSplit/HSplit/VSplit/TabContainer/Inventory/VBox" instance=ExtResource( 3 )]
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 72.0
-margin_right = 201.0
-margin_bottom = 86.0
-
-[node name="InventoryItem5" parent="HBox/HSplit/HSplit/VSplit/TabContainer/Inventory/VBox" instance=ExtResource( 3 )]
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 72.0
-margin_right = 201.0
-margin_bottom = 86.0
-
-[node name="InventoryItem6" parent="HBox/HSplit/HSplit/VSplit/TabContainer/Inventory/VBox" instance=ExtResource( 3 )]
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 72.0
-margin_right = 201.0
-margin_bottom = 86.0
-
-[node name="InventoryItem7" parent="HBox/HSplit/HSplit/VSplit/TabContainer/Inventory/VBox" instance=ExtResource( 3 )]
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 72.0
-margin_right = 201.0
-margin_bottom = 86.0
 
 [node name="HedaCuisine" type="Panel" parent="HBox/HSplit/HSplit/VSplit/TabContainer"]
 visible = false

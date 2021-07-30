@@ -4,6 +4,7 @@ export var max_angle = 150.0
 export var opening_speed = 50.0
 
 onready var working_shelf = $Shelves/WorkingShelf
+onready var bottom_shelf = $Shelves/BottomShelf
 
 onready var door_shelves = $door_l/Shelves.get_children() + $door_r/Shelves.get_children()
 onready var shelves = $Shelves.get_children() + door_shelves
