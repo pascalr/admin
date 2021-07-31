@@ -11,7 +11,7 @@ func _ready():
 func _on_get_state(_result, response_code, _headers, body):
 	if response_code == 200:
 		var json = JSON.parse(body.get_string_from_utf8())
-		get_node(Heda.RECIPES).load_recipes(json.result["recipes"])
+		get_node(Heda.MAIN_PANEL).load_recipes(json.result["recipes"])
 
 func pull_state():
 	$PullStateRequest.request(host+"sim/get_state")

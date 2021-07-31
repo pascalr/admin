@@ -6,6 +6,7 @@ J'ai fait trop de chose en même temps:
 - Humérus: Acheter tube caré. Où acheter? Quelle longeur? 220mm
 
 # Planification
+1. Pouvoir hierarchisé dans un arbre les recettes.
 1. Des câbles électriques plus flexible
 1. Rapettisser la taille et ajuster l'humérus en conséquence.
 1. Beau boitier électrique, bien câblé.

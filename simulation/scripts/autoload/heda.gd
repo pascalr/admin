@@ -12,8 +12,10 @@ var ERROR_DIALOG := "/root/Main/ErrorDialog"
 var COMMAND_LINE := "/root/Main/HBox/HSplit/HSplit/VSplit/Console/VBox/CommandLine"
 var INTERPRETER := "/root/Main/Interpreter"
 
-var RECIPES := "/root/Main/HBox/HSplit/HSplit/VSplit/TabContainer/Recipes"
+#var RECIPES := "/root/Main/HBox/HSplit/HSplit/VSplit/TabContainer/Recipes"
 var INVENTORY := "/root/Main/HBox/HSplit/HSplit/VSplit/TabContainer/Inventory"
+
+var MAIN_PANEL := "/root/Main/HBox/HSplit/MainPanel"
 
 var RECIPE_DETAILS := "/root/Main/HBox/HSplit/HSplit/DetailsPanel/VBox/RecipeDetails"
 var SELECTION_PANEL := "/root/Main/HBox/HSplit/HSplit/DetailsPanel/VBox/Selection"
