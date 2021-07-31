@@ -140,7 +140,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="simulation"
+config/name="Heda"
 run/main_scene="res://scenes/Interface.tscn"
 config/icon="res://icon.png"
 
@@ -149,6 +149,11 @@ config/icon="res://icon.png"
 Lib="*res://scripts/autoload/lib.gd"
 Globals="*res://scripts/autoload/globals.gd"
 Heda="*res://scripts/autoload/heda.gd"
+
+[display]
+
+window/size/width=1920
+window/size/height=1080
 
 [input]
 

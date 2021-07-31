@@ -51,8 +51,6 @@ func _fill_shelves():
 	var cupboard = get_node(Heda.CUPBOARD)
 	var shelves = cupboard.shelves
 	shelves.erase(cupboard.working_shelf)
-	shelves.erase(cupboard.bottom_shelf)
-	shelves.push_back(cupboard.bottom_shelf)
 	for shelf in shelves:
 		if not shelf.visible:
 			continue
