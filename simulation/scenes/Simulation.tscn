@@ -1,9 +1,10 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://scenes/Robot.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Cupboard.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scripts/visual/FreelookCamera.gd" type="Script" id=3]
-[ext_resource path="res://scripts/Simulation.gd" type="Script" id=5]
+[ext_resource path="res://krita/collision.png" type="Texture" id=4]
+[ext_resource path="res://scripts/Scene.gd" type="Script" id=5]
 [ext_resource path="res://resources/kitchen_tiles.material" type="Material" id=6]
 [ext_resource path="res://scripts/node/Food.gd" type="Script" id=7]
 [ext_resource path="res://scripts/node/JarFormat.gd" type="Script" id=8]
@@ -40,7 +41,8 @@ height = 150.0
 albedo_texture = ExtResource( 9 )
 uv1_scale = Vector3( 2, 2, 2 )
 
-[node name="Simulation" type="Spatial"]
+[node name="Scene" type="Spatial"]
+pause_mode = 2
 script = ExtResource( 5 )
 __meta__ = {
 "_edit_lock_": true
@@ -50,6 +52,16 @@ __meta__ = {
 transform = Transform( -0.999474, 0.0068628, -0.0317099, -0.00249915, 0.958183, 0.286145, 0.0323477, 0.286074, -0.957661, 740.243, 1521.62, -1468.33 )
 far = 100000.0
 script = ExtResource( 3 )
+
+[node name="CollisionSign" type="TextureRect" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -256.0
+margin_right = 256.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Cupboard" parent="." instance=ExtResource( 2 )]
 

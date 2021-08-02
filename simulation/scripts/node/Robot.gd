@@ -44,8 +44,16 @@ func get_motor(id : String):
 		if motor.id == id:
 			return motor
 
-func _wait_done_moving():
-	pass
+#func _physics_process(_delta):
+#	for motor in motors:
+#		var col = motor.get_body().move_and_collide(Vector3(0.0,0.0,0.0))
+#		if col != null:
+#			get_node(Heda.COLLISION_SIGN).visible = true
+#			return
+#	get_node(Heda.COLLISION_SIGN).visible = false
+#
+#func _wait_done_moving():
+#	pass
 
 func get_angle():
 	return humerus.position + wrist.position

@@ -3,9 +3,11 @@ J'ai fait trop de chose en même temps:
 - Peaufiner le trolley horizontale: Acheter bon cable track
 - Faire le poignet
 - App login into website
-- Humérus: Acheter tube caré. Où acheter? Quelle longeur? 220mm
 
 # Planification
+1. Ne pas passer à travers la tablettes
+1. Continuer le bras robotique
+1. Tablettes dans la porte
 1. Pouvoir hierarchisé dans un arbre les recettes.
 1. Des câbles électriques plus flexible
 1. Rapettisser la taille et ajuster l'humérus en conséquence.

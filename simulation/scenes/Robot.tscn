@@ -74,6 +74,7 @@ max_position = 1380.0
 start_position = 889.0
 
 [node name="body" type="KinematicBody" parent="SupportTransversale"]
+collision_mask = 6
 
 [node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/body"]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 507.604, 293.3, -19.7795 )
@@ -96,6 +97,7 @@ max_position = 780.0
 start_position = 500.0
 
 [node name="body" type="KinematicBody" parent="SupportTransversale/Trolley"]
+collision_mask = 6
 
 [node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Trolley/body"]
 transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 32.5986, 218.183, 19.9999 )
@@ -114,6 +116,7 @@ min_position = -90.0
 max_position = 90.0
 
 [node name="body" type="KinematicBody" parent="SupportTransversale/Trolley/Humerus"]
+collision_mask = 6
 
 [node name="CollisionShape2" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/body"]
 transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.914, 169.162, 79.3068 )
@@ -135,6 +138,7 @@ min_position = -200.0
 max_position = 200.0
 
 [node name="body" type="KinematicBody" parent="SupportTransversale/Trolley/Humerus/Wrist"]
+collision_mask = 6
 
 [node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/Wrist/body"]
 transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 1.91406, 87.3068, 21.6979 )
@@ -153,6 +157,7 @@ min_position = -200.0
 max_position = 200.0
 
 [node name="body" type="KinematicBody" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand"]
+collision_mask = 6
 
 [node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/body"]
 transform = Transform( 1.42109e-14, 1.17225e-07, 1, 8.74228e-08, 1, -1.17225e-07, -1, 8.74228e-08, 1.42109e-14, -0.893463, 1.62866, -123.391 )
@@ -184,6 +189,7 @@ start_position = 36.0
 
 [node name="GripL" type="KinematicBody" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 0 )
+collision_mask = 6
 
 [node name="mesh" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip/GripL"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -55.371, 0 )
@@ -196,6 +202,7 @@ shape = SubResource( 8 )
 
 [node name="GripR" type="KinematicBody" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, 0 )
+collision_mask = 6
 
 [node name="CollisionShape2" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip/GripR"]
 transform = Transform( -4.3711e-08, 2.13163e-14, 1, -1.9814e-15, 1, 7.10543e-15, -1, -2.5279e-14, -4.3711e-08, -4.55173, -12.3713, -214.696 )

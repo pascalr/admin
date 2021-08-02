@@ -18,6 +18,12 @@ var start_offset := 0.0 # The object translation of rotation equal to start_posi
 
 var _moving := false
 
+func get_body():
+	for child in get_children():
+		if child is KinematicBody:
+			return child
+	return null
+
 func set_destination(dest):
 	destination = dest
 	_moving = true

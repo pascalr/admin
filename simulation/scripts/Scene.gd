@@ -7,6 +7,8 @@ func _ready():
 	OS.set_low_processor_usage_mode(true)
 	OS.set_low_processor_usage_mode_sleep_usec(50000)
 	OS.min_window_size = Vector2(400, 400)
+	
+	get_node(Heda.COLLISION_SIGN).visible = false
 
 func _physics_process(_delta):
 	if mouse_clicked:
@@ -15,7 +17,11 @@ func _physics_process(_delta):
 			result["collider"].emit_signal("input_event", $Camera, click_event, result["position"], null, null)
 		mouse_clicked = false
 
-func _input(event):
+#func _input(event):
+#	print("Scene input")
+
+func _unhandled_input(event):
+	print("Scene unhandled input")
 	
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed:
 		mouse_clicked = true
@@ -37,12 +43,15 @@ func _input(event):
 				for obj in get_tree().get_nodes_in_group("jars"):
 					if obj is Jar:
 						obj.selected = false
-			KEY_SPACE:
+			KEY_C:
 				var scene_camera = get_node(Heda.SCENE_CAMERA)
 				if scene_camera.current:
 					get_node(Heda.ROBOT_CAMERA).make_current()
 				else:
 					scene_camera.make_current()
+			KEY_P:
+				print("Pause/Unpause")
+				get_tree().paused = !get_tree().paused
 			KEY_DELETE:
 				if Heda.current_selection != null:
 					Heda.current_selection.queue_free()

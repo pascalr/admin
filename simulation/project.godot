@@ -165,6 +165,12 @@ ui_accept={
  ]
 }
 
+[layer_names]
+
+3d_physics/layer_1="Robot"
+3d_physics/layer_2="Cupboard"
+3d_physics/layer_3="Objects"
+
 [physics]
 
 common/enable_pause_aware_picking=true

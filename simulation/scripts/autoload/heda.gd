@@ -1,12 +1,15 @@
 extends Node
 
-var CORE := "/root/Main/HBox/HSplit/HSplit/VSplit/TabContainer/Simulation/Viewport/Simulation"
+# Simulation/Scene
+var CORE := "/root/Main/HBox/HSplit/HSplit/VSplit/TabContainer/Simulation/Viewport/Scene"
 var SCENE := CORE
 var CONFIG := SCENE+"/Config"
 var CUPBOARD := SCENE+"/Cupboard"
 var WORKING_SPACE := SCENE+"/WorkingSpace"
 var UI := SCENE+"/UI"
 var ROBOT := SCENE+"/Robot"
+var COLLISION_SIGN := SCENE+"/CollisionSign"
+
 var SYNCHRONIZER := "/root/Main/Synchronizer"
 var ERROR_DIALOG := "/root/Main/ErrorDialog"
 var COMMAND_LINE := "/root/Main/HBox/HSplit/HSplit/VSplit/Console/VBox/CommandLine"

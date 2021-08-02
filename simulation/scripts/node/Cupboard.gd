@@ -9,6 +9,8 @@ onready var bottom_shelf = $Shelves/BottomShelf
 onready var door_shelves = $door_l/Shelves.get_children() + $door_r/Shelves.get_children()
 onready var shelves = $Shelves.get_children() + door_shelves
 
+onready var colliding_bodies := []
+
 # Bodies that are not attached to the hand
 onready var bodies = $Bodies
 
@@ -84,5 +86,12 @@ func _on_shelf_click(shelf, click_position):
 			_check_add_jar(shelf,click_position)
 		Globals.ACTION_PUT_DOWN:
 			get_node(Heda.ROBOT).put_down(shelf, click_position)
-	
-	
+
+func _on_body_entered(body):
+	colliding_bodies.push_back(body)
+	get_node(Heda.COLLISION_SIGN).visible = true
+
+func _on_body_exited(body):
+	colliding_bodies.erase(body)
+	if colliding_bodies.empty():
+		get_node(Heda.COLLISION_SIGN).visible = false
