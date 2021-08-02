@@ -20,20 +20,19 @@ func _physics_process(_delta):
 #func _input(event):
 #	print("Scene input")
 
-func _unhandled_input(event):
-	print("Scene unhandled input")
+func _input(event):
 	
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed:
 		mouse_clicked = true
 		click_event = event
 	elif event is InputEventKey and event.is_pressed():
+		if get_node(Heda.COMMAND_LINE).has_focus():
+			return
 		match event.scancode:
 			KEY_I:
-				if !get_node(Heda.COMMAND_LINE).has_focus():
-					$Cupboard.close_doors()
+				$Cupboard.close_doors()
 			KEY_O:
-				if !get_node(Heda.COMMAND_LINE).has_focus():
-					$Cupboard.open_doors()
+				$Cupboard.open_doors()
 			KEY_G:
 				if Heda.current_selection != null:
 					$Robot.grab(Heda.current_selection)

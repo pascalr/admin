@@ -13,6 +13,8 @@ var forearm_grip_length := 205.0 #214.0
 var gripper_width := 6.0*25.4
 
 var under_shelf := 6.0*25.4
+var grab_above_grip_length := 20.0
+var jar_clearance := 10.0 # To be safe move this distance above jars
 
 # The safe height to move above
 # (The tallest jars mesure 168.275)

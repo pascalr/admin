@@ -111,11 +111,12 @@ func _move_straigth(vect):
 
 func _grab_under_shelf(obj):
 	print("Grab under shelf")
-	grabbed_height = obj.get_height()-20.0
-	var angle = Lib.best_angle_for_vect(obj.translation)
-	var above = obj.translation+Vector3(0.0,obj.get_height()+10.0,0.0)
-	yield(goto(UserCoord.new().set_from_vector(above, angle)), "completed")
-	var dest = obj.translation+Vector3(0.0,grabbed_height,0.0)
+	grabbed_height = obj.get_height()-Globals.grab_above_grip_length
+	var angle = 180.0 if obj.translation.z < Globals.max_z/2.0 else 0.0
+	var above_height = obj.get_height()+Globals.jar_clearance
+	var dest = obj.translation+Vector3(0.0,above_height,0.0)
+	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
+	dest.y = obj.translation.y+grabbed_height
 	yield(move("r", Globals.max_r), "completed")
 	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
 	yield(move("r", obj.get_diameter()), "completed")
@@ -124,8 +125,8 @@ func _grab_under_shelf(obj):
 	_grabbing(obj)
 	grabbed_above = true
 	in_front.y += grabbed_height
-	in_front.z += obj.get_diameter()/2.0
-	yield(goto(UserCoord.new().set_from_vector(in_front, angle)), "completed")
+	in_front.z = Globals.trolley_z - Globals.forearm_grip_length#obj.get_diameter()/2.0
+	yield(_move_straigth(in_front), "completed")
 	yield(move("y", safe_y), "completed")
 
 func _grab_above(obj):

@@ -145,7 +145,7 @@ func load_key(key, value):
 
 func load_data(data):
 	self.translation = Vector3(data["pos_x"],data["pos_y"],data["pos_z"])
-	self.format = get_node(Heda.CONFIG).get_node("JarFormats/"+data["jar_format"])
+	self.format = Heda.get_node(Heda.CONFIG).get_node("JarFormats/"+data["jar_format"])
 	
 	for i in data.keys():
 		if i == "pos_x" or i == "pos_y" or i == "pos_z" or i == "jar_format":
