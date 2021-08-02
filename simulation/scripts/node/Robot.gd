@@ -83,11 +83,28 @@ func rotate(t, a):
 func move(axis, destination):
 	yield($Controller.exec("m"+axis+str(destination)), "completed")
 
+func _move_at(polar):
+	if abs(polar.a) > 60.0:
+		print("Careful: Forearm could collide. Moving humerus first.")
+		yield(move("t", polar.t), "completed")
+		yield(move("a", polar.a), "completed")
+	else:
+		yield(move("a", polar.a), "completed")
+		yield(move("t", polar.t), "completed")
+
 func get_to(polar):
 	print("Getting to "+str(polar)+" coord == "+(str(UserCoord.new().set_from_polar(polar))))
 	yield(move("y", polar.y), "completed")
 	yield(move("b", polar.b), "completed")
-	yield(move("h", polar.h), "completed")
+	
+	# Check if moving h first is safer or more risky for collisions
+	if abs(polar.h-trolley.middle_position()) > abs(polar.h-trolley.position):
+		_move_at(polar)
+		yield(move("h", polar.h), "completed")
+	else:
+		yield(move("h", polar.h), "completed")
+		_move_at(polar)
+	
 	#yield(rotate(polar.t, polar.a), "completed")
 	if abs(polar.a) > 60.0:
 		print("Careful: Forearm could collide. Moving humerus first.")
@@ -103,7 +120,8 @@ func goto(user_coord):
 	var currently_above = support.position > working_shelf.get_height()
 	var going_above = user_coord.y > working_shelf.get_height()
 	if currently_above != going_above:
-		var safe = PolarCoord.new().set_from_units(trolley.min_position,support.position,90.0,0.0)
+		var h = trolley.middle_position()
+		var safe = PolarCoord.new().set_from_units(h,support.position,90.0,0.0)
 		yield(get_to(safe), "completed")
 		yield(move("y", user_coord.y), "completed")
 	var polar = PolarCoord.new().set_from_user_coord(user_coord)
@@ -217,6 +235,8 @@ func _put_down_above(position):
 	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
 	yield(move("y", position.y+grabbed_height), "completed")
 	yield(move("r", Globals.max_r), "completed")
+	_releasing()
+	yield(move("y", position.y+Globals.safe_height), "completed")
 
 func _put_down_under_shelf(shelf, position):
 	print("Put down under shelf")
@@ -233,6 +253,8 @@ func _put_down_under_shelf(shelf, position):
 	var dest = position+Vector3(0.0,grabbed_height,0.0)
 	yield(_move_straigth(dest), "completed")
 	yield(move("r", Globals.max_r), "completed")
+	_releasing()
+	yield(move("y", position.y+Globals.safe_height), "completed")
 #	grabbed_height = obj.get_height()-Globals.grab_above_grip_length
 #	var angle = 180.0 if obj.translation.z < Globals.max_z/2.0 else 0.0
 #	var above_height = obj.get_height()+Globals.jar_clearance
@@ -259,6 +281,7 @@ func _put_down_in_front(_shelf, position):
 	var dest = position+Vector3(0.0,grabbed_height,0.0)
 	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
 	yield(move("r", Globals.max_r), "completed")
+	_releasing()
 
 func put_down(shelf, position):
 	if position == null:
@@ -272,7 +295,6 @@ func put_down(shelf, position):
 		yield(_put_down_above(position),"completed")
 	else:
 		yield(_put_down_in_front(shelf, position),"completed")
-	_releasing()
 
 func weigh(obj):
 	var full_weight = Heda.jar_format.volume * Heda.food.density

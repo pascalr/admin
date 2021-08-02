@@ -10,6 +10,12 @@ func _ready():
 	
 	get_node(Heda.MENUS)._load()
 
+func _notification(what):
+	if what == MainLoop.NOTIFICATION_WM_QUIT_REQUEST:
+		print("QUITTING!")
+		get_node(Heda.MENUS)._save()
+		get_tree().quit()
+
 func _physics_process(_delta):
 	if mouse_clicked:
 		var result = $Camera.get_object_under_mouse()

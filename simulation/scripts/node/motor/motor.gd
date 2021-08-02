@@ -24,6 +24,9 @@ func get_body():
 			return child
 	return null
 
+func middle_position():
+	return (min_position+max_position)/2.0
+
 func set_destination(dest):
 	destination = dest
 	_moving = true

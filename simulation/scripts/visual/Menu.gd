@@ -13,10 +13,10 @@ func _simulation_id_pressed(id):
 			_save()
 		1:
 			_load()
-		3:
-			_clear()
 		2:
-			get_tree().quit()
+			_clear()
+		3:
+			get_tree().notification(MainLoop.NOTIFICATION_WM_QUIT_REQUEST)
 
 func _debug_id_pressed(id):
 	match id:
