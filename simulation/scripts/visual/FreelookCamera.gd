@@ -105,7 +105,7 @@ func get_object_under_mouse():
 	var RAY_LENGTH=20000
 	var ray_to = ray_from + self.project_ray_normal(mouse_pos) * RAY_LENGTH
 	var space_state = get_world().direct_space_state
-	var selection = space_state.intersect_ray(ray_from, ray_to)
+	var selection = space_state.intersect_ray(ray_from, ray_to, [], 2147483647, true, true)
 	if(selection.size()!=0):
 		print(selection)
 	return selection
