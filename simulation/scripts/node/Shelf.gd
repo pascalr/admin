@@ -9,6 +9,12 @@ export var single_row := true
 
 export(String, "Big", "Medium", "Small", "Spice", "Bottle") var preferred_jar_format = "Big"
 
+func get_area():
+	for child in get_children():
+		if child is Area:
+			return child
+	return null
+
 func get_preferred_jar_format():
 	return get_node(Heda.CONFIG+"/JarFormats/"+preferred_jar_format)
 

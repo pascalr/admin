@@ -22,6 +22,11 @@ func _ready():
 	jar_added_request = HTTPRequest.new()
 	add_child(jar_added_request)
 	var _v = jar_added_request.connect("request_completed", self, "_jar_added")
+	
+	for shelf in shelves:
+		var area = shelf.get_area()
+		var _a = area.connect("body_entered", self, "_collision_detected", [area])
+		var _b = area.connect("body_exited", self, "_collision_gone", [area])
 
 func _process(delta):
 	#var dest = max_angle if opening else 0
@@ -84,6 +89,18 @@ func _on_shelf_click(shelf, click_position):
 			_check_add_jar(shelf,click_position)
 		Globals.ACTION_PUT_DOWN:
 			get_node(Heda.ROBOT).put_down(shelf, click_position)
+
+func _on_area_body_entered(area, body):
+	pass
+
+func _on_area_body_exited(area, body):
+	pass
+
+func _collision_detected(body, area):
+	get_node(Heda.COLLISION_DETAILS).add_collision(area, body)
+
+func _collision_gone(body, area):
+	get_node(Heda.COLLISION_DETAILS).remove_collision(area, body)
 
 func _on_body_entered(body):
 	get_node(Heda.COLLISION_DETAILS).add_collision(self, body)
