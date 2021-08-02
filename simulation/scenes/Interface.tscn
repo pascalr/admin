@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://scripts/visual/CommandLine.gd" type="Script" id=1]
 [ext_resource path="res://scripts/visual/Selection.gd" type="Script" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://scenes/Inventory.tscn" type="PackedScene" id=11]
 [ext_resource path="res://scenes/scripts/NavigationPanel.gd" type="Script" id=12]
 [ext_resource path="res://fonts/default_font.tres" type="DynamicFont" id=13]
+[ext_resource path="res://scenes/scripts/SimulationDetails.gd" type="Script" id=14]
 
 [sub_resource type="Theme" id=1]
 default_font = ExtResource( 13 )
@@ -52,7 +53,7 @@ __meta__ = {
 margin_right = 93.0
 margin_bottom = 29.0
 text = "Simulation"
-items = [ "Save", null, 0, false, false, 0, 0, null, "", false, "Load", null, 0, false, false, 1, 0, null, "", false, "Quit", null, 0, false, false, 2, 0, null, "", false ]
+items = [ "Save", null, 0, false, false, 0, 0, null, "", false, "Load", null, 0, false, false, 1, 0, null, "", false, "Clear", null, 0, false, false, 2, 0, null, "", false, "Quit", null, 0, false, false, 3, 0, null, "", false ]
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -266,9 +267,62 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Selection" type="PanelContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox"]
+[node name="SimulationDetails" type="PanelContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox"]
 margin_right = 201.0
-margin_bottom = 244.0
+margin_bottom = 64.0
+size_flags_horizontal = 3
+script = ExtResource( 14 )
+
+[node name="VBox" type="VBoxContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/SimulationDetails"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 194.0
+margin_bottom = 57.0
+size_flags_horizontal = 3
+
+[node name="ObjectName" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/SimulationDetails/VBox"]
+margin_right = 187.0
+margin_bottom = 23.0
+text = "Simulation"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/SimulationDetails/VBox/ObjectName"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.415686, 0.415686, 0.415686, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Speed" type="HBoxContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/SimulationDetails/VBox"]
+margin_top = 27.0
+margin_right = 187.0
+margin_bottom = 50.0
+
+[node name="Name" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/SimulationDetails/VBox/Speed"]
+margin_right = 47.0
+margin_bottom = 23.0
+text = "Speed"
+
+[node name="Speed" type="HSlider" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/SimulationDetails/VBox/Speed"]
+margin_left = 51.0
+margin_right = 187.0
+margin_bottom = 23.0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+min_value = 0.25
+max_value = 4.0
+step = 0.25
+value = 1.0
+
+[node name="Selection" type="PanelContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox"]
+margin_top = 68.0
+margin_right = 201.0
+margin_bottom = 312.0
 size_flags_horizontal = 3
 script = ExtResource( 2 )
 
@@ -424,9 +478,9 @@ margin_bottom = 122.0
 text = "Store"
 
 [node name="RecipeDetails" type="PanelContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox"]
-margin_top = 248.0
+margin_top = 316.0
 margin_right = 201.0
-margin_bottom = 468.0
+margin_bottom = 536.0
 grow_horizontal = 0
 script = ExtResource( 10 )
 
@@ -533,6 +587,7 @@ script = ExtResource( 7 )
 [node name="Interpreter" type="Node" parent="."]
 script = ExtResource( 8 )
 
+[connection signal="value_changed" from="HBox/HSplit/HSplit/DetailsPanel/VBox/SimulationDetails/VBox/Speed/Speed" to="HBox/HSplit/HSplit/DetailsPanel/VBox/SimulationDetails" method="_on_Speed_value_changed"]
 [connection signal="pressed" from="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails/Grab" to="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection" method="_on_Grab_pressed"]
 [connection signal="pressed" from="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails/Weigh" to="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection" method="_on_Weigh_pressed"]
 [connection signal="pressed" from="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails/Store" to="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection" method="_on_Store_pressed"]

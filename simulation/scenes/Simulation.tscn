@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://scenes/Robot.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Cupboard.tscn" type="PackedScene" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://assets/plants_are_nice/scene.gltf" type="PackedScene" id=20]
 [ext_resource path="res://assets/plant_with_pot/scene.gltf" type="PackedScene" id=21]
 [ext_resource path="res://assets/week-8-plant/scene.gltf" type="PackedScene" id=22]
+[ext_resource path="res://scenes/scripts/CollisionDetails.gd" type="Script" id=23]
 
 [sub_resource type="CubeMesh" id=1]
 size = Vector3( 6500, 1, 10000 )
@@ -53,7 +54,17 @@ transform = Transform( -0.999474, 0.0068628, -0.0317099, -0.00249915, 0.958183, 
 far = 100000.0
 script = ExtResource( 3 )
 
-[node name="CollisionSign" type="TextureRect" parent="."]
+[node name="CollisionDetails" type="Control" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -40.0
+margin_right = 40.0
+script = ExtResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionSign" type="TextureRect" parent="CollisionDetails"]
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_top = -256.0
@@ -62,6 +73,34 @@ texture = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Margin" type="MarginContainer" parent="CollisionDetails"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -256.0
+margin_right = 512.0
+custom_constants/margin_left = 256
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="CollisionDetails/Margin"]
+margin_left = 256.0
+margin_right = 512.0
+margin_bottom = 256.0
+
+[node name="List" type="VBoxContainer" parent="CollisionDetails/Margin/ColorRect"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CollisionDetails/Margin/ColorRect/List"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "Name"
 
 [node name="Cupboard" parent="." instance=ExtResource( 2 )]
 

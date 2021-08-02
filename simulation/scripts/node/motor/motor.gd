@@ -9,7 +9,7 @@ export var min_position := 0.0
 export var max_position := 0.0
 # The value used to adjust the zero of the axis.
 export var start_position := 0.0
-export var speed := 200.0
+export var speed := 100.0
 export var reverse_direction = false
 
 var position := 0.0
@@ -52,9 +52,9 @@ func test_position(pos):
 # Returns whether the motor still needs to move.
 func _move(delta : float):
 	if position < destination:
-		position = min(position+delta*speed, destination)
+		position = min(position+delta*speed*Heda.simulation_speed, destination)
 	elif position > destination:
-		position = max(position-delta*speed, destination)
+		position = max(position-delta*speed*Heda.simulation_speed, destination)
 	return position != destination
 
 func _process(delta : float):

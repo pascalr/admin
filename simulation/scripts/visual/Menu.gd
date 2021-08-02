@@ -13,6 +13,8 @@ func _simulation_id_pressed(id):
 			_save()
 		1:
 			_load()
+		3:
+			_clear()
 		2:
 			get_tree().quit()
 
@@ -63,6 +65,10 @@ func _fill_shelves():
 			if jar == null:
 				break
 			yield(get_tree(), "idle_frame")
+
+func _clear():
+	for node in get_tree().get_nodes_in_group("save"):
+		node.queue_free()
 
 func _save():
 	

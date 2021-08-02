@@ -112,8 +112,8 @@ material/0 = SubResource( 3 )
 transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 0, 0, 0 )
 script = ExtResource( 5 )
 id = "t"
-min_position = -90.0
-max_position = 90.0
+min_position = -95.0
+max_position = 95.0
 
 [node name="body" type="KinematicBody" parent="SupportTransversale/Trolley/Humerus"]
 collision_mask = 6

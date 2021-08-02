@@ -8,7 +8,7 @@ func _ready():
 	OS.set_low_processor_usage_mode_sleep_usec(50000)
 	OS.min_window_size = Vector2(400, 400)
 	
-	get_node(Heda.COLLISION_SIGN).visible = false
+	get_node(Heda.MENUS)._load()
 
 func _physics_process(_delta):
 	if mouse_clicked:

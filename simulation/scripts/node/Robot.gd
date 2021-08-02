@@ -89,8 +89,13 @@ func get_to(polar):
 	yield(move("b", polar.b), "completed")
 	yield(move("h", polar.h), "completed")
 	#yield(rotate(polar.t, polar.a), "completed")
-	yield(move("a", polar.a), "completed")
-	yield(move("t", polar.t), "completed")
+	if abs(polar.a) > 60.0:
+		print("Careful: Forearm could collide. Moving humerus first.")
+		yield(move("t", polar.t), "completed")
+		yield(move("a", polar.a), "completed")
+	else:
+		yield(move("a", polar.a), "completed")
+		yield(move("t", polar.t), "completed")
 
 func goto(user_coord):
 	print("Goto "+str(user_coord))
@@ -208,9 +213,43 @@ func _put_down_above(position):
 		yield(change_grab_height(Globals.grab_height_above(grabbed)), "completed")
 		#return Heda.error("Robot can't put down above. The object was grabbed in front.")
 	var angle = Lib.best_angle_for_vect(position)
-	var dest = position+Vector3(0.0,grabbed_height,0.0)
+	var dest = position+Vector3(0.0,position.y+Globals.safe_height+grabbed_height,0.0)
 	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
+	yield(move("y", position.y+grabbed_height), "completed")
 	yield(move("r", Globals.max_r), "completed")
+
+func _put_down_under_shelf(shelf, position):
+	print("Put down under shelf")
+	if !grabbed_above:
+		yield(change_grab_height(Globals.grab_height_above(grabbed)), "completed")
+	var angle = 180.0 if position.z < Globals.max_z/2.0 else 0.0
+	
+	var in_front = position
+	in_front.y = shelf.get_height() + Globals.safe_height + grabbed_height
+	in_front.z = Globals.trolley_z - Globals.forearm_grip_length
+	yield(goto(UserCoord.new().set_from_vector(in_front, angle)), "completed")
+	yield(move("y", position.y+grabbed_height), "completed")
+	
+	var dest = position+Vector3(0.0,grabbed_height,0.0)
+	yield(_move_straigth(dest), "completed")
+	yield(move("r", Globals.max_r), "completed")
+#	grabbed_height = obj.get_height()-Globals.grab_above_grip_length
+#	var angle = 180.0 if obj.translation.z < Globals.max_z/2.0 else 0.0
+#	var above_height = obj.get_height()+Globals.jar_clearance
+#	var dest = obj.translation+Vector3(0.0,above_height,0.0)
+#	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
+#	dest.y = obj.translation.y+grabbed_height
+#	yield(move("r", Globals.max_r), "completed")
+#	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
+#	yield(move("r", obj.get_diameter()), "completed")
+#	var safe_y = obj.translation.y+Globals.safe_height+grabbed_height
+#	var in_front = obj.translation
+#	_grabbing(obj)
+#	grabbed_above = true
+#	in_front.y += grabbed_height
+#	in_front.z = Globals.trolley_z - Globals.forearm_grip_length#obj.get_diameter()/2.0
+#	yield(_move_straigth(in_front), "completed")
+#	yield(move("y", safe_y), "completed")
 
 func _put_down_in_front(_shelf, position):
 	if grabbed_above:
@@ -227,7 +266,9 @@ func put_down(shelf, position):
 	if grabbed == null:
 		return Heda.error("Robot can't put down. It is not holding any object.")
 	print("Put down " + str(position))
-	if shelf.grab_above:
+	if shelf.grab_above and position.z < Globals.under_shelf:
+		yield(_put_down_under_shelf(shelf, position),"completed")
+	elif shelf.grab_above:
 		yield(_put_down_above(position),"completed")
 	else:
 		yield(_put_down_in_front(shelf, position),"completed")

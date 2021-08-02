@@ -8,12 +8,13 @@ var CUPBOARD := SCENE+"/Cupboard"
 var WORKING_SPACE := SCENE+"/WorkingSpace"
 var UI := SCENE+"/UI"
 var ROBOT := SCENE+"/Robot"
-var COLLISION_SIGN := SCENE+"/CollisionSign"
+var COLLISION_DETAILS := SCENE+"/CollisionDetails"
 
 var SYNCHRONIZER := "/root/Main/Synchronizer"
 var ERROR_DIALOG := "/root/Main/ErrorDialog"
 var COMMAND_LINE := "/root/Main/HBox/HSplit/HSplit/VSplit/Console/VBox/CommandLine"
 var INTERPRETER := "/root/Main/Interpreter"
+var MENUS := "/root/Main/HBox/Menus"
 
 #var RECIPES := "/root/Main/HBox/HSplit/HSplit/VSplit/TabContainer/Recipes"
 var INVENTORY := "/root/Main/HBox/HSplit/HSplit/VSplit/TabContainer/Inventory"
@@ -31,6 +32,8 @@ var food
 
 var current_action := 1
 var current_selection
+
+var simulation_speed := 1.0
 
 func _ready():
 	# Ugly fix to max sure everything is loaded.
