@@ -268,8 +268,9 @@ __meta__ = {
 }
 
 [node name="SimulationDetails" type="PanelContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox"]
+pause_mode = 2
 margin_right = 201.0
-margin_bottom = 64.0
+margin_bottom = 97.0
 size_flags_horizontal = 3
 script = ExtResource( 14 )
 
@@ -277,7 +278,7 @@ script = ExtResource( 14 )
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 194.0
-margin_bottom = 57.0
+margin_bottom = 90.0
 size_flags_horizontal = 3
 
 [node name="ObjectName" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/SimulationDetails/VBox"]
@@ -319,10 +320,17 @@ max_value = 4.0
 step = 0.25
 value = 1.0
 
+[node name="Stop" type="Button" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/SimulationDetails/VBox"]
+pause_mode = 2
+margin_top = 54.0
+margin_right = 187.0
+margin_bottom = 83.0
+text = "Pause"
+
 [node name="Selection" type="PanelContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox"]
-margin_top = 68.0
+margin_top = 101.0
 margin_right = 201.0
-margin_bottom = 312.0
+margin_bottom = 345.0
 size_flags_horizontal = 3
 script = ExtResource( 2 )
 
@@ -478,9 +486,9 @@ margin_bottom = 122.0
 text = "Store"
 
 [node name="RecipeDetails" type="PanelContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox"]
-margin_top = 316.0
+margin_top = 349.0
 margin_right = 201.0
-margin_bottom = 536.0
+margin_bottom = 569.0
 grow_horizontal = 0
 script = ExtResource( 10 )
 
@@ -588,6 +596,7 @@ script = ExtResource( 7 )
 script = ExtResource( 8 )
 
 [connection signal="value_changed" from="HBox/HSplit/HSplit/DetailsPanel/VBox/SimulationDetails/VBox/Speed/Speed" to="HBox/HSplit/HSplit/DetailsPanel/VBox/SimulationDetails" method="_on_Speed_value_changed"]
+[connection signal="pressed" from="HBox/HSplit/HSplit/DetailsPanel/VBox/SimulationDetails/VBox/Stop" to="HBox/HSplit/HSplit/DetailsPanel/VBox/SimulationDetails" method="_on_Stop_pressed"]
 [connection signal="pressed" from="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails/Grab" to="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection" method="_on_Grab_pressed"]
 [connection signal="pressed" from="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails/Weigh" to="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection" method="_on_Weigh_pressed"]
 [connection signal="pressed" from="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails/Store" to="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection" method="_on_Store_pressed"]

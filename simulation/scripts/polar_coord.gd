@@ -18,11 +18,11 @@ func set_from_units(_h,_y,_t,_a,_b=0.0):
 	h=_h; y=_y; t=_t; a=_a; b=_b
 	return self
 
-func set_from_mirror():
-	var x = h + sin(t)*Globals.humerus_length - cos(a+t)*Globals.forearm_grip_length
-	self.h = 2.0*x-h
-	self.a = -a
-	self.t = -t
+#func set_from_mirror():
+#	var x = h + sin(t)*Globals.humerus_length - cos(a+t)*Globals.forearm_grip_length
+#	self.h = 2.0*x-h
+#	self.a = -a
+#	self.t = -t
 
 func set_from_user_coord_and_t(coord : UserCoord, _t : float):
 	self.y = coord.y

@@ -34,10 +34,10 @@ metallic_specular = 1.0
 roughness = 0.5
 
 [sub_resource type="BoxShape" id=4]
-extents = Vector3( 123.908, 11.2404, 44.5832 )
+extents = Vector3( 153, 11.24, 44.583 )
 
 [sub_resource type="BoxShape" id=5]
-extents = Vector3( 42.3929, 71.3597, 81.7686 )
+extents = Vector3( 70.1161, 71.3597, 45.5843 )
 
 [sub_resource type="BoxShape" id=6]
 extents = Vector3( 70.243, 39.131, 77.8896 )
@@ -73,14 +73,14 @@ id = "y"
 max_position = 1380.0
 start_position = 889.0
 
-[node name="body" type="KinematicBody" parent="SupportTransversale"]
+[node name="SupportTransversaleBody" type="KinematicBody" parent="SupportTransversale"]
 collision_mask = 6
 
-[node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/body"]
+[node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/SupportTransversaleBody"]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 507.604, 293.3, -19.7795 )
 shape = SubResource( 1 )
 
-[node name="mesh" type="MeshInstance" parent="SupportTransversale/body"]
+[node name="mesh" type="MeshInstance" parent="SupportTransversale/SupportTransversaleBody"]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1016, 211, 0 )
 mesh = ExtResource( 2 )
 material/0 = ExtResource( 11 )
@@ -96,14 +96,14 @@ min_position = 170.0
 max_position = 780.0
 start_position = 500.0
 
-[node name="body" type="KinematicBody" parent="SupportTransversale/Trolley"]
+[node name="TrolleyBody" type="KinematicBody" parent="SupportTransversale/Trolley"]
 collision_mask = 6
 
-[node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Trolley/body"]
-transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 32.5986, 218.183, 19.9999 )
+[node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Trolley/TrolleyBody"]
+transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, -32.4688, 218.183, 19.9999 )
 shape = SubResource( 2 )
 
-[node name="mesh" type="MeshInstance" parent="SupportTransversale/Trolley/body"]
+[node name="mesh" type="MeshInstance" parent="SupportTransversale/Trolley/TrolleyBody"]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 218.183, 20.0135 )
 mesh = ExtResource( 4 )
 material/0 = SubResource( 3 )
@@ -115,14 +115,14 @@ id = "t"
 min_position = -95.0
 max_position = 95.0
 
-[node name="body" type="KinematicBody" parent="SupportTransversale/Trolley/Humerus"]
+[node name="HumerusBody" type="KinematicBody" parent="SupportTransversale/Trolley/Humerus"]
 collision_mask = 6
 
-[node name="CollisionShape2" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/body"]
-transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.914, 169.162, 79.3068 )
+[node name="CollisionShape2" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/HumerusBody"]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0.678223, 161.85, 111.211 )
 shape = SubResource( 4 )
 
-[node name="mesh" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/body"]
+[node name="mesh" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/HumerusBody"]
 transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0, 168.827, 0 )
 mesh = ExtResource( 7 )
 material/0 = ExtResource( 11 )
@@ -137,14 +137,14 @@ id = "a"
 min_position = -200.0
 max_position = 200.0
 
-[node name="body" type="KinematicBody" parent="SupportTransversale/Trolley/Humerus/Wrist"]
+[node name="WristBody" type="KinematicBody" parent="SupportTransversale/Trolley/Humerus/Wrist"]
 collision_mask = 6
 
-[node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/Wrist/body"]
-transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 1.91406, 87.3068, 21.6979 )
+[node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/Wrist/WristBody"]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, -1.36182, 87.3068, -2.59242 )
 shape = SubResource( 5 )
 
-[node name="mesh" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/Wrist/body"]
+[node name="mesh" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/Wrist/WristBody"]
 transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 0, 144.276, 0 )
 mesh = ExtResource( 10 )
 material/0 = ExtResource( 11 )
@@ -156,18 +156,18 @@ id = "b"
 min_position = -200.0
 max_position = 200.0
 
-[node name="body" type="KinematicBody" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand"]
+[node name="HandBody" type="KinematicBody" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand"]
 collision_mask = 6
 
-[node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/body"]
-transform = Transform( 1.42109e-14, 1.17225e-07, 1, 8.74228e-08, 1, -1.17225e-07, -1, 8.74228e-08, 1.42109e-14, -0.893463, 1.62866, -123.391 )
+[node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/HandBody"]
+transform = Transform( 1.42109e-14, 1.17225e-07, 1, 8.74228e-08, 1, -1.17225e-07, -1, 8.74228e-08, 1.42109e-14, -0.893463, 8.81256, 84.8446 )
 shape = SubResource( 6 )
 
-[node name="CollisionShape2" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/body"]
-transform = Transform( 1.42109e-14, 1.17225e-07, 1, 8.74228e-08, 1, -1.17225e-07, -1, 8.74228e-08, 1.42109e-14, -0.568878, 68.9092, -93.777 )
+[node name="CollisionShape2" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/HandBody"]
+transform = Transform( 1.42109e-14, 1.17225e-07, 1, 8.74228e-08, 1, -1.17225e-07, -1, 8.74228e-08, 1.42109e-14, -0.568878, 73.3241, 114.483 )
 shape = SubResource( 7 )
 
-[node name="mesh" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/body"]
+[node name="mesh" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/HandBody"]
 transform = Transform( 1.42109e-14, 1.17225e-07, 1, 8.74228e-08, 1, -1.17225e-07, -1, 8.74228e-08, 1.42109e-14, 0, 0, 0 )
 mesh = ExtResource( 12 )
 material/0 = ExtResource( 11 )
@@ -197,15 +197,15 @@ mesh = ExtResource( 15 )
 material/0 = ExtResource( 11 )
 
 [node name="CollisionShape" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip/GripL"]
-transform = Transform( 1.31134e-07, 2.13163e-14, -1, -8.26676e-15, 1, -1.42109e-14, 1, -2.5279e-14, 1.31134e-07, 11.0158, -12.7031, -214.696 )
+transform = Transform( 1.31134e-07, 2.13163e-14, -1, -8.26676e-15, 1, -1.42109e-14, 1, -2.5279e-14, 1.31134e-07, -1.25436, -12.7031, 0.944742 )
 shape = SubResource( 8 )
 
 [node name="GripR" type="KinematicBody" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, 9.53674e-07 )
 collision_mask = 6
 
 [node name="CollisionShape2" type="CollisionShape" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip/GripR"]
-transform = Transform( -4.3711e-08, 2.13163e-14, 1, -1.9814e-15, 1, 7.10543e-15, -1, -2.5279e-14, -4.3711e-08, -4.55173, -12.3713, -214.696 )
+transform = Transform( -4.3711e-08, 2.13163e-14, 1, -1.9814e-15, 1, 7.10543e-15, -1, -2.5279e-14, -4.3711e-08, -0.449524, -12.3713, 0.774179 )
 shape = SubResource( 9 )
 
 [node name="mesh2" type="MeshInstance" parent="SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip/GripR"]
