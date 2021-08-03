@@ -11,3 +11,12 @@ func _init(_weight = 0.0, _food = null):
 
 func volume():
 	return weight / food.density
+
+func to_dict():
+	return {
+		"weight" : weight,
+		"food" : str(food)
+	}
+
+func _to_string():
+	return "%.2f g %s" % [weight, food]

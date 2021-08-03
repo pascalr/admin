@@ -9,14 +9,32 @@ export var single_row := true
 
 export(String, "Big", "Medium", "Small", "Spice", "Bottle") var preferred_jar_format = "Big"
 
-func get_area():
+
+func _ready():
+	for child in get_children():
+		if child is CollisionObject:
+			print("Connecting input_event")
+			var _b = child.connect("input_event", self, "_on_input_event")
+	
+	var _a = self.connect("shelf_click", get_node(Heda.CUPBOARD), "_on_shelf_click")
+	
+	var area = get_area()
+	area.collision_mask = 8
+	area.collision_layer = 2
+
+func get_area() -> Area:
 	for child in get_children():
 		if child is Area:
 			return child
 	return null
 
-func get_collision_shape():
-	return get_area().get_node("CollisionShape")
+func get_collision_shape() -> CollisionShape:
+	var area = get_area()
+	if area != null:
+		for child in area.get_children():
+			if child is CollisionShape:
+				return child
+	return null
 
 func get_preferred_jar_format():
 	return get_node(Heda.CONFIG+"/JarFormats/"+preferred_jar_format)
@@ -64,13 +82,6 @@ func get_free_position(jar_format):
 					return pos
 	return null
 
-func _ready():
-	for child in get_children():
-		if child is CollisionObject:
-			print("Connecting input_event")
-			var _b = child.connect("input_event", self, "_on_input_event")
-	
-	var _a = self.connect("shelf_click", get_node(Heda.CUPBOARD), "_on_shelf_click")
 
 func _on_input_event(_camera, event, click_position, _click_normal, _shape_idx):
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT:

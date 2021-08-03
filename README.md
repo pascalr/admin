@@ -1,3 +1,9 @@
+## GODOT
+
+1. Parents control their children.
+1. When parents reference their children, the path should be assigned a variable at the top.
+1. Every global path is assign a variable in Heda.
+
 ## Coordinate system
 
 When you are behind the cupboard, positive A,T and Angle is clockwise. T0 is facing you. A0 and angle is facing opposite. 

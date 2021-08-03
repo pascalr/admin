@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://scenes/Robot.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Cupboard.tscn" type="PackedScene" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://assets/plant_with_pot/scene.gltf" type="PackedScene" id=21]
 [ext_resource path="res://assets/week-8-plant/scene.gltf" type="PackedScene" id=22]
 [ext_resource path="res://scenes/scripts/CollisionDetails.gd" type="Script" id=23]
+[ext_resource path="res://assets/ingredients/egg.svg" type="Texture" id=24]
 
 [sub_resource type="CubeMesh" id=1]
 size = Vector3( 6500, 1, 10000 )
@@ -229,6 +230,34 @@ lid_obj = ExtResource( 16 )
 
 [node name="farine" type="Node" parent="Config/Foods"]
 script = ExtResource( 7 )
+id = 1
+_name = "farine"
+color = Color( 1, 1, 1, 1 )
+
+[node name="sucre" type="Node" parent="Config/Foods"]
+script = ExtResource( 7 )
+id = 2
+_name = "sucre"
+color = Color( 1, 1, 1, 1 )
+
+[node name="pois verts cassés" type="Node" parent="Config/Foods"]
+script = ExtResource( 7 )
+id = 3
+_name = "pois verts cassés"
+color = Color( 0.0235294, 0.729412, 0.14902, 1 )
+
+[node name="oeuf" type="Node" parent="Config/Foods"]
+script = ExtResource( 7 )
+id = 4
+_name = "oeuf"
+color = Color( 1, 0.988235, 0.282353, 1 )
+image = ExtResource( 24 )
+
+[node name="lait" type="Node" parent="Config/Foods"]
+script = ExtResource( 7 )
+id = 5
+_name = "lait"
+color = Color( 1, 1, 1, 1 )
 
 [node name="sticker" parent="Config" instance=ExtResource( 18 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 644.941, 966.731, -2005.35 )

@@ -3,12 +3,15 @@ extends Node
 # Simulation/Scene
 var CORE := "/root/Main/HBox/HSplit/HSplit/VSplit/TabContainer/Simulation/Viewport/Scene"
 var SCENE := CORE
-var CONFIG := SCENE+"/Config"
 var CUPBOARD := SCENE+"/Cupboard"
 var WORKING_SPACE := SCENE+"/WorkingSpace"
 var UI := SCENE+"/UI"
 var ROBOT := SCENE+"/Robot"
 var COLLISION_DETAILS := SCENE+"/CollisionDetails"
+
+var CONFIG := SCENE+"/Config"
+var JAR_FORMATS := CONFIG+"/JarFormats"
+var FOODS := CONFIG+"/Foods"
 
 var SYNCHRONIZER := "/root/Main/Synchronizer"
 var ERROR_DIALOG := "/root/Main/ErrorDialog"
@@ -96,7 +99,7 @@ func save():
 	store.open("user://state.save", File.WRITE)
 	
 	for node in get_tree().get_nodes_in_group("save"):
-		var node_data = node.call("save")
+		var node_data = node.to_dict()
 		store.store_line(to_json(node_data))
 	store.close()
 

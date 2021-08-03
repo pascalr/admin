@@ -47,6 +47,7 @@ __meta__ = {
 
 [node name="frame" type="Area" parent="."]
 collision_layer = 2
+collision_mask = 8
 
 [node name="frame_without_rear" type="MeshInstance" parent="frame"]
 mesh = ExtResource( 1 )
@@ -96,6 +97,7 @@ script = ExtResource( 14 )
 preferred_jar_format = "Small"
 
 [node name="DoorLShelf1Area" type="Area" parent="door_l/Shelves/DoorShelf1"]
+collision_mask = 8
 
 [node name="CollisionShape" type="CollisionShape" parent="door_l/Shelves/DoorShelf1/DoorLShelf1Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 381.877, 0 )
@@ -106,6 +108,7 @@ script = ExtResource( 14 )
 preferred_jar_format = "Small"
 
 [node name="DoorLShelf2Area" type="Area" parent="door_l/Shelves/DoorShelf2"]
+collision_mask = 8
 
 [node name="CollisionShape" type="CollisionShape" parent="door_l/Shelves/DoorShelf2/DoorLShelf2Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 769.211, 0 )
@@ -116,6 +119,7 @@ script = ExtResource( 14 )
 preferred_jar_format = "Spice"
 
 [node name="DoorLShelf3Area" type="Area" parent="door_l/Shelves/DoorShelf3"]
+collision_mask = 8
 
 [node name="CollisionShape" type="CollisionShape" parent="door_l/Shelves/DoorShelf3/DoorLShelf3Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1094.36, 0 )
@@ -126,6 +130,7 @@ script = ExtResource( 14 )
 preferred_jar_format = "Spice"
 
 [node name="DoorLShelf4Area" type="Area" parent="door_l/Shelves/DoorShelf4"]
+collision_mask = 8
 
 [node name="CollisionShape" type="CollisionShape" parent="door_l/Shelves/DoorShelf4/DoorLShelf4Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1418.85, 0 )
@@ -152,6 +157,7 @@ script = ExtResource( 14 )
 preferred_jar_format = "Small"
 
 [node name="DoorRShelf1Area" type="Area" parent="door_r/Shelves/DootShelf1"]
+collision_mask = 8
 
 [node name="CollisionShape" type="CollisionShape" parent="door_r/Shelves/DootShelf1/DoorRShelf1Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 381.295, 0 )
@@ -162,6 +168,7 @@ script = ExtResource( 14 )
 preferred_jar_format = "Small"
 
 [node name="DoorRShelf2Area" type="Area" parent="door_r/Shelves/DootShelf2"]
+collision_mask = 8
 
 [node name="CollisionShape" type="CollisionShape" parent="door_r/Shelves/DootShelf2/DoorRShelf2Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 768.767, 0 )
@@ -172,6 +179,7 @@ script = ExtResource( 14 )
 preferred_jar_format = "Spice"
 
 [node name="DoorRShelf3Area" type="Area" parent="door_r/Shelves/DootShelf3"]
+collision_mask = 8
 
 [node name="CollisionShape" type="CollisionShape" parent="door_r/Shelves/DootShelf3/DoorRShelf3Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1093.23, 0 )
@@ -182,6 +190,7 @@ script = ExtResource( 14 )
 preferred_jar_format = "Spice"
 
 [node name="DoorRShelf4Area" type="Area" parent="door_r/Shelves/DootShelf4"]
+collision_mask = 8
 
 [node name="CollisionShape" type="CollisionShape" parent="door_r/Shelves/DootShelf4/DoorRShelf4Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1416.44, 0 )
@@ -197,6 +206,7 @@ script = ExtResource( 14 )
 single_row = false
 
 [node name="BottomShelfArea" type="Area" parent="Shelves/BottomShelf"]
+collision_mask = 8
 __meta__ = {
 "_edit_lock_": true
 }
@@ -212,6 +222,7 @@ preferred_jar_format = "Medium"
 
 [node name="LowerSmallShelfArea" type="Area" parent="Shelves/LowerSmallShelf"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 317.5, 0 )
+collision_mask = 8
 __meta__ = {
 "_edit_lock_": true
 }
@@ -233,6 +244,7 @@ grab_above = false
 
 [node name="LowerSmallShelf2Area" type="Area" parent="Shelves/LowerSmallShelf2"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 609.6, 0 )
+collision_mask = 8
 __meta__ = {
 "_edit_lock_": true
 }
@@ -253,6 +265,7 @@ script = ExtResource( 14 )
 single_row = false
 
 [node name="WorkingShelfArea" type="Area" parent="Shelves/WorkingShelf"]
+collision_mask = 8
 __meta__ = {
 "_edit_lock_": true
 }
@@ -271,6 +284,7 @@ grab_above = false
 
 [node name="UpperShelf2Area" type="Area" parent="Shelves/UpperShelf2"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1422.4, 0 )
+collision_mask = 8
 
 [node name="CollisionShape" type="CollisionShape" parent="Shelves/UpperShelf2/UpperShelf2Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, -9.525, 60.325 )
@@ -290,6 +304,7 @@ preferred_jar_format = "Medium"
 
 [node name="UpperShelf1Area" type="Area" parent="Shelves/UpperShelf1"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1193.8, 0 )
+collision_mask = 8
 
 [node name="CollisionShape" type="CollisionShape" parent="Shelves/UpperShelf1/UpperShelf1Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, -9.525, 60.325 )

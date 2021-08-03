@@ -12,7 +12,12 @@ func show_details(obj):
 	
 	if obj.get_class() == "Jar":
 		$VBox/JarDetails.visible = true
-		$VBox/JarDetails/Weight/Value.text = "%.2f" % obj.get_weight()
+		for child in $VBox/JarDetails/MarginContainer/Ingredients.get_children():
+			child.queue_free()
+		for ing in obj.ingredients:
+			var label = Label.new()
+			label.text = str(ing)
+			$VBox/JarDetails/MarginContainer/Ingredients.add_child(label)
 	else:
 		$VBox/JarDetails.visible = false
 
@@ -27,3 +32,6 @@ func _on_Weigh_pressed():
 
 func _on_Store_pressed():
 	get_node(Heda.ROBOT).store(Heda.current_selection)
+
+func _on_Empty_pressed():
+	Heda.current_selection.empty_ingredients()

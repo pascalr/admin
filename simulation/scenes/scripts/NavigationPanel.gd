@@ -1,4 +1,4 @@
-extends Panel
+extends Control
 
 onready var list = $TabContainer/Recipes/VBox/List
 

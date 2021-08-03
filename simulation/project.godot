@@ -167,9 +167,10 @@ ui_accept={
 
 [layer_names]
 
-3d_physics/layer_1="Robot"
+3d_physics/layer_1="None"
 3d_physics/layer_2="Cupboard"
 3d_physics/layer_3="Objects"
+3d_physics/layer_4="Robot"
 
 [physics]
 

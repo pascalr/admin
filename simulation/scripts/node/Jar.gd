@@ -21,6 +21,10 @@ func get_class():
 func get_obj_id():
 	return jar_id
 
+func empty_ingredients():
+	ingredients.clear()
+	_update_content()
+
 # The height of the jar when empty, or the height with the lid when present
 func get_height():
 	return format.height_with_lid
@@ -46,8 +50,14 @@ func get_weight():
 
 func add_ingredient(ing):
 	ingredients.push_back(ing)
-	content.mesh.height = format.max_content_height*ratio_filled()
-	content.translation.y = content.mesh.height/2.0+5.0
+
+func _update_content():
+	if content:
+		content.mesh.height = format.max_content_height*ratio_filled()
+		content.translation.y = content.mesh.height/2.0+5.0
+		if ingredients.size() >= 1:
+			print("Should change color!")
+			content.mesh.material.albedo_color = ingredients[0].food.color
 
 func clear():
 	ingredients.clear()
@@ -90,12 +100,11 @@ func _ready():
 	var content_mesh = CylinderMesh.new()
 	content_mesh.top_radius = format.diameter/2.0-5.0
 	content_mesh.bottom_radius = format.diameter/2.0-5.0
-	content_mesh.height = format.max_content_height*ratio_filled()
-	content.translation.y = content_mesh.height/2.0+5.0
 	var content_mat = SpatialMaterial.new()
 	content_mat.albedo_color = Color8(255,255,255,255)
 	content_mesh.material = content_mat
 	content.set_mesh(content_mesh)
+	_update_content()
 	add_child(content)
 	
 	shape = CollisionShape.new()
@@ -123,7 +132,11 @@ func _toggle_selection(_camera, event, _click_position, _click_normal, _shape_id
 		else:
 			emit_signal("deselected", self)
 
-func save():
+func to_dict():
+	var ings = []
+	for ing in ingredients:
+		ings.push_back(ing.to_dict())
+		
 	var save_dict = {
 		"class" : get_class(),
 		"pos_x" : translation.x,
@@ -131,17 +144,10 @@ func save():
 		"pos_z" : translation.z,
 		"jar_format" : format.name,
 		"jar_id" : jar_id,
-		#"weight" : ,
+		"ingredients" : ings,
 		"grab_above" : grab_above
 	}
 	return save_dict
-
-func load_key(key, value):
-	match key:
-		"jar_format":
-			self.format = get_node(Heda.CONFIG).get_node("JarFormats/"+value)
-		_:
-			self.set(key, value)
 
 func load_data(data):
 	self.translation = Vector3(data["pos_x"],data["pos_y"],data["pos_z"])
@@ -150,6 +156,10 @@ func load_data(data):
 	for i in data.keys():
 		if i == "pos_x" or i == "pos_y" or i == "pos_z" or i == "jar_format":
 			continue
-		self.set(i, data[i])
+		elif i == "ingredients":
+			for ing in data[i]:
+				add_ingredient(Ingredient.new(ing["weight"], Heda.get_node(Heda.FOODS+"/"+ing["food"])))
+		else:
+			self.set(i, data[i])
 	
 	return self
