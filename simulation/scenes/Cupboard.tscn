@@ -303,6 +303,3 @@ __meta__ = {
 }
 
 [node name="Bodies" type="Node" parent="."]
-
-[connection signal="body_entered" from="frame" to="." method="_on_body_entered"]
-[connection signal="body_exited" from="frame" to="." method="_on_body_exited"]

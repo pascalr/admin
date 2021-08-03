@@ -8,12 +8,12 @@ func _ready():
 	OS.set_low_processor_usage_mode_sleep_usec(50000)
 	OS.min_window_size = Vector2(400, 400)
 	
-	get_node(Heda.MENUS)._load()
+	Heda.load()
 
 func _notification(what):
 	if what == MainLoop.NOTIFICATION_WM_QUIT_REQUEST:
 		print("QUITTING!")
-		get_node(Heda.MENUS)._save()
+		Heda.save()
 		get_tree().quit()
 
 func _physics_process(_delta):

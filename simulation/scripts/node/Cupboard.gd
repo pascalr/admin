@@ -23,6 +23,9 @@ func _ready():
 	add_child(jar_added_request)
 	var _v = jar_added_request.connect("request_completed", self, "_jar_added")
 	
+	var _c = $frame.connect("body_entered", self, "_collision_detected", [$frame])
+	var _d = $frame.connect("body_exited", self, "_collision_gone", [$frame])
+	
 	for shelf in shelves:
 		var area = shelf.get_area()
 		var _a = area.connect("body_entered", self, "_collision_detected", [area])
@@ -90,20 +93,8 @@ func _on_shelf_click(shelf, click_position):
 		Globals.ACTION_PUT_DOWN:
 			get_node(Heda.ROBOT).put_down(shelf, click_position)
 
-func _on_area_body_entered(area, body):
-	pass
-
-func _on_area_body_exited(area, body):
-	pass
-
 func _collision_detected(body, area):
 	get_node(Heda.COLLISION_DETAILS).add_collision(area, body)
 
 func _collision_gone(body, area):
 	get_node(Heda.COLLISION_DETAILS).remove_collision(area, body)
-
-func _on_body_entered(body):
-	get_node(Heda.COLLISION_DETAILS).add_collision(self, body)
-
-func _on_body_exited(body):
-	get_node(Heda.COLLISION_DETAILS).remove_collision(self, body)
