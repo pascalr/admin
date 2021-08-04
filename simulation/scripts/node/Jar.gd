@@ -51,6 +51,14 @@ func get_weight():
 func add_ingredient(ing):
 	ingredients.push_back(ing)
 
+func foods_info():
+	var info = ""
+	for i in range(0, ingredients.size()):
+		info += ingredients[i].food.name
+		if i < ingredients.size()-1:
+			info += ", "
+	return info
+
 func _update_content():
 	if content:
 		content.mesh.height = format.max_content_height*ratio_filled()

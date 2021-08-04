@@ -56,6 +56,12 @@ transform = Transform( -0.999474, 0.0068628, -0.0317099, -0.00249915, 0.958183, 
 far = 100000.0
 script = ExtResource( 3 )
 
+[node name="FrontCamera" type="Camera" parent="."]
+pause_mode = 2
+transform = Transform( 0.999474, -0.00686283, 0.03171, -0.00249915, 0.958183, 0.286145, -0.0323478, -0.286074, 0.957661, 740.243, 1521.62, 2227.31 )
+far = 100000.0
+script = ExtResource( 3 )
+
 [node name="CollisionDetails" type="Control" parent="."]
 anchor_top = 1.0
 anchor_bottom = 1.0
@@ -270,3 +276,27 @@ material/0 = SubResource( 5 )
 
 [node name="WorkingSpace" type="Position3D" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.7053, 883.908, 173.526 )
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+custom_constants/margin_top = 25
+custom_constants/margin_left = 25
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ViewOption" type="OptionButton" parent="MarginContainer"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 25.0
+margin_top = 25.0
+margin_right = 115.0
+margin_bottom = 45.0
+text = "Rear view"
+items = [ "Robot view", null, false, 0, null, "Front view", null, false, 1, null, "Rear view", null, false, 2, null ]
+selected = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="item_selected" from="MarginContainer/ViewOption" to="." method="_on_ViewOption_item_selected"]

@@ -1,8 +1,10 @@
 J'ai fait trop de chose en même temps:
-- Tablettes de l'armorie: Acheter les suppports à tablette (pqt 100) et 2 1X4X8, couper, percer les trous puis ensuite peinturer
 - Peaufiner le trolley horizontale: Acheter bon cable track
 - Faire le poignet
 - App login into website
+- QU'EST-CE QUE JE VEUX DANS L'APPLICATION???????
+- Liste d'épicerie
+- Voir l'armoire les portes ouvertes
 
 # Planification
 1. Ne pas passer à travers la tablettes

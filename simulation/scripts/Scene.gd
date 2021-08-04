@@ -3,6 +3,8 @@ extends Spatial
 var mouse_clicked = false
 var click_event
 
+onready var view_options = $MarginContainer/ViewOption
+
 func _ready():
 	OS.set_low_processor_usage_mode(true)
 	OS.set_low_processor_usage_mode_sleep_usec(50000)
@@ -49,11 +51,9 @@ func _input(event):
 					if obj is Jar:
 						obj.selected = false
 			KEY_C:
-				var scene_camera = get_node(Heda.SCENE_CAMERA)
-				if scene_camera.current:
-					get_node(Heda.ROBOT_CAMERA).make_current()
-				else:
-					scene_camera.make_current()
+				var index = (view_options.selected+1) % view_options.get_item_count()
+				view_options.select(index)
+				view_options.emit_signal("item_selected", index)
 			KEY_P:
 				print("Pause/Unpause")
 				get_tree().paused = !get_tree().paused
@@ -74,4 +74,11 @@ func _obj_selected(obj):
 	Heda.current_selection = obj
 	get_node(Heda.SELECTION_PANEL).show_details(obj)
 
-
+func _on_ViewOption_item_selected(index):
+	print("On view option item selected")
+	if index == 0:
+		get_node(Heda.ROBOT_CAMERA).make_current()
+	elif index == 1:
+		get_node(Heda.FRONT_SCENE_CAMERA).make_current()
+	else:
+		get_node(Heda.REAR_SCENE_CAMERA).make_current()

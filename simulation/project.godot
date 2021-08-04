@@ -155,6 +155,10 @@ Heda="*res://scripts/autoload/heda.gd"
 window/size/width=1920
 window/size/height=1080
 
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/godot-sqlite/plugin.cfg" )
+
 [input]
 
 ui_accept={

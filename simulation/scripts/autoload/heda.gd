@@ -27,7 +27,8 @@ var MAIN_PANEL := "/root/Main/HBox/HSplit/MainPanel"
 var RECIPE_DETAILS := "/root/Main/HBox/HSplit/HSplit/DetailsPanel/VBox/RecipeDetails"
 var SELECTION_PANEL := "/root/Main/HBox/HSplit/HSplit/DetailsPanel/VBox/Selection"
 
-var SCENE_CAMERA := SCENE+"/Camera"
+var REAR_SCENE_CAMERA := SCENE+"/Camera"
+var FRONT_SCENE_CAMERA := SCENE+"/FrontCamera"
 var ROBOT_CAMERA := ROBOT+"/SupportTransversale/Trolley/Humerus/Wrist/Hand/RobotCamera"
 
 var jar_format
