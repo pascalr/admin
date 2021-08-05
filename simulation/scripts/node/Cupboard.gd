@@ -67,23 +67,36 @@ func _add_jar(jar):
 #	params += "&y="+str(jar.translation.y)+"&z="+str(jar.translation.z)
 #	var _err = jar_added_request.request("http://localhost:4567/add_jar?"+params)
 
-func _check_add_jar(shelf, click_position):
-	var jar = Jar.new()
-	jar.translation = click_position
-	jar.shelf = shelf
-	jar.grab_above = shelf.grab_above
-	jar.format = Heda.jar_format
+func _check_add_jar(_shelf, click_position):
 	
-	var ing = Ingredient.new()
-	var full_weight = Heda.jar_format.volume * Heda.food.density
-	ing.food = Heda.food
-	ing.weight = full_weight/2.0 + full_weight/2.0*randf()
-	jar.ingredients = [ing]
+	var current_jar = Heda.get_node(Heda.CURRENT_JAR)
+	var jar_id = current_jar.get_item_id(current_jar.selected)
+	var jar_data = Datastore.find_jar(jar_id)
+	if jar_data:
+		if Lib.is_valid_jar_position(jar_data.format, click_position):
+			jar_data.set_position(click_position)
+			var node = preload("res://scenes/JarNode.tscn").instance()
+			jar_data.connect_node(node)
+			bodies.add_child(node)
+			Datastore.emit_signal("jar_data_list_updated")
+			return jar_data
 	
-	var is_valid = Lib.is_valid_jar_position(jar.format, click_position)
-	if is_valid:
-		_add_jar(jar)
-		return jar
+#	var jar = Jar.new()
+#	jar.translation = click_position
+#	jar.shelf = shelf
+#	jar.grab_above = shelf.grab_above
+#	jar.format = Heda.jar_format
+#
+#	var ing = Ingredient.new()
+#	var full_weight = Heda.jar_format.volume * Heda.food.density
+#	ing.food = Heda.food
+#	ing.weight = full_weight/2.0 + full_weight/2.0*randf()
+#	jar.ingredients = [ing]
+#
+#	var is_valid = Lib.is_valid_jar_position(jar.format, click_position)
+#	if is_valid:
+#		_add_jar(jar)
+#		return jar
 	return null
 
 func _on_shelf_click(shelf, click_position):

@@ -2,19 +2,32 @@ extends Node
 
 class_name JarData
 
-signal content_updated
+signal data_changed
 
 var jar_id : int
 var ingredients := []
 var format : JarFormat
-var position : Vector3
+
+var pos_x := 0.0
+var pos_y := 0.0
+var pos_z := 0.0
 
 func get_class():
 	return "JarData"
 
+func connect_node(node):
+	node.on_jar_data_change(self)
+	var _a = self.connect("data_changed", node, "on_jar_data_change")
+
+func set_position(position : Vector3):
+	pos_x = position.x; pos_y = position.y; pos_z = position.z
+
+func get_position():
+	return Vector3(pos_x, pos_y, pos_z)
+
 func empty_ingredients():
 	ingredients.clear()
-	emit_signal("content_updated", self)
+	emit_signal("data_changed", self)
 
 # The height of the jar when empty, or the height with the lid when present
 func get_height():
@@ -41,7 +54,7 @@ func get_weight():
 
 func add_ingredient(ing):
 	ingredients.push_back(ing)
-	emit_signal("content_updated", self)
+	emit_signal("data_changed", self)
 
 func foods_info():
 	var info = ""
@@ -66,9 +79,9 @@ func to_dict():
 
 	var save_dict = {
 		"class" : get_class(),
-		"pos_x" : position.x,
-		"pos_y" : position.y,
-		"pos_z" : position.z,
+		"pos_x" : pos_x,
+		"pos_y" : pos_y,
+		"pos_z" : pos_z,
 		"jar_id" : jar_id,
 		"ingredients" : ings
 	}
@@ -77,13 +90,14 @@ func to_dict():
 	return save_dict
 
 func load_data(data):
-	self.position = Vector3(data["pos_x"],data["pos_y"],data["pos_z"])
-
+	
 	for i in data.keys():
-		if i == "pos_x" or i == "pos_y" or i == "pos_z" or i == "jar_format":
+		if i == "created_at" or i == "updated_at":
 			continue
-		elif i == "jar_format":
-			self.format = Heda.get_node(Heda.CONFIG).get_node("JarFormats/"+data["jar_format"])
+		elif i == "container_format_id":
+			for _format in Heda.get_node(Heda.JAR_FORMATS).get_children():
+				if _format.format_id == data["container_format_id"]:
+					self.format = _format; break
 		elif i == "ingredients":
 			for ing in data[i]:
 				add_ingredient(Ingredient.new(ing["weight"], Heda.get_node(Heda.FOODS+"/"+ing["food"])))

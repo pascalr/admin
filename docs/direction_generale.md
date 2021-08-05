@@ -1,4 +1,5 @@
 # Planification
+1. On shelf click update pos_x,y,z of jar.
 1. Quand tu es connecté sur le site de Heda, cliquer sur Heda, t'emmènes sur la page de ta machine à toi
 1. Une belle armoire finie avec un manuel d'instruction pour la fabriquer
 1. Tous les mouvements fonctionnels

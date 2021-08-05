@@ -1,7 +1,5 @@
 extends Node
 
-var host = "http://localhost:3000/"
-
 class_name Synchronizer
 
 func _ready():
@@ -14,7 +12,7 @@ func _on_get_state(_result, response_code, _headers, body):
 		get_node(Heda.MAIN_PANEL).load_recipes(json.result["recipes"])
 
 func pull_state():
-	$PullStateRequest.request(host+"sim/get_state")
+	$PullStateRequest.request(Heda.HOST+"sim/get_state")
 
 func push_state():
 	pass

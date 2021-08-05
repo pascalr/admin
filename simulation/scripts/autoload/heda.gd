@@ -1,5 +1,7 @@
 extends Node
 
+var HOST := "http://localhost:3000/"
+
 # Simulation/Scene
 var CORE := "/root/Main/HBox/HSplit/HSplit/VSplit/TabContainer/Simulation/Viewport/Scene"
 var SCENE := CORE
@@ -26,6 +28,8 @@ var MAIN_PANEL := "/root/Main/HBox/HSplit/MainPanel"
 
 var RECIPE_DETAILS := "/root/Main/HBox/HSplit/HSplit/DetailsPanel/VBox/RecipeDetails"
 var SELECTION_PANEL := "/root/Main/HBox/HSplit/HSplit/DetailsPanel/VBox/Selection"
+
+var CURRENT_JAR := "/root/Main/HBox/HSplit/HSplit/DetailsPanel/VBox/InsertToolDetails/VBox/JarId"
 
 var REAR_SCENE_CAMERA := SCENE+"/Camera"
 var FRONT_SCENE_CAMERA := SCENE+"/FrontCamera"

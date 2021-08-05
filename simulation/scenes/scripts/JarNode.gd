@@ -14,6 +14,7 @@ func _enter_tree():
 	$Sticker.scale = Vector3(20.0, 1.0, 20.0)
 
 	$Mesh.mesh = format.jar_obj
+	$Lid.mesh = format.lid_obj
 
 	$SelectionBox.mesh.size = Vector3(format.diameter, format.height_with_lid, format.diameter)
 	$SelectionBox.translation.y = format.height_with_lid/2.0
@@ -31,6 +32,9 @@ func _enter_tree():
 #	self.add_to_group("save")
 #	self.add_to_group("jars")
 
-func on_content_change(jar_data):
-	$Content.mesh.material.color = Color8(255,255,255,255)
-	$Content.mesh.height = jar_data.ratio_filled() * $Format.max_content_height
+func on_jar_data_change(jar_data):
+	self.translation = jar_data.get_position()
+	$Format.copy(jar_data.format)
+	if jar_data.ingredients.size() > 0:
+		$Content.mesh.material.albedo_color = jar_data.ingredients[0].food.color
+		$Content.mesh.height = jar_data.ratio_filled() * $Format.max_content_height
