@@ -1,12 +1,11 @@
-J'ai fait trop de chose en même temps:
-- Peaufiner le trolley horizontale: Acheter bon cable track
-- Faire le poignet
-- App login into website
-- QU'EST-CE QUE JE VEUX DANS L'APPLICATION???????
-- Liste d'épicerie
-- Voir l'armoire les portes ouvertes
-
 # Planification
+1. Quand tu es connecté sur le site de Heda, cliquer sur Heda, t'emmènes sur la page de ta machine à toi
+1. Une belle armoire finie avec un manuel d'instruction pour la fabriquer
+1. Tous les mouvements fonctionnels
+1. Voir l'inventaire: les portes ouvertes et tu cliques sur l'item (c'est rapide parce que tu sais où qu'ils sont les trucs avec le temps), une liste d'ingrédients/pots dans lequel tu peux chercher
+1. Une liste d'épicerie
+1. Push/pull data from the website (jars info, recipes, foods, ...) the app AND the website can both create/update/delete any of those.
+1. App login into website
 1. Ne pas passer à travers la tablettes
 1. Continuer le bras robotique
 1. Tablettes dans la porte

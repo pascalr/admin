@@ -59,6 +59,11 @@ func foods_info():
 			info += ", "
 	return info
 
+func main_ingredient():
+	if ingredients.size() == 1:
+		return ingredients[0]
+	return null
+
 func _update_content():
 	if content:
 		content.mesh.height = format.max_content_height*ratio_filled()

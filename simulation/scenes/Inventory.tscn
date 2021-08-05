@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://scenes/JarItem.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/scripts/Inventory.gd" type="Script" id=2]
-[ext_resource path="res://scenes/FoodItem.tscn" type="PackedScene" id=3]
 
 [node name="Inventory" type="TabContainer"]
 anchor_right = 1.0
@@ -47,33 +46,75 @@ margin_right = 1904.0
 margin_bottom = 24.0
 placeholder_text = "Rechercher..."
 
-[node name="FoodItem" parent="Foods/VBox" instance=ExtResource( 3 )]
+[node name="Label7" type="Label" parent="Foods/VBox"]
 margin_top = 28.0
-margin_bottom = 73.0
-
-[node name="Label" type="Label" parent="Foods/VBox"]
-margin_top = 77.0
 margin_right = 1904.0
-margin_bottom = 91.0
+margin_bottom = 63.0
+rect_min_size = Vector2( 0, 35 )
+text = "En inventaire"
+valign = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSeparator3" type="HSeparator" parent="Foods/VBox"]
+margin_top = 67.0
+margin_right = 1904.0
+margin_bottom = 71.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InInventoryList" type="VBoxContainer" parent="Foods/VBox"]
+margin_top = 75.0
+margin_right = 1904.0
+margin_bottom = 125.0
+
+[node name="Label" type="Label" parent="Foods/VBox/InInventoryList"]
+margin_right = 1904.0
+margin_bottom = 14.0
 text = "Farine"
 
-[node name="Label2" type="Label" parent="Foods/VBox"]
-margin_top = 95.0
+[node name="Label2" type="Label" parent="Foods/VBox/InInventoryList"]
+margin_top = 18.0
 margin_right = 1904.0
-margin_bottom = 109.0
+margin_bottom = 32.0
 text = "Sucre"
 
-[node name="Label4" type="Label" parent="Foods/VBox"]
-margin_top = 113.0
+[node name="Label5" type="Label" parent="Foods/VBox/InInventoryList"]
+margin_top = 36.0
 margin_right = 1904.0
-margin_bottom = 127.0
-text = "Lait"
-
-[node name="Label5" type="Label" parent="Foods/VBox"]
-margin_top = 131.0
-margin_right = 1904.0
-margin_bottom = 145.0
+margin_bottom = 50.0
 text = "Pois vert cassés"
+
+[node name="Label6" type="Label" parent="Foods/VBox"]
+margin_top = 129.0
+margin_right = 1904.0
+margin_bottom = 164.0
+rect_min_size = Vector2( 0, 35 )
+text = "Autres aliments"
+valign = 2
+
+[node name="HSeparator2" type="HSeparator" parent="Foods/VBox"]
+margin_top = 168.0
+margin_right = 1904.0
+margin_bottom = 172.0
+
+[node name="OtherFoodList" type="VBoxContainer" parent="Foods/VBox"]
+margin_top = 176.0
+margin_right = 1904.0
+margin_bottom = 208.0
+
+[node name="Label4" type="Label" parent="Foods/VBox/OtherFoodList"]
+margin_right = 1904.0
+margin_bottom = 14.0
+text = "Oeuf"
+
+[node name="Label5" type="Label" parent="Foods/VBox/OtherFoodList"]
+margin_top = 18.0
+margin_right = 1904.0
+margin_bottom = 32.0
+text = "Lait"
 
 [node name="Jars" type="Control" parent="."]
 visible = false
@@ -93,83 +134,97 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="Jars/VBox"]
+[node name="Actions" type="HBoxContainer" parent="Jars/VBox"]
 margin_right = 1904.0
-margin_bottom = 14.0
+margin_bottom = 20.0
+alignment = 2
+
+[node name="AddJar" type="Button" parent="Jars/VBox/Actions"]
+margin_left = 1759.0
+margin_right = 1796.0
+margin_bottom = 20.0
+text = "Add"
+
+[node name="EditJar" type="Button" parent="Jars/VBox/Actions"]
+margin_left = 1800.0
+margin_right = 1836.0
+margin_bottom = 20.0
+text = "Edit"
+
+[node name="RemoveJar" type="Button" parent="Jars/VBox/Actions"]
+margin_left = 1840.0
+margin_right = 1904.0
+margin_bottom = 20.0
+text = "Remove"
+
+[node name="Label" type="Label" parent="Jars/VBox"]
+margin_top = 24.0
+margin_right = 1904.0
+margin_bottom = 38.0
 text = "80 jars"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="HSeparator2" type="HSeparator" parent="Jars/VBox"]
-margin_top = 18.0
+margin_top = 42.0
 margin_right = 1904.0
-margin_bottom = 22.0
+margin_bottom = 46.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="HBox" type="HBoxContainer" parent="Jars/VBox"]
-margin_top = 26.0
+margin_top = 50.0
 margin_right = 1904.0
-margin_bottom = 40.0
+margin_bottom = 64.0
 size_flags_horizontal = 3
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Id" type="Label" parent="Jars/VBox/HBox"]
-margin_right = 134.0
+margin_right = 315.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 text = "#"
 
-[node name="Weight" type="Label" parent="Jars/VBox/HBox"]
-margin_left = 138.0
-margin_right = 408.0
+[node name="Format" type="Label" parent="Jars/VBox/HBox"]
+margin_left = 319.0
+margin_right = 634.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "Weight"
+text = "Format"
 
-[node name="Food" type="Label" parent="Jars/VBox/HBox"]
-margin_left = 412.0
-margin_right = 817.0
+[node name="Filled" type="Label" parent="Jars/VBox/HBox"]
+margin_left = 638.0
+margin_right = 954.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "Filled"
+
+[node name="Content" type="Label" parent="Jars/VBox/HBox"]
+margin_left = 958.0
+margin_right = 1904.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 3.0
-text = "Food(s)"
-
-[node name="Filled" type="Label" parent="Jars/VBox/HBox"]
-margin_left = 821.0
-margin_right = 1090.0
-margin_bottom = 14.0
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "Filled"
-
-[node name="Position" type="Label" parent="Jars/VBox/HBox"]
-margin_left = 1094.0
-margin_right = 1904.0
-margin_bottom = 14.0
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 6.0
-text = "Position"
+text = "Content"
 
 [node name="HSeparator" type="HSeparator" parent="Jars/VBox"]
-margin_top = 44.0
+margin_top = 68.0
 margin_right = 1904.0
-margin_bottom = 48.0
+margin_bottom = 72.0
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Jars/VBox"]
-margin_top = 52.0
+margin_top = 76.0
 margin_right = 1904.0
 margin_bottom = 1008.0
 size_flags_vertical = 3
 
 [node name="Items" type="VBoxContainer" parent="Jars/VBox/ScrollContainer"]
 margin_right = 1904.0
-margin_bottom = 96.0
+margin_bottom = 166.0
 size_flags_horizontal = 3
 __meta__ = {
 "_edit_use_anchors_": false
@@ -209,4 +264,6 @@ margin_top = 80.0
 margin_right = 1904.0
 margin_bottom = 96.0
 
+[connection signal="visibility_changed" from="Foods" to="." method="_on_Foods_visibility_changed"]
 [connection signal="visibility_changed" from="Jars" to="." method="_on_Jars_visibility_changed"]
+[connection signal="pressed" from="Jars/VBox/Actions/AddJar" to="." method="_on_AddJar_pressed"]

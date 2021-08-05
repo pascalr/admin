@@ -33,6 +33,17 @@ func parent_adopt_child(parent, child : Spatial):
 	parent.add_child(child)
 	child.global_transform = t
 
+func remove_all_children(node_or_list):
+	if node_or_list is Node:
+		for c in node_or_list.get_children():
+			c.queue_free()
+	elif node_or_list is Array:
+		for e in node_or_list:
+			for c in e.get_children():
+				c.queue_free()
+	else:
+		push_error("Unsupported object given to Lib.remove_all_children")
+
 func best_angle_for_vect(vect):
 	#if vect.z < Globals.trolley_z-Globals.forearm_grip_length:
 	#	return 180.0

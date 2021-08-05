@@ -11,3 +11,5 @@ export(Texture) var image
 func _to_string():
 	return name
 
+static func all():
+	return Heda.get_node(Heda.FOODS).get_children()

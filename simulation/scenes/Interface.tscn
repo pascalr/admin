@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://scripts/visual/CommandLine.gd" type="Script" id=1]
 [ext_resource path="res://scripts/visual/Selection.gd" type="Script" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://fonts/default_font.tres" type="DynamicFont" id=13]
 [ext_resource path="res://scenes/scripts/SimulationDetails.gd" type="Script" id=14]
 [ext_resource path="res://scenes/scripts/InsertToolDetails.gd" type="Script" id=15]
+[ext_resource path="res://scenes/scripts/Interface.gd" type="Script" id=16]
 
 [sub_resource type="Theme" id=1]
 default_font = ExtResource( 13 )
@@ -24,6 +25,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
 theme = SubResource( 1 )
+script = ExtResource( 16 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -330,7 +332,7 @@ text = "Pause"
 pause_mode = 2
 margin_top = 101.0
 margin_right = 306.0
-margin_bottom = 386.0
+margin_bottom = 450.0
 size_flags_horizontal = 3
 script = ExtResource( 15 )
 
@@ -338,7 +340,7 @@ script = ExtResource( 15 )
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 299.0
-margin_bottom = 278.0
+margin_bottom = 342.0
 size_flags_horizontal = 3
 
 [node name="ObjectName" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/InsertToolDetails/VBox"]
@@ -359,43 +361,54 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="JarFormat" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/InsertToolDetails/VBox"]
+[node name="JarIdLabel" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/InsertToolDetails/VBox"]
 margin_top = 27.0
 margin_right = 292.0
 margin_bottom = 50.0
 text = "Jar format"
 
-[node name="JarFormats" type="OptionButton" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/InsertToolDetails/VBox"]
+[node name="JarId" type="LineEdit" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/InsertToolDetails/VBox"]
 margin_top = 54.0
 margin_right = 292.0
-margin_bottom = 83.0
+margin_bottom = 87.0
+
+[node name="JarFormat" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/InsertToolDetails/VBox"]
+margin_top = 91.0
+margin_right = 292.0
+margin_bottom = 114.0
+text = "Jar format"
+
+[node name="JarFormats" type="OptionButton" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/InsertToolDetails/VBox"]
+margin_top = 118.0
+margin_right = 292.0
+margin_bottom = 147.0
 text = "Petit"
 
 [node name="Food" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/InsertToolDetails/VBox"]
-margin_top = 87.0
+margin_top = 151.0
 margin_right = 292.0
-margin_bottom = 110.0
+margin_bottom = 174.0
 text = "Food"
 
 [node name="LineEdit" type="LineEdit" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/InsertToolDetails/VBox"]
-margin_top = 114.0
+margin_top = 178.0
 margin_right = 292.0
-margin_bottom = 147.0
+margin_bottom = 211.0
 placeholder_text = "Filtrer..."
 
 [node name="Foods" type="ItemList" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/InsertToolDetails/VBox"]
-margin_top = 151.0
+margin_top = 215.0
 margin_right = 292.0
-margin_bottom = 271.0
+margin_bottom = 335.0
 rect_min_size = Vector2( 0, 120 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Selection" type="PanelContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox"]
-margin_top = 390.0
+margin_top = 454.0
 margin_right = 306.0
-margin_bottom = 721.0
+margin_bottom = 785.0
 size_flags_horizontal = 3
 script = ExtResource( 2 )
 
@@ -559,9 +572,9 @@ margin_bottom = 209.0
 text = "Empty"
 
 [node name="RecipeDetails" type="PanelContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox"]
-margin_top = 725.0
+margin_top = 789.0
 margin_right = 306.0
-margin_bottom = 945.0
+margin_bottom = 1009.0
 grow_horizontal = 0
 script = ExtResource( 10 )
 

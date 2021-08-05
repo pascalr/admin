@@ -3,7 +3,8 @@
 [node name="JarItem" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_min_size = Vector2( 0, 16 )
+margin_bottom = -1050.0
+rect_min_size = Vector2( 0, 30 )
 size_flags_horizontal = 3
 __meta__ = {
 "_edit_use_anchors_": false
@@ -18,44 +19,32 @@ __meta__ = {
 }
 
 [node name="Id" type="Label" parent="HBox"]
-margin_top = 533.0
-margin_right = 136.0
-margin_bottom = 547.0
+margin_top = 8.0
+margin_right = 318.0
+margin_bottom = 22.0
 size_flags_horizontal = 3
 text = "1"
 
-[node name="Weight" type="Label" parent="HBox"]
-margin_left = 140.0
-margin_top = 533.0
-margin_right = 412.0
-margin_bottom = 547.0
+[node name="Format" type="OptionButton" parent="HBox"]
+margin_left = 322.0
+margin_right = 640.0
+margin_bottom = 30.0
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "100g"
-
-[node name="Food" type="Label" parent="HBox"]
-margin_left = 416.0
-margin_top = 533.0
-margin_right = 824.0
-margin_bottom = 547.0
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 3.0
-text = "farine"
+text = "Big"
 
 [node name="Filled" type="Label" parent="HBox"]
-margin_left = 828.0
-margin_top = 533.0
-margin_right = 1100.0
-margin_bottom = 547.0
+margin_left = 644.0
+margin_top = 8.0
+margin_right = 962.0
+margin_bottom = 22.0
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
 text = "100%"
 
-[node name="Position" type="Label" parent="HBox"]
-margin_left = 1104.0
-margin_top = 533.0
+[node name="Content" type="Label" parent="HBox"]
+margin_left = 966.0
+margin_top = 8.0
 margin_right = 1920.0
-margin_bottom = 547.0
+margin_bottom = 22.0
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 6.0
-text = "(100.00, 100.00, 100.00)"
+size_flags_stretch_ratio = 3.0
+text = "100g farine"
