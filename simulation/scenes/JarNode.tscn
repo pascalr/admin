@@ -20,6 +20,7 @@ radius = 40.65
 height = 101.0
 
 [sub_resource type="CubeMesh" id=4]
+resource_local_to_scene = true
 size = Vector3( 81.3, 101, 81.3 )
 
 [sub_resource type="SpatialMaterial" id=5]
@@ -51,6 +52,7 @@ mesh = ExtResource( 3 )
 material/0 = ExtResource( 5 )
 
 [node name="Content" type="MeshInstance" parent="."]
+visible = false
 mesh = SubResource( 1 )
 material/0 = SubResource( 2 )
 

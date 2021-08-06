@@ -3,6 +3,7 @@
 1. Parents control their children.
 1. When parents reference their children, the path should be assigned a variable at the top.
 1. Every global path is assign a variable in Heda.
+1. For now, data is always pushed and pulled. Later save locally when server not available.
 1. FOR NOW, DATA IS MANAGED IN HEDACUISINE (CONTAINERS, CONTAINER_FORMATS, FOODS, RECIPES, ...)
 
 ## Coordinate system

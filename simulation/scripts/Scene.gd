@@ -10,6 +10,8 @@ func _ready():
 	OS.set_low_processor_usage_mode_sleep_usec(50000)
 	OS.min_window_size = Vector2(400, 400)
 	
+	get_tree().set_auto_accept_quit(false)
+	
 	Heda.load()
 
 func _notification(what):
@@ -17,7 +19,6 @@ func _notification(what):
 		print("QUITTING!")
 		Datastore.save()
 		Heda.save()
-		get_tree().quit()
 
 func _physics_process(_delta):
 	if mouse_clicked:

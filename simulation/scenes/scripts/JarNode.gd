@@ -5,6 +5,9 @@ onready var selection_box = $SelectionBox
 
 var jar_data setget set_jar_data
 
+func get_class():
+	return "JarNode"
+
 func _enter_tree():
 	
 	var format = $Format
@@ -24,6 +27,7 @@ func _enter_tree():
 	print("Changing content size for " + name)
 	$Content.mesh.top_radius = format.diameter/2.0-5.0
 	$Content.mesh.bottom_radius = format.diameter/2.0-5.0
+	$Content.visible = false
 #
 	$Body/CollisionShape.shape.radius = format.diameter/2.0
 	$Body/CollisionShape.shape.height = format.height_with_lid
@@ -50,6 +54,9 @@ func on_data_changed():
 	if jar_data.ingredients.size() > 0:
 		$Content.mesh.material.albedo_color = jar_data.ingredients[0].food.color
 		$Content.mesh.height = jar_data.ratio_filled() * $Format.max_content_height
+		$Content.visible = true
+	else:
+		$Content.visible = false
 
 func _toggle_selection(_camera, event, _click_position, _click_normal, _shape_idx):
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed:
