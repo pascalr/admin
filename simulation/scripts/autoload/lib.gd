@@ -76,3 +76,8 @@ func is_valid_jar_position(jar_format, position):
 				return false
 	
 	return true
+
+func get_item_list_selected_meta_data(node : ItemList):
+	var selected = node.get_selected_items()
+	assert(selected.size() == 1)
+	return node.get_item_metadata(selected[0])

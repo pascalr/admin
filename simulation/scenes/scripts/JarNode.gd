@@ -8,6 +8,9 @@ var jar_data setget set_jar_data
 func get_class():
 	return "JarNode"
 
+func get_data():
+	return jar_data
+
 func _enter_tree():
 	
 	var format = $Format
@@ -27,6 +30,7 @@ func _enter_tree():
 	print("Changing content size for " + name)
 	$Content.mesh.top_radius = format.diameter/2.0-5.0
 	$Content.mesh.bottom_radius = format.diameter/2.0-5.0
+	$Content.mesh.material = SpatialMaterial.new() # FIXME: WHY OH WHY???
 	$Content.visible = false
 #
 	$Body/CollisionShape.shape.radius = format.diameter/2.0
@@ -53,7 +57,9 @@ func on_data_changed():
 	self.name = "Jar - %d" % jar_data.jar_id
 	if jar_data.ingredients.size() > 0:
 		$Content.mesh.material.albedo_color = jar_data.ingredients[0].food.color
-		$Content.mesh.height = jar_data.ratio_filled() * $Format.max_content_height
+		var h = jar_data.ratio_filled() * $Format.max_content_height
+		$Content.mesh.height = h
+		$Content.translation.y = h/2.0
 		$Content.visible = true
 	else:
 		$Content.visible = false

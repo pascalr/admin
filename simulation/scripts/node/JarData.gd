@@ -34,7 +34,7 @@ func get_position():
 
 func empty_ingredients():
 	ingredients.clear()
-	emit_signal("data_changed", self)
+	emit_signal("data_changed")
 
 # The height of the jar when empty, or the height with the lid when present
 func get_height():
@@ -61,7 +61,7 @@ func get_weight():
 
 func add_ingredient(ing):
 	ingredients.push_back(ing)
-	emit_signal("data_changed", self)
+	emit_signal("data_changed")
 
 func foods_info():
 	var info = ""

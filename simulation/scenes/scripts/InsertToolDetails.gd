@@ -4,18 +4,7 @@ func _ready():
 	_on_InsertToolDetails_visibility_changed()
 	var _a = Datastore.connect("jar_data_list_updated", self, "_update")
 
-var foods := []
-
 func _update():
-	$VBox/Foods.clear()
-	for food in Heda.get_node(Heda.FOODS).get_children():
-		foods.push_back(food)
-		$VBox/Foods.add_item(food._name)
-	
-	$VBox/JarFormats.clear()
-	for format in Heda.get_node(Heda.JAR_FORMATS).get_children():
-		$VBox/JarFormats.add_item(format.name)
-	
 	$VBox/JarId.clear()
 	for jar in Datastore.jar_data_list:
 		if jar.pos_x == 0.0:
@@ -26,6 +15,3 @@ func _update():
 func _on_InsertToolDetails_visibility_changed():
 	if visible:
 		_update()
-
-func _on_Foods_item_selected(index):
-	Heda.food = foods[index]

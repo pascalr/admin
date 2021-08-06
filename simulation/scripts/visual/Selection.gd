@@ -1,14 +1,17 @@
 extends PanelContainer
 
+onready var food_list = $VBox/JarDetails/IngredientFood
+
 func _ready():
 	self.visible = false
-	Datastore.connect("food_list_updated", self, "update_food_list")
+	var _a = Datastore.connect("food_list_updated", self, "update_food_list")
 
 func update_food_list():
-	$VBox/JarDetails/IngredientFood.clear()
+	food_list.clear()
 	for food in Datastore.food_list:
 		if food.in_pantry:
-			$VBox/JarDetails/IngredientFood.add_item(food.name)
+			food_list.add_item(food.name)
+			food_list.set_item_metadata(food_list.get_item_count()-1, food)
 
 func show_details(obj):
 	self.visible = true
@@ -45,5 +48,6 @@ func _on_Empty_pressed():
 
 func _on_AddIngredient_pressed():
 	var qty = $VBox/JarDetails/IngredientQuantity.value
-	var food = $VBox/JarDetails/IngredientFood.get_selected_items()
-	pass # Replace with function body.
+	var food = Lib.get_item_list_selected_meta_data(food_list)
+	Heda.current_selection.get_data().add_ingredient(Ingredient.new(qty, food))
+	pass
