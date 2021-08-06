@@ -60,12 +60,15 @@ func pull():
 
 func _on_pull(_result, response_code, _headers, body):
 	if response_code == 200:
-		clear()
-		var json = JSON.parse(body.get_string_from_utf8())
-		var jars = json.result["jars"]
-		for jar in jars:
-			jar_data_list.push_back(JarData.new().load_data(jar))
-		emit_signal("jar_data_list_updated")
+		if Heda.get_node(Heda.SCENE) == null:
+			push_warning("Skipping Datastore pull because main scene is not loaded.")
+		else:
+			clear()
+			var json = JSON.parse(body.get_string_from_utf8())
+			var jars = json.result["jars"]
+			for jar in jars:
+				jar_data_list.push_back(JarData.new().load_data(jar))
+			emit_signal("jar_data_list_updated")
 
 func next_jar_id():
 	var ids_taken := {}

@@ -12,12 +12,19 @@ var pos_x := 0.0
 var pos_y := 0.0
 var pos_z := 0.0
 
+var nodes := []
+
 func get_class():
 	return "JarData"
 
 func connect_node(node):
-	node.on_jar_data_change(self)
-	var _a = self.connect("data_changed", node, "on_jar_data_change")
+	nodes.push_back(node)
+	var _a = self.connect("data_changed", node, "on_data_changed")
+	Datastore.emit_signal("jar_data_list_updated")
+
+func deconnect_node(node):
+	nodes.erase(node)
+	Datastore.emit_signal("jar_data_list_updated")
 
 func set_position(position : Vector3):
 	pos_x = position.x; pos_y = position.y; pos_z = position.z

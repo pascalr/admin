@@ -47,10 +47,6 @@ func _input(event):
 					$Robot.grab(Heda.current_selection)
 			KEY_ENTER:
 				get_node(Heda.COMMAND_LINE).grab_focus()
-			KEY_ESCAPE:
-				for obj in get_tree().get_nodes_in_group("jars"):
-					if obj is Jar:
-						obj.selected = false
 			KEY_C:
 				var index = (view_options.selected+1) % view_options.get_item_count()
 				view_options.select(index)

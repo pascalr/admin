@@ -8,12 +8,12 @@ var foods := []
 
 func _update():
 	$VBox/Foods.clear()
-	for food in get_node(Heda.FOODS).get_children():
+	for food in Heda.get_node(Heda.FOODS).get_children():
 		foods.push_back(food)
 		$VBox/Foods.add_item(food._name)
 	
 	$VBox/JarFormats.clear()
-	for format in get_node(Heda.JAR_FORMATS).get_children():
+	for format in Heda.get_node(Heda.JAR_FORMATS).get_children():
 		$VBox/JarFormats.add_item(format.name)
 	
 	$VBox/JarId.clear()

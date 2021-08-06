@@ -58,12 +58,9 @@ func get_height():
 
 func get_jars():
 	var jars = []
-	for j in get_tree().get_nodes_in_group("jars"):
-		if j.shelf == self:
+	for j in Datastore.jar_data_list:
+		if abs(j.get_position().y - self.get_height()) < 0.5:
 			jars.push_back(j)
-	#for c in get_children():
-	#	if c is Jar:
-	#		jars << c
 	return jars
 
 func get_free_position(jar_format):

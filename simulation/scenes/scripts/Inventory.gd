@@ -29,7 +29,7 @@ func on_jar_info_jar_format_selected(_jar_data):
 
 func update_food_list_info():
 	var in_inventory := {}
-	for jar in get_tree().get_nodes_in_group("jars"):
+	for jar in Datastore.jar_data_list:
 		var ing = jar.main_ingredient().food
 		if ing:
 			in_inventory[ing.id] = true
@@ -43,11 +43,6 @@ func update_food_list_info():
 			food_in_inventory_list.add_child(label)
 		else:
 			food_other_list.add_child(label)
-
-#	for jar in get_tree().get_nodes_in_group("jars"):
-#		var ing = jar.main_ingredient()
-#		if ing:
-#
 
 func jar_ready(jar):
 	assert(true)

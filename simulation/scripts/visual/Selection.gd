@@ -5,7 +5,7 @@ func _ready():
 
 func show_details(obj):
 	self.visible = true
-	$VBox/ObjectName.text = obj.get_class() + " " + str(obj.get_obj_id())
+	$VBox/ObjectName.text = obj.name
 	$VBox/X/Value.text = "%.2f" % obj.translation.x
 	$VBox/Y/Value.text = "%.2f" % obj.translation.y
 	$VBox/Z/Value.text = "%.2f" % obj.translation.z

@@ -9,6 +9,7 @@
 [ext_resource path="res://blender/sticker.glb" type="PackedScene" id=7]
 
 [sub_resource type="CylinderMesh" id=1]
+resource_local_to_scene = true
 top_radius = 35.65
 bottom_radius = 35.65
 
