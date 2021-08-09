@@ -43,8 +43,6 @@ var current_selection
 
 var simulation_speed := 1.0
 
-var jar_data_list := []
-
 func _ready():
 	# Ugly fix to max sure everything is loaded.
 	yield(get_tree().create_timer(0.2), "timeout")

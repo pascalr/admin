@@ -35,7 +35,8 @@ func _enter_tree():
 	$Body/CollisionShape.shape.radius = format.diameter/2.0
 	$Body/CollisionShape.shape.height = format.height_with_lid
 	$Body/CollisionShape.translation.y = format.height_with_lid/2.0
-	
+
+func _ready():
 	var _c = $Body.connect("input_event", self, "_toggle_selection")
 
 func _exit_tree():

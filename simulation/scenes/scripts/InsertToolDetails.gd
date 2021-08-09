@@ -2,11 +2,11 @@ extends PanelContainer
 
 func _ready():
 	_on_InsertToolDetails_visibility_changed()
-	var _a = Datastore.connect("jar_data_list_updated", self, "_update")
+	var _a = Datastore.connect("jars_updated", self, "_update")
 
 func _update():
 	$VBox/JarId.clear()
-	for jar in Datastore.jar_data_list:
+	for jar in Datastore.jars:
 		if jar.pos_x == 0.0:
 			var content = jar.foods_info()
 			if content.empty():

@@ -58,7 +58,7 @@ func get_height():
 
 func get_jars():
 	var jars = []
-	for j in Datastore.jar_data_list:
+	for j in Datastore.jars:
 		if abs(j.get_position().y - self.get_height()) < 0.5:
 			jars.push_back(j)
 	return jars

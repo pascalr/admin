@@ -6,11 +6,11 @@ onready var food_in_inventory_list = $Foods/VBox/InInventoryList
 onready var food_other_list = $Foods/VBox/OtherFoodList
 
 func _ready():
-	var _a = Datastore.connect("jar_data_list_updated", self, "update_jar_info")
+	var _a = Datastore.connect("jars_updated", self, "update_jar_info")
 
 func update_jar_info():
 	Lib.remove_all_children(jar_list)
-	for jar_data in Datastore.jar_data_list:
+	for jar_data in Datastore.jars:
 		var item = preload("res://scenes/JarItem.tscn").instance()
 		item.get_node("HBox/Id").text = str(jar_data.jar_id)
 		item.get_node("HBox/Format").text = str(jar_data.format.name)
@@ -29,7 +29,7 @@ func on_jar_info_jar_format_selected(_jar_data):
 
 func update_food_list_info():
 	var in_inventory := {}
-	for jar in Datastore.jar_data_list:
+	for jar in Datastore.jars:
 		var ing = jar.main_ingredient().food
 		if ing:
 			in_inventory[ing.id] = true

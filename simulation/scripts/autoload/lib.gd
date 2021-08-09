@@ -68,10 +68,11 @@ func is_valid_jar_position(jar_format, position):
 		print("Add jar out of bounds min z!")
 		return false
 	
-	for j in get_tree().get_nodes_in_group("jars"):
-		if (position.y - j.translation.y) < 0.2:
+	for j in Datastore.jars:
+		var p = j.get_position()
+		if (position.y - p.y) < 0.2:
 			var min_dist = j.format.diameter/2.0 + jar_format.diameter/2.0 + Globals.min_dist_between_jars
-			if ((position - j.translation).length() < min_dist):
+			if ((position - p).length() < min_dist):
 				print("Collision!")
 				return false
 	

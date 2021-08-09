@@ -1,9 +1,9 @@
 extends Node
 
-signal jar_data_list_updated
+signal jars_updated
 signal food_list_updated
 
-var jar_data_list := []
+var jars := []
 var food_list := []
 
 var login_request : HTTPRequest
@@ -26,7 +26,7 @@ func _enter_tree():
 
 func push():
 	var data := []
-	for jar_data in jar_data_list:
+	for jar_data in jars:
 		data.push_back(jar_data.to_dict())
 	var body = to_json({"jar_data_list": data})
 #	$.ajax({
@@ -82,7 +82,7 @@ func save():
 #	emit_signal("jar_data_list_updated")
 
 func clear():
-	jar_data_list.clear()
+	jars.clear()
 
 func _on_login(_result, _response_code, _headers, _body):
 	pass
@@ -101,15 +101,15 @@ func _on_pull(_result, response_code, _headers, body):
 				food_list.push_back(food)
 			emit_signal("food_list_updated")
 			
-			var jars = json.result["jars"]
-			for jar in jars:
-				var jar_data = Jar.new().load_data(jar)
-				jar_data_list.push_back(jar_data)
-				if jar_data.get_position().x != 0.0:
+			var jar_list = json.result["jars"]
+			for jar_data in jar_list:
+				var jar = Jar.new().load_data(jar_data)
+				jars.push_back(jar)
+				if jar.get_position().x != 0.0:
 					var node = preload("res://scenes/JarInstance.tscn").instance()
-					node.jar = jar_data
+					node.jar = jar
 					Heda.get_node(Heda.CUPBOARD).bodies.add_child(node)
-			emit_signal("jar_data_list_updated")
+			emit_signal("jars_updated")
 			
 				#var jar_data = JarData.new().load_data(jar)
 				#jar_data_list.push_back(jar_data)
@@ -125,7 +125,7 @@ func _on_push(_result, response_code, _headers, _body):
 
 func next_jar_id():
 	var ids_taken := {}
-	for jar_data in jar_data_list:
+	for jar_data in jars:
 		ids_taken[jar_data.jar_id] = true
 	var i = 1
 	while true:
@@ -136,11 +136,11 @@ func next_jar_id():
 func add_new_jar_data():
 	var j = Jar.new()
 	j.jar_id = next_jar_id()
-	jar_data_list.push_back(j)
-	emit_signal("jar_data_list_updated")
+	jars.push_back(j)
+	emit_signal("jars_updated")
 
 func find_jar(id):
-	for jar in jar_data_list:
+	for jar in jars:
 		if jar.jar_id == id:
 			return jar
 	return null

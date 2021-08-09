@@ -34,11 +34,11 @@ func get_shelf():
 func connect_node(node):
 	nodes.push_back(node)
 	var _a = self.connect("data_changed", node, "on_data_changed")
-	Datastore.emit_signal("jar_data_list_updated")
+	Datastore.emit_signal("jars_updated")
 
 func deconnect_node(node):
 	nodes.erase(node)
-	Datastore.emit_signal("jar_data_list_updated")
+	Datastore.emit_signal("jars_updated")
 
 func set_position(position : Vector3):
 	pos_x = position.x; pos_y = position.y; pos_z = position.z
