@@ -44,11 +44,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scripts/node/Interpreter.gd"
 }, {
-"base": "Body",
-"class": "Jar",
-"language": "GDScript",
-"path": "res://scripts/node/Jar.gd"
-}, {
 "base": "Node",
 "class": "JarData",
 "language": "GDScript",
@@ -132,7 +127,6 @@ _global_script_class_icons={
 "Header2": "",
 "Ingredient": "",
 "Interpreter": "",
-"Jar": "",
 "JarData": "",
 "JarFormat": "",
 "Lid": "",

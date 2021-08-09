@@ -29,7 +29,6 @@ func push():
 	for jar_data in jar_data_list:
 		data.push_back(jar_data.to_dict())
 	var body = to_json({"jar_data_list": data})
-	print("PUSH MACHINE!!!!!!!!!!!!")
 #	$.ajax({
 #    //  type: "POST",
 #    //  url: "/users/select_unit_system",
@@ -95,6 +94,13 @@ func _on_pull(_result, response_code, _headers, body):
 		else:
 			clear()
 			var json = JSON.parse(body.get_string_from_utf8())
+			
+			var foods = json.result["foods"]
+			for raw_food in foods:
+				var food = Food.new().load_data(raw_food)
+				food_list.push_back(food)
+			emit_signal("food_list_updated")
+			
 			var jars = json.result["jars"]
 			for jar in jars:
 				var jar_data = JarData.new().load_data(jar)
@@ -104,11 +110,7 @@ func _on_pull(_result, response_code, _headers, body):
 					node.set_jar_data(jar_data)
 					Heda.get_node(Heda.CUPBOARD).bodies.add_child(node)
 			emit_signal("jar_data_list_updated")
-			var foods = json.result["foods"]
-			for raw_food in foods:
-				var food = Food.new().load_data(raw_food)
-				food_list.push_back(food)
-			emit_signal("food_list_updated")
+			
 				#var jar_data = JarData.new().load_data(jar)
 				#jar_data_list.push_back(jar_data)
 				#if jar_data.get_position().x != 0.0:
@@ -141,4 +143,10 @@ func find_jar(id):
 	for jar in jar_data_list:
 		if jar.jar_id == id:
 			return jar
+	return null
+
+func find_food(_id):
+	for food in food_list:
+		if food.id == _id:
+			return food
 	return null

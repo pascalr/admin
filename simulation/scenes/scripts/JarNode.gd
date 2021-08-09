@@ -27,11 +27,11 @@ func _enter_tree():
 	$SelectionBox.translation.y = format.height_with_lid/2.0
 	$SelectionBox.visible = false
 
-	print("Changing content size for " + name)
 	$Content.mesh.top_radius = format.diameter/2.0-5.0
 	$Content.mesh.bottom_radius = format.diameter/2.0-5.0
 	$Content.mesh.material = SpatialMaterial.new() # FIXME: WHY OH WHY???
-	$Content.visible = false
+	if jar_data.ingredients.empty():
+		$Content.visible = false
 #
 	$Body/CollisionShape.shape.radius = format.diameter/2.0
 	$Body/CollisionShape.shape.height = format.height_with_lid
@@ -56,6 +56,7 @@ func on_data_changed():
 	$Format.copy(jar_data.format)
 	self.name = "Jar - %d" % jar_data.jar_id
 	if jar_data.ingredients.size() > 0:
+		print("There is one ingredient JarNode on_data_changed")
 		$Content.mesh.material.albedo_color = jar_data.ingredients[0].food.color
 		var h = jar_data.ratio_filled() * $Format.max_content_height
 		$Content.mesh.height = h

@@ -15,7 +15,7 @@ func volume():
 func to_dict():
 	return {
 		"weight" : weight,
-		"food" : str(food)
+		"food_id" : str(food.id)
 	}
 
 func _to_string():

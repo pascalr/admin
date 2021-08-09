@@ -98,6 +98,7 @@ func to_dict():
 
 func load_data(data):
 	
+	print(data)
 	for i in data.keys():
 		if i == "created_at" or i == "updated_at":
 			continue
@@ -107,7 +108,7 @@ func load_data(data):
 					self.format = _format; break
 		elif i == "ingredients":
 			for ing in data[i]:
-				add_ingredient(Ingredient.new(ing["weight"], Heda.get_node(Heda.FOODS+"/"+ing["food"])))
+				add_ingredient(Ingredient.new(ing["weight"], Datastore.find_food(ing["food_id"])))
 		else:
 			self.set(i, data[i])
 

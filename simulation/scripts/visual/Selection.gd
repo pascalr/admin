@@ -44,7 +44,7 @@ func _on_Store_pressed():
 	get_node(Heda.ROBOT).store(Heda.current_selection)
 
 func _on_Empty_pressed():
-	Heda.current_selection.empty_ingredients()
+	Heda.current_selection.get_data().empty_ingredients()
 
 func _on_AddIngredient_pressed():
 	var qty = $VBox/JarDetails/IngredientQuantity.value

@@ -101,36 +101,36 @@ func clear():
 		node.queue_free()
 
 func save():
-	
-	var store = File.new()
-	store.open("user://state.save", File.WRITE)
-	
-	for node in get_tree().get_nodes_in_group("save"):
-		var node_data = node.to_dict()
-		store.store_line(to_json(node_data))
-	store.close()
+	pass
+#	var store = File.new()
+#	store.open("user://state.save", File.WRITE)
+#
+#	for node in get_tree().get_nodes_in_group("save"):
+#		var node_data = node.to_dict()
+#		store.store_line(to_json(node_data))
+#	store.close()
 
 func load():
-	
-	var store = File.new()
-	if not store.file_exists("user://state.save"):
-		return
-	
-	# Clear previous objects
-	for node in get_tree().get_nodes_in_group("save"):
-		node.queue_free()
-
-	store.open("user://state.save", File.READ)
-	while store.get_position() < store.get_len():
-
-		var node_data = parse_json(store.get_line())
-		
-		if node_data["class"] == "Jar":
-			get_node(Heda.CUPBOARD).bodies.add_child(Jar.new().load_data(node_data))
-		else:
-			print("Unkown class " + node_data["class"] + " in store.")
-
-	store.close()
+	pass
+#	var store = File.new()
+#	if not store.file_exists("user://state.save"):
+#		return
+#
+#	# Clear previous objects
+#	for node in get_tree().get_nodes_in_group("save"):
+#		node.queue_free()
+#
+#	store.open("user://state.save", File.READ)
+#	while store.get_position() < store.get_len():
+#
+#		var node_data = parse_json(store.get_line())
+#
+#		if node_data["class"] == "Jar":
+#			get_node(Heda.CUPBOARD).bodies.add_child(Jar.new().load_data(node_data))
+#		else:
+#			print("Unkown class " + node_data["class"] + " in store.")
+#
+#	store.close()
 
 func get_node(path):
 	return get_tree().root.get_node(path)
