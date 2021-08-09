@@ -20,7 +20,7 @@ func show_details(obj):
 	$VBox/Y/Value.text = "%.2f" % obj.translation.y
 	$VBox/Z/Value.text = "%.2f" % obj.translation.z
 	
-	if obj.get_class() == "JarNode":
+	if obj.get_class() == "JarInstance":
 		$VBox/JarDetails.visible = true
 		for child in $VBox/JarDetails/MarginContainer/Ingredients.get_children():
 			child.queue_free()

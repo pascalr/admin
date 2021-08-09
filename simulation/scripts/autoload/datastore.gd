@@ -103,10 +103,10 @@ func _on_pull(_result, response_code, _headers, body):
 			
 			var jars = json.result["jars"]
 			for jar in jars:
-				var jar_data = JarData.new().load_data(jar)
+				var jar_data = Jar.new().load_data(jar)
 				jar_data_list.push_back(jar_data)
 				if jar_data.get_position().x != 0.0:
-					var node = preload("res://scenes/JarNode.tscn").instance()
+					var node = preload("res://scenes/JarInstance.tscn").instance()
 					node.set_jar_data(jar_data)
 					Heda.get_node(Heda.CUPBOARD).bodies.add_child(node)
 			emit_signal("jar_data_list_updated")
@@ -134,7 +134,7 @@ func next_jar_id():
 		i += 1
 
 func add_new_jar_data():
-	var j = JarData.new()
+	var j = Jar.new()
 	j.jar_id = next_jar_id()
 	jar_data_list.push_back(j)
 	emit_signal("jar_data_list_updated")

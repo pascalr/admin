@@ -1,6 +1,6 @@
 extends Node
 
-class_name JarData
+class_name Jar
 
 signal data_changed
 
@@ -14,7 +14,7 @@ var pos_z := 0.0
 
 var nodes := []
 
-func get_main_node():
+func get_main_instance():
 	if nodes.size() != 1:
 		return null
 	return nodes[0]

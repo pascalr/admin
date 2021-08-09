@@ -75,7 +75,7 @@ func _check_add_jar(_shelf, click_position):
 	if jar_data:
 		if Lib.is_valid_jar_position(jar_data.format, click_position):
 			jar_data.set_position(click_position)
-			var node = preload("res://scenes/JarNode.tscn").instance()
+			var node = preload("res://scenes/JarInstance.tscn").instance()
 			node.set_jar_data(jar_data)
 			bodies.add_child(node)
 			return jar_data

@@ -187,13 +187,13 @@ func _grab_in_front(obj):
 
 func _grabbing(obj):
 	grabbed = obj
-	Lib.parent_adopt_child(hand, obj.get_main_node())
+	Lib.parent_adopt_child(hand, obj.get_main_instance())
 	emit_signal("grabbed_changed")
 
 func _releasing():
 	if grabbed: # FIXME: Yield executed twice
-		Lib.parent_adopt_child(get_node(Heda.CUPBOARD).bodies, grabbed.get_main_node())
-		grabbed.set_position(grabbed.get_main_node().translation)
+		Lib.parent_adopt_child(get_node(Heda.CUPBOARD).bodies, grabbed.get_main_instance())
+		grabbed.set_position(grabbed.get_main_instance().translation)
 		grabbed = null
 		emit_signal("grabbed_changed")
 

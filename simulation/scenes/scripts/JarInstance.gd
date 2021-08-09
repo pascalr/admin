@@ -1,12 +1,14 @@
 tool
 extends Spatial
 
+class_name JarInstance
+
 onready var selection_box = $SelectionBox
 
 var jar_data setget set_jar_data
 
 func get_class():
-	return "JarNode"
+	return "JarInstance"
 
 func get_data():
 	return jar_data
