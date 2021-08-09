@@ -14,6 +14,7 @@ onready var grip = $SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip
 onready var motors = [support, trolley, humerus, wrist, hand, grip]
 
 var grabbed
+var grabbed_instance
 var grabbed_above : bool
 var grabbed_height : float
 
@@ -187,14 +188,16 @@ func _grab_in_front(obj):
 
 func _grabbing(obj):
 	grabbed = obj
-	Lib.parent_adopt_child(hand, obj.get_main_instance())
+	grabbed_instance = obj.get_main_instance()
+	Lib.parent_adopt_child(hand, grabbed_instance)
 	emit_signal("grabbed_changed")
 
 func _releasing():
 	if grabbed: # FIXME: Yield executed twice
-		Lib.parent_adopt_child(get_node(Heda.CUPBOARD).bodies, grabbed.get_main_instance())
-		grabbed.set_position(grabbed.get_main_instance().translation)
+		Lib.parent_adopt_child(get_node(Heda.CUPBOARD).bodies, grabbed_instance)
+		grabbed.set_position(grabbed_instance.translation)
 		grabbed = null
+		grabbed_instance = null
 		emit_signal("grabbed_changed")
 
 func change_grab_height(new_height):

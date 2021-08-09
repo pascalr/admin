@@ -24,11 +24,11 @@ func show_details(obj):
 		$VBox/JarDetails.visible = true
 		for child in $VBox/JarDetails/MarginContainer/Ingredients.get_children():
 			child.queue_free()
-		for ing in obj.jar_data.ingredients:
+		for ing in obj.jar.ingredients:
 			var label = Label.new()
 			label.text = str(ing)
 			$VBox/JarDetails/MarginContainer/Ingredients.add_child(label)
-		$VBox/JarDetails/HBox/MaxVolume.text = "mL / %.1f mL" % obj.jar_data.format.volume
+		$VBox/JarDetails/HBox/MaxVolume.text = "mL / %.1f mL" % obj.jar.format.volume
 	else:
 		$VBox/JarDetails.visible = false
 
@@ -36,19 +36,19 @@ func hide_details():
 	self.visible = false
 
 func _on_Grab_pressed():
-	get_node(Heda.ROBOT).grab(Heda.current_selection.get_data())
+	get_node(Heda.ROBOT).grab(Heda.current_selection.jar)
 
 func _on_Weigh_pressed():
-	get_node(Heda.ROBOT).weigh(Heda.current_selection.get_data())
+	get_node(Heda.ROBOT).weigh(Heda.current_selection.jar)
 
 func _on_Store_pressed():
-	get_node(Heda.ROBOT).store(Heda.current_selection.get_data())
+	get_node(Heda.ROBOT).store(Heda.current_selection.jar)
 
 func _on_Empty_pressed():
-	Heda.current_selection.get_data().empty_ingredients()
+	Heda.current_selection.jar.empty_ingredients()
 
 func _on_AddIngredient_pressed():
 	var vol = $VBox/JarDetails/HBox/IngredientQuantity.value
 	var food = Lib.get_item_list_selected_meta_data(food_list)
-	Heda.current_selection.get_data().add_ingredient(Ingredient.new(vol*food.density, food))
+	Heda.current_selection.jar.add_ingredient(Ingredient.new(vol*food.density, food))
 	pass

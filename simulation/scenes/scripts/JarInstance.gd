@@ -5,13 +5,10 @@ class_name JarInstance
 
 onready var selection_box = $SelectionBox
 
-var jar_data setget set_jar_data
+var jar setget set_jar
 
 func get_class():
 	return "JarInstance"
-
-func get_data():
-	return jar_data
 
 func _enter_tree():
 	
@@ -32,7 +29,7 @@ func _enter_tree():
 	$Content.mesh.top_radius = format.diameter/2.0-5.0
 	$Content.mesh.bottom_radius = format.diameter/2.0-5.0
 	$Content.mesh.material = SpatialMaterial.new() # FIXME: WHY OH WHY???
-	if jar_data.ingredients.empty():
+	if jar.ingredients.empty():
 		$Content.visible = false
 #
 	$Body/CollisionShape.shape.radius = format.diameter/2.0
@@ -42,25 +39,25 @@ func _enter_tree():
 	var _c = $Body.connect("input_event", self, "_toggle_selection")
 
 func _exit_tree():
-	if jar_data:
-		if jar_data.nodes.size() <= 1:
-			jar_data.set_position(Vector3(0.0, 0.0, 0.0))
-		jar_data.deconnect_node(self)
+	if jar:
+		if jar.nodes.size() <= 1:
+			jar.set_position(Vector3(0.0, 0.0, 0.0))
+		jar.deconnect_node(self)
 
-func set_jar_data(_jar_data):
-	jar_data = _jar_data
-	jar_data.connect_node(self)
+func set_jar(_jar):
+	jar = _jar
+	jar.connect_node(self)
 	on_data_changed()
 	
 func on_data_changed():
 	print("JarNode on_data_changed")
-	self.translation = jar_data.get_position()
-	$Format.copy(jar_data.format)
-	self.name = "Jar - %d" % jar_data.jar_id
-	if jar_data.ingredients.size() > 0:
+	self.translation = jar.get_position()
+	$Format.copy(jar.format)
+	self.name = "Jar - %d" % jar.jar_id
+	if jar.ingredients.size() > 0:
 		print("There is one ingredient JarNode on_data_changed")
-		$Content.mesh.material.albedo_color = jar_data.ingredients[0].food.color
-		var h = jar_data.ratio_filled() * $Format.max_content_height
+		$Content.mesh.material.albedo_color = jar.ingredients[0].food.color
+		var h = jar.ratio_filled() * $Format.max_content_height
 		$Content.mesh.height = h
 		$Content.translation.y = h/2.0
 		$Content.visible = true

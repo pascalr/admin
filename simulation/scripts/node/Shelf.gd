@@ -42,16 +42,16 @@ func get_preferred_jar_format():
 func get_middle_x():
 	return get_collision_shape().global_transform.origin.x
 func get_min_x():
-	return get_middle_x()-get_collision_shape().shape.extents.x+Globals.min_jar_to_border_dist()
+	return get_middle_x()-get_collision_shape().shape.extents.x#+Globals.min_jar_to_border_dist()
 func get_max_x():
-	return get_middle_x()+get_collision_shape().shape.extents.x-Globals.min_jar_to_border_dist()
+	return get_middle_x()+get_collision_shape().shape.extents.x#-Globals.min_jar_to_border_dist()
 
 func get_middle_z():
 	return get_collision_shape().global_transform.origin.z
 func get_min_z():
-	return get_middle_z()-get_collision_shape().shape.extents.z+Globals.min_jar_to_border_dist()
+	return get_middle_z()-get_collision_shape().shape.extents.z#+Globals.min_jar_to_border_dist()
 func get_max_z():
-	return get_middle_z()+get_collision_shape().shape.extents.z-Globals.min_jar_to_border_dist()
+	return get_middle_z()+get_collision_shape().shape.extents.z#-Globals.min_jar_to_border_dist()
 
 func get_height():
 	return get_collision_shape().global_transform.origin.y + get_collision_shape().shape.extents.y	

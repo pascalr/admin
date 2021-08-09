@@ -107,7 +107,7 @@ func _on_pull(_result, response_code, _headers, body):
 				jar_data_list.push_back(jar_data)
 				if jar_data.get_position().x != 0.0:
 					var node = preload("res://scenes/JarInstance.tscn").instance()
-					node.set_jar_data(jar_data)
+					node.jar = jar_data
 					Heda.get_node(Heda.CUPBOARD).bodies.add_child(node)
 			emit_signal("jar_data_list_updated")
 			
