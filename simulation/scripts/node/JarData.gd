@@ -14,8 +14,22 @@ var pos_z := 0.0
 
 var nodes := []
 
+func get_main_node():
+	if nodes.size() != 1:
+		return null
+	return nodes[0]
+
 func get_class():
 	return "JarData"
+
+func get_shelf():
+	for shelf in Heda.get_node(Heda.CUPBOARD).shelves:
+		var x_ok = pos_x >= shelf.get_min_x() and pos_x <= shelf.get_max_x()
+		var y_ok = abs(pos_y - shelf.get_height()) < 200
+		var z_ok = pos_z >= shelf.get_min_z() and pos_x <= shelf.get_max_z()
+		if x_ok and y_ok and z_ok:
+			return shelf
+	return null
 
 func connect_node(node):
 	nodes.push_back(node)

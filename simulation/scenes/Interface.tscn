@@ -514,11 +514,23 @@ margin_right = 282.0
 margin_bottom = 50.0
 text = "10.0 g sucre"
 
-[node name="IngredientQuantity" type="SpinBox" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails"]
+[node name="HBox" type="HBoxContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails"]
 margin_top = 81.0
 margin_right = 292.0
 margin_bottom = 114.0
+
+[node name="IngredientQuantity" type="SpinBox" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails/HBox"]
+margin_right = 196.0
+margin_bottom = 33.0
+size_flags_horizontal = 3
 max_value = 10000.0
+
+[node name="MaxVolume" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails/HBox"]
+margin_left = 200.0
+margin_top = 5.0
+margin_right = 292.0
+margin_bottom = 28.0
+text = "mL / 750 mL"
 
 [node name="LineEdit" type="LineEdit" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails"]
 margin_top = 118.0

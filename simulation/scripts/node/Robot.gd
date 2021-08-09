@@ -13,7 +13,7 @@ onready var hand = $SupportTransversale/Trolley/Humerus/Wrist/Hand
 onready var grip = $SupportTransversale/Trolley/Humerus/Wrist/Hand/Grip
 onready var motors = [support, trolley, humerus, wrist, hand, grip]
 
-var grabbed : Spatial
+var grabbed
 var grabbed_above : bool
 var grabbed_height : float
 
@@ -135,16 +135,16 @@ func _move_straigth(vect):
 func _grab_under_shelf(obj):
 	print("Grab under shelf")
 	grabbed_height = obj.get_height()-Globals.grab_above_grip_length
-	var angle = 180.0 if obj.translation.z < Globals.max_z/2.0 else 0.0
+	var angle = 180.0 if obj.get_position().z < Globals.max_z/2.0 else 0.0
 	var above_height = obj.get_height()+Globals.jar_clearance
-	var dest = obj.translation+Vector3(0.0,above_height,0.0)
+	var dest = obj.get_position()+Vector3(0.0,above_height,0.0)
 	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
-	dest.y = obj.translation.y+grabbed_height
+	dest.y = obj.get_position().y+grabbed_height
 	yield(move("r", Globals.max_r), "completed")
 	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
 	yield(move("r", obj.get_diameter()), "completed")
-	var safe_y = obj.translation.y+Globals.safe_height+grabbed_height
-	var in_front = obj.translation
+	var safe_y = obj.get_position().y+Globals.safe_height+grabbed_height
+	var in_front = obj.get_position()
 	_grabbing(obj)
 	grabbed_above = true
 	in_front.y += grabbed_height
@@ -154,45 +154,46 @@ func _grab_under_shelf(obj):
 
 func _grab_above(obj):
 	grabbed_height = Globals.grab_height_above(obj)
-	var angle = Lib.best_angle_for_vect(obj.translation)
-	var above = obj.translation+Vector3(0.0,obj.get_height()+10.0,0.0)
+	var angle = Lib.best_angle_for_vect(obj.get_position())
+	var above = obj.get_position()+Vector3(0.0,obj.get_height()+10.0,0.0)
 	yield(goto(UserCoord.new().set_from_vector(above, angle)), "completed")
-	var dest = obj.translation+Vector3(0.0,grabbed_height,0.0)
+	var dest = obj.get_position()+Vector3(0.0,grabbed_height,0.0)
 	yield(move("r", Globals.max_r), "completed")
 	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
 	yield(move("r", obj.get_diameter()), "completed")
 	grabbed_above = true
-	var safe_y = obj.translation.y+Globals.safe_height+grabbed_height
+	var safe_y = obj.get_position().y+Globals.safe_height+grabbed_height
 	_grabbing(obj)
 	# When grabbing above, move up enough to clear the other jars
 	yield(move("y", safe_y), "completed")
 
 func _grab_in_front(obj):
 	grabbed_height = Globals.grab_height_in_front(obj)
-	var angle = 180.0 if obj.translation.z < Globals.max_z else 0.0
-	var in_front = obj.translation
+	var angle = 180.0 if obj.get_position().z < Globals.max_z else 0.0
+	var in_front = obj.get_position()
 	# FIXME: TODO in_front.x 
 	in_front.y += grabbed_height
 	in_front.z += obj.get_diameter()/2.0 * -cos(angle*PI/180.0)
 	yield(goto(UserCoord.new().set_from_vector(in_front, angle)), "completed")
-	var dest = obj.translation+Vector3(0.0,60.0,0.0)
+	var dest = obj.get_position()+Vector3(0.0,60.0,0.0)
 	yield(move("r", Globals.max_r), "completed")
 	yield(_move_straigth(dest), "completed")
 	yield(move("r", obj.get_diameter()), "completed")
 	grabbed_above = false
-	var safe_y = obj.translation.y+Globals.fence_safe_height+grabbed_height
+	var safe_y = obj.get_position().y+Globals.fence_safe_height+grabbed_height
 	_grabbing(obj)
 	yield(move("y", safe_y), "completed")
 	yield(_move_straigth(in_front), "completed")
 
 func _grabbing(obj):
 	grabbed = obj
-	Lib.parent_adopt_child(hand, obj)
+	Lib.parent_adopt_child(hand, obj.get_main_node())
 	emit_signal("grabbed_changed")
 
 func _releasing():
 	if grabbed: # FIXME: Yield executed twice
-		Lib.parent_adopt_child(get_node(Heda.CUPBOARD).bodies, grabbed)
+		Lib.parent_adopt_child(get_node(Heda.CUPBOARD).bodies, grabbed.get_main_node())
+		grabbed.set_position(grabbed.get_main_node().translation)
 		grabbed = null
 		emit_signal("grabbed_changed")
 
@@ -200,13 +201,13 @@ func change_grab_height(new_height):
 	if not grabbed:
 		return Heda.error("Robot can't change grab height, it is not grabbing.")
 	var working_space = get_node(Heda.WORKING_SPACE)
-	var dest = working_space.translation+Vector3(0.0,grabbed_height,0.0)
-	var angle = Lib.best_angle_for_vect(working_space.translation)
+	var dest = working_space.get_position()+Vector3(0.0,grabbed_height,0.0)
+	var angle = Lib.best_angle_for_vect(working_space.get_position())
 	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
 	yield(move("r", Globals.max_r), "completed")
 	var obj = grabbed
 	_releasing()
-	yield(move("y", working_space.translation.y+new_height), "completed")
+	yield(move("y", working_space.get_position().y+new_height), "completed")
 	yield(move("r", obj.get_diameter()), "completed")
 	_grabbing(obj)
 	grabbed_height = new_height
@@ -219,9 +220,9 @@ func grab(obj):
 	elif grabbed:
 		return Heda.error("Robot can't grab. It is already grabbing.")
 	print("Grabing")
-	if obj.grab_above and obj.translation.z < Globals.under_shelf:
+	if obj.get_shelf().grab_above and obj.get_position().z < Globals.under_shelf:
 		yield(_grab_under_shelf(obj),"completed")
-	elif obj.grab_above:
+	elif obj.get_shelf().grab_above:
 		yield(_grab_above(obj),"completed")
 	else:
 		yield(_grab_in_front(obj),"completed")
