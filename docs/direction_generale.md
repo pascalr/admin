@@ -1,3 +1,34 @@
+TODO: Les grands titres d'un modèle d'affaire/plan d'affaires et être capable de répondre à chaque élément (vision, ...) Ne pas l'écrire pour l'instant parce qu'il change constamment dans ma tête...
+
+Vision 6 mois:
+
+Commencer à vendre des armoires. Distribuer le plan sur internet pour que le monde puisse déjà commencer à fabriquer leur propres armoires. Avoir un design fonctionnel qui confirme les dimensions de l'armoire. La simulation doit être capable d'aller chercher et d'aller porter tous les pots. Avoir un design semblant fonctionnel de bras robotique en vrai. Travailler sur la pince surtout... Commencer à faire de la publicité peu à peu. Idéalement, avoir démarré la compagnie par actions.
+
+Avantages et inconvénient d'avoir un compétiteur:
+Avantages:
+Donne de la crédibilité au projet
+Demande de financement plus facile?
+
+Désavantages:
+Perte d'une part de marché
+Perte d'être la première marque mise sur le marché
+
+Au lieu de Heda, possiblement, bâtir la marque autour de Robot garde-manger, Pantry robot.
+
+I would not mind if there were competitors, but what would be my competitive advantage?
+
+Patents? - I don't want that... Fuck lawyers...
+First to market? I am sick of hiding and being alone, I want to show what I am doing to the world!
+Armoire de cuisine?
+
+Hey ça serait cool que je protège le nom Heda comme compagnie, et que l'armoire s'appelle ensuite une armoire de cuisine de type ou de style Heda. Une armoire Heda. Laisser tout le monde appeler ça comme ça. N'importe qui aurait le droit même d'en fabriquer et d'en vendre sous le nom générique une armoire Heda. Ça créerait de la publicité autour du nom Heda.
+
+Simulation robotique? Sure, j'aurais de l'avance dans la simulation. Je voudrais quand même peut-être avoir un blog d'articles qui parle de faire de la robotique avec Godot pour me faire de la publicité en même temps. Idéalement, le faire sur une page github d'un plugin de robotique que j'ai créé.
+
+Les recettes? Vraiment pas...
+
+Design mécanique? Ouin pas tant parce que le produit final devra être beaucoup plus travaillé. En plus, idéalement je voudrais que ce soit du open-hardware. Je voudrais simplement vendre des kits...
+
 # Planification
 1. Un jour: Sauvegarder localement seulement Godot certains trucs comme la position des pots. Tout sauvegarder localement pour que ça fonctionne même quand le serveur n'est pas disponible.
 1. Quand tu es connecté sur le site de Heda, cliquer sur Heda, t'emmènes sur la page de ta machine à toi

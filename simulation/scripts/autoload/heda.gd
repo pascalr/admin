@@ -1,6 +1,7 @@
 extends Node
 
-var HOST := "http://localhost:3000/"
+#var HOST := "http://localhost:3000/"
+var HOST := "https://aqueous-fortress-30634.herokuapp.com/"
 
 # Simulation/Scene
 var CORE := "/root/Main/HBox/HSplit/HSplit/VSplit/TabContainer/Simulation/Viewport/Scene"

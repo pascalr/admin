@@ -29,7 +29,7 @@ func _enter_tree():
 	$Content.mesh.top_radius = format.diameter/2.0-5.0
 	$Content.mesh.bottom_radius = format.diameter/2.0-5.0
 	$Content.mesh.material = SpatialMaterial.new() # FIXME: WHY OH WHY???
-	if jar.ingredients.empty():
+	if jar == null or jar.ingredients.empty():
 		$Content.visible = false
 #
 	$Body/CollisionShape.shape.radius = format.diameter/2.0
