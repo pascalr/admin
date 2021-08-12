@@ -19,10 +19,10 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scripts/node/Controller.gd"
 }, {
-"base": "Node",
+"base": "Model",
 "class": "Food",
 "language": "GDScript",
-"path": "res://scripts/node/Food.gd"
+"path": "res://scripts/models/Food.gd"
 }, {
 "base": "Camera",
 "class": "FreelookCamera",
@@ -34,25 +34,25 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scripts/visual/Header2.gd"
 }, {
-"base": "Node",
+"base": "Model",
 "class": "Ingredient",
 "language": "GDScript",
-"path": "res://scripts/node/Ingredient.gd"
+"path": "res://scripts/models/Ingredient.gd"
 }, {
 "base": "Node",
 "class": "Interpreter",
 "language": "GDScript",
 "path": "res://scripts/node/Interpreter.gd"
 }, {
-"base": "Node",
+"base": "Model",
 "class": "Jar",
 "language": "GDScript",
-"path": "res://scripts/node/Jar.gd"
+"path": "res://scripts/models/Jar.gd"
 }, {
-"base": "Node",
+"base": "Model",
 "class": "JarFormat",
 "language": "GDScript",
-"path": "res://scripts/node/JarFormat.gd"
+"path": "res://scripts/models/JarFormat.gd"
 }, {
 "base": "Spatial",
 "class": "JarInstance",
@@ -63,6 +63,11 @@ _global_script_classes=[ {
 "class": "Lid",
 "language": "GDScript",
 "path": "res://scripts/node/Lid.gd"
+}, {
+"base": "Node",
+"class": "Model",
+"language": "GDScript",
+"path": "res://scripts/models/Model.gd"
 }, {
 "base": "Spatial",
 "class": "Motor",
@@ -123,6 +128,11 @@ _global_script_classes=[ {
 "class": "UserCoord",
 "language": "GDScript",
 "path": "res://scripts/user_coord.gd"
+}, {
+"base": "Model",
+"class": "Weighing",
+"language": "GDScript",
+"path": "res://scripts/models/Weighing.gd"
 } ]
 _global_script_class_icons={
 "Body": "",
@@ -136,6 +146,7 @@ _global_script_class_icons={
 "JarFormat": "",
 "JarInstance": "",
 "Lid": "",
+"Model": "",
 "Motor": "",
 "MotorA": "",
 "MotorB": "",
@@ -147,7 +158,8 @@ _global_script_class_icons={
 "Robot": "",
 "Shelf": "",
 "Synchronizer": "",
-"UserCoord": ""
+"UserCoord": "",
+"Weighing": ""
 }
 
 [application]
@@ -162,6 +174,10 @@ Lib="*res://scripts/autoload/lib.gd"
 Globals="*res://scripts/autoload/globals.gd"
 Heda="*res://scripts/autoload/heda.gd"
 Datastore="*res://scripts/autoload/datastore.gd"
+WebDatastore="*res://scripts/autoload/web_server.gd"
+Test="*res://scripts/autoload/test.gd"
+Cache="*res://scripts/autoload/cache.gd"
+Database="*res://scripts/autoload/database.gd"
 
 [display]
 

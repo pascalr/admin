@@ -70,7 +70,7 @@ func _obj_selected(obj):
 	if Heda.current_selection != null:
 		Heda.current_selection.selection_box.visible = false
 	Heda.current_selection = obj
-	get_node(Heda.SELECTION_PANEL).show_details(obj)
+	get_node(Heda.SELECTION_PANEL).show_details(obj.jar)
 
 func _on_ViewOption_item_selected(index):
 	print("On view option item selected")

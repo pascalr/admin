@@ -1,4 +1,4 @@
-extends Node
+extends Model
 
 class_name Jar
 
@@ -14,13 +14,16 @@ var pos_z := 0.0
 
 var nodes := []
 
+func get_name():
+	return "Jar - %d" % jar_id
+
 func get_main_instance():
 	if nodes.size() != 1:
 		return null
 	return nodes[0]
 
 func get_class():
-	return "JarData"
+	return "Jar"
 
 func get_shelf():
 	for shelf in Heda.get_node(Heda.CUPBOARD).shelves:

@@ -1,7 +1,7 @@
 extends Node
 
-#var HOST := "http://localhost:3000/"
-var HOST := "https://aqueous-fortress-30634.herokuapp.com/"
+var HOST := "http://localhost:3000/"
+#var HOST := "https://aqueous-fortress-30634.herokuapp.com/"
 
 # Simulation/Scene
 var CORE := "/root/Main/HBox/HSplit/HSplit/VSplit/TabContainer/Simulation/Viewport/Scene"
@@ -37,7 +37,6 @@ var FRONT_SCENE_CAMERA := SCENE+"/FrontCamera"
 var ROBOT_CAMERA := ROBOT+"/SupportTransversale/Trolley/Humerus/Wrist/Hand/RobotCamera"
 
 var jar_format
-var food
 
 var current_action := 1
 var current_selection
@@ -49,7 +48,6 @@ func _ready():
 	yield(get_tree().create_timer(0.2), "timeout")
 
 	jar_format = get_node(CONFIG+"/JarFormats/Big")
-	food = get_node(CONFIG+"/Foods/farine")
 
 func detect_jars():
 	pass

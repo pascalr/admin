@@ -1,3 +1,11 @@
+CHHHHUUUUUUU TANNNNÉÉÉÉÉÉ
+Bon, une base de donnée SQLite local pour la simulation. La vérité de l'information est locale dans cette base de donnée.
+Au pire faire une petit outil rails pour manipuler ces données si c'est trop compliqué de faire un interface...
+Idéalement la site internet n'est qu'observateur et te permets de voir...
+MAIS WAIT!!! Pour les recettes comment faire et les ingrédients comment faire?!?!?
+
+
+
 TODO: Les grands titres d'un modèle d'affaire/plan d'affaires et être capable de répondre à chaque élément (vision, ...) Ne pas l'écrire pour l'instant parce qu'il change constamment dans ma tête...
 
 Vision 6 mois:
@@ -30,8 +38,8 @@ Les recettes? Vraiment pas...
 Design mécanique? Ouin pas tant parce que le produit final devra être beaucoup plus travaillé. En plus, idéalement je voudrais que ce soit du open-hardware. Je voudrais simplement vendre des kits...
 
 # Planification
+1. Qu'est-ce que je voir pour l'invenaire? Classer par nom alphabétique, classer LISTE D'ÉPICERIE par temps restant estimé à en manquer tout en prenant compte la quantité utilisé possible et habituelle, pouvoir filtrer par le nom, pouvoir aussi voir par catégories, par exemple, pâtes alimentaires
 1. Un jour: Sauvegarder localement seulement Godot certains trucs comme la position des pots. Tout sauvegarder localement pour que ça fonctionne même quand le serveur n'est pas disponible.
-1. Quand tu es connecté sur le site de Heda, cliquer sur Heda, t'emmènes sur la page de ta machine à toi
 1. Une belle armoire finie avec un manuel d'instruction pour la fabriquer
 1. Tous les mouvements fonctionnels
 1. Voir l'inventaire: les portes ouvertes et tu cliques sur l'item (c'est rapide parce que tu sais où qu'ils sont les trucs avec le temps), une liste d'ingrédients/pots dans lequel tu peux chercher

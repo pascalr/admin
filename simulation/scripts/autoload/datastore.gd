@@ -5,6 +5,7 @@ signal food_list_updated
 
 var jars := []
 var food_list := []
+var weighings := []
 
 var login_request : HTTPRequest
 var pull_request : HTTPRequest
@@ -72,8 +73,8 @@ func save():
 #
 #		var node_data = parse_json(store.get_line())
 #
-#		if node_data["class"] == "JarData":
-#			jar_data_list.push_back(JarData.new().load_data(node_data))
+#		if node_data["class"] == "Jar":
+#			jar_data_list.push_back(Jar.new().load_data(node_data))
 #		else:
 #			print("Unkown class " + node_data["class"] + " in store.")
 #
@@ -111,7 +112,7 @@ func _on_pull(_result, response_code, _headers, body):
 					Heda.get_node(Heda.CUPBOARD).bodies.add_child(node)
 			emit_signal("jars_updated")
 			
-				#var jar_data = JarData.new().load_data(jar)
+				#var jar_data = Jar.new().load_data(jar)
 				#jar_data_list.push_back(jar_data)
 				#if jar_data.get_position().x != 0.0:
 				#	var node = preload("res://scenes/JarNode.tscn").instance()

@@ -15,20 +15,20 @@ func update_food_list():
 
 func show_details(obj):
 	self.visible = true
-	$VBox/ObjectName.text = obj.name
-	$VBox/X/Value.text = "%.2f" % obj.translation.x
-	$VBox/Y/Value.text = "%.2f" % obj.translation.y
-	$VBox/Z/Value.text = "%.2f" % obj.translation.z
+	$VBox/ObjectName.text = obj.get_name()
+	$VBox/X/Value.text = "%.2f" % obj.get_position().x
+	$VBox/Y/Value.text = "%.2f" % obj.get_position().y
+	$VBox/Z/Value.text = "%.2f" % obj.get_position().z
 	
-	if obj.get_class() == "JarInstance":
+	if obj.get_class() == "Jar":
 		$VBox/JarDetails.visible = true
 		for child in $VBox/JarDetails/MarginContainer/Ingredients.get_children():
 			child.queue_free()
-		for ing in obj.jar.ingredients:
+		for ing in obj.ingredients:
 			var label = Label.new()
 			label.text = str(ing)
 			$VBox/JarDetails/MarginContainer/Ingredients.add_child(label)
-		$VBox/JarDetails/HBox/MaxVolume.text = "mL / %.1f mL" % obj.jar.format.volume
+		$VBox/JarDetails/HBox/MaxVolume.text = "mL / %.1f mL" % obj.format.volume
 	else:
 		$VBox/JarDetails.visible = false
 

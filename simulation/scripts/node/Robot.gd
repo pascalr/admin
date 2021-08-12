@@ -301,13 +301,18 @@ func put_down(shelf, position):
 		yield(_put_down_in_front(shelf, position),"completed")
 
 func weigh(obj):
-	var full_weight = Heda.jar_format.volume * Heda.food.density
+	assert(obj.ingredients.size() == 1)
+	var food = obj.ingredients[0].food
+	var full_weight = obj.format.volume * food.density
 	var simulated = full_weight/2.0 + full_weight/2.0*randf()
 	#var weight = simulated + Heda.jar_format.body_weight + Heda.jar_format.lid_weight
 	obj.clear()
-	obj.add_ingredient(Ingredient.new(simulated, Heda.food))
+	var ing = Ingredient.new(simulated, food)
+	obj.add_ingredient(ing)
+	obj.emit_signal("data_changed")
+	Weighing.add_to_datastore(ing)
 	print("Weight: "+str(simulated)+"g")
-	get_node(Heda.UI).selection_panel.show_details(obj)
+	get_node(Heda.SELECTION_PANEL).show_details(obj)
 
 func store(obj):
 	if obj == null:

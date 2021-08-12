@@ -1,4 +1,4 @@
-extends Node
+extends Model
 
 class_name Ingredient
 
