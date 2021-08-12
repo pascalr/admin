@@ -43,6 +43,7 @@ func _exit_tree():
 	if jar:
 		if jar.nodes.size() <= 1:
 			jar.set_position(Vector3(0.0, 0.0, 0.0))
+			jar.save()
 		jar.deconnect_node(self)
 
 func set_jar(_jar):

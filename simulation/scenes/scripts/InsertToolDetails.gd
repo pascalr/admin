@@ -2,9 +2,11 @@ extends PanelContainer
 
 func _ready():
 	_on_InsertToolDetails_visibility_changed()
-	var _a = Datastore.connect("jars_updated", self, "_update")
+	var _a = Cache.connect("table_modified", self, "_update")
 
-func _update():
+func _update(model_name):
+	if model_name != Jar.get_model_name():
+		return
 	$VBox/JarId.clear()
 	if not Cache.loaded:
 		yield(Cache, "loaded")
@@ -19,4 +21,4 @@ func _update():
 
 func _on_InsertToolDetails_visibility_changed():
 	if visible:
-		_update()
+		_update(Jar.get_model_name())

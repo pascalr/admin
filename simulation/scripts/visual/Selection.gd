@@ -4,9 +4,11 @@ onready var food_list = $VBox/JarDetails/IngredientFood
 
 func _ready():
 	self.visible = false
-	var _a = Datastore.connect("food_list_updated", self, "update_food_list")
+	var _a = Cache.connect("table_modified", self, "update_food_list")
 
-func update_food_list():
+func update_food_list(table_name):
+	if table_name != Food.get_model_name():
+		return
 	food_list.clear()
 	for food in Datastore.food_list:
 		if food.in_pantry:

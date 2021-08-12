@@ -71,14 +71,15 @@ func _check_add_jar(_shelf, click_position):
 	
 	var current_jar = Heda.get_node(Heda.CURRENT_JAR)
 	var jar_id = current_jar.get_item_id(current_jar.selected)
-	var jar_data = Datastore.find_jar(jar_id)
-	if jar_data:
-		if Lib.is_valid_jar_position(jar_data.format, click_position):
-			jar_data.set_position(click_position)
+	var jar = Jar.find_by_jar_id(jar_id)
+	if jar:
+		if Lib.is_valid_jar_position(jar.format, click_position):
+			jar.set_position(click_position)
+			jar.save()
 			var node = preload("res://scenes/JarInstance.tscn").instance()
-			node.jar = jar_data
+			node.jar = jar
 			bodies.add_child(node)
-			return jar_data
+			return jar
 	
 #	var jar = Jar.new()
 #	jar.translation = click_position

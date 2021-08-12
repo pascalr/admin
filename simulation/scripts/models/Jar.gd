@@ -30,6 +30,11 @@ func get_class():
 	return "Jar"
 static func all():
 	return Cache.list(get_model_name())
+static func find_by_jar_id(jar_id):
+	for jar in all():
+		if jar.jar_id == jar_id:
+			return jar
+	return null
 
 func get_shelf():
 	for shelf in Heda.get_node(Heda.CUPBOARD).shelves:
