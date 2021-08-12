@@ -5,8 +5,10 @@ onready var food_list = $VBox/JarDetails/IngredientFood
 func _ready():
 	self.visible = false
 	var _a = Tables.FOODS.connect("modified", self, "update_food_list")
+	update_food_list()
 
 func update_food_list():
+	print("Updating food list")
 	food_list.clear()
 	for food in Food.all():
 		if food.in_pantry:
@@ -51,4 +53,4 @@ func _on_AddIngredient_pressed():
 	var vol = $VBox/JarDetails/HBox/IngredientQuantity.value
 	var food = Lib.get_item_list_selected_meta_data(food_list)
 	Heda.current_selection.jar.add_ingredient(Ingredient.new(vol*food.density, food))
-	pass
+	Heda.current_selection.jar.save()

@@ -53,17 +53,12 @@ func _on_load_from_server(_result, response_code, _headers, body, request):
 	
 	var json = JSON.parse(body.get_string_from_utf8())
 	
-	var foods = json.result["foods"]
-	for raw_food in foods:
-		var food = Food.new().load_data(raw_food)
-		_save(food)
-	Tables.FOODS.emit_signal("modified")
-	
-	var jar_list = json.result["jars"]
-	for jar_data in jar_list:
-		var jar = Jar.new().load_data(jar_data)
-		_save(jar)
-	Tables.JARS.emit_signal("modified")
+	for table in Tables.ALL:
+		if json.result.has(table.name):
+			var records = json.result[table.name]
+			for record_dict in records:
+				var record = table.klass.new().load_data(record_dict)
+				_save(record)
 	
 	loaded = true
 	emit_signal("loaded")
@@ -75,10 +70,17 @@ func close():
 
 func push_modifications_to_server():
 
+#	for table in [Tables.JARS, Tables.WEIGHINGS]:
+#		var _records := []
+#		for record in table.all():
+#			_records.push_back(record.to_dict())
+#		_data[table.name] = _records
+#	var body = to_json(_data)
+	
 	var _data := []
 	for jar_data in Jar.all():
 		_data.push_back(jar_data.to_dict())
-	var body = to_json({"jar_data_list": _data})
+	var body = to_json({"jars": _data})
 	
 	var request := HTTPRequest.new()
 	var _a = request.connect("request_completed",self,"_on_modifications_pushed_to_server", [request])

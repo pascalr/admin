@@ -52,12 +52,10 @@ func set_jar(_jar):
 	on_data_changed()
 	
 func on_data_changed():
-	print("JarNode on_data_changed")
 	self.translation = jar.get_position()
 	$Format.copy(jar.format)
 	self.name = "Jar - %d" % jar.jar_id
 	if jar.ingredients.size() > 0:
-		print("There is one ingredient JarNode on_data_changed")
 		$Content.mesh.material.albedo_color = jar.ingredients[0].food.color
 		var h = jar.ratio_filled() * $Format.max_content_height
 		$Content.mesh.height = h

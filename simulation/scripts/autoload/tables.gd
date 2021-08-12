@@ -3,11 +3,12 @@ extends Node
 class Table:
 	
 	var name : String
+	var klass
 	
 	signal modified
 	
-	func _init(_name):
-		name = _name
+	func _init(_name, _klass):
+		name = _name; klass = _klass
 	
 	func all():
 		return Cache.list(self)
@@ -15,8 +16,9 @@ class Table:
 	func find(id):
 		return Cache.find(self, id)
 
-var JARS := Table.new("jars")
-var FOODS := Table.new("foods")
-var WEIGHINGS := Table.new("weighings")
+var JARS := Table.new("jars", Jar)
+var FOODS := Table.new("foods", Food)
+var WEIGHINGS := Table.new("weighings", Weighing)
 
-var ALL := [JARS, FOODS, WEIGHINGS]
+# Warning: Order is important. Dependant tables must be last.
+var ALL := [FOODS, JARS, WEIGHINGS]
