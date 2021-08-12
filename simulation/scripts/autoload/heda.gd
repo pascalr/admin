@@ -36,18 +36,10 @@ var REAR_SCENE_CAMERA := SCENE+"/Camera"
 var FRONT_SCENE_CAMERA := SCENE+"/FrontCamera"
 var ROBOT_CAMERA := ROBOT+"/SupportTransversale/Trolley/Humerus/Wrist/Hand/RobotCamera"
 
-var jar_format
-
 var current_action := 1
 var current_selection
 
 var simulation_speed := 1.0
-
-func _ready():
-	# Ugly fix to max sure everything is loaded.
-	yield(get_tree().create_timer(0.2), "timeout")
-
-	jar_format = get_node(CONFIG+"/JarFormats/Big")
 
 func detect_jars():
 	pass

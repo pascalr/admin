@@ -24,15 +24,15 @@ func get_main_instance():
 		return null
 	return nodes[0]
 
-static func get_model_name():
-	return "Jar"
+static func get_table():
+	return Tables.JARS
 func get_class():
 	return "Jar"
 static func all():
-	return Cache.list(get_model_name())
-static func find_by_jar_id(jar_id):
+	return get_table().all()
+static func find_by_jar_id(_jar_id):
 	for jar in all():
-		if jar.jar_id == jar_id:
+		if jar.jar_id == _jar_id:
 			return jar
 	return null
 
@@ -111,7 +111,6 @@ func to_dict():
 		ings.push_back(ing.to_dict())
 
 	var save_dict = {
-		"class" : get_class(),
 		"pos_x" : pos_x,
 		"pos_y" : pos_y,
 		"pos_z" : pos_z,

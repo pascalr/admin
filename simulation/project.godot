@@ -190,6 +190,11 @@ WebDatastore="*res://scripts/autoload/web_server.gd"
 Test="*res://scripts/autoload/test.gd"
 Cache="*res://scripts/autoload/cache.gd"
 Database="*res://scripts/autoload/database.gd"
+Tables="*res://scripts/autoload/tables.gd"
+
+[debug]
+
+gdscript/warnings/unused_signal=false
 
 [display]
 

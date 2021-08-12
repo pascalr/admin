@@ -10,23 +10,20 @@ var loading := false
 var loaded := false
 signal loaded
 
-signal table_modified(table_name)
-
-func list(model_name):
-	assert(loaded)
-	return data[model_name].values() if data.has(model_name) else null
+func list(table):
+	return data[table.name].values() if data.has(table.name) else null
 
 func save(obj):
-	assert(loaded)
 	_save(obj)
-	emit_signal("table_modified", obj.get_class())
+	obj.get_table().emit_signal("modified")
 
 func _save(obj):
+	var table_name = obj.get_table().name
 	if obj.id == -1:
-		obj.id = _next_id(obj.get_class())
-	if not data.has(obj.get_class()):
-		data[obj.get_class()] = {}
-	var table = data[obj.get_class()]
+		obj.id = _next_id(table_name)
+	if not data.has(table_name):
+		data[table_name] = {}
+	var table = data[table_name]
 	table[int(obj.id)] = obj
 
 func _next_id(model_name):
@@ -36,8 +33,8 @@ func _next_id(model_name):
 			return ids.max()+1
 	return 1
 
-func find(model_name, id):
-	return data[model_name][int(id)]
+func find(table, id):
+	return data[table.name][int(id)]
 
 func _ready():
 	load_from_server()
@@ -60,15 +57,13 @@ func _on_load_from_server(_result, response_code, _headers, body, request):
 	for raw_food in foods:
 		var food = Food.new().load_data(raw_food)
 		_save(food)
-	
-	emit_signal("table_modified", "Food")
+	Tables.FOODS.emit_signal("modified")
 	
 	var jar_list = json.result["jars"]
 	for jar_data in jar_list:
 		var jar = Jar.new().load_data(jar_data)
 		_save(jar)
-	
-	emit_signal("table_modified", "Jar")
+	Tables.JARS.emit_signal("modified")
 	
 	loaded = true
 	emit_signal("loaded")

@@ -2,14 +2,14 @@ extends Model
 
 class_name Food
 
+static func get_table():
+	return Tables.FOODS
 func get_class():
 	return "Food"
-static func get_model_name():
-	return "Food"
 static func all():
-	return Cache.list(get_model_name())
+	return get_table().all()
 static func find(id):
-	return Cache.find(get_model_name(), id)
+	return get_table().find(id)
 #	return Heda.get_node(Heda.FOODS).get_children()
 
 export var density := 1.0

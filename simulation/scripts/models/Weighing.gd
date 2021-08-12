@@ -2,8 +2,12 @@ extends Model
 
 class_name Weighing
 
-static func get_model_name():
+static func get_table():
+	return Tables.WEIGHINGS
+func get_class():
 	return "Weighing"
+static func all():
+	return get_table().all()
 
 var weight : float
 var food
