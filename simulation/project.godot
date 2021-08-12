@@ -69,6 +69,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scripts/models/Model.gd"
 }, {
+"base": "Reference",
+"class": "Modification",
+"language": "GDScript",
+"path": "res://scripts/Modification.gd"
+}, {
 "base": "Spatial",
 "class": "Motor",
 "language": "GDScript",
@@ -103,6 +108,11 @@ _global_script_classes=[ {
 "class": "MotorY",
 "language": "GDScript",
 "path": "res://scripts/node/motor/motor_y.gd"
+}, {
+"base": "Node",
+"class": "PersistingList",
+"language": "GDScript",
+"path": "res://scripts/PersistingList.gd"
 }, {
 "base": "Reference",
 "class": "PolarCoord",
@@ -147,6 +157,7 @@ _global_script_class_icons={
 "JarInstance": "",
 "Lid": "",
 "Model": "",
+"Modification": "",
 "Motor": "",
 "MotorA": "",
 "MotorB": "",
@@ -154,6 +165,7 @@ _global_script_class_icons={
 "MotorR": "",
 "MotorT": "",
 "MotorY": "",
+"PersistingList": "",
 "PolarCoord": "",
 "Robot": "",
 "Shelf": "",
@@ -165,7 +177,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Heda"
-run/main_scene="res://scenes/Interface.tscn"
+run/main_scene="res://scenes/LoadingScreen.tscn"
 config/icon="res://icon.png"
 
 [autoload]

@@ -2,7 +2,16 @@ extends Model
 
 class_name Food
 
-export var id : int
+func get_class():
+	return "Food"
+static func get_model_name():
+	return "Food"
+static func all():
+	return Cache.list(get_model_name())
+static func find(id):
+	return Cache.find(get_model_name(), id)
+#	return Heda.get_node(Heda.FOODS).get_children()
+
 export var density := 1.0
 export var _name : String
 export(Color, RGB) var color setget set_color
@@ -32,5 +41,4 @@ func load_data(data):
 
 	return self
 
-static func all():
-	return Heda.get_node(Heda.FOODS).get_children()
+

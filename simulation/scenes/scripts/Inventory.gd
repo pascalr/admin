@@ -6,11 +6,13 @@ onready var food_in_inventory_list = $Foods/VBox/InInventoryList
 onready var food_other_list = $Foods/VBox/OtherFoodList
 
 func _ready():
-	var _a = Datastore.connect("jars_updated", self, "update_jar_info")
+	var _a = Cache.connect("table_modified", self, "update_jar_info")
 
-func update_jar_info():
+func update_jar_info(model_name):
+	if model_name != Jar.get_model_name():
+		return
 	Lib.remove_all_children(jar_list)
-	for jar_data in Datastore.jars:
+	for jar_data in Jar.all():
 		var item = preload("res://scenes/JarItem.tscn").instance()
 		item.get_node("HBox/Id").text = str(jar_data.jar_id)
 		item.get_node("HBox/Format").text = str(jar_data.format.name)
@@ -53,7 +55,7 @@ func jar_ready(jar):
 
 func _on_Jars_visibility_changed():
 	if $Jars.visible:
-		update_jar_info()
+		update_jar_info(Jar.get_model_name())
 
 func _on_Foods_visibility_changed():
 	if $Foods.visible:

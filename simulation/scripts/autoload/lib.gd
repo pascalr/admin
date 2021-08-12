@@ -68,7 +68,7 @@ func is_valid_jar_position(jar_format, position):
 		print("Add jar out of bounds min z!")
 		return false
 	
-	for j in Datastore.jars:
+	for j in Jar.all():
 		var p = j.get_position()
 		if (position.y - p.y) < 0.2:
 			var min_dist = j.format.diameter/2.0 + jar_format.diameter/2.0 + Globals.min_dist_between_jars

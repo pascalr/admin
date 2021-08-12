@@ -1,8 +1,17 @@
+Éviter de modifier des 2 côtés.
+Ça peut être le site qui modifie (recettes, calendrier, etc...)
+et la simulation qui modifie (inventaire, etc...)
+mais éviter que ce soit les deux peut-être pour éviter les conflits?
+
+
+
 CHHHHUUUUUUU TANNNNÉÉÉÉÉÉ
 Bon, une base de donnée SQLite local pour la simulation. La vérité de l'information est locale dans cette base de donnée.
 Au pire faire une petit outil rails pour manipuler ces données si c'est trop compliqué de faire un interface...
 Idéalement la site internet n'est qu'observateur et te permets de voir...
 MAIS WAIT!!! Pour les recettes comment faire et les ingrédients comment faire?!?!?
+
+Sur le site internet, quand l'utilisateur clique sur une recette Ajouter 
 
 
 

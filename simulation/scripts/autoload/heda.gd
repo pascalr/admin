@@ -13,7 +13,7 @@ var ROBOT := SCENE+"/Robot"
 var COLLISION_DETAILS := SCENE+"/CollisionDetails"
 
 var CONFIG := SCENE+"/Config"
-var JAR_FORMATS := CONFIG+"/JarFormats"
+#var JAR_FORMATS := CONFIG+"/JarFormats"
 var FOODS := CONFIG+"/Foods"
 
 var SYNCHRONIZER := "/root/Main/Synchronizer"
@@ -51,6 +51,12 @@ func _ready():
 
 func detect_jars():
 	pass
+
+var _jar_formats = null
+func get_jar_formats():
+	if _jar_formats == null:
+		_jar_formats = preload("res://scenes/JarFormats.tscn").instance().get_children()
+	return _jar_formats
 
 func test_reach():
 	var cupboard = get_node(Heda.CUPBOARD)

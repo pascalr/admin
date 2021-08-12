@@ -12,12 +12,18 @@ func _ready():
 	
 	get_tree().set_auto_accept_quit(false)
 	
+	for jar in Jar.all():
+		if jar.get_position().x != 0.0:
+			var node = preload("res://scenes/JarInstance.tscn").instance()
+			node.jar = jar
+			Heda.get_node(Heda.CUPBOARD).bodies.add_child(node)
+	
 	Heda.load()
 
 func _notification(what):
 	if what == MainLoop.NOTIFICATION_WM_QUIT_REQUEST:
 		print("QUITTING!")
-		Datastore.save()
+		Cache.close()
 		Heda.save()
 
 func _physics_process(_delta):

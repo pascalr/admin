@@ -12,6 +12,8 @@ var pos_x := 0.0
 var pos_y := 0.0
 var pos_z := 0.0
 
+var container_format_id : int
+
 var nodes := []
 
 func get_name():
@@ -22,8 +24,12 @@ func get_main_instance():
 		return null
 	return nodes[0]
 
+static func get_model_name():
+	return "Jar"
 func get_class():
 	return "Jar"
+static func all():
+	return Cache.list(get_model_name())
 
 func get_shelf():
 	for shelf in Heda.get_node(Heda.CUPBOARD).shelves:
@@ -37,11 +43,9 @@ func get_shelf():
 func connect_node(node):
 	nodes.push_back(node)
 	var _a = self.connect("data_changed", node, "on_data_changed")
-	Datastore.emit_signal("jars_updated")
 
 func deconnect_node(node):
 	nodes.erase(node)
-	Datastore.emit_signal("jars_updated")
 
 func set_position(position : Vector3):
 	pos_x = position.x; pos_y = position.y; pos_z = position.z
@@ -120,12 +124,12 @@ func load_data(data):
 		if i == "created_at" or i == "updated_at":
 			continue
 		elif i == "container_format_id":
-			for _format in Heda.get_node(Heda.JAR_FORMATS).get_children():
+			for _format in Heda.get_jar_formats():
 				if _format.format_id == data["container_format_id"]:
 					self.format = _format; break
 		elif i == "ingredients":
 			for ing in data[i]:
-				add_ingredient(Ingredient.new(ing["weight"], Datastore.find_food(ing["food_id"])))
+				add_ingredient(Ingredient.new(ing["weight"], Food.find(ing["food_id"])))
 		else:
 			self.set(i, data[i])
 

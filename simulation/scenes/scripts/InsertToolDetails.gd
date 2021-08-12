@@ -6,7 +6,9 @@ func _ready():
 
 func _update():
 	$VBox/JarId.clear()
-	for jar in Datastore.jars:
+	if not Cache.loaded:
+		yield(Cache, "loaded")
+	for jar in Jar.all():
 		if jar.pos_x == 0.0:
 			var content = jar.foods_info()
 			if content.empty():

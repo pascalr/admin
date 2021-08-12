@@ -307,10 +307,9 @@ func weigh(obj):
 	var simulated = full_weight/2.0 + full_weight/2.0*randf()
 	#var weight = simulated + Heda.jar_format.body_weight + Heda.jar_format.lid_weight
 	obj.clear()
-	var ing = Ingredient.new(simulated, food)
-	obj.add_ingredient(ing)
+	obj.add_ingredient(Ingredient.new(simulated, food))
 	obj.emit_signal("data_changed")
-	Weighing.add_to_datastore(ing)
+	Weighing.new(simulated, food).save()
 	print("Weight: "+str(simulated)+"g")
 	get_node(Heda.SELECTION_PANEL).show_details(obj)
 
