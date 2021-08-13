@@ -15,7 +15,16 @@ func update_food_list():
 			food_list.add_item(food.name)
 			food_list.set_item_metadata(food_list.get_item_count()-1, food)
 
+var _details_obj
+
 func show_details(obj):
+	
+	if obj != _details_obj:
+		if _details_obj:
+			_details_obj.disconnect("saved", self, "show_details")
+		_details_obj = obj
+		_details_obj.connect("saved", self, "show_details", [_details_obj])
+	
 	self.visible = true
 	$VBox/ObjectName.text = obj.get_name()
 	$VBox/X/Value.text = "%.2f" % obj.get_position().x
@@ -35,6 +44,11 @@ func show_details(obj):
 		$VBox/JarDetails.visible = false
 
 func hide_details():
+	
+	if _details_obj:
+		_details_obj.disconnect("saved", self, "show_details")
+	_details_obj = null
+	
 	self.visible = false
 
 func _on_Grab_pressed():
@@ -54,6 +68,7 @@ func _on_Store_pressed():
 
 func _on_Empty_pressed():
 	Heda.current_selection.jar.empty_ingredients()
+	Heda.current_selection.jar.save()
 
 func _on_AddIngredient_pressed():
 	var vol = $VBox/JarDetails/HBox/IngredientQuantity.value

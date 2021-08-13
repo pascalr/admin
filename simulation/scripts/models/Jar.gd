@@ -2,8 +2,6 @@ extends Model
 
 class_name Jar
 
-signal data_changed
-
 var jar_id : int
 var ingredients := []
 var format : JarFormat
@@ -47,7 +45,7 @@ func get_shelf():
 
 func connect_node(node):
 	nodes.push_back(node)
-	var _a = self.connect("data_changed", node, "on_data_changed")
+	var _a = self.connect("saved", node, "on_record_saved")
 
 func deconnect_node(node):
 	nodes.erase(node)
@@ -60,7 +58,6 @@ func get_position():
 
 func empty_ingredients():
 	ingredients.clear()
-	emit_signal("data_changed")
 
 # The height of the jar when empty, or the height with the lid when present
 func get_height():
@@ -87,7 +84,6 @@ func get_weight():
 
 func add_ingredient(ing):
 	ingredients.push_back(ing)
-	emit_signal("data_changed")
 
 func foods_info():
 	var info = ""

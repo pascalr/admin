@@ -2,8 +2,11 @@ extends Model
 
 class_name Ingredient
 
-var weight : float
+var weight : float setget set_weight
 var food : Food
+
+func set_weight(_weight):
+	weight = 0.0 if _weight <= 0.0 else _weight
 
 func _init(_weight = 0.0, _food = null):
 	weight = _weight

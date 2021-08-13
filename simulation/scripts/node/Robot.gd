@@ -315,7 +315,6 @@ func weigh(obj):
 
 func lighten(obj):
 	assert(obj.ingredients.size() == 1)
-	var w = obj.ingredients[0].weight
 	var dw = obj.format.volume * obj.ingredients[0].food.density * 0.1
 	obj.ingredients[0].weight -= dw
 	
@@ -325,7 +324,6 @@ func lighten(obj):
 #	#var weight = simulated + Heda.jar_format.body_weight + Heda.jar_format.lid_weight
 #	obj.clear()
 #	obj.add_ingredient(Ingredient.new(simulated, food))
-	obj.emit_signal("data_changed") # TODO: Deprecated
 	obj.save()
 	
 	_new_weighing(obj.ingredients[0].food)

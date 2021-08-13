@@ -102,13 +102,13 @@ func push_modifications_to_server():
 #	var body = to_json({"jars": _data})
 #
 #	var request := HTTPRequest.new()
-#	var _a = request.connect("request_completed",self,"_on_modifications_pushed_to_server", [request])
+#	var _a = request.connect("request_completed",self,"_on_modifications_pushed_to_server")
 #	add_child(request)
 #	var _err = request.request(Heda.HOST+"sim/push_machine", [], true, HTTPClient.METHOD_POST, body)
 #	yield(request, "request_completed")
 #	request.queue_free()
 	yield(get_tree(), "idle_frame")
 
-func _on_modifications_pushed_to_server(_result, response_code, _headers, _body, request):
+func _on_modifications_pushed_to_server(_result, response_code, _headers, _body):
 	if response_code != 200:
 		push_error("DATA WAS NOT SAVED. TODO: A PANEL THAT ASKS TO QUIT ANYWAY...")

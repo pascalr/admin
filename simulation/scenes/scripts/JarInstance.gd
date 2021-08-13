@@ -49,9 +49,9 @@ func _exit_tree():
 func set_jar(_jar):
 	jar = _jar
 	jar.connect_node(self)
-	on_data_changed()
+	on_record_saved()
 	
-func on_data_changed():
+func on_record_saved():
 	self.translation = jar.get_position()
 	$Format.copy(jar.format)
 	self.name = "Jar - %d" % jar.jar_id
