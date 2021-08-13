@@ -75,4 +75,6 @@ func _on_AddIngredient_pressed():
 	var food = Lib.get_item_list_selected_meta_data(food_list)
 	Heda.current_selection.jar.add_ingredient(Ingredient.new(vol*food.density, food))
 	Heda.current_selection.jar.save()
+			
+	Weighing.new_weighing(food)
 

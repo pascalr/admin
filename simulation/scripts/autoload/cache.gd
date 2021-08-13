@@ -19,6 +19,8 @@ var loading := false
 var loaded := false
 signal loaded
 
+var push_modifications_timer := Timer.new()
+
 func list(table):
 	return data[table.name].values() if data.has(table.name) else null
 
@@ -39,10 +41,10 @@ func save(obj):
 	obj.get_table().emit_signal("modified")
 
 func _next_id(model_name):
-	if data.has(model_name):
-		var ids = data[model_name].keys()
-		if ids.size() > 0:
-			return ids.max()+1
+	assert(data.has(model_name))
+	var ids = data[model_name].keys()
+	if ids.size() > 0:
+		return ids.max()+1
 	return 1
 
 func find(table, id):
@@ -50,6 +52,11 @@ func find(table, id):
 
 func _ready():
 	load_from_server()
+	
+	var _a = push_modifications_timer.connect("timeout",self,"push_modifications_to_server") 
+	push_modifications_timer.wait_time = 10.0
+	add_child(push_modifications_timer)
+	push_modifications_timer.start()
 
 func load_from_server():
 	if not loading:
@@ -57,7 +64,7 @@ func load_from_server():
 		var request := HTTPRequest.new()
 		var _a = request.connect("request_completed",self,"_on_load_from_server", [request])
 		add_child(request)
-		var error = request.request(Heda.HOST+"sim/pull_machine")
+		var error = request.request(Heda.HOST+"pull_machine")
 		assert(error == OK)
 
 func _on_load_from_server(_result, response_code, _headers, body, request):
@@ -82,33 +89,33 @@ func close():
 	yield(push_modifications_to_server(), "completed")
 	get_tree().quit()
 
+var _push_mod_request : HTTPRequest
 func push_modifications_to_server():
+	
+	assert(_push_mod_request == null)
+	
+	if modifications.empty():
+		yield(get_tree(), "idle_frame")
+		print("No modifications to push to the server.")
+		return
 
-#	for table in [Tables.JARS, Tables.WEIGHINGS]:
-#		var _records := []
-#		for record in table.all():
-#			_records.push_back(record.to_dict())
-#		_data[table.name] = _records
-#	var body = to_json(_data)
-	
-	print("Pushing modidications to server...")
+	print("Pushing modidications to server...")	
+	var mods := []
 	for mod in modifications:
-		print(mod.type)
-		print(mod.record.to_dict())
-	
-#	var _data := []
-#	for jar_data in Jar.all():
-#		_data.push_back(jar_data.to_dict())
-#	var body = to_json({"jars": _data})
+		mods.push_back({"type": mod.type, "class": mod.record.get_class(), "id": mod.record.id, "record": mod.record.to_dict()})
+	print(mods)
+	var body = to_json(mods)
 #
-#	var request := HTTPRequest.new()
-#	var _a = request.connect("request_completed",self,"_on_modifications_pushed_to_server")
-#	add_child(request)
-#	var _err = request.request(Heda.HOST+"sim/push_machine", [], true, HTTPClient.METHOD_POST, body)
-#	yield(request, "request_completed")
-#	request.queue_free()
-	yield(get_tree(), "idle_frame")
+	_push_mod_request = HTTPRequest.new()
+	var _a = _push_mod_request.connect("request_completed",self,"_on_modifications_pushed_to_server")
+	add_child(_push_mod_request)
+	var _err = _push_mod_request.request(Heda.HOST+"push_modifications", [], true, HTTPClient.METHOD_POST, body)
+	yield(_push_mod_request, "request_completed")
+	_push_mod_request.queue_free()
+	_push_mod_request = null
 
 func _on_modifications_pushed_to_server(_result, response_code, _headers, _body):
 	if response_code != 200:
 		push_error("DATA WAS NOT SAVED. TODO: A PANEL THAT ASKS TO QUIT ANYWAY...")
+	else:
+		modifications.clear()

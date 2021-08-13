@@ -300,18 +300,15 @@ func put_down(shelf, position):
 	else:
 		yield(_put_down_in_front(shelf, position),"completed")
 
-func _new_weighing(food):
-	# TODO: Weigh all the jars with this food
-	#Weighing.new(simulated, obj.ingredients[0].food).save()
-	#print("Weight: "+str(simulated)+"g")
-	#get_node(Heda.SELECTION_PANEL).show_details(obj)
-	pass
-
 func fill(obj):
 	assert(obj.ingredients.size() == 1)
+		
+	Weighing.new_weighing(obj.ingredients[0].food)
 
 func weigh(obj):
 	assert(false) # deprecated
+		
+	Weighing.new_weighing(obj.ingredients[0].food)
 
 func lighten(obj):
 	assert(obj.ingredients.size() == 1)
@@ -326,7 +323,7 @@ func lighten(obj):
 #	obj.add_ingredient(Ingredient.new(simulated, food))
 	obj.save()
 	
-	_new_weighing(obj.ingredients[0].food)
+	Weighing.new_weighing(obj.ingredients[0].food)
 
 func store(obj):
 	if obj == null:

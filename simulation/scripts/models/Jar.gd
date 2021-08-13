@@ -107,7 +107,6 @@ func to_dict():
 		ings.push_back(ing.to_dict())
 
 	var save_dict = {
-		"id" : id,
 		"pos_x" : pos_x,
 		"pos_y" : pos_y,
 		"pos_z" : pos_z,

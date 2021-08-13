@@ -1,54 +1,14 @@
-Éviter de modifier des 2 côtés.
-Ça peut être le site qui modifie (recettes, calendrier, etc...)
-et la simulation qui modifie (inventaire, etc...)
-mais éviter que ce soit les deux peut-être pour éviter les conflits?
-
-
-
-CHHHHUUUUUUU TANNNNÉÉÉÉÉÉ
-Bon, une base de donnée SQLite local pour la simulation. La vérité de l'information est locale dans cette base de donnée.
-Au pire faire une petit outil rails pour manipuler ces données si c'est trop compliqué de faire un interface...
-Idéalement la site internet n'est qu'observateur et te permets de voir...
-MAIS WAIT!!! Pour les recettes comment faire et les ingrédients comment faire?!?!?
-
-Sur le site internet, quand l'utilisateur clique sur une recette Ajouter 
-
-
-
-TODO: Les grands titres d'un modèle d'affaire/plan d'affaires et être capable de répondre à chaque élément (vision, ...) Ne pas l'écrire pour l'instant parce qu'il change constamment dans ma tête...
-
-Vision 6 mois:
+# Vision (6 mois)
 
 Commencer à vendre des armoires. Distribuer le plan sur internet pour que le monde puisse déjà commencer à fabriquer leur propres armoires. Avoir un design fonctionnel qui confirme les dimensions de l'armoire. La simulation doit être capable d'aller chercher et d'aller porter tous les pots. Avoir un design semblant fonctionnel de bras robotique en vrai. Travailler sur la pince surtout... Commencer à faire de la publicité peu à peu. Idéalement, avoir démarré la compagnie par actions.
 
-Avantages et inconvénient d'avoir un compétiteur:
-Avantages:
-Donne de la crédibilité au projet
-Demande de financement plus facile?
-
-Désavantages:
-Perte d'une part de marché
-Perte d'être la première marque mise sur le marché
-
-Au lieu de Heda, possiblement, bâtir la marque autour de Robot garde-manger, Pantry robot.
-
-I would not mind if there were competitors, but what would be my competitive advantage?
-
-Patents? - I don't want that... Fuck lawyers...
-First to market? I am sick of hiding and being alone, I want to show what I am doing to the world!
-Armoire de cuisine?
-
-Hey ça serait cool que je protège le nom Heda comme compagnie, et que l'armoire s'appelle ensuite une armoire de cuisine de type ou de style Heda. Une armoire Heda. Laisser tout le monde appeler ça comme ça. N'importe qui aurait le droit même d'en fabriquer et d'en vendre sous le nom générique une armoire Heda. Ça créerait de la publicité autour du nom Heda.
-
-Simulation robotique? Sure, j'aurais de l'avance dans la simulation. Je voudrais quand même peut-être avoir un blog d'articles qui parle de faire de la robotique avec Godot pour me faire de la publicité en même temps. Idéalement, le faire sur une page github d'un plugin de robotique que j'ai créé.
-
-Les recettes? Vraiment pas...
-
-Design mécanique? Ouin pas tant parce que le produit final devra être beaucoup plus travaillé. En plus, idéalement je voudrais que ce soit du open-hardware. Je voudrais simplement vendre des kits...
-
 # Planification
+1. Drag and drop machine food in other categories?
+1. On ne veut pas garder tout le temps les même pots pour les mêmes ingrédients. Parce que cela impliquerait que tu as besoin de 2 pots par ingrédients, ou bien d'attendre qu'il soit vide avant de pouvoir le remplir. Aussi, c'est pas l'idéal pour quand tu dois le remplir.
+1. Quand tu fais ta liste d'épicerie manuellement, tu recherches l'ingrédients que tu veux mettre sur la liste (ou bien tu regardes la liste automatique), et tu sélectionnes le format de pot que tu as de besoin (ou bien le format de pot est sélectionné déjà pour toi selon tes habitudes), ensuite tu as accès à une liste d'épicerie avec numéro de pot, ingrédient et pourcentage rempli.
+1. Donc tu as des pots qui ont des id. C'est tout. Quand tu utilise l'application pour te générer une liste d'épicerie, il te dit quoi mettre dans quel pot. Donc tu vois dans la liste, dans le 2, remplir avec de la farine, dans le 13, remplir à moitié avec du sucre. Ensuite tu t'apportes 2 pots vide que tu remplies selon ton humeur de la journée. C'est correct, mais il va te demander ce qu'il y a dedans.
+1. Qu'est-ce que je veux faire avec mes pots? Je veux marquer dessus c'est quoi quand ça change. 
 1. Qu'est-ce que je voir pour l'invenaire? Classer par nom alphabétique, classer LISTE D'ÉPICERIE par temps restant estimé à en manquer tout en prenant compte la quantité utilisé possible et habituelle, pouvoir filtrer par le nom, pouvoir aussi voir par catégories, par exemple, pâtes alimentaires
-1. Un jour: Sauvegarder localement seulement Godot certains trucs comme la position des pots. Tout sauvegarder localement pour que ça fonctionne même quand le serveur n'est pas disponible.
 1. Une belle armoire finie avec un manuel d'instruction pour la fabriquer
 1. Tous les mouvements fonctionnels
 1. Voir l'inventaire: les portes ouvertes et tu cliques sur l'item (c'est rapide parce que tu sais où qu'ils sont les trucs avec le temps), une liste d'ingrédients/pots dans lequel tu peux chercher
@@ -605,4 +565,32 @@ Thank you for the design of a pretty pantry!
 https://www.youtube.com/watch?v=bZO3Vk5jI5k
 https://howtomechatronics.com/projects/scara-robot-how-to-build-your-own-arduino-based-robot/
 Thank you to so many others who helped me in one way or another!
+
+
+
+
+Avantages et inconvénient d'avoir un compétiteur:
+Avantages:
+Donne de la crédibilité au projet
+Demande de financement plus facile?
+
+Désavantages:
+Perte d'une part de marché
+Perte d'être la première marque mise sur le marché
+
+Au lieu de Heda, possiblement, bâtir la marque autour de Robot garde-manger, Pantry robot.
+
+I would not mind if there were competitors, but what would be my competitive advantage?
+
+Patents? - I don't want that... Fuck lawyers...
+First to market? I am sick of hiding and being alone, I want to show what I am doing to the world!
+Armoire de cuisine?
+
+Hey ça serait cool que je protège le nom Heda comme compagnie, et que l'armoire s'appelle ensuite une armoire de cuisine de type ou de style Heda. Une armoire Heda. Laisser tout le monde appeler ça comme ça. N'importe qui aurait le droit même d'en fabriquer et d'en vendre sous le nom générique une armoire Heda. Ça créerait de la publicité autour du nom Heda.
+
+Simulation robotique? Sure, j'aurais de l'avance dans la simulation. Je voudrais quand même peut-être avoir un blog d'articles qui parle de faire de la robotique avec Godot pour me faire de la publicité en même temps. Idéalement, le faire sur une page github d'un plugin de robotique que j'ai créé.
+
+Les recettes? Vraiment pas...
+
+Design mécanique? Ouin pas tant parce que le produit final devra être beaucoup plus travaillé. En plus, idéalement je voudrais que ce soit du open-hardware. Je voudrais simplement vendre des kits...
 
