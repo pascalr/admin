@@ -3,6 +3,7 @@
 Commencer à vendre des armoires. Distribuer le plan sur internet pour que le monde puisse déjà commencer à fabriquer leur propres armoires. Avoir un design fonctionnel qui confirme les dimensions de l'armoire. La simulation doit être capable d'aller chercher et d'aller porter tous les pots. Avoir un design semblant fonctionnel de bras robotique en vrai. Travailler sur la pince surtout... Commencer à faire de la publicité peu à peu. Idéalement, avoir démarré la compagnie par actions.
 
 # Planification
+1. Put everything in machine inside it's nested resource (containers, machine_foods, ...)
 1. Drag and drop machine food in other categories?
 1. On ne veut pas garder tout le temps les même pots pour les mêmes ingrédients. Parce que cela impliquerait que tu as besoin de 2 pots par ingrédients, ou bien d'attendre qu'il soit vide avant de pouvoir le remplir. Aussi, c'est pas l'idéal pour quand tu dois le remplir.
 1. Quand tu fais ta liste d'épicerie manuellement, tu recherches l'ingrédients que tu veux mettre sur la liste (ou bien tu regardes la liste automatique), et tu sélectionnes le format de pot que tu as de besoin (ou bien le format de pot est sélectionné déjà pour toi selon tes habitudes), ensuite tu as accès à une liste d'épicerie avec numéro de pot, ingrédient et pourcentage rempli.

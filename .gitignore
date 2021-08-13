@@ -13,6 +13,8 @@
 **.blend1
 **~
 
+bin/push.sh
+
 /simulation/assets/*.zip
 
 # Ignore all logfiles and tempfiles.
