@@ -8,6 +8,9 @@ enum {MOD_INSERT, MOD_UPDATE, MOD_DELETE}
 class Modification:
 	var type : int
 	var record
+	
+	func _init(_type, _record):
+		type = _type; record = _record
 
 # A list of modifications to the cache to be pushed to the server
 var modifications := []
@@ -28,6 +31,9 @@ func save(obj):
 	var table_name = obj.get_table().name
 	if obj.id == -1:
 		obj.id = _next_id(table_name)
+		modifications.push_back(Modification.new(MOD_INSERT, obj))
+	else:
+		modifications.push_back(Modification.new(MOD_UPDATE, obj))
 	var table = _ensure_table_exists(table_name)
 	table[int(obj.id)] = obj
 	obj.get_table().emit_signal("modified")
@@ -72,8 +78,9 @@ func _on_load_from_server(_result, response_code, _headers, body, request):
 	request.queue_free()
 
 func close():
-	push_modifications_to_server()
 	# TODO: Save locally and save as backup too
+	yield(push_modifications_to_server(), "completed")
+	get_tree().quit()
 
 func push_modifications_to_server():
 
@@ -84,18 +91,24 @@ func push_modifications_to_server():
 #		_data[table.name] = _records
 #	var body = to_json(_data)
 	
-	var _data := []
-	for jar_data in Jar.all():
-		_data.push_back(jar_data.to_dict())
-	var body = to_json({"jars": _data})
+	print("Pushing modidications to server...")
+	for mod in modifications:
+		print(mod.type)
+		print(mod.record.to_dict())
 	
-	var request := HTTPRequest.new()
-	var _a = request.connect("request_completed",self,"_on_modifications_pushed_to_server", [request])
-	add_child(request)
-	var _err = request.request(Heda.HOST+"sim/push_machine", [], true, HTTPClient.METHOD_POST, body)
+#	var _data := []
+#	for jar_data in Jar.all():
+#		_data.push_back(jar_data.to_dict())
+#	var body = to_json({"jars": _data})
+#
+#	var request := HTTPRequest.new()
+#	var _a = request.connect("request_completed",self,"_on_modifications_pushed_to_server", [request])
+#	add_child(request)
+#	var _err = request.request(Heda.HOST+"sim/push_machine", [], true, HTTPClient.METHOD_POST, body)
+#	yield(request, "request_completed")
+#	request.queue_free()
+	yield(get_tree(), "idle_frame")
 
 func _on_modifications_pushed_to_server(_result, response_code, _headers, _body, request):
 	if response_code != 200:
 		push_error("DATA WAS NOT SAVED. TODO: A PANEL THAT ASKS TO QUIT ANYWAY...")
-	request.queue_free()
-	get_tree().quit()

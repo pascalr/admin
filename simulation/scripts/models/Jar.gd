@@ -111,14 +111,14 @@ func to_dict():
 		ings.push_back(ing.to_dict())
 
 	var save_dict = {
+		"id" : id,
 		"pos_x" : pos_x,
 		"pos_y" : pos_y,
 		"pos_z" : pos_z,
 		"jar_id" : jar_id,
+		"container_format_id" : container_format_id,
 		"ingredients" : ings
 	}
-	if format:
-		save_dict["jar_format"] = format.name
 	return save_dict
 
 func load_data(data):

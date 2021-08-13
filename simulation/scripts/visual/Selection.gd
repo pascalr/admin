@@ -43,6 +43,12 @@ func _on_Grab_pressed():
 func _on_Weigh_pressed():
 	get_node(Heda.ROBOT).weigh(Heda.current_selection.jar)
 
+func _on_Lighten_pressed():
+	get_node(Heda.ROBOT).lighten(Heda.current_selection.jar)
+
+func _on_Fill_pressed():
+	get_node(Heda.ROBOT).fill(Heda.current_selection.jar)
+
 func _on_Store_pressed():
 	get_node(Heda.ROBOT).store(Heda.current_selection.jar)
 
@@ -54,3 +60,4 @@ func _on_AddIngredient_pressed():
 	var food = Lib.get_item_list_selected_meta_data(food_list)
 	Heda.current_selection.jar.add_ingredient(Ingredient.new(vol*food.density, food))
 	Heda.current_selection.jar.save()
+

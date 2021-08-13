@@ -300,18 +300,35 @@ func put_down(shelf, position):
 	else:
 		yield(_put_down_in_front(shelf, position),"completed")
 
-func weigh(obj):
+func _new_weighing(food):
+	# TODO: Weigh all the jars with this food
+	#Weighing.new(simulated, obj.ingredients[0].food).save()
+	#print("Weight: "+str(simulated)+"g")
+	#get_node(Heda.SELECTION_PANEL).show_details(obj)
+	pass
+
+func fill(obj):
 	assert(obj.ingredients.size() == 1)
-	var food = obj.ingredients[0].food
-	var full_weight = obj.format.volume * food.density
-	var simulated = full_weight/2.0 + full_weight/2.0*randf()
-	#var weight = simulated + Heda.jar_format.body_weight + Heda.jar_format.lid_weight
-	obj.clear()
-	obj.add_ingredient(Ingredient.new(simulated, food))
-	obj.emit_signal("data_changed")
-	Weighing.new(simulated, food).save()
-	print("Weight: "+str(simulated)+"g")
-	get_node(Heda.SELECTION_PANEL).show_details(obj)
+
+func weigh(obj):
+	assert(false) # deprecated
+
+func lighten(obj):
+	assert(obj.ingredients.size() == 1)
+	var w = obj.ingredients[0].weight
+	var dw = obj.format.volume * obj.ingredients[0].food.density * 0.1
+	obj.ingredients[0].weight -= dw
+	
+#	var food = obj.ingredients[0].food
+#	var full_weight = obj.format.volume * food.density
+#	var simulated = full_weight/2.0 + full_weight/2.0*randf()
+#	#var weight = simulated + Heda.jar_format.body_weight + Heda.jar_format.lid_weight
+#	obj.clear()
+#	obj.add_ingredient(Ingredient.new(simulated, food))
+	obj.emit_signal("data_changed") # TODO: Deprecated
+	obj.save()
+	
+	_new_weighing(obj.ingredients[0].food)
 
 func store(obj):
 	if obj == null:
