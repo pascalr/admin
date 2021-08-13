@@ -3,6 +3,12 @@ extends Node
 # The key is the model_name, the value is a dict of rows by id
 var data := {}
 
+enum {MOD_INSERT, MOD_UPDATE, MOD_DELETE}
+
+class Modification:
+	var type : int
+	var record
+
 # A list of modifications to the cache to be pushed to the server
 var modifications := []
 
@@ -13,18 +19,18 @@ signal loaded
 func list(table):
 	return data[table.name].values() if data.has(table.name) else null
 
-func save(obj):
-	_save(obj)
-	obj.get_table().emit_signal("modified")
+func _ensure_table_exists(table_name):
+	if not data.has(table_name):
+		data[table_name] = {}
+	return data[table_name]
 
-func _save(obj):
+func save(obj):
 	var table_name = obj.get_table().name
 	if obj.id == -1:
 		obj.id = _next_id(table_name)
-	if not data.has(table_name):
-		data[table_name] = {}
-	var table = data[table_name]
+	var table = _ensure_table_exists(table_name)
 	table[int(obj.id)] = obj
+	obj.get_table().emit_signal("modified")
 
 func _next_id(model_name):
 	if data.has(model_name):
@@ -55,10 +61,11 @@ func _on_load_from_server(_result, response_code, _headers, body, request):
 	
 	for table in Tables.ALL:
 		if json.result.has(table.name):
+			_ensure_table_exists(table.name)
 			var records = json.result[table.name]
 			for record_dict in records:
 				var record = table.klass.new().load_data(record_dict)
-				_save(record)
+				data[table.name][int(record.id)] = record
 	
 	loaded = true
 	emit_signal("loaded")
