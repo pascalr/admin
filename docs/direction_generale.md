@@ -3,12 +3,8 @@
 Commencer à vendre des armoires. Distribuer le plan sur internet pour que le monde puisse déjà commencer à fabriquer leur propres armoires. Avoir un design fonctionnel qui confirme les dimensions de l'armoire. La simulation doit être capable d'aller chercher et d'aller porter tous les pots. Avoir un design semblant fonctionnel de bras robotique en vrai. Travailler sur la pince surtout... Commencer à faire de la publicité peu à peu. Idéalement, avoir démarré la compagnie par actions.
 
 # Planification
-1. Put everything in machine inside it's nested resource (containers, machine_foods, ...)
-1. Drag and drop machine food in other categories?
-1. On ne veut pas garder tout le temps les même pots pour les mêmes ingrédients. Parce que cela impliquerait que tu as besoin de 2 pots par ingrédients, ou bien d'attendre qu'il soit vide avant de pouvoir le remplir. Aussi, c'est pas l'idéal pour quand tu dois le remplir.
-1. Quand tu fais ta liste d'épicerie manuellement, tu recherches l'ingrédients que tu veux mettre sur la liste (ou bien tu regardes la liste automatique), et tu sélectionnes le format de pot que tu as de besoin (ou bien le format de pot est sélectionné déjà pour toi selon tes habitudes), ensuite tu as accès à une liste d'épicerie avec numéro de pot, ingrédient et pourcentage rempli.
-1. Donc tu as des pots qui ont des id. C'est tout. Quand tu utilise l'application pour te générer une liste d'épicerie, il te dit quoi mettre dans quel pot. Donc tu vois dans la liste, dans le 2, remplir avec de la farine, dans le 13, remplir à moitié avec du sucre. Ensuite tu t'apportes 2 pots vide que tu remplies selon ton humeur de la journée. C'est correct, mais il va te demander ce qu'il y a dedans.
-1. Qu'est-ce que je veux faire avec mes pots? Je veux marquer dessus c'est quoi quand ça change. 
+1. Simuler avoir été à l'épicerie. Mettre sur le comptoir par batch les pots qui était dans la liste d'épicerie.
+1. You can pin an item in the grocery list so it is always there even if you clear (for example fruits&vegetables, eggs and milk)
 1. Qu'est-ce que je voir pour l'invenaire? Classer par nom alphabétique, classer LISTE D'ÉPICERIE par temps restant estimé à en manquer tout en prenant compte la quantité utilisé possible et habituelle, pouvoir filtrer par le nom, pouvoir aussi voir par catégories, par exemple, pâtes alimentaires
 1. Une belle armoire finie avec un manuel d'instruction pour la fabriquer
 1. Tous les mouvements fonctionnels
@@ -593,5 +589,7 @@ Simulation robotique? Sure, j'aurais de l'avance dans la simulation. Je voudrais
 
 Les recettes? Vraiment pas...
 
-Design mécanique? Ouin pas tant parce que le produit final devra être beaucoup plus travaillé. En plus, idéalement je voudrais que ce soit du open-hardware. Je voudrais simplement vendre des kits...
+Design mécanique? Ouin pas tant parce que le produit final devra être beaucoup plus travaillé. En plus, idéalement je voudrais que ce soit du open-hardware. Je voudrais simplement vendre des kits...<
+
+**On ne veut pas garder tout le temps les même pots pour les mêmes ingrédients. Parce que cela impliquerait que tu as besoin de 2 pots par ingrédients, ou bien d'attendre qu'il soit vide avant de pouvoir le remplir. Aussi, c'est pas l'idéal pour quand tu dois le remplir.**
 

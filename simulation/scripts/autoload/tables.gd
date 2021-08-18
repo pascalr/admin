@@ -19,6 +19,7 @@ class Table:
 var JARS := Table.new("jars", Jar)
 var FOODS := Table.new("foods", Food)
 var WEIGHINGS := Table.new("weighings", Weighing)
+var MACHINE_FOODS := Table.new("machine_foods", MachineFood)
 
 # Warning: Order is important. Dependant tables must be last.
-var ALL := [FOODS, JARS, WEIGHINGS]
+var ALL := [FOODS, JARS, MACHINE_FOODS, WEIGHINGS]

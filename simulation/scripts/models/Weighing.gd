@@ -40,4 +40,8 @@ static func new_weighing(_food):
 		if ing and ing.food == _food:
 			total += ing.weight
 	
+	var machine_food = MachineFood.find_by_food(_food)
+	machine_food.current_weight = total
+	machine_food.save()
+	
 	return load("res://scripts/models/Weighing.gd").new(total, _food).save()

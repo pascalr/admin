@@ -64,6 +64,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scripts/node/Lid.gd"
 }, {
+"base": "Model",
+"class": "MachineFood",
+"language": "GDScript",
+"path": "res://scripts/models/MachineFood.gd"
+}, {
 "base": "Node",
 "class": "Model",
 "language": "GDScript",
@@ -151,6 +156,7 @@ _global_script_class_icons={
 "JarFormat": "",
 "JarInstance": "",
 "Lid": "",
+"MachineFood": "",
 "Model": "",
 "Motor": "",
 "MotorA": "",
