@@ -1,0 +1,115 @@
+Un robot garde-manger: Un robot culinaire qui ajoute lui-même les ingrédients.
+
+## 1) Tell us about the world as you see it.
+(A description of the status quo and context in which you will be working)
+
+I come from Québec, the french of Canada. I am lucky to have been raised well by a modest, yet loving family on a farm.
+
+I am a self-taught multi-disciplinary person. I love technology and what it enables us to do. Give me a device with an internet connection and I feel there is nothing I can't do.
+
+I am an optimist. When I watch science-fiction movies set in the future, I don't understand why they are all so bleak. Personally, I have high hopes for the future of humanity. But we have to survive the next centuries to keep evolving and make our civilisation stand the test of time.
+
+One of the greatest treats to humanity is the environment. The most obvious issue being the climate change. Issues: climate change, overpopulation and accumulation of waste.
+
+**Important!!!**
+## 2) What change do you want to make in the world?
+(A description of what you want to change about the status quo, in the world, your personal vision for this area)
+
+I want people to buy food in bulk without packaging and I want people to eat more earth-friendly food. I plan to achieve this by making the process easier.
+
+For the past year and a half, I have been working on an invention of mine: a pantry robot. The idea is to have a cupboard with containers to store dry ingredients and with a robotic arm which handles the inventory and also helps with cooking.
+
+The robot would keep an eye out for the inventory and generate a grocery list automatically. No more need to worry about missing something. You can even access your inventory from anywhere, anytime, to reassure yourself.
+
+In a smart fridge, they use cameras and scales to handle the inventory. The advantage of using a robotic arm instead, is that it has to potential to do so much more. You can select a recipe and the robot will bring out the required ingredients. It can store everything when you're finished. It can do mixes.
+
+I plan to integrate a water intake to be able to clean and soak ingredients. I also want to incorporate a hand mixer, a spatula and a dough hook. This would allow the robot to do complex recipes like bread dough, bean salads, cake batter, etc.
+
+In the best of worlds, the machine would also include a tiny dishwasher that self-cleans the containers and the tools it uses.
+
+A great advantage of cooking with pantry ingredients is that they are generally very environmentally-friendly like beans, grains and flours. Another plus, is that it is very economical. I am always designed my product with price in mind. I want my product to be an investment that saves you money in the long run by cooking cheap basic ingredients.
+
+I want to make it more easy to eat vegetarian than to eat meat. For example, you need ground beef to make hamburgers which has a low shelf life, of then it is frozen and you have to thing in advance to unfreeze it. With vegetarian burgers and my product, you always can eat hambugers. Just press one button the morning or the night before, and the robot will soak, and cook the beans et prepare the whole burger mixture. The only thing left will be to shape and cook the burgers.
+
+More easy to eat vegetarian also by giving open access to a lot of vegetarian recipes.
+
+I want people to eat more earth-friendly food.
+
+My solution to eating more environmentally-friendly food at home is 
+
+The first issue I want to tackle is to reduce the amount of single-use food packaging. A simple solution is to bring your own containers and to fill them with food bought in bulk.
+
+This is great for primary ingredients, but it does not work so well with transformed, perishable food. The solution is then to transform and cook food youself at home. But this takes a lot of time.
+
+For example, instead of buying bread in a plastic bag, you flour, sugar, salt 
+
+But this takes a lot of time.
+
+I want people to buy food in bulk without packaging.
+
+I want to make home-cooking earth-friendly cheap and easy.
+
+I would like people to eat more earth-friendly food. I want to achieve that by convincing their wallet and their lazyness.
+
+For example, I want more people to eat vegetarian burgers which are a lot more environment-friendly and much cheaper too. But it is easier to cook meat burgers. With beans, you have plan and not forget the night to soak them, cook them, prepare the mixture and then you have to cook the burgers.
+
+Another reason some people prefer to eat meat burgers is taste. But I believe this is more about habits. My favourite meal used to be beef hamburgers, but now I like vegetarian hamburgers just as muched.
+
+One of the main issue with cooking earth-friendly food is the lack of time.
+
+I have been working for the past year and a half on a pantry robot.
+
+Another great advance is that this way you eat more fresh! Instead of buying a big bread every couple of days, you can cook a small bread every day.
+
+To summarize, I want people to be able to eat earth-friendly food easily and to reduce the amount of food packaging by cooking with a pantry robot.
+
+**Important!!!**
+## 3) What do you believe has prevented this change to date?
+(Describe the innovations or questions you would like to explore during the fellowship year)
+
+I see two main reasons this change was not yet made: the technology is recent and the technology is expensive.
+
+If you look at competitors like Molley Robotics, you see it is a hard field.
+
+**Important!!!**
+## 4) What are you going to do to get there?
+(A description of what you actually plan to do during the year)
+
+I want keep working on this full-time.
+
+Receiving this grant would allow me to keep working full-time and it would allow to hire someone to work with me.
+
+**Important!!!**
+## 5) What challenges or uncertainties do you expect to face?
+
+Challenge 1: Being able to sell my product. My product is similar to smart fridges. Their goal being to be more environmental friendly by avoiding food waste. But the first smart fridges did not sell well, consumers thought it was overpriced for the benefit. I took time to develop a cheaper product that finaly users were interested in buying.
+
+## 6) What part does openness play in your idea?
+
+Openness is one of my core values. I've always used open software (Linux/Godot/Freecad and so much more) and the least I can do is contribute back.
+
+Being an electromechanic, I am used to repair all sorts of things and I understand how frustrating it is when you can't find schematics or spare parts for something you bought. I want my project to not only be open-source, but to be open-hardware.
+
+I don't want to buy a smart TV. I hate the fact you have don't have control of something you own and bought in your own house.
+
+
+
+
+
+## -----------------------
+
+I want the robotic arm .
+
+I learn about your grant through FarmBot on the series A article. I though it was really cool of them to be open about the way the company evolved and their status. I would like to do the same.
+
+The world is very simple, yet very complex at the same time. Grown-ups are still a lot like little children.
+
+I did not know what I wanted to do. I wrote 3 words on my board for a while until my idea came to me.
+
+
+Environment. Food. Automation.
+
+Environment because I believe this is of the greatest treat that humanity is currently facing.
+Food. Because food is a basic human need. Working in the food area makes me feel like what I am doing is worth it.
+Automation. This is my domain of expertise. To solve the environement, we could either go backwards and avoid technology and energy,
+or we can go forward. I don't believe we are ever going to go backwards, so I believe in automation to solve the environment issue.
