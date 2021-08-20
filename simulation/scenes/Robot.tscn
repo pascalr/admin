@@ -134,8 +134,8 @@ __meta__ = {
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11.324, 220 )
 script = ExtResource( 9 )
 id = "a"
-min_position = -200.0
-max_position = 200.0
+min_position = -170.0
+max_position = 170.0
 
 [node name="WristBody" type="KinematicBody" parent="SupportTransversale/Trolley/Humerus/Wrist"]
 collision_mask = 6

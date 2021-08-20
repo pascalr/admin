@@ -204,13 +204,13 @@ func change_grab_height(new_height):
 	if not grabbed:
 		return Heda.error("Robot can't change grab height, it is not grabbing.")
 	var working_space = get_node(Heda.WORKING_SPACE)
-	var dest = working_space.get_position()+Vector3(0.0,grabbed_height,0.0)
-	var angle = Lib.best_angle_for_vect(working_space.get_position())
+	var dest = working_space.translation+Vector3(0.0,grabbed_height,0.0)
+	var angle = Lib.best_angle_for_vect(working_space.translation)
 	yield(goto(UserCoord.new().set_from_vector(dest, angle)), "completed")
 	yield(move("r", Globals.max_r), "completed")
 	var obj = grabbed
 	_releasing()
-	yield(move("y", working_space.get_position().y+new_height), "completed")
+	yield(move("y", working_space.translation.y+new_height), "completed")
 	yield(move("r", obj.get_diameter()), "completed")
 	_grabbing(obj)
 	grabbed_height = new_height

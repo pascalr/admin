@@ -1,56 +1,55 @@
+# Mission
+
+Encourager les gens à manger de manière plus éco-responsable.
+
+- Un site de recette avec des recettes éco-responsables.
+- Un armoire de cuisine intelligente qui évite le gaspillage alimentaire
+- Suggestions de recettes avec des aliments du garde-manger qui sont plus écologiques
+- Transformation d'aliments primaires à la maison
+
 # Vision (6 mois)
 
 Commencer à vendre des armoires. Distribuer le plan sur internet pour que le monde puisse déjà commencer à fabriquer leur propres armoires. Avoir un design fonctionnel qui confirme les dimensions de l'armoire. La simulation doit être capable d'aller chercher et d'aller porter tous les pots. Avoir un design semblant fonctionnel de bras robotique en vrai. Travailler sur la pince surtout... Commencer à faire de la publicité peu à peu. Idéalement, avoir démarré la compagnie par actions.
 
 # Planification
-1. Simuler avoir été à l'épicerie. Mettre sur le comptoir par batch les pots qui était dans la liste d'épicerie.
-1. You can pin an item in the grocery list so it is always there even if you clear (for example fruits&vegetables, eggs and milk)
-1. Qu'est-ce que je voir pour l'invenaire? Classer par nom alphabétique, classer LISTE D'ÉPICERIE par temps restant estimé à en manquer tout en prenant compte la quantité utilisé possible et habituelle, pouvoir filtrer par le nom, pouvoir aussi voir par catégories, par exemple, pâtes alimentaires
-1. Une belle armoire finie avec un manuel d'instruction pour la fabriquer
-1. Tous les mouvements fonctionnels
-1. Voir l'inventaire: les portes ouvertes et tu cliques sur l'item (c'est rapide parce que tu sais où qu'ils sont les trucs avec le temps), une liste d'ingrédients/pots dans lequel tu peux chercher
-1. Une liste d'épicerie
-1. Push/pull data from the website (jars info, recipes, foods, ...) the app AND the website can both create/update/delete any of those.
-1. App login into website
-1. Ne pas passer à travers la tablettes
-1. Continuer le bras robotique
-1. Tablettes dans la porte
-1. Pouvoir hierarchisé dans un arbre les recettes.
-1. Des câbles électriques plus flexible
-1. Rapettisser la taille et ajuster l'humérus en conséquence.
-1. Beau boitier électrique, bien câblé.
-1. Bouton power et lumière power.
+1. Dernière tablette inattaignable???
+1. Vider l'armoire et la remplir de pots pour pouvoir prendre des photos et des vidéos.
+1. Photo sauce à pizza. (Merde ça prendrait de l'origan frais et une belle bouteille pour l'huile d'olive.
+1. Mouvement horizontal: Moins de jeu avec les roues. Inverser le moteur. Plus simple pour les câbles électriques? Un stop.
+1. Gripper
+1. LES MAUDITS CÂBLES ÉLECTRIQUES... (Thêta de -120 à 120 et alpha de -170 à 170?)
+1. Plus de poids sur le contrepoids.
+1. Grant application
+1. Faire la partie du bas que je veux faire pour mettre l'ordinateur et le vise. Comme ça cela va pouvoir être caché. Finir de câblé pour pouvoir remmener des boites de trucs chez mes parents.
 1. Prendre de belles photos de ma machine (en fds avec le gros soleil en plein jour)
+1. Simuler avoir été à l'épicerie. Mettre sur le comptoir par batch les pots qui était dans la liste d'épicerie.
 1. Faire une belle page web de fabrication de l'armoire de cuisine avec le modèle 3D, un peu comme celui de Shanty 2 Chic.
-1. Rajouter l'armoire dans les assemblages pour savoir le coût total.
-1. Acheter des vrais cable chain sur aliexpress (https://www.aliexpress.com/item/10000192080203.html?spm=a2g0o.productlist.0.0.78ff51d6i3BQ3q&aem_p4p_detail=2021070811392718991760024603850002296405)
-1. Acheter un backdrop pour les photos
-1. Trouver un format de bouteille liquide.
-1. Page d'acceuil de vente
+1. Tous les mouvements fonctionnels (refaire les roues verticales, plus de jeu horizontal, vrais gear pour axe T, plus de jeu B)
+1. App login into website
+1. Ne pas passer à travers les tablettes
+1. Des câbles électriques plus flexible
+1. Beau boitier électrique (protocase), bien câblé, bouton power et lumière power.
+1. Page d'acceuil de vente (pour chaque section, rajouter un Pour en savoir plus >, une page qui montre les calculs derrière ce qui est dit ou en parle d'avantages)
+1. Axe B: Addosser le gear box du moteur correctement dans la boite. (Creuser un petit peu vis à vis les trous qui dépassent)
 1. Caméra
-1. Vendre à 1 client. Vendre des locations, parce que le produit risque de changer.
-
-# À perte de temps
-1. Faire un backup des photos sur clé USB
-
-# Simulation
-1. Être capable de reach partout:
-- 2/4 coins de chaque tablette
-1. Je n'ai pas tant envie de refaire ce que j'avais avant (sweep, unscrew, screw, ...) alors en attendant focuser sur le rangement des pots.
-1. Communication entre l'application et HedaCuisine
-1. Envoyer le statut de l'inventaire à HedaCuisine chaque fois qu'un item est pesé.
-1. Use new interface
-1. Afficher l'inventaire
-1. Afficher les recettes
-1. Commencer avec être capable de voir les pots de la tablette de travail et de les ranger partout.
-1. Ensuite être capable d'aller chercher les pots partout et de les rammener à la tablette de travail.
-1. Save & Load, tout est sauvegardé dans un fichier (position du robot, inventaire, etc)
-1. Ugly light behind/through object
-1. Anti-aliasing sharp edges
-
-
-# Référence
-1. https://farm.bot/pages/series-a
+1. Vendre à 1 client. Vendre des locations, parce que le produit risque de changer. (Boulangerie, Prêt-à-cuisiner, petite boutique de nourriture, ...)
+1. Être capable de reach partout (2/4 coins de chaque tablette)
+1. Un moyen de fixer la machine à l'armoire en haut
+1. Homing system
+1. Continuer la simulation du bras robotique pour pouvoir le programmer, aller chercher les ingrédients, puis verser des aliments grossiers, puis faire des muffins.
+# Pas prioritaire
+1. You can pin an item in the grocery list so it is always there even if you clear (for example fruits&vegetables, eggs and milk)
+1. Pouvoir hierarchisé dans un arbre les recettes.
+1. Acheter un backdrop pour les photos
+1. Trouver un format de bouteille liquide
+1. Pagination des recettes sur le site internet
+1. Ajuster le site internet pour les téléphones mobiles. Mettre la barre de recherche en dessous du menu.
+1. Rajouter les trous borgnes à l'armoire et faire des screenshots pour le manuel d'assemblage. Couleur différente pour chaque type de morceau? Mettre dans les screenshots les mesures.
+1. Un jour remplacer les bushings ou mettre des bearings à la place pour le mouvement vertical.
+1. Trouver shipping mondial kits de robot
+1. Faire une soumission chez une firme de génie conseil pour un produit final qui peut se vendre sur kickstarter
+1. Ajouter toutes les valeurs nutritives des ingrédients.
+1. Démarrer l'entreprise officiellement. Puis contacter des médias et essayer de faire parler de l'entreprise
 
 # Financement
 1. Shuttleworth fondation: https://shuttleworthfoundation.org/apply/form/
@@ -65,40 +64,7 @@ Commencer à vendre des armoires. Distribuer le plan sur internet pour que le mo
 1. Même business model que Farm Bot. Open source. Vendre des kits et des composantes.
 1. Faire de l'argent sur les commandes automatiques d'épiceries. (L'épicerie nous paie 1% pour qu'on fasse affaire avec eux) (approcher les épiceries du Québec)
 
-## Design
-1. Au lieu de voir la vise comme une grande main qui tient un pot, voir ça comme deux petit bras qui serre le pot.
-
-## Site internet
-1. Pagination des recettes
-1. Ajuster le site internet pour les téléphones mobiles. Mettre la barre de recherche en dessous du menu.
-1. Acheter un backdrop pour les photos
-1. Au lieu de juste une liste d'ingrédients, faire ingrédients et alternatives, et là suggérer des alternatives pour chaque ingrédients. **Rajouter dans la base de donnée les conversions** Offrir la possibilité d'enlever des ingrédients aussi peut-être.
-1. Sur la page d'acceuil, pour chaque section, rajouter un Pour en savoir plus >, une page qui montre les calculs derrière ce qui est dit ou en parle d'avantages.
-
-## Boitier électrique
-1. Est-ce que ça serait une bonne idée d'utiliser un boitier d'ordinateur pour mon boitier électrique
-1. Bouton power et lumière power.
-1. Faire une boucle de fil avec le surplus dans la lisse d'acier verticale. Allez plus bas et remonter.
-1. Protocase
-
-## Vente
-1. Prendre de belles photos de ma machine
-1. Une ou plusieurs vidéos de vente.
-1. Une page d'acceuil de vente pour receuillir des addresses courriels avant de faire un kickstarter.
-1. Sur kickstarter, vendre des e-books de comment fabriquer sa propre machine.
-1. Vendre des kits?
-1. Distributeurs? Genre amazon ou bien genre canadian tire?
-1. Vendre à 1 client. Vendre des locations, parce que le produit risque de changer. (Le problème avec des locations est que le produit risque de changer)
-
 ## Armoire
-1. Idéalement une seule rangée dans la porte de profond. Mais les pots n'ont pas tous la même profondeur... Quoi mettre derrière comme spacer/blocker?
-1. Faire une belle page web de fabrication de l'armoire de cuisine avec le modèle 3D, un peu comme celui de Shanty 2 Chic.
-1. Prendre de belles photos de ma machine
-1. Rajouter l'armoire dans les assemblages pour savoir le coût total.
-1. Rajouter les trous borgnes à l'armoire et faire des screenshots.
-1. Faire des screenshots de l'assemblage. Couleur différente pour chaque différent?
-1. Mettre dans les screenshots les mesures.
-1. Mettre une tablette dans la porte vis-à vis les tablettes du haut et la tablette principale? Un peu plus haut que la tablette du bas. Et est-ce que je suis capable de mettre un autre tablette encore plus bas pour des petits pots à épices?
 
 J'ai 22.375" de pronfond de disponible. La porte en prend 3.5+0.25=3.75. Il reste 18.75". On enlève 12", il reste 6.75"
 
@@ -113,48 +79,6 @@ Pin sélect 1"X4"X (6' ou 8' ou 10' ou 12') (72", 96", 120", 144")
 
 ## Étau
 1. Essayer de fabriquer le vise pour qu'il soit indépendant. Pas de trous dans le plywood (sauf peut-être les fils électriques. Ça serait pas mal plus clean. C'est pas grave si ça prends beaucoup de place. De toute façon le robot a besoin d'un espace pour déposer les couvercles. Donc simplement mettre le moteur vers le mur. Et le robot déposera sur le couvercle qui cache le moteur.
-
-## Mouvement vertical
-1. Plus de poids sur le contrepoids (voir planification)
-1. Lisse d'acier et couper la base et le haut.
-1. Acheter des vrais cable chain sur aliexpress (https://www.aliexpress.com/item/10000192080203.html?spm=a2g0o.productlist.0.0.78ff51d6i3BQ3q&aem_p4p_detail=2021070811392718991760024603850002296405)
-- Un jour remplacer les bushings ou mettre des bearings à la place.
-- Un jour minimiser l'espace utiliser par la machine.
-
-## Chariot
-1. Fabriquer le nouveau chariot
-
-## Axe alpha
-1. Imprimer en 3d la poulie
-
-## Axe beta
-1. Addosser le gear box du moteur correctement dans la boite. (Creuser un petit peu vis à vis les trous qui dépassent)
-
-## Planification
-
-1. Un moyen de fixer la machine à l'armoire en haut
-1. Avancer la fabrication du robot. [En attente de pièces...]
-1. Faire la simulation avant de faire l'armoire pour s'assurer du reach du robot. Quoique...
-1. Poulie axe A.
-1. Homing system
-1. Continuer la simulation du bras robotique pour pouvoir le programmer, aller chercher les ingrédients, puis verser des aliments grossiers, puis faire des muffins.
-1. Gripper
-
-1.  Une page de vente (page d’accueil) sur mon site internet (1 semaine) [En attente de l'acception du dépot de brevet]
-1. Trouver un premier client qui me servira de publicité. [Fabriquer un prototype avant] (Boulangerie, Prêt-à-cuisiner, petite boutique de nourriture, ...)
-1. Trouver shipping mondial kits de robot
-1. Faire une soumission chez une firme de génie conseil pour un produit final qui peut se vendre sur kickstarter
-1. Faire une vidéo publicitaire de cuisine
-1. Crowdfunding 50$ pour réservation, ou membre, ou vendre kits à assembler.
-1. Modèle d'affaires
-1. Angel investors (en approcher au moins pour voir l'intérêt) [Fabriquer un prototype avant]
-1. VC investors (en approcher au moins pour voir l'intérêt) [Fabriquer un prototype avant]
-1. Ajouter toutes les valeurs nutritives des ingrédients.
-1. Brevet pour robot qui évite de combattre la gravité?
-1. Classement environnemental de chaque ingrédient et ainsi chaque recette
-1. Classement niveau santé de chaque ingrédient et ainsi chaque recette
-1. Démarrer l'entreprise officiellement.
-1. Contacter des médias et essayer de faire parler de l'entreprise
 
 ## Version à vendre
 
@@ -227,14 +151,7 @@ Il y a l'air d'y avoir beaucoup de conducteur pour le capteur du moteur. Attendr
 
 ## Détails et progrès des grandes lignes
 
-### Mouvement horizontal
-
-**En attente des maudits bearings...**
-
-- Pour éviter que ça dépasse, enlever le washer entre les deux roues. Les deux bearings collé ne sont pas un problème je crois. Simplement enlever le seal de caoutchouc.
-- Imprimer le support du moteur
-
-#### Installation:
+#### Installation mouvement horizontal:
 
 1. Installer la partie supérieure avec les deux plaques de métal et les deux essieus avec les roues.
 1. Installer le support à cable track
@@ -248,9 +165,6 @@ Il y a l'air d'y avoir beaucoup de conducteur pour le capteur du moteur. Attendr
 ### Mouvement vertical
 
 **Attente Poulie HTD 3M 16T et poulie HTD 3M 72 dents et courroie**
-
-- Des washers/sleeve de la bonne grandeur pour les bearings des roues (pas tant grave pour l'instant)
-- Imprimer le support à moteur
 
 80"/2.625"/3.1416 ~= 10. 1 tour de plus pour que ça tienne == 11.
 
@@ -592,4 +506,6 @@ Les recettes? Vraiment pas...
 Design mécanique? Ouin pas tant parce que le produit final devra être beaucoup plus travaillé. En plus, idéalement je voudrais que ce soit du open-hardware. Je voudrais simplement vendre des kits...<
 
 **On ne veut pas garder tout le temps les même pots pour les mêmes ingrédients. Parce que cela impliquerait que tu as besoin de 2 pots par ingrédients, ou bien d'attendre qu'il soit vide avant de pouvoir le remplir. Aussi, c'est pas l'idéal pour quand tu dois le remplir.**
+
+1. Au lieu de voir la vise comme une grande main qui tient un pot, voir ça comme deux petit bras qui serre le pot.
 

@@ -1,5 +1,61 @@
 Un robot garde-manger: Un robot culinaire qui ajoute lui-même les ingrédients.
 
+Open cooking
+
+## Vidéo:
+
+The food industry is one of the biggest negative impact on the environment. There is over-packaging............ Waste of food...............
+
+_Voir over-packaging. Voir waste of food._
+
+We want to make it easier to eat earth-friendly.
+
+This is why we invented the pantry robot. It lives in a cupboard which can store up to 90 kg of food.
+
+The food is stored in glass containers which can be filled in bulk without packaging.
+
+_On voit une main en train de remplir un contenant de vitre_
+
+The robot handles all the inventory automatically. It stores the containers after the grocery or every time you use something. At the same it weighs each item to keep an inventory up to date.
+
+_On voit le robot en train de ranger un pot_
+
+It keeps an eye out for low items and generates a grocery list_
+
+_On voit le UI avec une liste d'épicerie générée automatiquement_
+
+The advantage of having a robotic arm is that is has a lot of potential to help you with cooking. It can fetch and measure all the ingredients you need for a recipe so you can cook like a pro chef.
+
+_On voit les pots avec tous les ingrédients et toi qui ne reste plus qu'à verser les ingrédients dans le bol de cuisson_
+
+**EST-CE QUE C'EST PRATIQUE DE VERSER DE LA FARINE DANS UN BOL???**
+
+
+There is too many packaging in the food industry. We want to make it easier to cook something
+
+_On voit du suremballage_
+_On voit du fast-food_ (parce qu'on a pas le temps)
+
+Enters Heda, which helps you with your inventory and with cooking.
+
+_On voit l'armoire fermée et les portes de l'armoire ouvrent à l'aide de fils de nylon invisible._
+
+_On voit Heda en train de ranger l'épicerie_
+
+You can access a range of recipes from our website or through our application.
+
+_On voit le site internet, la sélection d'une recette, puis la sélection de sortir les ingrédients_
+
+_On voit tous les ingrédients sortis et moi qui cuisine comme un chef cuisinier avec tout de déjà prêt_
+
+
+
+
+_On voit Heda en train de sortir tous les ingrédients d'une recette_
+
+_On voit un bon pain qui sort du four_
+_On voit des bons muffins qui sort du four_
+
 ## 1) Tell us about the world as you see it.
 (A description of the status quo and context in which you will be working)
 
@@ -113,3 +169,6 @@ Environment because I believe this is of the greatest treat that humanity is cur
 Food. Because food is a basic human need. Working in the food area makes me feel like what I am doing is worth it.
 Automation. This is my domain of expertise. To solve the environement, we could either go backwards and avoid technology and energy,
 or we can go forward. I don't believe we are ever going to go backwards, so I believe in automation to solve the environment issue.
+
+# Référence
+1. https://farm.bot/pages/series-a
