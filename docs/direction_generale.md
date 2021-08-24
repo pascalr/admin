@@ -11,8 +11,19 @@ Encourager les gens à manger de manière plus éco-responsable.
 
 Commencer à vendre des armoires. Distribuer le plan sur internet pour que le monde puisse déjà commencer à fabriquer leur propres armoires. Avoir un design fonctionnel qui confirme les dimensions de l'armoire. La simulation doit être capable d'aller chercher et d'aller porter tous les pots. Avoir un design semblant fonctionnel de bras robotique en vrai. Travailler sur la pince surtout... Commencer à faire de la publicité peu à peu. Idéalement, avoir démarré la compagnie par actions.
 
+# Blog
+Non je ne veux pas être une personallité publique... Je ne tolère pas assez la critique.
+1. Faire un screenshot de plusieurs language de programmation et faire voter le monde lequel est le plus beau ESTHÉTIQUEMENT seulement. Personnellement quand j'entends parler sur Hacker News d'un nouveau language de programmation, la première chose que je regarde c'est est-ce qu'il est beau ou pas? Ensuite si je le trouve beau j'en apprends davantage. Peut-être rendre le code dans une autre langue pour que ce soit du guiberish pour que les gens n'ait pas tendance à vouloir voter selon l'efficacité du language de programmation. Juste un mini sample. Par exemple:
+class Zazoo
+  @foo = 10
+  @sdf = 20
+end
+...
+
 # Planification
+1. Portions is a text field for recipes.
 1. Dernière tablette inattaignable???
+1. Lumières dans l'armoire
 1. Vider l'armoire et la remplir de pots pour pouvoir prendre des photos et des vidéos.
 1. Photo sauce à pizza. (Merde ça prendrait de l'origan frais et une belle bouteille pour l'huile d'olive.
 1. Mouvement horizontal: Moins de jeu avec les roues. Inverser le moteur. Plus simple pour les câbles électriques? Un stop.

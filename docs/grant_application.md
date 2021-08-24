@@ -2,19 +2,60 @@ Un robot garde-manger: Un robot culinaire qui ajoute lui-même les ingrédients.
 
 Open cooking
 
+Story:
+Quest: Eat in a earth-friendly way
+Protagonist: You
+Enemy: Time
+
 ## Vidéo:
 
-The food industry is one of the biggest negative impact on the environment. There is over-packaging............ Waste of food...............
+### Introduction
 
-_Voir over-packaging. Voir waste of food._
+**16s: Introduction du problème**
 
-We want to make it easier to eat earth-friendly.
+**Intro (1) - 4s** _Voir un clip d'une usine de transformation alimentaire avec beaucoup de cheminée (https://www.pexels.com/video/aerial-view-of-industrial-area-5462676/)_
 
-This is why we invented the pantry robot. It lives in a cupboard which can store up to 90 kg of food.
+Food accounts for over a quarter of global greenhouse gas emissions. OR The food industry is one of the biggest negative impact on the environment.
+
+**Intro (2) - 4s** _https://www.istockphoto.com/photo/fruits-and-vegetables-gm466696262-59862998?utm_source=pixabay&utm_medium=affiliate&utm_campaign=SRP_image_sponsored&referrer_url=http%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Ffruits%2520packaging%2F&utm_term=fruits%20packaging_
+
+There is over-packaging takes a lot of ressources to produce and is not always properply disposed of.
+
+**Intro (3) - 4s** _https://www.pexels.com/video/people-sorting-out-through-a-pile-of-plastics-3192259/_
+
+**Intro (4) - 4s** _Voir un clip waste of food. (https://commons.wikimedia.org/wiki/File:GI_Market_food_waste.jpg, ATTRIBUTION REQUIRED)_
+
+There is food waste which takes all the energy it took to produce it and throws it all away.
+
+### Mission
+
+**Mission - 4s (We want to make it easier to eat in a earth-friendly way.)**
+
+We can do better. We should be able to enjoy eating food in a earth-friendly way.
+
+**8s hard to have enough time to eat** We see someone pickings good ingredients. And a good recipe comming out of the oven.
+
+One solution is simple, to cook yourself from good ingredients you thrust. But it takes a lot of time to cook properly every day.
+
+**16s - Videos of what it can do**
+
+This is why we invented Heda, the pantry robot, to assist you in everyday cookings tasks. It can store, retrieve, stir, soak, filter, sieve, blend and more.
+
+**4s - HEDA** _Clip de l'armoire fermée avec marqué par dessus Heda - Pantry Robot, les portes s'ouvrent tranquillement._
+
+It lives in a cupboard which can store up to 90 kg of food.
+
+**4s - Filling containers** _Clip de d'une main en train de remplir un contenant de vitre_
 
 The food is stored in glass containers which can be filled in bulk without packaging.
 
-_On voit une main en train de remplir un contenant de vitre_
+**4s - Advantage - We see easily**
+
+The glass containers helps you see what and how much you have really easily.
+
+**8s - Advantage - Access the inventory from anywhere** (We see someone at the grocery store looking at it's inventory to see if it needs to buy some more)
+
+The robot keeps the inventory and you can access it from anywhere, anytime.
 
 The robot handles all the inventory automatically. It stores the containers after the grocery or every time you use something. At the same it weighs each item to keep an inventory up to date.
 
@@ -55,6 +96,10 @@ _On voit Heda en train de sortir tous les ingrédients d'une recette_
 
 _On voit un bon pain qui sort du four_
 _On voit des bons muffins qui sort du four_
+
+And then when it's all done, you put it back on the shelf and it stores everything.
+
+All the code will be open-source to give much freedom. You will be able to control by vocal commands. Heda, make me a bread.
 
 ## 1) Tell us about the world as you see it.
 (A description of the status quo and context in which you will be working)
@@ -172,3 +217,13 @@ or we can go forward. I don't believe we are ever going to go backwards, so I be
 
 # Référence
 1. https://farm.bot/pages/series-a
+https://ourworldindata.org/environmental-impacts-of-food
+
+https://www.pexels.com/video/people-sorting-out-through-a-pile-of-plastics-3192259/
+https://www.pexels.com/video/aerial-view-of-industrial-area-5462676/
+
+https://pixabay.com/photos/pollution-trash-garbage-ocean-4855506/
+
+https://www.pexels.com/video/backing-cookies-852375/ **Des biscuits en train de cuire dans le four**
+https://www.pexels.com/video/interior-design-of-the-kitchen-area-in-a-house-3444429/ **On voit une cuisine et un four, très joli, plusieurs similaire**
+https://www.pexels.com/video/freshly-baked-banana-bread-6829354/ **Sortir un pain au banane du four**
