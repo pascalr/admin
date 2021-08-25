@@ -21,6 +21,9 @@ end
 ...
 
 # Planification
+1. Mes recettes favorites ou Ajouter à ma liste.
+1. Units by language, wait no because I want to be able to convert c. à table to table spoons...
+1. Dans liste d'ingrédients, faire un tableau avec toutes les unités? (beau volume, volume, poids)
 1. TODO: Faire des test pour les pretty... que ça rajoute les préposition correctement dans toutes les langues. Il y a beaucoup de cas. C'est le genre de truc parfait pour des tests.
 1. Rajouter des de aux ingrédients, est-ce possible de déterminer automatiquement de vs d'?
 1. Quoi faire quand les ingrédients n'ont pas d'unités? Mettre du sel. Mettre de l'oignon. Mettre de la coriande. Mettre des cubes de boeufs au goûts. Mettre du thym. Trop compliqué, le faire manuellement en texte...
