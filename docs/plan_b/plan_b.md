@@ -11,6 +11,8 @@ La frustration et la colère se présente lorsque les choses ne se passent pas c
 1. Une maison ecologique (toilette composte, recuperation eau usee)
 1. Un genre de CAA québec où ce que la réparation de la voiture est inclut. Plus de stress de réparation. Tu paie un montant par mois et ta voiture est garantit de fonctionner, et l'on te passe une autre voiture si celle que tu as doit être réparer.
 1. Une compagnie d'assurance que tu ne parle pas à personne au téléphone. Il y a toutes les points possibles et tu coches à chacun oui ou non. Tout se fait sur internet. (peut-être pas les réclamations)
+1. Un chalumeau pour les érables qui n'abiment pas les arbres. Idéalement réutilisable à toutes les années. Genre greffés.
+1. Un robot qui désherbe
 
 ### Politique
 

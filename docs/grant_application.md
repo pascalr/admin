@@ -24,27 +24,26 @@ Enemy: Time
 
 **Intro (1) - 4s** _Voir un clip d'une usine de transformation alimentaire avec beaucoup de cheminée (https://www.pexels.com/video/aerial-view-of-industrial-area-5462676/)_
 
-Food accounts for over a quarter of global greenhouse gas emissions. OR The food industry is one of the biggest negative impact on the environment.
+Food accounts for over a quarter of global greenhouse gas emissions.
 
 **Intro (2) - 4s** _https://www.istockphoto.com/photo/fruits-and-vegetables-gm466696262-59862998?utm_source=pixabay&utm_medium=affiliate&utm_campaign=SRP_image_sponsored&referrer_url=http%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Ffruits%2520packaging%2F&utm_term=fruits%20packaging_
 
-There is over-packaging takes a lot of ressources to produce and is not always properply disposed of.
+Packaging generates a lot of plastic waste.
+
+A lot of food is wasted.
+
+
+
+By reducing transportation and buying locally. By avoiding food waste which takes all the energy it took to produce it and throws it all away. And finally by choosing to eat ingredients that are more environmentally friendly.
 
 **Intro (3) - 4s** _https://www.pexels.com/video/people-sorting-out-through-a-pile-of-plastics-3192259/_
 
 **Intro (4) - 4s** _Voir un clip waste of food. (https://commons.wikimedia.org/wiki/File:GI_Market_food_waste.jpg, ATTRIBUTION REQUIRED)_
+We see someone pickings good ingredients. And a good recipe comming out of the oven. _On voit du fast-food_ (parce qu'on a pas le temps)
+https://www.pexels.com/video/a-couple-doing-their-groceries-4121624/
+https://www.pexels.com/video/a-baker-mashing-a-dough-using-his-hands-3209831/
 
-There is food waste which takes all the energy it took to produce it and throws it all away.
-
-### Mission
-
-**Mission - 4s (We want to make it easier to eat in a earth-friendly way.)**
-
-We can do better. We should be able to enjoy eating food in a earth-friendly way.
-
-**8s hard to have enough time to eat** We see someone pickings good ingredients. And a good recipe comming out of the oven. _On voit du fast-food_ (parce qu'on a pas le temps)
-
-One solution is simple, to cook yourself from good ingredients you thrust. But it takes a lot of time to cook properly every day.
+But how can we do all this? How to eat in an environmentally friendly-way? A simple solution is to cook by yourself from good, raw ingredients. But it takes a lot of time to cook properly every day.
 
 ### Solution armoire
 
@@ -66,54 +65,83 @@ The glass containers helps you see what and how much you have really easily.
 
 **8s - Advantage - Access the inventory from anywhere** (We see someone at the grocery store looking at it's inventory to see if it needs to buy some more)
 
-The robot keeps the inventory and you can access it from anywhere, anytime.
+You are in the grocery store and don't remember if you have any sugar left? No worries. The robot keeps the inventory and you can access it from anywhere, anytime.
 
 **8s - Advantage - Grocery list** _On voit le UI avec une liste d'épicerie générée automatiquement_
 
-It keeps an eye out for low items and generates a grocery list
+It keeps an eye out for low items and generates a grocery list automatically.
 
 ### Solution cooking
 
-_On voit Heda en train de sortir tous les ingrédients d'une recette_
+**12s - (4s On voit le site internet, la sélection d'une recette, on voit quelqu'un appuyé sur le bouton Fetch dans le UI, 3s on voit les pots qui sont tous dans l'ordre sur la tablette d'accès, 5s on voit quelqu'un qui cuisine à l'oeil)**
 
-_On voit un bon pain qui sort du four_
-_On voit des bons muffins qui sort du four_
+Heda's robotic arm has a lot of potential to help you cook. It can fetch all the ingredients required to do a recipe and let you add as much as you are inspired.
 
-And then when it's all done, you put it back on the shelf and it stores everything.
+**8s - (on le voit en train de verser des quantités d'épices, on voit ensuite quelqu'un qui rajoute le mélange d'épices dans le plat)**
+It can do some mixes. For example, some spice mixes for a recipe.
+
+**8s - (on le voit en train de brasser de la pâte à crêpe, on voit ensuite quelqu'un en train de cuisiner des crêpes)**
+It can do many batter. For example pancake or cake batter. You give it milk and eggs, and it we make all the batter by itself.
+
+**4s - On le voit en train de faire du lait**
+You don't have any milk for your recipe? No worries. It can make some vegetable milk by itself. Just the right amount needed or more to drink.
+
+**6s - On voit la tablette pleine de pots. On voit le robot ranger un pot. On voit la tablette vide.**
+
+And when you're done cooking, you put it back on the shelf and it stores everything.
 
 ### Solution site internet
 
-You can access a range of recipes from our website or through our application.
+**8s - On voit le site internet, la liste de recettes qui déroulent, puis la sélection d'une recette**
 
-_On voit le site internet, la sélection d'une recette, puis la sélection de sortir les ingrédients_
+We are currently working on a website to host a lot of recipes freely avaibable for every one. The main focus are recipes that are environmentally-friendly. The main protein is never meat. There are others too for completeness sake.
 
-_On voit tous les ingrédients sortis et moi qui cuisine comme un chef cuisinier avec tout de déjà prêt_
+**4s - On voit quelqu'un se créer un compte**
 
-Planification de repas
+You can create your own account.
 
+**4s - On voit ajouter à ses favoris**
 
+You can add recipes to your favorites
 
+**4s - On voir le calendrier et la planification de repas, on voit la liste d'épicerie complète**
 
+You can plan meals in advance. The Heda robot will then start at the scheduled time automatically. It can generate then a complete grocery list ahead of time.
 
-The advantage of having a robotic arm is that is has a lot of potential to help you with cooking. It can fetch and measure all the ingredients you need for a recipe so you can cook like a pro chef.
+### More about environmental impact of Heda
 
-_On voit les pots avec tous les ingrédients et toi qui ne reste plus qu'à verser les ingrédients dans le bol de cuisson_
+Go back to each point in the introduction and say how Heda helps to contribute.
 
-**EST-CE QUE C'EST PRATIQUE DE VERSER DE LA FARINE DANS UN BOL???**
+Many pantry items have a big advantage. They are environmentally friendly compared to others. For example, beans and flours are a great source of calories and proteins. Instead of thinking meat-first, thinking pantry first is a great way to help the environment.
 
+### More about the robot
+
+**4s - On voit le système de contrepoids**
+
+The robot is built with a counter-weight in order to be energy efficient. Only small motors are used to run the whole machine.
+
+C'est combien l'énergie utilisé par la machine pour une recette?
+
+? It is a negligeable amount compared to the amount required for cooking. ?
+
+The robot is still a prototype. Many parts are 3d-printed and will be replaced by proper parts in due time.
+
+The robot is built with repearability in mind. It is meant to last a very long time. Wears parts, like bearings and bushings, are easily accessible and replaceable. Videos will be avaible online to show you how to maintain your machine.
 
 ### Open-source
 
-All the code will be open-source to give much freedom.
+All the code will be open-source to give much freedom and control.
 
 Potential to be voice-activated. Heda, make me a bread.
 
 Potential to communicate with other smart devices, for example a smart fridge in order to get a full grocery list.
 
+The plans this cupboard are available online. This cuboard is made mainly out of hardwood so it lasts a long time.
+
 ## 1) Tell us about the world as you see it.
 (A description of the status quo and context in which you will be working)
 
-I come from Québec, the french of Canada. I am lucky to have been raised well by a modest, yet loving family on a farm.
+I come from Québec, the french part of Canada. I am lucky to have been raised well by a modest, but loving family on a farm.
 
 I am a self-taught multi-disciplinary person. I love technology and what it enables us to do. Give me a device with an internet connection and I feel there is nothing I can't do.
 
@@ -124,6 +152,8 @@ One of the greatest treats to humanity is the environment. The most obvious issu
 **Important!!!**
 ## 2) What change do you want to make in the world?
 (A description of what you want to change about the status quo, in the world, your personal vision for this area)
+
+I want a world where you go at a local market and buy products without any packaging. You bring those raw ingredients from the field and transform them at home into delicious meals.
 
 I want people to buy food in bulk without packaging and I want people to eat more earth-friendly food. I plan to achieve this by making the process easier.
 
@@ -196,7 +226,7 @@ Challenge 1: Being able to sell my product. My product is similar to smart fridg
 
 ## 6) What part does openness play in your idea?
 
-Openness is one of my core values. I've always used open software (Linux/Godot/Freecad and so much more) and the least I can do is contribute back.
+Openness is one of my core values. I've always used open software almost exclusively (Linux/Godot/Freecad/OpenShot/Krita and so much more) and the least I can do is contribute back.
 
 Being an electromechanic, I am used to repair all sorts of things and I understand how frustrating it is when you can't find schematics or spare parts for something you bought. I want my project to not only be open-source, but to be open-hardware.
 
@@ -224,6 +254,27 @@ Food. Because food is a basic human need. Working in the food area makes me feel
 Automation. This is my domain of expertise. To solve the environement, we could either go backwards and avoid technology and energy,
 or we can go forward. I don't believe we are ever going to go backwards, so I believe in automation to solve the environment issue.
 
+# Deprecated
+
+There is a lot of room for improvements for reducing that number. By avoiding packaging which takes a lot of ressources to produce. By reducing transportation and buying locally. By avoiding food waste which takes all the energy it took to produce it and throws it all away. And finally by choosing to eat ingredients that are more environmentally friendly.
+
+**Mission - 4s (We want to make it easier to eat in a earth-friendly way.)**
+
+We can do better. We should be able to enjoy eating food in a earth-friendly way.
+
+**8s hard to have enough time to eat** 
+
+One solution is simple. Cook by yourself from good, raw ingredients. But it takes a lot of time to cook properly every day.
+
+**4s - On voit une machine en train de pétrir la pâte, on voit un bon pain en train d'être sortit du four**
+A future option will even knead dough. So you can eat so fresh bread every day.
+
+The advantage of having a robotic arm is that is has a lot of potential to help you with cooking. It can fetch and measure all the ingredients you need for a recipe so you can cook like a pro chef.
+
+_On voit les pots avec tous les ingrédients et toi qui ne reste plus qu'à verser les ingrédients dans le bol de cuisson_
+
+**EST-CE QUE C'EST PRATIQUE DE VERSER DE LA FARINE DANS UN BOL???**
+
 # Référence
 1. https://farm.bot/pages/series-a
 https://ourworldindata.org/environmental-impacts-of-food
@@ -236,3 +287,8 @@ https://pixabay.com/photos/pollution-trash-garbage-ocean-4855506/
 https://www.pexels.com/video/backing-cookies-852375/ **Des biscuits en train de cuire dans le four**
 https://www.pexels.com/video/interior-design-of-the-kitchen-area-in-a-house-3444429/ **On voit une cuisine et un four, très joli, plusieurs similaire**
 https://www.pexels.com/video/freshly-baked-banana-bread-6829354/ **Sortir un pain au banane du four**
+
+https://www.pexels.com/video/a-couple-doing-their-groceries-4121624/ **On voit un couple en train de faire l'épicerie**
+https://www.pexels.com/video/a-cook-using-a-wok-2620043/ **On voit un chef en train de cuisiner avec un wok**
+
+https://www.pexels.com/video/a-baker-mashing-a-dough-using-his-hands-3209831/
