@@ -21,6 +21,10 @@ end
 ...
 
 # Planification
+1. Rajouter des de aux ingrédients, est-ce possible de déterminer automatiquement de vs d'?
+1. Quoi faire quand les ingrédients n'ont pas d'unités? Mettre du sel. Mettre de l'oignon. Mettre de la coriande. Mettre des cubes de boeufs au goûts. Mettre du thym. Trop compliqué, le faire manuellement en texte...
+1. Add show_ fraction to RecipeIngredients (quand raw_ quantity détecte une fraction, setter le flag automatiquement)
+1. l pour litre devrait être un L majuscule
 1. Portions is a text field for recipes.
 1. Dernière tablette inattaignable???
 1. Lumières dans l'armoire

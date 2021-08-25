@@ -9,6 +9,15 @@ Enemy: Time
 
 ## Vidéo:
 
+1. (16s) Introduction
+1. (12s) Mission
+1. (15s) Solution robot
+1. (30s) Solution cupboard
+1. (30s) Solution recipes
+1. (30s) Solution cooking
+1. (60s) Open-source possibilities
+1. (60s) Current state
+
 ### Introduction
 
 **16s: Introduction du problème**
@@ -33,9 +42,11 @@ There is food waste which takes all the energy it took to produce it and throws 
 
 We can do better. We should be able to enjoy eating food in a earth-friendly way.
 
-**8s hard to have enough time to eat** We see someone pickings good ingredients. And a good recipe comming out of the oven.
+**8s hard to have enough time to eat** We see someone pickings good ingredients. And a good recipe comming out of the oven. _On voit du fast-food_ (parce qu'on a pas le temps)
 
 One solution is simple, to cook yourself from good ingredients you thrust. But it takes a lot of time to cook properly every day.
+
+### Solution armoire
 
 **16s - Videos of what it can do**
 
@@ -57,40 +68,11 @@ The glass containers helps you see what and how much you have really easily.
 
 The robot keeps the inventory and you can access it from anywhere, anytime.
 
-The robot handles all the inventory automatically. It stores the containers after the grocery or every time you use something. At the same it weighs each item to keep an inventory up to date.
+**8s - Advantage - Grocery list** _On voit le UI avec une liste d'épicerie générée automatiquement_
 
-_On voit le robot en train de ranger un pot_
+It keeps an eye out for low items and generates a grocery list
 
-It keeps an eye out for low items and generates a grocery list_
-
-_On voit le UI avec une liste d'épicerie générée automatiquement_
-
-The advantage of having a robotic arm is that is has a lot of potential to help you with cooking. It can fetch and measure all the ingredients you need for a recipe so you can cook like a pro chef.
-
-_On voit les pots avec tous les ingrédients et toi qui ne reste plus qu'à verser les ingrédients dans le bol de cuisson_
-
-**EST-CE QUE C'EST PRATIQUE DE VERSER DE LA FARINE DANS UN BOL???**
-
-
-There is too many packaging in the food industry. We want to make it easier to cook something
-
-_On voit du suremballage_
-_On voit du fast-food_ (parce qu'on a pas le temps)
-
-Enters Heda, which helps you with your inventory and with cooking.
-
-_On voit l'armoire fermée et les portes de l'armoire ouvrent à l'aide de fils de nylon invisible._
-
-_On voit Heda en train de ranger l'épicerie_
-
-You can access a range of recipes from our website or through our application.
-
-_On voit le site internet, la sélection d'une recette, puis la sélection de sortir les ingrédients_
-
-_On voit tous les ingrédients sortis et moi qui cuisine comme un chef cuisinier avec tout de déjà prêt_
-
-
-
+### Solution cooking
 
 _On voit Heda en train de sortir tous les ingrédients d'une recette_
 
@@ -99,7 +81,34 @@ _On voit des bons muffins qui sort du four_
 
 And then when it's all done, you put it back on the shelf and it stores everything.
 
-All the code will be open-source to give much freedom. You will be able to control by vocal commands. Heda, make me a bread.
+### Solution site internet
+
+You can access a range of recipes from our website or through our application.
+
+_On voit le site internet, la sélection d'une recette, puis la sélection de sortir les ingrédients_
+
+_On voit tous les ingrédients sortis et moi qui cuisine comme un chef cuisinier avec tout de déjà prêt_
+
+Planification de repas
+
+
+
+
+
+The advantage of having a robotic arm is that is has a lot of potential to help you with cooking. It can fetch and measure all the ingredients you need for a recipe so you can cook like a pro chef.
+
+_On voit les pots avec tous les ingrédients et toi qui ne reste plus qu'à verser les ingrédients dans le bol de cuisson_
+
+**EST-CE QUE C'EST PRATIQUE DE VERSER DE LA FARINE DANS UN BOL???**
+
+
+### Open-source
+
+All the code will be open-source to give much freedom.
+
+Potential to be voice-activated. Heda, make me a bread.
+
+Potential to communicate with other smart devices, for example a smart fridge in order to get a full grocery list.
 
 ## 1) Tell us about the world as you see it.
 (A description of the status quo and context in which you will be working)
