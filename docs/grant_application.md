@@ -1,3 +1,9 @@
+# REQUIREMENTS FOR VIDEO
+
+1. Une dizaine de recettes avec photos pour pouvoir dérouler et en voir plusieurs.
+1. Monter ma liste de recettes à moi.
+
+
 Un robot garde-manger: Un robot culinaire qui ajoute lui-même les ingrédients.
 
 Open cooking
@@ -94,15 +100,25 @@ And when you're done cooking, you put it back on the shelf and it stores everyth
 
 **8s - On voit le site internet, la liste de recettes qui déroulent, puis la sélection d'une recette**
 
-We are currently working on a website to host a lot of recipes freely avaibable for every one. The main focus are recipes that are environmentally-friendly. The main protein is never meat. There are others too for completeness sake.
+A website is currently under construction. The goal is to host a large library of recipes freely avaibable for everyone. The main focus are recipes that are environmentally-friendly, but others are included for completeness sake.
 
 **4s - On voit quelqu'un se créer un compte**
 
 You can create your own account.
 
-**4s - On voit ajouter à ses favoris**
+**4s - On voit ajouter à ses favoris (on voit un click ajouter à ses favoris)**
 
 You can add recipes to your favorites
+
+**8s - On voit ma liste de recettes à moi.**
+
+You can organize your recipes as your wish
+
+**4s - You can share with your friends by either setting your account to public or private.**
+
+**8s - Ingredients in the recipe instructions**
+
+One innovation is to include the ingredients quantities in the recipe instructions. This way it is easier to follow recipes one step at a time.
 
 **4s - On voir le calendrier et la planification de repas, on voit la liste d'épicerie complète**
 
@@ -137,6 +153,16 @@ Potential to be voice-activated. Heda, make me a bread.
 Potential to communicate with other smart devices, for example a smart fridge in order to get a full grocery list.
 
 The plans this cupboard are available online. This cuboard is made mainly out of hardwood so it lasts a long time.
+
+Everything will be freely available so people can build their own themselves if they want to.
+
+### Current state
+
+The robot is currently still a prototype. There is much work left to be done.
+
+### Business model
+
+Explain about the business model. I want to sell kits that people can buy and assemble themselves.
 
 ## 1) Tell us about the world as you see it.
 (A description of the status quo and context in which you will be working)
