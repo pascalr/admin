@@ -21,6 +21,13 @@ end
 ...
 
 # Planification
+1. Rajouter masculin et féminin pour les noms ou bien laisser les mettres manuellement?
+1. Pouvoir ajouter des commentaires aux recettes. / au début pour que ce soit en italique!
+1. Rajouter des pills à Mes recettes pour sélectionner de quelle manière les affichées. (Liste de nom, liste avec image, liste de slider, ...)
+1. d' pour les h aspirés? huile surtout...
+1. Rajouter une note aux RecipeIngredient? (pelées et coupées en cube), ... (broyées)
+1. Handle generic Foods which are supersets of other foods. Bouillon can be Bouillon de légume, Bouillon de poulet, etc... Huile... Huile neutre...
+1. Backup sur internet
 1. Comment gérer les versions des recettes? RecipeGroup comme avant? Un UserRecipe refère à une Recipe et/ou à un RecipeGroup?
 1. Enlever le truc de c'est quoi qu'il y a des différent à l'intérieur, et offrir la version simplement avec un chiffre. Ou bien un nom d'utilisateur. Dans la barre de recherche, tu sélectionnes le groupe et ensuite tu sélectionnes sur le côté (un peu comme un menu normal d'un UI d'application d'ordinateur) la version que tu veux. Poulet au beurre (Ricardo). Mais fuck poulet au beurre (Condiments en poudre). À la place, quand c'est une recette du site et non une recette d'un utilisateur ou d'un site d'ailleurs, indiqué (ver 2). Pas de version quand il n'y en a juste une. Donc pour poulet au beurre, on a: Poulet au beurre, Poulet au beurre (Ricardo), Poulet au beurre (ver 2). N'importe qui peut créer sa recette! Mais l'image reste la même, celle du groupe. Le groupe sert surtout à avoir une image et lier les recettes du même truc entre eux. Ne pas marqué Poulet au beurre (Ricardo). Marqué un nom entre parathèse seulement quand la recette viens d'un utilisateur.
 1. Mes recettes favorites ou Ajouter à ma liste.
