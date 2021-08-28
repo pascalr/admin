@@ -24,6 +24,8 @@ Enemy: Time
 1. (60s) Open-source possibilities
 1. (60s) Current state
 
+Voir la simulation?
+
 ### Introduction
 
 **16s: Introduction du problème**
@@ -98,7 +100,7 @@ And when you're done cooking, you put it back on the shelf and it stores everyth
 
 ### Solution site internet
 
-**8s - On voit le site internet, la liste de recettes qui déroulent, puis la sélection d'une recette**
+**8s - Voir la page d'acceuil, la souris qui se déplaces sur recettes, voir la liste de recettes qui déroulent, puis la sélection d'une recette**
 
 A website is currently under construction. The goal is to host a large library of recipes freely avaibable for everyone. The main focus are recipes that are environmentally-friendly, but others are included for completeness sake.
 

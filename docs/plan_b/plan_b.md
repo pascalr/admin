@@ -13,6 +13,7 @@ La frustration et la colère se présente lorsque les choses ne se passent pas c
 1. Une compagnie d'assurance que tu ne parle pas à personne au téléphone. Il y a toutes les points possibles et tu coches à chacun oui ou non. Tout se fait sur internet. (peut-être pas les réclamations)
 1. Un chalumeau pour les érables qui n'abiment pas les arbres. Idéalement réutilisable à toutes les années. Genre greffés.
 1. Un robot qui désherbe
+1. Faire des expériences sur la nourriture. Sur la faim. Manger des gros volumes de trucs sans calories. Manger des petites quantitées de trucs très calorique. Manger juste du sucre. Manger juste du gras. Manger juste des protéines...
 
 ### Politique
 

@@ -26,6 +26,7 @@ end
 1. Rajouter des pills à Mes recettes pour sélectionner de quelle manière les affichées. (Liste de nom, liste avec image, liste de slider, ...)
 1. d' pour les h aspirés? huile surtout...
 1. Rajouter une note aux RecipeIngredient? (pelées et coupées en cube), ... (broyées)
+1. FoodGroups. Huile. Bouillon. Lait. Pain.
 1. Handle generic Foods which are supersets of other foods. Bouillon can be Bouillon de légume, Bouillon de poulet, etc... Huile... Huile neutre...
 1. Backup sur internet
 1. Comment gérer les versions des recettes? RecipeGroup comme avant? Un UserRecipe refère à une Recipe et/ou à un RecipeGroup?
@@ -79,6 +80,11 @@ end
 1. Faire une soumission chez une firme de génie conseil pour un produit final qui peut se vendre sur kickstarter
 1. Ajouter toutes les valeurs nutritives des ingrédients.
 1. Démarrer l'entreprise officiellement. Puis contacter des médias et essayer de faire parler de l'entreprise
+
+# Recettes
+https://foodgawker.com/page/2/
+https://www.findingvegan.com/
+http://www.tastespotting.com/
 
 # Financement
 1. Shuttleworth fondation: https://shuttleworthfoundation.org/apply/form/
