@@ -20,31 +20,16 @@ class Zazoo
 end
 ...
 
-# Planification
-1. Rajouter masculin et féminin pour les noms ou bien laisser les mettres manuellement?
-1. Pouvoir ajouter des commentaires aux recettes. / au début pour que ce soit en italique!
-1. Rajouter des pills à Mes recettes pour sélectionner de quelle manière les affichées. (Liste de nom, liste avec image, liste de slider, ...)
-1. d' pour les h aspirés? huile surtout...
-1. Rajouter une note aux RecipeIngredient? (pelées et coupées en cube), ... (broyées)
-1. FoodGroups. Huile. Bouillon. Lait. Pain.
-1. Handle generic Foods which are supersets of other foods. Bouillon can be Bouillon de légume, Bouillon de poulet, etc... Huile... Huile neutre...
+# Planification (PRIORITÉ: Vidéo)
+1. Sign in should remember what page
+1. Un calendrier pour planifier les repas.
+1. Replace active_tab with proper routes
+1. Aller au canac acheter un 1X5X8
 1. Backup sur internet
-1. Comment gérer les versions des recettes? RecipeGroup comme avant? Un UserRecipe refère à une Recipe et/ou à un RecipeGroup?
-1. Enlever le truc de c'est quoi qu'il y a des différent à l'intérieur, et offrir la version simplement avec un chiffre. Ou bien un nom d'utilisateur. Dans la barre de recherche, tu sélectionnes le groupe et ensuite tu sélectionnes sur le côté (un peu comme un menu normal d'un UI d'application d'ordinateur) la version que tu veux. Poulet au beurre (Ricardo). Mais fuck poulet au beurre (Condiments en poudre). À la place, quand c'est une recette du site et non une recette d'un utilisateur ou d'un site d'ailleurs, indiqué (ver 2). Pas de version quand il n'y en a juste une. Donc pour poulet au beurre, on a: Poulet au beurre, Poulet au beurre (Ricardo), Poulet au beurre (ver 2). N'importe qui peut créer sa recette! Mais l'image reste la même, celle du groupe. Le groupe sert surtout à avoir une image et lier les recettes du même truc entre eux. Ne pas marqué Poulet au beurre (Ricardo). Marqué un nom entre parathèse seulement quand la recette viens d'un utilisateur.
-1. Mes recettes favorites ou Ajouter à ma liste.
-1. Mes amis (voir le menu de mes amis)
-1. Units by language, wait no because I want to be able to convert c. à table to table spoons...
-1. Dans liste d'ingrédients, faire un tableau avec toutes les unités? (beau volume, volume, poids)
-1. TODO: Faire des test pour les pretty... que ça rajoute les préposition correctement dans toutes les langues. Il y a beaucoup de cas. C'est le genre de truc parfait pour des tests.
-1. Rajouter des de aux ingrédients, est-ce possible de déterminer automatiquement de vs d'?
-1. Quoi faire quand les ingrédients n'ont pas d'unités? Mettre du sel. Mettre de l'oignon. Mettre de la coriande. Mettre des cubes de boeufs au goûts. Mettre du thym. Trop compliqué, le faire manuellement en texte...
-1. Add show_ fraction to RecipeIngredients (quand raw_ quantity détecte une fraction, setter le flag automatiquement)
-1. l pour litre devrait être un L majuscule
-1. Portions is a text field for recipes.
+1. Largeur de la tablette pour déposer les pots?
 1. Dernière tablette inattaignable???
 1. Lumières dans l'armoire
 1. Vider l'armoire et la remplir de pots pour pouvoir prendre des photos et des vidéos.
-1. Photo sauce à pizza. (Merde ça prendrait de l'origan frais et une belle bouteille pour l'huile d'olive.
 1. Mouvement horizontal: Moins de jeu avec les roues. Inverser le moteur. Plus simple pour les câbles électriques? Un stop.
 1. Gripper
 1. LES MAUDITS CÂBLES ÉLECTRIQUES... (Thêta de -120 à 120 et alpha de -170 à 170?)
@@ -68,6 +53,26 @@ end
 1. Homing system
 1. Continuer la simulation du bras robotique pour pouvoir le programmer, aller chercher les ingrédients, puis verser des aliments grossiers, puis faire des muffins.
 # Pas prioritaire
+1. Quoi faire quand les ingrédients n'ont pas d'unités? Mettre du sel. Mettre de l'oignon. Mettre de la coriande. Mettre des cubes de boeufs au goûts. Mettre du thym. Trop compliqué, le faire manuellement en texte...
+1. Add show_ fraction to RecipeIngredients (quand raw_ quantity détecte une fraction, setter le flag automatiquement)
+1. TODO: Faire des test pour les pretty... que ça rajoute les préposition correctement dans toutes les langues. Il y a beaucoup de cas. C'est le genre de truc parfait pour des tests.
+1. Allow user to create recipes.
+1. Be able to create a recipe with a food not in the database
+1. Pouvoir ajouter des commentaires aux recettes. / au début pour que ce soit en italique!
+1. Un éditeur WYSIWIG pour les recettes.
+1. Rajouter masculin et féminin pour les noms ou bien laisser les mettres manuellement?
+1. FoodName food:references language:references value aspire:boolean feminine:boolean
+1. d' pour les h aspirés? huile surtout...
+1. Comment gérer les versions des recettes? RecipeGroup comme avant? Un UserRecipe refère à une Recipe et/ou à un RecipeGroup?
+1. Enlever le truc de c'est quoi qu'il y a des différent à l'intérieur, et offrir la version simplement avec un chiffre. Ou bien un nom d'utilisateur. Dans la barre de recherche, tu sélectionnes le groupe et ensuite tu sélectionnes sur le côté (un peu comme un menu normal d'un UI d'application d'ordinateur) la version que tu veux. Poulet au beurre (Ricardo). Mais fuck poulet au beurre (Condiments en poudre). À la place, quand c'est une recette du site et non une recette d'un utilisateur ou d'un site d'ailleurs, indiqué (ver 2). Pas de version quand il n'y en a juste une. Donc pour poulet au beurre, on a: Poulet au beurre, Poulet au beurre (Ricardo), Poulet au beurre (ver 2). N'importe qui peut créer sa recette! Mais l'image reste la même, celle du groupe. Le groupe sert surtout à avoir une image et lier les recettes du même truc entre eux. Ne pas marqué Poulet au beurre (Ricardo). Marqué un nom entre parathèse seulement quand la recette viens d'un utilisateur.
+1. Units by language, wait no because I want to be able to convert c. à table to table spoons...
+1. Mes recettes favorites ou Ajouter à ma liste.
+1. Mes amis (voir le menu de mes amis)
+1. Rajouter une note aux RecipeIngredient? (pelées et coupées en cube), ... (broyées)
+1. FoodGroups. Huile. Bouillon. Lait. Pain.
+1. Handle generic Foods which are supersets of other foods. Bouillon can be Bouillon de légume, Bouillon de poulet, etc... Huile... Huile neutre...
+1. Dans la recherche et les listes, seulement montrer la version de recette la plus populaire.
+1. Comment gérer les options d'ingrédients dans la recette??? (Commentaire à côté des ingrédients?)
 1. You can pin an item in the grocery list so it is always there even if you clear (for example fruits&vegetables, eggs and milk)
 1. Pouvoir hierarchisé dans un arbre les recettes.
 1. Acheter un backdrop pour les photos
@@ -80,11 +85,31 @@ end
 1. Faire une soumission chez une firme de génie conseil pour un produit final qui peut se vendre sur kickstarter
 1. Ajouter toutes les valeurs nutritives des ingrédients.
 1. Démarrer l'entreprise officiellement. Puis contacter des médias et essayer de faire parler de l'entreprise
+1. Faire un article qui parle de mes cables drums. C'est cool et de toute façon un compétiteur bien antit ne ferait pas pareil. Ça serait probablement coulé en alu à la place ou avec des chaînes.
 
 # Recettes
 https://foodgawker.com/page/2/
 https://www.findingvegan.com/
 http://www.tastespotting.com/
+
+## Recettes écologique
+1. Hamburger avec n'importe quelle boulette végé
+1. Hotdog avec n'importe quelle boulette végé
+1. Pâté chinois végé (hâchis parmentier végé) (prmentier végé)
+1. Chili végé
+1. Riz avec truc végé plus sauce (tofu poulet au beurre)
+1. Pâte avec boulettes de pois chiches ou autres végé
+1. Salade
+1. Salade de pâte
+1. Boulangerie
+1. Dessert
+1. Pantry recipes
+1. Gruau
+1. Chickpea recipes, red-kidney beans recipe
+1. Soupe aux patates!!!
+1. Crèmes (crème de champignon, crème de poireau)
+1. Soupes
+1. Potages
 
 # Financement
 1. Shuttleworth fondation: https://shuttleworthfoundation.org/apply/form/
@@ -511,6 +536,7 @@ Thank you for the design of a pretty pantry!
 https://www.youtube.com/watch?v=bZO3Vk5jI5k
 https://howtomechatronics.com/projects/scara-robot-how-to-build-your-own-arduino-based-robot/
 Thank you to so many others who helped me in one way or another!
+Thank you to the speed run community who thought me that by keep working really hard on something I can achieve what I want. It also thought me that progressions are slow. So I was not discouraged at first at every improvement which I thought was still missing a lot because in my book, I was taking 0.01 second of a record and I was proud. We can always do better we just once we know where the bar is. (example de sauter le plus haut possible de mon prof aussi, aussi moins de 3h le marathon)
 
 
 
