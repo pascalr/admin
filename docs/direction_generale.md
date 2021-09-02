@@ -14,16 +14,16 @@ Commencer à vendre des armoires. Distribuer le plan sur internet pour que le mo
 # Planification (PRIORITÉ: Vidéo)
 
 1. BACKUP
-1. UNE RECETTE PAR SEMAINE.
+1. UNE RECETTE PAR SEMAINE. PLANIFIER DANS LE CALENDRIER UN MOIS À L'AVANCE.
+1. RÉPONDRE PEU À PEU AUX QUESTIONS PAR ÉCRIT
+
+1. Aller au canac acheter un 1X5X8 et cosses d'aluminium
 
 1. Un thème récurrant. Les ingrédients en version fraîche ou bien en version déshydratés. Offrir les 2 recettes? Soupe aux patates. Soupe aux patates express. Quand il est inscrit express ça veut dire qu'au moins 1 des ingrédients est déshydraté. Dans les instructions de la recette: _Voir aussi la version rapide: Soupe aux patates express_ ou bien _Voir aussi la version avec des ingrédients frais: Soupe aux patates_ Dans la version express mettre les haricots cuits?
 
-1. Aller au canac acheter un 1X5X8
-1. Largeur de la tablette pour déposer les pots?
-1. Dernière tablette inattaignable???
-1. Lumières dans l'armoire
+1. Tenir le cable tray vertical en place.
+1. Lumières dans l'armoire (https://www.amazon.ca/Govee-Upgraded-Dimmable-Daylight-Flexible/dp/B07V46H7YL/ref=sr_1_4?dchild=1&keywords=white+led+strip+lights&qid=1630604006&s=hi&sr=1-4)
 1. Vider l'armoire et la remplir de pots pour pouvoir prendre des photos et des vidéos.
-1. Mouvement horizontal: Moins de jeu avec les roues. Inverser le moteur. Plus simple pour les câbles électriques? Un stop.
 1. Gripper
 1. LES MAUDITS CÂBLES ÉLECTRIQUES... (Thêta de -120 à 120 et alpha de -170 à 170?)
 1. Plus de poids sur le contrepoids.
