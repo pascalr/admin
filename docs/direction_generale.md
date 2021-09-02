@@ -9,23 +9,16 @@ Encourager les gens à manger de manière plus éco-responsable.
 
 # Vision (6 mois)
 
-Commencer à vendre des armoires. Distribuer le plan sur internet pour que le monde puisse déjà commencer à fabriquer leur propres armoires. Avoir un design fonctionnel qui confirme les dimensions de l'armoire. La simulation doit être capable d'aller chercher et d'aller porter tous les pots. Avoir un design semblant fonctionnel de bras robotique en vrai. Travailler sur la pince surtout... Commencer à faire de la publicité peu à peu. Idéalement, avoir démarré la compagnie par actions.
-
-# Blog
-Non je ne veux pas être une personallité publique... Je ne tolère pas assez la critique.
-1. Faire un screenshot de plusieurs language de programmation et faire voter le monde lequel est le plus beau ESTHÉTIQUEMENT seulement. Personnellement quand j'entends parler sur Hacker News d'un nouveau language de programmation, la première chose que je regarde c'est est-ce qu'il est beau ou pas? Ensuite si je le trouve beau j'en apprends davantage. Peut-être rendre le code dans une autre langue pour que ce soit du guiberish pour que les gens n'ait pas tendance à vouloir voter selon l'efficacité du language de programmation. Juste un mini sample. Par exemple:
-class Zazoo
-  @foo = 10
-  @sdf = 20
-end
-...
+Commencer à vendre des armoires. Distribuer le plan sur internet pour que le monde puisse déjà commencer à fabriquer leur propres armoires. Avoir un design fonctionnel qui confirme les dimensions de l'armoire. La simulation doit être capable d'aller chercher et d'aller porter tous les pots. Avoir un design semblant fonctionnel de bras robotique en vrai. Travailler sur la pince surtout... Commencer à faire de la publicité peu à peu. Idéalement, avoir démarré la compagnie par actions. Avoir un site en ligne et publier une recette par semaine.
 
 # Planification (PRIORITÉ: Vidéo)
-1. Sign in should remember what page
-1. Un calendrier pour planifier les repas.
-1. Replace active_tab with proper routes
+
+1. BACKUP
+1. UNE RECETTE PAR SEMAINE.
+
+1. Un thème récurrant. Les ingrédients en version fraîche ou bien en version déshydratés. Offrir les 2 recettes? Soupe aux patates. Soupe aux patates express. Quand il est inscrit express ça veut dire qu'au moins 1 des ingrédients est déshydraté. Dans les instructions de la recette: _Voir aussi la version rapide: Soupe aux patates express_ ou bien _Voir aussi la version avec des ingrédients frais: Soupe aux patates_ Dans la version express mettre les haricots cuits?
+
 1. Aller au canac acheter un 1X5X8
-1. Backup sur internet
 1. Largeur de la tablette pour déposer les pots?
 1. Dernière tablette inattaignable???
 1. Lumières dans l'armoire
@@ -52,7 +45,14 @@ end
 1. Un moyen de fixer la machine à l'armoire en haut
 1. Homing system
 1. Continuer la simulation du bras robotique pour pouvoir le programmer, aller chercher les ingrédients, puis verser des aliments grossiers, puis faire des muffins.
+# Planification (Mettre le site en ligne)
+1. d' pour les h aspirés? huile surtout...
+1. Bonne densité des ingrédients
+1. Le pluriel des unités lb/lbs, tasse/tasses.
 # Pas prioritaire
+1. Sign in should remember what page
+1. Modification d'une recette (duplication)
+1. Enlever une recette du calendrier ajoutée par erreur.
 1. Quoi faire quand les ingrédients n'ont pas d'unités? Mettre du sel. Mettre de l'oignon. Mettre de la coriande. Mettre des cubes de boeufs au goûts. Mettre du thym. Trop compliqué, le faire manuellement en texte...
 1. Add show_ fraction to RecipeIngredients (quand raw_ quantity détecte une fraction, setter le flag automatiquement)
 1. TODO: Faire des test pour les pretty... que ça rajoute les préposition correctement dans toutes les langues. Il y a beaucoup de cas. C'est le genre de truc parfait pour des tests.
@@ -62,7 +62,6 @@ end
 1. Un éditeur WYSIWIG pour les recettes.
 1. Rajouter masculin et féminin pour les noms ou bien laisser les mettres manuellement?
 1. FoodName food:references language:references value aspire:boolean feminine:boolean
-1. d' pour les h aspirés? huile surtout...
 1. Comment gérer les versions des recettes? RecipeGroup comme avant? Un UserRecipe refère à une Recipe et/ou à un RecipeGroup?
 1. Enlever le truc de c'est quoi qu'il y a des différent à l'intérieur, et offrir la version simplement avec un chiffre. Ou bien un nom d'utilisateur. Dans la barre de recherche, tu sélectionnes le groupe et ensuite tu sélectionnes sur le côté (un peu comme un menu normal d'un UI d'application d'ordinateur) la version que tu veux. Poulet au beurre (Ricardo). Mais fuck poulet au beurre (Condiments en poudre). À la place, quand c'est une recette du site et non une recette d'un utilisateur ou d'un site d'ailleurs, indiqué (ver 2). Pas de version quand il n'y en a juste une. Donc pour poulet au beurre, on a: Poulet au beurre, Poulet au beurre (Ricardo), Poulet au beurre (ver 2). N'importe qui peut créer sa recette! Mais l'image reste la même, celle du groupe. Le groupe sert surtout à avoir une image et lier les recettes du même truc entre eux. Ne pas marqué Poulet au beurre (Ricardo). Marqué un nom entre parathèse seulement quand la recette viens d'un utilisateur.
 1. Units by language, wait no because I want to be able to convert c. à table to table spoons...
@@ -88,6 +87,8 @@ end
 1. Faire un article qui parle de mes cables drums. C'est cool et de toute façon un compétiteur bien antit ne ferait pas pareil. Ça serait probablement coulé en alu à la place ou avec des chaînes.
 
 # Recettes
+https://en.wikibooks.org/wiki/Cookbook:Sauces
+https://en.wikibooks.org/wiki/Cookbook:Recipes
 https://foodgawker.com/page/2/
 https://www.findingvegan.com/
 http://www.tastespotting.com/
@@ -110,6 +111,13 @@ http://www.tastespotting.com/
 1. Crèmes (crème de champignon, crème de poireau)
 1. Soupes
 1. Potages
+1. Ragouts
+1. Riz sauvage
+1. Crêpes
+1. Pain de viande végane
+1. Pâté style tourtière végé
+1. Saucisses véganes
+1. Simuler n'importe quelle viande de manière végane
 
 # Financement
 1. Shuttleworth fondation: https://shuttleworthfoundation.org/apply/form/
@@ -569,4 +577,14 @@ Design mécanique? Ouin pas tant parce que le produit final devra être beaucoup
 **On ne veut pas garder tout le temps les même pots pour les mêmes ingrédients. Parce que cela impliquerait que tu as besoin de 2 pots par ingrédients, ou bien d'attendre qu'il soit vide avant de pouvoir le remplir. Aussi, c'est pas l'idéal pour quand tu dois le remplir.**
 
 1. Au lieu de voir la vise comme une grande main qui tient un pot, voir ça comme deux petit bras qui serre le pot.
+
+
+# Blog
+Non je ne veux pas être une personallité publique... Je ne tolère pas assez la critique.
+1. Faire un screenshot de plusieurs language de programmation et faire voter le monde lequel est le plus beau ESTHÉTIQUEMENT seulement. Personnellement quand j'entends parler sur Hacker News d'un nouveau language de programmation, la première chose que je regarde c'est est-ce qu'il est beau ou pas? Ensuite si je le trouve beau j'en apprends davantage. Peut-être rendre le code dans une autre langue pour que ce soit du guiberish pour que les gens n'ait pas tendance à vouloir voter selon l'efficacité du language de programmation. Juste un mini sample. Par exemple:
+class Zazoo
+  @foo = 10
+  @sdf = 20
+end
+...
 

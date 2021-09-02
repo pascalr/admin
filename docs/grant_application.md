@@ -1,9 +1,5 @@
 # REQUIREMENTS FOR VIDEO
 
-1. Une dizaine de recettes avec photos pour pouvoir dérouler et en voir plusieurs.
-1. Monter ma liste de recettes à moi.
-
-
 Un robot garde-manger: Un robot culinaire qui ajoute lui-même les ingrédients.
 
 Open cooking
@@ -99,42 +95,19 @@ You don't have any milk for your recipe? No worries. It can make some vegetable 
 And when you're done cooking, you put it back on the shelf and it stores everything.
 
 ### Solution site internet
-
 **8s - Voir la page d'acceuil, la souris qui se déplaces sur recettes, voir la liste de recettes qui déroulent, puis la sélection d'une recette**
-
-A website is currently under construction. The goal is to host a large library of recipes freely avaibable for everyone. The main focus are pantry recipes, but others are included as well. The website is only in french for now.
-
+I am currently working on a website to host all the recipes that Heda can help you cook. The main focus are eco-friendly recipes. The website is only in french for now.
 **4s - On voit quelqu'un se créer un compte**
-
-You can create your own account in order to fully use the website's functionallities.
-
-**4s - On voit ajouter à ses favoris (on voit un click ajouter à ses favoris)**
-
-You can keep a list of your favorite recipes.
-
+You must login into your own account in order to fully use the website's functionallities.
+Then, you can keep a list of your recipes.
+You can browse by categories and by recipe name in order to find a recipe quickly. You can also browse by images in order to have an inspiration for what you want to eat.
+**8s - Voir le calendrier**
+You can add recipes to your calendar so Heda will prepare in advance what's needed for the recipe. The grocery list will also be updated automatically.
+**8s - Voir les ingrédients directement dans les instructions**
+One innovation is to add the ingrdients quantity directly into the instructions. This way it is easier to follow the recipe. You don't have to go back and forth between instructions and ingredients.
 **8s - On voit quelqu'un modifier une recette.**
-
 You can modify recipes to your liking.
-
-**8s - On voit ma liste de recettes à moi.**
-
-You can organize your recipes as your wish
-
-**4s - You can share with your friends and family by either setting your account to public or private.**
-
-**8s - Ingredients in the recipe instructions**
-
 **Voir l'inventaire de l'appareil sur le site**
-
-**Voir la planification du calendrier sur le site**
-
-One innovation is to include the ingredients quantities in the recipe instructions. This way it is easier to follow recipes one step at a time.
-
-**4s - On voir le calendrier et la planification de repas, on voit la liste d'épicerie complète**
-
-The goal is to integrate well the website with the robotic pantry.
-
-You can plan meals in advance. The Heda robot will then start at the scheduled time automatically. It can generate then a complete grocery list ahead of time.
 
 ### More about environmental impact of Heda
 
