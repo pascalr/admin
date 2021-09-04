@@ -22,3 +22,7 @@ La frustration et la colère se présente lorsque les choses ne se passent pas c
 ## Humour
 
 1. Des vidéos de recettes. Faire des recettes longues et super belle, belle présentation, et à la toute fin rajouter ben du ketchup, que tu ne vois presque plus le plat principal, ou beaucoup trop de fines herbes, ou de mayo, et faire comme si de rien était que c'était ça la recette finale.
+
+## Pas rapport - Dota 2
+
+Crazy start: Pos 3 alchemist with Pos 1 dark willow

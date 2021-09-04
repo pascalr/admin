@@ -19,6 +19,30 @@ Commencer à vendre des armoires. Distribuer le plan sur internet pour que le mo
 
 1. Aller au canac acheter un 1X5X8 et cosses d'aluminium
 
+1. Dans les recettes, spécifié d'une manière quelquonque explicitement si le déterminent doit être rajouté ou pas. par exemple {1} vs {+1}
+
+{} == substitution
+{1} un chiffre == nom de l'ingrédient
+{-1-8} une liste avec les ingrédients (lorsque c'est la première choses d'une phrase et/ou lorsque que le truc commencent par un tiret
+{d1} déterminant plus le nom de l'ingrédient
+{_1} == juste le nom de l'ingrédient, pas la quantité
+fuck les déterminants lorsqu'il n'y a pas d'unité? ça devient compliqué pour les traductions et ça n'apporte strictement rien.
+c'est ben plus simple de simplement marqué le nom de l'ingrédient dans la recette. au pire utiliser {_1}, mais ça pourrait être cool si on veut que ce soit un lien. Mais pour un lien idéalement utiliser []
+
+$ Pain
+
+Le pain se fait bien à la main, mais cela demande beaucoup de temps de pétrir la pâte. La machine à pain est un outil très utile pour cela. Par contre, je trouve que la cuisson dans une machine à pain est assez décevant. Je suggère d'utiliser la machine à pain dans le mode pétrissage, puis de cuire au four la pâte.
+
+$$ À la machine à pain
+
+# Programmer la machine au mode pétrissage. Programmer l'heure et le minuteur si jamais c'est pour plus tard.
+# Mettre tous les ingrédients dans la machine et démarrer.
+{1-6}
+
+$$ À la main
+
+
+
 1. Un thème récurrant. Les ingrédients en version fraîche ou bien en version déshydratés. Offrir les 2 recettes? Soupe aux patates. Soupe aux patates express. Quand il est inscrit express ça veut dire qu'au moins 1 des ingrédients est déshydraté. Dans les instructions de la recette: _Voir aussi la version rapide: Soupe aux patates express_ ou bien _Voir aussi la version avec des ingrédients frais: Soupe aux patates_ Dans la version express mettre les haricots cuits?
 
 1. Tenir le cable tray vertical en place.
@@ -144,6 +168,10 @@ Pin sélect 1"X4"X (6' ou 8' ou 10' ou 12') (72", 96", 120", 144")
 **1X 8'**: 14,14,14,14,14,14 = 84 vs 96" => PAS SI PIRE!
 
 14,28,42,56,70,84,98,112,126
+
+## Contrepoids
+
+Le contrepoids pourrait utilisé un eyebolt, mais les filets doivent se rendrent tout en haut pour pouvoir serrer le poids de chaque côté. Je ne sais pas si ça existe... Souvent, seulement la moitié est en filet.
 
 ## Étau
 1. Essayer de fabriquer le vise pour qu'il soit indépendant. Pas de trous dans le plywood (sauf peut-être les fils électriques. Ça serait pas mal plus clean. C'est pas grave si ça prends beaucoup de place. De toute façon le robot a besoin d'un espace pour déposer les couvercles. Donc simplement mettre le moteur vers le mur. Et le robot déposera sur le couvercle qui cache le moteur.
