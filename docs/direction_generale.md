@@ -11,40 +11,59 @@ Encourager les gens à manger de manière plus éco-responsable.
 
 Commencer à vendre des armoires. Distribuer le plan sur internet pour que le monde puisse déjà commencer à fabriquer leur propres armoires. Avoir un design fonctionnel qui confirme les dimensions de l'armoire. La simulation doit être capable d'aller chercher et d'aller porter tous les pots. Avoir un design semblant fonctionnel de bras robotique en vrai. Travailler sur la pince surtout... Commencer à faire de la publicité peu à peu. Idéalement, avoir démarré la compagnie par actions. Avoir un site en ligne et publier une recette par semaine.
 
-# Planification (PRIORITÉ: Vidéo)
+# Planification (Reviens toujours)
 
 1. BACKUP
 1. UNE RECETTE PAR SEMAINE. PLANIFIER DANS LE CALENDRIER UN MOIS À L'AVANCE.
 1. RÉPONDRE PEU À PEU AUX QUESTIONS PAR ÉCRIT
 
-1. Aller au canac acheter un 1X5X8 et cosses d'aluminium
+# Planification (PRIORITÉ: Vidéo)
+
+1. Enlever la colle du gripper au millieu. Juste à gauche et à droite. Même pas en haut et en bas.
+
+1. Une image du numéro de version à rajouter par dessus les images des recettes. Peut-être une étoile en rouge avec une écriture jaune? Ver 2, Ver 3, ...
+
+1. Lien vers tremper les pois chiches.
+
+1. TODO: Handle un ingrédient utiliser à plusieurs endroit. 4 c. à table d'huile. {(1 c. à table,1),3-5}
+1. {(1)},{(1 t)},{(1 L,1)}
+
+1. Modification des unités. Un peu plus de...
+
+1. Application pour ne plus avoir à réfléchir sur quoi faire pour soupe? What's for supper? Qu'est-ce qu'on soupe?
+1. Email notifications pour le calendrier repas du lendemain
+
+1. Sabler la tablette
+1. Switch pour détecter la porte est bien fermée.
+
+1. Vegan, végétarien, Gluten-free
+1. Gluten-free logo
+
+1. Ajouter des références aux articles. Par exemple, pourquoi faire tremper les pois chiches de 8 à 24h [*...pois_chiches#Trempage des pois chiches]
+
+NE PAS RÉUTILISER. COPIER COLLER POUR CHAQUE RECETTE.
 
 1. Dans les recettes, spécifié d'une manière quelquonque explicitement si le déterminent doit être rajouté ou pas. par exemple {1} vs {+1}
 
 {} == substitution
 {1} un chiffre == nom de l'ingrédient
+{1.0} un float == une quantitée
 {-1-8} une liste avec les ingrédients (lorsque c'est la première choses d'une phrase et/ou lorsque que le truc commencent par un tiret
 {d1} déterminant plus le nom de l'ingrédient
 {_1} == juste le nom de l'ingrédient, pas la quantité
 fuck les déterminants lorsqu'il n'y a pas d'unité? ça devient compliqué pour les traductions et ça n'apporte strictement rien.
 c'est ben plus simple de simplement marqué le nom de l'ingrédient dans la recette. au pire utiliser {_1}, mais ça pourrait être cool si on veut que ce soit un lien. Mais pour un lien idéalement utiliser []
+% pour substitution peut-être aussi
+= add(10) => fonction comme dans excel
+/ Hello => paragraphe en italic
 
-$ Pain
-
-Le pain se fait bien à la main, mais cela demande beaucoup de temps de pétrir la pâte. La machine à pain est un outil très utile pour cela. Par contre, je trouve que la cuisson dans une machine à pain est assez décevant. Je suggère d'utiliser la machine à pain dans le mode pétrissage, puis de cuire au four la pâte.
-
-$$ À la machine à pain
-
-# Programmer la machine au mode pétrissage. Programmer l'heure et le minuteur si jamais c'est pour plus tard.
-# Mettre tous les ingrédients dans la machine et démarrer.
-{1-6}
-
-$$ À la main
-
+1. Dans le truc de recherche rajouter le logo, sans gluten, végane, végétarien, à la droite des versions...
 
 
 1. Un thème récurrant. Les ingrédients en version fraîche ou bien en version déshydratés. Offrir les 2 recettes? Soupe aux patates. Soupe aux patates express. Quand il est inscrit express ça veut dire qu'au moins 1 des ingrédients est déshydraté. Dans les instructions de la recette: _Voir aussi la version rapide: Soupe aux patates express_ ou bien _Voir aussi la version avec des ingrédients frais: Soupe aux patates_ Dans la version express mettre les haricots cuits?
+1. Rajouter version:integer à une recette. Validate uniqueness name AND version
 
+1. Cable 25"+2X(56")+2X(2"[pour la boucle]) == 141" (moins 2" parce que ça adonne de même) == 139"! FIXME: 2 tours au lieu de 1...
 1. Tenir le cable tray vertical en place.
 1. Lumières dans l'armoire (https://www.amazon.ca/Govee-Upgraded-Dimmable-Daylight-Flexible/dp/B07V46H7YL/ref=sr_1_4?dchild=1&keywords=white+led+strip+lights&qid=1630604006&s=hi&sr=1-4)
 1. Vider l'armoire et la remplir de pots pour pouvoir prendre des photos et des vidéos.
@@ -188,6 +207,9 @@ Le contrepoids pourrait utilisé un eyebolt, mais les filets doivent se rendrent
 J'aimerais que le homing se fasse sans limit switch. Simplement en le déplaçant manuellement à sa maison et avec la caméra pour axe B.
 
 ## Câbles électriques
+
+Pour les LEDs, voir le petit papier avec lequel ça venait.
+Du 22 solid serait donc probablement correct.
 
 Ce que j'ai besoin:
 - Câble moteur 2.8A pour axe B et axe X.

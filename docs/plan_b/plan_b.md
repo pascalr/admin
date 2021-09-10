@@ -14,6 +14,7 @@ La frustration et la colère se présente lorsque les choses ne se passent pas c
 1. Un chalumeau pour les érables qui n'abiment pas les arbres. Idéalement réutilisable à toutes les années. Genre greffés.
 1. Un robot qui désherbe
 1. Faire des expériences sur la nourriture. Sur la faim. Manger des gros volumes de trucs sans calories. Manger des petites quantitées de trucs très calorique. Manger juste du sucre. Manger juste du gras. Manger juste des protéines...
+1. Un search engine qui est un regroupement d'autres sites. Par exemple, tu tappes The Matrix, ça détecte que ce que tu cherches est un film (tu peux modifier évidement pour désambiguer, il reste un top bar en haut de la page dans lequel il y a ton search query, et ça va dans le site #1 directement de films, par exemple IMDB) Les autres sites qui vont direct dessus sont d'autres sites qui sont des regroupements de choses. En te créant un compte, tu peux choisir c'est quoi ton site préféré pour trouver telle affaire. Par exemple, wikipedia pour les films. Ça serait peut-être une extension dans le browser, et là tu pourrait naviguer facilement à gauche d'un site à l'autre, et tout en haut tu aurais ta barre de recherche. Mais quel problème est-ce que j'essaie de résoudre en faisant ça? Google fonctionne très bien... Ce n'est pas une bonne idée...
 
 ### Politique
 
