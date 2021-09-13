@@ -9,6 +9,10 @@ Quest: Eat in a earth-friendly way
 Protagonist: You
 Enemy: Time
 
+# TODO:
+
+Ajouter des références comme Paul Graham un peu.
+
 ## Vidéo:
 
 1. (16s) Introduction
@@ -152,13 +156,33 @@ Explain about the business model. I want to sell kits that people can buy and as
 ## 1) Tell us about the world as you see it.
 (A description of the status quo and context in which you will be working)
 
-I come from Québec, the french part of Canada. I am lucky to have been raised well by a modest, but loving family on a farm.
+I come from Québec, the french part of Canada. I am lucky to have been raised well by a modest, but loving family on a farm. I am a self-taught multi-disciplinary person. I love technology and what it enables us to do. Give me a computer with an internet connection and I feel there is nothing I can't do.
 
-I am a self-taught multi-disciplinary person. I love technology and what it enables us to do. Give me a device with an internet connection and I feel there is nothing I can't do.
+I am also an optimist. When I watch science-fiction movies set in the future, I don't understand why they are all so bleak. Personally, I have high hopes for the future of humanity. But we have to survive the next centuries to keep evolving and make our civilisation stand the test of time.
 
-I am an optimist. When I watch science-fiction movies set in the future, I don't understand why they are all so bleak. Personally, I have high hopes for the future of humanity. But we have to survive the next centuries to keep evolving and make our civilisation stand the test of time.
+One of the greatest treats to humanity is the environment. The most obvious issue being the climate change. There is a lot of room for improvements. Currently, I am especially focusing on the food aspect. I am concerned about transportation, trash, waste and the type of food.
 
-One of the greatest treats to humanity is the environment. The most obvious issue being the climate change. Issues: climate change, overpopulation and accumulation of waste.
+Transportation is frequently inneficient for food[1]. Raw food is transported accross the world to be transformed in another country where there is more technology or cheap labor. Then the transformed product travels again accross the world to reach the supermarket shelves.[2]
+
+Energy is also wasted on single-use packaging. Not only does it waste energy to package, it accumules trash. Worst of all, it is not always properly disposed of and is often found polluting the environment.
+
+There is also a lot food waste. This is really bad because it takes all the energy it took to produce, transform, package and transport the food and throws it all away for nothing.
+
+One of the main environmental factor is the type of food.[3] Some types are really more environmentally friendly than others. For example, plant based diets are usually much earthy frienlier than meat based diets. Unfortunately, it takes a lot of time to cook vegetarian. For example, to cook vegetarian, you often have to cook the meat substitute, than you can cook your recipe as usual. You cook vegan sausages with seitan, caramelized onions and other ingredients, then you can eat your stew with sausages inside.
+
+There are some solutions already that aims to fix thoses issues, but none are ideal.
+
+There is slowly starting to have more and more choice of transformed meat substitute. So this can save time, but it does not solve the other issues. Also, they are usually expensive. They should be cheap because the raw ingredients are cheap.
+
+Ready-to-cook boxes aim at lowering food waste by giving you just enough and no more to make a recipe. It may help for food waste, but it usually adds transportation to deliver the boxes. Also, they are usually terrible with packaging. They package every item separately in single-use plastics. Plus, it is not cheap. This is environmentally important because if you took all the money you saved and paid for carbon sequestration instead, you would make a much better impact.
+
+Some restaurants are environmentally conscious. So this can be a good solution for people who have the means. But again, this is expensive. Also, eating at home gives more freedom because you can eat exactly what you want, the way you want it.
+
+Since the beginning of Covid 19, I have been trying to tackle these issues with a project of mine that I working full time on.
+
+[1] https://foodpolicyforcanada.info.yorku.ca/goals/goal-5/sustainable-transportation/challenges-transport/
+[2] https://ici.radio-canada.ca/mordu/2894/voyage-poires-publication-virale-mondialisation
+[3] https://ourworldindata.org/environmental-impacts-of-foo
 
 **Important!!!**
 ## 2) What change do you want to make in the world?
@@ -168,7 +192,7 @@ I want a world where you go at a local market and buy products without any packa
 
 I want people to buy food in bulk without packaging and I want people to eat more earth-friendly food. I plan to achieve this by making the process easier.
 
-For the past year and a half, I have been working on an invention of mine: a pantry robot. The idea is to have a cupboard with containers to store dry ingredients and with a robotic arm which handles the inventory and also helps with cooking.
+For the past year and a half, I have been working on an invention of mine: a pantry robot. The idea is to have a cupboard with containers to store dry ingredients combined with a robotic arm which handles the inventory and also helps with cooking.
 
 The robot would keep an eye out for the inventory and generate a grocery list automatically. No more need to worry about missing something. You can even access your inventory from anywhere, anytime, to reassure yourself.
 
