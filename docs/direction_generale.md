@@ -5,19 +5,43 @@ Encourager les gens à manger de manière plus éco-responsable.
 - Un site de recette avec des recettes éco-responsables.
 - Un armoire de cuisine intelligente qui évite le gaspillage alimentaire
 - Suggestions de recettes avec des aliments du garde-manger qui sont plus écologiques
-- Transformation d'aliments primaires à la maison
+- Transformation d'aliments primaires à la maison pour sauver de l'argent
 
 # Vision (6 mois)
 
 Commencer à vendre des armoires. Distribuer le plan sur internet pour que le monde puisse déjà commencer à fabriquer leur propres armoires. Avoir un design fonctionnel qui confirme les dimensions de l'armoire. La simulation doit être capable d'aller chercher et d'aller porter tous les pots. Avoir un design semblant fonctionnel de bras robotique en vrai. Travailler sur la pince surtout... Commencer à faire de la publicité peu à peu. Idéalement, avoir démarré la compagnie par actions. Avoir un site en ligne et publier une recette par semaine.
 
-# Planification (Reviens toujours)
+# Routine
 
-1. BACKUP
-1. UNE RECETTE PAR SEMAINE. PLANIFIER DANS LE CALENDRIER UN MOIS À L'AVANCE.
-1. RÉPONDRE PEU À PEU AUX QUESTIONS PAR ÉCRIT
+## Hebdomadaire
+Mercredi:
+1. Cuisiner une recette.
+
+Jeudi:
+1. Prendre en photo la recette et rédiger sur internet.
+
+Vendredi:
+1. Backup Admin, Hedacuisine, ImageEditor
+
+## Mensuel
+
+1. Planifier une recette par semaine pour le mois prochain.
 
 # Planification (PRIORITÉ: Vidéo)
+
+1. Valider recette de pain à la main
+
+1. Faire des liens vers les notes.
+
+1. Un calendrier sans machine?
+
+1. Pouvoir cacher des sections des recettes. Par exemple, cacher Instructions à la main de la recette de pain. Très utile pour imprimer.
+
+1. RÉPONDRE PEU À PEU AUX QUESTIONS PAR ÉCRIT
+
+1. Au lieu de Appareils dans la barre en haut, mettre un dropdown avec les machines de l'utilisateur actuel. Quoi mettre lorsque l'utilisateur n'en a pas? Comment atteindre le calendrier?
+
+1. Image editor garder correctement toutes les images actuelles (rsync? dropbox)
 
 1. Enlever la colle du gripper au millieu. Juste à gauche et à droite. Même pas en haut et en bas.
 
