@@ -1,3 +1,5 @@
+# Plan
+
 # REQUIREMENTS FOR VIDEO
 
 Un robot garde-manger: Un robot culinaire qui ajoute lui-même les ingrédients.
