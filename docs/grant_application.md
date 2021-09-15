@@ -158,33 +158,34 @@ Explain about the business model. I want to sell kits that people can buy and as
 ## 1) Tell us about the world as you see it.
 (A description of the status quo and context in which you will be working)
 
-I come from Québec, the french part of Canada. I am lucky to have been raised well by a modest, but loving family on a farm. I am a self-taught multi-disciplinary person. I love technology and what it enables us to do. Give me a computer with an internet connection and I feel there is nothing I can't do.
+I come from Québec, the french part of Canada. I am a self-taught multi-disciplinary person. I love technology and what it enables us to do. Give me a computer with an internet connection and I feel like there is nothing I can't do.
 
 I am also an optimist. When I watch science-fiction movies set in the future, I don't understand why they are all so bleak. Personally, I have high hopes for the future of humanity. But we have to survive the next centuries to keep evolving and make our civilisation stand the test of time.
 
-One of the greatest treats to humanity is the environment. The most obvious issue being the climate change. There is a lot of room for improvements. Currently, I am especially focusing on the food aspect. I am concerned about transportation, trash, waste and the type of food.
+One of the greatest treats to humanity is the environment. The most obvious issue being the climate change. There is a lot of room for improvements. Currently, I am working to improve the environmental aspect of food. I am concerned about transportation, trash, waste and the choice of diet.
 
-Transportation is frequently inneficient for food[1]. Raw food is transported accross the world to be transformed in another country where there is more technology or cheap labor. Then the transformed product travels again accross the world to reach the supermarket shelves.[2]
+JE N'AIME PAS CE PARAGRAPHE... Transportation is frequently inneficient for food[1]. Raw food is transported accross the world to be transformed in another country where there is more technology or cheap labor. Then the transformed product travels again accross the world to reach the supermarket shelves.[2]
 
 Energy is also wasted on single-use packaging. Not only does it waste energy to package, it accumules trash. Worst of all, it is not always properly disposed of and is often found polluting the environment.
 
-There is also a lot food waste. This is really bad because it takes all the energy it took to produce, transform, package and transport the food and throws it all away for nothing.
+There is also the issue of food waste. Roughly a third of the food produced for human consumption is wasted every year[4]. It is especially bad because it takes all the energy it took to produce, transform, package and transport the food and throws it all away for nothing.
 
-One of the main environmental factor is the type of food.[3] Some types are really more environmentally friendly than others. For example, plant based diets are usually much earthy frienlier than meat based diets. Unfortunately, it takes a lot of time to cook vegetarian. For example, to cook vegetarian, you often have to cook the meat substitute, than you can cook your recipe as usual. You cook vegan sausages with seitan, caramelized onions and other ingredients, then you can eat your stew with sausages inside.
+Last but not least, not all types of food have the same environment impact. Some types require a lot more ressources to produce. For example, meat based diets usually have a much higher carbon footprint than plant based diets.[3] Unfortunately, it takes a lot of time to cook vegetarian. For example, to cook vegetarian, you often have to cook the meat substitute, than you can cook your recipe as usual. You cook vegan sausages with seitan, caramelized onions and other ingredients, then you can eat your stew with sausages inside.
 
-There are some solutions already that aims to fix thoses issues, but none are ideal.
+There already exists some solutions that aims to fix thoses issues, but none are ideal.
 
-There is slowly starting to have more and more choice of transformed meat substitute. So this can save time, but it does not solve the other issues. Also, they are usually expensive. They should be cheap because the raw ingredients are cheap.
+There is slowly more and more choices of transformed meat substitutes. So this can save time, but it does not solve the other issues of transportation, packaging and food waste. Also, they are usually expensive. They should be cheap because the raw ingredients are cheap.
 
-Ready-to-cook boxes aim at lowering food waste by giving you just enough and no more to make a recipe. It may help for food waste, but it usually adds transportation to deliver the boxes. Also, they are usually terrible with packaging. They package every item separately in single-use plastics. Plus, it is not cheap. This is environmentally important because if you took all the money you saved and paid for carbon sequestration instead, you would make a much better impact.
+Ready-to-cook boxes aim at lowering food waste by giving you just enough and no more to make a recipe. It may help for food waste, but it usually adds transportation to deliver the boxes. Also, they are usually terrible with packaging. They package every item separately in single-use plastics. Plus, it is not cheap. This is environmentally important because if you took all the money you saved and paid for carbon sequestration instead, you would make a much better impact. [CITATION NEEDED]
 
 Some restaurants are environmentally conscious. So this can be a good solution for people who have the means. But again, this is expensive. Also, eating at home gives more freedom because you can eat exactly what you want, the way you want it.
 
 Since the beginning of Covid 19, I have been trying to tackle these issues with a project of mine that I working full time on.
 
-[1] https://foodpolicyforcanada.info.yorku.ca/goals/goal-5/sustainable-transportation/challenges-transport/
+[1] https://foodpolicyforcanada.info.yorku.ca/goals/goal-5/sustainable-transportation/challenges-transport/ OUIN MOYEN RELIRE POUR VOIR SI C'EST VRAI QUE CA PROUVE MON POINT...
 [2] https://ici.radio-canada.ca/mordu/2894/voyage-poires-publication-virale-mondialisation
 [3] https://ourworldindata.org/environmental-impacts-of-foo
+[4] https://stopwastingfoodmovement.org/food-waste/food-waste-facts/
 
 **Important!!!**
 ## 2) What change do you want to make in the world?
@@ -192,51 +193,21 @@ Since the beginning of Covid 19, I have been trying to tackle these issues with 
 
 I want a world where you go at a local market and buy products without any packaging. You bring those raw ingredients from the field and transform them at home into delicious meals.
 
-I want people to buy food in bulk without packaging and I want people to eat more earth-friendly food. I plan to achieve this by making the process easier.
+Concretely, I want people to buy food in bulk without packaging and I want people to eat more earth-friendly food. I plan to achieve this by making the process easier.
 
 For the past year and a half, I have been working on an invention of mine: a pantry robot. The idea is to have a cupboard with containers to store dry ingredients combined with a robotic arm which handles the inventory and also helps with cooking.
 
-The robot would keep an eye out for the inventory and generate a grocery list automatically. No more need to worry about missing something. You can even access your inventory from anywhere, anytime, to reassure yourself.
+The robot would keep an eye out for the inventory and generate a grocery list automatically. It tells you how much to buy of each ingredient based on your habits and your cooking calendar. It tells you which container size to use and how much to fill it. Also, you can even access your inventory from anywhere, anytime, to check how much of something you have remaining.
 
-In a smart fridge, they use cameras and scales to handle the inventory. The advantage of using a robotic arm instead, is that it has to potential to do so much more. You can select a recipe and the robot will bring out the required ingredients. It can store everything when you're finished. It can do mixes.
+In a smart fridge, they use cameras and scales to handle the inventory. The advantage of using a robotic arm instead, is that it has to potential to do so much more. You can select a recipe and the robot will bring out the required ingredients. It can store everything when you're finished. It can also mix ingredients together.
 
 I plan to integrate a water intake to be able to clean and soak ingredients. I also want to incorporate a hand mixer, a spatula and a dough hook. This would allow the robot to do complex recipes like bread dough, bean salads, cake batter, etc.
 
 In the best of worlds, the machine would also include a tiny dishwasher that self-cleans the containers and the tools it uses.
 
-A great advantage of cooking with pantry ingredients is that they are generally very environmentally-friendly like beans, grains and flours. Another plus, is that it is very economical. I am always designed my product with price in mind. I want my product to be an investment that saves you money in the long run by cooking cheap basic ingredients.
+A great advantage of cooking with pantry ingredients is that they are generally very environmentally-friendly like beans, grains and flours. Plus, is that it is very economical. I am always designing my product with price in mind. I want my product to be an investment that saves you money in the long run by cooking cheap basic ingredients.
 
-I want to make it more easy to eat vegetarian than to eat meat. For example, you need ground beef to make hamburgers which has a low shelf life, of then it is frozen and you have to thing in advance to unfreeze it. With vegetarian burgers and my product, you always can eat hambugers. Just press one button the morning or the night before, and the robot will soak, and cook the beans et prepare the whole burger mixture. The only thing left will be to shape and cook the burgers.
-
-More easy to eat vegetarian also by giving open access to a lot of vegetarian recipes.
-
-I want people to eat more earth-friendly food.
-
-My solution to eating more environmentally-friendly food at home is 
-
-The first issue I want to tackle is to reduce the amount of single-use food packaging. A simple solution is to bring your own containers and to fill them with food bought in bulk.
-
-This is great for primary ingredients, but it does not work so well with transformed, perishable food. The solution is then to transform and cook food youself at home. But this takes a lot of time.
-
-For example, instead of buying bread in a plastic bag, you flour, sugar, salt 
-
-But this takes a lot of time.
-
-I want people to buy food in bulk without packaging.
-
-I want to make home-cooking earth-friendly cheap and easy.
-
-I would like people to eat more earth-friendly food. I want to achieve that by convincing their wallet and their lazyness.
-
-For example, I want more people to eat vegetarian burgers which are a lot more environment-friendly and much cheaper too. But it is easier to cook meat burgers. With beans, you have plan and not forget the night to soak them, cook them, prepare the mixture and then you have to cook the burgers.
-
-Another reason some people prefer to eat meat burgers is taste. But I believe this is more about habits. My favourite meal used to be beef hamburgers, but now I like vegetarian hamburgers just as muched.
-
-One of the main issue with cooking earth-friendly food is the lack of time.
-
-I have been working for the past year and a half on a pantry robot.
-
-Another great advance is that this way you eat more fresh! Instead of buying a big bread every couple of days, you can cook a small bread every day.
+I want to make it more easy to eat vegetarian than to eat meat. For example, to make hamburgers, you need ground beef which has a low shelf life. You can freeze it, but then you have to think in advance to unfreeze it. With vegetarian burgers and my product, you can always eat hambugers. Just add "chickpea burgers" to your calendar, and the robot will soak and cook the beans. It will prepare the whole burger mixture by mixing seasonings. The only thing left will be to shape and cook the burgers.
 
 To summarize, I want people to be able to eat earth-friendly food easily and to reduce the amount of food packaging by cooking with a pantry robot.
 
@@ -244,17 +215,44 @@ To summarize, I want people to be able to eat earth-friendly food easily and to 
 ## 3) What do you believe has prevented this change to date?
 (Describe the innovations or questions you would like to explore during the fellowship year)
 
-I see two main reasons this change was not yet made: the technology is recent and the technology is expensive.
+I believe that people are not eating in an environmentally-friendly way because it is easier. It is easy for fast-food restaurants to give food in throwable containers instead of doing the dishes. It is easy to buy food in cardboard and plastic at the grocery store. It is easy to cook meals with meat because they usually taste good without much effort.
 
-If you look at competitors like Molley Robotics, you see it is a hard field.
+I want to explore finding delicious eco-friendly recipes.
+
+I believe my solution does not exists yet because the technology is relatively new and it is costly to develop. Robotics can get expensive really quickly. One of my competitor is Moley Robotics. They offer a robot that cooks at a price of $335,000 USD.[1] This is not what I want to make. I want to make an affordable robot for every household. Obviously it will be able to execute much less actions, but by focusing mostly on pantry recipes, I believe I can achieve enough.
+
+The first model I plan to release will probably be targeted at a more high-end customers. Over time, I should be able to save costs by producing larger quantities. I want to do the same thing than for 3d printers. They were quite expensive at the beginning, but now they can be a common household item.
+
+
+
+
+Another reason this does not exist yet is that the technology is relatively recent. It takes time do develop an affordable solution. It took time for smart fridge to become a real product. At first, people tought it was useless for the price. But slowly the companies were able to lower the price and people started to see the usefullness.
+
+Home robotics is an area which is constantly increasing. The robotic flour cleaner and grass mower being the two most successful examples for now.
+
+[1] https://thespoon.tech/moleys-robotic-kitchen-goes-on-sale/
 
 **Important!!!**
 ## 4) What are you going to do to get there?
 (A description of what you actually plan to do during the year)
 
-I want keep working on this full-time.
+There is still a lot that needs to be done. On the product side, I need to keep working on the cooking website, the cupboard, a robotic simulation and the actual robot. On the business side, I need to incorporate the company, ...
 
-Receiving this grant would allow me to keep working full-time and it would allow to hire someone to work with me.
+I am working on a cooking website to host the user's recipes. I am slowly building a libray of recipes for personal use and for marketing. I want to use the website as a way to attract customers. You see a recipe and it tells you how much time you would save if you bought our machine. The website could also be a way to generate revenue.
+
+The cupboard is well developped. I would like to start selling some empty cupboards. It can be used well without the robotic arm inside. The customer will then be able to install the robotic arm inside the cupboard. I want to make a webpage and a video that teach people how to make their own cupboard. They would 
+
+A robotic simulation is required in order to develop the robotic arm. The simulation helps to determine what is actually feasible. The product will live in a home kitchen so it has strict requirements. It must be compact, quiet, safe, pretty and functional. Once we know what can be done, it is very helpful that help achieve it. For example, the simulation helps to visualize the inventory from the robots perspective and it helps with motion planning.
+
+The actual robot is where there is the most work left to be done. The current robotic arm is still a prototype. I am slowly replacing 3d printed parts with proper parts. I am constantly improving the design. Camera. Gripper.
+
+On the business side, this project is currently a one person job. If I get this grant, one thing I would love to do is to hire someone to work with me.
+
+The company is not yet incorporated.
+
+For the company, I aim to model what FarmBot[1] is doing. They are an company that your organisation supported in 2014. This is how I found out about the Shuttleworth Foundation. I want to spend some time developping the product, then load a crowdfunding campaign. It is usefull for gaining visibility, sales and financing in order to manufacture.
+
+[1] https://farm.bot/
 
 **Important!!!**
 ## 5) What challenges or uncertainties do you expect to face?
@@ -263,7 +261,9 @@ Challenge 1: Being able to sell my product. My product is similar to smart fridg
 
 ## 6) What part does openness play in your idea?
 
-Openness is one of my core values. I've always used open software almost exclusively (Linux/Godot/Freecad/OpenShot/Krita and so much more) and the least I can do is contribute back.
+Openness has always been one of my values.
+
+I've always used open software almost exclusively. I am using Linux, Firefox, Godot, Freecad, LibreOffice, Gimp, OpenShot, Krita and so much more. the least I can do is contribute back.
 
 Being an electromechanic, I am used to repair all sorts of things and I understand how frustrating it is when you can't find schematics or spare parts for something you bought. I want my project to not only be open-source, but to be open-hardware.
 
@@ -292,6 +292,20 @@ Automation. This is my domain of expertise. To solve the environement, we could 
 or we can go forward. I don't believe we are ever going to go backwards, so I believe in automation to solve the environment issue.
 
 # Deprecated
+
+I am lucky to have been raised well by a modest, but loving family on a farm.
+
+no more need to worry about missing something
+
+The first issue I want to tackle is to reduce the amount of single-use food packaging. A simple solution is to bring your own containers and to fill them with food bought in bulk.
+
+This is great for primary ingredients, but it does not work so well with transformed, perishable food. The solution is then to transform and cook food youself at home. But this takes a lot of time.
+
+I would like people to eat more earth-friendly food. I want to achieve that by convincing their wallet and their lazyness.
+
+Another reason some people prefer to eat meat burgers is taste. But I believe this is more about habits. My favourite meal used to be beef hamburgers, but now I like vegetarian hamburgers just as muched.
+
+Another great advance is that this way you eat more fresh! Instead of buying a big bread every couple of days, you can cook a small bread every day.
 
 There is a lot of room for improvements for reducing that number. By avoiding packaging which takes a lot of ressources to produce. By reducing transportation and buying locally. By avoiding food waste which takes all the energy it took to produce it and throws it all away. And finally by choosing to eat ingredients that are more environmentally friendly.
 

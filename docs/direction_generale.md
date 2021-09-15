@@ -29,6 +29,16 @@ Vendredi:
 
 # Planification (PRIORITÉ: Vidéo)
 
+1. Laisser l'utilisateur choisir le nom quand il y en a plusieurs.
+
+1. Pouvoir substituer les ingrédients en cliquant sur le crayon avec un carré autour. Le faire avec ail. Gousse d'ail, Tête d'ail, Ail écrasé, Ail émincé, Ail hâché, Poudre d'ail. Dans le dropdown faire une flèche sur le côté avec les substitutions possibles. Les instructions de la recettes ne seront pas modifié, mais ce n'est pas grave. Offrir à l'utilisateur la possibilité de changer les instructions. Dans le fond, lorsque l'utilisateur clique sur une substitution, ce qui se passe est qu'une recette est créer pour l'utilisateur si elle n'existe pas déjà (2e modification). Et cette recette est enregistrer selon les modification. Dans le fond, la recette est dupliqué et les changements se font sur la recette dupliqué.
+
+1. Pour montrer que c'est possible de substituer des ingrédients, ajouter une flèche rouge qui pointe vers le truc pour pouvoir modifier les ingrédients.
+
+1. Compiler le site internet statique. Les utilisateurs connectés utilisent le site internet en ligne. Les utilisateurs non connectés regardent la version statique compilé. Pour compiler, télécharger la base de donnée. Rouler le site localement en mode production. Crawler mon propre site internet.
+
+1. Si jamais les utilisateurs peuvent créer du contenu, faire très attention à la sécurité. Par exemple, éviter html_safe. Sanitize properly.
+
 1. Valider recette de pain à la main
 
 1. Faire des liens vers les notes.
@@ -153,7 +163,10 @@ c'est ben plus simple de simplement marqué le nom de l'ingrédient dans la rece
 1. Démarrer l'entreprise officiellement. Puis contacter des médias et essayer de faire parler de l'entreprise
 1. Faire un article qui parle de mes cables drums. C'est cool et de toute façon un compétiteur bien antit ne ferait pas pareil. Ça serait probablement coulé en alu à la place ou avec des chaînes.
 
+
 # Recettes
+https://recipes.fandom.com/wiki/Recipes_Wiki
+https://www.lacuisinedejeanphilippe.com/recettes/
 https://en.wikibooks.org/wiki/Cookbook:Sauces
 https://en.wikibooks.org/wiki/Cookbook:Recipes
 https://foodgawker.com/page/2/
