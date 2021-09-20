@@ -162,27 +162,26 @@ I come from Québec, the french part of Canada. I am a self-taught multi-discipl
 
 I am also an optimist. When I watch science-fiction movies set in the future, I don't understand why they are all so bleak. Personally, I have high hopes for the future of humanity. But we have to survive the next centuries to keep evolving and make our civilisation stand the test of time.
 
-One of the greatest treats to humanity is the environment. The most obvious issue being the climate change. There is a lot of room for improvements. Currently, I am working to improve the environmental aspect of food. I am concerned about transportation, trash, waste and the choice of diet.
+One of the greatest treats to humanity is the environment. The most obvious issue being the climate change. There is a lot of room for improvements. Currently, I am working to improve the environmental aspect of food. I am concerned about transportation, trash, waste and diets.
 
-JE N'AIME PAS CE PARAGRAPHE... Transportation is frequently inneficient for food[1]. Raw food is transported accross the world to be transformed in another country where there is more technology or cheap labor. Then the transformed product travels again accross the world to reach the supermarket shelves.[2]
+Needless to say transportation emits greenhouse gas emissions. I believe we could reduce them by avoiding transportation to transformation factories far away. Raw food is frequently transported accross the world to be transformed in another country where there is more technology or cheap labor. Then the transformed product travels again accross the world to reach the end customer.[2]
 
 Energy is also wasted on single-use packaging. Not only does it waste energy to package, it accumules trash. Worst of all, it is not always properly disposed of and is often found polluting the environment.
 
 There is also the issue of food waste. Roughly a third of the food produced for human consumption is wasted every year[4]. It is especially bad because it takes all the energy it took to produce, transform, package and transport the food and throws it all away for nothing.
 
-Last but not least, not all types of food have the same environment impact. Some types require a lot more ressources to produce. For example, meat based diets usually have a much higher carbon footprint than plant based diets.[3] Unfortunately, it takes a lot of time to cook vegetarian. For example, to cook vegetarian, you often have to cook the meat substitute, than you can cook your recipe as usual. You cook vegan sausages with seitan, caramelized onions and other ingredients, then you can eat your stew with sausages inside.
+Last but not least, not all types of food have the same environment impact. Some types require a lot more ressources to produce. For example, meat based diets usually have a much higher carbon footprint than plant based diets.[3] Unfortunately, it takes a lot of time to cook vegetarian and it is not to everyone's taste.
 
 There already exists some solutions that aims to fix thoses issues, but none are ideal.
 
-There is slowly more and more choices of transformed meat substitutes. So this can save time, but it does not solve the other issues of transportation, packaging and food waste. Also, they are usually expensive. They should be cheap because the raw ingredients are cheap.
+There is slowly more and more choices of transformed meat substitutes. This helps to eat low carbon footprint meals by saving time cooking, but it does not solve the other issues of transportation, packaging and food waste. Also, they are usually expensive. They should be cheap because the raw ingredients are cheap.
 
-Ready-to-cook boxes aim at lowering food waste by giving you just enough and no more to make a recipe. It may help for food waste, but it usually adds transportation to deliver the boxes. Also, they are usually terrible with packaging. They package every item separately in single-use plastics. Plus, it is not cheap. This is environmentally important because if you took all the money you saved and paid for carbon sequestration instead, you would make a much better impact. [CITATION NEEDED]
+Ready-to-cook boxes aim at lowering food waste by giving you just enough and not too much to make a recipe. It may help for food waste, but it usually adds transportation to deliver the boxes. Also, they are usually terrible with packaging. They package every item separately in single-use plastics. Plus, it is not cheap. This is environmentally important because if you took all the money you saved and paid for carbon sequestration instead, you would make a much better impact. [CITATION NEEDED]
 
 Some restaurants are environmentally conscious. So this can be a good solution for people who have the means. But again, this is expensive. Also, eating at home gives more freedom because you can eat exactly what you want, the way you want it.
 
 Since the beginning of Covid 19, I have been trying to tackle these issues with a project of mine that I working full time on.
 
-[1] https://foodpolicyforcanada.info.yorku.ca/goals/goal-5/sustainable-transportation/challenges-transport/ OUIN MOYEN RELIRE POUR VOIR SI C'EST VRAI QUE CA PROUVE MON POINT...
 [2] https://ici.radio-canada.ca/mordu/2894/voyage-poires-publication-virale-mondialisation
 [3] https://ourworldindata.org/environmental-impacts-of-foo
 [4] https://stopwastingfoodmovement.org/food-waste/food-waste-facts/
@@ -193,11 +192,11 @@ Since the beginning of Covid 19, I have been trying to tackle these issues with 
 
 I want a world where you go at a local market and buy products without any packaging. You bring those raw ingredients from the field and transform them at home into delicious meals.
 
-Concretely, I want people to buy food in bulk without packaging and I want people to eat more earth-friendly food. I plan to achieve this by making the process easier.
+Concretely, I want people to buy food in bulk without packaging, to eat more earth-friendly food and to cook more meals at home. I plan to achieve this by making the process easier.
 
 For the past year and a half, I have been working on an invention of mine: a pantry robot. The idea is to have a cupboard with containers to store dry ingredients combined with a robotic arm which handles the inventory and also helps with cooking.
 
-The robot would keep an eye out for the inventory and generate a grocery list automatically. It tells you how much to buy of each ingredient based on your habits and your cooking calendar. It tells you which container size to use and how much to fill it. Also, you can even access your inventory from anywhere, anytime, to check how much of something you have remaining.
+The robot would keep an eye out for the inventory and generate a grocery list automatically. It tells you how much to buy of everything based on your habits and your meals planned in your calendar. It tells you which container size to use and how much to fill it. Also, you can even access your inventory from anywhere, anytime, to check how much of something you have remaining.
 
 In a smart fridge, they use cameras and scales to handle the inventory. The advantage of using a robotic arm instead, is that it has to potential to do so much more. You can select a recipe and the robot will bring out the required ingredients. It can store everything when you're finished. It can also mix ingredients together.
 
@@ -205,9 +204,9 @@ I plan to integrate a water intake to be able to clean and soak ingredients. I a
 
 In the best of worlds, the machine would also include a tiny dishwasher that self-cleans the containers and the tools it uses.
 
-A great advantage of cooking with pantry ingredients is that they are generally very environmentally-friendly like beans, grains and flours. Plus, is that it is very economical. I am always designing my product with price in mind. I want my product to be an investment that saves you money in the long run by cooking cheap basic ingredients.
+A great advantage of cooking with pantry ingredients is that they are generally very environmentally-friendly like beans, grains and flours. Plus, it's very economical. I am always designing my product with price in mind. I want my product to be an investment that saves you money in the long run by cooking cheap basic ingredients.
 
-I want to make it more easy to eat vegetarian than to eat meat. For example, to make hamburgers, you need ground beef which has a low shelf life. You can freeze it, but then you have to think in advance to unfreeze it. With vegetarian burgers and my product, you can always eat hambugers. Just add "chickpea burgers" to your calendar, and the robot will soak and cook the beans. It will prepare the whole burger mixture by mixing seasonings. The only thing left will be to shape and cook the burgers.
+I want to make it more easy to eat vegetarian than to eat meat. For example, to make hamburgers, you need ground beef which has a low shelf life. You can freeze it, but then you have to think in advance to unfreeze it. With vegetarian burgers and my product, you can always eat hambugers. Just add "chickpea burgers" to your calendar, and the robot will soak and cook the beans. It will prepare the whole burger mixture by mixing with seasonings. The only thing left will be to shape and cook the burgers.
 
 To summarize, I want people to be able to eat earth-friendly food easily and to reduce the amount of food packaging by cooking with a pantry robot.
 
@@ -215,13 +214,15 @@ To summarize, I want people to be able to eat earth-friendly food easily and to 
 ## 3) What do you believe has prevented this change to date?
 (Describe the innovations or questions you would like to explore during the fellowship year)
 
-I believe that people are not eating in an environmentally-friendly way because it is easier. It is easy for fast-food restaurants to give food in throwable containers instead of doing the dishes. It is easy to buy food in cardboard and plastic at the grocery store. It is easy to cook meals with meat because they usually taste good without much effort.
+People are not eating in an environmentally-friendly way mainly because it is easier not to. It's easy to buy food in cardboard and plastic at the grocery store. It's easy to cook meals with meat because they usually taste good without much effort. It's easy to ...
 
-I want to explore finding delicious eco-friendly recipes.
+The change is actually slowly taking place. There is a lot more bulk grocery stores than before[CITATION NEEDED]. People are moving toward ecologic diets.[CITATION NEEDED] They are getting more conscious about where the food is coming from. But I want to accelerate theses changes even more. This is why I am working hard to find solutions so eating in an environmentally conscious way is as painless as possible. I want to make a website to create and archive delicious eco-friendly recipes and I want to build my pantry robot to help with cooking.
+
+There has been a lot of improvements over the year for vegetarian food. The movement is constantly gaining popularity. [CITATION NEEDED] I predict that in a near future, most people will be vegetarian for ethics, environment, wallet or taste reason. Right now, sadly, meat based food is usualy much tastier than plant based food without much effort. But I believe this will change soon. I hope there will be a meat substitute grown in factories with similar or even better taste. This is not my fight though. This is far away from my competences.
 
 I believe my solution does not exists yet because the technology is relatively new and it is costly to develop. Robotics can get expensive really quickly. One of my competitor is Moley Robotics. They offer a robot that cooks at a price of $335,000 USD.[1] This is not what I want to make. I want to make an affordable robot for every household. Obviously it will be able to execute much less actions, but by focusing mostly on pantry recipes, I believe I can achieve enough.
 
-The first model I plan to release will probably be targeted at a more high-end customers. Over time, I should be able to save costs by producing larger quantities. I want to do the same thing than for 3d printers. They were quite expensive at the beginning, but now they can be a common household item.
+The first model I plan to release will be targeted at a more high-end customers and early adopters. Over time, I should be able to save costs by producing larger quantities. I want to do the same thing than for 3d printers. They were quite expensive at the beginning, but now they can be a common household item.
 
 
 
@@ -236,7 +237,7 @@ Home robotics is an area which is constantly increasing. The robotic flour clean
 ## 4) What are you going to do to get there?
 (A description of what you actually plan to do during the year)
 
-There is still a lot that needs to be done. On the product side, I need to keep working on the cooking website, the cupboard, a robotic simulation and the actual robot. On the business side, I need to incorporate the company, ...
+There is still a lot that needs to be done. On the product side, I need to keep working on the cooking website, the cupboard, a robotic simulation and the actual robot. On the business side, I need to incorporate the company, develop a complete business plan and to find grow the company.
 
 I am working on a cooking website to host the user's recipes. I am slowly building a libray of recipes for personal use and for marketing. I want to use the website as a way to attract customers. You see a recipe and it tells you how much time you would save if you bought our machine. The website could also be a way to generate revenue.
 
@@ -248,38 +249,47 @@ The actual robot is where there is the most work left to be done. The current ro
 
 On the business side, this project is currently a one person job. If I get this grant, one thing I would love to do is to hire someone to work with me.
 
-The company is not yet incorporated.
+The company is not yet incorporated. I am waiting as long as possible to avoid unnecessary costs. But I guess the company will have to be created anyway to receive founding from your foundation.
 
-For the company, I aim to model what FarmBot[1] is doing. They are an company that your organisation supported in 2014. This is how I found out about the Shuttleworth Foundation. I want to spend some time developping the product, then load a crowdfunding campaign. It is usefull for gaining visibility, sales and financing in order to manufacture.
+For the company, I aim to model what FarmBot[1] is doing. They are an company that your organisation supported in 2014. This is how I found out about the Shuttleworth Foundation. I want to spend some time developping the product, then load a crowdfunding campaign. It is usefull for gaining visibility, sales and financing in order to manufacture. Like them, I aim to provide open-source hardware and software and sell kits to assemble.
+
+I have the ambition of growing the company. I would like to pursue further founding and hire employees. The goal being to develop a product quicker and to profit from being first to market. Some companies in the same area are huge and have a lot of ressources to compete. For example, Samsung is spending a lot in research and development in the connected kitchen. Being first to market gives me a competitive edge, but I have to be big enough then.
 
 [1] https://farm.bot/
 
 **Important!!!**
 ## 5) What challenges or uncertainties do you expect to face?
 
-Challenge 1: Being able to sell my product. My product is similar to smart fridges. Their goal being to be more environmental friendly by avoiding food waste. But the first smart fridges did not sell well, consumers thought it was overpriced for the benefit. I took time to develop a cheaper product that finaly users were interested in buying.
+Challenge 1: Being able to sell my product. My product is similar to smart fridges. Their goal being to be more environmental friendly by avoiding food waste. But the first smart fridges did not sell well, consumers thought it was overpriced for the benefit. It took time to develop a cheaper product that finaly users were interested in buying.
+
+The kitchen robotics space is very new and as such, the market is not well validated. I did a survey and got positive results, but I am still worried that the market will not be there.
+
+The technical challenges are plentyfull. I did a proof of concept about most aspects already and I can make it work sometimes. But the challenge is to make it work all the time. For example, with little work, I was able to detect jars most of the time, but this is not enough. It needs to be able to detect jars 100% of the time. Otherwise the robotic arm will probably break it if it does not know it is there.
+
+Grabbing jars in the corners of the shelves is quite the challenge. 
+
 
 ## 6) What part does openness play in your idea?
 
-Openness has always been one of my values.
+Openness has always been one of my values. I've always used open software almost exclusively. I am using Linux, Firefox, Godot, Freecad, LibreOffice, Gimp, Blender, OpenShot, Krita and so much more open software. So the least I can do is contribute back and make my software open source.
 
-I've always used open software almost exclusively. I am using Linux, Firefox, Godot, Freecad, LibreOffice, Gimp, OpenShot, Krita and so much more. the least I can do is contribute back.
+Being an electromechanic, I am used to repair all sorts of things and I understand how frustrating it is when you can't find schematics or spare parts for something you bought. I want my project to not only be open-source, but to be open-hardware. I want to make schematics and part lists available so people will always be able to repair their machine.
 
-Being an electromechanic, I am used to repair all sorts of things and I understand how frustrating it is when you can't find schematics or spare parts for something you bought. I want my project to not only be open-source, but to be open-hardware.
+I believe openness is important in order to have control. I don't want to buy a smart TV. I hate the fact you have don't have control of something you own and bought in your own house.
 
-I don't want to buy a smart TV. I hate the fact you have don't have control of something you own and bought in your own house.
+To be honest though, the idea of openness in my project scares me. For the past year and a half I have been working privately. It is scarry to think that someone ill intentioned could use what I produce and profit from it. But I guess I will only release the source code and hardware when the product is ready to be sold, so I should not be afraid that someone beats me to market first. Being first should give me enough of an advantage.
+
+I am wondering whether I want to release my project under GPL or MIT license. GPL reassures me in feeling more secure and not getting my idea stollen, but I am not the biggest fan of the license. The theory and the idea of the license is good, but in practice I don't like it. It is not truly open. When I look for some code on the internet, I love it when it is released under MIT license.
+
+I learn about your grant through FarmBot on the series A article[*]. I though it was really cool of them to be open about the way the company evolved and their status. I would like to do the same.
 
 
 
-
+[*] https://farm.bot/pages/series-a
 
 ## -----------------------
 
 I want the robotic arm .
-
-I learn about your grant through FarmBot on the series A article. I though it was really cool of them to be open about the way the company evolved and their status. I would like to do the same.
-
-The world is very simple, yet very complex at the same time. Grown-ups are still a lot like little children.
 
 I did not know what I wanted to do. I wrote 3 words on my board for a while until my idea came to me.
 
@@ -292,6 +302,10 @@ Automation. This is my domain of expertise. To solve the environement, we could 
 or we can go forward. I don't believe we are ever going to go backwards, so I believe in automation to solve the environment issue.
 
 # Deprecated
+
+It is easy for fast-food restaurants to give food in throwable containers instead of doing the dishes. 
+
+For example, to cook vegetarian, you often have to cook the meat substitute, than you can cook your recipe as usual. You cook vegan sausages with seitan, caramelized onions and other ingredients, then you can eat your stew with sausages inside.
 
 I am lucky to have been raised well by a modest, but loving family on a farm.
 

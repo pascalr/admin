@@ -13,6 +13,8 @@ Commencer à vendre des armoires. Distribuer le plan sur internet pour que le mo
 
 # Routine
 
+1. RÉPONDRE PEU À PEU AUX QUESTIONS PAR ÉCRIT
+
 ## Hebdomadaire
 Mercredi:
 1. Cuisiner une recette.
@@ -29,55 +31,59 @@ Vendredi:
 
 # Planification (PRIORITÉ: Vidéo)
 
-1. Laisser l'utilisateur choisir le nom quand il y en a plusieurs.
+1. Un quart et un huigtième nécessite un déterminant... Ajouter 1 tomate. OK. Ajouter 1/2 tomate. OK. Ajouter 1/4 de tomate! Ajouter 1/8 de tomate! Ajouter 1/4 d'une tomate? Ajouter 1/8 d'une tomate?
 
+1. Au lieu de multiplier la recette par un nombre, y aller avec le nombre de portions. Par exemple 12 muffins. Et là mettre un slider que tu te déplaces dessus. Tu peux choisir.
+
+1. Imprimer les cables drums plus large. Calculer la bonne longueur. S'assurer qu'il reste bien de chaque côté.
+
+1. SUBSTITUTION: "1" / tête d'ail / "8" gousse d'ail...... original_quantity...... substitute_quantity, les deux sont en version 1... ou 2 c. à table...
+Prendre la valeur du substituer (ici tête d'ail) et le multiplier par la valeur calculé du ratio entre la vrai quantité et la quantité du truc substitué.
+
+1. Food are either basic, which requires a lot of information, or they are substitute to something. Or maybe add a FoodData?
+
+1. Upgrade bootstrap to bootstrap 5
+
+1. Email notifications pour le calendrier repas du lendemain
+
+1. Un boolean pour les substitutions pour savoir si c'est une substitution exact ou pas. Par exemple, lait de soja n'est pas une substitution exact avec lait d'avoine. Mais gousse d'ail est une substitution exacte pour ail hâché.
+
+1. [image#1] link
+1. [image#1,"what to show???"] link
+1. [=image#1] show this image
+1. [section#1] link to this section
+1. [=section#1] show the title of this section with a link to the section
+1. [article#1] link to this article
+1. Link les ingrédients aux articles sur le site internet.
+1. Vegan, végétarien, Gluten-free
+1. Gluten-free logo
+1. TODO: Handle un ingrédient utiliser à plusieurs endroit. 4 c. à table d'huile. {(1 c. à table,1),3-5}
+1. {(1)},{(1 t)},{(1 L,1)}
+1. Lien vers tremper les pois chiches.
+1. TODO: Offrir la possibilité de spécifier le poids de ta courge butternut.
+1. Dans le fond, le site internet, développer une plateforme pour des recettes. Idéalement des bloggeurs pourrait l'utiliser pour leur propre recette? Le problème c'est que j'aimerais que les recettes du site respecte un format en particulier... Les règles par contres doivent être respecté.
+1. Des FoodSubstitution food:references substitute:references ratio:float et des IngredientSubstitution. Pareil comme FoodSubstitution, mais recipe specific.
+1. Laisser l'utilisateur choisir le nom d'ingrédient qu'il préfère quand il y en a plusieurs.
 1. Pouvoir substituer les ingrédients en cliquant sur le crayon avec un carré autour. Le faire avec ail. Gousse d'ail, Tête d'ail, Ail écrasé, Ail émincé, Ail hâché, Poudre d'ail. Dans le dropdown faire une flèche sur le côté avec les substitutions possibles. Les instructions de la recettes ne seront pas modifié, mais ce n'est pas grave. Offrir à l'utilisateur la possibilité de changer les instructions. Dans le fond, lorsque l'utilisateur clique sur une substitution, ce qui se passe est qu'une recette est créer pour l'utilisateur si elle n'existe pas déjà (2e modification). Et cette recette est enregistrer selon les modification. Dans le fond, la recette est dupliqué et les changements se font sur la recette dupliqué.
-
 1. Pour montrer que c'est possible de substituer des ingrédients, ajouter une flèche rouge qui pointe vers le truc pour pouvoir modifier les ingrédients.
-
 1. Compiler le site internet statique. Les utilisateurs connectés utilisent le site internet en ligne. Les utilisateurs non connectés regardent la version statique compilé. Pour compiler, télécharger la base de donnée. Rouler le site localement en mode production. Crawler mon propre site internet.
-
 1. Si jamais les utilisateurs peuvent créer du contenu, faire très attention à la sécurité. Par exemple, éviter html_safe. Sanitize properly.
-
 1. Valider recette de pain à la main
-
 1. Faire des liens vers les notes.
-
 1. Un calendrier sans machine?
-
-1. Pouvoir cacher des sections des recettes. Par exemple, cacher Instructions à la main de la recette de pain. Très utile pour imprimer.
-
-1. RÉPONDRE PEU À PEU AUX QUESTIONS PAR ÉCRIT
-
+1. Une image du numéro de version à rajouter par dessus les images des recettes. Peut-être une étoile en rouge avec une écriture jaune? Ver 2, Ver 3, ...
 1. Au lieu de Appareils dans la barre en haut, mettre un dropdown avec les machines de l'utilisateur actuel. Quoi mettre lorsque l'utilisateur n'en a pas? Comment atteindre le calendrier?
 
-1. Image editor garder correctement toutes les images actuelles (rsync? dropbox)
+1. Image editor garder correctement toutes les images actuelles (rsync? dropbox) En fait je pense enlever image-editor et l'intégrer à hedacuisine serait le best. je ne sais pas comment faire par contre pour hoster les images.
 
 1. Enlever la colle du gripper au millieu. Juste à gauche et à droite. Même pas en haut et en bas.
 
-1. Une image du numéro de version à rajouter par dessus les images des recettes. Peut-être une étoile en rouge avec une écriture jaune? Ver 2, Ver 3, ...
-
-1. Lien vers tremper les pois chiches.
-
-1. TODO: Handle un ingrédient utiliser à plusieurs endroit. 4 c. à table d'huile. {(1 c. à table,1),3-5}
-1. {(1)},{(1 t)},{(1 L,1)}
-
-1. Modification des unités. Un peu plus de...
-
 1. Application pour ne plus avoir à réfléchir sur quoi faire pour soupe? What's for supper? Qu'est-ce qu'on soupe?
-1. Email notifications pour le calendrier repas du lendemain
 
 1. Sabler la tablette
 1. Switch pour détecter la porte est bien fermée.
 
-1. Vegan, végétarien, Gluten-free
-1. Gluten-free logo
-
 1. Ajouter des références aux articles. Par exemple, pourquoi faire tremper les pois chiches de 8 à 24h [*...pois_chiches#Trempage des pois chiches]
-
-NE PAS RÉUTILISER. COPIER COLLER POUR CHAQUE RECETTE.
-
-1. Dans les recettes, spécifié d'une manière quelquonque explicitement si le déterminent doit être rajouté ou pas. par exemple {1} vs {+1}
 
 {} == substitution
 {1} un chiffre == nom de l'ingrédient
@@ -103,7 +109,6 @@ c'est ben plus simple de simplement marqué le nom de l'ingrédient dans la rece
 1. Vider l'armoire et la remplir de pots pour pouvoir prendre des photos et des vidéos.
 1. Gripper
 1. LES MAUDITS CÂBLES ÉLECTRIQUES... (Thêta de -120 à 120 et alpha de -170 à 170?)
-1. Plus de poids sur le contrepoids.
 1. Grant application
 1. Faire la partie du bas que je veux faire pour mettre l'ordinateur et le vise. Comme ça cela va pouvoir être caché. Finir de câblé pour pouvoir remmener des boites de trucs chez mes parents.
 1. Prendre de belles photos de ma machine (en fds avec le gros soleil en plein jour)
@@ -165,6 +170,8 @@ c'est ben plus simple de simplement marqué le nom de l'ingrédient dans la rece
 
 
 # Recettes
+Substitutions: http://www.foodsubs.com/Garlic.html
+https://www.passionrecettes.com/voirRecette-equivalence-pour-1-gousse-d-ail-17653.html
 https://recipes.fandom.com/wiki/Recipes_Wiki
 https://www.lacuisinedejeanphilippe.com/recettes/
 https://en.wikibooks.org/wiki/Cookbook:Sauces
