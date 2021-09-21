@@ -1,18 +1,6 @@
-# Mission
-
-Encourager les gens à manger de manière plus éco-responsable.
-
-- Un site de recette avec des recettes éco-responsables.
-- Un armoire de cuisine intelligente qui évite le gaspillage alimentaire
-- Suggestions de recettes avec des aliments du garde-manger qui sont plus écologiques
-- Transformation d'aliments primaires à la maison pour sauver de l'argent
-
-# Vision (6 mois)
-
-Commencer à vendre des armoires. Distribuer le plan sur internet pour que le monde puisse déjà commencer à fabriquer leur propres armoires. Avoir un design fonctionnel qui confirme les dimensions de l'armoire. La simulation doit être capable d'aller chercher et d'aller porter tous les pots. Avoir un design semblant fonctionnel de bras robotique en vrai. Travailler sur la pince surtout... Commencer à faire de la publicité peu à peu. Idéalement, avoir démarré la compagnie par actions. Avoir un site en ligne et publier une recette par semaine.
-
 # Routine
 
+1. Peut-être une recette aux deux semaines, mais une recette très bien faite complète? Ça me prendrait en fait une journée complette pour une recette... Le vendredi journée rédaction recette?
 1. RÉPONDRE PEU À PEU AUX QUESTIONS PAR ÉCRIT
 
 ## Hebdomadaire
@@ -29,7 +17,30 @@ Vendredi:
 
 1. Planifier une recette par semaine pour le mois prochain.
 
+# Bugs
+
+1. Boulette de pois chiches: 2 oeufs de lin (il manque un s dans la substitution)
+1. Tomates en dés Tofu poulet au beurre.
+1. Plus de détails dans la recette du tofu poulet au beurre.
+
 # Planification (PRIORITÉ: Vidéo)
+
+1. Prendre un pot sur la tablette et aller la porter sur une tablette.
+
+# Autres planifications
+
+1. Commencer avec une recette parfait en ligne sur github pages. Boulette de pois chiches.
+1. Substitution fromage parmesan avec levure alimentaire.
+1. Substitutions substitutions... FoodSubstitution(explicit: boolean)
+1. Pour les ingrédients qui ont des recettes, ajouter l'option: Voir la recette.
+
+1. FIXME: Conversions between g and kg will not work! I am not taking into factor the unit_value of the unit in my ratio in food.implicit_conversions. FIX Quantity.ratio()...
+
+1. 1 recette par 2 semaines parfaite avec références aux articles pour plus de détails.
+
+1. Combine image editor with hedacuisine.
+
+1. Essayer d'utiliser Amazon S3...
 
 1. Un quart et un huigtième nécessite un déterminant... Ajouter 1 tomate. OK. Ajouter 1/2 tomate. OK. Ajouter 1/4 de tomate! Ajouter 1/8 de tomate! Ajouter 1/4 d'une tomate? Ajouter 1/8 d'une tomate?
 
@@ -127,6 +138,7 @@ c'est ben plus simple de simplement marqué le nom de l'ingrédient dans la rece
 1. Un moyen de fixer la machine à l'armoire en haut
 1. Homing system
 1. Continuer la simulation du bras robotique pour pouvoir le programmer, aller chercher les ingrédients, puis verser des aliments grossiers, puis faire des muffins.
+
 # Planification (Mettre le site en ligne)
 1. d' pour les h aspirés? huile surtout...
 1. Bonne densité des ingrédients
@@ -167,6 +179,20 @@ c'est ben plus simple de simplement marqué le nom de l'ingrédient dans la rece
 1. Ajouter toutes les valeurs nutritives des ingrédients.
 1. Démarrer l'entreprise officiellement. Puis contacter des médias et essayer de faire parler de l'entreprise
 1. Faire un article qui parle de mes cables drums. C'est cool et de toute façon un compétiteur bien antit ne ferait pas pareil. Ça serait probablement coulé en alu à la place ou avec des chaînes.
+
+# Mission
+
+Encourager les gens à manger de manière plus éco-responsable.
+
+- Un site de recette avec des recettes éco-responsables.
+- Un armoire de cuisine intelligente qui évite le gaspillage alimentaire
+- Suggestions de recettes avec des aliments du garde-manger qui sont plus écologiques
+- Transformation d'aliments primaires à la maison pour sauver de l'argent
+
+# Vision (6 mois)
+
+Commencer à vendre des armoires. Distribuer le plan sur internet pour que le monde puisse déjà commencer à fabriquer leur propres armoires. Avoir un design fonctionnel qui confirme les dimensions de l'armoire. La simulation doit être capable d'aller chercher et d'aller porter tous les pots. Avoir un design semblant fonctionnel de bras robotique en vrai. Travailler sur la pince surtout... Commencer à faire de la publicité peu à peu. Idéalement, avoir démarré la compagnie par actions. Avoir un site en ligne et publier une recette par semaine.
+
 
 
 # Recettes

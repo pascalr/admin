@@ -17,6 +17,7 @@ La frustration et la colère se présente lorsque les choses ne se passent pas c
 1. Un search engine qui est un regroupement d'autres sites. Par exemple, tu tappes The Matrix, ça détecte que ce que tu cherches est un film (tu peux modifier évidement pour désambiguer, il reste un top bar en haut de la page dans lequel il y a ton search query, et ça va dans le site #1 directement de films, par exemple IMDB) Les autres sites qui vont direct dessus sont d'autres sites qui sont des regroupements de choses. En te créant un compte, tu peux choisir c'est quoi ton site préféré pour trouver telle affaire. Par exemple, wikipedia pour les films. Ça serait peut-être une extension dans le browser, et là tu pourrait naviguer facilement à gauche d'un site à l'autre, et tout en haut tu aurais ta barre de recherche. Mais quel problème est-ce que j'essaie de résoudre en faisant ça? Google fonctionne très bien... Ce n'est pas une bonne idée...
 1. Un film de science fiction/romantique dans un futur utopique. L'histoire principale est une histoire romantique. En arrière plan est tout ce qui est science fiction. Ça attirerait beaucoup les couples, les filles et les gars. Ça serait malade!
 1. Un substitut de viande végé qui goûte meilleur que de la viande.
+1. Dans un village abandonné, partir une université avec des emplois à distance. Par exemple, pour apprendre la programmation. Il faudrait aussi qu'il y ait des filles. Faudrait que ce soit cool comme uni que le monde veuille y aller. Quelle job les filles font à distance?
 
 ### Politique
 
