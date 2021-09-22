@@ -12,6 +12,7 @@ Ajouter des références comme Paul Graham un peu.
 
 ## Vidéo:
 
+ATTRIBUTION REQUIRED IMAGE FOOD WASTE: Taz, CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons
 1. (16s) Introduction
 1. (12s) Mission
 1. (15s) Solution robot
@@ -31,76 +32,49 @@ Voir la simulation?
 1. Heda qui prend un pot et le range sur une tablette.
 1. Clip de l'armoire fermée avec les portes s'ouvrent tranquillement.
 1. Clip de personnes dans la cuisine qui ont de la joie de cuisiner.
+**12s - (4s On voit le site internet, la sélection d'une recette, on voit quelqu'un appuyé sur le bouton Fetch dans le UI, 3s on voit les pots qui sont tous dans l'ordre sur la tablette d'accès, 5s on voit quelqu'un qui cuisine à l'oeil)**
+**8s - (on le voit en train de verser des quantités d'épices, on voit ensuite quelqu'un qui rajoute le mélange d'épices dans le plat)**
+**8s - (on le voit en train de brasser de la pâte à crêpe, on voit ensuite quelqu'un en train de cuisiner des crêpes)**
+**4s - On le voit en train de faire du lait**
+**6s - On voit la tablette pleine de pots. On voit le robot ranger un pot. On voit la tablette vide.**
+**4s - Advantage - We see easily**
+**8s - Advantage - Access the inventory from anywhere** (We see someone at the grocery store looking at it's inventory to see if it needs to buy some more)
+**8s - Advantage - Grocery list** _On voit le UI avec une liste d'épicerie générée automatiquement_
 
-### Introduction
+# Vidéo
 
-**16s: Introduction du problème**
+## Introduction
 
-**Intro (1) - 4s** _Voir un clip d'une usine de transformation alimentaire avec beaucoup de cheminée (https://www.pexels.com/video/aerial-view-of-industrial-area-5462676/)_
+Over a quarter of global greenhouse gas emissions is emitted because of food. Sources like transportation, packaging, heavy carbon-footprint diets and food waste could all be improved. A simple solution is to cook by yourself from good, raw ingredients. But it takes a lot of time to cook properly every day. We want to help. (((((We want to make eating good food at home in an environmentally-friendly way easy.)))))
 
-Food accounts for over a quarter of global greenhouse gas emissions.
-
-**Intro (2) - 4s** _https://www.istockphoto.com/photo/fruits-and-vegetables-gm466696262-59862998?utm_source=pixabay&utm_medium=affiliate&utm_campaign=SRP_image_sponsored&referrer_url=http%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Ffruits%2520packaging%2F&utm_term=fruits%20packaging_
-
-Packaging generates a lot of plastic waste.
-
-A lot of food is wasted.
-
-By reducing transportation and buying locally. By avoiding food waste which takes all the energy it took to produce it and throws it all away. And finally by choosing to eat ingredients that are more environmentally friendly.
-
-**Intro (3) - 4s** _https://www.pexels.com/video/people-sorting-out-through-a-pile-of-plastics-3192259/_
-
-**Intro (4) - 4s** _Voir un clip waste of food. (https://commons.wikimedia.org/wiki/File:GI_Market_food_waste.jpg, ATTRIBUTION REQUIRED)_
+_Voir un clip d'une usine de transformation alimentaire avec beaucoup de cheminée (https://www.pexels.com/video/aerial-view-of-industrial-area-5462676/)_
+_https://www.pexels.com/video/people-sorting-out-through-a-pile-of-plastics-3192259/_
+_Voir un clip waste of food. (https://commons.wikimedia.org/wiki/File:GI_Market_food_waste.jpg, ATTRIBUTION REQUIRED)_
 We see someone pickings good ingredients. And a good recipe comming out of the oven. _On voit du fast-food_ (parce qu'on a pas le temps)
 https://www.pexels.com/video/a-couple-doing-their-groceries-4121624/
 https://www.pexels.com/video/a-baker-mashing-a-dough-using-his-hands-3209831/
 
-But how can we do all this? How to eat in an environmentally friendly-way? A simple solution is to cook by yourself from good, raw ingredients. But it takes a lot of time to cook properly every day.
+## Solution armoire
 
-### Solution armoire
+This is why we invented Heda, the pantry robot, to assist you in everyday cookings tasks. It can store, retrieve, stir, soak, filter, sieve, blend and more. It lives in a cupboard which can store up to 90 kg of food. The food is stored in glass containers which can be filled in bulk without packaging. The glass containers helps you see what and how much you have really easily. You are in the grocery store and don't remember if you have any sugar left? No worries. The robot keeps the inventory and you can access it from anywhere, anytime. It keeps an eye out for low items and generates a grocery list automatically.
 
-**16s - Videos of what it can do**
-
-This is why we invented Heda, the pantry robot, to assist you in everyday cookings tasks. It can store, retrieve, stir, soak, filter, sieve, blend and more.
-
-**4s - HEDA** _Clip de l'armoire fermée avec marqué par dessus Heda - Pantry Robot, les portes s'ouvrent tranquillement._
-
-It lives in a cupboard which can store up to 90 kg of food.
-
-**4s - Filling containers** _Clip de d'une main en train de remplir un contenant de vitre_
-
-The food is stored in glass containers which can be filled in bulk without packaging.
+Clip du bras robotique en action. Bras qui verse, mélange, brasse, ...
+_Clip de l'armoire fermée avec marqué par dessus Heda - Pantry Robot, les portes s'ouvrent tranquillement._
+_Clip de d'une main en train de remplir un contenant de vitre_
 
 **4s - Advantage - We see easily**
-
-The glass containers helps you see what and how much you have really easily.
-
 **8s - Advantage - Access the inventory from anywhere** (We see someone at the grocery store looking at it's inventory to see if it needs to buy some more)
-
-You are in the grocery store and don't remember if you have any sugar left? No worries. The robot keeps the inventory and you can access it from anywhere, anytime.
-
 **8s - Advantage - Grocery list** _On voit le UI avec une liste d'épicerie générée automatiquement_
-
-It keeps an eye out for low items and generates a grocery list automatically.
 
 ### Solution cooking
 
+Heda's robotic arm has a lot of potential to help you cook. It can fetch all the ingredients needed for a recipe and let you add as much as you are inspired. It can do some mixes. For example, it can mix some spices together. It can do many types of batter like pancake or cake batter. You give it milk and eggs, and it we make all the batter by itself. You don't have any milk for your pancakes? No worries. It can make some vegetable milk by itself. Just the right amount needed or more to drink. And when you're done cooking, you put the containers back on the shelf and it stores everything.
+
 **12s - (4s On voit le site internet, la sélection d'une recette, on voit quelqu'un appuyé sur le bouton Fetch dans le UI, 3s on voit les pots qui sont tous dans l'ordre sur la tablette d'accès, 5s on voit quelqu'un qui cuisine à l'oeil)**
-
-Heda's robotic arm has a lot of potential to help you cook. It can fetch all the ingredients required to do a recipe and let you add as much as you are inspired.
-
 **8s - (on le voit en train de verser des quantités d'épices, on voit ensuite quelqu'un qui rajoute le mélange d'épices dans le plat)**
-It can do some mixes. For example, some spice mixes for a recipe.
-
 **8s - (on le voit en train de brasser de la pâte à crêpe, on voit ensuite quelqu'un en train de cuisiner des crêpes)**
-It can do many batter. For example pancake or cake batter. You give it milk and eggs, and it we make all the batter by itself.
-
 **4s - On le voit en train de faire du lait**
-You don't have any milk for your recipe? No worries. It can make some vegetable milk by itself. Just the right amount needed or more to drink.
-
 **6s - On voit la tablette pleine de pots. On voit le robot ranger un pot. On voit la tablette vide.**
-
-And when you're done cooking, you put it back on the shelf and it stores everything.
 
 ### Solution site internet
 **8s - Voir la page d'acceuil, la souris qui se déplaces sur recettes, voir la liste de recettes qui déroulent, puis la sélection d'une recette**
@@ -217,13 +191,13 @@ To summarize, I want people to be able to eat earth-friendly food easily and to 
 ## 3) What do you believe has prevented this change to date?
 (Describe the innovations or questions you would like to explore during the fellowship year)
 
-People are not eating in an environmentally-friendly way mainly because it is easier not to. It's easy to buy food in cardboard and plastic at the grocery store. It's easy to cook meals with meat because they usually taste good without much effort. It's easy to ...
+People are not eating in an environmentally-friendly way mainly because it is easier not to. It's easy to buy food in cardboard and plastic at the grocery store. It's easy to cook meals with meat because they usually taste good without much effort.
 
 The annoyances of bulk stores is that you can't just go there. You can't just stop by after work on your way home. You have to plan in advance in order to bring your containers. My machine would help by taking the worry of planning away. It would handle the inventory automatically and give you reminders when you need to go grocery shopping.
 
 Right now, meat based food is subjectively tastier than plant based food without much effort. But I believe this will change soon. I believe there will be a meat substitute with similar or even better taste. But, this is far from my competences.
 
-What I can do though, is make a website to create and archive delicious eco-friendly recipes. I want users of my machine to already have a choice of plenty of recipes as soon as they receive it. I want the recipes to be freely available to everyone, even to people who did not bought the machine. At the same time, they could be used for marketing.
+What I can do though, is make a website to create and archive delicious eco-friendly recipes. I want users of my machine to already have plenty of choices of recipes as soon as they receive it. Furthermore, I want the recipes to be freely available to everyone, even to people who did not bought the machine. At the same time, it could serve as marketing.
 
 I would like to give users the possibility to share their recipes with the world. They could either keep them private locally, keep them private on our server for a small price or make them public. We could analyze the public data to create user suggestions, rank recipes and to share with other users.
 
@@ -237,13 +211,13 @@ The first model I plan to release will be targeted at high-end customers and ear
 ## 4) What are you going to do to get there?
 (A description of what you actually plan to do during the year)
 
-There is still a lot that needs to be done. On the product side, I need to keep working on the recipe website, the cupboard, a robotic simulation and the actual robot. On the business side, I need to incorporate the company and grow the company.
+There is still a lot that needs to be done. On the product side, I need to keep working on the recipe website, the cupboard, a robotic simulation and the actual robot. On the business side, I need to incorporate and grow the company.
 
 I am working on a recipe website to host the user's recipes. I am slowly building a libray of recipes for marketing and in order to have a list to give users who buy the machine. I want to use the website as a way to attract customers. You see a recipe and it tells you how much time you would save if you bought our machine. The website could also be product of his own and a way to generate revenue.
 
 The cupboard is well developped. I would like to start selling some. It can be used well without the robotic arm inside. The customer will be able to purchase and install the robotic arm latter. I don't think this will be a big part of revenue because it is bulky and hard to ship. The design is open and I encourage people to make their own. I want to make a detailed webpage and a video that teach people how.
 
-A robotic simulation is required in order to develop the robotic arm. The simulation helps to determine what is actually feasible. The product will live in a home kitchen so it has strict requirements. It must be compact, quiet, safe, pretty and functional. Once we know what can be done, the simulation is very helpful to help achieve it. For example, it helps to visualize the inventory from the robots perspective and it helps with motion planning. The simulation is already well developped, so there is not a lot of work required for this specifically. But it goes hand and hand with programming.
+A robotic simulation is required in order to develop the robotic arm. The simulation helps to determine what is actually feasible. The product will live in a home kitchen so it has strict requirements. It must be compact, quiet, safe, pretty and functional. Once we know what can be done, the simulation is very helpful to help achieve it. For example, it helps to visualize the inventory from the robots perspective and it helps with motion planning. The simulation is already well developped, so there is not a lot of work required for this specifically.
 
 The actual robot is where there is the most work left to be done. The current robotic arm is still a prototype.
 
@@ -251,37 +225,34 @@ I am satisfied with the mechanical design which is now stiff and strong enough. 
 
 The electrical design needs much work. It is already fully functional, but it is not pretty nor safe. There needs to be a proper enclosure, components and wiring. Someone with proper experience will need to be hired for this or an engineering firm will need to be consulted.
 
-I will have to start from scratch with the robot's camera. I changed the design so the camera code will need to be reworked. There will be a lot of work needed there in order to be 100% functional.
+There is much programming left to do to program the robotic arm. I've started doing motion planning and collision detection, but more work is required.
 
-There is much programming left to do to program the robotic arm.
+Also, I would like to spend time to work with the robot's camera, a sink and tools like spoons and blenders. I've worked on some of this, but the design changed quite a bit since then so I have to start from scratch.
 
-On the business side, this project is currently a one person job. If I get this grant, one thing I would love to do is to hire someone to work with me.
+On the business side, the company is not yet incorporated. I am waiting as long as possible to avoid unnecessary costs.
 
-The company is not yet incorporated. I am waiting as long as possible to avoid unnecessary costs.
+This project is currently a one person job. If I get this grant, one thing I would love to do is to hire someone to work with me. I am a technical founder and I like to do technical stuff. I would like to hire someone to take care of all the business side.
 
-For the company, I aim to model what FarmBot[1] is doing. It's a company that your organisation supported in 2014. This is how I found out about the Shuttleworth Foundation. I want to spend some time developping the product, then launch a crowdfunding campaign. It is usefull for gaining visibility, sales and financing in order to manufacture. Like them, I aim to provide open-source hardware and software and sell kits to assemble.
+For the company, I aim to model what FarmBot[1] is doing. It's a company that your organisation supported in 2014. I want to spend some time developping the product, then launch a crowdfunding campaign. It is usefull for gaining visibility, sales and financing in order to manufacture. Like them, I aim to provide open-source hardware and software and sell kits to assemble.
 
-I have the ambition of growing the company. I would like to pursue further founding and hire employees. The goal being to develop a product quicker and to profit from being first to market. Some companies in the same area are huge and have a lot of ressources to compete. For example, Samsung is spending a lot in research and development in the connected kitchen. Being first to market gives me a competitive edge, but I have to be big enough then.
+I have the ambition of growing the company. I would like to pursue further funding and hire employees. This way we develop the product quicker and we profit more from being first to market. Some companies in the same area are huge and have a lot of ressources to compete. For example, Samsung is spending a lot in research and development in the connected kitchen. Being first to market gives me a competitive edge, but I have to be big enough then.
 
 [1] https://farm.bot/
 
 **Important!!!**
 ## 5) What challenges or uncertainties do you expect to face?
 
-The kitchen robotics space is very new and as such, the market is not well validated. I did a survey and got positive results, but I am still worried that the market will not be there.
+The kitchen robotics space is very new and as such, the market is not well validated. I did a survey and got positive results, but I am still worried that the market is too small.
 
-Challenge 1: Being able to sell my product. My product is similar to smart fridges. Their goal being to be more environmental friendly by avoiding food waste. But the first smart fridges did not sell well, consumers thought it was overpriced for the benefit. It took time to develop a cheaper product that finaly users were interested in buying.
+One challenge will be to actually sell my product. The product is similar to smart fridges. The first smart fridges did not sell well, consumers thought it was overpriced for the benefit. It took time to develop a cheaper product that finaly users were interested in buying.
 
+One major concern of mine is safety. A key feature of the machine would be it's independence. It would be awesome if the robot could start cooking by itself when you are at work, then you come home and finish what it started. But in order for the machine to work without supervision, the technology must be well advanced. I don't want to be responsible for fires or property damage.
 
-
-The technical challenges are plentyfull. I did a proof of concept about most aspects already and I can make it work sometimes. But the challenge is to make it work all the time. For example, with little work, I was able to detect jars most of the time, but this is not enough. It needs to be able to detect jars 100% of the time. Otherwise the robotic arm will probably break it if it does not know it is there.
-
-Grabbing jars in the corners of the shelves is quite the challenge. 
-
+There are plenty of technical challenges. I did a proof of concept about most aspects already and I can make it work sometimes. But the challenge is to make it work all the time. For example, with little work, I was able to detect jars most of the time, but this is not enough. It needs to be able to detect jars 100% of the time. Otherwise the robotic arm will probably break it if it does not know it is there.
 
 ## 6) What part does openness play in your idea?
 
-Openness is really important for me because it resonates with two of my core values: freedom and transparacy. It takes place in many aspects of my idea. My project will be open-source and open-hardware and the company will be open.
+Openness is really important for me because it resonates with two of my core values: freedom and transparency. It takes place in many aspects of my idea. My project will be open-source and open-hardware and the company will be open.
 
 My whole life, I've been using open software almost exclusively. I am using Linux, Firefox, Godot, Freecad, LibreOffice, Bootstrap, Ruby on rails, Gimp, Blender, OpenShot, Krita and so much more. So the least I can do is contribute back and make my software open source. Users will be able to tweak and play with the robotic arm. They will be able to modify the application to customize it to their liking.
 
@@ -293,21 +264,11 @@ I not only want the product to be open, I want the company to be open too.
 
 I want my company to freely share the salary of each employee. I understand why companies hide this data. It allows to underpay employees because they can't complain if they don't know they are making less than their peers. Also, it can avoid some jaleousy. But I think people eventually find out anyway and it makes them not only jaleous but frustated. I much prefer to be open and upfront. Every position in the company would have a set salary. This brings it's set of issues, but it is a must in my book.
 
-I learnt about your grant through FarmBot on their series A article[*]. I though it was really cool of them to be open about the way the company evolved and their status. They even shared sales, capitalization and their business plan. I would like to do the same.
+I learnt about your grant through FarmBot on their series A article[1]. I though it was really cool of them to be open about the way the company evolved and their status. They even shared sales, capitalization and their business plan. I would like to do the same.
 
 I believe openness is important in order to have control. Personally, I don't want to buy a smart TV unless it would be open. I hate the fact that you don't have control of something you own and bought in your own house.
 
-I want the website to be a product of his own. This is a highly competitive space. There are already thousands of recipe websites online. The website I want to be partially open. The data that users enter will be freely available for them. They will always be able to download their recipes. I don't want to release the website's source code though because I don't see any use. Users will be able to download their own recipes and any public recipes.
-
-Another aspect of openness is accessibility. 
-
-
-
-
-
-
-
-[*] https://farm.bot/pages/series-a
+[1] https://farm.bot/pages/series-a
 
 ## -----------------------
 
@@ -324,6 +285,10 @@ Automation. This is my domain of expertise. To solve the environement, we could 
 or we can go forward. I don't believe we are ever going to go backwards, so I believe in automation to solve the environment issue.
 
 # Deprecated
+
+I want the website to be a product of his own. This is a highly competitive space. There are already thousands of recipe websites online. The website I want to be partially open. The data that users enter will be freely available for them. They will always be able to download their recipes. I don't want to release the website's source code though because I don't see any use. Users will be able to download their own recipes and any public recipes.
+
+Another aspect of openness is accessibility. 
 
 I followed a cursus to learn how to make a company. I started doing a business plan, but my idea has eveloved over time. I will have to 
 

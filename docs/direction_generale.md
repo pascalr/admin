@@ -23,11 +23,30 @@ Vendredi:
 1. Tomates en dés Tofu poulet au beurre.
 1. Plus de détails dans la recette du tofu poulet au beurre.
 
-# Planification (PRIORITÉ: Vidéo)
+# Planification (PRIORITÉ: Application)
 
+Mettre à jour mon CV.
+Who are your current or potential key partners?
 1. Prendre un pot sur la tablette et aller la porter sur une tablette.
 
 # Autres planifications
+
+Pour ou contre site static:
+
+Pour:
+1. Site très rapide.
+1. Site pourrait déjà fonctionner et être disponible rapidement (pas de délais de heroku).
+1. Si je fuck production par accident, ça n'affecte pas le site static.
+1. Coûte beaucoup moins cher.
+1. Pouvoir releaser toute de suite une recette à la fois. Commencer à voir du traffic! Je pourrais envoyer une query à hedacuisine pour voir le nombre de page vue.
+
+Contre:
+1. Quoi faire avec la fonctionnalité de search??? (Juste pas de search pour l'instant?) (Tant que le site est petit, je pourrais tout loader déjà dans la page de search et simplement cacher ce qui ne correspond pas)
+1. Devoir constamment build le site static.
+1. Devoir constamment vérifier que le site static est correct (quoique je devrais le faire constamment encore plus pour le site de production (à chaque push))
+
+1. Essayer avec htttrack.
+1. Au lieu d'un site static, utiliser 2 utilisateurs? Un admin et un utilisateur 
 
 1. Commencer avec une recette parfait en ligne sur github pages. Boulette de pois chiches.
 1. Substitution fromage parmesan avec levure alimentaire.
