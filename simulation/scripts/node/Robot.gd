@@ -115,15 +115,21 @@ func get_to(polar):
 		yield(move("a", polar.a), "completed")
 		yield(move("t", polar.t), "completed")
 
+func get_to_safe():
+	print("Getting to safe position")
+	var h = trolley.middle_position()
+	# Bring angle to zero, T can either be 90.0 or -90.0
+	var t = 90.0 if get_t() > 0 else -90.0
+	var safe = PolarCoord.new().set_from_units(h,support.position,t,0.0)
+	yield(get_to(safe), "completed")
+
 func goto(user_coord):
 	print("Goto "+str(user_coord))
 	var working_shelf = get_node(Heda.CUPBOARD).working_shelf
 	var currently_above = support.position > working_shelf.get_height()
 	var going_above = user_coord.y > working_shelf.get_height()
 	if currently_above != going_above:
-		var h = trolley.middle_position()
-		var safe = PolarCoord.new().set_from_units(h,support.position,90.0,0.0)
-		yield(get_to(safe), "completed")
+		yield(get_to_safe(), "completed")
 		yield(move("y", user_coord.y), "completed")
 	var polar = PolarCoord.new().set_from_user_coord(user_coord)
 	yield(get_to(polar), "completed")

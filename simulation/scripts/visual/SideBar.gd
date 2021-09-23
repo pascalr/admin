@@ -42,14 +42,14 @@ func _on_ActionList_item_selected(index):
 			print("Putting down")
 
 
-func _on_Button4_button_up():
-	
-	# Try 10 times
-	for _i in range(0,10):
-		var x = rng.randf_range(Globals.min_x, Globals.max_x)
-		var z = rng.randf_range(Globals.min_z, Globals.max_z)
-		var cupboard = get_node(Heda.CUPBOARD)
-		var pos = Vector3(x,cupboard.working_shelf.get_height(),z)
-		if cupboard._check_add_jar(cupboard.working_shelf, pos):
-			break
-	pass
+#func _on_Button4_button_up():
+#	
+#	# Try 10 times
+#	for _i in range(0,10):
+#		var x = rng.randf_range(Globals.min_x, Globals.max_x)
+#		var z = rng.randf_range(Globals.min_z, Globals.max_z)
+#		var cupboard = get_node(Heda.CUPBOARD)
+#		var pos = Vector3(x,cupboard.working_shelf.get_height(),z)
+#		if cupboard._check_add_jar(cupboard.working_shelf, pos):
+#			break
+#	pass

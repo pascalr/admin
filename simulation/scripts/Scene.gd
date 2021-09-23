@@ -82,7 +82,10 @@ func _on_ViewOption_item_selected(index):
 	print("On view option item selected")
 	if index == 0:
 		get_node(Heda.ROBOT_CAMERA).make_current()
+		get_node(Heda.CUPBOARD).rear.visible = true
 	elif index == 1:
 		get_node(Heda.FRONT_SCENE_CAMERA).make_current()
+		get_node(Heda.CUPBOARD).rear.visible = true
 	else:
 		get_node(Heda.REAR_SCENE_CAMERA).make_current()
+		get_node(Heda.CUPBOARD).rear.visible = false

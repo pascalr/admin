@@ -164,7 +164,7 @@ material/0 = null
 transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, -459.661, 21.1891, 491.367 )
 
 [node name="plant_with_pot" parent="Room" instance=ExtResource( 21 )]
-transform = Transform( 200, 0, 0, 0, 200, 0, 0, 0, 200, 1502.37, 0.0890045, 533.982 )
+transform = Transform( 154.136, 0, -127.444, 0, 200, 0, 127.444, 0, 154.136, 1594.4, 0.0890045, 486.973 )
 
 [node name="week-8-plant" parent="Room" instance=ExtResource( 22 )]
 transform = Transform( 80, 0, 0, 0, 80, 0, 0, 0, 80, 212.978, 1976.44, 465.913 )

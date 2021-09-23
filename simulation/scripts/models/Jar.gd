@@ -33,6 +33,11 @@ static func find_by_jar_id(_jar_id):
 		if jar.jar_id == _jar_id:
 			return jar
 	return null
+static func first_with_no_position_and_format(_format):
+	for jar in all():
+		if jar.format == _format and (jar.pos_x == 0.0 or jar.pos_x == null):
+			return jar
+	return null
 
 func get_shelf():
 	for shelf in Heda.get_node(Heda.CUPBOARD).shelves:

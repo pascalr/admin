@@ -50,7 +50,13 @@ func get_jar_formats():
 		_jar_formats = preload("res://scenes/JarFormats.tscn").instance().get_children()
 	return _jar_formats
 
+func get_selected_jar():
+	var current_jar = get_node(CURRENT_JAR)
+	var jar_id = current_jar.get_item_id(current_jar.selected)
+	return Jar.find_by_jar_id(jar_id)
+
 func test_reach():
+	assert(false) # I have to fix the code this does not work. Jars are not created anymore. They already exist.
 	var cupboard = get_node(Heda.CUPBOARD)
 	var jars := []
 	var shelves = cupboard.shelves
@@ -81,13 +87,17 @@ func fill_shelves():
 	for shelf in shelves:
 		if not shelf.visible:
 			continue
-		Heda.jar_format = shelf.get_preferred_jar_format()
+		var format = shelf.get_preferred_jar_format()
 		while true:
-			var pos = shelf.get_free_position(Heda.jar_format)
+			var pos = shelf.get_free_position(format)
 			if pos == null:
 				break
-			var jar = cupboard._check_add_jar(shelf, pos)
+			var jar = Jar.first_with_no_position_and_format(format)
 			if jar == null:
+				push_warning("Can't fill shelf anymore, there are no jars available.")
+				break
+			if !cupboard._check_add_jar(jar, pos):
+				push_warning("Stopping to add a jar because it was not able to add one.")
 				break
 			yield(get_tree(), "idle_frame")
 

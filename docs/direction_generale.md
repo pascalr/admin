@@ -39,6 +39,8 @@ Who are your current or potential key partners?
 1. EN
 1. Des articles et des previous d'articles.
 1. Des images dans les articles.
+1. Images on Firebase???
+1. Static site on firebase???
 
 Pour ou contre site static:
 

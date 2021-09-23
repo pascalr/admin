@@ -9,6 +9,8 @@ onready var bottom_shelf = $Shelves/BottomShelf
 onready var door_shelves = $door_l/Shelves.get_children() + $door_r/Shelves.get_children()
 onready var shelves = $Shelves.get_children() + door_shelves
 
+onready var rear = $frame/frame_rear
+
 # Bodies that are not attached to the hand
 onready var bodies = $Bodies
 
@@ -67,11 +69,7 @@ func _add_jar(jar):
 #	params += "&y="+str(jar.translation.y)+"&z="+str(jar.translation.z)
 #	var _err = jar_added_request.request("http://localhost:4567/add_jar?"+params)
 
-func _check_add_jar(_shelf, click_position):
-	
-	var current_jar = Heda.get_node(Heda.CURRENT_JAR)
-	var jar_id = current_jar.get_item_id(current_jar.selected)
-	var jar = Jar.find_by_jar_id(jar_id)
+func _check_add_jar(jar, click_position):
 	if jar:
 		if Lib.is_valid_jar_position(jar.format, click_position):
 			jar.set_position(click_position)
@@ -79,7 +77,8 @@ func _check_add_jar(_shelf, click_position):
 			var node = preload("res://scenes/JarInstance.tscn").instance()
 			node.jar = jar
 			bodies.add_child(node)
-			return jar
+			return true
+	return false
 	
 #	var jar = Jar.new()
 #	jar.translation = click_position
@@ -97,12 +96,11 @@ func _check_add_jar(_shelf, click_position):
 #	if is_valid:
 #		_add_jar(jar)
 #		return jar
-	return null
 
 func _on_shelf_click(shelf, click_position):
 	match Heda.current_action:
 		Globals.ACTION_ADD_JAR:
-			_check_add_jar(shelf,click_position)
+			_check_add_jar(Heda.get_selected_jar(),click_position)
 		Globals.ACTION_PUT_DOWN:
 			get_node(Heda.ROBOT).put_down(shelf, click_position)
 
