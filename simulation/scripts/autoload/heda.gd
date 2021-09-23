@@ -50,6 +50,12 @@ func get_jar_formats():
 		_jar_formats = preload("res://scenes/JarFormats.tscn").instance().get_children()
 	return _jar_formats
 
+func get_jar_format_by_name(name):
+	for format in get_jar_formats():
+		if format.name == name:
+			return format
+	return null
+
 func get_selected_jar():
 	var current_jar = get_node(CURRENT_JAR)
 	var jar_id = current_jar.get_item_id(current_jar.selected)

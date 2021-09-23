@@ -37,7 +37,7 @@ func get_collision_shape() -> CollisionShape:
 	return null
 
 func get_preferred_jar_format():
-	return get_node(Heda.CONFIG+"/JarFormats/"+preferred_jar_format)
+	return Heda.get_jar_format_by_name(preferred_jar_format)
 
 func get_middle_x():
 	return get_collision_shape().global_transform.origin.x

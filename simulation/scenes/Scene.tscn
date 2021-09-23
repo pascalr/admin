@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://scenes/Robot.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Cupboard.tscn" type="PackedScene" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://scripts/Scene.gd" type="Script" id=5]
 [ext_resource path="res://resources/kitchen_tiles.material" type="Material" id=6]
 [ext_resource path="res://scripts/models/Food.gd" type="Script" id=7]
-[ext_resource path="res://scenes/JarFormats.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/ingredients/corn.jpg" type="Texture" id=9]
 [ext_resource path="res://blender/wall_with_hole.glb" type="PackedScene" id=10]
 [ext_resource path="res://blender/sticker.glb" type="PackedScene" id=18]
@@ -174,8 +173,6 @@ transform = Transform( 0.943697, 0.00695687, -0.330738, 0, -0.999779, -0.0210297
 light_energy = 0.63
 
 [node name="Config" type="Node" parent="."]
-
-[node name="JarFormats" parent="Config" instance=ExtResource( 8 )]
 
 [node name="Foods" type="Node" parent="Config"]
 
