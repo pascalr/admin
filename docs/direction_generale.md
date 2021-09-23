@@ -31,6 +31,15 @@ Who are your current or potential key partners?
 
 # Autres planifications
 
+1. Mettre le site en ligne cette semaine (est-ce que c'est mauvais pour le SEO de changer une page, est-ce que mon SEO sera recalculée?)
+1. Simulation contrôle le bras robotique
+1. Simulation voit la caméra
+1. Pétrir la pâte!!!
+1. Faire un sitemap
+1. EN
+1. Des articles et des previous d'articles.
+1. Des images dans les articles.
+
 Pour ou contre site static:
 
 Pour:
@@ -44,9 +53,9 @@ Contre:
 1. Quoi faire avec la fonctionnalité de search??? (Juste pas de search pour l'instant?) (Tant que le site est petit, je pourrais tout loader déjà dans la page de search et simplement cacher ce qui ne correspond pas)
 1. Devoir constamment build le site static.
 1. Devoir constamment vérifier que le site static est correct (quoique je devrais le faire constamment encore plus pour le site de production (à chaque push))
+1. Ça serait le fun si les utilisateurs pourrait déjà contribuer... (FAIRE UNE SIGNUP PAGE QUI DIT QUE LE SITE N'EST PAS ENCORE PRÊT ET PRENDRE LES ADDRESSES COURRIELS DES GENS POUR LEUR DIRE QUAND LE SITE SERA PRÊT???) Oui commencer avec ça... Si il y a beaucoup d'intérêt, alors peut-être rendre le site publique avec data publique. Peut-être aussi acheter hedacuisinebeta.com? Ou bien myheda.com? Ouin mes rendus là les gens veulent partager les recettes...
 
-1. Essayer avec htttrack.
-1. Au lieu d'un site static, utiliser 2 utilisateurs? Un admin et un utilisateur 
+1. Recipe substitutions
 
 1. Commencer avec une recette parfait en ligne sur github pages. Boulette de pois chiches.
 1. Substitution fromage parmesan avec levure alimentaire.

@@ -26,7 +26,27 @@ Voir la simulation?
 
 ### TOURNAGE
 
+Trouver un spot pour moi qui parle.
+Faire le montage vidéo avec les clips que j'ai.
+Ce qui manque, me filmer moi en train de parler.
+
+Filmer l'armoire:
+1. Quelqu'un (moi) qui approche et qui ouvre une porte de l'armoire.
+1. Attacher avec un fil invisible et ouvrir les 2 portes de l'armoires en même temps lentement
+1. Montrer qu'on peut mettre beaucoup de rangement à l'intérieur (filmer tout partout dans l'armoire?)
+1. Montrer que c'est facile de trouver quelque chose. (Filmer quoi???)
+
+Filmer le robot:
+1. Montrer le robot en train de verser des pois chiches.
+1. Filmer le robot en train de tenir un bras mélangeur et de brasser un mélange à crêpe?
+1. FILMER LE BRAS ROBOTIQUE QUI SE DÉPLACE. DONC LE DÉPLACER... LE PROGRAMMER...
+
+Autres:
+1. Filmer le contrepoids qui monte ou qui descends.
 1. Quelqu'un qui remplit un pot dans une épicerie en vrac.
+
+
+
 1. Robot qui verse des pois chiches
 1. Pot de pois chiches qui se fait remplir d'eau
 1. Heda qui prend un pot et le range sur une tablette.
