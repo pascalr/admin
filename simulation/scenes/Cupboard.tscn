@@ -100,40 +100,62 @@ preferred_jar_format = "Small"
 collision_mask = 8
 
 [node name="CollisionShape" type="CollisionShape" parent="door_l/Shelves/DoorShelf1/DoorLShelf1Area"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 381.877, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 335.575, 0 )
 shape = SubResource( 2 )
 
 [node name="DoorShelf2" type="Spatial" parent="door_l/Shelves"]
 script = ExtResource( 14 )
-preferred_jar_format = "Small"
+preferred_jar_format = "Bottle"
 
 [node name="DoorLShelf2Area" type="Area" parent="door_l/Shelves/DoorShelf2"]
 collision_mask = 8
 
 [node name="CollisionShape" type="CollisionShape" parent="door_l/Shelves/DoorShelf2/DoorLShelf2Area"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 769.211, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 535.227, 0 )
 shape = SubResource( 2 )
 
 [node name="DoorShelf3" type="Spatial" parent="door_l/Shelves"]
 script = ExtResource( 14 )
-preferred_jar_format = "Spice"
+preferred_jar_format = "Small"
 
 [node name="DoorLShelf3Area" type="Area" parent="door_l/Shelves/DoorShelf3"]
 collision_mask = 8
 
 [node name="CollisionShape" type="CollisionShape" parent="door_l/Shelves/DoorShelf3/DoorLShelf3Area"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1094.36, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 890.234, 0 )
 shape = SubResource( 2 )
 
 [node name="DoorShelf4" type="Spatial" parent="door_l/Shelves"]
 script = ExtResource( 14 )
-preferred_jar_format = "Spice"
+preferred_jar_format = "Bottle"
 
 [node name="DoorLShelf4Area" type="Area" parent="door_l/Shelves/DoorShelf4"]
 collision_mask = 8
 
 [node name="CollisionShape" type="CollisionShape" parent="door_l/Shelves/DoorShelf4/DoorLShelf4Area"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1418.85, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1424.85, 0 )
+shape = SubResource( 2 )
+
+[node name="DoorShelf5" type="Spatial" parent="door_l/Shelves"]
+script = ExtResource( 14 )
+preferred_jar_format = "Spice"
+
+[node name="DoorLShelf5Area" type="Area" parent="door_l/Shelves/DoorShelf5"]
+collision_mask = 8
+
+[node name="CollisionShape" type="CollisionShape" parent="door_l/Shelves/DoorShelf5/DoorLShelf5Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1245.58, 0 )
+shape = SubResource( 2 )
+
+[node name="DoorShelf6" type="Spatial" parent="door_l/Shelves"]
+script = ExtResource( 14 )
+preferred_jar_format = "Spice"
+
+[node name="DoorLShelf6Area" type="Area" parent="door_l/Shelves/DoorShelf6"]
+collision_mask = 8
+
+[node name="CollisionShape" type="CollisionShape" parent="door_l/Shelves/DoorShelf6/DoorLShelf6Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1067.89, 0 )
 shape = SubResource( 2 )
 
 [node name="door_r" type="MeshInstance" parent="."]
@@ -153,6 +175,7 @@ material/0 = ExtResource( 10 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -241, 0, -67 )
 
 [node name="DootShelf1" type="Spatial" parent="door_r/Shelves"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.47382, -46.4421, 0 )
 script = ExtResource( 14 )
 preferred_jar_format = "Small"
 
@@ -165,13 +188,13 @@ shape = SubResource( 3 )
 
 [node name="DootShelf2" type="Spatial" parent="door_r/Shelves"]
 script = ExtResource( 14 )
-preferred_jar_format = "Small"
+preferred_jar_format = "Bottle"
 
 [node name="DoorRShelf2Area" type="Area" parent="door_r/Shelves/DootShelf2"]
 collision_mask = 8
 
 [node name="CollisionShape" type="CollisionShape" parent="door_r/Shelves/DootShelf2/DoorRShelf2Area"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 768.767, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.28528, 534.48, 0 )
 shape = SubResource( 3 )
 
 [node name="DootShelf3" type="Spatial" parent="door_r/Shelves"]
@@ -182,18 +205,40 @@ preferred_jar_format = "Spice"
 collision_mask = 8
 
 [node name="CollisionShape" type="CollisionShape" parent="door_r/Shelves/DootShelf3/DoorRShelf3Area"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1093.23, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.27838, 1068.15, 0 )
 shape = SubResource( 3 )
 
 [node name="DootShelf4" type="Spatial" parent="door_r/Shelves"]
 script = ExtResource( 14 )
-preferred_jar_format = "Spice"
+preferred_jar_format = "Bottle"
 
 [node name="DoorRShelf4Area" type="Area" parent="door_r/Shelves/DootShelf4"]
 collision_mask = 8
 
 [node name="CollisionShape" type="CollisionShape" parent="door_r/Shelves/DootShelf4/DoorRShelf4Area"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1416.44, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.16229, 1423.59, 0 )
+shape = SubResource( 3 )
+
+[node name="DootShelf5" type="Spatial" parent="door_r/Shelves"]
+script = ExtResource( 14 )
+preferred_jar_format = "Spice"
+
+[node name="DoorRShelf5Area" type="Area" parent="door_r/Shelves/DootShelf5"]
+collision_mask = 8
+
+[node name="CollisionShape" type="CollisionShape" parent="door_r/Shelves/DootShelf5/DoorRShelf5Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.02722, 1245.85, 0 )
+shape = SubResource( 3 )
+
+[node name="DootShelf6" type="Spatial" parent="door_r/Shelves"]
+script = ExtResource( 14 )
+preferred_jar_format = "Small"
+
+[node name="DoorRShelf6Area" type="Area" parent="door_r/Shelves/DootShelf6"]
+collision_mask = 8
+
+[node name="CollisionShape" type="CollisionShape" parent="door_r/Shelves/DootShelf6/DoorRShelf6Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.52777, 890.443, 0 )
 shape = SubResource( 3 )
 
 [node name="Shelves" type="Spatial" parent="."]
@@ -247,6 +292,7 @@ __meta__ = {
 
 [node name="WorkingShelf" type="Spatial" parent="Shelves"]
 script = ExtResource( 14 )
+grab_above = false
 single_row = false
 
 [node name="WorkingShelfArea" type="Area" parent="Shelves/WorkingShelf"]

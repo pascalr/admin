@@ -54,6 +54,10 @@ func best_angle_for_vect(vect):
 	return -90.0 - angle if vect.x > Globals.max_x/2.0 else 90 + angle
 
 func is_valid_jar_position(jar_format, position):
+	
+	if jar_format == null:
+		push_error("Need a valid jar_format to know if it is a valid jar position. Was null.")
+		return false
 
 	if position.x + jar_format.diameter/2.0 > Globals.max_x:
 		print("Add jar out of bounds max x!")

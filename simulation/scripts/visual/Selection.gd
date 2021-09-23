@@ -78,3 +78,5 @@ func _on_AddIngredient_pressed():
 			
 	Weighing.new_weighing(food)
 
+func _on_Retrieve_pressed():
+	get_node(Heda.ROBOT).retrieve(Heda.current_selection.jar)

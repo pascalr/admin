@@ -375,7 +375,7 @@ margin_bottom = 83.0
 [node name="Selection" type="PanelContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox"]
 margin_top = 202.0
 margin_right = 306.0
-margin_bottom = 830.0
+margin_bottom = 863.0
 size_flags_horizontal = 3
 script = ExtResource( 2 )
 
@@ -383,7 +383,7 @@ script = ExtResource( 2 )
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 299.0
-margin_bottom = 621.0
+margin_bottom = 654.0
 size_flags_horizontal = 3
 
 [node name="ObjectName" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox"]
@@ -485,7 +485,7 @@ __meta__ = {
 [node name="JarDetails" type="VBoxContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox"]
 margin_top = 108.0
 margin_right = 292.0
-margin_bottom = 614.0
+margin_bottom = 647.0
 
 [node name="Label" type="Label" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails"]
 margin_right = 292.0
@@ -559,40 +559,46 @@ margin_right = 292.0
 margin_bottom = 341.0
 text = "Grab"
 
-[node name="Weigh" type="Button" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails"]
+[node name="Retrieve" type="Button" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails"]
 margin_top = 345.0
 margin_right = 292.0
 margin_bottom = 374.0
-text = "Weigh"
+text = "Retrieve"
 
-[node name="Lighten" type="Button" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails"]
+[node name="Weigh" type="Button" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails"]
 margin_top = 378.0
 margin_right = 292.0
 margin_bottom = 407.0
-text = "Lighten"
+text = "Weigh"
 
-[node name="Fill" type="Button" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails"]
+[node name="Lighten" type="Button" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails"]
 margin_top = 411.0
 margin_right = 292.0
 margin_bottom = 440.0
-text = "Fill"
+text = "Lighten"
 
-[node name="Store" type="Button" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails"]
+[node name="Fill" type="Button" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails"]
 margin_top = 444.0
 margin_right = 292.0
 margin_bottom = 473.0
-text = "Store"
+text = "Fill"
 
-[node name="Empty" type="Button" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails"]
+[node name="Store" type="Button" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails"]
 margin_top = 477.0
 margin_right = 292.0
 margin_bottom = 506.0
+text = "Store"
+
+[node name="Empty" type="Button" parent="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails"]
+margin_top = 510.0
+margin_right = 292.0
+margin_bottom = 539.0
 text = "Empty"
 
 [node name="RecipeDetails" type="PanelContainer" parent="HBox/HSplit/HSplit/DetailsPanel/VBox"]
-margin_top = 834.0
+margin_top = 867.0
 margin_right = 306.0
-margin_bottom = 1054.0
+margin_bottom = 1087.0
 grow_horizontal = 0
 script = ExtResource( 10 )
 
@@ -704,6 +710,7 @@ script = ExtResource( 8 )
 [connection signal="visibility_changed" from="HBox/HSplit/HSplit/DetailsPanel/VBox/InsertToolDetails" to="HBox/HSplit/HSplit/DetailsPanel/VBox/InsertToolDetails" method="_on_InsertToolDetails_visibility_changed"]
 [connection signal="pressed" from="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails/AddIngredient" to="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection" method="_on_AddIngredient_pressed"]
 [connection signal="pressed" from="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails/Grab" to="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection" method="_on_Grab_pressed"]
+[connection signal="pressed" from="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails/Retrieve" to="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection" method="_on_Retrieve_pressed"]
 [connection signal="pressed" from="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails/Weigh" to="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection" method="_on_Weigh_pressed"]
 [connection signal="pressed" from="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails/Lighten" to="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection" method="_on_Lighten_pressed"]
 [connection signal="pressed" from="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection/VBox/JarDetails/Fill" to="HBox/HSplit/HSplit/DetailsPanel/VBox/Selection" method="_on_Fill_pressed"]

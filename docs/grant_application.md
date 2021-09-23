@@ -22,7 +22,10 @@ ATTRIBUTION REQUIRED IMAGE FOOD WASTE: Taz, CC BY 2.0 <https://creativecommons.o
 1. (60s) Open-source possibilities
 1. (60s) Current state
 
-Voir la simulation?
+### Simulation
+
+Voir la simulation. Cliquer sur Fill shelves. (C'est quand même cool de voir les pots qui apparraissent à l'écran) Cliquer sur un des pots et cliquer sur retrieve. Voir le robot aller chercher le pot et le déposer sur la tablette de travail.
+Voir la vue selon le robot. Là cliquer sur un autre pot, le plus bas possible parce que c'est ça qui est cool à voir quand ça monte et ça descends. Et retrieve le pot.
 
 ### TOURNAGE
 

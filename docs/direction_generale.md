@@ -25,6 +25,8 @@ Vendredi:
 
 # Planification (PRIORITÉ: Application)
 
+1. Implementer retrieve dans la simulation.
+
 Mettre à jour mon CV.
 Who are your current or potential key partners?
 1. Prendre un pot sur la tablette et aller la porter sur une tablette.

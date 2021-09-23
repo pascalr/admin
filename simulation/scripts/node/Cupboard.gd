@@ -102,7 +102,7 @@ func _on_shelf_click(shelf, click_position):
 		Globals.ACTION_ADD_JAR:
 			_check_add_jar(Heda.get_selected_jar(),click_position)
 		Globals.ACTION_PUT_DOWN:
-			get_node(Heda.ROBOT).put_down(shelf, click_position)
+			get_node(Heda.ROBOT).put_down_at(shelf, click_position)
 
 func _collision_detected(body, area):
 	get_node(Heda.COLLISION_DETAILS).add_collision(area, body)

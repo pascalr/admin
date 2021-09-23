@@ -220,6 +220,11 @@ func change_grab_height(new_height):
 	yield(move("r", obj.get_diameter()), "completed")
 	_grabbing(obj)
 	grabbed_height = new_height
+
+func retrieve(obj):
+	yield(grab(obj), "completed")
+	var working_shelf = get_node(Heda.CUPBOARD).working_shelf
+	yield(put_down(working_shelf), "completed")
 	
 func grab(obj):
 	if obj == null:
@@ -293,7 +298,13 @@ func _put_down_in_front(_shelf, position):
 	yield(move("r", Globals.max_r), "completed")
 	_releasing()
 
-func put_down(shelf, position):
+func put_down(shelf):
+	if grabbed == null:
+		return Heda.error("Robot can't put down. It is not holding any object.")
+	var pos = shelf.get_free_position(grabbed.format)
+	yield(put_down_at(shelf, pos), "completed")
+
+func put_down_at(shelf, position):
 	if position == null:
 		return Heda.error("Robot can't put down. Invalid position null.")
 	if grabbed == null:
@@ -336,9 +347,8 @@ func store(obj):
 		return Heda.error("Robot can't store. Invalid obj null.")
 	for shelf in get_node(Heda.CUPBOARD).shelves:
 		if shelf.preferred_jar_format == obj.format.name:
-			var pos = shelf.get_free_position(obj.format)
 			yield(grab(obj),"completed")
-			yield(put_down(shelf, pos),"completed")
+			yield(put_down(shelf),"completed")
 			emit_signal("jar_stored")
 			print("Store")
 			return
