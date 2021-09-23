@@ -107,6 +107,14 @@ func fill_shelves():
 				break
 			yield(get_tree(), "idle_frame")
 
+func remove_all_jars():
+	for jar in Jar.all():
+		jar.pos_x = 0.0
+		jar.pos_y = 0.0
+		jar.pos_z = 0.0
+		if jar.get_main_instance():
+			jar.get_main_instance().queue_free()
+
 func clear():
 	for node in get_tree().get_nodes_in_group("save"):
 		node.queue_free()

@@ -67,7 +67,7 @@ margin_right = 160.0
 margin_bottom = 29.0
 focus_mode = 2
 text = "Debug"
-items = [ "Test Reach", null, 0, false, false, 0, 0, null, "", false, "Fill Shelves", null, 0, false, false, 1, 0, null, "", false ]
+items = [ "Test Reach", null, 0, false, false, 0, 0, null, "", false, "Fill Shelves", null, 0, false, false, 1, 0, null, "", false, "Remove all jars", null, 0, false, false, 2, 0, null, "", false ]
 __meta__ = {
 "_edit_use_anchors_": false
 }

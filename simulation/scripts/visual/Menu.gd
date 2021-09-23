@@ -24,4 +24,6 @@ func _debug_id_pressed(id):
 			Heda.test_reach()
 		1:
 			Heda.fill_shelves()
+		2:
+			Heda.remove_all_jars()
 

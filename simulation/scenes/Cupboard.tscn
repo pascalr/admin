@@ -24,9 +24,6 @@ extents = Vector3( 177.8, 9.525, 44.45 )
 [sub_resource type="BoxShape" id=3]
 extents = Vector3( 177.8, 9.525, 44.45 )
 
-[sub_resource type="BoxShape" id=4]
-extents = Vector3( 406.4, 20, 304.8 )
-
 [sub_resource type="BoxShape" id=5]
 extents = Vector3( 508, 9.525, 60.325 )
 
@@ -38,6 +35,9 @@ extents = Vector3( 508, 9.525, 60.325 )
 
 [sub_resource type="BoxShape" id=8]
 extents = Vector3( 508, 9.525, 60.325 )
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 406.4, 20, 304.8 )
 
 [node name="Cupboard" type="Spatial"]
 script = ExtResource( 4 )
@@ -201,27 +201,12 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="BottomShelf" type="Spatial" parent="Shelves"]
-script = ExtResource( 14 )
-single_row = false
-
-[node name="BottomShelfArea" type="Area" parent="Shelves/BottomShelf"]
-collision_mask = 8
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="CollisionShape" type="CollisionShape" parent="Shelves/BottomShelf/BottomShelfArea"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, -10, 304.8 )
-shape = SubResource( 4 )
-
 [node name="LowerSmallShelf" type="Spatial" parent="Shelves"]
 script = ExtResource( 14 )
 grab_above = false
-preferred_jar_format = "Medium"
 
 [node name="LowerSmallShelfArea" type="Area" parent="Shelves/LowerSmallShelf"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 317.5, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 311.15, 0 )
 collision_mask = 8
 __meta__ = {
 "_edit_lock_": true
@@ -233,7 +218,7 @@ shape = SubResource( 5 )
 
 [node name="mesh" type="MeshInstance" parent="Shelves/LowerSmallShelf/LowerSmallShelfArea"]
 mesh = ExtResource( 7 )
-material/0 = ExtResource( 8 )
+material/0 = null
 __meta__ = {
 "_edit_lock_": true
 }
@@ -255,7 +240,7 @@ shape = SubResource( 5 )
 
 [node name="mesh" type="MeshInstance" parent="Shelves/LowerSmallShelf2/LowerSmallShelf2Area"]
 mesh = ExtResource( 7 )
-material/0 = ExtResource( 8 )
+material/0 = null
 __meta__ = {
 "_edit_lock_": true
 }
@@ -272,7 +257,7 @@ __meta__ = {
 
 [node name="working_shelf" type="MeshInstance" parent="Shelves/WorkingShelf/WorkingShelfArea"]
 mesh = ExtResource( 13 )
-material/0 = ExtResource( 8 )
+material/0 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="Shelves/WorkingShelf/WorkingShelfArea"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, 873.125, 152.4 )
@@ -283,7 +268,7 @@ script = ExtResource( 14 )
 grab_above = false
 
 [node name="UpperShelf2Area" type="Area" parent="Shelves/UpperShelf2"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1422.4, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1446.17, 0 )
 collision_mask = 8
 
 [node name="CollisionShape" type="CollisionShape" parent="Shelves/UpperShelf2/UpperShelf2Area"]
@@ -292,7 +277,27 @@ shape = SubResource( 7 )
 
 [node name="small_shelf2" type="MeshInstance" parent="Shelves/UpperShelf2/UpperShelf2Area"]
 mesh = ExtResource( 7 )
-material/0 = ExtResource( 8 )
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="UpperShelf3" type="Spatial" parent="Shelves"]
+script = ExtResource( 14 )
+grab_above = false
+preferred_jar_format = "Medium"
+
+[node name="UpperShelf3Area" type="Area" parent="Shelves/UpperShelf3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1101.72, 0 )
+collision_mask = 8
+
+[node name="CollisionShape" type="CollisionShape" parent="Shelves/UpperShelf3/UpperShelf3Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, -9.525, 60.325 )
+shape = SubResource( 7 )
+
+[node name="small_shelf2" type="MeshInstance" parent="Shelves/UpperShelf3/UpperShelf3Area"]
+mesh = ExtResource( 7 )
+material/0 = null
 __meta__ = {
 "_edit_lock_": true
 }
@@ -303,7 +308,7 @@ grab_above = false
 preferred_jar_format = "Medium"
 
 [node name="UpperShelf1Area" type="Area" parent="Shelves/UpperShelf1"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1193.8, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1266.82, 0 )
 collision_mask = 8
 
 [node name="CollisionShape" type="CollisionShape" parent="Shelves/UpperShelf1/UpperShelf1Area"]
@@ -312,7 +317,148 @@ shape = SubResource( 8 )
 
 [node name="small_shelf" type="MeshInstance" parent="Shelves/UpperShelf1/UpperShelf1Area"]
 mesh = ExtResource( 7 )
-material/0 = ExtResource( 8 )
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="UpperShelf4" type="Spatial" parent="Shelves"]
+script = ExtResource( 14 )
+grab_above = false
+
+[node name="UpperShelf4Area" type="Area" parent="Shelves/UpperShelf4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1663.7, 0 )
+collision_mask = 8
+
+[node name="CollisionShape" type="CollisionShape" parent="Shelves/UpperShelf4/UpperShelf4Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, -9.525, 60.325 )
+shape = SubResource( 8 )
+
+[node name="small_shelf" type="MeshInstance" parent="Shelves/UpperShelf4/UpperShelf4Area"]
+mesh = ExtResource( 7 )
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="OldShelves" type="Spatial" parent="."]
+visible = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BottomShelf" type="Spatial" parent="OldShelves"]
+script = ExtResource( 14 )
+single_row = false
+
+[node name="BottomShelfArea" type="Area" parent="OldShelves/BottomShelf"]
+collision_mask = 8
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape" type="CollisionShape" parent="OldShelves/BottomShelf/BottomShelfArea"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, -10, 304.8 )
+shape = SubResource( 4 )
+
+[node name="LowerSmallShelf" type="Spatial" parent="OldShelves"]
+script = ExtResource( 14 )
+grab_above = false
+preferred_jar_format = "Medium"
+
+[node name="LowerSmallShelfArea" type="Area" parent="OldShelves/LowerSmallShelf"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 317.5, 0 )
+collision_mask = 8
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape" type="CollisionShape" parent="OldShelves/LowerSmallShelf/LowerSmallShelfArea"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, -9.525, 60.325 )
+shape = SubResource( 5 )
+
+[node name="mesh" type="MeshInstance" parent="OldShelves/LowerSmallShelf/LowerSmallShelfArea"]
+mesh = ExtResource( 7 )
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LowerSmallShelf2" type="Spatial" parent="OldShelves"]
+script = ExtResource( 14 )
+grab_above = false
+
+[node name="LowerSmallShelf2Area" type="Area" parent="OldShelves/LowerSmallShelf2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 609.6, 0 )
+collision_mask = 8
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape" type="CollisionShape" parent="OldShelves/LowerSmallShelf2/LowerSmallShelf2Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, -9.525, 60.325 )
+shape = SubResource( 5 )
+
+[node name="mesh" type="MeshInstance" parent="OldShelves/LowerSmallShelf2/LowerSmallShelf2Area"]
+mesh = ExtResource( 7 )
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="WorkingShelf" type="Spatial" parent="OldShelves"]
+script = ExtResource( 14 )
+single_row = false
+
+[node name="WorkingShelfArea" type="Area" parent="OldShelves/WorkingShelf"]
+collision_mask = 8
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="working_shelf" type="MeshInstance" parent="OldShelves/WorkingShelf/WorkingShelfArea"]
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="OldShelves/WorkingShelf/WorkingShelfArea"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, 873.125, 152.4 )
+shape = SubResource( 6 )
+
+[node name="UpperShelf2" type="Spatial" parent="OldShelves"]
+script = ExtResource( 14 )
+grab_above = false
+
+[node name="UpperShelf2Area" type="Area" parent="OldShelves/UpperShelf2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1422.4, 0 )
+collision_mask = 8
+
+[node name="CollisionShape" type="CollisionShape" parent="OldShelves/UpperShelf2/UpperShelf2Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, -9.525, 60.325 )
+shape = SubResource( 7 )
+
+[node name="small_shelf2" type="MeshInstance" parent="OldShelves/UpperShelf2/UpperShelf2Area"]
+mesh = ExtResource( 7 )
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="UpperShelf1" type="Spatial" parent="OldShelves"]
+script = ExtResource( 14 )
+grab_above = false
+preferred_jar_format = "Medium"
+
+[node name="UpperShelf1Area" type="Area" parent="OldShelves/UpperShelf1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1193.8, 0 )
+collision_mask = 8
+
+[node name="CollisionShape" type="CollisionShape" parent="OldShelves/UpperShelf1/UpperShelf1Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 508, -9.525, 60.325 )
+shape = SubResource( 8 )
+
+[node name="small_shelf" type="MeshInstance" parent="OldShelves/UpperShelf1/UpperShelf1Area"]
+mesh = ExtResource( 7 )
+material/0 = null
 __meta__ = {
 "_edit_lock_": true
 }
