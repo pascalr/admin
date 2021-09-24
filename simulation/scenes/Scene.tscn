@@ -236,4 +236,4 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="item_selected" from="MarginContainer/ViewOption" to="." method="_on_ViewOption_item_selected"]
+[connection signal="item_selected" from="MarginContainer/ViewOption" to="." method="change_camera"]

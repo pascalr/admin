@@ -99,7 +99,10 @@ func get_to(polar):
 	yield(move("b", polar.b), "completed")
 	
 	# Check if moving h first is safer or more risky for collisions
-	if abs(polar.h-trolley.middle_position()) > abs(polar.h-trolley.position):
+	var current_dist_from_middle = abs(trolley.position-trolley.middle_position())
+	#var dest_dist_from_middle = abs(polar.h-trolley.middle_position())
+	var dest_dist_from_current = abs(polar.h-trolley.position)
+	if dest_dist_from_current > current_dist_from_middle:
 		_move_at(polar)
 		yield(move("h", polar.h), "completed")
 	else:

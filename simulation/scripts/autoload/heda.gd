@@ -41,6 +41,12 @@ var current_selection
 
 var simulation_speed := 1.0
 
+func get_robot() -> Robot:
+	return get_node(ROBOT)
+
+func get_scene():
+	return get_node(SCENE)
+
 func detect_jars():
 	pass
 

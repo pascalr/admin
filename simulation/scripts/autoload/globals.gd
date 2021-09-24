@@ -1,5 +1,9 @@
 extends Node
 
+# Signal emitted when the main scene is loaded
+signal scene_loaded
+# signal cache_loaded TODO: Take the signal from Cache and put it here.
+
 # Globals are shared constants
 # Settings are shared variables
 

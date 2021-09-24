@@ -78,8 +78,8 @@ func _obj_selected(obj):
 	Heda.current_selection = obj
 	get_node(Heda.SELECTION_PANEL).show_details(obj.jar)
 
-func _on_ViewOption_item_selected(index):
-	print("On view option item selected")
+func change_camera(index):
+	print("Changing camera")
 	if index == 0:
 		get_node(Heda.ROBOT_CAMERA).make_current()
 		get_node(Heda.CUPBOARD).rear.visible = true

@@ -98,10 +98,10 @@ __meta__ = {
 }
 
 [node name="Tools" parent="HBox/HSplit/MainPanel/TabContainer" instance=ExtResource( 9 )]
-visible = false
 margin_top = 41.0
 
 [node name="Recipes" type="Panel" parent="HBox/HSplit/MainPanel/TabContainer"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
