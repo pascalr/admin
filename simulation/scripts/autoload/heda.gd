@@ -4,6 +4,7 @@ var HOST := "http://localhost:3000/machines/1/"
 #var HOST := "https://aqueous-fortress-30634.herokuapp.com/machines/1/"
 
 # Simulation/Scene
+var SCENE_VIEWPORT := "/root/Main/HBox/HSplit/HSplit/VSplit/TabContainer/Simulation/Viewport"
 var CORE := "/root/Main/HBox/HSplit/HSplit/VSplit/TabContainer/Simulation/Viewport/Scene"
 var SCENE := CORE
 var CUPBOARD := SCENE+"/Cupboard"
@@ -43,9 +44,12 @@ var simulation_speed := 1.0
 
 func get_robot() -> Robot:
 	return get_node(ROBOT)
-
 func get_scene():
 	return get_node(SCENE)
+func get_cupboard():
+	return get_node(CUPBOARD)
+func get_scene_viewport():
+	return get_node(SCENE_VIEWPORT)
 
 func detect_jars():
 	pass

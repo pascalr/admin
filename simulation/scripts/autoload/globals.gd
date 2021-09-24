@@ -28,6 +28,8 @@ var safe_height := 178.0
 var fence_height := 2*25.4
 var fence_safe_height := fence_height + 0.25*25.4
 
+var grip_center_to_tip := 25.4
+
 #var max_h := 850
 #var max_y := 1380
 var max_r := 138.0

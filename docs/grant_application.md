@@ -35,6 +35,7 @@ Faire le montage vidéo avec les clips que j'ai.
 Ce qui manque, me filmer moi en train de parler.
 
 Filmer l'armoire:
+1. Filmer que tous les ingrédients requis de la recette sont sortis sur la tablette d'accès
 1. Quelqu'un (moi) qui approche et qui ouvre une porte de l'armoire.
 1. Attacher avec un fil invisible et ouvrir les 2 portes de l'armoires en même temps lentement
 1. Montrer qu'on peut mettre beaucoup de rangement à l'intérieur (filmer tout partout dans l'armoire?)

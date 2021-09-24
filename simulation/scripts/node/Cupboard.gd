@@ -3,6 +3,7 @@ extends Spatial
 export var max_angle = 150.0
 export var opening_speed = 50.0
 
+# TODO: Rename this to accessible shelf
 onready var working_shelf = $Shelves/WorkingShelf
 #onready var bottom_shelf = $Shelves/BottomShelf
 

@@ -183,7 +183,10 @@ func _grab_in_front(obj):
 	var in_front = obj.get_position()
 	# FIXME: TODO in_front.x 
 	in_front.y += grabbed_height
+	#var z1 = obj.get_position().z
+	#var dz = obj.get_diameter()/2.0 * -cos(angle*PI/180.0)
 	in_front.z += obj.get_diameter()/2.0 * -cos(angle*PI/180.0)
+	in_front.z += Globals.grip_center_to_tip
 	yield(goto(UserCoord.new().set_from_vector(in_front, angle)), "completed")
 	var dest = obj.get_position()+Vector3(0.0,60.0,0.0)
 	yield(move("r", Globals.max_r), "completed")
@@ -227,7 +230,9 @@ func change_grab_height(new_height):
 func retrieve(obj):
 	yield(grab(obj), "completed")
 	var working_shelf = get_node(Heda.CUPBOARD).working_shelf
-	yield(put_down(working_shelf), "completed")
+	var pos = Vector3(300.0, working_shelf.get_height(), (9.5-4.5/2.0)*25.4)
+	yield(put_down_at(working_shelf, pos), "completed")
+	#yield(put_down(working_shelf), "completed")
 	
 func grab(obj):
 	if obj == null:

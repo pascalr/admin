@@ -50,7 +50,7 @@ script = ExtResource( 3 )
 
 [node name="FrontCamera" type="Camera" parent="."]
 pause_mode = 2
-transform = Transform( 0.999474, -0.00686283, 0.03171, -0.00249915, 0.958183, 0.286145, -0.0323478, -0.286074, 0.957661, 740.243, 1521.62, 2227.31 )
+transform = Transform( 1, 0, 0, 0, 0.961262, 0.275637, 0, -0.275637, 0.961261, 508, 1521.62, 2227.31 )
 far = 100000.0
 script = ExtResource( 3 )
 
