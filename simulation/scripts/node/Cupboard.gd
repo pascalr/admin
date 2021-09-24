@@ -7,7 +7,8 @@ onready var working_shelf = $Shelves/WorkingShelf
 #onready var bottom_shelf = $Shelves/BottomShelf
 
 onready var door_shelves = $door_l/Shelves.get_children() + $door_r/Shelves.get_children()
-onready var shelves = $Shelves.get_children() + door_shelves
+onready var rear_shelves = $Shelves.get_children()
+onready var shelves = rear_shelves + door_shelves
 
 onready var rear = $frame/frame_rear
 

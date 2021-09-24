@@ -15,6 +15,8 @@ static func find_by_food(_food):
 		if machine_food.food == _food:
 			return machine_food
 	return null
+static func first():
+	return get_table().first()
 
 var grocery_threshold
 var current_weight

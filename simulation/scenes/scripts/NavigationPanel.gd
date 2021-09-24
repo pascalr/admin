@@ -13,5 +13,6 @@ func _on_List_item_selected(index):
 	get_node(Heda.RECIPE_DETAILS).show_details(recipes[index])
 
 func _ready():
+	$TabContainer.current_tab = 1
 	#search_field.minimum_spaces = 8
 	pass

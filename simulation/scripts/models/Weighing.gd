@@ -41,6 +41,7 @@ static func new_weighing(_food):
 			total += ing.weight
 	
 	var machine_food = MachineFood.find_by_food(_food)
+	assert(machine_food != null, "Error the food is not a machine food.")
 	machine_food.current_weight = total
 	machine_food.save()
 	

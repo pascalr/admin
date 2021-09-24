@@ -14,6 +14,8 @@ class Modification:
 
 # A list of modifications to the cache to be pushed to the server
 var modifications := []
+var batch_size := 10
+var batch := []
 
 var loading := false
 var loaded := false
@@ -23,6 +25,11 @@ var push_modifications_timer := Timer.new()
 
 func list(table):
 	return data[table.name].values() if data.has(table.name) else null
+
+func first(table):
+	if (data.has(table.name) and data[table.name].size() >= 1):
+		return data[table.name].values()[0]
+	return null
 
 func _ensure_table_exists(table_name):
 	if not data.has(table_name):
@@ -92,16 +99,28 @@ func close():
 var _push_mod_request : HTTPRequest
 func push_modifications_to_server():
 	
-	assert(_push_mod_request == null)
-	
 	if modifications.empty():
 		yield(get_tree(), "idle_frame")
 		print("No modifications to push to the server.")
 		return
+	
+	while !modifications.empty():
+		yield(push_batch(), "completed")
+
+func push_batch():
+	#assert(_push_mod_request == null) FIXME......................
+	if !batch.empty():
+		yield(get_tree(), "idle_frame")
+		push_error("FIXMEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE")
+		return null
+	#assert(batch.empty()) # I don't know how to handle when there was an error pushing mods...
+	var n = min(modifications.size(), batch_size)
+	for i in n:
+		batch.push_back(modifications.pop_front())
 
 	print("Pushing modidications to server...")	
 	var mods := []
-	for mod in modifications:
+	for mod in batch:
 		mods.push_back({"type": mod.type, "class": mod.record.get_class(), "id": mod.record.id, "record": mod.record.to_dict()})
 	print(mods)
 	var body = to_json(mods)
@@ -110,7 +129,9 @@ func push_modifications_to_server():
 	var _a = _push_mod_request.connect("request_completed",self,"_on_modifications_pushed_to_server")
 	add_child(_push_mod_request)
 	var _err = _push_mod_request.request(Heda.HOST+"push_modifications", [], true, HTTPClient.METHOD_POST, body)
+	print("1")
 	yield(_push_mod_request, "request_completed")
+	print("3")
 	_push_mod_request.queue_free()
 	_push_mod_request = null
 
@@ -118,4 +139,5 @@ func _on_modifications_pushed_to_server(_result, response_code, _headers, _body)
 	if response_code != 200:
 		push_error("DATA WAS NOT SAVED. TODO: A PANEL THAT ASKS TO QUIT ANYWAY...")
 	else:
-		modifications.clear()
+		batch.clear()
+	print("2")

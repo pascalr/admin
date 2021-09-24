@@ -31,6 +31,12 @@ Mettre à jour mon CV.
 Who are your current or potential key partners?
 1. Prendre un pot sur la tablette et aller la porter sur une tablette.
 
+# Articles
+
+Dans mes articles, expliquer le pourquoi.
+
+Faire un article sur le pain. Expliquer l'effet de chaque ingrédient comme j'avais lu dans  
+
 # PHOTOS
 
 Accumuler les photos sur IStock et payer pour 750 photos pour 400$ (Avoir 20% off à travers unsplash ou autre?)
@@ -38,6 +44,8 @@ Avant de passer trop de temps dessus, lire le User Agreement: https://www.istock
 https://www.istockphoto.com/photo/freshness-pumpkin-soup-gm859053324-141898373?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fpumpkin-soup&utm_term=pumpkin%20soup%3A%3Asearch-aggressive-affiliates-v1%3Aa
 
 # Autres planifications
+
+1. Pouvoir incorporer un article dans la page d'une recette? Par exemple l'article du pain dans la recette du pain? Juste après et une table des matières juste avant pour montrer qu'il y a de quoi plus bas? Nahhhh, probablement juste une référence. Dire une phrase qui pique l'intérêt, puis dire voir l'article sur le pain pour plus de détails. Et tout au long rajouter des références. Par exemple, pétrir la pâte pointe vers la section pétrir la pâte.
 
 1. Mettre le site en ligne cette semaine (est-ce que c'est mauvais pour le SEO de changer une page, est-ce que mon SEO sera recalculée?)
 1. Simulation contrôle le bras robotique

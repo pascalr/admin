@@ -16,7 +16,7 @@ func _update_collisions_info():
 func add_collision(area,body):
 	collisions[_key_for_area_and_body(area,body)] = true
 	_update_collisions_info()
-	self.visible = true
+	self.visible = Globals.show_collision_warning
 
 func remove_collision(area,body):
 	var _a = collisions.erase(_key_for_area_and_body(area,body))

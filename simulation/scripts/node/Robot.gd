@@ -317,10 +317,21 @@ func put_down_at(shelf, position):
 	else:
 		yield(_put_down_in_front(shelf, position),"completed")
 
-func fill(obj):
-	assert(obj.ingredients.size() == 1)
+func fill(obj, _food=null):
+	assert(obj.ingredients.size() == 1 or _food != null)
+	
+	var food = _food if _food != null else obj.ingredients[0].food
+	var full_weight = obj.format.volume * food.density
+	var simulated = full_weight/2.0 + full_weight/2.0*randf()
+	# In a real situation, the weight of the glass and the lid must be removed.
+	#var weight = simulated + obj.format.body_weight + obj.format.lid_weight
+	if obj.ingredients.size() == 1 :
+		obj.ingredients[0].weight = simulated
+	else:
+		obj.add_ingredient(Ingredient.new(simulated, food))
 		
-	Weighing.new_weighing(obj.ingredients[0].food)
+	obj.save()	
+	Weighing.new_weighing(food)
 
 func weigh(obj):
 	assert(false) # deprecated

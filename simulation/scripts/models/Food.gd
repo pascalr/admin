@@ -11,6 +11,8 @@ static func all():
 static func find(id):
 	return get_table().find(id)
 #	return Heda.get_node(Heda.FOODS).get_children()
+static func first():
+	return get_table().first()
 
 export var density := 1.0
 export var _name : String

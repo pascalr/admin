@@ -25,5 +25,9 @@ func _debug_id_pressed(id):
 		1:
 			Heda.fill_shelves()
 		2:
+			Heda.fill_rear_shelves()
+		3:
 			Heda.remove_all_jars()
+		4:
+			Heda.fill_jars()
 

@@ -15,6 +15,9 @@ class Table:
 	
 	func find(id):
 		return Cache.find(self, id)
+	
+	func first():
+		return Cache.first(self)
 
 var JARS := Table.new("jars", Jar)
 var FOODS := Table.new("foods", Food)

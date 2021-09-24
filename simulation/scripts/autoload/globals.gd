@@ -5,6 +5,8 @@ extends Node
 
 enum {ACTION_SELECT, ACTION_ADD_JAR, ACTION_PUT_DOWN}
 
+var show_collision_warning = false
+
 var working_shelf_depth := 12.0*25.4
 var trolley_z := working_shelf_depth + 4.438*25.4
 

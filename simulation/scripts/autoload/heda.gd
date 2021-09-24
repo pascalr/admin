@@ -86,10 +86,20 @@ func test_reach():
 #		yield(get_node(Heda.ROBOT).store(jar), "completed")
 #		print("Tested reach for shelf + "+shelf.name)
 
+func fill_rear_shelves():
+	var cupboard = get_node(Heda.CUPBOARD)
+	var shelves = cupboard.rear_shelves.duplicate()
+	shelves.erase(cupboard.working_shelf)
+	_fill_shelves(shelves)
+
 func fill_shelves():
 	var cupboard = get_node(Heda.CUPBOARD)
-	var shelves = cupboard.shelves
+	var shelves = cupboard.shelves.duplicate()
 	shelves.erase(cupboard.working_shelf)
+	_fill_shelves(shelves)
+
+func _fill_shelves(shelves):
+	var cupboard = get_node(Heda.CUPBOARD)
 	for shelf in shelves:
 		if not shelf.visible:
 			continue
@@ -106,6 +116,17 @@ func fill_shelves():
 				push_warning("Stopping to add a jar because it was not able to add one.")
 				break
 			yield(get_tree(), "idle_frame")
+
+func fill_jars():
+	var robot = get_node(ROBOT)
+	var food = MachineFood.first().food
+	for jar in Jar.all():
+		if jar.ingredients.size() > 1:
+			continue
+		elif jar.ingredients.size() == 1:
+			robot.fill(jar)
+		else:
+			robot.fill(jar, food)
 
 func remove_all_jars():
 	for jar in Jar.all():
