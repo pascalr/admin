@@ -398,6 +398,9 @@ _On voit les pots avec tous les ingrédients et toi qui ne reste plus qu'à vers
 The main focus are recipes that are environmentally-friendly, but others are included for completeness sake.
 
 # Référence
+
+Music by <a href="/users/winkingfoxmusic-18210509/?tab=audio&amp;utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=audio&amp;utm_content=4049">WinkingFoxMusic</a> from <a href="https://pixabay.com/music/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=4049">Pixabay</a>
+
 1. https://farm.bot/pages/series-a
 https://ourworldindata.org/environmental-impacts-of-food
 

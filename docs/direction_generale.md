@@ -45,6 +45,18 @@ https://www.istockphoto.com/photo/freshness-pumpkin-soup-gm859053324-141898373?u
 
 # Autres planifications
 
+1. Ok. Quoi faire pour les recettes?
+Instruction #1 / Instruction #2 / Instruction #3 / Créer ma version
+Il pourrait y avoir plein de types d'instructions différent. Avec Heda. À la main. À la machine à pain. Au four. À la cuisinière. Avec un thermomix...
+Au lieu d'instruction est-ce que ça pourrait être version? Directement là? Et là ça affecte les ingrédients en haut? Ça serait le fun que ce soit des recettes complètement différente?
+
+Au lieu de faire RecipeGroup, avec des recettes. Simplement faire. RecipeVariation. Et là ça référence une recette, mais avec des petites modifications de plus. Je pense que ça fait plus de sens niveau base de données.
+
+RecipeVariation: instructions:text, ingredients??? how???...
+
+1. Plusieurs instructions possibles par recette. Pour le pain: À la main, à la machine à pain. Cuire quelque chose: Au four, Sur la cuisinière, Au four à micro-onde. ET SANS OUBLIER. Avec Heda
+NOOOONNNN PAS PLUSIEURS INSTRUCTIONS... JUSTE POUVOIR RAJOUTER DES TABS DANS LE TEXTE DE RECETTE.
+
 1. Pouvoir incorporer un article dans la page d'une recette? Par exemple l'article du pain dans la recette du pain? Juste après et une table des matières juste avant pour montrer qu'il y a de quoi plus bas? Nahhhh, probablement juste une référence. Dire une phrase qui pique l'intérêt, puis dire voir l'article sur le pain pour plus de détails. Et tout au long rajouter des références. Par exemple, pétrir la pâte pointe vers la section pétrir la pâte.
 
 1. Mettre le site en ligne cette semaine (est-ce que c'est mauvais pour le SEO de changer une page, est-ce que mon SEO sera recalculée?)
