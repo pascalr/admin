@@ -22,12 +22,6 @@ ATTRIBUTION REQUIRED IMAGE FOOD WASTE: Taz, CC BY 2.0 <https://creativecommons.o
 1. (60s) Open-source possibilities
 1. (60s) Current state
 
-### Simulation
-
-Voir la simulation. Cliquer sur Fill shelves. (C'est quand même cool de voir les pots qui apparraissent à l'écran) Cliquer sur un des pots et cliquer sur retrieve. Voir le robot aller chercher le pot et le déposer sur la tablette de travail.
-Voir la vue selon le robot. Là cliquer sur un autre pot, le plus bas possible parce que c'est ça qui est cool à voir quand ça monte et ça descends. Et retrieve le pot.
-Voir la vue de face. Les portes qui s'ouvre. Avoir cliquer préalablement sur Retrieve sur un pot du bas. Avancer la caméra vers les portes qui s'ouvre et on voit le robot en train de travailler à l'intérieur.
-
 ### TOURNAGE
 
 Trouver un spot pour moi qui parle.
@@ -68,9 +62,13 @@ Autres:
 
 # Vidéo
 
-## Introduction
+## Texte
 
-Over a quarter of global greenhouse gas emissions is emitted because of food. Sources like transportation, packaging, heavy carbon-footprint diets and food waste could all be improved. A simple solution is to cook by yourself from good, raw ingredients. But it takes a lot of time to cook properly every day. We want to help. (((((We want to make eating good food at home in an environmentally-friendly way easy.)))))
+Over a quarter of global greenhouse gas emissions is emitted because of food. Sources like transportation, packaging, heavy carbon-footprint diets and food waste could all be improved. A simple solution is to cook by yourself from good, raw ingredients. But it takes a lot of time to cook properly every day. We want to help. We want to make eating good food at home in an environmentally-friendly way easy.
+
+This is why we invented Heda, the pantry robot, to assist you in everyday cookings tasks. It can store, retrieve, stir, soak, filter, sieve, blend and more. It lives in a cupboard which can store up to 90 kg of food. The food is stored in glass containers which can be filled in bulk without packaging. The glass containers helps you see what and how much you have really easily. You are in the grocery store and don't remember if you have any sugar left? No worries. The robot keeps the inventory and you can access it from anywhere, anytime. It keeps an eye out for low items and generates a grocery list automatically.
+
+Heda's robotic arm has a lot of potential to help you cook. It can fetch all the ingredients needed for a recipe and let you add as much as you are inspired. It can do some mixes. For example, it can mix some spices together. It can do many types of batter like pancake or cake batter. You give it milk and eggs, and it we make all the batter by itself. You don't have any milk for your pancakes? No worries. It can make some vegetable milk by itself. Just the right amount needed or more to drink. And when you're done cooking, you put the containers back on the shelf and it stores everything.
 
 _Voir un clip d'une usine de transformation alimentaire avec beaucoup de cheminée (https://www.pexels.com/video/aerial-view-of-industrial-area-5462676/)_
 _https://www.pexels.com/video/people-sorting-out-through-a-pile-of-plastics-3192259/_
@@ -81,8 +79,6 @@ https://www.pexels.com/video/a-baker-mashing-a-dough-using-his-hands-3209831/
 
 ## Solution armoire
 
-This is why we invented Heda, the pantry robot, to assist you in everyday cookings tasks. It can store, retrieve, stir, soak, filter, sieve, blend and more. It lives in a cupboard which can store up to 90 kg of food. The food is stored in glass containers which can be filled in bulk without packaging. The glass containers helps you see what and how much you have really easily. You are in the grocery store and don't remember if you have any sugar left? No worries. The robot keeps the inventory and you can access it from anywhere, anytime. It keeps an eye out for low items and generates a grocery list automatically.
-
 Clip du bras robotique en action. Bras qui verse, mélange, brasse, ...
 _Clip de l'armoire fermée avec marqué par dessus Heda - Pantry Robot, les portes s'ouvrent tranquillement._
 _Clip de d'une main en train de remplir un contenant de vitre_
@@ -92,8 +88,6 @@ _Clip de d'une main en train de remplir un contenant de vitre_
 **8s - Advantage - Grocery list** _On voit le UI avec une liste d'épicerie générée automatiquement_
 
 ### Solution cooking
-
-Heda's robotic arm has a lot of potential to help you cook. It can fetch all the ingredients needed for a recipe and let you add as much as you are inspired. It can do some mixes. For example, it can mix some spices together. It can do many types of batter like pancake or cake batter. You give it milk and eggs, and it we make all the batter by itself. You don't have any milk for your pancakes? No worries. It can make some vegetable milk by itself. Just the right amount needed or more to drink. And when you're done cooking, you put the containers back on the shelf and it stores everything.
 
 **12s - (4s On voit le site internet, la sélection d'une recette, on voit quelqu'un appuyé sur le bouton Fetch dans le UI, 3s on voit les pots qui sont tous dans l'ordre sur la tablette d'accès, 5s on voit quelqu'un qui cuisine à l'oeil)**
 **8s - (on le voit en train de verser des quantités d'épices, on voit ensuite quelqu'un qui rajoute le mélange d'épices dans le plat)**

@@ -27,5 +27,5 @@ func _ready():
 	yield(Globals, "scene_loaded")
 	print("***************** START ANIMATION ******************")
 	#anim_open_doors_robot_retrieve()
-	anim_robot_retrieve_robot_view()
+	#anim_robot_retrieve_robot_view()
 	print("***************** END ANIMATION ******************")

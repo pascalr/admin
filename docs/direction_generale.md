@@ -45,6 +45,39 @@ https://www.istockphoto.com/photo/freshness-pumpkin-soup-gm859053324-141898373?u
 
 # Autres planifications
 
+1. Variantes: Heda, Ricardo, ...
+
+1. Peut-être en revenenir à recipe group? Ça serait le fun de voir par exemple Pain à hamburger, et là pouvoir changer les versions. Ou juste pain. Et là voir les versions avec les ingrédients.
+
+RecipeGroup. Has many recipes. L'affaire c'est qu'on dirait qu'il existe 2 types de modifications. Il y a des recettes qu'on veut qui soit à part entière. On veut aussi des recettes qui ne sont que des légères modifications. Tu enlève un ingrédient, tu en remplaces un et tu en ajoutes un autre.
+
+Un RecipeGroup serait un autre type. C'est un type abstrait qui regroupe d'autres recettes. Par exemple, tu as:
+
+- Pain
+  - Pain à hamburger
+    - Pain à hamburger
+    - Pain brun à hamburger
+  - Pain blanc
+  - Pain brun
+  - Pain de grains entiers
+
+RecipeGroup: Name, et liste de recipes. That's it.
+
+A recipe can belong to one and only one RecipeGroup?
+
+Ok pour végétarien tu fais quoi?
+
+breadcrumbs
+
+Pain > Pain blanc
+
+OK NON. Pas de recipe group. Des tags peut-êtres. Et là des articles. Des articles pour le pain, pain à hamburger, pain à hotdog. Et dans l'article, avoir une list de recette que je peux naviguer
+comme je veux faire présentement.
+
+_recipe_list_full.html.erb
+
+5 recettes de pains à hamburger (20 variantes)
+
 1. Ok. Quoi faire pour les recettes?
 Instruction #1 / Instruction #2 / Instruction #3 / Créer ma version
 Il pourrait y avoir plein de types d'instructions différent. Avec Heda. À la main. À la machine à pain. Au four. À la cuisinière. Avec un thermomix...
