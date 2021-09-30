@@ -44,10 +44,6 @@ Autres:
 1. Filmer le contrepoids qui monte ou qui descends.
 1. Quelqu'un qui remplit un pot dans une épicerie en vrac.
 
-
-
-1. Robot qui verse des pois chiches
-1. Pot de pois chiches qui se fait remplir d'eau
 1. Heda qui prend un pot et le range sur une tablette.
 1. Clip de l'armoire fermée avec les portes s'ouvrent tranquillement.
 1. Clip de personnes dans la cuisine qui ont de la joie de cuisiner.
@@ -66,9 +62,14 @@ Autres:
 
 Over a quarter of global greenhouse gas emissions is emitted because of food. Sources like transportation, packaging, heavy carbon-footprint diets and food waste could all be improved. A simple solution is to cook by yourself from good, raw ingredients. But it takes a lot of time to cook properly every day. We want to help. We want to make eating good food at home in an environmentally-friendly way easy.
 
-This is why we invented Heda, the pantry robot, to assist you in everyday cookings tasks. It can store, retrieve, stir, soak, filter, sieve, blend and more. It lives in a cupboard which can store up to 90 kg of food. The food is stored in glass containers which can be filled in bulk without packaging. The glass containers helps you see what and how much you have really easily. You are in the grocery store and don't remember if you have any sugar left? No worries. The robot keeps the inventory and you can access it from anywhere, anytime. It keeps an eye out for low items and generates a grocery list automatically.
+This is why we invented Heda, the pantry robot, to assist you in everyday cookings tasks. It can store, weigh, retrieve, stir, blend and more. It lives in a cupboard which can store over 
+75 kilos of food. The food is stored in glass containers which can be filled in bulk without packaging. The glass containers helps you see what and how much you have really easily. You are in the grocery store and don't remember if you have any sugar left? No worries. The robot keeps the inventory and you can access it from anywhere, anytime. It keeps an eye out for low items and generates a grocery list automatically.
 
 Heda's robotic arm has a lot of potential to help you cook. It can fetch all the ingredients needed for a recipe and let you add as much as you are inspired. It can do some mixes. For example, it can mix some spices together. It can do many types of batter like pancake or cake batter. You give it milk and eggs, and it we make all the batter by itself. You don't have any milk for your pancakes? No worries. It can make some vegetable milk by itself. Just the right amount needed or more to drink. And when you're done cooking, you put the containers back on the shelf and it stores everything.
+
+One of our core values is openness. We strongly believe it is important in order to have freedom and control over what you own. This is why all the hardware and the software will be released open-sourced along with the product. Also, all our recipes will be freely available for everyone.
+
+I started working on this idea at the beginning of 2020, just before Covid started. I've come a long way since the early prototype. But now I need your help to push the idea even further and turn it into a real product. Receiving this grant would allow me to continue working full time on the project and to hire someone to grow the company.
 
 _Voir un clip d'une usine de transformation alimentaire avec beaucoup de cheminée (https://www.pexels.com/video/aerial-view-of-industrial-area-5462676/)_
 _https://www.pexels.com/video/people-sorting-out-through-a-pile-of-plastics-3192259/_
@@ -204,7 +205,7 @@ A great advantage of cooking with pantry ingredients is that they are generally 
 
 I want to make it more easy to eat vegetarian than to eat meat. For example, to make hamburgers, you need ground beef which has a low shelf life. You can freeze it, but then you have to think in advance to unfreeze it. With vegetarian burgers and my product, you can always eat hambugers. Just add "chickpea burgers" to your calendar, and the robot will soak and cook the beans. It will prepare the whole burger mixture by mixing with seasonings. The only thing left will be to shape and cook the burgers.
 
-To summarize, I want people to be able to eat earth-friendly food easily and to reduce the amount of food waste and packaging by helping cooking with pantry ingredients filled in bulk.
+To summarize, I want people to be able to eat earth-friendly food easily and to reduce the amount of food waste and packaging by helping cooking with pantry ingredients bought in bulk.
 
 **Important!!!**
 ## 3) What do you believe has prevented this change to date?
@@ -236,15 +237,13 @@ I am working on a recipe website to host the user's recipes. I am slowly buildin
 
 The cupboard is well developped. I would like to start selling some. It can be used well without the robotic arm inside. The customer will be able to purchase and install the robotic arm latter. I don't think this will be a big part of revenue because it is bulky and hard to ship. The design is open and I encourage people to make their own. I want to make a detailed webpage and a video that teach people how.
 
-A robotic simulation is required in order to develop the robotic arm. The simulation helps to determine what is actually feasible. The product will live in a home kitchen so it has strict requirements. It must be compact, quiet, safe, pretty and functional. Once we know what can be done, the simulation is very helpful to help achieve it. For example, it helps to visualize the inventory from the robots perspective and it helps with motion planning. The simulation is already well developped, so there is not a lot of work required for this specifically.
-
 The actual robot is where there is the most work left to be done. The current robotic arm is still a prototype.
 
 I am satisfied with the mechanical design which is now stiff and strong enough. I am slowly replacing 3d printed parts with proper parts.
 
-The electrical design needs much work. It is already fully functional, but it is not pretty nor safe. There needs to be a proper enclosure, components and wiring. Someone with proper experience will need to be hired for this or an engineering firm will need to be consulted.
+The electrical design needs to be remade. It is already fully functional, but it is not pretty nor safe. There needs to be a proper enclosure, components and wiring. Someone with proper experience will need to be hired for this or an engineering firm will need to be consulted.
 
-There is much programming left to do to program the robotic arm. I've started doing motion planning and collision detection, but more work is required.
+A robotic simulation is required in order to develop the robotic arm. The simulation helps to determine what is actually feasible. The product will live in a home kitchen so it has strict requirements. It must be compact, quiet, safe, pretty and functional. Once we know what can be done, the simulation is very helpful to help achieve it. For example, it helps to visualize the inventory from the robots perspective and it helps with motion planning. It will take a considerable amount of time to program the robotic arm.
 
 Also, I would like to spend time to work with the robot's camera, a sink and tools like spoons and blenders. I've worked on some of this, but the design changed quite a bit since then so I have to start from scratch.
 
@@ -254,7 +253,7 @@ This project is currently a one person job. If I get this grant, one thing I wou
 
 For the company, I aim to model what FarmBot[1] is doing. It's a company that your organisation supported in 2014. I want to spend some time developping the product, then launch a crowdfunding campaign. It is usefull for gaining visibility, sales and financing in order to manufacture. Like them, I aim to provide open-source hardware and software and sell kits to assemble.
 
-I have the ambition of growing the company. I would like to pursue further funding and hire employees. This way we develop the product quicker and we profit more from being first to market. Some companies in the same area are huge and have a lot of ressources to compete. For example, Samsung is spending a lot in research and development in the connected kitchen. Being first to market gives me a competitive edge, but I have to be big enough then.
+I have the ambition of growing the company. I would like to pursue further funding and hire employees. This way we develop the product quicker and we profit more from being first to market. Some companies in the same area are huge and have a lot of ressources to compete. For example, Samsung is spending a lot in research and development in it's smart kitchen. Being first to market gives me a competitive edge, but I have to be big enough then.
 
 [1] https://farm.bot/
 
@@ -265,9 +264,13 @@ The kitchen robotics space is very new and as such, the market is not well valid
 
 One challenge will be to actually sell my product. The product is similar to smart fridges. The first smart fridges did not sell well, consumers thought it was overpriced for the benefit. It took time to develop a cheaper product that finaly users were interested in buying.
 
-One major concern of mine is safety. A key feature of the machine would be it's independence. It would be awesome if the robot could start cooking by itself when you are at work, then you come home and finish what it started. But in order for the machine to work without supervision, the technology must be well advanced. I don't want to be responsible for fires or property damage.
+One major concern of mine is safety. A key feature of the machine would be it's independence. It would be awesome if the robot could start cooking by itself when you are at work, then you come home and finish cooking what it started. But in order for the machine to work without supervision, the technology must be well advanced. I don't want to be responsible for fires or property damage.
 
 There are plenty of technical challenges. I did a proof of concept about most aspects already and I can make it work sometimes. But the challenge is to make it work all the time. For example, with little work, I was able to detect jars most of the time, but this is not enough. It needs to be able to detect jars 100% of the time. Otherwise the robotic arm will probably break it if it does not know it is there.
+
+Another challenge is to finish the product before running out of capital. It takes a lot of time to build a robot. My competitor Moley Robotics[1] started in 2014 and have barely a product yet. But I am aiming at a lower end robot so I should be able to complete one in much less time.
+
+[1] https://moley.com/?target=about_us
 
 ## 6) What part does openness play in your idea?
 
@@ -280,8 +283,6 @@ I am wondering whether I want to release my project under GPL or MIT license. GP
 Before working on my project, I was working as an electromechanic. So I am used to repair all sorts of things and I understand how frustrating it is when you can't find schematics or spare parts for something you bought. I want my project to not only be open-source, but to be open-hardware. I want to make schematics and part lists available so people will always be able to repair their machine.
 
 I not only want the product to be open, I want the company to be open too.
-
-I want my company to freely share the salary of each employee. I understand why companies hide this data. It allows to underpay employees because they can't complain if they don't know they are making less than their peers. Also, it can avoid some jaleousy. But I think people eventually find out anyway and it makes them not only jaleous but frustated. I much prefer to be open and upfront. Every position in the company would have a set salary. This brings it's set of issues, but it is a must in my book.
 
 I learnt about your grant through FarmBot on their series A article[1]. I though it was really cool of them to be open about the way the company evolved and their status. They even shared sales, capitalization and their business plan. I would like to do the same.
 
@@ -304,6 +305,8 @@ Automation. This is my domain of expertise. To solve the environement, we could 
 or we can go forward. I don't believe we are ever going to go backwards, so I believe in automation to solve the environment issue.
 
 # Deprecated
+
+I want my company to freely share the salary of each employee. I understand why companies hide this data. It allows to underpay employees because they can't complain if they don't know they are making less than their peers. Also, it can avoid some jaleousy. But I think people eventually find out anyway and it makes them not only jaleous but frustated. I much prefer to be open and upfront. Every position in the company would have a set salary. This brings it's set of issues, but it is a must in my book.
 
 I want the website to be a product of his own. This is a highly competitive space. There are already thousands of recipe websites online. The website I want to be partially open. The data that users enter will be freely available for them. They will always be able to download their recipes. I don't want to release the website's source code though because I don't see any use. Users will be able to download their own recipes and any public recipes.
 
@@ -392,6 +395,8 @@ _On voit les pots avec tous les ingrédients et toi qui ne reste plus qu'à vers
 The main focus are recipes that are environmentally-friendly, but others are included for completeness sake.
 
 # Référence
+
+4*8*1.15+2*8*0.75+6*8*0.33+2*8*0.05+4*5*0.5 kg
 
 Music by <a href="/users/winkingfoxmusic-18210509/?tab=audio&amp;utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=audio&amp;utm_content=4049">WinkingFoxMusic</a> from <a href="https://pixabay.com/music/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=4049">Pixabay</a>
 

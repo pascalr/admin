@@ -1,5 +1,6 @@
 # Routine
 
+1. CHAQUE FOIS QUE JE CUISINE UNE RECETTE POUR LA DEUXIÈME FOIS (2e fois comme ça je sais qu'elle est bonne) UTILISER MON SITE À MOI.
 1. Peut-être une recette aux deux semaines, mais une recette très bien faite complète? Ça me prendrait en fait une journée complette pour une recette... Le vendredi journée rédaction recette?
 1. RÉPONDRE PEU À PEU AUX QUESTIONS PAR ÉCRIT
 
@@ -44,6 +45,8 @@ Avant de passer trop de temps dessus, lire le User Agreement: https://www.istock
 https://www.istockphoto.com/photo/freshness-pumpkin-soup-gm859053324-141898373?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fpumpkin-soup&utm_term=pumpkin%20soup%3A%3Asearch-aggressive-affiliates-v1%3Aa
 
 # Autres planifications
+
+1. Dans le edit, quand une recette est une variante, barré tout les choses qui sont pris de la recette de base et que ce soit claire que ça ne peut pas être modifié. Mais avoir un bouton et pouvoir faire: Make this recipe independent. Et là ça va te demander un nom unique, une image, ...
 
 1. Variantes: Heda, Ricardo, ...
 
