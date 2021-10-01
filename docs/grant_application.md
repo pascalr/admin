@@ -63,7 +63,7 @@ Autres:
 Over a quarter of global greenhouse gas emissions is emitted because of food. Sources like transportation, packaging, heavy carbon-footprint diets and food waste could all be improved. A simple solution is to cook by yourself from good, raw ingredients. But it takes a lot of time to cook properly every day. We want to help. We want to make eating good food at home in an environmentally-friendly way easy.
 
 This is why we invented Heda, the pantry robot, to assist you in everyday cookings tasks. It can store, weigh, retrieve, stir, blend and more. It lives in a cupboard which can store over 
-75 kilos of food. The food is stored in glass containers which can be filled in bulk without packaging. The glass containers helps you see what and how much you have really easily. You are in the grocery store and don't remember if you have any sugar left? No worries. The robot keeps the inventory and you can access it from anywhere, anytime. It keeps an eye out for low items and generates a grocery list automatically.
+75 kilos of food. The food is stored in glass containers which can be filled in bulk without packaging. The glass containers helps you see what and how much you have really easily. If you are in the grocery store and don't remember if you have any sugar left, it's OK because the robot keeps the inventory and you can access it from anywhere, anytime. It keeps an eye out for low items and generates a grocery list automatically.
 
 Heda's robotic arm has a lot of potential to help you cook. It can fetch all the ingredients needed for a recipe and let you add as much as you are inspired. It can do some mixes. For example, it can mix some spices together. It can do many types of batter like pancake or cake batter. You give it milk and eggs, and it we make all the batter by itself. You don't have any milk for your pancakes? No worries. It can make some vegetable milk by itself. Just the right amount needed or more to drink. And when you're done cooking, you put the containers back on the shelf and it stores everything.
 
@@ -235,7 +235,7 @@ There is still a lot that needs to be done. On the product side, I need to keep 
 
 I am working on a recipe website to host the user's recipes. I am slowly building a libray of recipes for marketing and in order to have a list to give users who buy the machine. I want to use the website as a way to attract customers. You see a recipe and it tells you how much time you would save if you bought our machine. The website could also be product of his own and a way to generate revenue.
 
-The cupboard is well developped. I would like to start selling some. It can be used well without the robotic arm inside. The customer will be able to purchase and install the robotic arm latter. I don't think this will be a big part of revenue because it is bulky and hard to ship. The design is open and I encourage people to make their own. I want to make a detailed webpage and a video that teach people how.
+The cupboard is well developped. I would like to start selling some. It can be used well without the robotic arm inside. The customer will be able to purchase and install the robotic arm latter. The design is open and I encourage people to make their own. I want to make a detailed webpage and a video that teach people how.
 
 The actual robot is where there is the most work left to be done. The current robotic arm is still a prototype.
 
@@ -243,9 +243,9 @@ I am satisfied with the mechanical design which is now stiff and strong enough. 
 
 The electrical design needs to be remade. It is already fully functional, but it is not pretty nor safe. There needs to be a proper enclosure, components and wiring. Someone with proper experience will need to be hired for this or an engineering firm will need to be consulted.
 
-A robotic simulation is required in order to develop the robotic arm. The simulation helps to determine what is actually feasible. The product will live in a home kitchen so it has strict requirements. It must be compact, quiet, safe, pretty and functional. Once we know what can be done, the simulation is very helpful to help achieve it. For example, it helps to visualize the inventory from the robots perspective and it helps with motion planning. It will take a considerable amount of time to program the robotic arm.
+A robotic simulation is required in order to develop the robotic arm. The simulation helps to determine what is actually feasible. The product will live in a home kitchen so it has strict requirements. It must be compact, quiet, safe, pretty and functional. Once we know what can be done, the simulation is very helpful to help achieve it. For example, it helps to visualize the inventory from the robots perspective and it helps with motion planning. When a feature is ready, I can program it directly on the actual robotic arm. Right now, the simulation is able to retrieve and store jars and the robotic arm is able to move manually.
 
-Also, I would like to spend time to work with the robot's camera, a sink and tools like spoons and blenders. I've worked on some of this, but the design changed quite a bit since then so I have to start from scratch.
+I would like to spend time to work with the robot's camera, a sink and tools like spoons and blenders. I've worked on some of this, but the design changed quite a bit since then so I have to start from scratch.
 
 On the business side, the company is not yet incorporated. I am waiting as long as possible to avoid unnecessary costs.
 
@@ -260,15 +260,15 @@ I have the ambition of growing the company. I would like to pursue further fundi
 **Important!!!**
 ## 5) What challenges or uncertainties do you expect to face?
 
-The kitchen robotics space is very new and as such, the market is not well validated. I did a survey and got positive results, but I am still worried that the market is too small.
+The kitchen robotics space is very new and as such, the market is not well validated. I did a survey and got positive results, but I am still worried that the market is too small. I am uncertain that people will actually be ready to buy it at the price I am able to sell it.
 
-One challenge will be to actually sell my product. The product is similar to smart fridges. The first smart fridges did not sell well, consumers thought it was overpriced for the benefit. It took time to develop a cheaper product that finaly users were interested in buying.
+So, one challenge will be to actually sell my product. The product is similar to smart fridges. The first smart fridges did not sell well because consumers thought it was overpriced for the benefit. It took time to develop a cheaper product that finaly users were interested in buying.
 
-One major concern of mine is safety. A key feature of the machine would be it's independence. It would be awesome if the robot could start cooking by itself when you are at work, then you come home and finish cooking what it started. But in order for the machine to work without supervision, the technology must be well advanced. I don't want to be responsible for fires or property damage.
+One major concern of mine is safety. A key feature of the machine would be it's independence. It would be awesome if the robot could start cooking by itself when you are at work, then you come home and finish cooking what it started. But in order for the machine to work without supervision, the technology must be well advanced.
 
 There are plenty of technical challenges. I did a proof of concept about most aspects already and I can make it work sometimes. But the challenge is to make it work all the time. For example, with little work, I was able to detect jars most of the time, but this is not enough. It needs to be able to detect jars 100% of the time. Otherwise the robotic arm will probably break it if it does not know it is there.
 
-Another challenge is to finish the product before running out of capital. It takes a lot of time to build a robot. My competitor Moley Robotics[1] started in 2014 and have barely a product yet. But I am aiming at a lower end robot so I should be able to complete one in much less time.
+Another challenge is to finish the product before running out of capital. It takes a lot of time to build a robot. My competitor Moley Robotics started in 2014[1] and have barely a product yet. But I am aiming at a lower end robot so I should be able to complete one in much less time.
 
 [1] https://moley.com/?target=about_us
 
@@ -278,7 +278,7 @@ Openness is really important for me because it resonates with two of my core val
 
 My whole life, I've been using open software almost exclusively. I am using Linux, Firefox, Godot, Freecad, LibreOffice, Bootstrap, Ruby on rails, Gimp, Blender, OpenShot, Krita and so much more. So the least I can do is contribute back and make my software open source. Users will be able to tweak and play with the robotic arm. They will be able to modify the application to customize it to their liking.
 
-I am wondering whether I want to release my project under GPL or MIT license. GPL reassures me by feeling more secure about preventing my idea to be stollen, but I am not the biggest fan of the license. The theory and the idea is good, but in practice I don't like it. It does not give full freedom. When I look for some code on the internet, I love it when it is released under MIT license.
+I am wondering whether I want to release my project under GPL or MIT license. GPL reassures me by feeling more secure about preventing my idea from being stollen, but I am not the biggest fan of the license. The theory and the idea is good, but in practice I don't like it because it does not give full freedom. When I look at some code on the internet, I love it when it is released under MIT license.
 
 Before working on my project, I was working as an electromechanic. So I am used to repair all sorts of things and I understand how frustrating it is when you can't find schematics or spare parts for something you bought. I want my project to not only be open-source, but to be open-hardware. I want to make schematics and part lists available so people will always be able to repair their machine.
 
@@ -305,6 +305,8 @@ Automation. This is my domain of expertise. To solve the environement, we could 
 or we can go forward. I don't believe we are ever going to go backwards, so I believe in automation to solve the environment issue.
 
 # Deprecated
+
+I don't think this [selling the cupboard] will be a big part of revenue because it is bulky and hard to ship.
 
 I want my company to freely share the salary of each employee. I understand why companies hide this data. It allows to underpay employees because they can't complain if they don't know they are making less than their peers. Also, it can avoid some jaleousy. But I think people eventually find out anyway and it makes them not only jaleous but frustated. I much prefer to be open and upfront. Every position in the company would have a set salary. This brings it's set of issues, but it is a must in my book.
 

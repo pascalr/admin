@@ -46,6 +46,12 @@ https://www.istockphoto.com/photo/freshness-pumpkin-soup-gm859053324-141898373?u
 
 # Autres planifications
 
+1. Don't allow unitary foods in database to not have a unit weight
+
+1. AUTOCOMPLETE ID!!!!!
+
+1. TODO: Photo sur AWS, rajouter le lien vers l'origine de la photo si sur internet. Rajouter l'auteur de la photo pour le créditer si possible.
+
 1. Dans le edit, quand une recette est une variante, barré tout les choses qui sont pris de la recette de base et que ce soit claire que ça ne peut pas être modifié. Mais avoir un bouton et pouvoir faire: Make this recipe independent. Et là ça va te demander un nom unique, une image, ...
 
 1. Variantes: Heda, Ricardo, ...
