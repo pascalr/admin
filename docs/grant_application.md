@@ -60,14 +60,32 @@ Autres:
 
 ## Texte
 
-Over a quarter of global greenhouse gas emissions is emitted because of food. Sources like transportation, packaging, heavy carbon-footprint diets and food waste could all be improved. A simple solution is to cook by yourself from good, raw ingredients. But it takes a lot of time to cook properly every day. We want to help. We want to make eating good food at home in an environmentally-friendly way easy.
+Over a quarter of global greenhouse gas emissions is emitted because of food. Sources like transportation, packaging, heavy carbon-footprint diets and food waste could all be improved. Cooking by yourself from good local ingredients could help. But it takes a lot of time to cook properly every day. We want to help. We want to make eating good food at home in an environmentally-friendly way easy.
 
 This is why we invented Heda, the pantry robot, to assist you in everyday cookings tasks. It can store, weigh, retrieve, stir, blend and more. It lives in a cupboard which can store over 
 75 kilos of food. The food is stored in glass containers which can be filled in bulk without packaging. The glass containers helps you see what and how much you have really easily. If you are in the grocery store and don't remember if you have any sugar left, it's OK because the robot keeps the inventory and you can access it from anywhere, anytime. It keeps an eye out for low items and generates a grocery list automatically.
 
-Heda's robotic arm has a lot of potential to help you cook. It can fetch all the ingredients needed for a recipe and let you add as much as you are inspired. It can do some mixes. For example, it can mix some spices together. It can do many types of batter like pancake or cake batter. You give it milk and eggs, and it we make all the batter by itself. You don't have any milk for your pancakes? No worries. It can make some vegetable milk by itself. Just the right amount needed or more to drink. And when you're done cooking, you put the containers back on the shelf and it stores everything.
+Heda's robotic arm has a lot of potential to help you cook. For example, in order to make a cake, it can mix all the dry ingredients together. You can also give Heda the ingredients from the fridge, like milk, and it will then be able to mix the batter by itself. Bake for 30 minutes and you have a cake!
 
-One of our core values is openness. We strongly believe it is important in order to have freedom and control over what you own. This is why all the hardware and the software will be released open-sourced along with the product. Also, all our recipes will be freely available for everyone.
+The robot is still a prototype. When we launch, we plan on selling kits to assemble. The software and the hardware will be released open-source along with the product. We want users to be in control of what they buy.
+
+Users will be able to control the robot and access their recipes through a website or an application. This is the french website that I am working on right now. It will host the recipes that Heda can help you cook. Heda is especially usefull for vegan recipes and desserts because they are usually made with pantry ingredients.
+
+You can add recipes to your calendar so Heda will prepare in advance what's needed for the recipe. The grocery list will also be updated automatically.
+
+One innovation is to add the ingrdients quantity directly into the instructions. This way it is easier to follow the recipe. You don't have to go back and forth between instructions and ingredients.
+
+And when you're done cooking, you put the containers back on the shelf and it stores everything. 
+
+BEGIN OLD
+I am currently working on a website to host all the recipes that Heda can help you cook. The main focus are eco-friendly recipes. The website is only in french for now.
+You must login into your own account in order to fully use the website's functionallities.
+Then, you can keep a list of your recipes.
+You can browse by categories and by recipe name in order to find a recipe quickly. You can also browse by images in order to have an inspiration for what you want to eat.
+You can add recipes to your calendar so Heda will prepare in advance what's needed for the recipe. The grocery list will also be updated automatically.
+One innovation is to add the ingrdients quantity directly into the instructions. This way it is easier to follow the recipe. You don't have to go back and forth between instructions and ingredients.
+
+END OLD
 
 I started working on this idea at the beginning of 2020, just before Covid started. I've come a long way since the early prototype. But now I need your help to push the idea even further and turn it into a real product. Receiving this grant would allow me to continue working full time on the project and to hire someone to grow the company.
 
@@ -191,7 +209,7 @@ Concretely, I want people to buy food in bulk without packaging, to eat more ear
 
 For the past year and a half, I have been working on an invention of mine: a pantry robot. The idea is to have a cupboard with containers to store dry ingredients combined with a robotic arm which handles the inventory and also helps with cooking.
 
-The robot would keep an eye out for the inventory and generate a grocery list automatically. It tells you how much to buy of everything based on your habits and your meals planned in your calendar. It tells you which container size to use and how much to fill it. Also, you can even access your inventory from anywhere, anytime, to check how much of something you have remaining.
+The robot would keep an eye out for the inventory and generate a grocery list automatically. It tells you how much to buy of everything based on your habits and your meals planned in your calendar. It tells you which container size to use and how much to fill it. Also, you can even access your inventory from anywhere, anytime, to check how much of something you have remaining. In order to avoid food waste, the machine suggests recipes that use ingredients that are about to expire.
 
 In a smart fridge, they use cameras and scales to handle the inventory. The advantage of using a robotic arm instead, is that it has to potential to do so much more. You can select a recipe and the robot will bring out the required ingredients. It can store everything when you're finished. It can also mix ingredients together.
 
@@ -305,6 +323,11 @@ Automation. This is my domain of expertise. To solve the environement, we could 
 or we can go forward. I don't believe we are ever going to go backwards, so I believe in automation to solve the environment issue.
 
 # Deprecated
+
+
+Heda's robotic arm has a lot of potential to help you cook. It can fetch all the ingredients needed for a recipe and let you add as much as you are inspired. It can do some mixes. For example, it can mix some spices together. It can do many types of batter like pancake or cake batter. You give it milk and eggs, and it we make all the batter by itself. You don't have any milk for your pancakes? No worries. It can make some vegetable milk by itself. Just the right amount needed or more to drink. And when you're done cooking, you put the containers back on the shelf and it stores everything.
+
+One of our core values is openness. We strongly believe it is important in order to have freedom and control over what you own. This is why all the hardware and the software will be released open-sourced along with the product. Also, all our recipes will be freely available for everyone.
 
 I don't think this [selling the cupboard] will be a big part of revenue because it is bulky and hard to ship.
 

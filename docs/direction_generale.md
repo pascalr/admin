@@ -46,6 +46,8 @@ https://www.istockphoto.com/photo/freshness-pumpkin-soup-gm859053324-141898373?u
 
 # Autres planifications
 
+1. Ajouter tofu dans la recette de tofu poulet au beurre.
+
 1. Don't allow unitary foods in database to not have a unit weight
 
 1. AUTOCOMPLETE ID!!!!!

@@ -18,6 +18,7 @@ La frustration et la colère se présente lorsque les choses ne se passent pas c
 1. Un film de science fiction/romantique dans un futur utopique. L'histoire principale est une histoire romantique. En arrière plan est tout ce qui est science fiction. Ça attirerait beaucoup les couples, les filles et les gars. Ça serait malade!
 1. Un substitut de viande végé qui goûte meilleur que de la viande.
 1. Dans un village abandonné, partir une université avec des emplois à distance. Par exemple, pour apprendre la programmation. Il faudrait aussi qu'il y ait des filles. Faudrait que ce soit cool comme uni que le monde veuille y aller. Quelle job les filles font à distance?
+1. Search engine dans la barre de recherche du browser. Quand tu cliques sur la barre de recherche en haut, ça devrait faire un dropdown et afficher directement les liens comme sur google. Le premier lien pourrait être de la publicité pour faire de l'argent, comme sur google. Et ce n'est pas grave si ce n'est pas le meilleur système. Si la recherche est compliquée et les résultats ne sont pas bons, appuyer sur enter ou cliquer recherche te redirige vers google.
 
 ### Politique
 
