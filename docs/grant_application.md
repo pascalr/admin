@@ -65,27 +65,24 @@ Over a quarter of global greenhouse gas emissions is emitted because of food. So
 This is why we invented Heda, the pantry robot, to assist you in everyday cookings tasks. It can store, weigh, retrieve, stir, blend and more. It lives in a cupboard which can store over 
 75 kilos of food. The food is stored in glass containers which can be filled in bulk without packaging. The glass containers helps you see what and how much you have really easily. If you are in the grocery store and don't remember if you have any sugar left, it's OK because the robot keeps the inventory and you can access it from anywhere, anytime. It keeps an eye out for low items and generates a grocery list automatically.
 
-Heda's robotic arm has a lot of potential to help you cook. For example, in order to make a cake, it can mix all the dry ingredients together. You can also give Heda the ingredients from the fridge, like milk, and it will then be able to mix the batter by itself. Bake for 30 minutes and you have a cake!
+Heda's robotic arm has a lot of potential to help you cook. For example, in order to make a cake, it can fetch and mix all the dry ingredients together. You can also give Heda the ingredients from the fridge, like milk, and it will then be able to mix the batter by itself. Bake for 30 minutes and you have a cake!
 
 The robot is still a prototype. When we launch, we plan on selling kits to assemble. The software and the hardware will be released open-source along with the product. We want users to be in control of what they buy.
 
 Users will be able to control the robot and access their recipes through a website or an application. This is the french website that I am working on right now. It will host the recipes that Heda can help you cook. Heda is especially usefull for vegan recipes and desserts because they are usually made with pantry ingredients.
+
+You will be able to login into your own account in order to fully use the website's functionallities.
+Then, you can keep a list of your recipes.
+You can browse by categories and by recipe name in order to find a recipe quickly. You can also browse by images in order to have an inspiration for what you want to eat.
+You can add recipes to your calendar so Heda will prepare in advance what's needed for the recipe. The grocery list will also be updated automatically.
+One innovation is to add the ingrdients quantity directly into the instructions. This way it is easier to follow the recipe. You don't have to go back and forth between instructions and ingredients.
+
 
 You can add recipes to your calendar so Heda will prepare in advance what's needed for the recipe. The grocery list will also be updated automatically.
 
 One innovation is to add the ingrdients quantity directly into the instructions. This way it is easier to follow the recipe. You don't have to go back and forth between instructions and ingredients.
 
 And when you're done cooking, you put the containers back on the shelf and it stores everything. 
-
-BEGIN OLD
-I am currently working on a website to host all the recipes that Heda can help you cook. The main focus are eco-friendly recipes. The website is only in french for now.
-You must login into your own account in order to fully use the website's functionallities.
-Then, you can keep a list of your recipes.
-You can browse by categories and by recipe name in order to find a recipe quickly. You can also browse by images in order to have an inspiration for what you want to eat.
-You can add recipes to your calendar so Heda will prepare in advance what's needed for the recipe. The grocery list will also be updated automatically.
-One innovation is to add the ingrdients quantity directly into the instructions. This way it is easier to follow the recipe. You don't have to go back and forth between instructions and ingredients.
-
-END OLD
 
 I started working on this idea at the beginning of 2020, just before Covid started. I've come a long way since the early prototype. But now I need your help to push the idea even further and turn it into a real product. Receiving this grant would allow me to continue working full time on the project and to hire someone to grow the company.
 
@@ -172,13 +169,11 @@ Explain about the business model. I want to sell kits that people can buy and as
 ## 1) Tell us about the world as you see it.
 (A description of the status quo and context in which you will be working)
 
-I come from Québec, the french part of Canada. I am a self-taught multi-disciplinary person who loves technology.
+I come from Québec, the french part of Canada. I am lucky to have been raised by a modest, yet loving familly. This made me an optimist. When I watch science-fiction movies set in the future, I don't understand why they are all so bleak. Personally, I have high hopes for the future of humanity. But we have to survive the next centuries to keep evolving and make our civilisation stand the test of time.
 
-I am also an optimist. When I watch science-fiction movies set in the future, I don't understand why they are all so bleak. Personally, I have high hopes for the future of humanity. But we have to survive the next centuries to keep evolving and make our civilisation stand the test of time.
+One of the greatest treats to humanity is the environment. The most obvious issue being the climate change. There is a lot of room for improvements. Currently, I am working towards improving the environmental aspect of food. I am concerned about transportation, trash, waste and diets.
 
-One of the greatest treats to humanity is the environment. The most obvious issue being the climate change. There is a lot of room for improvements. Currently, I am working toward improving the environmental aspect of food. I am concerned about transportation, trash, waste and diets.
-
-Needless to say transportation emits greenhouse gas emissions. We could reduce them by avoiding transporting long distances to transformation factories. Raw food is frequently transported far away to be transformed or packaged. Then the final product travels again far away to reach the end customer.
+Needless to say transportation emits greenhouse gas emissions. We could reduce them by avoiding transporting long distances to transformation factories. Raw food is frequently transported far away to be transformed or packaged. Then, the final product travels again far away to reach the end customer.
 
 Energy is also wasted on single-use packaging. Not only does it waste energy to package, it accumules trash. Worst of all, it is not always properly disposed of and is often found polluting the environment.
 

@@ -46,6 +46,19 @@ https://www.istockphoto.com/photo/freshness-pumpkin-soup-gm859053324-141898373?u
 
 # Autres planifications
 
+1. Faire une checklist avant de release une recette.
+Checklist:
+1. Densités et Unit weight correct?
+1. Conversions?
+
+1. Enter goes to recipe.
+
+1. Dont show raw ingredients. Otherwise it does not work for scaling. Only figure out what exactly the raw ingredient was (unit, volume or weight?)
+
+1. Ingrédient principal aux recettes.
+1. Français & anglais
+1. Valeurs nutritives des aliments
+
 1. Ajouter tofu dans la recette de tofu poulet au beurre.
 
 1. Don't allow unitary foods in database to not have a unit weight
