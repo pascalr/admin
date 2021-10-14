@@ -1,42 +1,20 @@
-# Routine
+## Routine
 
-1. CHAQUE FOIS QUE JE CUISINE UNE RECETTE POUR LA DEUXIÈME FOIS (2e fois comme ça je sais qu'elle est bonne) UTILISER MON SITE À MOI.
-1. Peut-être une recette aux deux semaines, mais une recette très bien faite complète? Ça me prendrait en fait une journée complette pour une recette... Le vendredi journée rédaction recette?
-1. RÉPONDRE PEU À PEU AUX QUESTIONS PAR ÉCRIT
-
-## Hebdomadaire
-Mercredi:
-1. Cuisiner une recette.
-
-Jeudi:
-1. Prendre en photo la recette et rédiger sur internet.
-
-Vendredi:
-1. Backup Admin, Hedacuisine, ImageEditor
-
-## Mensuel
-
-1. Planifier une recette par semaine pour le mois prochain.
+1. Ajouter une recette production ready.
+1. Vendredi: Backup Admin, Hedacuisine, ImageEditor
 
 # Bugs
 
+1. Fix les conversions
 1. Boulette de pois chiches: 2 oeufs de lin (il manque un s dans la substitution)
 1. Tomates en dés Tofu poulet au beurre.
 1. Plus de détails dans la recette du tofu poulet au beurre.
-
-# Planification (PRIORITÉ: Application)
-
-1. Implementer retrieve dans la simulation.
-
-Mettre à jour mon CV.
-Who are your current or potential key partners?
-1. Prendre un pot sur la tablette et aller la porter sur une tablette.
 
 # Articles
 
 Dans mes articles, expliquer le pourquoi.
 
-Faire un article sur le pain. Expliquer l'effet de chaque ingrédient comme j'avais lu dans  
+Faire un article sur le pain. Expliquer l'effet de chaque ingrédient comme j'avais lu.
 
 # PHOTOS
 
@@ -46,10 +24,33 @@ https://www.istockphoto.com/photo/freshness-pumpkin-soup-gm859053324-141898373?u
 
 # Autres planifications
 
-1. Faire une checklist avant de release une recette.
-Checklist:
-1. Densités et Unit weight correct?
-1. Conversions?
+1. https://linkchecker.github.io/linkchecker/
+
+1. Ajouter un boolean. Densité validé? ou bien enlever la densité de tous les trucs que ce n'est pas encore fait.
+
+1. densité pois chiches secs
+1. densité chapelure assaissonée à l'italienne
+
+1. Faire ta propre chapelure assaisonnée à l'italienne 
+
+1. Faire un truc pour partager les recettes. On voit l'image et le nom de la recette.
+
+1. Essayer avec d'autres browsers.
+
+1. SEO
+
+1. Plusieurs photos par recettes. Boulettes de pois chiches. Dans pâtes, dans soumarins, etc.
+
+1. Arrondir les valeurs à 1% près.
+
+1. Alias de food. Sucre devrait être un alias pour sucre granulé.
+1. L'huile fait référence à huilde de soja, parce que c'est l'huile la plus commune après l'huile de palm, donc c'est l'huile la plus utilisé par Mr et Mme tout le monde. Un alias pour huile de soja?
+1. Sel == sel de table
+1. Poivre, poivre noir, poivre noir moulu, poivre moulu
+
+1. Application pour t'aider à déterminer quoi manger. Il y a une liste de catégories, tu cliques dessus, puis tu fais gauche droite pour les recettes. Chou-fleur, gauche droite, ... Tu sélectionnes et tu ajoutes à ton calendrier.
+
+1. DNS: Quand le DNS redirigeait vers heroku, dans Namecheap, j'avais Redirect domain: Source URL: Wildcard redirect; Destination URL: https://aqueous-fortress-30634.herokuapp.com/
 
 1. Enter goes to recipe.
 
