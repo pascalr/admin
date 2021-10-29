@@ -19,6 +19,9 @@ La frustration et la colère se présente lorsque les choses ne se passent pas c
 1. Un substitut de viande végé qui goûte meilleur que de la viande.
 1. Dans un village abandonné, partir une université avec des emplois à distance. Par exemple, pour apprendre la programmation. Il faudrait aussi qu'il y ait des filles. Faudrait que ce soit cool comme uni que le monde veuille y aller. Quelle job les filles font à distance?
 1. Search engine dans la barre de recherche du browser. Quand tu cliques sur la barre de recherche en haut, ça devrait faire un dropdown et afficher directement les liens comme sur google. Le premier lien pourrait être de la publicité pour faire de l'argent, comme sur google. Et ce n'est pas grave si ce n'est pas le meilleur système. Si la recherche est compliquée et les résultats ne sont pas bons, appuyer sur enter ou cliquer recherche te redirige vers google.
+1. Un meta search engine. Un site web avec simplement une barre de recherche en haut et un dropdown qui te permets de sélectionner le moteur de recherche de ton choix.
+1. DOTA 2: Race to arm. Comme dans counter strike. 10 héro. Tu dois passer à travers tout tes héros le plus rapidement possible. Quand tu tue quelqu'un, tu es de retour à la fontaine avec un nouvel héro.
+1. Pourquoi est-ce qu'il n'existe pas présentement un Facebook pour les compagnies. Seulement les compagnies. Une place ou que tout le monde se met. Une place facile à créer un site web.
 
 ### Politique
 

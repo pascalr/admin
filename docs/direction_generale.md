@@ -1,43 +1,180 @@
 ## Routine
 
 1. Ajouter une recette production ready.
-1. Vendredi: Backup Admin, Hedacuisine, ImageEditor
+1. Vendredi: Backup Admin, Hedacuisine, IMAGES TOO!
 
-# Bugs
-
-1. Fix les conversions
-1. Boulette de pois chiches: 2 oeufs de lin (il manque un s dans la substitution)
-1. Tomates en dés Tofu poulet au beurre.
-1. Plus de détails dans la recette du tofu poulet au beurre.
-
-# Articles
-
-Dans mes articles, expliquer le pourquoi.
-
-Faire un article sur le pain. Expliquer l'effet de chaque ingrédient comme j'avais lu.
-
-# PHOTOS
+# IMAGES
 
 Accumuler les photos sur IStock et payer pour 750 photos pour 400$ (Avoir 20% off à travers unsplash ou autre?)
 Avant de passer trop de temps dessus, lire le User Agreement: https://www.istockphoto.com/legal/license-agreement
 https://www.istockphoto.com/photo/freshness-pumpkin-soup-gm859053324-141898373?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fpumpkin-soup&utm_term=pumpkin%20soup%3A%3Asearch-aggressive-affiliates-v1%3Aa
 
+Prendre une image de petits pains. Même recette que les grands pains.
+Après ma première paie, magasiner des images!
+
+Images belle, mais à essayer les recettes je ne sais pas si c'est bon:
+1. https://www.pexels.com/photo/a-close-up-shot-of-cooked-potatoes-and-asparagus-on-a-metal-tray-7059460/
+1. https://www.pexels.com/photo/basil-leaves-and-avocado-on-sliced-bread-on-white-ceramic-plate-1351238/
+1. https://www.istockphoto.com/photo/freshly-prepared-egg-salad-sandwich-gm471412597-20447331?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fegg-salad-sandwhich&utm_term=egg%20salad%20sandwhich%3A%3Asearch-aggressive-affiliates-v1%3Ab
+1. https://www.istockphoto.com/photo/healthy-wholegrain-bread-sandwich-gm886186166-246115135?utm_source=pixabay&utm_medium=affiliate&utm_campaign=SRP_image_noresults&referrer_url=http%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Ftuna%2520salad%2520sandwhich%2F&utm_term=tuna%20salad%20sandwhich
+1. Ajouter le lien des images IStock aux recettes.
+
+# DATA
+
+1. Ajouter la catégorie pâte. Pâte brisée, pâte feuilletée, pâte sucrée, pâte sablé
+1. Sandwhich au thon. Tuna salad sandwhich
+1. Sandwhich aux oeufs. Egg salade sandwhich
+1. Soupe aux nouilles et brocoli
+1. Purée de courge poivrée
+1. Pour avoir du contenu facilement, prendre des recettes en anglais et les traduire en français?
+1. Faire un pain et le peser. 650g?
+1. Une recette de tarte au sucre sans oeuf.
+1. Ajouter la recette d'abaisse de tarte précuite (juste copier coller ce que j'ai écrit pour tarte au sucre)
+https://www.ricardocuisine.com/recettes/4817-pate-brisee-de-base
+1. Ajouter les versions de tofu poulet au beurre et de boulette de pois chiches...
+1. Plein de conversions: https://www.recettesquebecoises.com/conversionsdet
+1. Pâte feuilleté et pâte sablé. Link les recettes de pâtes entres elles.
+Densités:
+https://www.aqua-calc.com/page/density-table/substance/cornstarch-coma-and-blank-upc-column--blank-039978015839
+
+# ARTICLES
+
+1. Écrire un article à quel point c'est n'importe quoi les unités... voir: https://en.wikipedia.org/wiki/Cup_(unit)
+1 metric cup: 250 mL. 1 US cup: 236.5 mL. 1 US legal cup: 240 mL.
+Ajouter units/index.html?
+1 australian tablespoon == 20 mL
+1 dessertspoon == 10 mL
+1 old Canadian cup == 227 mL
+1 japanese cup == 200 mL
+
+1. Créer un article qui explique que les recettes publiques seront toujours disponibles. Même si le site n'existe plus, il est possible de télécharger le site et de le rouler localement. Donner le lien github. Et donner même comment le rouler. Dans le README du lien github, expliquer comment rouler le site localement.
+
+1. Peaufiner l'article de pois chiches. Remettre les images que j'avais. Link la recette de boulettes de pois chiches à l'article de pois chiches.
+
+# Pour rerelease le static:
+
+# WEBSITE MVP
+
+People can login into the BETA beta.hedacuisine.com in order to create recipes.
+
 # Autres planifications
+
+1. Être sur google
+
+1. Hey je suis capable de faire un search en js! Et toutes les images je peux les loader dynamiquement! Je pourrais le faire en react pour me pratiquer pour une job?
+
+--------
+
+1. Utiliser un vrai truc d'autocomplete pour le search en haut...
+
+1. Faire du beau css. Utiliser des variables en scss. Faire ça clean mon truc de search.
+
+1. Enlever les 2 trucs différents pour la navbar, c'est mauvais comme design.
+
+1. Garder juste 2 chiffre significatif. Voir la longeur du chiffre. Regarder le chiffre suivant. Arrondir .1, .2 et .3 à 0, .4, .5 et .6 à .5, .7, .8, .9 à 1
+
+1. TODO: Handle les alias de nom de recettes. Pâtes à tarte, croûte à tarte...
+
+1. dropbox sync images
+
+1. amandes n'est pas au singulier...
+
+1. en
+
+1. Ne pas modifier le nom des recettes en expressions pour l'instant. S'assurer que ça fonctionne bien pour les foods en premiers.
+
+1. Remove FoodRecipe. Remove Tasks.
+
+1. Ajouter about aux images
+
+1. Ajouter four dans les outils. C'est pratique parce que ainsi tu peux filtrer les recettes qui ne nécessitent pas le four. Mais ça fait bizarre de marque four. Marquer cuisinière aussi? Je ne sais pas...
+
+1. Search autocomplete use JSON file.
+
+1. Ajouter une section Détails entre Instructions et Commentaires? Et là marquer le lien vers la recette originale? Ça me prendrait plus de détails à inscrire que seulement la source originale... Ah peut-être par qui aussi que ça été modifié? Quel utilisateur a ajouté la recette? La date de création. La date de dernière modification.
+
+1. Des outils facultatifs (par exemple un coupe-pâte dans la recette de tarte au sucre version 3.
+
+1. Pouvoir naviguer la barre de recherche avec le clavier.
+
+1. Ajouter au règle de bonne recette: Inscrire toutes les étapes dans la recettes, incluant de couper les ingrédients.
+
+1. Imprimer
+
+1. Different font in dev than in prod. Dev seems to be the problem because if I comment out the url in application.scss, it is the same.
+
+1. Hey pour les contents creators ça pourrait être cool: On traduit automatiquement vos recettes pour 10 pays! (Québec, France, ...) Ça serait hot!
+
+1. J'aimerais arrondir le 3e chiffre significatif au demi près. 120, 125 et 130. 1.2, 1.25, 1.3.
+
+1. Un espace insécable entre la quantité et l'unité.
+
+1. Clean HTML. Minimize layout HTML.
+
+1. Trouver un autre nom de domaine qui focus entièrement sur les recettes.
+
+Quoi faire avec mes paies: Rembourser dettes, acheter 750 images, heroku toujours up (7$ par mois)
+
+Je veux que les versions soient permanentes. Comme ça tu te rappelles que tu manges de la lasagne (ver 21)
+Je veux que tu puisses remplacer le nom de ta versions plus tard. Par exemple (selon Pascal). OUIN JE NE SAIS PAS...
+Quand tu crées une nouvelle recette, si le nom de la version est vide, son (ver nb) est calculé.
+Si (original) et (selon Pascal) existe déjà, quel devrait être le numéro de la version?
+Si une recettes est une version d'un autre, et tu décides de l'enlever et de la mettre une recette à part entière avec un nouveau nom, tu fais quoi de la version?
+
+Image 	The URL of the image for your object. It should be at least 600×315 pixels, but 1200×630 or larger is preferred (up to 5MB). Stay close to a 1.91:1 aspect ratio to avoid cropping.
+
+Plus tard:
+edit.hedacuisine.com -> aqueous-fortress, ça me prends SSL par contre, 7$/mois pour heroku
+Que les utilisateurs peuvent modifier les recettes par eux même. 7$/mois pour heroku
+
+1. Comment planifier une recette:
+Questions:
+1. Choisir une date pour cuisiner.
+1. Une de vos recettes ou découvrir une nouvelle recette?
+1. Idéalement afficher un circularie avec les ingrédients en rabais.
+1. Quel ingrédient dans la recette?
+1. C'est pour manger de quand à quand la recette? Le jour même? Pour plusieurs jours? Pour congeler? Pour le lendemain?
+1. Suggestions de recette.
+1. J'aime ou je n'aime pas (swipe à droite ou swipe à gauche)
+
+1. Add to my recipes. Quand une version est dans tes recettes. Afficher cette version en premier. Écrire un avertissement. Vous avez été redirigé de ... parce que cet version est dans vos recettes. Voir la l'autre version.
+
+
+https://developers.google.com/search/docs/beginner/seo-starter-guide
+https://developers.google.com/search/docs/advanced/structured-data/recipe
+https://developers.google.com/search/docs/advanced/structured-data/breadcrumb
+
+1. https://news.ycombinator.com/item?id=28879461
+mongol
+Yes I know what you mean. I think there should be a site that realizes that there are many variants of well known dishes, and they should be categorized as that. Very rarely is there an original, true recipe that is the pristine source for the dish. So when I search bearnaise sauce, I should not get a recipe, I should get a general description, kind of like a Wikipedia page. And then below that, all the different recipes, that can be contributed like on a wiki. Each recipe should have a feedback mechanism so the best ones gets upvoted.
+EXACTLY WHAT I WANT TO DO!
+
+1. Recettes similaires en bas des recettes.
+
+1. On every post on hacker news about recipes. Comment about my own website!
+
+1. Trouver des recettes sur google qui sont là en anglais, mais qu'il y a rien ou presque rien en français!
+
+1. Images ALT
+
+1. Make sure all of the pages on your site are reachable through links, and that they don't require an internal search functionality to be found.
+
+1. Users will occasionally come to a page that doesn't exist on your site, either by following a broken link or typing in the wrong URL. Having a custom 404 page that kindly guides users back to a working page on your site can greatly improve a user's experience. Consider including a link back to your root page and providing links to popular or related content on your site. You can use Google Search Console to find the sources of URLs causing "not found" errors. 
+
+1. Sitemap, une fois que parfait et SEO est là
+1. 404
+
+1. Plusieurs servings possible. Pain (650 g),  Petit pain (65 g). Offrir un dropdown avec les possibilités.
+
+1. Outils pour planifier des repas. En haut voir le calendrier, en bas, voir les recettes, avec le search. Voir les rabais les la semaine et browse par catégories selon les rabais de la semaine. Par exemple, chou fleur, ou tofu, etc.
 
 1. https://linkchecker.github.io/linkchecker/
 
 1. Ajouter un boolean. Densité validé? ou bien enlever la densité de tous les trucs que ce n'est pas encore fait.
 
-1. densité pois chiches secs
-1. densité chapelure assaissonée à l'italienne
-
 1. Faire ta propre chapelure assaisonnée à l'italienne 
 
-1. Faire un truc pour partager les recettes. On voit l'image et le nom de la recette.
-
 1. Essayer avec d'autres browsers.
-
-1. SEO
 
 1. Plusieurs photos par recettes. Boulettes de pois chiches. Dans pâtes, dans soumarins, etc.
 
@@ -321,6 +458,21 @@ https://en.wikibooks.org/wiki/Cookbook:Recipes
 https://foodgawker.com/page/2/
 https://www.findingvegan.com/
 http://www.tastespotting.com/
+https://www.recettesquebecoises.com/conversionsdet
+https://chefcuisto.com/cuisine/recettes-quebecoises/
+https://www.recettes.qc.ca/
+https://www.zeste.ca/sections/recettes/styles-culinaires/cuisine-quebecoise
+http://qc.allrecipes.ca/recettes/quebecoise-recettes.aspx
+https://www.coupdepouce.com/cuisine/idees-repas/dossier/recettes-quebecoises
+http://recettes-quebecoises.qc.ca/
+https://www.troisfoisparjour.com/fr/chroniques/top-10-des-recettes-quebecoises/
+https://www.ricardocuisine.com/
+https://www.alimentsduquebec.com/fr/blogue/recette-100-quebec
+https://www.boblechef.com/fiches-recettes
+https://www.loouniecuisine.com/fr/recettes/plats-principaux/tofu-magique/
+http://www.quebecuisine.ca/
+http://www.lesgourmandisesdisa.com/
+https://listedeblogs.blogspot.com/    (une centaine de blogs)
 
 ## Recettes écologique
 1. Hamburger avec n'importe quelle boulette végé
