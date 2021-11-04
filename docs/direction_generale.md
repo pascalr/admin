@@ -1,6 +1,5 @@
 ## Routine
 
-1. Ajouter une recette production ready.
 1. Vendredi: Backup Admin, Hedacuisine, IMAGES TOO!
 
 # IMAGES
@@ -21,7 +20,8 @@ Images belle, mais à essayer les recettes je ne sais pas si c'est bon:
 
 # DATA
 
-1. Ajouter la catégorie pâte. Pâte brisée, pâte feuilletée, pâte sucrée, pâte sablé
+1. Soupe aux nouilles et brocoli 
+1. La courge poivrée, linker à des recettes de soupe, de courge farcies et de graines.
 1. Sandwhich au thon. Tuna salad sandwhich
 1. Sandwhich aux oeufs. Egg salade sandwhich
 1. Soupe aux nouilles et brocoli
@@ -36,6 +36,11 @@ https://www.ricardocuisine.com/recettes/4817-pate-brisee-de-base
 1. Pâte feuilleté et pâte sablé. Link les recettes de pâtes entres elles.
 Densités:
 https://www.aqua-calc.com/page/density-table/substance/cornstarch-coma-and-blank-upc-column--blank-039978015839
+1. https://www.bbc.co.uk/food/ingredients/a-z/a/1#featured-content
+1. https://www.homebaking.org/glossary/
+
+https://www.alexa.com/siteinfo/coupdepouce.com
+https://www.alexa.com/siteinfo/cookieandkate.com
 
 # ARTICLES
 
@@ -55,15 +60,71 @@ Ajouter units/index.html?
 
 # WEBSITE MVP
 
-People can login into the BETA beta.hedacuisine.com in order to create recipes.
-
 # Autres planifications
 
-1. Être sur google
+1. Right now, it is easier to have both the dev website and the static website. At some point though, serve everything on the static website client side. The dev website would only be a database.
+1. By loading a single script on the static site, am I able to handle devise login?
+1. TANT QUE MON SITE N'EST PAS TRÈS AVANCÉ ET BIEN TESTÉ, SÉPARER LA VERSION DEV ET STATIQUE. COMME ÇA MA VERSION STATIQUE EST BONNE. JE PEUX LA VALIDER CORRECTEMENT.
 
-1. Hey je suis capable de faire un search en js! Et toutes les images je peux les loader dynamiquement! Je pourrais le faire en react pour me pratiquer pour une job?
+1. People can login into the BETA beta.hedacuisine.com in order to create recipes. edit.hedacuisine.com
+
+1. Avant d'arrêter de travailler sur le site, laisser au monde la possibilité de créer des recettes? Mais comment est-ce que ça fonctionnerait pour les rendre public? Manuel au début.
+
+1. Traduire les recettes de Cookie&Kate en français.
+
+1. Pas de pluriel à 1.001
+
+1. Pouvoir changer la région entre France et Québec. Ajouter la région US avec des tasses à 236 mL ou bien 240 mL?
+
+1. Description boulette de pois chiches et trempette chaudes aux artichauts.
+
+1. Ajouter mes propres commentaires dans les recettes.
+
+Ah, le pain... si simple, mais si bon! Pas surprenant que c'est l'aliment le plus consommé au monde! Faire son pain à la maison, c'est encore meilleur. L'odeur et le goût d'un pain tout juste sorti du four sont difficiles à battre!
+
+C'est une délicieuse recette végétarienne qui n'a rien à envié aux boulettes de viande. Un très bon aliment à manger avec des pâtes, des sous-marins ou des pains pitas. Un moyen simple et gourmand de rajouter des protéines à vos pâtes alimentaires!
+
+Lorsqu'on est invité chez des gens, c'est notre valeur sûre! C'est rapide à faire, tellement bon et parfait pour être partager! Simplement servir avec du pain ou des pitas.
+
+1. Faire 1 heure de contenue. Mettre de la musique. Écrire de belles descriptions pour les recettes déjà sur le site. Jusqu'à 11:34.
+
+1. Être sur google
+1. Trouver des endroits pour faire de la publicité pour mon site.
+1. Demander l'opinion des gens, ce qu'ils en pensent
+
+1. Écrire de belles descriptions pour toutes les recettes visibles, avec sources. Développer un guide.
+
+1. Changer les versions sans reloader la page.
+
+1. Utiliser le lin
+
+1. Supprimer Ingredient
+
+1. Spell checker.
 
 --------
+
+
+
+1. Ajouter un hashtag aux sections, #description, et c'est ainsi que les sections sont référencées. article: ###; section: description
+
+1. Des références correct. Par exemple celle ci: http://gdt.oqlf.gouv.qc.ca/ficheOqlf.aspx?Id_Fiche=8361931, pour la farine.
+
+1. Add extension to images in the database. ext: ".json"
+
+1. TODO: Cache recipes.json
+
+1. Only have variants for images that are recipe images. Add a boolean to images to know if they can be used for a recipe.
+
+L'avantage des sections des articles et des séparer les articles en plus petits morceaux. Cela facilite la traduction et le référencement.
+
+1. Pouvoir recompiler une seule page.
+
+1. Quand je compile, regarder toutes les recettes publiques et m'écrire les warnings.
+
+1. Quand je focus le search, cacher le menu, changer la largeur de l'input (avec une transition comme ça ça fait une belle animation), remplace la loupe par X pour enlever le texte.
+
+1. Pouvoir mettre des images verticales?
 
 1. Utiliser un vrai truc d'autocomplete pour le search en haut...
 
@@ -473,6 +534,7 @@ https://www.loouniecuisine.com/fr/recettes/plats-principaux/tofu-magique/
 http://www.quebecuisine.ca/
 http://www.lesgourmandisesdisa.com/
 https://listedeblogs.blogspot.com/    (une centaine de blogs)
+https://www.restaurantalma.com/
 
 ## Recettes écologique
 1. Hamburger avec n'importe quelle boulette végé
@@ -975,4 +1037,19 @@ class Zazoo
   @sdf = 20
 end
 ...
+
+
+Hi,
+
+I believe I would be an ideal candidate because I have experience developing products working on the backend and frontend in early-stage startups.
+
+I am a quick learner and autonomous so you can trust me to get the job done without constant supervision.
+
+I am looking for a short term full time job or long term part time job so I can continue working on a startup of my own. The 2 months contract you mentionned would be perfect for me.
+
+If you have any questions, please don't hesitate to contact me by email or phone as written in my CV.
+
+Thank you!
+
+Pascal
 
