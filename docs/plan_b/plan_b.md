@@ -26,6 +26,7 @@ La frustration et la colère se présente lorsque les choses ne se passent pas c
 ### Politique
 
 1. Des taxes de carbone sur les viandes et autres produits alimentaires moins écologique. (Charger ce que ça coûte pour séquestrer le carbone générer par la production de ces produits) Retours d'argent aux producteurs qui sont en dessous de la moyenne de génération de carbone.
+1. Rendre cryptocurrency Proof of Work illégal.
 
 ## Humour
 
