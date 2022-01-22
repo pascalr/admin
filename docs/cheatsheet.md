@@ -105,3 +105,27 @@ span[data-descr]:focus::after {
   z-index: 1;
 }
 
+Pour choisir un thème
+<style>
+  input[type="radio"] {
+    display: none;
+  }
+  input[type="radio"]:checked+label {
+    border: 4px double blue;
+  }
+</style>
+<%= form.label :theme_id %>
+  <div style="display: flex; gap: 20px;">
+    <% @themes.each do |theme| %>
+      <%= form.radio_button :theme_id, theme.id %>
+      <%= form.label :theme_id, value: theme.id do %>
+        <%= render partial: 'themes/stylesheet', locals: {theme: theme} %>
+        <% book = Book.new %>
+        <% book.theme = theme %>
+        <% book.name = "#{theme.name.capitalize} theme" %>
+        <% book.user = current_user %>
+        <% book.theme = theme %>
+        <%= render partial: "books/title_page_thumbnail", locals: {book: book} %>
+      <% end %>
+    <% end %>
+  </div>

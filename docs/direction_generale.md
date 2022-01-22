@@ -65,33 +65,157 @@ Ajouter units/index.html?
 
 # Autres planifications
 
-Rédiger le plan d'affaire initial 	Confondateur 	160.0 		Show 	Edit 	Destroy
-Insérer les bonnes densités pour les aliments 	Confondateur 	30.0 		Show 	Edit 	Destroy
-Site web: Show recipe devrait aller sur le groupe, mais montrer la recette en particulier. 	Pascal 	1.0 		Show 	Edit 	Destroy
-Rencontres hebdomadaires 	Les deux 	1.5 	7 	Show 	Edit 	Destroy
-Site web: Recettes: Insérer "de" ou "d'" entre les unités et les aliments 	Pascal 	4.0 		Show 	Edit 	Destroy
-Site web: Rendre le site parfaitement bilingue 	Pascal 	16.0 		Show 	Edit 	Destroy
-Site web: Rajouter une page de recherche 	Pascal 	30.0 		Show 	Edit 	Destroy
-Demander la permissions aux sites de pouvoir hotlinker les images de leurs recettes. 	Confondateur 	16.0 		Show 	Edit 	Destroy
-Déterminer si le site internet/application peut être un produit en sois 	Confondateur 	16.0 		Show 	Edit 	Destroy
-Analyser les unicodes tel que ½ et œ 	Pascal 	4.0 		Show 	Edit 	Destroy
-Gérer la quantité 1 1/2 	Pascal 	4.0 		Show 	Edit 	Destroy
-Rajouter des alias 	Pascal 	4.0 		Show 	Edit 	Destroy
-Rajouter des commentaires aux recettes 	Pascal 	30.0 		Show 	Edit 	Destroy
-Effectuer une demande de brevet 	Confondateur 	60.0 		Show 	Edit 	Destroy
+# UPGRADE TO rails 7 en fds???
 
-1. REMOVE AWS. IT'S NOT SAFE...
+1. Print. Share. Download.
 
+1. Est-ce que Recipe#Show est encore utile? Seulement BookRecipe#Show et RecipeKind#Show non??? Oui c'est encore utile parce qu'une recette n'appartient pas nécessairement à un livre. Toutefois, je pense que pour que la recette soit publique, elle doit être associé à un livre. Dans le site public, on peut seulement voir RecipeKind#Show et BookRecipe#Show.
+
+1. Dans pages, afficher l'auteur à côté du nom de la recette, et afficher les étoiles comme il le faut, comme avant.
+
+1. Le truc à droite l'afficher en bas quand l'écran est petit.
+
+1. Mettre un cadenas à côté des recettes privé dans le sidebar du livre.
+
+1. RecipeKind n'affiche pas les pages? Il affiche tout le temps qu'il n'y a pas de recettes??? Fix le bouton Voir les recettes similaire...
+
+1. Dans la barre de recherche, voir des livres, des catégories (RecipeKind) et les recettes de l'utilisateur courrant. Quand il y a un utilisateur courrant, linker à sa recette du RecipeKind dans le show du RecipeKind.
+
+# LATER
+
+1. Dans la futur application sur téléphone, pouvoir seulement regarder, et aussi pouvoir prendre en photo vos recettes. Après tu peux aller sur l'ordinateur et les rentrer. Idéalement un algorithme qui essaie de détecter le texte sur la photo aussi...
+
+1. Category au lieu de RecipeKind partout? /categories...
+
+1. Ajouter un calendrier? Version précédente (était dans Recipes#show):
+<% if user_signed_in? %>
+  <% machine = current_user.machines.first_or_create %>
+  <div class="collapse" id="calendar">
+    <%= render partial: "meals/calendar", locals: {recipe: @recipe, machine: machine, meals: machine.meals.includes(:recipe) } %>
+    <div style="height: 10px;"></div>
+  </div>
+<% end %>
+
+# END LATER
+
+1. Un encadré Recette de la catégorie:
+              Boulette de pois chiche (23 recettes)
+              Les boulettes de pois chiches sont une recette
+              végétarienne à base de pois chiches, chapelure,
+              œufs et assaisonnements. En savoir plus...
+1. Un encadré Tiré du livre...
+
+1. Au lieu de faire un éditeur pour la page couverture du livre, rédiger un article qui explique comment faire une page couverture avec un logiciel de dessin très simple en ligne.
+
+1. Une application sur le téléphone pour visionner nos recettes.
+
+Mettre les images de livre à la même auteur. Les largeurs peuvent varier. Dans le sidebar, la hauteur varie. Quand côte à côte, la largeur varie.
+
+Books use AJAX.
+
+Montrer à Céline.
+
+Ajouter un truc rechercher à mes recettes.
+
+Recettes devrait afficher le carrousel de recette. Le menu d'acceuil, devrait afficher un carrousel de livre, puis le carrousel de recettes.
+
+Book show pourrait être un recipe carrousel? Ça serait mieux que le gros plan sur la page couverture...
+
+Quand est-ce que je veux aller sur un livre vs quand est-ce que je veux voir des catégories et comparer?
+
+Si j'ai la recette dans mon livre, je veux aller sur la recette de mon livre.
+Si je vais sur un livre d'un ami, un livre featured ou un livre quelquonque, je suis sur le livre.
+Si je cliques n'importes où d'autre et fais quoique ce soit d'autres, je ne veux rien à faire avec les livres.
+
+Je veux que les livres soient plus un truc perso, une liste perso, que tu peux partager avec tes amis.
+
+Si user vient d'un lien => Livre
+Si user vient d'un moteur de recherche => Catégories
+
+Ouin, mais j'aimerais quand même ça voir d'où est-ce que ça vient? À propos de l'auteur.. si j'aime une recette, je suis tenter d'aller voir les autres recettes simillaires...
+
+Quand je clique sur une recette, si j'ai cette recette dans un de mes livres, aller sur la recette dans mon livre. Sinon, si la recette vient d'un livre d'ailleur, aller sur la recette dans lequel le livre viens. Si la recette ne vient pas d'un livre? 
+
+Books require JS.
+
+To users: Add a description to the recipe (image and small text):
+Find existing description. Create new description.
+
+Openeats: https://github.com/qgriffith-zz/OpenEats???
+
+- Add registerEditor inside a useEffect(() => {}, []) Wait a little to make sure it works, then remove all the previous shit.
+
+- Ajouter un encadré qui dit d'où ce que la recette vient. Aussi trouvé dans le livre... Le user doit être l'auteur du livre et de la recette?
+
+- Ajouter les livres en vedettes dans la page d'acceuil.
+<h2>Livres en vedettes</h2>
+<h2>Recettes publics</h2>
+
+- Change data-step to first in Step. Fix the JSON...
+
+!!!!!!!UTILISER DES PARTIALS POUR RENDER LE JS DES MODELS... BEAUCOUP DE DUPLICAT, QUAND JE RAJOUTE DES FIELS CA FUCK TOUT!!!!!!!!!
+
+Renommer Book theme à Book layout. Quand c'est des BookLayout de heda cuisine, appeler ça des templates.
+
+Ne pas partager les images des utilisateurs (sauf si l'utiliseur donne le droit)
+Ne pas pargager les BookLayout. Un utilisateur ne peux pas cloner un layout d'un autre. De toute façon, on veut que ce soit original et différent les layout!
+
+Planification 8-9 janvier:
+- Ajouter plusieurs formats aux livres.
+- Deprecate all fields not used anymore because using JSON now.
+- Add recipe_id attribute to ingredients. Or no. There was a way to share attributes. Find out how to pass attributes from the parent (recipe) down to the children...
+C'est affreux d'avoir à faire gon.recipe = recipe...
+OU ENCORE MIEUX! Est-ce que le children est capable d'aller chercher ses parents? Et là il pourrait trouver l'attribut qu'il requiert. Il monte jusqu'à temps qu'il trouve de type 'recipe-body'.
+- Les images dans la recherche font beaucoup trop de call à la database. Inline dans json...
+- Plus important: images.
+- DELETE AWS S3!!!
+- Images de recette dans les livres. (Image fullscreen vertical, Image halfscreen horizontal)
+- Images de page couverture des livres
+- Un compte utilisateur devrait pouvoir uploader une image par recette. Il devrait aussi pouvoir uploader plusieurs images pour le livre.
+- Un compte admin devrait pouvoir uploader UNE ou plusieurs images par RecipeKind.
+- https://github.com/biola/punching_bag/blob/master/lib/punching_bag/acts_as_punchable.rb (med.increment!(:screener_viewed) https://dev.to/evanrpavone/view-counter-rails-6-3amh)
+- Tiptap should not read anything from gon. Or it should be done in another way...
+
+Truc à travailler plus tard:
+- Page d'erreur
+- Subdomain for heroku (il faut que je paie par contre pour avoir https si je me souviens bien...)
+- Alias pour les food (Gérer par équivalence. Parce que idéalement, seulement le data de 1 oignon, oignon hâché, émincé, en poudre et autre sont des équivalents. alias est un équivalent 1 pour 1)
+- Food data
+- Fr/CA, Fr/FR
+- Bilingue
+- Gérer les unicodes tel que ½ et œ
+- Commentaires aux recettes
+
+Securité:
+- Enlever html des attributes qui peuvent être mass assigned pour tout. (Seulement un admin peut l'assigner?) (Idéalement rouler le code javascript sur le serveur, mais il faudrait que je ne suis pas trop bon là dedans. Idéalement un truc node.js qui lit dans la database et qui update les html selon les json.
+
+Avec javascript, pouvoir dérouler page par page d'un livre a l'infini (loader lorsqu'on arrive sur la page). Sans javascript, lire page par page.
+
+2022-01-07T01:10:33.401175+00:00 app[web.1]: #<Fog::Errors::Error: B2 credentials are required, please use b2_account_id and b2_account_token or b2_key_id and b2_key_token>
+
+<link rel="stylesheet" media="all" href="/themes/<%= @book.theme.id%>/stylesheet" />
+
+1. Je devrais être capable facilement de convertir les recettes française que Céline m'envoit en recette québécoise.
+
+1. Pour que le HTML soit plus similaire au JSON, faire <div data-type='link-model'></div> pour chaque type. (En remplaçant 'link-model' par le type) Ça serait plus facile à parser et cela me permettrais d'avoir les même attributs en HTML qu'en JSON (au lieu de faire data-... que je ne veux pas avoir en JSON...)
+
+1. Le site est dédié pour les chefs amateurs et non les chefs professionels. Le site ne supporte pas les livres privés pour l'instant en tout cas.
+
+1. Sur la page d'acceuil, tout en haut, il pourrait y avoir un décompte un jour. Nombre de recettes: Nombre de livres: 
+
+1. Metaprogramming in ruby (je ne me rapelle plus du use case, mais je voulais faire ça à un moment donné): https://www.bigbinary.com/learn-rubyonrails-book/rails-macros-and-metaprogramming
+
+1. Dans un menu pour admin, ajouter un bouton qui execute une fonction javascript. La fonction prend une liste de toute les recettes. Une par une, elle télécharge les recettes, les insérère dans l'éditeur et sauvegarde le texte lorsque c'est différent. Devrait se faire lorsqu'il y a des modifications dans le code ou bien dans le data (des foods qui sont créer (des liens))
+1. TRÈS TRÈS DANGEREUX LA MANIÈRE QUE LE TEXTE DES RECETTES SONT HANDLE POUR L'EDIT. FAIRE DES TESTS PARCE QUE JE POURRAIS TOUT PERDRE. S'ASSURER D'AVOIR DES BACKUPS AUSSI.
 1. UPDATE TOUT LES TEXTES DES RECETTES. Mais je n'aime pas trop ça c'est dangereux. Quand je fais ça, être très très sûr que je n'affecte rien. Il va falloir que je fasse des tests pour ça. Aussi, obligé un backup avant de updater tous les textes.
 
 1. Le site statique pourrait ajouter l'information nécessaire pour la user navbar en js. Ouin, mais ça appelerait le site dynamique à chaque fois pour voir si l'utilisateur est connecté...
+(Garder dans des cookies l'information du compte et partager les cookies avec le site statique???)
 1. Simplement appeler le lien à droite Mon compte, lorsque l'utilisateur est sur le site statique?
 
 1. Mettre le thumbnail des images inline dans le json des recettes pour la recherche?
 
 1. Quand l'écran est petit, affiché un icone de personne au lieu de l'addresse email de l'utilisateur.
-
-1. Cache images.
 
 1. Remove the Image index view. Well keep as is, but a user should not need it.
 
@@ -211,6 +335,8 @@ Toutes les autres sur Cloudfare images.
 1. Un format simplifié avec seulement les instructions. Possibilité du format détaillé aussi avec des images.
 
 1. Un tableau pour les paramètres des recettes.
+
+
 
 1. <ol start="5">
 https://stackoverflow.com/questions/4615500/how-to-start-a-new-list-continuing-the-numbering-from-the-previous-list
