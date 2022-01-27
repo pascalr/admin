@@ -41,6 +41,8 @@ elem.append($("<ul><li>one</li><li>two</li><li>three</li></ul>")) // append a el
 
 # css
 
+width: fit-content; !!!!!!!!!!!!!!!!!!!!!!!!
+
 Combinators: ' ', '>', '+', '~'
 Grouping with comma.
 https://www.w3schools.com/Css/css_combinators.asp

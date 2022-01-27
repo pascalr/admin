@@ -1,8 +1,16 @@
-## Routine
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2022-01-27T04:11:00-05:00
+
+====== Direction générale ======
+Créée le Thursday 27 January 2022
+
+
+===== Routine =====
 
 1. Vendredi: Backup Admin, Hedacuisine, IMAGES TOO!
 
-# IMAGES
+===== IMAGES =====
 
 Accumuler les photos sur IStock et payer pour 750 photos pour 400$ (Avoir 20% off à travers unsplash ou autre?)
 Avant de passer trop de temps dessus, lire le User Agreement: https://www.istockphoto.com/legal/license-agreement
@@ -13,39 +21,39 @@ Après ma première paie, magasiner des images!
 
 Images belle, mais à essayer les recettes je ne sais pas si c'est bon:
 1. https://www.pexels.com/photo/a-close-up-shot-of-cooked-potatoes-and-asparagus-on-a-metal-tray-7059460/
-1. https://www.pexels.com/photo/basil-leaves-and-avocado-on-sliced-bread-on-white-ceramic-plate-1351238/
-1. https://www.istockphoto.com/photo/freshly-prepared-egg-salad-sandwich-gm471412597-20447331?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fegg-salad-sandwhich&utm_term=egg%20salad%20sandwhich%3A%3Asearch-aggressive-affiliates-v1%3Ab
-1. https://www.istockphoto.com/photo/healthy-wholegrain-bread-sandwich-gm886186166-246115135?utm_source=pixabay&utm_medium=affiliate&utm_campaign=SRP_image_noresults&referrer_url=http%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Ftuna%2520salad%2520sandwhich%2F&utm_term=tuna%20salad%20sandwhich
-1. Ajouter le lien des images IStock aux recettes.
+2. https://www.pexels.com/photo/basil-leaves-and-avocado-on-sliced-bread-on-white-ceramic-plate-1351238/
+3. https://www.istockphoto.com/photo/freshly-prepared-egg-salad-sandwich-gm471412597-20447331?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fegg-salad-sandwhich&utm_term=egg%20salad%20sandwhich%3A%3Asearch-aggressive-affiliates-v1%3Ab
+4. https://www.istockphoto.com/photo/healthy-wholegrain-bread-sandwich-gm886186166-246115135?utm_source=pixabay&utm_medium=affiliate&utm_campaign=SRP_image_noresults&referrer_url=http%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Ftuna%2520salad%2520sandwhich%2F&utm_term=tuna%20salad%20sandwhich
+5. Ajouter le lien des images IStock aux recettes.
 
-# DATA
+===== DATA =====
 
 1. Soupe aux nouilles et brocoli 
-1. La courge poivrée, linker à des recettes de soupe, de courge farcies et de graines.
-1. Sandwhich au thon. Tuna salad sandwhich
-1. Sandwhich aux oeufs. Egg salade sandwhich
-1. Soupe aux nouilles et brocoli
-1. Purée de courge poivrée
-1. Pour avoir du contenu facilement, prendre des recettes en anglais et les traduire en français?
-1. Faire un pain et le peser. 650g?
-1. Une recette de tarte au sucre sans oeuf.
-1. Ajouter la recette d'abaisse de tarte précuite (juste copier coller ce que j'ai écrit pour tarte au sucre)
+2. La courge poivrée, linker à des recettes de soupe, de courge farcies et de graines.
+3. Sandwhich au thon. Tuna salad sandwhich
+4. Sandwhich aux oeufs. Egg salade sandwhich
+5. Soupe aux nouilles et brocoli
+6. Purée de courge poivrée
+7. Pour avoir du contenu facilement, prendre des recettes en anglais et les traduire en français?
+8. Faire un pain et le peser. 650g?
+9. Une recette de tarte au sucre sans oeuf.
+10. Ajouter la recette d'abaisse de tarte précuite (juste copier coller ce que j'ai écrit pour tarte au sucre)
 https://www.ricardocuisine.com/recettes/4817-pate-brisee-de-base
 1. Ajouter les versions de tofu poulet au beurre et de boulette de pois chiches...
-1. Plein de conversions: https://www.recettesquebecoises.com/conversionsdet
-1. Pâte feuilleté et pâte sablé. Link les recettes de pâtes entres elles.
+2. Plein de conversions: https://www.recettesquebecoises.com/conversionsdet
+3. Pâte feuilleté et pâte sablé. Link les recettes de pâtes entres elles.
 Densités:
 https://www.aqua-calc.com/page/density-table/substance/cornstarch-coma-and-blank-upc-column--blank-039978015839
 1. https://www.bbc.co.uk/food/ingredients/a-z/a/1#featured-content
-1. https://www.homebaking.org/glossary/
-1. Traduire les recettes de Cookie&Kate en français.
+2. https://www.homebaking.org/glossary/
+3. Traduire les recettes de Cookie&Kate en français.
 
 https://www.alexa.com/siteinfo/coupdepouce.com
 https://www.alexa.com/siteinfo/cookieandkate.com
 
 https://www.bakeinfo.co.nz/facts/bread/science-of-bread-making
 
-# ARTICLES
+===== ARTICLES =====
 
 1. Écrire un article à quel point c'est n'importe quoi les unités... voir: https://en.wikipedia.org/wiki/Cup_(unit)
 1 metric cup: 250 mL. 1 US cup: 236.5 mL. 1 US legal cup: 240 mL.
@@ -61,25 +69,23 @@ Ajouter units/index.html?
 
 # Pour rerelease le static:
 
-# WEBSITE MVP
+===== WEBSITE MVP =====
 
-# Autres planifications
+===== Autres planifications =====
 
 # UPGRADE TO rails 7 en fds???
 
-1. Quand le nom d'une recette change, revalider si la recette appartient encore à cette catégorie.
+[*] Quand le nom d'une recette change, revalider si la recette appartient encore à cette catégorie.
+[ ] Tofu général tao
+[ ] Regarder comment I18n fait pour loader les traductions en mémoire et faire de quoi de similaire. Il faudrait que j'aie un hash en mémoire pour les traductions. FR_TO_EN, FR_TO_ES, ...
 
-1. Tofu général tao
+[ ] Quand je crée une recette, demander dans quelle catégorie la recette appartient? L'utilisateur doit écrire la catégorie, il y a un autocomplete pour les catégories qui existe déja.
+[ ] RecipeEditor: Contenteditable au lieu de text field EditableField? Pour le nom de la recette surtout...
+[ ] RecipeEditor: Pouvoir ajouter ou modifier une image
+[ ] RecipeEditor: Pouvoir modifier la catégorie
+[ ] RecipeEditor: Écrire l'ingrédient au complet? Pour les nouveaux ingrédients, idéalement un text area. Le text area a seulement une ligne, mais si tu copie colle du texte, alors il a plusieurs ligne et tu dois écrire un ingrédient par ligne. Mais ça serait compliquer... Le mettre en bêta? Parce qu'il doit séparer la quantité du nom du commentaire. Le best serait comme un excel a trois colonnes? Il y aurait même un jour le mode image, tu prends une image et ça lit les ingrédients.
 
-1. Regarder comment I18n fait pour loader les traductions en mémoire et faire de quoi de similaire. Il faudrait que j'aie un hash en mémoire pour les traductions. FR_TO_EN, FR_TO_ES, ...
-
-1. Quand je crée une recette, demander dans quelle catégorie la recette appartient? L'utilisateur doit écrire la catégorie, il y a un autocomplete pour les catégories qui existe déja.
-1. RecipeEditor: Contenteditable au lieu de text field EditableField? Pour le nom de la recette surtout...
-1. RecipeEditor: Pouvoir ajouter ou modifier une image
-1. RecipeEditor: Pouvoir modifier la catégorie
-1. RecipeEditor: Écrire l'ingrédient au complet? Pour les nouveaux ingrédients, idéalement un text area. Le text area a seulement une ligne, mais si tu copie colle du texte, alors il a plusieurs ligne et tu dois écrire un ingrédient par ligne. Mais ça serait compliquer... Le mettre en bêta? Parce qu'il doit séparer la quantité du nom du commentaire. Le best serait comme un excel a trois colonnes? Il y aurait même un jour le mode image, tu prends une image et ça lit les ingrédients.
-
-1. BookEditor devrait être la même chose que l'apperçu à gauche, mais en plus gros avec des boutons de plus.
+[ ] BookEditor devrait être la même chose que l'apperçu à gauche, mais en plus gros avec des boutons de plus.
 
 WAAAAAAAAAAIIIIIIIIIITTTTTTTTTT, comment gérer les images des recettes qui diffèrent?
 C'était mieux de linker aux recettes, Recipe#show au lieu de RecipeKind#show, parce que si jamais la recette change de catégorie? Tu veux quand même y avoir accès...
@@ -88,7 +94,7 @@ Recipe#show?book=10-Livre de Pascal
 
 Il y a juste les fous qui ne changent pas d'idée...
 
-1. Les recettes sur le statique statique serait seulement en JSON, sauf la recette principale d'une recipe kind.
+[ ] Les recettes sur le statique statique serait seulement en JSON, sauf la recette principale d'une recipe kind.
 
 Est-ce que je suis capable d'avoir des paramètres avec pages??? Oui je peux.
 
@@ -99,7 +105,7 @@ Est-ce que je suis capable d'avoir des paramètres avec pages??? Oui je peux.
 1. Est-ce que <%= content_for :render_async %> est encore utilisé???
 
 1. Javascript requis pour voir les recettes dans les livres?
-1. OUI, javascript requis pour les livres. Javascript requis pour changer de pages.
+2. OUI, javascript requis pour les livres. Javascript requis pour changer de pages.
 
 Les livres ne sont pas sur google. Le homepage des livres oui. C'est quoi le homepage des livres? La liste de recette.
 
@@ -110,7 +116,7 @@ Ce site est statique. Il requiert que javascript soit activé pour bien fonction
 1. Changer l'URL dans le site statique pour avoir recipe_id pour les sortes de recettes
 
 1. BookRecipe in static website! Il y a un cadenas.......
-1. Ne pas afficher les recettes privés dans l'index du livre.
+2. Ne pas afficher les recettes privés dans l'index du livre.
 
 http://localhost:3000/qc/sortes_de_recette/46-tarte_au_sucre?recipe_id=567
 1. Pages ne fonctionne plus... Faire fonctionner avec le site static aussi...
@@ -118,8 +124,8 @@ http://localhost:3000/qc/sortes_de_recette/46-tarte_au_sucre?recipe_id=567
 1. New recipe, ça fait pitié...
 
 1. Kind -> /groupes, RecipeKind => /catégories/10-Hello
-1. Kind -> /catégories-g
-1. Kind -> /categories-g, RecipeKind => /category/10-hello
+2. Kind -> /catégories-g
+3. Kind -> /categories-g, RecipeKind => /category/10-hello
 
 1. Positioner les flèches du carrousel en ligne avec les éléments.
 
@@ -153,18 +159,18 @@ http://localhost:3000/qc/sortes_de_recette/46-tarte_au_sucre?recipe_id=567
 <% if user_signed_in? %>
   <% machine = current_user.machines.first_or_create %>
   <div class="collapse" id="calendar">
-    <%= render partial: "meals/calendar", locals: {recipe: @recipe, machine: machine, meals: machine.meals.includes(:recipe) } %>
-    <div style="height: 10px;"></div>
+	<%= render partial: "meals/calendar", locals: {recipe: @recipe, machine: machine, meals: machine.meals.includes(:recipe) } %>
+	<div style="height: 10px;"></div>
   </div>
 <% end %>
 
 # END LATER
 
 1. Un encadré Recette de la catégorie:
-              Boulette de pois chiche (23 recettes)
-              Les boulettes de pois chiches sont une recette
-              végétarienne à base de pois chiches, chapelure,
-              œufs et assaisonnements. En savoir plus...
+			  Boulette de pois chiche (23 recettes)
+			  Les boulettes de pois chiches sont une recette
+			  végétarienne à base de pois chiches, chapelure,
+			  œufs et assaisonnements. En savoir plus...
 1. Un encadré Tiré du livre...
 
 1. Au lieu de faire un éditeur pour la page couverture du livre, rédiger un article qui explique comment faire une page couverture avec un logiciel de dessin très simple en ligne.
@@ -268,8 +274,8 @@ Avec javascript, pouvoir dérouler page par page d'un livre a l'infini (loader l
 1. Metaprogramming in ruby (je ne me rapelle plus du use case, mais je voulais faire ça à un moment donné): https://www.bigbinary.com/learn-rubyonrails-book/rails-macros-and-metaprogramming
 
 1. Dans un menu pour admin, ajouter un bouton qui execute une fonction javascript. La fonction prend une liste de toute les recettes. Une par une, elle télécharge les recettes, les insérère dans l'éditeur et sauvegarde le texte lorsque c'est différent. Devrait se faire lorsqu'il y a des modifications dans le code ou bien dans le data (des foods qui sont créer (des liens))
-1. TRÈS TRÈS DANGEREUX LA MANIÈRE QUE LE TEXTE DES RECETTES SONT HANDLE POUR L'EDIT. FAIRE DES TESTS PARCE QUE JE POURRAIS TOUT PERDRE. S'ASSURER D'AVOIR DES BACKUPS AUSSI.
-1. UPDATE TOUT LES TEXTES DES RECETTES. Mais je n'aime pas trop ça c'est dangereux. Quand je fais ça, être très très sûr que je n'affecte rien. Il va falloir que je fasse des tests pour ça. Aussi, obligé un backup avant de updater tous les textes.
+2. TRÈS TRÈS DANGEREUX LA MANIÈRE QUE LE TEXTE DES RECETTES SONT HANDLE POUR L'EDIT. FAIRE DES TESTS PARCE QUE JE POURRAIS TOUT PERDRE. S'ASSURER D'AVOIR DES BACKUPS AUSSI.
+3. UPDATE TOUT LES TEXTES DES RECETTES. Mais je n'aime pas trop ça c'est dangereux. Quand je fais ça, être très très sûr que je n'affecte rien. Il va falloir que je fasse des tests pour ça. Aussi, obligé un backup avant de updater tous les textes.
 
 1. Le site statique pourrait ajouter l'information nécessaire pour la user navbar en js. Ouin, mais ça appelerait le site dynamique à chaque fois pour voir si l'utilisateur est connecté...
 (Garder dans des cookies l'information du compte et partager les cookies avec le site statique???)
@@ -364,7 +370,7 @@ Toutes les autres sur Cloudfare images.
 1. Ce qui pourrait être intéressant, c'est que les gens modifies comme ils veulent tout. Et un algorithme avec un peu de hand-curated content prend le meilleur de tout et combine ça en quelque chose d'uniforme pour tout le monde.
 
 1. Article Comment faire un gâteau?
-1. Article Lexique.
+2. Article Lexique.
 
 1. Ajouter des notes et ajouter des références d'une belle manière.
 
@@ -375,11 +381,11 @@ Toutes les autres sur Cloudfare images.
 1. Faire des images d'outils. Des images de bols, de cuisinière, ...
 
 1. Remove Tiptap and only use ProseMirror
-1. Keyboard shortcut to see bubble toolbar. Enter? (Do this after having removed Tiptap?)
+2. Keyboard shortcut to see bubble toolbar. Enter? (Do this after having removed Tiptap?)
 
 1. https://www.comparecuisine.com
-1. Focuser sur la comparaison de recettes. Faire une recettes de 5 manières différentes et écrire mes commentaires.
-1. Dans les commentaires, quand quelqu'un n'aime pas une recette, montrer c'est quel recette que eux autres ils préfèrent.
+2. Focuser sur la comparaison de recettes. Faire une recettes de 5 manières différentes et écrire mes commentaires.
+3. Dans les commentaires, quand quelqu'un n'aime pas une recette, montrer c'est quel recette que eux autres ils préfèrent.
 
 1. Offrir un forfait à 2$ par mois pour ne pas avoir de publicité. Ceux qui ne payent pas. Pas de publicité non plus. Tu paies pour ne pas donner de publicité à tout le monde. Merci!
 
@@ -388,7 +394,7 @@ Toutes les autres sur Cloudfare images.
 1. Drag and drop change le recipe item nb dans les instructions.
 
 1. add food-id to food links in order to be able to add a popup with a description when hovering the ingredient
-1. Mouse over food shows image and short description of food.
+2. Mouse over food shows image and short description of food.
 
 1. Don't recalculate getHTML() every 5 seconds.
 
@@ -450,7 +456,7 @@ $$$ Sub-subtitle
 1. Avec styled components de react rajouter un style à field pour qu'il soit un tout petit peu séparer.
 
 1. Cacher les conversions tant qu'elles ne sont pas parfaites... Les mettres nul si ce n'est pas bon, et quand c'est nul ne pas utiliser.
-1. Courge poivrée n'a pas le bon poids...
+2. Courge poivrée n'a pas le bon poids...
 
 1. JS. Quantity
 
@@ -477,7 +483,7 @@ Contre: Backup db. More work. Less full scale ready.
 https://www.scaleway.com/en/stardust-instances/ 
 
 1. Kind devrait être Category. Et Kind devrait être la description générale d'une recette.
-1. Je crée une recette. J'inscris le nom de la recette. Ça me propose des kinds de recette. J'inscris celle qui est la plus proche. Ehh ça doit être un exact match sinon ça ne fonctionne pas? Oui ça peux fonctionner. Modifier un peu encore mon affaire. En revenir un peu plus à comme avant? Je suis pas mal en train de revenir à comme avant là...
+2. Je crée une recette. J'inscris le nom de la recette. Ça me propose des kinds de recette. J'inscris celle qui est la plus proche. Ehh ça doit être un exact match sinon ça ne fonctionne pas? Oui ça peux fonctionner. Modifier un peu encore mon affaire. En revenir un peu plus à comme avant? Je suis pas mal en train de revenir à comme avant là...
 
 1. Bon pas mal comme maintenant, mais rajouter un model RecipeKind. Kind c'est AbstractKind. Les utilisateurs ne peuvent pas créer de RecipeKind. Si elle n'existe pas, elle n'existe pas c'est tout, elle ne pourra pas être publique. Moi je vais voir ensuite les recettes qui n'ont pas de RecipeKind, et je vais peut-être être capable de les regrouper.
 
@@ -486,24 +492,24 @@ https://www.scaleway.com/en/stardust-instances/
 1. FUCK OFF. Le RecipeKind doit être un EXACT MATCH (ou bien un synonyme, donc un RecipeKind aurait plusieurs noms possibles). Donc tarte aux fraises et bleuets n'apparait pas dans les versions de tartes aux fraises.
 
 1. Mais oui je veux que tartes aux fraises et bleuets apparaissent dans tartes aux fraises et dans tartes aux bleuets.
-1. Mais son image ne sera ni celle de tarte aux fraises, ni celle de tarte aux bleuets. Elle n'aura pas d'image tant qu'elle n'aura pas une image spécifique à elle. Une image de tarte aux fraises et aux bleuets.
+2. Mais son image ne sera ni celle de tarte aux fraises, ni celle de tarte aux bleuets. Elle n'aura pas d'image tant qu'elle n'aura pas une image spécifique à elle. Une image de tarte aux fraises et aux bleuets.
 
 1. Maintenant Purée de patates et épinard.
 
 1. Ah, peut-être qu'il y a des main RecipeKind. Par exemple, Tarte aux fraises. Tartes aux bleuets. Ensuite, il y a des RecipeVersions. Tarte aux fraises et bleuts. Et il y a des Recipe.
-1. Une Recipe belongs_to a RecipeVersion.
-1. A RecipeVersion has_and_belongs_to_many RecipeKind.
-1. A RecipeKind belongs to a RecipeCategory and has_many RecipeVersion.
+2. Une Recipe belongs_to a RecipeVersion.
+3. A RecipeVersion has_and_belongs_to_many RecipeKind.
+4. A RecipeKind belongs to a RecipeCategory and has_many RecipeVersion.
 
 1. À quoi sert RecipeVersion?
-1. À rien.
+2. À rien.
 
 DONT CHANGE ANYTHING UNTIL I AM SURE. KEEP RECIPES AS IS!!!
 
 1. Ok, si une recette n'est pas un exact match avec un RecipeKind synonyme, alors l'interface de présentation va être différent.
-1. On va te demander, cette recette là est-elle une sous catégorie d'une catégorie?
-1. Oui, tarte aux fraises et bleuets est une sous-catégorie de tarte aux fraises.
-1. Quel sera l'interface. Dans le fond, on veut voir la recette en bas comme normale. Et en haut, on vera, Cette recette est une sous-recette
+2. On va te demander, cette recette là est-elle une sous catégorie d'une catégorie?
+3. Oui, tarte aux fraises et bleuets est une sous-catégorie de tarte aux fraises.
+4. Quel sera l'interface. Dans le fond, on veut voir la recette en bas comme normale. Et en haut, on vera, Cette recette est une sous-recette
 de tartes aux fraises et de tartes aux bleuets.
 Tartes aux fraises et aux bleuets
 
@@ -526,8 +532,8 @@ Tarte aux fraises | Tarte aux bleuts (Voir les images avec le nom de la catégor
 1. Modifier la recette en WYSIWYG?
 
 1. Right now, it is easier to have both the dev website and the static website. At some point though, serve everything on the static website client side. The dev website would only be a database.
-1. By loading a single script on the static site, am I able to handle devise login?
-1. TANT QUE MON SITE N'EST PAS TRÈS AVANCÉ ET BIEN TESTÉ, SÉPARER LA VERSION DEV ET STATIQUE. COMME ÇA MA VERSION STATIQUE EST BONNE. JE PEUX LA VALIDER CORRECTEMENT.
+2. By loading a single script on the static site, am I able to handle devise login?
+3. TANT QUE MON SITE N'EST PAS TRÈS AVANCÉ ET BIEN TESTÉ, SÉPARER LA VERSION DEV ET STATIQUE. COMME ÇA MA VERSION STATIQUE EST BONNE. JE PEUX LA VALIDER CORRECTEMENT.
 
 1. People can login into the BETA beta.hedacuisine.com in order to create recipes. edit.hedacuisine.com
 
@@ -550,8 +556,8 @@ Lorsqu'on est invité chez des gens, c'est notre valeur sûre! C'est rapide à f
 1. Faire 1 heure de contenue. Mettre de la musique. Écrire de belles descriptions pour les recettes déjà sur le site. Jusqu'à 11:34.
 
 1. Être sur google
-1. Trouver des endroits pour faire de la publicité pour mon site.
-1. Demander l'opinion des gens, ce qu'ils en pensent
+2. Trouver des endroits pour faire de la publicité pour mon site.
+3. Demander l'opinion des gens, ce qu'ils en pensent
 
 1. Écrire de belles descriptions pour toutes les recettes visibles, avec sources. Développer un guide.
 
@@ -559,7 +565,7 @@ Lorsqu'on est invité chez des gens, c'est notre valeur sûre! C'est rapide à f
 
 1. Spell checker.
 
---------
+--------------------
 
 1. Un jour peut-être. Ajouters des images pour les outils. Mettre les contenants, la cuisinière et le four aussi dans les outils. Ça pourrait être beau je crois.
 
@@ -648,12 +654,12 @@ Que les utilisateurs peuvent modifier les recettes par eux même. 7$/mois pour h
 1. Comment planifier une recette:
 Questions:
 1. Choisir une date pour cuisiner.
-1. Une de vos recettes ou découvrir une nouvelle recette?
-1. Idéalement afficher un circularie avec les ingrédients en rabais.
-1. Quel ingrédient dans la recette?
-1. C'est pour manger de quand à quand la recette? Le jour même? Pour plusieurs jours? Pour congeler? Pour le lendemain?
-1. Suggestions de recette.
-1. J'aime ou je n'aime pas (swipe à droite ou swipe à gauche)
+2. Une de vos recettes ou découvrir une nouvelle recette?
+3. Idéalement afficher un circularie avec les ingrédients en rabais.
+4. Quel ingrédient dans la recette?
+5. C'est pour manger de quand à quand la recette? Le jour même? Pour plusieurs jours? Pour congeler? Pour le lendemain?
+6. Suggestions de recette.
+7. J'aime ou je n'aime pas (swipe à droite ou swipe à gauche)
 
 1. Add to my recipes. Quand une version est dans tes recettes. Afficher cette version en premier. Écrire un avertissement. Vous avez été redirigé de ... parce que cet version est dans vos recettes. Voir la l'autre version.
 
@@ -680,7 +686,7 @@ EXACTLY WHAT I WANT TO DO!
 1. Users will occasionally come to a page that doesn't exist on your site, either by following a broken link or typing in the wrong URL. Having a custom 404 page that kindly guides users back to a working page on your site can greatly improve a user's experience. Consider including a link back to your root page and providing links to popular or related content on your site. You can use Google Search Console to find the sources of URLs causing "not found" errors. 
 
 1. Sitemap, une fois que parfait et SEO est là
-1. 404
+2. 404
 
 1. Plusieurs servings possible. Pain (650 g),  Petit pain (65 g). Offrir un dropdown avec les possibilités.
 
@@ -699,9 +705,9 @@ EXACTLY WHAT I WANT TO DO!
 1. Arrondir les valeurs à 1% près.
 
 1. Alias de food. Sucre devrait être un alias pour sucre granulé.
-1. L'huile fait référence à huilde de soja, parce que c'est l'huile la plus commune après l'huile de palm, donc c'est l'huile la plus utilisé par Mr et Mme tout le monde. Un alias pour huile de soja?
-1. Sel == sel de table
-1. Poivre, poivre noir, poivre noir moulu, poivre moulu
+2. L'huile fait référence à huilde de soja, parce que c'est l'huile la plus commune après l'huile de palm, donc c'est l'huile la plus utilisé par Mr et Mme tout le monde. Un alias pour huile de soja?
+3. Sel == sel de table
+4. Poivre, poivre noir, poivre noir moulu, poivre moulu
 
 1. Application pour t'aider à déterminer quoi manger. Il y a une liste de catégories, tu cliques dessus, puis tu fais gauche droite pour les recettes. Chou-fleur, gauche droite, ... Tu sélectionnes et tu ajoutes à ton calendrier.
 
@@ -712,8 +718,8 @@ EXACTLY WHAT I WANT TO DO!
 1. Dont show raw ingredients. Otherwise it does not work for scaling. Only figure out what exactly the raw ingredient was (unit, volume or weight?)
 
 1. Ingrédient principal aux recettes.
-1. Français & anglais
-1. Valeurs nutritives des aliments
+2. Français & anglais
+3. Valeurs nutritives des aliments
 
 1. Ajouter tofu dans la recette de tofu poulet au beurre.
 
@@ -735,8 +741,8 @@ Un RecipeGroup serait un autre type. C'est un type abstrait qui regroupe d'autre
 
 - Pain
   - Pain à hamburger
-    - Pain à hamburger
-    - Pain brun à hamburger
+	- Pain à hamburger
+	- Pain brun à hamburger
   - Pain blanc
   - Pain brun
   - Pain de grains entiers
@@ -773,37 +779,37 @@ NOOOONNNN PAS PLUSIEURS INSTRUCTIONS... JUSTE POUVOIR RAJOUTER DES TABS DANS LE 
 1. Pouvoir incorporer un article dans la page d'une recette? Par exemple l'article du pain dans la recette du pain? Juste après et une table des matières juste avant pour montrer qu'il y a de quoi plus bas? Nahhhh, probablement juste une référence. Dire une phrase qui pique l'intérêt, puis dire voir l'article sur le pain pour plus de détails. Et tout au long rajouter des références. Par exemple, pétrir la pâte pointe vers la section pétrir la pâte.
 
 1. Mettre le site en ligne cette semaine (est-ce que c'est mauvais pour le SEO de changer une page, est-ce que mon SEO sera recalculée?)
-1. Simulation contrôle le bras robotique
-1. Simulation voit la caméra
-1. Pétrir la pâte!!!
-1. Faire un sitemap
-1. EN
-1. Des articles et des previous d'articles.
-1. Des images dans les articles.
-1. Images on Firebase???
-1. Static site on firebase???
+2. Simulation contrôle le bras robotique
+3. Simulation voit la caméra
+4. Pétrir la pâte!!!
+5. Faire un sitemap
+6. EN
+7. Des articles et des previous d'articles.
+8. Des images dans les articles.
+9. Images on Firebase???
+10. Static site on firebase???
 
 Pour ou contre site static:
 
 Pour:
 1. Site très rapide.
-1. Site pourrait déjà fonctionner et être disponible rapidement (pas de délais de heroku).
-1. Si je fuck production par accident, ça n'affecte pas le site static.
-1. Coûte beaucoup moins cher.
-1. Pouvoir releaser toute de suite une recette à la fois. Commencer à voir du traffic! Je pourrais envoyer une query à hedacuisine pour voir le nombre de page vue.
+2. Site pourrait déjà fonctionner et être disponible rapidement (pas de délais de heroku).
+3. Si je fuck production par accident, ça n'affecte pas le site static.
+4. Coûte beaucoup moins cher.
+5. Pouvoir releaser toute de suite une recette à la fois. Commencer à voir du traffic! Je pourrais envoyer une query à hedacuisine pour voir le nombre de page vue.
 
 Contre:
 1. Quoi faire avec la fonctionnalité de search??? (Juste pas de search pour l'instant?) (Tant que le site est petit, je pourrais tout loader déjà dans la page de search et simplement cacher ce qui ne correspond pas)
-1. Devoir constamment build le site static.
-1. Devoir constamment vérifier que le site static est correct (quoique je devrais le faire constamment encore plus pour le site de production (à chaque push))
-1. Ça serait le fun si les utilisateurs pourrait déjà contribuer... (FAIRE UNE SIGNUP PAGE QUI DIT QUE LE SITE N'EST PAS ENCORE PRÊT ET PRENDRE LES ADDRESSES COURRIELS DES GENS POUR LEUR DIRE QUAND LE SITE SERA PRÊT???) Oui commencer avec ça... Si il y a beaucoup d'intérêt, alors peut-être rendre le site publique avec data publique. Peut-être aussi acheter hedacuisinebeta.com? Ou bien myheda.com? Ouin mes rendus là les gens veulent partager les recettes...
+2. Devoir constamment build le site static.
+3. Devoir constamment vérifier que le site static est correct (quoique je devrais le faire constamment encore plus pour le site de production (à chaque push))
+4. Ça serait le fun si les utilisateurs pourrait déjà contribuer... (FAIRE UNE SIGNUP PAGE QUI DIT QUE LE SITE N'EST PAS ENCORE PRÊT ET PRENDRE LES ADDRESSES COURRIELS DES GENS POUR LEUR DIRE QUAND LE SITE SERA PRÊT???) Oui commencer avec ça... Si il y a beaucoup d'intérêt, alors peut-être rendre le site publique avec data publique. Peut-être aussi acheter hedacuisinebeta.com? Ou bien myheda.com? Ouin mes rendus là les gens veulent partager les recettes...
 
 1. Recipe substitutions
 
 1. Commencer avec une recette parfait en ligne sur github pages. Boulette de pois chiches.
-1. Substitution fromage parmesan avec levure alimentaire.
-1. Substitutions substitutions... FoodSubstitution(explicit: boolean)
-1. Pour les ingrédients qui ont des recettes, ajouter l'option: Voir la recette.
+2. Substitution fromage parmesan avec levure alimentaire.
+3. Substitutions substitutions... FoodSubstitution(explicit: boolean)
+4. Pour les ingrédients qui ont des recettes, ajouter l'option: Voir la recette.
 
 1. FIXME: Conversions between g and kg will not work! I am not taking into factor the unit_value of the unit in my ratio in food.implicit_conversions. FIX Quantity.ratio()...
 
@@ -831,30 +837,30 @@ Prendre la valeur du substituer (ici tête d'ail) et le multiplier par la valeur
 1. Un boolean pour les substitutions pour savoir si c'est une substitution exact ou pas. Par exemple, lait de soja n'est pas une substitution exact avec lait d'avoine. Mais gousse d'ail est une substitution exacte pour ail hâché.
 
 1. [image#1] link
-1. [image#1,"what to show???"] link
-1. [=image#1] show this image
-1. [section#1] link to this section
-1. [=section#1] show the title of this section with a link to the section
-1. [article#1] link to this article
-1. Link les ingrédients aux articles sur le site internet.
-1. Vegan, végétarien, Gluten-free
-1. Gluten-free logo
-1. TODO: Handle un ingrédient utiliser à plusieurs endroit. 4 c. à table d'huile. {(1 c. à table,1),3-5}
-1. {(1)},{(1 t)},{(1 L,1)}
-1. Lien vers tremper les pois chiches.
-1. TODO: Offrir la possibilité de spécifier le poids de ta courge butternut.
-1. Dans le fond, le site internet, développer une plateforme pour des recettes. Idéalement des bloggeurs pourrait l'utiliser pour leur propre recette? Le problème c'est que j'aimerais que les recettes du site respecte un format en particulier... Les règles par contres doivent être respecté.
-1. Des FoodSubstitution food:references substitute:references ratio:float et des IngredientSubstitution. Pareil comme FoodSubstitution, mais recipe specific.
-1. Laisser l'utilisateur choisir le nom d'ingrédient qu'il préfère quand il y en a plusieurs.
-1. Pouvoir substituer les ingrédients en cliquant sur le crayon avec un carré autour. Le faire avec ail. Gousse d'ail, Tête d'ail, Ail écrasé, Ail émincé, Ail hâché, Poudre d'ail. Dans le dropdown faire une flèche sur le côté avec les substitutions possibles. Les instructions de la recettes ne seront pas modifié, mais ce n'est pas grave. Offrir à l'utilisateur la possibilité de changer les instructions. Dans le fond, lorsque l'utilisateur clique sur une substitution, ce qui se passe est qu'une recette est créer pour l'utilisateur si elle n'existe pas déjà (2e modification). Et cette recette est enregistrer selon les modification. Dans le fond, la recette est dupliqué et les changements se font sur la recette dupliqué.
-1. Pour montrer que c'est possible de substituer des ingrédients, ajouter une flèche rouge qui pointe vers le truc pour pouvoir modifier les ingrédients.
-1. Compiler le site internet statique. Les utilisateurs connectés utilisent le site internet en ligne. Les utilisateurs non connectés regardent la version statique compilé. Pour compiler, télécharger la base de donnée. Rouler le site localement en mode production. Crawler mon propre site internet.
-1. Si jamais les utilisateurs peuvent créer du contenu, faire très attention à la sécurité. Par exemple, éviter html_safe. Sanitize properly.
-1. Valider recette de pain à la main
-1. Faire des liens vers les notes.
-1. Un calendrier sans machine?
-1. Une image du numéro de version à rajouter par dessus les images des recettes. Peut-être une étoile en rouge avec une écriture jaune? Ver 2, Ver 3, ...
-1. Au lieu de Appareils dans la barre en haut, mettre un dropdown avec les machines de l'utilisateur actuel. Quoi mettre lorsque l'utilisateur n'en a pas? Comment atteindre le calendrier?
+2. [image#1,"what to show???"] link
+3. [=image#1] show this image
+4. [section#1] link to this section
+5. [=section#1] show the title of this section with a link to the section
+6. [article#1] link to this article
+7. Link les ingrédients aux articles sur le site internet.
+8. Vegan, végétarien, Gluten-free
+9. Gluten-free logo
+10. TODO: Handle un ingrédient utiliser à plusieurs endroit. 4 c. à table d'huile. {(1 c. à table,1),3-5}
+11. {(1)},{(1 t)},{(1 L,1)}
+12. Lien vers tremper les pois chiches.
+13. TODO: Offrir la possibilité de spécifier le poids de ta courge butternut.
+14. Dans le fond, le site internet, développer une plateforme pour des recettes. Idéalement des bloggeurs pourrait l'utiliser pour leur propre recette? Le problème c'est que j'aimerais que les recettes du site respecte un format en particulier... Les règles par contres doivent être respecté.
+15. Des FoodSubstitution food:references substitute:references ratio:float et des IngredientSubstitution. Pareil comme FoodSubstitution, mais recipe specific.
+16. Laisser l'utilisateur choisir le nom d'ingrédient qu'il préfère quand il y en a plusieurs.
+17. Pouvoir substituer les ingrédients en cliquant sur le crayon avec un carré autour. Le faire avec ail. Gousse d'ail, Tête d'ail, Ail écrasé, Ail émincé, Ail hâché, Poudre d'ail. Dans le dropdown faire une flèche sur le côté avec les substitutions possibles. Les instructions de la recettes ne seront pas modifié, mais ce n'est pas grave. Offrir à l'utilisateur la possibilité de changer les instructions. Dans le fond, lorsque l'utilisateur clique sur une substitution, ce qui se passe est qu'une recette est créer pour l'utilisateur si elle n'existe pas déjà (2e modification). Et cette recette est enregistrer selon les modification. Dans le fond, la recette est dupliqué et les changements se font sur la recette dupliqué.
+18. Pour montrer que c'est possible de substituer des ingrédients, ajouter une flèche rouge qui pointe vers le truc pour pouvoir modifier les ingrédients.
+19. Compiler le site internet statique. Les utilisateurs connectés utilisent le site internet en ligne. Les utilisateurs non connectés regardent la version statique compilé. Pour compiler, télécharger la base de donnée. Rouler le site localement en mode production. Crawler mon propre site internet.
+20. Si jamais les utilisateurs peuvent créer du contenu, faire très attention à la sécurité. Par exemple, éviter html_safe. Sanitize properly.
+21. Valider recette de pain à la main
+22. Faire des liens vers les notes.
+23. Un calendrier sans machine?
+24. Une image du numéro de version à rajouter par dessus les images des recettes. Peut-être une étoile en rouge avec une écriture jaune? Ver 2, Ver 3, ...
+25. Au lieu de Appareils dans la barre en haut, mettre un dropdown avec les machines de l'utilisateur actuel. Quoi mettre lorsque l'utilisateur n'en a pas? Comment atteindre le calendrier?
 
 1. Image editor garder correctement toutes les images actuelles (rsync? dropbox) En fait je pense enlever image-editor et l'intégrer à hedacuisine serait le best. je ne sais pas comment faire par contre pour hoster les images.
 
@@ -863,7 +869,7 @@ Prendre la valeur du substituer (ici tête d'ail) et le multiplier par la valeur
 1. Application pour ne plus avoir à réfléchir sur quoi faire pour soupe? What's for supper? Qu'est-ce qu'on soupe?
 
 1. Sabler la tablette
-1. Switch pour détecter la porte est bien fermée.
+2. Switch pour détecter la porte est bien fermée.
 
 1. Ajouter des références aux articles. Par exemple, pourquoi faire tremper les pois chiches de 8 à 24h [*...pois_chiches#Trempage des pois chiches]
 
@@ -883,73 +889,73 @@ c'est ben plus simple de simplement marqué le nom de l'ingrédient dans la rece
 
 
 1. Un thème récurrant. Les ingrédients en version fraîche ou bien en version déshydratés. Offrir les 2 recettes? Soupe aux patates. Soupe aux patates express. Quand il est inscrit express ça veut dire qu'au moins 1 des ingrédients est déshydraté. Dans les instructions de la recette: _Voir aussi la version rapide: Soupe aux patates express_ ou bien _Voir aussi la version avec des ingrédients frais: Soupe aux patates_ Dans la version express mettre les haricots cuits?
-1. Rajouter version:integer à une recette. Validate uniqueness name AND version
+2. Rajouter version:integer à une recette. Validate uniqueness name AND version
 
 1. Cable 25"+2X(56")+2X(2"[pour la boucle]) == 141" (moins 2" parce que ça adonne de même) == 139"! FIXME: 2 tours au lieu de 1...
-1. Tenir le cable tray vertical en place.
-1. Lumières dans l'armoire (https://www.amazon.ca/Govee-Upgraded-Dimmable-Daylight-Flexible/dp/B07V46H7YL/ref=sr_1_4?dchild=1&keywords=white+led+strip+lights&qid=1630604006&s=hi&sr=1-4)
-1. Vider l'armoire et la remplir de pots pour pouvoir prendre des photos et des vidéos.
-1. Gripper
-1. LES MAUDITS CÂBLES ÉLECTRIQUES... (Thêta de -120 à 120 et alpha de -170 à 170?)
-1. Grant application
-1. Faire la partie du bas que je veux faire pour mettre l'ordinateur et le vise. Comme ça cela va pouvoir être caché. Finir de câblé pour pouvoir remmener des boites de trucs chez mes parents.
-1. Prendre de belles photos de ma machine (en fds avec le gros soleil en plein jour)
-1. Simuler avoir été à l'épicerie. Mettre sur le comptoir par batch les pots qui était dans la liste d'épicerie.
-1. Faire une belle page web de fabrication de l'armoire de cuisine avec le modèle 3D, un peu comme celui de Shanty 2 Chic.
-1. Tous les mouvements fonctionnels (refaire les roues verticales, plus de jeu horizontal, vrais gear pour axe T, plus de jeu B)
-1. App login into website
-1. Ne pas passer à travers les tablettes
-1. Des câbles électriques plus flexible
-1. Beau boitier électrique (protocase), bien câblé, bouton power et lumière power.
-1. Page d'acceuil de vente (pour chaque section, rajouter un Pour en savoir plus >, une page qui montre les calculs derrière ce qui est dit ou en parle d'avantages)
-1. Axe B: Addosser le gear box du moteur correctement dans la boite. (Creuser un petit peu vis à vis les trous qui dépassent)
-1. Caméra
-1. Vendre à 1 client. Vendre des locations, parce que le produit risque de changer. (Boulangerie, Prêt-à-cuisiner, petite boutique de nourriture, ...)
-1. Être capable de reach partout (2/4 coins de chaque tablette)
-1. Un moyen de fixer la machine à l'armoire en haut
-1. Homing system
-1. Continuer la simulation du bras robotique pour pouvoir le programmer, aller chercher les ingrédients, puis verser des aliments grossiers, puis faire des muffins.
+2. Tenir le cable tray vertical en place.
+3. Lumières dans l'armoire (https://www.amazon.ca/Govee-Upgraded-Dimmable-Daylight-Flexible/dp/B07V46H7YL/ref=sr_1_4?dchild=1&keywords=white+led+strip+lights&qid=1630604006&s=hi&sr=1-4)
+4. Vider l'armoire et la remplir de pots pour pouvoir prendre des photos et des vidéos.
+5. Gripper
+6. LES MAUDITS CÂBLES ÉLECTRIQUES... (Thêta de -120 à 120 et alpha de -170 à 170?)
+7. Grant application
+8. Faire la partie du bas que je veux faire pour mettre l'ordinateur et le vise. Comme ça cela va pouvoir être caché. Finir de câblé pour pouvoir remmener des boites de trucs chez mes parents.
+9. Prendre de belles photos de ma machine (en fds avec le gros soleil en plein jour)
+10. Simuler avoir été à l'épicerie. Mettre sur le comptoir par batch les pots qui était dans la liste d'épicerie.
+11. Faire une belle page web de fabrication de l'armoire de cuisine avec le modèle 3D, un peu comme celui de Shanty 2 Chic.
+12. Tous les mouvements fonctionnels (refaire les roues verticales, plus de jeu horizontal, vrais gear pour axe T, plus de jeu B)
+13. App login into website
+14. Ne pas passer à travers les tablettes
+15. Des câbles électriques plus flexible
+16. Beau boitier électrique (protocase), bien câblé, bouton power et lumière power.
+17. Page d'acceuil de vente (pour chaque section, rajouter un Pour en savoir plus >, une page qui montre les calculs derrière ce qui est dit ou en parle d'avantages)
+18. Axe B: Addosser le gear box du moteur correctement dans la boite. (Creuser un petit peu vis à vis les trous qui dépassent)
+19. Caméra
+20. Vendre à 1 client. Vendre des locations, parce que le produit risque de changer. (Boulangerie, Prêt-à-cuisiner, petite boutique de nourriture, ...)
+21. Être capable de reach partout (2/4 coins de chaque tablette)
+22. Un moyen de fixer la machine à l'armoire en haut
+23. Homing system
+24. Continuer la simulation du bras robotique pour pouvoir le programmer, aller chercher les ingrédients, puis verser des aliments grossiers, puis faire des muffins.
 
 # Planification (Mettre le site en ligne)
 1. d' pour les h aspirés? huile surtout...
-1. Bonne densité des ingrédients
-1. Le pluriel des unités lb/lbs, tasse/tasses.
+2. Bonne densité des ingrédients
+3. Le pluriel des unités lb/lbs, tasse/tasses.
 # Pas prioritaire
 1. Sign in should remember what page
-1. Modification d'une recette (duplication)
-1. Enlever une recette du calendrier ajoutée par erreur.
-1. Quoi faire quand les ingrédients n'ont pas d'unités? Mettre du sel. Mettre de l'oignon. Mettre de la coriande. Mettre des cubes de boeufs au goûts. Mettre du thym. Trop compliqué, le faire manuellement en texte...
-1. Add show_ fraction to RecipeIngredients (quand raw_ quantity détecte une fraction, setter le flag automatiquement)
-1. TODO: Faire des test pour les pretty... que ça rajoute les préposition correctement dans toutes les langues. Il y a beaucoup de cas. C'est le genre de truc parfait pour des tests.
-1. Allow user to create recipes.
-1. Be able to create a recipe with a food not in the database
-1. Pouvoir ajouter des commentaires aux recettes. / au début pour que ce soit en italique!
-1. Un éditeur WYSIWIG pour les recettes.
-1. Rajouter masculin et féminin pour les noms ou bien laisser les mettres manuellement?
-1. FoodName food:references language:references value aspire:boolean feminine:boolean
-1. Comment gérer les versions des recettes? RecipeGroup comme avant? Un UserRecipe refère à une Recipe et/ou à un RecipeGroup?
-1. Enlever le truc de c'est quoi qu'il y a des différent à l'intérieur, et offrir la version simplement avec un chiffre. Ou bien un nom d'utilisateur. Dans la barre de recherche, tu sélectionnes le groupe et ensuite tu sélectionnes sur le côté (un peu comme un menu normal d'un UI d'application d'ordinateur) la version que tu veux. Poulet au beurre (Ricardo). Mais fuck poulet au beurre (Condiments en poudre). À la place, quand c'est une recette du site et non une recette d'un utilisateur ou d'un site d'ailleurs, indiqué (ver 2). Pas de version quand il n'y en a juste une. Donc pour poulet au beurre, on a: Poulet au beurre, Poulet au beurre (Ricardo), Poulet au beurre (ver 2). N'importe qui peut créer sa recette! Mais l'image reste la même, celle du groupe. Le groupe sert surtout à avoir une image et lier les recettes du même truc entre eux. Ne pas marqué Poulet au beurre (Ricardo). Marqué un nom entre parathèse seulement quand la recette viens d'un utilisateur.
-1. Units by language, wait no because I want to be able to convert c. à table to table spoons...
-1. Mes recettes favorites ou Ajouter à ma liste.
-1. Mes amis (voir le menu de mes amis)
-1. Rajouter une note aux RecipeIngredient? (pelées et coupées en cube), ... (broyées)
-1. FoodGroups. Huile. Bouillon. Lait. Pain.
-1. Handle generic Foods which are supersets of other foods. Bouillon can be Bouillon de légume, Bouillon de poulet, etc... Huile... Huile neutre...
-1. Dans la recherche et les listes, seulement montrer la version de recette la plus populaire.
-1. Comment gérer les options d'ingrédients dans la recette??? (Commentaire à côté des ingrédients?)
-1. You can pin an item in the grocery list so it is always there even if you clear (for example fruits&vegetables, eggs and milk)
-1. Pouvoir hierarchisé dans un arbre les recettes.
-1. Acheter un backdrop pour les photos
-1. Trouver un format de bouteille liquide
-1. Pagination des recettes sur le site internet
-1. Ajuster le site internet pour les téléphones mobiles. Mettre la barre de recherche en dessous du menu.
-1. Rajouter les trous borgnes à l'armoire et faire des screenshots pour le manuel d'assemblage. Couleur différente pour chaque type de morceau? Mettre dans les screenshots les mesures.
-1. Un jour remplacer les bushings ou mettre des bearings à la place pour le mouvement vertical.
-1. Trouver shipping mondial kits de robot
-1. Faire une soumission chez une firme de génie conseil pour un produit final qui peut se vendre sur kickstarter
-1. Ajouter toutes les valeurs nutritives des ingrédients.
-1. Démarrer l'entreprise officiellement. Puis contacter des médias et essayer de faire parler de l'entreprise
-1. Faire un article qui parle de mes cables drums. C'est cool et de toute façon un compétiteur bien antit ne ferait pas pareil. Ça serait probablement coulé en alu à la place ou avec des chaînes.
+2. Modification d'une recette (duplication)
+3. Enlever une recette du calendrier ajoutée par erreur.
+4. Quoi faire quand les ingrédients n'ont pas d'unités? Mettre du sel. Mettre de l'oignon. Mettre de la coriande. Mettre des cubes de boeufs au goûts. Mettre du thym. Trop compliqué, le faire manuellement en texte...
+5. Add show_ fraction to RecipeIngredients (quand raw_ quantity détecte une fraction, setter le flag automatiquement)
+6. TODO: Faire des test pour les pretty... que ça rajoute les préposition correctement dans toutes les langues. Il y a beaucoup de cas. C'est le genre de truc parfait pour des tests.
+7. Allow user to create recipes.
+8. Be able to create a recipe with a food not in the database
+9. Pouvoir ajouter des commentaires aux recettes. / au début pour que ce soit en italique!
+10. Un éditeur WYSIWIG pour les recettes.
+11. Rajouter masculin et féminin pour les noms ou bien laisser les mettres manuellement?
+12. FoodName food:references language:references value aspire:boolean feminine:boolean
+13. Comment gérer les versions des recettes? RecipeGroup comme avant? Un UserRecipe refère à une Recipe et/ou à un RecipeGroup?
+14. Enlever le truc de c'est quoi qu'il y a des différent à l'intérieur, et offrir la version simplement avec un chiffre. Ou bien un nom d'utilisateur. Dans la barre de recherche, tu sélectionnes le groupe et ensuite tu sélectionnes sur le côté (un peu comme un menu normal d'un UI d'application d'ordinateur) la version que tu veux. Poulet au beurre (Ricardo). Mais fuck poulet au beurre (Condiments en poudre). À la place, quand c'est une recette du site et non une recette d'un utilisateur ou d'un site d'ailleurs, indiqué (ver 2). Pas de version quand il n'y en a juste une. Donc pour poulet au beurre, on a: Poulet au beurre, Poulet au beurre (Ricardo), Poulet au beurre (ver 2). N'importe qui peut créer sa recette! Mais l'image reste la même, celle du groupe. Le groupe sert surtout à avoir une image et lier les recettes du même truc entre eux. Ne pas marqué Poulet au beurre (Ricardo). Marqué un nom entre parathèse seulement quand la recette viens d'un utilisateur.
+15. Units by language, wait no because I want to be able to convert c. à table to table spoons...
+16. Mes recettes favorites ou Ajouter à ma liste.
+17. Mes amis (voir le menu de mes amis)
+18. Rajouter une note aux RecipeIngredient? (pelées et coupées en cube), ... (broyées)
+19. FoodGroups. Huile. Bouillon. Lait. Pain.
+20. Handle generic Foods which are supersets of other foods. Bouillon can be Bouillon de légume, Bouillon de poulet, etc... Huile... Huile neutre...
+21. Dans la recherche et les listes, seulement montrer la version de recette la plus populaire.
+22. Comment gérer les options d'ingrédients dans la recette??? (Commentaire à côté des ingrédients?)
+23. You can pin an item in the grocery list so it is always there even if you clear (for example fruits&vegetables, eggs and milk)
+24. Pouvoir hierarchisé dans un arbre les recettes.
+25. Acheter un backdrop pour les photos
+26. Trouver un format de bouteille liquide
+27. Pagination des recettes sur le site internet
+28. Ajuster le site internet pour les téléphones mobiles. Mettre la barre de recherche en dessous du menu.
+29. Rajouter les trous borgnes à l'armoire et faire des screenshots pour le manuel d'assemblage. Couleur différente pour chaque type de morceau? Mettre dans les screenshots les mesures.
+30. Un jour remplacer les bushings ou mettre des bearings à la place pour le mouvement vertical.
+31. Trouver shipping mondial kits de robot
+32. Faire une soumission chez une firme de génie conseil pour un produit final qui peut se vendre sur kickstarter
+33. Ajouter toutes les valeurs nutritives des ingrédients.
+34. Démarrer l'entreprise officiellement. Puis contacter des médias et essayer de faire parler de l'entreprise
+35. Faire un article qui parle de mes cables drums. C'est cool et de toute façon un compétiteur bien antit ne ferait pas pareil. Ça serait probablement coulé en alu à la place ou avec des chaînes.
 
 # Mission
 
@@ -995,29 +1001,29 @@ https://www.restaurantalma.com/
 
 ## Recettes écologique
 1. Hamburger avec n'importe quelle boulette végé
-1. Hotdog avec n'importe quelle boulette végé
-1. Pâté chinois végé (hâchis parmentier végé) (prmentier végé)
-1. Chili végé
-1. Riz avec truc végé plus sauce (tofu poulet au beurre)
-1. Pâte avec boulettes de pois chiches ou autres végé
-1. Salade
-1. Salade de pâte
-1. Boulangerie
-1. Dessert
-1. Pantry recipes
-1. Gruau
-1. Chickpea recipes, red-kidney beans recipe
-1. Soupe aux patates!!!
-1. Crèmes (crème de champignon, crème de poireau)
-1. Soupes
-1. Potages
-1. Ragouts
-1. Riz sauvage
-1. Crêpes
-1. Pain de viande végane
-1. Pâté style tourtière végé
-1. Saucisses véganes
-1. Simuler n'importe quelle viande de manière végane
+2. Hotdog avec n'importe quelle boulette végé
+3. Pâté chinois végé (hâchis parmentier végé) (prmentier végé)
+4. Chili végé
+5. Riz avec truc végé plus sauce (tofu poulet au beurre)
+6. Pâte avec boulettes de pois chiches ou autres végé
+7. Salade
+8. Salade de pâte
+9. Boulangerie
+10. Dessert
+11. Pantry recipes
+12. Gruau
+13. Chickpea recipes, red-kidney beans recipe
+14. Soupe aux patates!!!
+15. Crèmes (crème de champignon, crème de poireau)
+16. Soupes
+17. Potages
+18. Ragouts
+19. Riz sauvage
+20. Crêpes
+21. Pain de viande végane
+22. Pâté style tourtière végé
+23. Saucisses véganes
+24. Simuler n'importe quelle viande de manière végane
 
 # Financement
 1. Shuttleworth fondation: https://shuttleworthfoundation.org/apply/form/
@@ -1025,12 +1031,12 @@ https://www.restaurantalma.com/
 1. Soutien au projet d'innovation - Investissement Québec - https://www.economie.gouv.qc.ca/bibliotheques/programmes/aide-financiere/programme-innovation/soutien-aux-projets-dinnovation/
 30% à 50%
 1. **Programme d'aide à la recherche industrielle (PARI)** CONTRIBUTIONS NON REMBOURSABLES - https://nrc.canada.ca/fr/soutien-linnovation-technologique/soutien-financier-linnovation-technologique-pari-cnrc
-1. Si vous collaborez avec plusieurs partenaires pour la réalisation de projets tels que la robotique de pointe, l'apprentissage automatique, l'impression 3D et l'Internet des objets, vous pourriez bénéficier d'un remboursement pouvant aller jusqu'à 44,4 % des coûts admissibles de projets dont la valeur se situe entre un million $ et 20 millions $. https://www.ngen.ca/fr/
+2. Si vous collaborez avec plusieurs partenaires pour la réalisation de projets tels que la robotique de pointe, l'apprentissage automatique, l'impression 3D et l'Internet des objets, vous pourriez bénéficier d'un remboursement pouvant aller jusqu'à 44,4 % des coûts admissibles de projets dont la valeur se situe entre un million $ et 20 millions $. https://www.ngen.ca/fr/
 
 # Business model
 
 1. Même business model que Farm Bot. Open source. Vendre des kits et des composantes.
-1. Faire de l'argent sur les commandes automatiques d'épiceries. (L'épicerie nous paie 1% pour qu'on fasse affaire avec eux) (approcher les épiceries du Québec)
+2. Faire de l'argent sur les commandes automatiques d'épiceries. (L'épicerie nous paie 1% pour qu'on fasse affaire avec eux) (approcher les épiceries du Québec)
 
 ## Armoire
 
@@ -1055,9 +1061,9 @@ Le contrepoids pourrait utilisé un eyebolt, mais les filets doivent se rendrent
 ## Version à vendre
 
 1. 6" de large au lieu de 7"
-1. Arbre T 5/8" au lieu de 1/2"
-1. Bearings pour l'axe vertical
-1. Bushings pour où qu'il ne peut pas y avoir de bearing comme 3 sur le gripper
+2. Arbre T 5/8" au lieu de 1/2"
+3. Bearings pour l'axe vertical
+4. Bushings pour où qu'il ne peut pas y avoir de bearing comme 3 sur le gripper
 
 ## Homing
 
@@ -1129,13 +1135,13 @@ Il y a l'air d'y avoir beaucoup de conducteur pour le capteur du moteur. Attendr
 #### Installation mouvement horizontal:
 
 1. Installer la partie supérieure avec les deux plaques de métal et les deux essieus avec les roues.
-1. Installer le support à cable track
-1. Préinstaller le moteur
-1. Déposer le chariot sur la track horizontal
-1. Installer l'arbre 1/2" (1 bearing, **puis poulie et courroie**, puis 1 autre bearing)
-1. Ajuster la tension de la courroie avec la position du moteur.
-1. Insérer la partie inférieure sur le bearing
-1. Insérér les deux essieus à travers les roues. (Il faudrait des washers de l'autre côté de la roue et non des nuts sinon ça va être chiant...)
+2. Installer le support à cable track
+3. Préinstaller le moteur
+4. Déposer le chariot sur la track horizontal
+5. Installer l'arbre 1/2" (1 bearing, **puis poulie et courroie**, puis 1 autre bearing)
+6. Ajuster la tension de la courroie avec la position du moteur.
+7. Insérer la partie inférieure sur le bearing
+8. Insérér les deux essieus à travers les roues. (Il faudrait des washers de l'autre côté de la roue et non des nuts sinon ça va être chiant...)
 
 ### Mouvement vertical
 
@@ -1184,12 +1190,12 @@ Il y a plusieurs manières possibles de rattacher le skelette dans le poignet:
 #### Installation
 
 1. Attacher la poulie au top du poignet
-1. Insérer la poulie et le top du poignet au dessus de shaft avant les bearings
-1. Insérer les bearings sur le shaft
-1. Glisser le support à bearings sur les bearings.
-1. Attacher le support à bearings au top du poignet
-1. Attacher le tube carré et le shaft bêta au support à bearings
-1. Attacher le couvercle au support à bearings
+2. Insérer la poulie et le top du poignet au dessus de shaft avant les bearings
+3. Insérer les bearings sur le shaft
+4. Glisser le support à bearings sur les bearings.
+5. Attacher le support à bearings au top du poignet
+6. Attacher le tube carré et le shaft bêta au support à bearings
+7. Attacher le couvercle au support à bearings
 
 #### Axe A
 
@@ -1276,8 +1282,8 @@ C'est correct de ne pas être centré, mais le problème c'est que je dois avoir
 
 Vue d'ensemble:
 1. Conception d'un squelette
-1. Conception de moteur et de réducteur
-1. Conception d'un boitier et d'un système pour les câbles
+2. Conception de moteur et de réducteur
+3. Conception d'un boitier et d'un système pour les câbles
 
 Mon problème principal présentemment est le manque de rigidité. Je dois mettre un arbre plus grand pour l'arbre. (https://www.engineering.com/calculators/beams.htm)
 2 kg à 12" ~= 4.5 lbs à 12"
@@ -1290,12 +1296,12 @@ Le tube de 0.706" est **5 fois** plus rigide que 0.375"
 
 C'est quoi les problèmes que j'essaie de résoudre:
 1. Dans un vrai bon design il faudrait que je moule des composantes en aluminium (Fondrémy)
-1. L'humérus n'est pas assez rigide (souder???)
-1. L'avant bras n'est pas dans le même axe que le bras (c'est un problème?)
-1. Où passer les fils?
-1. Ne pas tourner le moteur autour de l'engrenage, tourner l'engrenage
-1. Je veux pouvoir tourner plus avec l'axe A, aller en-dessous du bras avec l'avant-bras
-1. Diminuer la hauteur du bras (humérus) (la courroie en haut au lieu d'en bas? Les fils électriques eux.
+2. L'humérus n'est pas assez rigide (souder???)
+3. L'avant bras n'est pas dans le même axe que le bras (c'est un problème?)
+4. Où passer les fils?
+5. Ne pas tourner le moteur autour de l'engrenage, tourner l'engrenage
+6. Je veux pouvoir tourner plus avec l'axe A, aller en-dessous du bras avec l'avant-bras
+7. Diminuer la hauteur du bras (humérus) (la courroie en haut au lieu d'en bas? Les fils électriques eux.
 
 Améliorer le design actuel pour avoir plus de rigidité. Avec le nouveau design de l'armoire, j'ai moins de restriction en hauteur. Donc mettre le mouvement T au dessus des autres mouvements.
 
@@ -1310,11 +1316,11 @@ Rendre le garde du haut optionnel et non structurel, il y aurait 2 pillow block 
 ## TODO list de petits trucs du quotidien
 
 1. Quel moteur pour le mouvement T et A? Nema 23 ou Nema 17? Nema 17 avec gearbox probablement
-1. Faire le mouvement T avant de trop faire le mouvement horizontal
-1. Calculer quelle courroie qui est nécessaire pour mon moteur nema 23.
-1. Acheter timing belt et timing pulley axe horizontal
-1. Un minimum de 1 mm a l'intérieur de l'objet pour que ce soit consideré une collision
-1. Rajouter une bordure en sur les cotés pour s'assurer que les pots ne soit jamais inaccessible pour le robot.
+2. Faire le mouvement T avant de trop faire le mouvement horizontal
+3. Calculer quelle courroie qui est nécessaire pour mon moteur nema 23.
+4. Acheter timing belt et timing pulley axe horizontal
+5. Un minimum de 1 mm a l'intérieur de l'objet pour que ce soit consideré une collision
+6. Rajouter une bordure en sur les cotés pour s'assurer que les pots ne soit jamais inaccessible pour le robot.
 
 ## Focus
 
@@ -1340,7 +1346,7 @@ Heda utilise des pots sur lesquels ont été apposée une étiquette sur le couv
 
 
 Idées
------
+--------------------
 
 ### Présentation web des recettes
 
@@ -1380,7 +1386,7 @@ En tant que nos premiers clients, vous nous aidez grandement et nous
 souhaitons vous récompenser\*.
 
 Hiérarchie
-----------
+--------------------
 
 Je serais CEO, mais je déléguerais beaucoup de chose au COO. Je pourrais
 passer du temps dans l'atelier à faire ce qui me rend heureux.
@@ -1546,4 +1552,3 @@ Pourquoi le site requiert javascript:
 - Pour afficher une recette avec l'éditeur en mode read-only. Idéalement une version statique serait téléchargé, mais c'est compliqué je ne sais pas comment faire pour l'instant.
 
 Est-ce qu'il est possible d'utiliser Jekyll pour éviter la duplication du layout pour chaque fichier?
-
