@@ -1,0 +1,63 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2022-01-28T17:25:24-05:00
+
+====== Version 0.1.01 ======
+Créée le Friday 28 January 2022
+
+1ère priorité: Site read only
+2e priorité: Site modifiable
+
+===== Site statique =====
+
+[ ] 1
+[ ] DATA, ajouter toutes les recettes que j'ai déjà ajouter les instructions.
+[*] Ouspi, enlever http://localhost:8000/qc/cat%C3%A9gories/
+[*] Production database is corrupted...
+[*] L'image du livre devrait être une variante au lieu d'être la grande image. La variante devrait avoir une hauteur minimale du livre sur la page d'acceuil, et une largeur minimale du livre dans le preview à gauche. Hauteur: 258px. Largeur: 178px.
+[ ] Pouvoir naviguer d'une recette à l'autre dans une catégorie sur le site d'hedacuisine.
+[ ] Rechercher Pascal dans la barre de recherche. Un livre publique sans image ne s'affiche pas le thumbnail qui devrait.
+[ ] Rechercher par mots clés au lieu de par exact search. Par exemple, soupe nouilles devrait ressortir soupe aux nouilles.
+[ ] Share, Download, Print
+[*] Afficher temporairement le nombre de recette dans les recipe slider parce que je ne veux pas que le monde aille sur les catégories qu'il n'y a pas encore de recettes...
+[ ] Trouver tous les liens dans le site statique et s'assurer qu'ils sont valide
+[*] Ne pas voir le cadenas quand je clique sur un livre dans HedaCuisine.com.
+[ ] Voir les BookRecipe sur HedaCuisine.com
+[ ] BookRecipe urls (traduire et book recipe slug, enlever le long dash)
+[*] Faire fonctionner http://localhost:8000/qc/recettes
+[*] Faire fonctionner search
+[ ] Publier la nouvelle version sur HedaCuisine batare. Même s'il y a des trucs qui ne fonctionne pas tout à fait encore...
+[ ] Quand je compile le site statique, avoir un compte rendu. Voir si jamais il y a des 4xx ou des 5xx code d'erreurs.
+[ ] Quand un lien vers une recette d'un livre n'est plus valide, rediriger vers la recette ailleurs si elle est encore existante.
+
+===== Bugs site dynamique (des trucs qui m'empêchent de l'utiliser) =====
+
+[ ] 1
+[ ] J'ai ajouter une recette et elle n'avait pas de position, je ne peux plus lire mon livre maintenant. Refactorer tout ça c'est affreux. Faire comment les sections des ingrédients.
+[ ] J'ai ajouter des recettes à mon livre et des sections, je l'ai ait déplacé, je rechargé la page et l'ordre n'était pas bon... Remplacer la logique par la même que pour les sections des ingrédients dans les recettes? Elle fonctionne mieux et est plus simple.
+[ ] Modifier l'éditeur de livre pour qu'il soit beau.
+[ ] Pouvoir modifier le nom d'une section dans l'éditeur de livre.
+
+===== Site dynamique =====
+
+[ ] 1
+[ ] Signin avec le mauvais mot de passe doit afficher un message d'erreur explicit au lieu de lancer une exception en ruby.
+[ ] Ajouter des metrics au site dynamique, surtout pour voir quand le monde ont des 4xx ou 5xx erreurs.
+[ ] require login for all the pages in aqueous-fortress?
+[*] new Autocomplete only once, and delete. check how to do new and delete inside React hooks
+[*] Trouver un moyen que onUpdate et onServerUpdate sois toujours présent. Quand je le reçoit de onUpdate le setter?
+[*] Ou bien version=323 au lieu de recipe_id? http://localhost:3000/qc/cat%C3%A9gories/51-biscuits_aux_brisures_de_chocolat?recipe_id=323
+[ ] Déplacer un ingrédient ne doit pas fucker les instructions. Les instructions doivent suivrent.
+[ ] Faire un UI pour ajouter ou modifier une liste d'ingrédients dans l'éditeur.
+[*] Déplacer les ingrédients doit changer le numéro à côté
+[*] Quand un ingrédient se déplace, editer le JSON pour mettre à jour le numéro des ingrédients
+[*] Le faire avec http://localhost:3000/qc/sortes_de_recette/46-tarte_au_sucre?recipe_id=567 en premier.
+[*] Des catégories dans les ingrédients d'une recette?
+[*] Pouvoir créer un nouveau RecipeKind.
+[*] Pouvoir supprimer l'image du RecipeKind
+[*] Quand j'ajoute une nouvelle image d'un RecipeKind, le voir tout de suite.
+[*] Handle delete image. Simplement setter image_id à nil pour la recette. Pour supprimer définitivement les images, je vais faire une purge de temps en temps avec les images orphelines.
+[*] Afficher le nom du fichier quand il y en a un dans le FileField avec un X pour l'enlever, comme pour le livre.
+[*] Update image_id=nil pour toutes les recettes.
+[ ] UI pour recipe main ingredient (comme dans show? afficher avec la conversion comme dans show? et là tu peux choisir dans le menu déroulant et ça va être lui par défault?)
+[ ] Maximum image size du côté de Rails aussi
