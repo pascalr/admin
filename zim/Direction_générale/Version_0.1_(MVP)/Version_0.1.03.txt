@@ -9,3 +9,5 @@ DESCRIPTION: L'efficacité
 
 [ ] 1
 [ ] Pour toutes les vues s'assurer de faire le moins de call possible à la base de donnée. Include everywhere
+[ ] 25 individual images are used on this page. Using CSS Image Sprites is recommended.
+[ ] Image tags in markup should have descriptive alt tags or they should be left empty for unimporant design elements

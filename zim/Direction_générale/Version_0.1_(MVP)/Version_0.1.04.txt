@@ -9,4 +9,5 @@ DESCRIPTION: Features supplémentaires
 
 [ ] 1
 [ ] Imprimer une recette en pdf
+[ ] Pour un petit écran, ça pourrait être cool de center l'image dans un carrousel au lieu de le garder à gauche.
 
