@@ -1,3 +1,20 @@
+# Admin
+
+Un repository privé pour gérer l'administration de ma start-up. Le site internet s'occupe des achats, des factures, des pièces, des fournisseurs, des commandes, des dépenses, des rapprochements bancaires, des bilans et des états financiers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## GODOT
 
 1. Parents control their children.
@@ -9,24 +26,6 @@
 ## Coordinate system
 
 When you are behind the cupboard, positive A,T and Angle is clockwise. T0 is facing you. A0 and angle is facing opposite. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Anything else
 

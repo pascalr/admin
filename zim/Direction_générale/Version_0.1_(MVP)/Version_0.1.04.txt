@@ -9,5 +9,6 @@ DESCRIPTION: Features supplémentaires
 
 [ ] 1
 [ ] Imprimer une recette en pdf
+[ ] Un truc intelligent pour la température du four? Tu cliques dessus et là tu insères soit degrés C ou degrés F. Les conversions se font automatiquement et sont traduites dans les autres locales.
 [ ] Pour un petit écran, ça pourrait être cool de center l'image dans un carrousel au lieu de le garder à gauche.
 
