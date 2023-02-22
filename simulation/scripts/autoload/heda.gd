@@ -1,6 +1,6 @@
 extends Node
 
-var HOST := "http://localhost:3000/machines/1/"
+var HOST := "http://localhost:3001/machines/1/"
 #var HOST := "https://aqueous-fortress-30634.herokuapp.com/machines/1/"
 
 # Simulation/Scene

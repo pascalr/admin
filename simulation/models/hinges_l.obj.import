@@ -16,4 +16,5 @@ dest_files=[ "res://.import/hinges_l.obj-add8dcf0c72f4bd94a9a6e3c76f91f85.mesh",
 generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
 offset_mesh=Vector3( 0, 0, 0 )
-optimize_mesh=true
+octahedral_compression=true
+optimize_mesh_flags=4286
