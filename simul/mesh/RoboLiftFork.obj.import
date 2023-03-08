@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/RoboLiftFork.obj-cc1deac48e5546c6ca92df7d9bbb9c9f.mesh"
+
+[deps]
+
+files=[ "res://.import/RoboLiftFork.obj-cc1deac48e5546c6ca92df7d9bbb9c9f.mesh" ]
+
+source_file="res://mesh/RoboLiftFork.obj"
+dest_files=[ "res://.import/RoboLiftFork.obj-cc1deac48e5546c6ca92df7d9bbb9c9f.mesh", "res://.import/RoboLiftFork.obj-cc1deac48e5546c6ca92df7d9bbb9c9f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://mesh/RoboLiftFork.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://script/RoboLift.gd" type="Script" id=2]
+[ext_resource path="res://mesh/RoboLiftBody.obj" type="ArrayMesh" id=3]
+
+[node name="RoboLift" type="Spatial"]
+script = ExtResource( 2 )
+
+[node name="RoboLiftFork" type="Spatial" parent="."]
+
+[node name="Mesh" type="MeshInstance" parent="RoboLiftFork"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -16.3062, 17.1821, 7.22564 )
+mesh = ExtResource( 1 )
+skeleton = NodePath("../..")
+
+[node name="RoboLiftBody" type="Spatial" parent="."]
+
+[node name="RoboLiftBodyMesh" type="MeshInstance" parent="RoboLiftBody"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -16.9215, 261.294, -382.485 )
+mesh = ExtResource( 3 )
+skeleton = NodePath("../..")
