@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/kitchen_floor.obj-88c0016a357a1091cf0cac31fd8953da.mesh"
+
+[deps]
+
+files=[ "res://.import/kitchen_floor.obj-88c0016a357a1091cf0cac31fd8953da.mesh" ]
+
+source_file="res://mesh/kitchen/kitchen_floor.obj"
+dest_files=[ "res://.import/kitchen_floor.obj-88c0016a357a1091cf0cac31fd8953da.mesh", "res://.import/kitchen_floor.obj-88c0016a357a1091cf0cac31fd8953da.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

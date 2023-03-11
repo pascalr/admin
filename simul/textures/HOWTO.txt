@@ -1,0 +1,13 @@
+Comment créer une texture:
+1. Créer une image de base
+    - Avec Stable Diffusion: https://stablediffusionweb.com/
+    - Ou prendre une photo
+    - Ou trouver une image libre de droite sur Pixabay ou Unsplash
+2. Utiliser un outil pour convertir une image en texture
+    - https://www.imgonline.com.ua/eng/make-seamless-texture.php
+    - Sélectionner Method No. 3
+3. Réduire la taille de la texture
+    - convert input.jpg -resize 50% -quality 85 output.jpg
+    
+TODO:
+- Comment faire pour ajouter Normal Map et Depth Map. Par exemple, mon plancher de tiles, j'aimerais faire une illusion de 3d où entre chaque tuile c'est plus creux.
