@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="512" height="512" version="1.1" viewBox="0 0 135.47 135.47" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="marker19089" overflow="visible" orient="auto">
+   <path transform="scale(.6) translate(0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Mstart" overflow="visible" orient="auto">
+   <path transform="scale(.6) translate(0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Mend" overflow="visible" orient="auto">
+   <path transform="scale(.6) rotate(180) translate(0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Mend-3" overflow="visible" orient="auto">
+   <path transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Mend-3-5" overflow="visible" orient="auto">
+   <path transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker19089-9" overflow="visible" orient="auto">
+   <path transform="scale(.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Mstart-7" overflow="visible" orient="auto">
+   <path transform="scale(.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Mend-3-5-3" overflow="visible" orient="auto">
+   <path transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+ </defs>
+ <rect x="11.886" y="60.344" width="109.58" height="14.248" fill="#d6d6e6" stroke-width=".20907"/>
+ <g fill="#f00" stroke="#f00">
+  <path d="m11.924 40.061-0.038631 18.696" marker-end="url(#Arrow2Mend)" stroke-width=".81644"/>
+  <path d="m86.107 113.49 0.03863-37.093" marker-end="url(#Arrow2Mend-3)" stroke-width="1.15"/>
+  <path d="m104.31 21.546-0.24549 37.092" marker-end="url(#Arrow2Mend-3-5)" stroke-width="1.15"/>
+  <path d="m51.873 48.845-0.24549 9.7584" marker-end="url(#Arrow2Mend-3-5-3)" stroke-width=".58985"/>
+ </g>
+ <g fill="none" stroke="#000">
+  <path d="m11.886 74.593v-7.5675" stroke-width=".765"/>
+  <path d="m86.075 74.52v-6.558" stroke-width=".765"/>
+  <path d="m121.46 74.593v-6.5795" stroke-width=".79237"/>
+ </g>
+ <text x="46.636456" y="72.98159" fill="#000000" font-family="sans-serif" font-size="10.583px" stroke-width=".26458" style="line-height:1.25" xml:space="preserve"><tspan x="46.636456" y="72.98159" stroke-width=".26458">b</tspan></text>
+ <text x="102.0117" y="73.725769" fill="#000000" font-family="sans-serif" font-size="10.583px" stroke-width=".26458" style="line-height:1.25" xml:space="preserve"><tspan x="102.0117" y="73.725769" stroke-width=".26458">a</tspan></text>
+ <g fill="none" stroke="#000">
+  <path d="m12.629 70.528h28.967" marker-start="url(#marker19089)" stroke-width=".256"/>
+  <path d="m86.742 71.071h14.014" marker-start="url(#marker19089-9)" stroke-width=".256"/>
+  <path d="m120.69 71.119h-10.543" marker-start="url(#Arrow2Mstart)" stroke-width=".25634px"/>
+  <path d="m85.281 70.964h-28.199" marker-start="url(#Arrow2Mstart-7)" stroke-width=".24751"/>
+ </g>
+ <g fill="#000000" font-family="sans-serif">
+  <text transform="matrix(.26458 0 0 .26458 -12.327 4.2168)" font-size="40px" style="line-height:1.25;shape-inside:url(#rect22375);white-space:pre" xml:space="preserve"/>
+  <text transform="matrix(.26458 0 0 .26458 37.486 20.898)" font-size="40px" style="line-height:1.25;shape-inside:url(#rect22375-6);white-space:pre" xml:space="preserve"/>
+  <text x="45.5919" y="44.850853" font-size="10.583px" stroke-width=".26458" style="line-height:1.25" xml:space="preserve"><tspan x="45.5919" y="44.850853" stroke-width=".26458">Fb</tspan></text>
+  <text x="98.490501" y="19.393644" font-size="10.583px" stroke-width=".26458" style="line-height:1.25" xml:space="preserve"><tspan x="98.490501" y="19.393644" stroke-width=".26458">Fa</tspan></text>
+ </g>
+</svg>
